@@ -1,0 +1,262 @@
+{
+  "_": "Zonificación y valores por región. 'z' zona climática, 'c' tiene litoral, 'b' valor base por capa. DEMO: el pipeline reemplaza 'b' con los valores reales de cada mes.",
+  "modificadorMes": {
+    "now": 0.85,
+    "2027-01": 1.0,
+    "2027-02": 1.15,
+    "2027-03": 1.05,
+    "2027-04": 0.8
+  },
+  "regiones": {
+    "Tumbes": {
+      "z": "Costa norte",
+      "c": 1,
+      "b": {
+        "tsm": 2.9,
+        "lluvia": 130,
+        "sequia": 1.4,
+        "rios": 95
+      }
+    },
+    "Piura": {
+      "z": "Costa norte",
+      "c": 1,
+      "b": {
+        "tsm": 2.7,
+        "lluvia": 120,
+        "sequia": 1.2,
+        "rios": 88
+      }
+    },
+    "Lambayeque": {
+      "z": "Costa norte",
+      "c": 1,
+      "b": {
+        "tsm": 2.2,
+        "lluvia": 85,
+        "sequia": 0.9,
+        "rios": 64
+      }
+    },
+    "La Libertad": {
+      "z": "Costa norte",
+      "c": 1,
+      "b": {
+        "tsm": 1.8,
+        "lluvia": 60,
+        "sequia": 0.5,
+        "rios": 47
+      }
+    },
+    "Cajamarca": {
+      "z": "Sierra norte",
+      "c": 0,
+      "b": {
+        "tsm": null,
+        "lluvia": 35,
+        "sequia": 0.3,
+        "rios": 30
+      }
+    },
+    "Amazonas": {
+      "z": "Selva norte",
+      "c": 0,
+      "b": {
+        "tsm": null,
+        "lluvia": 20,
+        "sequia": 0.1,
+        "rios": 22
+      }
+    },
+    "San Martin": {
+      "z": "Selva norte",
+      "c": 0,
+      "b": {
+        "tsm": null,
+        "lluvia": 15,
+        "sequia": 0.0,
+        "rios": 18
+      }
+    },
+    "Loreto": {
+      "z": "Selva norte",
+      "c": 0,
+      "b": {
+        "tsm": null,
+        "lluvia": 10,
+        "sequia": -0.1,
+        "rios": 14
+      }
+    },
+    "Ancash": {
+      "z": "Costa centro",
+      "c": 1,
+      "b": {
+        "tsm": 1.4,
+        "lluvia": 25,
+        "sequia": 0.1,
+        "rios": 20
+      }
+    },
+    "Lima": {
+      "z": "Costa centro",
+      "c": 1,
+      "b": {
+        "tsm": 1.2,
+        "lluvia": 15,
+        "sequia": -0.2,
+        "rios": 12
+      }
+    },
+    "Callao": {
+      "z": "Costa centro",
+      "c": 1,
+      "b": {
+        "tsm": 1.2,
+        "lluvia": 10,
+        "sequia": -0.2,
+        "rios": 10
+      }
+    },
+    "Ica": {
+      "z": "Costa sur",
+      "c": 1,
+      "b": {
+        "tsm": 0.9,
+        "lluvia": -10,
+        "sequia": -0.5,
+        "rios": -5
+      }
+    },
+    "Arequipa": {
+      "z": "Costa sur",
+      "c": 1,
+      "b": {
+        "tsm": 0.7,
+        "lluvia": -35,
+        "sequia": -1.1,
+        "rios": -28
+      }
+    },
+    "Moquegua": {
+      "z": "Costa sur",
+      "c": 1,
+      "b": {
+        "tsm": 0.6,
+        "lluvia": -40,
+        "sequia": -1.3,
+        "rios": -32
+      }
+    },
+    "Tacna": {
+      "z": "Costa sur",
+      "c": 1,
+      "b": {
+        "tsm": 0.5,
+        "lluvia": -45,
+        "sequia": -1.4,
+        "rios": -35
+      }
+    },
+    "Huanuco": {
+      "z": "Sierra centro",
+      "c": 0,
+      "b": {
+        "tsm": null,
+        "lluvia": -5,
+        "sequia": -0.3,
+        "rios": -2
+      }
+    },
+    "Pasco": {
+      "z": "Sierra centro",
+      "c": 0,
+      "b": {
+        "tsm": null,
+        "lluvia": -12,
+        "sequia": -0.5,
+        "rios": -8
+      }
+    },
+    "Junin": {
+      "z": "Sierra centro",
+      "c": 0,
+      "b": {
+        "tsm": null,
+        "lluvia": -18,
+        "sequia": -0.7,
+        "rios": -14
+      }
+    },
+    "Huancavelica": {
+      "z": "Sierra centro",
+      "c": 0,
+      "b": {
+        "tsm": null,
+        "lluvia": -25,
+        "sequia": -0.9,
+        "rios": -20
+      }
+    },
+    "Ayacucho": {
+      "z": "Sierra sur",
+      "c": 0,
+      "b": {
+        "tsm": null,
+        "lluvia": -34,
+        "sequia": -1.2,
+        "rios": -27
+      }
+    },
+    "Apurimac": {
+      "z": "Sierra sur",
+      "c": 0,
+      "b": {
+        "tsm": null,
+        "lluvia": -38,
+        "sequia": -1.3,
+        "rios": -30
+      }
+    },
+    "Cusco": {
+      "z": "Sierra sur",
+      "c": 0,
+      "b": {
+        "tsm": null,
+        "lluvia": -42,
+        "sequia": -1.5,
+        "rios": -33
+      }
+    },
+    "Puno": {
+      "z": "Sierra sur",
+      "c": 0,
+      "b": {
+        "tsm": null,
+        "lluvia": -48,
+        "sequia": -1.7,
+        "rios": -38
+      }
+    },
+    "Madre De Dios": {
+      "z": "Selva sur",
+      "c": 0,
+      "b": {
+        "tsm": null,
+        "lluvia": -15,
+        "sequia": -0.4,
+        "rios": -10
+      }
+    },
+    "Ucayali": {
+      "z": "Selva sur",
+      "c": 0,
+      "b": {
+        "tsm": null,
+        "lluvia": -8,
+        "sequia": -0.2,
+        "rios": -6
+      }
+    }
+  }
+}

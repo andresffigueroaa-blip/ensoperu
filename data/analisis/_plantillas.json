@@ -1,0 +1,117 @@
+{
+  "_": "Textos de RESPALDO por zona climática. Se usan solo cuando todavía no existe data/analisis/<region>/<mes>.json. Marcadores disponibles: {r} región, {tsm}, {lluvia}, {rios}.",
+  "fuentes": "Datos de demostración. En operación: TSM de NOAA OISST y del SIOFEN (IMARPE); pronóstico estacional de ECMWF SEAS5, NMME e IRI; precipitación de CHIRPS; sequía a partir de productos del SENAMHI; caudales del SENAMHI y la ANA; estado de alerta y probabilidades del ENFEN. Para decisiones operativas consulte al ENFEN, al SENAMHI y, en pesca, a IMARPE y PRODUCE.",
+  "guiones": {
+    "Costa norte": {
+      "pesca": [
+        "El mar frente a {r} se mantendría entre {tsm} sobre lo normal. Con anomalías de esta magnitud, la anchoveta tiende a replegarse hacia la franja costera y a buscar mayor profundidad, con un gasto energético más alto de lo habitual.",
+        "Aumenta la probabilidad de encontrar especies de aguas ecuatoriales como pez sierra, ayamarca y samasa, y especies oceánicas como barrilete, atún de aleta amarilla y melva. Las faenas dirigidas a anchoveta pueden requerir más tiempo y combustible por tonelada."
+      ],
+      "agro": [
+        "Se esperan lluvias {lluvia} respecto de su valor normal. En la costa norte, excesos de esta magnitud comprometen campañas de arroz, limón y mango, sobre todo por anegamiento y por enfermedades fungosas.",
+        "Conviene revisar el drenaje de las parcelas y adelantar decisiones de siembra antes del periodo de máximas lluvias."
+      ],
+      "agua": [
+        "Los caudales se proyectan {rios} sobre su promedio. El riesgo dominante no es la escasez sino la crecida rápida y el arrastre de sedimento, que afecta la captación y el tratamiento de agua potable."
+      ],
+      "riesgo": [
+        "Escenario de lluvias intensas con probabilidad de activación de quebradas secas, huaicos e inundación en zonas bajas. Las vías de la costa norte y los puentes son los puntos más vulnerables.",
+        "Es la situación que concentra la mayor exposición de población en el país durante un evento cálido fuerte."
+      ]
+    },
+    "Costa centro": {
+      "pesca": [
+        "El mar frente a {r} estaría {tsm} sobre lo normal. El efecto sobre la disponibilidad de anchoveta es menor que en el norte, pero puede haber desplazamiento de cardúmenes y variación en la profundidad de captura."
+      ],
+      "agro": [
+        "Lluvias {lluvia} respecto de lo normal. En la costa central el impacto llega sobre todo por la parte alta de las cuencas, no por lluvia local."
+      ],
+      "agua": [
+        "Caudales {rios} respecto del promedio. Conviene seguir el comportamiento de la cuenca alta, que es la que define la disponibilidad."
+      ],
+      "riesgo": [
+        "Riesgo moderado, concentrado en quebradas y en zonas de ladera con ocupación informal."
+      ]
+    },
+    "Costa sur": {
+      "pesca": [
+        "El mar frente a {r} estaría {tsm} sobre lo normal, una anomalía menor que en el norte. Los efectos sobre la pesquería suelen ser más leves en esta franja."
+      ],
+      "agro": [
+        "Lluvias {lluvia} respecto de lo normal. Un déficit sostenido presiona la disponibilidad de agua para riego en los valles."
+      ],
+      "agua": [
+        "Caudales {rios} respecto del promedio. El componente crítico es la recarga en la cabecera andina, que en eventos cálidos tiende a reducirse."
+      ],
+      "riesgo": [
+        "Riesgo bajo de inundación. La preocupación principal es el déficit hídrico acumulado."
+      ]
+    },
+    "Sierra norte": {
+      "agro": [
+        "Lluvias {lluvia} respecto de lo normal en {r}. Conviene ajustar el calendario de siembra y prever excesos en las partes bajas."
+      ],
+      "agua": [
+        "Caudales {rios} respecto del promedio."
+      ],
+      "riesgo": [
+        "Probabilidad de deslizamientos en laderas saturadas y de interrupción de vías rurales."
+      ]
+    },
+    "Sierra centro": {
+      "agro": [
+        "Lluvias {lluvia} respecto de lo normal en {r}. La siembra grande de octubre a diciembre es la decisión más sensible a este escenario."
+      ],
+      "agua": [
+        "Caudales {rios} respecto del promedio."
+      ],
+      "riesgo": [
+        "Riesgo de heladas y de veranillos prolongados dentro de la temporada de lluvias."
+      ]
+    },
+    "Sierra sur": {
+      "agro": [
+        "Lluvias {lluvia} respecto de lo normal en {r}. En eventos cálidos la sierra sur tiende al déficit, lo contrario de la costa norte, y es el patrón que más se repite en los años análogos.",
+        "El retraso del inicio de lluvias es el impacto más frecuente: afecta la siembra de papa y quinua y obliga a decidir entre sembrar tarde o reducir el área."
+      ],
+      "agua": [
+        "Caudales {rios} respecto del promedio. La disponibilidad en cabecera de cuenca es el punto a vigilar, junto con el nivel de las lagunas reguladas."
+      ],
+      "riesgo": [
+        "Riesgo de sequía agrícola y de heladas durante veranillos. La ganadería altoandina es el sector más expuesto."
+      ]
+    },
+    "Selva norte": {
+      "agro": [
+        "Lluvias {lluvia} respecto de lo normal en {r}."
+      ],
+      "agua": [
+        "Caudales {rios} respecto del promedio. En la selva norte el riesgo está asociado a crecidas de ríos amazónicos."
+      ],
+      "riesgo": [
+        "Probabilidad de inundación ribereña en comunidades de la llanura."
+      ]
+    },
+    "Selva sur": {
+      "agro": [
+        "Lluvias {lluvia} respecto de lo normal en {r}."
+      ],
+      "agua": [
+        "Caudales {rios} respecto del promedio."
+      ],
+      "riesgo": [
+        "Riesgo de friajes y de variación en el nivel de los ríos."
+      ]
+    }
+  },
+  "antecedentes": {
+    "Costa norte": "En 1997-98, con anomalías comparables en la región Niño 1+2, la biomasa de anchoveta cayó drásticamente y se suspendieron temporadas de pesca. En 2017, El Niño costero dejó lluvias extremas e inundaciones en Piura y Tumbes.",
+    "Costa centro": "En 2017 las lluvias en la cuenca alta activaron quebradas en Lima y afectaron el abastecimiento de agua potable durante varios días.",
+    "Costa sur": "Los eventos cálidos de 1982-83 y 1997-98 coincidieron con déficit de lluvia en la vertiente sur occidental.",
+    "Sierra sur": "Durante 1982-83 y 1997-98 la sierra sur registró déficit de precipitación e inicio tardío de la temporada de lluvias, con pérdidas en campañas de papa y quinua.",
+    "Sierra centro": "En eventos cálidos previos se observaron veranillos más largos dentro de la temporada de lluvias.",
+    "Sierra norte": "En 2017 se registraron deslizamientos y pérdida de conectividad vial en varias provincias.",
+    "Selva norte": "Los eventos cálidos han coincidido con variaciones marcadas en el nivel de los ríos amazónicos.",
+    "Selva sur": "Sin antecedentes documentados suficientes para esta zona en el catálogo actual del equipo."
+  }
+}

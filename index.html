@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ENSO Perú · Monitoreo de El Niño y sus impactos</title>
+<meta name="description" content="Monitoreo de El Niño en el Perú. Estado del océano, pronósticos estacionales e interpretación por región y actividad económica.">
+<meta name="theme-color" content="#F1F4F1">
+
+<!--
+  ENSO PERÚ · ensoperu.pe
+  Geoservidor de monitoreo de El Niño y sus impactos en el Perú.
+
+  Este archivo solo contiene estructura. La presentación está en
+  assets/styles.css, la lógica en assets/app.js y los datos en data/.
+  Ver README.md para el detalle de cada archivo de datos.
+
+  IMPORTANTE: no abrir con doble click. El navegador bloquea la lectura de
+  archivos locales. Usar:  python3 -m http.server 8000
+-->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Serif:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+
+<header>
+  <a class="brand" href="#" onclick="ir('home');return false">
+    <span class="beak"></span>
+    <b>ENSO Perú</b>
+    <span>ensoperu.pe</span>
+  </a>
+  <nav>
+    <button id="nav-home"  aria-current="true"  onclick="ir('home')">Inicio</button>
+    <button id="nav-mapa"  aria-current="false" onclick="ir('mapa')">Mapa</button>
+    <button id="nav-about" aria-current="false" onclick="ir('about')">Acerca de</button>
+  </nav>
+</header>
+
+<!-- ══ PORTADA ══════════════════════════════════════════════════════════
+     El héroe es la curva de anomalía de temperatura del mar, no un número
+     grande con degradado. Es la imagen más reconocible del monitoreo de
+     El Niño y explica de un vistazo dónde estamos parados.            -->
+<main id="v-home" class="view on">
+
+  <div class="band">
+    <div class="band-meta">
+      Anomalía diaria de temperatura del mar · región <em>Niño 1+2</em>
+      <span class="demo">serie de demostración</span>
+    </div>
+    <svg id="hero" viewBox="0 0 1200 240" preserveAspectRatio="none"
+         aria-label="Serie de anomalía de temperatura superficial del mar"></svg>
+  </div>
+
+  <div class="wrap">
+    <div class="lede">
+      <h1>El mar frente al Perú está <i>más caliente de lo normal</i>, y eso cambia el año que viene.</h1>
+      <p>Esta herramienta reúne lo que el ENFEN, el SENAMHI y los modelos globales ya publican, y lo traduce a una respuesta concreta para tu región y tu actividad.</p>
+
+      <!-- Cinta del sistema de alerta del ENFEN -->
+      <div class="ribbon" id="ribbon" role="group" aria-label="Estado del sistema de alerta del ENFEN"></div>
+    </div>
+  </div>
+
+  <dl class="idx">
+    <div><dt>ICEN</dt><dd id="k-icen">–</dd><small>Índice Costero El Niño, del ENFEN.</small></div>
+    <div><dt>RONI</dt><dd id="k-roni">–</dd><small>Índice oceánico relativo al Niño 3.4.</small></div>
+    <div><dt>Anomalía Niño 1+2</dt><dd id="k-n12">–</dd><small>Frente a la costa norte del Perú.</small></div>
+    <div><dt>Anomalía Niño 3.4</dt><dd id="k-n34">–</dd><small>Pacífico central ecuatorial.</small></div>
+  </dl>
+
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <div class="thermo"></div>
+        <h2>Qué tan fuerte sería el verano 2026-2027</h2>
+        <p class="sub">Probabilidad por magnitud en la región Niño 1+2, según el ENFEN.</p>
+        <div class="prob" id="probs"></div>
+        <button class="cta" onclick="ir('mapa')">Ver mi región en el mapa</button>
+      </div>
+      <div>
+        <div class="thermo"></div>
+        <h2>Últimos comunicados</h2>
+        <p class="sub">Comité multisectorial ENFEN.</p>
+        <div id="bulletins"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <footer>
+      <p>ENSO Perú es un proyecto académico independiente. No es una fuente de pronóstico oficial: el ENFEN y el SENAMHI son la autoridad en la materia.</p>
+      <p>Para decisiones operativas consulte los comunicados oficiales del ENFEN, los avisos del SENAMHI y, en el caso pesquero, a IMARPE y PRODUCE.</p>
+    </footer>
+  </div>
+</main>
+
+<!-- ══ MAPA ════════════════════════════════════════════════════════════ -->
+<main id="v-mapa" class="view">
+  <div class="mapview">
+
+    <aside class="rail">
+      <section>
+        <h3>Capa</h3>
+        <div id="layers"></div>
+      </section>
+      <section>
+        <h3>Extensión</h3>
+        <div class="scope">
+          <button id="sc-peru" aria-pressed="true"  onclick="setScope('peru')">Perú</button>
+          <button id="sc-pac"  aria-pressed="false" onclick="setScope('pac')">Pacífico</button>
+        </div>
+      </section>
+      <section>
+        <h3 id="leg-title">Escala</h3>
+        <div class="legend" id="legend"></div>
+        <div class="legend-ends"><span id="leg-lo"></span><span id="leg-hi"></span></div>
+      </section>
+    </aside>
+
+    <div class="stage" id="stage">
+      <svg id="map" role="img" aria-label="Mapa del Perú por departamentos"></svg>
+      <div class="tip" id="tip"></div>
+      <div class="months" id="months"></div>
+    </div>
+
+    <aside class="panel" id="panel">
+      <div class="grab"></div>
+      <div class="empty">
+        <b>Elige una región en el mapa</b>
+        Cada región abre su lectura del momento y del mes que selecciones abajo, con lo que eso significa para la pesca, la agricultura, el agua y el riesgo de desastres.
+      </div>
+    </aside>
+
+  </div>
+</main>
+
+<!-- ══ ACERCA DE ═══════════════════════════════════════════════════════ -->
+<main id="v-about" class="view">
+  <div class="wrap">
+    <article class="about">
+      <div class="thermo"></div>
+      <h1>Qué es esto y qué no es</h1>
+      <p>ENSO Perú traduce a lenguaje y escala útiles lo que el ENFEN, el SENAMHI, el IMARPE y los centros globales de pronóstico ya publican. Toma el dato técnico, lo ubica en un mapa y responde una sola pregunta: <strong>qué puede pasar en mi región y en mi actividad.</strong></p>
+      <p>No producimos pronósticos. El ENFEN y el SENAMHI son la autoridad oficial en el Perú, y toda decisión operativa debe apoyarse en sus comunicados.</p>
+
+      <h2>De dónde salen los datos</h2>
+      <p>Temperatura del mar de NOAA OISST y de OSTIA a través del SIOFEN del IMARPE. Índices ONI y RONI del Climate Prediction Center, e ICEN del ENFEN. Pronóstico estacional de ECMWF SEAS5, NMME e IRI. Precipitación de CHIRPS. Sequía a partir de los productos SPI e ISPI del SENAMHI. Hidrología del SENAMHI y de la ANA.</p>
+
+      <h2>Cómo se generan los análisis</h2>
+      <p>Los textos por región los redacta un modelo de inteligencia artificial, pero <strong>no estima nada</strong>: recibe los valores ya calculados, los antecedentes históricos que el equipo documentó, y la redacción del comunicado ENFEN vigente. Su trabajo es traducir, no pronosticar. Cada texto queda marcado como generado con IA, guarda las entradas exactas que recibió el modelo y cita sus fuentes.</p>
+      <p>Los análisis se generan por adelantado, una vez al día. Cuando alguien abre una región no se consulta ningún modelo en vivo, se lee un archivo que ya estaba escrito.</p>
+
+      <h2>Quiénes somos</h2>
+      <p>Cuatro meteorólogos peruanos. El proyecto es abierto, sin fines de lucro y sin publicidad.</p>
+    </article>
+    <footer>
+      <p>Código abierto. El contenido puede reutilizarse citando la fuente.</p>
+    </footer>
+  </div>
+</main>
+
+<script src="assets/app.js"></script>
+</body>
+</html>

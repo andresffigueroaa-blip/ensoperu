@@ -1,0 +1,52 @@
+{
+  "_": "Estado ENSO actual. Lo publica el pipeline a partir de los comunicados del ENFEN y de los indices del CPC.",
+  "actualizado": "2026-09-12",
+  "estados": [
+    "No activo",
+    "Vigilancia",
+    "Alerta de El Niño Costero",
+    "Final del evento"
+  ],
+  "alerta": "Alerta de El Niño Costero",
+  "icen": 1.7,
+  "roni": 1.2,
+  "n12": 2.4,
+  "n34": 1.1,
+  "probs": [
+    {
+      "m": "Débil",
+      "p": 6,
+      "c": "#E9C46A"
+    },
+    {
+      "m": "Moderado",
+      "p": 23,
+      "c": "#E2913C"
+    },
+    {
+      "m": "Fuerte",
+      "p": 38,
+      "c": "#D9452C"
+    },
+    {
+      "m": "Extraordinario",
+      "p": 33,
+      "c": "#8E0F16"
+    }
+  ],
+  "probsFuente": "ENFEN, Comunicado Oficial N° 13-2026. Verano 2026-2027, región Niño 1+2.",
+  "comunicados": [
+    {
+      "f": "29 ago 2026",
+      "t": "Se mantiene la Alerta de El Niño Costero. Anomalías cálidas persisten frente a la costa norte."
+    },
+    {
+      "f": "31 jul 2026",
+      "t": "La anchoveta continúa replegada hacia el litoral y a mayor profundidad que lo normal."
+    },
+    {
+      "f": "26 jun 2026",
+      "t": "Ingreso de especies indicadoras de aguas ecuatoriales en el norte: pez sierra, ayamarca y samasa."
+    }
+  ]
+}

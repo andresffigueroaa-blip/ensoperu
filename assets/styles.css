@@ -1,0 +1,276 @@
+/* ════════════════════════════════════════════════════════════════════════
+   ENSO PERÚ · Sistema de diseño
+   ════════════════════════════════════════════════════════════════════════
+
+   CONCEPTO: "termoclina"
+
+   Toda la identidad sale de los dos polos térmicos que definen el fenómeno.
+   Frío: el teal de la corriente de Humboldt, el estado normal del mar
+   peruano. Cálido: la anomalía de El Niño, que cae en la misma familia que
+   el rojo de la bandera. El rojo del país y el rojo de la anomalía extrema
+   resultan ser el mismo color.
+
+   La interfaz es clara, como la de un portal científico. El mapa es la única
+   superficie oscura: así se separa visualmente el dato de la herramienta, y
+   la escala de anomalías (que tiene blanco en el valor neutro) se lee bien.
+
+   Azules y rojos están reservados EXCLUSIVAMENTE para la escala de
+   anomalías. Nunca se usan como decoración.
+   ════════════════════════════════════════════════════════════════════════ */
+
+:root{
+  /* Interfaz */
+  --paper:#F1F4F1; --paper-2:#FFFFFF; --paper-3:#E5EBE6; --paper-4:#D9E1DB;
+  --rule:#D0D9D3; --rule-soft:#E2E8E3;
+  --ink:#101A1D; --fog:#55666A; --fog-dim:#84959A;
+
+  /* Escenario del mapa, única superficie oscura */
+  --stage:#152128; --stage-2:#1D2E37; --stage-3:#263C45;
+  --stage-rule:#2E444E; --stage-ink:#E7EDEC; --stage-fog:#8CA2A8;
+
+  /* Polos térmicos */
+  --cold:#1B6A87;
+  --accent:#D9452C; --accent-ink:#FFF4F1; --accent-wash:rgba(217,69,44,.10);
+  --alert:#B4101C;
+
+  --serif:"IBM Plex Serif",Georgia,serif;
+  --sans:"IBM Plex Sans","Helvetica Neue",Arial,sans-serif;
+  --maxw:1440px;
+}
+
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{
+  background:var(--paper); color:var(--ink);
+  font-family:var(--sans); font-size:15px; line-height:1.55;
+  -webkit-font-smoothing:antialiased;
+  font-variant-numeric:tabular-nums;
+}
+h1,h2,h3{font-family:var(--serif); font-weight:400; letter-spacing:-.01em; margin:0}
+p{margin:0}
+button{font:inherit; color:inherit; background:none; border:none; cursor:pointer}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--accent); outline-offset:2px; border-radius:2px}
+@media (prefers-reduced-motion:reduce){*{animation:none!important; transition:none!important}}
+
+/* Filete térmico: la propia escala de anomalías usada como regla tipográfica.
+   Único recurso gráfico repetido del sistema, y no es decoración: recuerda
+   qué significan los colores del mapa. */
+.thermo{
+  height:3px; width:96px; border-radius:2px; margin-bottom:15px;
+  background:linear-gradient(90deg,#163D66,#1B6A87,#79A8B4,#DEE2DC,#F0C178,#E18C3E,#D9452C,#8E0F16);
+}
+
+/* ── CABECERA ─────────────────────────────────────────────────────────── */
+header{
+  position:sticky; top:0; z-index:50;
+  display:flex; align-items:center; gap:28px;
+  padding:0 20px; height:58px;
+  background:rgba(255,255,255,.92); backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--rule);
+}
+.brand{display:flex; align-items:baseline; gap:9px; margin-right:auto; text-decoration:none}
+.brand b{font-family:var(--serif); font-weight:400; font-size:20px}
+.brand span{font-size:11px; color:var(--fog-dim); letter-spacing:.06em}
+/* Marca: punto térmico de dos capas, núcleo cálido y anillo frío */
+.beak{
+  width:12px; height:12px; border-radius:50%; flex:none; align-self:center;
+  background:radial-gradient(circle at 50% 50%,
+    var(--accent) 0 34%, #E4E9E2 34% 58%, var(--cold) 58% 100%);
+}
+nav{display:flex; gap:4px}
+nav button{padding:7px 13px; border-radius:3px; font-size:14px; color:var(--fog)}
+nav button:hover{color:var(--ink); background:var(--paper-3)}
+nav button[aria-current="true"]{color:var(--ink); background:var(--paper-4)}
+
+/* ── VISTAS ───────────────────────────────────────────────────────────── */
+.view{display:none}
+.view.on{display:block}
+.wrap{max-width:var(--maxw); margin:0 auto; padding:0 20px}
+
+/* ── PORTADA · la curva de anomalía es el héroe ───────────────────────── */
+.band{position:relative; background:var(--paper-2); border-bottom:1px solid var(--rule)}
+.band svg{display:block; width:100%; height:clamp(180px,26vh,260px)}
+.band-meta{position:absolute; left:20px; top:16px; font-size:12px; color:var(--fog-dim)}
+.band-meta em{font-style:normal; color:var(--fog)}
+.demo{
+  display:inline-block; margin-left:8px; padding:1px 7px; border-radius:2px;
+  border:1px solid var(--rule); color:var(--fog-dim); font-size:11px;
+}
+
+.lede{padding:44px 0 40px; max-width:700px}
+.lede h1{font-size:clamp(32px,5vw,50px); line-height:1.1}
+.lede h1 i{font-style:italic; color:var(--accent)}
+.lede p{margin-top:18px; font-family:var(--serif); font-size:18px; line-height:1.7; color:var(--fog)}
+
+/* Cinta del sistema de alerta ENFEN: los cuatro estados posibles.
+   Es información estructural, muestra en cuál estamos. */
+.ribbon{display:flex; border:1px solid var(--rule); border-radius:3px; overflow:hidden;
+        margin-top:30px; background:var(--paper-2)}
+.ribbon div{flex:1; padding:11px 12px; font-size:13px; color:var(--fog-dim);
+            border-right:1px solid var(--rule-soft); text-align:center}
+.ribbon div:last-child{border-right:none}
+.ribbon div[data-on]{background:var(--accent); color:var(--accent-ink); font-weight:600}
+
+/* Índices: separados por filetes, no por tarjetas */
+.idx{display:grid; grid-template-columns:repeat(4,1fr); background:var(--paper-2);
+     border-top:1px solid var(--rule); border-bottom:1px solid var(--rule)}
+.idx div{padding:22px 20px 24px; border-right:1px solid var(--rule-soft)}
+.idx div:last-child{border-right:none}
+.idx dt{font-size:12.5px; color:var(--fog-dim); margin-bottom:9px}
+.idx dd{margin:0; font-size:36px; font-family:var(--serif); line-height:1}
+.idx small{display:block; margin-top:9px; font-size:12px; color:var(--fog); line-height:1.45}
+
+.cols{display:grid; grid-template-columns:1.1fr 1fr; gap:56px; padding:48px 0 60px; align-items:start}
+.cols h2{font-size:25px; margin-bottom:6px}
+.sub{font-size:13.5px; color:var(--fog-dim); margin-bottom:22px}
+
+.prob{display:flex; flex-direction:column; gap:11px}
+.prob-row{display:grid; grid-template-columns:118px 1fr 44px; align-items:center; gap:13px; font-size:13.5px}
+.prob-bar{height:12px; background:var(--paper-3); border-radius:2px; overflow:hidden}
+.prob-bar i{display:block; height:100%; border-radius:2px}
+.prob-row b{font-weight:500; text-align:right; font-size:13px}
+
+.bul{border-top:1px solid var(--rule-soft); padding:14px 0; display:flex; gap:16px; align-items:baseline}
+.bul time{font-size:12.5px; color:var(--fog-dim); flex:none; width:78px}
+.bul p{font-size:14px; line-height:1.5}
+
+.cta{display:inline-flex; align-items:center; margin-top:26px;
+     background:var(--accent); color:var(--accent-ink); font-weight:600; font-size:15px;
+     padding:13px 22px; border-radius:3px}
+.cta:hover{filter:brightness(1.07)}
+
+footer{border-top:1px solid var(--rule); padding:26px 0 44px; font-size:12.5px; color:var(--fog-dim)}
+footer p+p{margin-top:8px}
+
+/* ── MAPA ─────────────────────────────────────────────────────────────── */
+.mapview{display:grid; grid-template-columns:232px 1fr 380px; height:calc(100dvh - 58px)}
+
+.rail{border-right:1px solid var(--rule); overflow-y:auto; background:var(--paper-2)}
+.rail section{padding:18px 18px 20px; border-bottom:1px solid var(--rule-soft)}
+.rail h3{font-size:12.5px; font-family:var(--sans); font-weight:600; color:var(--fog); margin-bottom:12px}
+.layer{display:flex; align-items:center; gap:10px; width:100%; padding:8px 9px;
+       border-radius:3px; font-size:13.5px; color:var(--fog); text-align:left}
+.layer:hover{background:var(--paper-3); color:var(--ink)}
+.layer[aria-pressed="true"]{background:var(--paper-4); color:var(--ink)}
+.layer i{width:7px; height:7px; border-radius:50%; background:var(--rule); flex:none}
+.layer[aria-pressed="true"] i{background:var(--accent)}
+
+.scope{display:flex; border:1px solid var(--rule); border-radius:3px; overflow:hidden}
+.scope button{flex:1; padding:8px; font-size:13px; color:var(--fog)}
+.scope button[aria-pressed="true"]{background:var(--paper-4); color:var(--ink)}
+
+.legend{display:flex; height:9px; border-radius:2px; overflow:hidden; margin-bottom:8px}
+.legend i{flex:1}
+.legend-ends{display:flex; justify-content:space-between; font-size:11.5px; color:var(--fog-dim)}
+
+/* El escenario del mapa es la única superficie oscura de la interfaz */
+.stage{position:relative; background:var(--stage); overflow:hidden}
+.stage svg{width:100%; height:100%; display:block}
+.grat{stroke:#2B4149; stroke-width:.6; fill:none; vector-effect:non-scaling-stroke}
+.gratlab{fill:#5A7178; font-family:var(--sans)}
+.dep{fill:var(--stage-3); stroke:var(--stage); stroke-width:.8; cursor:pointer;
+     vector-effect:non-scaling-stroke; transition:stroke .14s ease}
+.dep:hover{stroke:var(--stage-ink); stroke-width:1.4}
+.dep[data-sel]{stroke:var(--accent); stroke-width:2}
+.nbox{fill:none; stroke:var(--stage-fog); stroke-width:1.1; stroke-dasharray:5 4;
+      vector-effect:non-scaling-stroke}
+.nbox-on{stroke:var(--accent); stroke-dasharray:none}
+.nlab{fill:var(--stage-fog); font-family:var(--sans); font-weight:500}
+
+.tip{position:absolute; pointer-events:none; opacity:0; transition:opacity .12s;
+     background:var(--paper-2); border:1px solid var(--rule); border-radius:3px;
+     padding:7px 10px; font-size:12.5px; white-space:nowrap;
+     transform:translate(-50%,-140%); box-shadow:0 4px 14px rgba(0,0,0,.18)}
+.tip b{display:block; font-weight:500; margin-bottom:2px}
+.tip span{color:var(--fog)}
+
+.months{position:absolute; left:0; right:0; bottom:0; display:flex;
+        border-top:1px solid var(--stage-rule); background:rgba(21,33,40,.94); backdrop-filter:blur(10px)}
+.months button{flex:1; padding:13px 6px; font-size:13.5px; color:var(--stage-fog);
+               border-right:1px solid var(--stage-rule)}
+.months button:last-child{border-right:none}
+.months button small{display:block; font-size:11px; color:#6F878E; margin-top:2px}
+.months button:hover{color:var(--stage-ink)}
+.months button[aria-pressed="true"]{background:var(--stage-3); color:var(--stage-ink)}
+.months button[aria-pressed="true"] small{color:var(--accent)}
+
+/* ── PANEL DE REGIÓN ──────────────────────────────────────────────────── */
+.panel{border-left:1px solid var(--rule); overflow-y:auto; background:var(--paper-2)}
+.empty{padding:56px 26px; color:var(--fog-dim); font-size:14px; line-height:1.7}
+.empty b{display:block; font-family:var(--serif); font-size:19px; color:var(--ink);
+         font-weight:400; margin-bottom:10px}
+
+.p-head{padding:22px 24px 18px; border-bottom:1px solid var(--rule)}
+.p-head h2{font-size:29px; line-height:1.1}
+.p-head .zone{font-size:12.5px; color:var(--fog-dim); margin-top:5px}
+.p-when{margin-top:15px; padding:9px 12px; border-radius:3px; background:var(--paper-3);
+        font-size:13px; color:var(--fog)}
+.p-when b{color:var(--ink); font-weight:500}
+
+.reads{display:grid; grid-template-columns:1fr 1fr; border-bottom:1px solid var(--rule); margin:0}
+.reads div{padding:15px 24px; border-right:1px solid var(--rule-soft); border-top:1px solid var(--rule-soft)}
+.reads div:nth-child(2n){border-right:none}
+.reads dt{font-size:11.5px; color:var(--fog-dim)}
+.reads dd{margin:5px 0 0; font-size:21px; font-family:var(--serif)}
+
+.tabs{display:flex; border-bottom:1px solid var(--rule); padding:0 14px; gap:2px}
+.tabs button{padding:12px 10px; font-size:13.5px; color:var(--fog-dim); border-bottom:2px solid transparent}
+.tabs button:hover{color:var(--ink)}
+.tabs button[aria-selected="true"]{color:var(--ink); border-bottom-color:var(--accent)}
+
+.body{padding:22px 24px 34px}
+.body h3{font-family:var(--sans); font-size:12.5px; font-weight:600; color:var(--fog); margin:0 0 9px}
+.body p{font-family:var(--serif); font-size:15.5px; line-height:1.72}
+.body p+p{margin-top:13px}
+.hist{margin-top:24px; padding:16px 17px; border-left:2px solid var(--accent);
+      background:var(--paper-3); border-radius:0 3px 3px 0}
+.hist p{font-size:14.5px; line-height:1.66; color:var(--fog)}
+.hist p b{color:var(--ink); font-weight:500}
+.src{margin-top:22px; padding-top:16px; border-top:1px solid var(--rule-soft);
+     font-size:12px; color:var(--fog-dim); line-height:1.62}
+.ai{display:inline-flex; align-items:center; gap:6px; margin-bottom:10px;
+    padding:3px 9px; border:1px solid var(--rule); border-radius:2px; font-size:11.5px; color:var(--fog)}
+.ai i{width:5px; height:5px; border-radius:50%; background:var(--accent)}
+.ai.real i{background:var(--cold)}
+
+/* ── ACERCA DE ────────────────────────────────────────────────────────── */
+.about{padding:56px 0 78px; max-width:680px}
+.about h1{font-size:40px; margin-bottom:20px}
+.about p{font-family:var(--serif); font-size:16.5px; line-height:1.76; color:var(--fog)}
+.about p+p{margin-top:15px}
+.about h2{font-size:21px; margin:38px 0 12px; color:var(--ink)}
+.about strong{color:var(--ink); font-weight:400}
+
+/* ── RESPONSIVE ───────────────────────────────────────────────────────── */
+@media (max-width:1100px){
+  .mapview{grid-template-columns:200px 1fr 330px}
+  .cols{grid-template-columns:1fr; gap:42px}
+}
+@media (max-width:860px){
+  .idx{grid-template-columns:1fr 1fr}
+  .idx div:nth-child(2n){border-right:none}
+  .idx div:nth-child(-n+2){border-bottom:1px solid var(--rule-soft)}
+
+  .mapview{grid-template-columns:1fr; position:relative}
+  .rail{position:absolute; top:0; left:0; right:0; z-index:20; display:flex;
+        border-right:none; border-bottom:1px solid var(--rule); overflow-x:auto}
+  .rail section{border-bottom:none; border-right:1px solid var(--rule-soft); padding:12px 14px; flex:none}
+  .rail section:first-child{display:flex; gap:6px; align-items:center}
+  .rail h3{display:none}
+  .rail section:first-child .layer{width:auto; white-space:nowrap}
+  .stage{padding-top:56px}
+
+  /* En pantalla angosta el panel sube desde abajo como hoja deslizable */
+  .panel{position:absolute; left:0; right:0; bottom:0; z-index:30; max-height:66dvh;
+         border-left:none; border-top:1px solid var(--rule); border-radius:14px 14px 0 0;
+         transform:translateY(100%); transition:transform .3s cubic-bezier(.22,.8,.3,1);
+         box-shadow:0 -14px 40px rgba(16,26,29,.28)}
+  .panel.up{transform:translateY(0)}
+  .panel .empty{display:none}
+  .grab{width:38px; height:4px; border-radius:2px; background:var(--rule); margin:9px auto 0}
+  .months{bottom:auto; top:56px; border-top:none; border-bottom:1px solid var(--stage-rule)}
+  .lede h1{font-size:31px}
+  .cols{padding:34px 0 44px}
+}
+@media (min-width:861px){ .grab{display:none} }

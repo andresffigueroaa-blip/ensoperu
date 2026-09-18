@@ -1,0 +1,49 @@
+{
+  "_": "EJEMPLO del formato que produce el pipeline. Si este archivo existe, tiene prioridad sobre _plantillas.json.",
+  "region": "Tumbes",
+  "mes": "2027-02",
+  "generado": "2026-09-12T06:00:00Z",
+  "modelo": "claude-haiku-4-5",
+  "entradas": {
+    "tsm_anomalia": 3.3,
+    "icen": 1.7,
+    "roni": 1.2,
+    "probs_enfen": {
+      "debil": 6,
+      "moderado": 23,
+      "fuerte": 38,
+      "extraordinario": 33
+    },
+    "precipitacion_tercios": {
+      "bajo": 10,
+      "normal": 25,
+      "sobre": 65
+    },
+    "comunicado_enfen": "N° 13-2026",
+    "analogos": [
+      "1997-98",
+      "2015-16",
+      "2016-17"
+    ]
+  },
+  "sectores": {
+    "pesca": [
+      "El mar frente a Tumbes se proyecta entre +2 y +3 °C sobre lo normal para febrero de 2027. El ENFEN estima para el verano 2026-2027 un Niño Costero de magnitud fuerte (38 %) o extraordinaria (33 %).",
+      "Con anomalías de esta magnitud se espera que la anchoveta siga replegada hacia el litoral y a mayor profundidad, con mayor gasto de sus reservas energéticas. Aumenta la presencia de especies de aguas cálidas como samasa, ayamarca y pez sierra, y de especies oceánicas como barrilete, atún de aleta amarilla y melva.",
+      "Estas son probabilidades, no certezas: un escenario de magnitud moderada (23 %) implicaría efectos bastante más leves."
+    ],
+    "agro": [
+      "Precipitación por encima de lo normal con 65 % de probabilidad. En Tumbes el riesgo principal para arroz y banano es el anegamiento y la presión de enfermedades fungosas, no el déficit.",
+      "Conviene revisar drenajes antes de enero y evitar comprometer área en las partes más bajas del valle."
+    ],
+    "agua": [
+      "Caudales por encima del promedio. El problema esperable no es la escasez sino la turbidez y el arrastre de sedimento, que compromete la captación y el tratamiento de agua potable."
+    ],
+    "riesgo": [
+      "Escenario de lluvias intensas con probabilidad alta de activación de quebradas e inundación en zonas bajas. Los puntos más vulnerables son las vías y los puentes.",
+      "Es la zona del país con mayor exposición de población durante un evento cálido fuerte."
+    ]
+  },
+  "antecedentes": "En 1997-98, con anomalías comparables en la región Niño 1+2, la biomasa de anchoveta cayó drásticamente y se suspendieron temporadas de pesca. En 2017 El Niño costero dejó lluvias extremas e inundaciones en Tumbes y Piura, con pérdida de conectividad vial durante semanas.",
+  "fuentes": "Fuentes: ENFEN, Comunicado Oficial N° 13-2026; NOAA OISST v2; IMARPE SIOFEN; ECMWF SEAS5 y NMME. Interpretación generada con IA sobre datos oficiales. Para decisiones operativas consulte al ENFEN, a IMARPE y a PRODUCE."
+}

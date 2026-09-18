@@ -1,0 +1,83 @@
+{
+  "_": "Capas, meses y sectores disponibles. Agregar una capa aquí la hace aparecer en el riel del mapa.",
+  "capas": {
+    "tsm": {
+      "n": "Temperatura del mar",
+      "u": "°C",
+      "lo": -2,
+      "hi": 4,
+      "loTx": "-2 °C",
+      "hiTx": "+4 °C"
+    },
+    "lluvia": {
+      "n": "Precipitación",
+      "u": "%",
+      "lo": -80,
+      "hi": 150,
+      "loTx": "-80 %",
+      "hiTx": "+150 %"
+    },
+    "sequia": {
+      "n": "Sequía (SPI-6)",
+      "u": "",
+      "lo": -2.5,
+      "hi": 2.5,
+      "loTx": "-2.5",
+      "hiTx": "+2.5",
+      "invertida": true
+    },
+    "rios": {
+      "n": "Caudal de ríos",
+      "u": "%",
+      "lo": -60,
+      "hi": 120,
+      "loTx": "-60 %",
+      "hiTx": "+120 %"
+    }
+  },
+  "meses": [
+    {
+      "id": "now",
+      "n": "Ahora",
+      "s": "observado"
+    },
+    {
+      "id": "2027-01",
+      "n": "Enero",
+      "s": "2027"
+    },
+    {
+      "id": "2027-02",
+      "n": "Febrero",
+      "s": "2027"
+    },
+    {
+      "id": "2027-03",
+      "n": "Marzo",
+      "s": "2027"
+    },
+    {
+      "id": "2027-04",
+      "n": "Abril",
+      "s": "2027"
+    }
+  ],
+  "sectores": [
+    {
+      "id": "pesca",
+      "n": "Pesca"
+    },
+    {
+      "id": "agro",
+      "n": "Agricultura"
+    },
+    {
+      "id": "agua",
+      "n": "Agua"
+    },
+    {
+      "id": "riesgo",
+      "n": "Riesgo"
+    }
+  ]
+}
