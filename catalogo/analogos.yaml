@@ -1,0 +1,24 @@
+# ════════════════════════════════════════════════════════════════════════
+# AÑOS ANÁLOGOS · editable a mano
+# ════════════════════════════════════════════════════════════════════════
+# Cada evento se identifica por su AÑO DE DESARROLLO (el año en que la
+# anomalía crece hacia el pico de verano). La serie de cada evento cubre
+# de julio del año anterior a diciembre del año siguiente, y todas se
+# superponen en un eje común para compararlas (mismo criterio que el
+# notebook CODIGO_MONITOREO_ENSO_2026).
+#
+#   actual    año de desarrollo del evento en curso. Cambiarlo una vez al
+#             año, cuando empiece a desarrollarse un evento nuevo.
+#   analogos  años de desarrollo de los eventos de comparación.
+# ════════════════════════════════════════════════════════════════════════
+
+actual: 2026
+
+analogos:
+  - 1982   # 1982-83
+  - 1997   # 1997-98
+  - 2015   # 2015-16
+  - 2023   # 2023-24
+
+# Días de la media móvil centrada que suaviza las curvas (1 = sin suavizar)
+suavizado_dias: 7

@@ -1,0 +1,12 @@
+# ════════════════════════════════════════════════════════════════════════
+# SECTORES ECONÓMICOS · editable a mano
+# ════════════════════════════════════════════════════════════════════════
+# Cada sector es una pestaña del panel de región. Para que aparezca en una
+# zona, la zona debe tener textos para ese sector en plantillas.yaml (o la
+# región un análisis real que lo incluya).
+# ════════════════════════════════════════════════════════════════════════
+
+- {id: pesca,  nombre: Pesca}
+- {id: agro,   nombre: Agricultura}
+- {id: agua,   nombre: Agua}
+- {id: riesgo, nombre: Riesgo}

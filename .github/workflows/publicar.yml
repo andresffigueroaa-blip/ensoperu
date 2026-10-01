@@ -1,0 +1,89 @@
+# ════════════════════════════════════════════════════════════════════════
+# Actualizar datos y publicar la página
+# ════════════════════════════════════════════════════════════════════════
+# Corre solo:
+#   - todos los días a las 06:00 de Lima (11:00 UTC)
+#   - al apretar "Run workflow" en la pestaña Actions de GitHub
+#   - en cada push a main (para publicar cambios de diseño o de catálogo)
+#
+# Qué hace: corre el mismo pipeline que en la laptop, guarda en el repo los
+# JSON que cambiaron y publica la carpeta sitio/ en GitHub Pages.
+#
+# Si una fuente falla: la página se publica igual con el último dato bueno
+# (y lo dice), pero la corrida termina en rojo y GitHub manda un correo.
+# ════════════════════════════════════════════════════════════════════════
+name: Actualizar y publicar
+
+on:
+  schedule:
+    - cron: "0 11 * * *"
+  workflow_dispatch:
+    inputs:
+      historico:
+        description: "Años de OISST a reprocesar (p. ej. 1981-2025). Vacío = corrida normal."
+        required: false
+        default: ""
+  push:
+    branches: [main]
+
+permissions:
+  contents: write     # para guardar los datos nuevos en el repo
+  pages: write        # para publicar
+  id-token: write     # lo exige actions/deploy-pages
+
+# Nunca dos corridas a la vez: la segunda espera a que termine la primera
+concurrency:
+  group: publicar
+  cancel-in-progress: false
+
+jobs:
+  actualizar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    environment:
+      name: github-pages
+      url: ${{ steps.publicar.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Instalar dependencias
+        run: pip install -r requirements.txt
+
+      - name: Correr el pipeline
+        id: pipeline
+        continue-on-error: true      # se publica igual; el fallo se reporta al final
+        run: |
+          if [ -n "${{ github.event.inputs.historico }}" ]; then
+            python pipeline/run.py --solo oisst --historico "${{ github.event.inputs.historico }}"
+          fi
+          python pipeline/run.py
+
+      - name: Guardar datos nuevos en el repo
+        run: |
+          git config user.name  "ensoperu-bot"
+          git config user.email "ensoperu-bot@users.noreply.github.com"
+          git add sitio/datos
+          if git diff --cached --quiet; then
+            echo "Sin cambios en los datos."
+          else
+            git commit -m "datos: actualización automática $(date -u +%Y-%m-%d)"
+            git push
+          fi
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: sitio
+      - id: publicar
+        uses: actions/deploy-pages@v4
+
+      - name: Reportar fallo de alguna fuente
+        if: steps.pipeline.outcome == 'failure'
+        run: |
+          echo "::error::Al menos una fuente falló. La página quedó con el último dato bueno. Ver el resumen de la corrida."
+          exit 1

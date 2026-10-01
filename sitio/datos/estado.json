@@ -1,0 +1,73 @@
+{
+  "_": "Generado por pipeline/productos/estado.py desde catalogo/enfen.yaml y OISST. No editar a mano.",
+  "alerta": {
+    "estado": "Alerta de El Niño Costero",
+    "estados": [
+      "No activo",
+      "Vigilancia",
+      "Alerta de El Niño Costero",
+      "Final del evento"
+    ],
+    "fuente": "ENFEN, Comunicado Oficial N° 13-2026",
+    "fecha": "2026-09-12"
+  },
+  "indices": {
+    "icen": {
+      "valor": null,
+      "fecha": null,
+      "fuente": "ENFEN (Índice Costero El Niño)"
+    },
+    "roni": {
+      "valor": null,
+      "fecha": null,
+      "fuente": "NOAA CPC (pendiente de conectar)"
+    },
+    "n12": {
+      "valor": 5.17,
+      "fecha": "2026-09-30",
+      "fuente": "NOAA OISST, media de 7 días en la región Niño 1+2"
+    },
+    "n34": {
+      "valor": 3.17,
+      "fecha": "2026-09-30",
+      "fuente": "NOAA OISST, media de 7 días en la región Niño 3.4"
+    }
+  },
+  "probabilidades": {
+    "periodo": "verano 2026-2027",
+    "region": "Niño 1+2",
+    "fuente": "ENFEN, Comunicado Oficial N° 13-2026",
+    "valores": [
+      {
+        "magnitud": "Débil",
+        "p": 6
+      },
+      {
+        "magnitud": "Moderado",
+        "p": 23
+      },
+      {
+        "magnitud": "Fuerte",
+        "p": 38
+      },
+      {
+        "magnitud": "Extraordinario",
+        "p": 33
+      }
+    ]
+  },
+  "comunicados": [
+    {
+      "fecha": "2026-08-29",
+      "texto": "Se mantiene la Alerta de El Niño Costero. Anomalías cálidas persisten frente a la costa norte."
+    },
+    {
+      "fecha": "2026-07-31",
+      "texto": "La anchoveta continúa replegada hacia el litoral y a mayor profundidad que lo normal."
+    },
+    {
+      "fecha": "2026-06-26",
+      "texto": "Ingreso de especies indicadoras de aguas ecuatoriales en el norte: pez sierra, ayamarca y samasa."
+    }
+  ]
+}

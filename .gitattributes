@@ -1,2 +1,4 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+# Todo el texto con fin de línea LF, también en Windows
+* text=auto eol=lf
+*.nc binary
+*.png binary

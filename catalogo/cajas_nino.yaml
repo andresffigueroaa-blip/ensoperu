@@ -1,0 +1,14 @@
+# ════════════════════════════════════════════════════════════════════════
+# REGIONES NIÑO · definición estándar (NOAA CPC)
+# ════════════════════════════════════════════════════════════════════════
+# Longitudes en grados ESTE de 0 a 360, como vienen en OISST.
+# Niño 4 cruza la línea de cambio de fecha: 160°E a 150°W = 160 a 210.
+#
+# Las usa el pipeline para promediar la TSM y build_geo.py para dibujar los
+# recuadros en la vista Pacífico. No cambiar sin una razón documentada.
+# ════════════════════════════════════════════════════════════════════════
+
+n12: {nombre: "Niño 1+2", lat: [-10, 0], lon: [270, 280]}   # 90°W a 80°W
+n3:  {nombre: "Niño 3",   lat: [-5, 5],  lon: [210, 270]}   # 150°W a 90°W
+n34: {nombre: "Niño 3.4", lat: [-5, 5],  lon: [190, 240]}   # 170°W a 120°W
+n4:  {nombre: "Niño 4",   lat: [-5, 5],  lon: [160, 210]}   # 160°E a 150°W

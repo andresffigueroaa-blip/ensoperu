@@ -1,0 +1,165 @@
+# ════════════════════════════════════════════════════════════════════════
+# REGIONES · editable a mano
+# ════════════════════════════════════════════════════════════════════════
+# La clave (p. ej. "Madre De Dios") es el identificador: debe coincidir con
+# el nombre del departamento en sitio/datos/geo/departamentos.json.
+#
+#   nombre   cómo se muestra en la página (con tildes)
+#   zona     zona climática; elige qué plantillas de texto se usan
+#   litoral  true si tiene mar (activa la capa de temperatura del mar)
+#   demo     valores de DEMOSTRACIÓN por capa. Se usan solo para las capas
+#            que todavía no tienen fuente real (ver capas.yaml). Cuando una
+#            capa tenga fuente, el pipeline ignora este valor.
+#
+# Para agregar una región: copia un bloque, cambia la clave y los campos.
+# ════════════════════════════════════════════════════════════════════════
+
+"Tumbes":
+  nombre: Tumbes
+  zona: Costa norte
+  litoral: true
+  demo: {tsm: 2.9, lluvia: 130, sequia: 1.4, rios: 95}
+
+"Piura":
+  nombre: Piura
+  zona: Costa norte
+  litoral: true
+  demo: {tsm: 2.7, lluvia: 120, sequia: 1.2, rios: 88}
+
+"Lambayeque":
+  nombre: Lambayeque
+  zona: Costa norte
+  litoral: true
+  demo: {tsm: 2.2, lluvia: 85, sequia: 0.9, rios: 64}
+
+"La Libertad":
+  nombre: La Libertad
+  zona: Costa norte
+  litoral: true
+  demo: {tsm: 1.8, lluvia: 60, sequia: 0.5, rios: 47}
+
+"Cajamarca":
+  nombre: Cajamarca
+  zona: Sierra norte
+  litoral: false
+  demo: {tsm: null, lluvia: 35, sequia: 0.3, rios: 30}
+
+"Amazonas":
+  nombre: Amazonas
+  zona: Selva norte
+  litoral: false
+  demo: {tsm: null, lluvia: 20, sequia: 0.1, rios: 22}
+
+"San Martin":
+  nombre: San Martín
+  zona: Selva norte
+  litoral: false
+  demo: {tsm: null, lluvia: 15, sequia: 0.0, rios: 18}
+
+"Loreto":
+  nombre: Loreto
+  zona: Selva norte
+  litoral: false
+  demo: {tsm: null, lluvia: 10, sequia: -0.1, rios: 14}
+
+"Ancash":
+  nombre: Áncash
+  zona: Costa centro
+  litoral: true
+  demo: {tsm: 1.4, lluvia: 25, sequia: 0.1, rios: 20}
+
+"Lima":
+  nombre: Lima
+  zona: Costa centro
+  litoral: true
+  demo: {tsm: 1.2, lluvia: 15, sequia: -0.2, rios: 12}
+
+"Callao":
+  nombre: Callao
+  zona: Costa centro
+  litoral: true
+  demo: {tsm: 1.2, lluvia: 10, sequia: -0.2, rios: 10}
+
+"Ica":
+  nombre: Ica
+  zona: Costa sur
+  litoral: true
+  demo: {tsm: 0.9, lluvia: -10, sequia: -0.5, rios: -5}
+
+"Arequipa":
+  nombre: Arequipa
+  zona: Costa sur
+  litoral: true
+  demo: {tsm: 0.7, lluvia: -35, sequia: -1.1, rios: -28}
+
+"Moquegua":
+  nombre: Moquegua
+  zona: Costa sur
+  litoral: true
+  demo: {tsm: 0.6, lluvia: -40, sequia: -1.3, rios: -32}
+
+"Tacna":
+  nombre: Tacna
+  zona: Costa sur
+  litoral: true
+  demo: {tsm: 0.5, lluvia: -45, sequia: -1.4, rios: -35}
+
+"Huanuco":
+  nombre: Huánuco
+  zona: Sierra centro
+  litoral: false
+  demo: {tsm: null, lluvia: -5, sequia: -0.3, rios: -2}
+
+"Pasco":
+  nombre: Pasco
+  zona: Sierra centro
+  litoral: false
+  demo: {tsm: null, lluvia: -12, sequia: -0.5, rios: -8}
+
+"Junin":
+  nombre: Junín
+  zona: Sierra centro
+  litoral: false
+  demo: {tsm: null, lluvia: -18, sequia: -0.7, rios: -14}
+
+"Huancavelica":
+  nombre: Huancavelica
+  zona: Sierra centro
+  litoral: false
+  demo: {tsm: null, lluvia: -25, sequia: -0.9, rios: -20}
+
+"Ayacucho":
+  nombre: Ayacucho
+  zona: Sierra sur
+  litoral: false
+  demo: {tsm: null, lluvia: -34, sequia: -1.2, rios: -27}
+
+"Apurimac":
+  nombre: Apurímac
+  zona: Sierra sur
+  litoral: false
+  demo: {tsm: null, lluvia: -38, sequia: -1.3, rios: -30}
+
+"Cusco":
+  nombre: Cusco
+  zona: Sierra sur
+  litoral: false
+  demo: {tsm: null, lluvia: -42, sequia: -1.5, rios: -33}
+
+"Puno":
+  nombre: Puno
+  zona: Sierra sur
+  litoral: false
+  demo: {tsm: null, lluvia: -48, sequia: -1.7, rios: -38}
+
+"Madre De Dios":
+  nombre: Madre de Dios
+  zona: Selva sur
+  litoral: false
+  demo: {tsm: null, lluvia: -15, sequia: -0.4, rios: -10}
+
+"Ucayali":
+  nombre: Ucayali
+  zona: Selva sur
+  litoral: false
+  demo: {tsm: null, lluvia: -8, sequia: -0.2, rios: -6}

@@ -1,5 +1,5 @@
 {
-  "_": "Capas, meses y sectores disponibles. Agregar una capa aquí la hace aparecer en el riel del mapa.",
+  "_": "Generado desde catalogo/ por el pipeline. Para cambiarlo, editar catalogo/*.yaml.",
   "capas": {
     "tsm": {
       "n": "Temperatura del mar",
@@ -7,7 +7,9 @@
       "lo": -2,
       "hi": 4,
       "loTx": "-2 °C",
-      "hiTx": "+4 °C"
+      "hiTx": "+4 °C",
+      "invertida": false,
+      "demo": true
     },
     "lluvia": {
       "n": "Precipitación",
@@ -15,7 +17,9 @@
       "lo": -80,
       "hi": 150,
       "loTx": "-80 %",
-      "hiTx": "+150 %"
+      "hiTx": "+150 %",
+      "invertida": false,
+      "demo": true
     },
     "sequia": {
       "n": "Sequía (SPI-6)",
@@ -24,7 +28,8 @@
       "hi": 2.5,
       "loTx": "-2.5",
       "hiTx": "+2.5",
-      "invertida": true
+      "invertida": true,
+      "demo": true
     },
     "rios": {
       "n": "Caudal de ríos",
@@ -32,7 +37,9 @@
       "lo": -60,
       "hi": 120,
       "loTx": "-60 %",
-      "hiTx": "+120 %"
+      "hiTx": "+120 %",
+      "invertida": false,
+      "demo": true
     }
   },
   "meses": [

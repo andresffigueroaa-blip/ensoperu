@@ -1,0 +1,42 @@
+# ════════════════════════════════════════════════════════════════════════
+# CAPAS DEL MAPA · editable a mano
+# ════════════════════════════════════════════════════════════════════════
+# Agregar una capa aquí la hace aparecer sola en el riel del mapa.
+#
+#   nombre     texto del botón y de la leyenda
+#   unidad     se agrega al valor ("°C", "%", o vacío)
+#   min, max   extremos de la escala de color
+#   invertida  true si los valores negativos son los "malos" (sequía)
+#   fuente     de dónde sale el valor. "demo" = todavía no hay fuente real
+#              y se usan los valores demo de regiones.yaml (la página lo
+#              marca como demostración)
+# ════════════════════════════════════════════════════════════════════════
+
+tsm:
+  nombre: Temperatura del mar
+  unidad: "°C"
+  min: -2
+  max: 4
+  fuente: demo
+
+lluvia:
+  nombre: Precipitación
+  unidad: "%"
+  min: -80
+  max: 150
+  fuente: demo
+
+sequia:
+  nombre: Sequía (SPI-6)
+  unidad: ""
+  min: -2.5
+  max: 2.5
+  invertida: true
+  fuente: demo
+
+rios:
+  nombre: Caudal de ríos
+  unidad: "%"
+  min: -60
+  max: 120
+  fuente: demo

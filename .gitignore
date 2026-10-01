@@ -1,6 +1,15 @@
+# Salidas locales
 dist/
+pipeline/cache/
 __pycache__/
 *.pyc
-.DS_Store
+*.tmp
+*.parcial
+
+# Entornos y secretos
+.venv/
 .env
-peru_dep.geojson
+
+# Sistema
+.DS_Store
+Thumbs.db

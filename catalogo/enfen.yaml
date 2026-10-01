@@ -1,0 +1,36 @@
+# ════════════════════════════════════════════════════════════════════════
+# ENFEN · ingreso MANUAL (hasta que el bloque 4 lea los comunicados solo)
+# ════════════════════════════════════════════════════════════════════════
+# Copiar del Comunicado Oficial vigente. Cada vez que salga uno nuevo:
+# actualizar comunicado, fecha, alerta y probabilidades. Un valor que no
+# se conoce va como null: la página muestra "pendiente", no inventa nada.
+# ════════════════════════════════════════════════════════════════════════
+
+comunicado: "N° 13-2026"
+fecha: 2026-09-12          # fecha del comunicado (AAAA-MM-DD)
+
+# Uno de: No activo | Vigilancia | Alerta de El Niño Costero | Final del evento
+alerta: Alerta de El Niño Costero
+
+# Índices que publica el ENFEN / IGP. null = todavía no conectado.
+icen: null
+icen_mes: null             # mes al que corresponde el ICEN (AAAA-MM)
+
+probabilidades:
+  periodo: verano 2026-2027
+  region: Niño 1+2
+  valores:                 # en %, deben sumar 100
+    Débil: 6
+    Moderado: 23
+    Fuerte: 38
+    Extraordinario: 33
+
+# Últimos comunicados, del más reciente al más antiguo.
+# OJO: estos textos venían de la maqueta; verificar contra los comunicados reales.
+comunicados:
+  - fecha: 2026-08-29
+    texto: Se mantiene la Alerta de El Niño Costero. Anomalías cálidas persisten frente a la costa norte.
+  - fecha: 2026-07-31
+    texto: La anchoveta continúa replegada hacia el litoral y a mayor profundidad que lo normal.
+  - fecha: 2026-06-26
+    texto: "Ingreso de especies indicadoras de aguas ecuatoriales en el norte: pez sierra, ayamarca y samasa."

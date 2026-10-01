@@ -1,0 +1,14 @@
+# ════════════════════════════════════════════════════════════════════════
+# MESES DEL SELECTOR · editable a mano
+# ════════════════════════════════════════════════════════════════════════
+# "now" es la condición observada. El resto son meses objetivo de
+# pronóstico estacional, en formato AAAA-MM. Agregar un mes aquí lo hace
+# aparecer en el selector; los análisis por región se buscan en
+# sitio/datos/analisis/<region>/<AAAA-MM>.json.
+# ════════════════════════════════════════════════════════════════════════
+
+- {id: now,     nombre: Ahora,   detalle: observado}
+- {id: 2027-01, nombre: Enero,   detalle: "2027"}
+- {id: 2027-02, nombre: Febrero, detalle: "2027"}
+- {id: 2027-03, nombre: Marzo,   detalle: "2027"}
+- {id: 2027-04, nombre: Abril,   detalle: "2027"}

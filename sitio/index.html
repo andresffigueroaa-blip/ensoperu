@@ -12,11 +12,11 @@
   Geoservidor de monitoreo de El Niño y sus impactos en el Perú.
 
   Este archivo solo contiene estructura. La presentación está en
-  assets/styles.css, la lógica en assets/app.js y los datos en data/.
-  Ver README.md para el detalle de cada archivo de datos.
+  assets/styles.css, la lógica en assets/app.js y los datos en datos/
+  (los escribe el pipeline; ver README.md).
 
   IMPORTANTE: no abrir con doble click. El navegador bloquea la lectura de
-  archivos locales. Usar:  python3 -m http.server 8000
+  archivos locales. Usar:  python pipeline/servir.py
 -->
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -47,8 +47,13 @@
 
   <div class="band">
     <div class="band-meta">
-      Anomalía diaria de temperatura del mar · región <em>Niño 1+2</em>
-      <span class="demo">serie de demostración</span>
+      Anomalía diaria de temperatura del mar ·
+      <span class="hero-idx" id="hero-idx" role="group" aria-label="Región Niño">
+        <button data-k="n12" aria-pressed="true"  onclick="setIndiceHero('n12')">Niño 1+2</button>
+        <button data-k="n34" aria-pressed="false" onclick="setIndiceHero('n34')">Niño 3.4</button>
+      </span>
+      <span class="demo" id="band-estado">cargando</span>
+      <span class="band-analogos" id="band-analogos"></span>
     </div>
     <svg id="hero" viewBox="0 0 1200 240" preserveAspectRatio="none"
          aria-label="Serie de anomalía de temperatura superficial del mar"></svg>
@@ -56,27 +61,29 @@
 
   <div class="wrap">
     <div class="lede">
-      <h1>El mar frente al Perú está <i>más caliente de lo normal</i>, y eso cambia el año que viene.</h1>
+      <!-- El titular lo escribe app.js a partir del dato: nunca a mano -->
+      <h1 id="titular">Monitoreo del mar frente al Perú y de sus impactos.</h1>
       <p>Esta herramienta reúne lo que el ENFEN, el SENAMHI y los modelos globales ya publican, y lo traduce a una respuesta concreta para tu región y tu actividad.</p>
 
       <!-- Cinta del sistema de alerta del ENFEN -->
       <div class="ribbon" id="ribbon" role="group" aria-label="Estado del sistema de alerta del ENFEN"></div>
+      <p class="ribbon-src" id="alerta-fuente"></p>
     </div>
   </div>
 
   <dl class="idx">
-    <div><dt>ICEN</dt><dd id="k-icen">–</dd><small>Índice Costero El Niño, del ENFEN.</small></div>
-    <div><dt>RONI</dt><dd id="k-roni">–</dd><small>Índice oceánico relativo al Niño 3.4.</small></div>
-    <div><dt>Anomalía Niño 1+2</dt><dd id="k-n12">–</dd><small>Frente a la costa norte del Perú.</small></div>
-    <div><dt>Anomalía Niño 3.4</dt><dd id="k-n34">–</dd><small>Pacífico central ecuatorial.</small></div>
+    <div><dt>ICEN</dt><dd id="k-icen">–</dd><small>Índice Costero El Niño, del ENFEN. <span id="f-icen"></span></small></div>
+    <div><dt>RONI</dt><dd id="k-roni">–</dd><small>Índice oceánico relativo al Niño 3.4. <span id="f-roni"></span></small></div>
+    <div><dt>Anomalía Niño 1+2</dt><dd id="k-n12">–</dd><small>Frente a la costa norte del Perú. Media de 7 días <span id="f-n12"></span>.</small></div>
+    <div><dt>Anomalía Niño 3.4</dt><dd id="k-n34">–</dd><small>Pacífico central ecuatorial. Media de 7 días <span id="f-n34"></span>.</small></div>
   </dl>
 
   <div class="wrap">
     <div class="cols">
       <div>
         <div class="thermo"></div>
-        <h2>Qué tan fuerte sería el verano 2026-2027</h2>
-        <p class="sub">Probabilidad por magnitud en la región Niño 1+2, según el ENFEN.</p>
+        <h2 id="probs-titulo">Qué tan fuerte sería el próximo verano</h2>
+        <p class="sub" id="probs-sub"></p>
         <div class="prob" id="probs"></div>
         <button class="cta" onclick="ir('mapa')">Ver mi región en el mapa</button>
       </div>
@@ -90,6 +97,10 @@
   </div>
 
   <div class="wrap">
+    <section class="fresh">
+      <h3>Estado de los datos</h3>
+      <ul id="frescura"></ul>
+    </section>
     <footer>
       <p>ENSO Perú es un proyecto académico independiente. No es una fuente de pronóstico oficial: el ENFEN y el SENAMHI son la autoridad en la materia.</p>
       <p>Para decisiones operativas consulte los comunicados oficiales del ENFEN, los avisos del SENAMHI y, en el caso pesquero, a IMARPE y PRODUCE.</p>

@@ -1,119 +1,158 @@
 # ENSO Perú
 
-Geoservidor de monitoreo de El Niño y sus impactos en el Perú.
-Traduce lo que el ENFEN, el SENAMHI y los modelos globales ya publican a una
-respuesta concreta por región y por actividad económica.
+Monitoreo de El Niño y sus impactos en el Perú. Traduce lo que el ENFEN, el
+SENAMHI, el IMARPE y los modelos globales ya publican a una respuesta concreta
+por región y por actividad económica.
 
-> **No es una fuente de pronóstico oficial.**
-> El ENFEN y el SENAMHI son la autoridad en la materia. Toda decisión
-> operativa debe apoyarse en sus comunicados.
+> **No es una fuente de pronóstico oficial.** El ENFEN y el SENAMHI son la
+> autoridad en la materia. Toda decisión operativa debe apoyarse en sus
+> comunicados.
 
----
-
-## Estado del proyecto
-
-Maqueta base navegable. Los datos son de demostración salvo donde se cita
-explícitamente al ENFEN. La estructura de archivos y los contratos de datos ya
-son los definitivos: conectar el pipeline consiste en **sobrescribir los JSON
-de `data/`**, sin tocar el código.
+Sitio: <https://andresffigueroaa-blip.github.io/ensoperu/>
 
 ---
 
-## Puesta en marcha
+## La idea en una línea
 
-No hay que instalar nada. No hay dependencias, ni compilación, ni `npm`.
+**El navegador nunca calcula nada: solo lee archivos que el pipeline ya
+preparó.** Por eso el sitio es gratis de operar, instantáneo, y no se cae
+aunque entren miles de personas a la vez.
+
+## Las tres máquinas
+
+```
+  ┌────────────────────────┐     ┌────────────────────────┐     ┌──────────────────────┐
+  │  GitHub Actions        │     │  Laptop                │     │  Servidor (Fase 2)   │
+  │  todos los días 06:00  │     │  pruebas y corrida     │     │  lo pesado: GFS,     │
+  │  + botón "Run workflow"│     │  manual                │     │  ECMWF, ERA5, COG    │
+  └──────────┬─────────────┘     └──────────┬─────────────┘     └──────────┬───────────┘
+             │  python pipeline/run.py      │  el mismo comando            │  servidor/
+             ▼                              ▼                              ▼
+     sitio/datos/*.json  ───────────────────────────────►  GitHub Pages     Cloudflare R2
+     (en el repo, auditables)                               (la página)     (rásters grandes)
+```
+
+| Carpeta | Quién la toca | Qué hay |
+|---|---|---|
+| `sitio/` | equipo de diseño | lo único que se publica: `index.html`, `assets/` |
+| `sitio/datos/` | **solo el pipeline** | JSON y CSV que lee la página; nadie los edita a mano |
+| `catalogo/` | cualquiera del equipo | regiones, capas, meses, sectores, textos, ENFEN manual (YAML con comentarios) |
+| `pipeline/` | equipo de datos | descarga, cálculo, validación; corre en Actions y en la laptop |
+| `servidor/` | equipo de datos | Fase 2: productos pesados que no caben en Actions (aún sin implementar) |
+| `.github/workflows/` | equipo de datos | la corrida diaria y la publicación |
+
+---
+
+## Puesta en marcha (laptop)
+
+Una vez:
 
 ```bash
-git clone https://github.com/<usuario>/ensoperu.git
+git clone https://github.com/andresffigueroaa-blip/ensoperu.git
 cd ensoperu
-python3 -m http.server 8000
+conda create -n ensoperu python=3.12        # o: python -m venv .venv
+conda activate ensoperu
+pip install -r requirements.txt
 ```
 
-Abrir <http://localhost:8000>.
+Cada vez:
 
-> **No abrir `index.html` con doble click.** El navegador bloquea la lectura de
-> archivos locales y la página no cargará los datos. Si necesitas una versión
-> que funcione así, genérala con `python3 pipeline/bundle.py` y usa
-> `dist/index.html`.
+```bash
+python pipeline/run.py        # actualiza todos los datos (≈ make update)
+python pipeline/servir.py     # abre http://localhost:8000  (≈ make serve)
+```
+
+`make update` y `make serve` hacen lo mismo si tienes `make`. En Windows con
+Git Bash normalmente no está: usa los comandos de `python` directamente.
+
+Otros comandos útiles:
+
+```bash
+python pipeline/run.py --lista                        # qué pasos hay
+python pipeline/run.py --solo oisst,serie_tsm         # solo algunos pasos
+python pipeline/run.py --solo oisst --historico 1997,1998   # reprocesar años
+python pipeline/herramientas/bundle.py                # página en un solo archivo: dist/index.html
+```
+
+> **No abrir `sitio/index.html` con doble click.** El navegador bloquea la
+> lectura de archivos locales. Usa `servir.py` o el archivo de `bundle.py`.
 
 ---
 
-## Publicación
+## Publicación automática (GitHub Actions)
 
-1. Cuenta en Cloudflare (gratuita)
-2. Pages → Connect to Git → elegir este repositorio
-3. Build command: *vacío* · Output directory: `/`
-4. Cada `git push` republica el sitio automáticamente
+El workflow `.github/workflows/publicar.yml` corre:
 
-Costo: cero. Sin límite de tráfico.
+- **solo**, todos los días a las 06:00 de Lima;
+- **con un botón**: pestaña *Actions* → *Actualizar y publicar* → *Run workflow*;
+- en cada `push` a `main`.
+
+Hace lo mismo que la laptop: corre `pipeline/run.py`, guarda en el repo los
+JSON que cambiaron (el historial de git queda como archivo auditable) y
+publica `sitio/` en GitHub Pages.
+
+**Si una fuente falla**, la página se publica igual con el último dato bueno, el
+bloque *Estado de los datos* de la portada lo dice, y la corrida termina en rojo:
+GitHub manda un correo a quien configuró el workflow.
+
+### Configuración inicial (una sola vez, en GitHub)
+
+1. *Settings* → *Pages* → *Source*: **GitHub Actions**.
+2. *Settings* → *Notifications* (de tu cuenta) → *Actions*: activar correo para
+   corridas fallidas.
+3. Solo para la Fase 4 (IA): *Settings* → *Secrets and variables* → *Actions* →
+   `ANTHROPIC_API_KEY`.
+
+> GitHub desactiva los workflows programados de repos públicos tras 60 días
+> sin actividad. Los commits diarios del bot lo mantienen activo; si se
+> desactiva, basta con apretar *Enable workflow*.
 
 ---
 
-## Estructura
+## Cómo agregar cosas (sin tocar código)
 
-```
-ensoperu/
-├─ index.html                       solo estructura
-├─ assets/
-│  ├─ styles.css                    sistema de diseño
-│  └─ app.js                        carga de datos, mapa y panel
-├─ data/                            ← todo lo que produce el pipeline
-│  ├─ estado.json                   estado ENSO actual
-│  ├─ config.json                   capas, meses y sectores
-│  ├─ regiones.json                 zonificación y valores por región
-│  ├─ series/sst.json               serie diaria de anomalía de TSM
-│  ├─ geo/departamentos.json        geometrías pre-proyectadas
-│  └─ analisis/
-│     ├─ _plantillas.json           textos de respaldo por zona
-│     └─ tumbes/2027-02.json        ejemplo del formato real
-├─ pipeline/
-│  ├─ build_geo.py                  GeoJSON → paths SVG proyectados
-│  └─ bundle.py                     empaqueta todo en un HTML suelto
-└─ README.md
-```
+| Quiero… | Edito… |
+|---|---|
+| Una región nueva o cambiar su zona | `catalogo/regiones.yaml` |
+| Una capa temática | `catalogo/capas.yaml` |
+| Otro mes de pronóstico | `catalogo/meses.yaml` |
+| Otro sector económico | `catalogo/sectores.yaml` y `catalogo/plantillas.yaml` |
+| Textos de respaldo o antecedentes | `catalogo/plantillas.yaml` |
+| Cargar un comunicado nuevo del ENFEN | `catalogo/enfen.yaml` |
+| Cambiar los años análogos | `catalogo/analogos.yaml` |
+| Colores o tipografía | `sitio/assets/styles.css` → `:root` |
 
-**La regla que sostiene toda la arquitectura:
-el navegador nunca calcula nada, solo lee archivos que el servidor ya preparó.**
+Después de editar, `python pipeline/run.py --solo catalogo` (o un `push`, y
+Actions lo hace). Si el YAML tiene un error, el pipeline dice en qué archivo y
+qué está mal, y **no publica** el cambio.
 
-Por eso el sitio es gratuito de operar, instantáneo, y no se cae aunque entren
-miles de personas a la vez. Y por eso los dos equipos pueden avanzar en
-paralelo: el de datos puede tardar lo que necesite mientras el de diseño
-trabaja con los JSON de demostración.
+## Cómo agregar una fuente de datos (con código)
+
+1. Crear `pipeline/fuentes/<fuente>.py` con una función
+   `ejecutar(estado_previo) -> dict`. Si algo sale mal, lanzar `ErrorFuente`
+   (o `ErrorValidacion` si el dato llegó pero no es creíble).
+2. Sumarla a `PASOS` en `pipeline/run.py`.
+3. Validar antes de escribir. Nunca escribir un JSON que no pasó la validación.
+
+Ver `pipeline/fuentes/oisst.py` como ejemplo completo.
 
 ---
 
 ## Contratos de datos
 
-### `data/estado.json`
-Estado ENSO actual. Lo alimenta el pipeline desde los comunicados del ENFEN y
-los índices del CPC.
+Todos viven en `sitio/datos/` y los escribe el pipeline.
 
-```json
-{
-  "actualizado": "2026-09-12",
-  "estados": ["No activo", "Vigilancia", "Alerta de El Niño Costero", "Final del evento"],
-  "alerta": "Alerta de El Niño Costero",
-  "icen": 1.7, "roni": 1.2, "n12": 2.4, "n34": 1.1,
-  "probs": [{ "m": "Fuerte", "p": 38, "c": "#D9452C" }],
-  "comunicados": [{ "f": "29 ago 2026", "t": "..." }]
-}
-```
+| Archivo | Lo escribe | Contenido |
+|---|---|---|
+| `_meta.json` | `run.py` | estado de cada paso: `ok` / `sin_cambios` / `fallo`, fecha del último dato, error |
+| `estado.json` | `productos/estado.py` | alerta ENFEN, índices (cada uno con `valor`, `fecha`, `fuente`), probabilidades, comunicados |
+| `indices/oisst_diario.csv` | `fuentes/oisst.py` | anomalía diaria en Niño 1+2, 3, 3.4 y 4 desde 1981 (datos abiertos) |
+| `series/tsm.json` | `productos/serie_tsm.py` | evento actual y análogos alineados, Niño 1+2 y 3.4 |
+| `config.json`, `regiones.json`, `analisis/_plantillas.json` | `productos/catalogo.py` | traducción del catálogo |
+| `geo/departamentos.json` | `herramientas/build_geo.py` | geometrías pre-proyectadas (se corre a mano) |
+| `analisis/<region>/<mes>.json` | generador de IA (Fase 4) | lectura por sector, con `entradas` obligatorio |
 
-### `data/config.json`
-Capas, meses y sectores disponibles. Agregar una capa aquí la hace aparecer
-sola en el riel del mapa: no hay que tocar `app.js`.
-
-### `data/regiones.json`
-Zonificación (`z`), si tiene litoral (`c`) y valores por capa (`b`).
-El `modificadorMes` es un artificio de la demo; el pipeline debe publicar el
-valor real de cada mes.
-
-### `data/series/sst.json`
-Serie diaria de anomalía de TSM. Reemplazar por la salida del script de
-monitoreo sobre NOAA OISST v2 High Resolution.
-
-### `data/analisis/<region>/<mes>.json`
-El archivo que produce la API de IA. **Este es el contrato más importante.**
+### `analisis/<region>/<mes>.json`: el contrato más importante
 
 ```json
 {
@@ -121,115 +160,34 @@ El archivo que produce la API de IA. **Este es el contrato más importante.**
   "mes": "2027-02",
   "generado": "2026-09-12T06:00:00Z",
   "modelo": "claude-haiku-4-5",
-  "entradas": {
-    "tsm_anomalia": 3.3,
-    "icen": 1.7,
-    "probs_enfen": { "fuerte": 38, "extraordinario": 33 },
-    "comunicado_enfen": "N° 13-2026",
-    "analogos": ["1997-98", "2015-16"]
-  },
+  "entradas": { "tsm_anomalia": 3.3, "icen": 1.7, "probs_enfen": { "fuerte": 38 } },
   "sectores": { "pesca": ["párrafo 1", "párrafo 2"] },
   "antecedentes": "...",
   "fuentes": "..."
 }
 ```
 
-El campo **`entradas` es obligatorio**: guarda los valores exactos que recibió
-el modelo. Sin eso el análisis no es auditable y no se publica. Si alguien
-pregunta de dónde salió una afirmación, hay que poder abrir el JSON y
-mostrarlo.
-
-**Prioridad:** si existe `data/analisis/<region>/<mes>.json`, la página lo usa.
-Si no existe, cae a `_plantillas.json`. Eso permite ir publicando región por
-región sin romper nada.
-
-El nombre de carpeta se obtiene del nombre de región en minúsculas, sin tildes
-y con guiones: `Madre De Dios` → `madre-de-dios`.
-
----
-
-## El mapa
-
-Los 25 departamentos vienen pre-proyectados a paths SVG por
-`pipeline/build_geo.py`: proyección Mercator sobre 176°W a 64°W, simplificación
-Douglas-Peucker. La misma proyección sirve para la vista de Perú y para la del
-Pacífico con los recuadros Niño 1+2, 3, 3.4 y 4; cambiar de vista solo cambia
-el `viewBox`.
-
-Se usa SVG plano en vez de MapLibre porque en esta fase no hay rásters que
-mostrar, y así no hay dependencias ni tiempo de carga. Cuando entren los COG de
-TSM y precipitación (Fase 2), la vista del mapa migra a MapLibre GL y el riel
-de capas, el selector de meses y el panel lateral se reutilizan sin tocarlos.
-
-Para regenerar las geometrías:
-
-```bash
-cd pipeline
-curl -sLO https://raw.githubusercontent.com/juaneladio/peru-geojson/master/peru_departamental_simple.geojson
-mv peru_departamental_simple.geojson peru_dep.geojson
-python3 build_geo.py
-```
-
-Fuente: [juaneladio/peru-geojson](https://github.com/juaneladio/peru-geojson)
+`entradas` es **obligatorio**: guarda los valores exactos que recibió el
+modelo. Sin eso el análisis no es auditable y no se publica. Si existe el
+archivo, la página lo usa; si no, cae a las plantillas. Slug de carpeta:
+minúsculas, sin tildes, con guiones (`Madre De Dios` → `madre-de-dios`).
 
 ---
 
 ## Diseño
 
-**Concepto: termoclina.** Toda la identidad sale de los dos polos térmicos que
-definen el fenómeno.
+**Concepto: termoclina.** Toda la identidad sale de los dos polos térmicos del
+fenómeno: frío `#1B6A87` (Humboldt) y cálido `#D9452C` (la anomalía, de la
+misma familia que el rojo de la bandera). La interfaz es clara; **el mapa es la
+única superficie oscura**. Azules y rojos se reservan **solo** para la escala de
+anomalías. Tipografía IBM Plex Serif y Sans. Mobile first.
 
-| | |
-|---|---|
-| Frío `#1B6A87` | El teal de la corriente de Humboldt, el estado normal del mar peruano |
-| Cálido `#D9452C` | La anomalía de El Niño. Cae en la misma familia que el rojo de la bandera: el rojo del país y el de la anomalía extrema resultan ser el mismo color |
+## Decisiones técnicas
 
-La interfaz es clara, como la de un portal científico. **El mapa es la única
-superficie oscura**, y eso separa visualmente el dato de la herramienta, además
-de permitir que la escala de anomalías (que tiene blanco en el valor neutro) se
-lea bien.
+Ver [`docs/decisiones.md`](docs/decisiones.md): por qué OISST de PSL y no de
+NCEI, por qué no Prefect, por qué los datos van al repo, etc.
 
-Azules y rojos están reservados **exclusivamente** para la escala de anomalías.
-Nunca se usan como decoración.
-
-Tipografía: IBM Plex Serif y IBM Plex Sans, una familia diseñada para producto
-técnico.
-
-Diseño mobile first: en pantallas angostas el panel de región sube desde abajo
-como hoja deslizable y el riel de capas se vuelve una franja horizontal.
-
----
-
-## Cómo agregar cosas
-
-| Quiero… | Toco… |
-|---|---|
-| Una capa temática nueva | `data/config.json` → `capas` |
-| Otro mes de pronóstico | `data/config.json` → `meses` |
-| Otro sector económico | `data/config.json` → `sectores` y las plantillas |
-| Cambiar textos de una región | crear `data/analisis/<region>/<mes>.json` |
-| Cambiar colores o tipografía | `assets/styles.css` → `:root` |
-| Cambiar la geometría | `pipeline/build_geo.py` |
-
----
-
-## Pendientes
-
-- [ ] Pipeline de ingesta (OISST, ENFEN, CHIRPS)
-- [ ] Generación de análisis con API de IA
-- [ ] PWA: `manifest.json` y service worker
-- [ ] Capas ráster con MapLibre y COG
-- [ ] Ríos, embalses y estaciones como capa de puntos
-- [ ] Búsqueda de región por nombre
-- [ ] Comparación entre dos meses
-- [ ] Métricas de uso (Umami autohospedado)
-
----
-
-## Equipo
+## Equipo y licencia
 
 Cuatro meteorólogos peruanos. Proyecto académico, abierto y sin fines de lucro.
-
-## Licencia
-
-Por definir. Propuesta: MIT para el código, CC BY 4.0 para el contenido.
+Licencia por definir (propuesta: MIT para el código, CC BY 4.0 para contenido y datos).

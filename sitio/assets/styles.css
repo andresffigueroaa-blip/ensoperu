@@ -95,8 +95,25 @@ nav button[aria-current="true"]{color:var(--ink); background:var(--paper-4)}
 .band-meta em{font-style:normal; color:var(--fog)}
 .demo{
   display:inline-block; margin-left:8px; padding:1px 7px; border-radius:2px;
-  border:1px solid var(--rule); color:var(--fog-dim); font-size:11px;
+  border:1px solid var(--rule); color:var(--fog-dim); font-size:11px; font-weight:400;
 }
+/* Selector Niño 1+2 / 3.4 de la curva de portada */
+.hero-idx{display:inline-flex; border:1px solid var(--rule); border-radius:3px; overflow:hidden; vertical-align:middle}
+.hero-idx button{padding:2px 9px; font-size:12px; color:var(--fog-dim)}
+.hero-idx button[aria-pressed="true"]{background:var(--paper-4); color:var(--ink)}
+.band-analogos{display:block; margin-top:6px; font-size:11.5px; color:var(--fog-dim)}
+.lede .ribbon-src{margin-top:8px; font-family:var(--sans); font-size:12px; line-height:1.5; color:var(--fog-dim)}
+.idx dd.pend{font-size:20px; color:var(--fog-dim); font-family:var(--sans); padding-top:10px}
+
+/* Estado de los datos: de cuándo es cada dato y si su fuente falló */
+.fresh{border-top:1px solid var(--rule); padding:22px 0 6px}
+.fresh h3{font-family:var(--sans); font-size:12.5px; font-weight:600; color:var(--fog); margin-bottom:8px}
+.fresh ul{list-style:none; margin:0; padding:0}
+.fresh li{display:flex; justify-content:space-between; gap:16px; padding:7px 0;
+          border-bottom:1px solid var(--rule-soft); font-size:13px; color:var(--fog)}
+.fresh li span:last-child{color:var(--fog-dim); text-align:right}
+.fresh li.falla span:last-child{color:var(--ink); font-weight:500}
+.fresh li.falla span:last-child::before{content:"⚠ "}
 
 .lede{padding:44px 0 40px; max-width:700px}
 .lede h1{font-size:clamp(32px,5vw,50px); line-height:1.1}
@@ -259,6 +276,7 @@ footer p+p{margin-top:8px}
   .rail section:first-child{display:flex; gap:6px; align-items:center}
   .rail h3{display:none}
   .rail section:first-child .layer{width:auto; white-space:nowrap}
+  #layers{display:flex; gap:4px}
   .stage{padding-top:56px}
 
   /* En pantalla angosta el panel sube desde abajo como hoja deslizable */
@@ -274,3 +292,22 @@ footer p+p{margin-top:8px}
   .cols{padding:34px 0 44px}
 }
 @media (min-width:861px){ .grab{display:none} }
+
+/* Teléfonos: nada puede ser más ancho que la pantalla */
+@media (max-width:600px){
+  header{gap:10px; padding:0 12px}
+  .brand span{display:none}
+  nav button{padding:7px 9px; font-size:13.5px}
+  .wrap{padding:0 16px}
+  .band-meta{left:16px; right:16px; top:10px; line-height:1.9}
+  .band{padding-top:56px}
+  .band svg{height:170px}
+  .lede{padding:30px 0 30px}
+  .ribbon{flex-wrap:wrap}
+  .ribbon div{flex:1 1 50%; border-bottom:1px solid var(--rule-soft)}
+  .idx dd{font-size:28px}
+  .idx div{padding:16px 16px 18px}
+  .prob-row{grid-template-columns:96px 1fr 40px; gap:9px}
+  .fresh li{flex-direction:column; gap:2px}
+  .fresh li span:last-child{text-align:left}
+}
