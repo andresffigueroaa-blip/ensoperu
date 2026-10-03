@@ -2,8 +2,8 @@
   "fuentes": {
     "catalogo": {
       "estado": "ok",
-      "corrida": "2026-10-02T16:26:16Z",
-      "actualizado": "2026-10-02T16:26:16Z",
+      "corrida": "2026-10-03T15:00:27Z",
+      "actualizado": "2026-10-03T15:00:27Z",
       "regiones": 25,
       "capas_demo": [
         "tsm",
@@ -13,12 +13,12 @@
       ]
     },
     "oisst": {
-      "estado": "fallo",
-      "corrida": "2026-10-02T16:26:18Z",
-      "actualizado": "2026-10-01T20:00:27Z",
-      "ultimo_dato": "2026-09-30",
+      "estado": "ok",
+      "corrida": "2026-10-03T15:01:04Z",
+      "actualizado": "2026-10-03T15:01:04Z",
+      "ultimo_dato": "2026-10-01",
       "archivos": {
-        "2026": "Thu, 01 Oct 2026 16:36:16 GMT",
+        "2026": "Fri, 02 Oct 2026 16:34:25 GMT",
         "1981": "Tue, 03 Jan 2023 22:24:59 GMT",
         "1982": "Tue, 03 Jan 2023 22:25:10 GMT",
         "1983": "Tue, 03 Jan 2023 22:25:21 GMT",
@@ -33,23 +33,22 @@
         "2024": "Thu, 30 Jan 2025 17:31:52 GMT",
         "2025": "Fri, 30 Jan 2026 17:32:01 GMT"
       },
-      "fuente": "NOAA OISST v2.1 (PSL), anomalía 1991-2020",
-      "error": "NOAA PSL respondió 502 para 2025"
+      "fuente": "NOAA OISST v2.1 (PSL), anomalía 1991-2020"
     },
     "serie_tsm": {
       "estado": "ok",
-      "corrida": "2026-10-02T16:26:18Z",
-      "actualizado": "2026-10-02T16:26:18Z",
-      "ultimo_dato": "2026-09-30",
+      "corrida": "2026-10-03T15:01:04Z",
+      "actualizado": "2026-10-03T15:01:04Z",
+      "ultimo_dato": "2026-10-01",
       "analogos_sin_datos": []
     },
     "estado": {
       "estado": "ok",
-      "corrida": "2026-10-02T16:26:18Z",
-      "actualizado": "2026-10-02T16:26:18Z",
+      "corrida": "2026-10-03T15:01:04Z",
+      "actualizado": "2026-10-03T15:01:04Z",
       "comunicado": "N° 13-2026",
       "aviso": null
     }
   },
-  "generado": "2026-10-02T16:26:18Z"
+  "generado": "2026-10-03T15:01:04Z"
 }
