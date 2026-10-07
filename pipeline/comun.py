@@ -12,7 +12,7 @@ import math
 import os
 import sys
 from pathlib import Path
-
+import xarray as xr # MENSAJE 
 import yaml
 
 # ── Rutas del proyecto ────────────────────────────────────────────────────
