@@ -2,8 +2,8 @@
   "fuentes": {
     "catalogo": {
       "estado": "ok",
-      "corrida": "2026-10-12T06:48:28Z",
-      "actualizado": "2026-10-12T06:48:28Z",
+      "corrida": "2026-10-12T06:58:26Z",
+      "actualizado": "2026-10-12T06:58:26Z",
       "regiones": 25,
       "capas_demo": [
         "lluvia",
@@ -22,8 +22,8 @@
       "regiones_con_tsm_costera": 11
     },
     "oisst": {
-      "estado": "sin_cambios",
-      "corrida": "2026-10-12T06:48:26Z",
+      "estado": "fallo",
+      "corrida": "2026-10-12T06:58:24Z",
       "actualizado": "2026-10-12T06:48:26Z",
       "ultimo_dato": "2026-10-10",
       "archivos": {
@@ -42,53 +42,55 @@
         "2024": "Thu, 30 Jan 2025 17:31:52 GMT",
         "2025": "Fri, 30 Jan 2026 17:32:01 GMT"
       },
-      "fuente": "NOAA OISST v2.1 (PSL), anomalía 1991-2020"
+      "fuente": "NOAA OISST v2.1 (PSL), anomalía 1991-2020",
+      "error": "NOAA PSL respondió 504 para 2025"
     },
     "serie_tsm": {
       "estado": "ok",
-      "corrida": "2026-10-12T06:48:28Z",
-      "actualizado": "2026-10-12T06:48:28Z",
+      "corrida": "2026-10-12T06:58:26Z",
+      "actualizado": "2026-10-12T06:58:26Z",
       "ultimo_dato": "2026-10-10",
       "analogos_sin_datos": []
     },
     "estado": {
       "estado": "ok",
-      "corrida": "2026-10-12T06:48:28Z",
-      "actualizado": "2026-10-12T06:48:28Z",
+      "corrida": "2026-10-12T06:58:26Z",
+      "actualizado": "2026-10-12T06:58:26Z",
       "comunicado": "N° 13-2026",
       "aviso": null
     },
     "cpc": {
       "estado": "sin_cambios",
-      "corrida": "2026-10-12T06:48:27Z",
-      "actualizado": "2026-10-12T06:48:27Z",
+      "corrida": "2026-10-12T06:58:25Z",
+      "actualizado": "2026-10-12T06:58:25Z",
       "ultimo_dato": "2026-08",
       "fuente": "NOAA CPC (ONI y RONI, trimestres móviles)"
     },
     "igp": {
       "estado": "sin_cambios",
-      "corrida": "2026-10-12T06:48:28Z",
-      "actualizado": "2026-10-12T06:48:28Z",
+      "corrida": "2026-10-12T06:58:26Z",
+      "actualizado": "2026-10-12T06:58:26Z",
       "ultimo_dato": "2026-07",
       "fuente": "IGP / ENFEN (ICEN, Nota Técnica 2024)"
     },
     "mapa_tsm": {
       "estado": "sin_cambios",
-      "corrida": "2026-10-12T06:48:28Z",
-      "actualizado": "2026-10-12T06:48:28Z",
+      "corrida": "2026-10-12T06:58:26Z",
+      "actualizado": "2026-10-12T06:58:26Z",
       "ultimo_dato": "2026-10-10"
     },
     "ia": {
-      "estado": "ok",
-      "corrida": "2026-10-12T06:57:22Z",
+      "estado": "fallo",
+      "corrida": "2026-10-12T06:58:26Z",
       "actualizado": "2026-10-12T06:57:22Z",
       "aviso": "IA sin clave (GITHUB_TOKEN); no se generó nada",
       "modelo": "simulado:openai/gpt-4o-mini",
       "generados": 2,
       "rechazados": 0,
       "pendientes": 48,
-      "modo": "borrador"
+      "modo": "borrador",
+      "error": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
     }
   },
-  "generado": "2026-10-12T06:57:22Z"
+  "generado": "2026-10-12T06:58:26Z"
 }
