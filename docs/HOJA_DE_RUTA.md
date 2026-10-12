@@ -109,7 +109,8 @@ Eso fija cinco requisitos que valen para todos los bloques:
 - ⬜ Dashboard simple comparativo (dos meses, dos eventos, dos lugares)
 - ⬜ Modo claro y oscuro
 - ⬜ PWA: instalable y sin conexión
-- 🔄 Vista **Monitoreo**: ✅ gráfica histórica de ICEN, ONI y RONI desde 1950 en la portada; ⬜ series OISST 1981-hoy con selector de período
+- ✅ Vista **Monitoreo** (dashboards): OISST diario por caja Niño, TSM costera por región, ICEN/ONI/RONI, selector de período y tabla de datos abiertos
+- ✅ Gráfica histórica de ICEN, ONI y RONI desde 1950 en la portada
 - ⬜ Accesibilidad y revisión de lenguaje con usuarios reales
 - ⬜ Dominio `ensoperu.pe`
 
@@ -213,12 +214,23 @@ Columna **Escala** = la más fina a la que el dato es válido.
 | 1 oct 2026 | Usuario final: toda la población del Perú potencialmente afectada |
 | 1 oct 2026 | IA: textos pregenerados, proveedor intercambiable; chat en vivo solo con límites, y después |
 | 12 oct 2026 | IA piloto: Gemini (gratis). GitHub Models descartado: retirado el 30 jul 2026 |
+| 12 oct 2026 | Almacenamiento: GitHub para lo liviano, Cloudflare R2 (gratis, sin cobro de egreso) para lo pesado, Google Drive para documentos del equipo |
 | 1 oct 2026 | Mapa futuro: MapLibre + PMTiles, sin servidor |
 | 12 oct 2026 | Escala fina: **provincia**, no distrito (es la que aguantan lluvia y pronóstico) |
 | 12 oct 2026 | TSM costera por región: franja marina a menos de 110 km del litoral, desde OISST |
 | 12 oct 2026 | Los meses del selector los genera el pipeline (siempre los próximos 6) |
 
 Detalle técnico de cada decisión: [`decisiones.md`](decisiones.md).
+
+## Dónde se guarda cada cosa
+
+| Qué | Dónde | Costo |
+|---|---|---|
+| Código, catálogo, JSON y CSV pequeños, imagen diaria | GitHub (este repo) | 0 |
+| Datos pesados: CHIRPS, rásters, PMTiles, histórico completo | Cloudflare R2, bucket `ensoperu-datos` (⬜ se crea en el bloque 7) | 0 hasta 10 GB, sin cobro por descarga |
+| Documentos del equipo: bibliografía, PDF, borradores | Google Drive compartido | 0 |
+
+Detalle en `decisiones.md`.
 
 ## Cómo trabajamos
 

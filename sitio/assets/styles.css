@@ -265,6 +265,38 @@ footer p+p{margin-top:8px}
 .ai i{width:5px; height:5px; border-radius:50%; background:var(--accent)}
 .ai.real i{background:var(--cold)}
 
+/* ── MONITOREO ────────────────────────────────────────────────────────── */
+.mon{padding:36px 20px 60px}
+.mon-head{display:flex; justify-content:space-between; align-items:flex-end; gap:24px; flex-wrap:wrap; margin-bottom:22px}
+.mon-head h1{font-size:34px; margin-bottom:6px}
+.mon-head .sub{margin-bottom:0; max-width:620px}
+.mon-ctl{display:inline-flex; border:1px solid var(--rule); border-radius:3px; overflow:hidden; background:var(--paper-2)}
+.mon-ctl button{padding:8px 14px; font-size:13px; color:var(--fog)}
+.mon-ctl button[aria-pressed="true"]{background:var(--paper-4); color:var(--ink)}
+.mon-kpi{margin:0 0 28px; border:1px solid var(--rule); border-radius:3px}
+.mon-kpi dd{font-size:30px}
+.panel-g{background:var(--paper-2); border:1px solid var(--rule); border-radius:3px; padding:20px 22px 18px; margin-bottom:22px}
+.panel-g h2{font-size:19px; margin-bottom:4px}
+.panel-g .sub{margin-bottom:12px}
+.panel-g svg{display:block; width:100%; height:clamp(200px,32vh,320px)}
+.leyenda{display:flex; flex-wrap:wrap; gap:6px 18px; margin-top:10px; font-size:12.5px; color:var(--fog)}
+.leyenda i{display:inline-block; width:14px; height:3px; border-radius:2px; vertical-align:middle; margin-right:6px}
+.leyenda b{font-weight:500; color:var(--ink)}
+.panel-g{overflow:hidden}
+.tabla{width:100%; border-collapse:collapse; font-size:13.5px; table-layout:fixed; word-break:break-word}
+.tabla th{text-align:left; font-weight:600; font-size:12px; color:var(--fog); padding:8px 10px; border-bottom:1px solid var(--rule)}
+.tabla td{padding:9px 10px; border-bottom:1px solid var(--rule-soft); vertical-align:top}
+.tabla a{color:var(--cold); text-decoration:none; font-weight:500}
+.tabla a:hover{text-decoration:underline}
+@media (max-width:600px){
+  .mon{padding:24px 16px 40px}
+  .mon-kpi{grid-template-columns:1fr 1fr}
+  .mon-kpi dd{font-size:24px}
+  .panel-g{padding:16px 12px 14px}
+  .tabla th:nth-child(3), .tabla td:nth-child(3){display:none}
+  .tabla td, .tabla th{padding:7px 6px; font-size:12.5px}
+}
+
 /* ── ACERCA DE ────────────────────────────────────────────────────────── */
 .about{padding:56px 0 78px; max-width:680px}
 .about h1{font-size:40px; margin-bottom:20px}
@@ -309,9 +341,11 @@ footer p+p{margin-top:8px}
 
 /* Teléfonos: nada puede ser más ancho que la pantalla */
 @media (max-width:600px){
-  header{gap:10px; padding:0 12px}
+  header{gap:6px; padding:0 10px}
   .brand span{display:none}
-  nav button{padding:7px 9px; font-size:13.5px}
+  .brand b{font-size:17px}
+  nav{gap:0}
+  nav button{padding:7px 6px; font-size:12.5px}
   .wrap{padding:0 16px}
   .band-meta{left:16px; right:16px; top:10px; line-height:1.9}
   .band{padding-top:56px}

@@ -109,7 +109,7 @@ const COLOR_MAGNITUD = { "Débil": "#E9C46A", "Moderado": "#E2913C", "Fuerte": "
 /* ════════════════════════════════════════════════════════════════════════
    NAVEGACIÓN
    ════════════════════════════════════════════════════════════════════════ */
-const VISTAS = ["home", "mapa", "about"];
+const VISTAS = ["home", "mapa", "monitoreo", "about"];
 function ir(v){
   // Enlaces compartibles: …/#mapa (Perú) y …/#pacifico (regiones Niño)
   if (v === "pacifico"){ scope = "pac"; v = "mapa"; }
@@ -125,7 +125,177 @@ function ir(v){
     $("#sc-pac").setAttribute("aria-pressed",  String(scope === "pac"));
     requestAnimationFrame(dibujarMapa);
   }
+  if (v === "monitoreo") pintarMonitoreo();
 }
+
+/* ════════════════════════════════════════════════════════════════════════
+   MONITOREO · dashboards de series
+   Los CSV del pipeline se leen tal cual (pocas decenas de KB) y se dibujan
+   con un trazador de líneas genérico. Nada se calcula aquí salvo recortar
+   el período y buscar el último valor.
+   ════════════════════════════════════════════════════════════════════════ */
+let periodoAnios = 1;
+const csvCache = {};
+
+// CSV con cabecera y primera columna de fecha -> {fechas:[], cols:{nombre:[]}}
+async function traerCsv(ruta){
+  if (csvCache[ruta]) return csvCache[ruta];
+  try{
+    let texto;
+    if (window.__DATOS__){                       // archivo único: viene incrustado
+      texto = window.__DATOS__[ruta]; if (!texto) return null;
+    } else {
+      const r = await fetch(ruta, { cache: "no-cache" });
+      if (!r.ok) return null;
+      texto = await r.text();
+    }
+    const lineas = texto.trim().split("\n");
+    const cab = lineas[0].split(",").slice(1);
+    const fechas = [], cols = Object.fromEntries(cab.map(c => [c, []]));
+    for (const l of lineas.slice(1)){
+      const p = l.split(",");
+      fechas.push(p[0]);
+      cab.forEach((c, i) => cols[c].push(p[i + 1] === "" || p[i + 1] === undefined ? null : +p[i + 1]));
+    }
+    return (csvCache[ruta] = { fechas, cols });
+  }catch{ return null; }
+}
+
+// Colores de las series del monitoreo: pocos y fijos. Niño 1+2 en rojo
+// (es el que gobierna la costa), 3.4 en teal, el resto en grises.
+const COLORES = ["#D9452C", "#1B6A87", "#8E0F16", "#79A8B4", "#E18C3E", "#163D66", "#84959A", "#55666A", "#C9A227", "#5B8C5A", "#9B59B6"];
+
+// Trazador genérico: series = [{n, v:[], c}], fechas alineadas, umbrales opcionales
+function grafLineas(svg, fechas, series, op = {}){
+  const W = 1200, H = 300, L = 44, R = 14, T = 16, B = 30;
+  const vals = series.flatMap(s => s.v).filter(x => x !== null);
+  if (!vals.length){ svg.innerHTML = `<text x="20" y="150" fill="#84959A" font-size="14" font-family="IBM Plex Sans">Sin datos en este período.</text>`; return; }
+  let lo = Math.min(...vals), hi = Math.max(...vals);
+  if (op.minRango){ lo = Math.min(lo, op.minRango[0]); hi = Math.max(hi, op.minRango[1]); }
+  const m = (hi - lo) * 0.08 || 1; lo -= m; hi += m;
+  const n = fechas.length;
+  const x = i => L + (i / Math.max(1, n - 1)) * (W - L - R);
+  const y = t => T + (1 - (t - lo) / (hi - lo)) * (H - T - B);
+
+  // Ejes: una marca por mes en períodos cortos, por trimestre en series
+  // mensuales, por año (o cada 5) en períodos largos
+  let ejes = "";
+  const mensual = fechas[0].length === 7;
+  const corto = mensual ? n <= 48 : n < 500;
+  fechas.forEach((f, i) => {
+    const mes = f.slice(5, 7), dia = f.slice(8, 10);
+    let esMarca;
+    if (mensual) esMarca = corto ? +mes % 3 === 1 : mes === "01" && +f.slice(0, 4) % (n > 600 ? 5 : 1) === 0;
+    else esMarca = corto ? dia === "01" : mes === "01" && dia === "01" && +f.slice(0, 4) % (n > 3000 ? 5 : 1) === 0;
+    if (!esMarca) return;
+    const et = corto ? MESES_CORTOS[+mes - 1] + (mes === "01" ? " " + f.slice(0, 4) : "") : f.slice(0, 4);
+    ejes += `<line x1="${x(i)}" y1="${T}" x2="${x(i)}" y2="${H - B}" stroke="#E2E8E3"/>
+             <text x="${x(i) + 3}" y="${H - 10}" fill="#84959A" font-size="11" font-family="IBM Plex Sans">${et}</text>`;
+  });
+  // Eje vertical: 5 marcas redondas
+  let ejeY = "";
+  const paso = [0.1, 0.2, 0.5, 1, 2, 5, 10].find(p => (hi - lo) / p <= 7) || 10;
+  for (let t = Math.ceil(lo / paso) * paso; t <= hi; t += paso){
+    ejeY += `<line x1="${L}" y1="${y(t)}" x2="${W - R}" y2="${y(t)}" stroke="${Math.abs(t) < 1e-9 ? "#9FB0AC" : "#EEF2EF"}"/>
+             <text x="${L - 6}" y="${y(t) + 4}" text-anchor="end" fill="#84959A" font-size="11" font-family="IBM Plex Sans">${sg(t, paso < 1 ? 1 : 0)}</text>`;
+  }
+  const umbrales = (op.umbrales || []).map(([t, c]) =>
+    `<line x1="${L}" y1="${y(t)}" x2="${W - R}" y2="${y(t)}" stroke="${c}" stroke-opacity=".6" stroke-dasharray="4 4"/>`).join("");
+
+  const trazos = series.map(s => {
+    let d = "", pluma = false;
+    s.v.forEach((t, i) => {
+      if (t === null){ pluma = false; return; }
+      d += (pluma ? "L" : "M") + x(i).toFixed(1) + " " + y(t).toFixed(1); pluma = true;
+    });
+    const iu = s.v.findLastIndex(t => t !== null);
+    const punto = iu >= 0 && s.destacar ? `<circle cx="${x(iu)}" cy="${y(s.v[iu])}" r="4" fill="${s.c}"/>` : "";
+    return `<path d="${d}" fill="none" stroke="${s.c}" stroke-width="${s.destacar ? 2.4 : 1.4}" stroke-opacity="${s.destacar ? 1 : .85}" stroke-linejoin="round"/>${punto}`;
+  }).join("");
+  svg.innerHTML = ejeY + ejes + umbrales + trazos;
+}
+
+function leyenda(el, series){
+  el.innerHTML = series.map(s => {
+    const iu = s.v.findLastIndex(t => t !== null);
+    return `<span><i style="background:${s.c}"></i>${esc(s.n)}${iu >= 0 ? ` <b>${sg(s.v[iu])}</b>` : ""}</span>`;
+  }).join("");
+}
+
+// Recorta un conjunto de fechas/series al período elegido
+function recortar(fechas, cols, anios){
+  if (!anios) return { fechas, cols };
+  const ult = fechas[fechas.length - 1];
+  const desde = (+ult.slice(0, 4) - anios) + ult.slice(4);
+  const i0 = fechas.findIndex(f => f >= desde);
+  return { fechas: fechas.slice(i0), cols: Object.fromEntries(Object.entries(cols).map(([k, v]) => [k, v.slice(i0)])) };
+}
+
+async function pintarMonitoreo(){
+  $$(".mon-ctl button").forEach(b => b.setAttribute("aria-pressed", String(+b.dataset.p === periodoAnios)));
+  const I = D.estado.indices || {};
+  $("#mon-kpi").innerHTML = [
+    ["Niño 1+2", I.n12, " °C"], ["Niño 3.4", I.n34, " °C"], ["ICEN", I.icen, ""], ["RONI", I.roni, ""],
+  ].map(([n, ind, u]) => {
+    const v = ind?.valor; const f = ind?.fecha;
+    return `<div><dt>${n}</dt><dd ${v == null ? 'class="pend"' : ""}>${v == null ? "pendiente" : sg(v) + u}</dd>
+            <small>${f ? (String(f).length > 7 ? "al " + fecha(f) : fecha(f)) : ""}${ind?.fuente ? " · " + esc(ind.fuente) : ""}</small></div>`;
+  }).join("");
+
+  // 1. OISST diario por caja Niño
+  const o = await traerCsv("datos/indices/oisst_diario.csv");
+  if (o){
+    const r = recortar(o.fechas, o.cols, periodoAnios);
+    const nom = { n12: "Niño 1+2", n3: "Niño 3", n34: "Niño 3.4", n4: "Niño 4" };
+    const series = Object.keys(r.cols).map((k, i) => ({ n: nom[k] || k, v: r.cols[k], c: COLORES[i], destacar: k === "n12" || k === "n34" }));
+    grafLineas($("#g-oisst"), r.fechas, series, { umbrales: [[0.5, "#D9452C"], [-0.5, "#1B6A87"]], minRango: [-2, 2] });
+    leyenda($("#g-oisst-ley"), series);
+    $("#g-oisst-sub").textContent = `NOAA OISST v2.1, anomalía respecto de 1991-2020, sin suavizar. Dato al ${fecha(o.fechas[o.fechas.length - 1])}. `
+      + (periodoAnios === 0 ? "Solo están cargados los años análogos y el actual; el histórico completo se carga una vez." : "");
+  }
+
+  // 2. TSM costera por región
+  const c = await traerCsv("datos/indices/tsm_costera_diaria.csv");
+  if (c){
+    const r = recortar(c.fechas, c.cols, periodoAnios);
+    const orden = ["Tumbes", "Piura", "Lambayeque", "La Libertad", "Ancash", "Lima", "Callao", "Ica", "Arequipa", "Moquegua", "Tacna"];
+    const series = orden.filter(k => r.cols[k]).map((k, i) => ({ n: k, v: r.cols[k], c: COLORES[i % COLORES.length], destacar: i === 0 }));
+    grafLineas($("#g-costa"), r.fechas, series, { umbrales: [[0, "#9FB0AC"]] });
+    leyenda($("#g-costa-ley"), series);
+    $("#g-costa-sub").textContent = `Anomalía OISST promediada en la franja marina a menos de 110 km del litoral de cada departamento. Dato al ${fecha(c.fechas[c.fechas.length - 1])}.`;
+  }
+
+  // 3. Índices mensuales
+  const S = D.indices;
+  if (S){
+    const fechas = S.fechas, cols = { icen: S.icen, oni: S.oni, roni: S.roni };
+    const r = recortar(fechas, cols, periodoAnios ? Math.max(periodoAnios, 3) : 0);
+    const series = [["icen", "ICEN"], ["oni", "ONI"], ["roni", "RONI"]].map(([k, n], i) =>
+      ({ n, v: r.cols[k], c: COLORES[i], destacar: k === "icen" }));
+    grafLineas($("#g-idx"), r.fechas, series, { umbrales: [[0.5, "#D9452C"], [-0.5, "#1B6A87"]], minRango: [-2, 2] });
+    leyenda($("#g-idx-ley"), series);
+    $("#g-idx-sub").textContent = `ICEN del IGP/ENFEN (Niño 1+2); ONI y RONI del NOAA CPC (Niño 3.4). Trimestres móviles. Último mes: ${fecha(S.hasta)}.`
+      + (periodoAnios === 1 ? " Para los mensuales se muestran al menos 3 años." : "");
+  }
+
+  // 4. Datos abiertos
+  const F = D.meta?.fuentes || {};
+  const filas = [
+    ["datos/indices/oisst_diario.csv", "Anomalía diaria de TSM en Niño 1+2, 3, 3.4 y 4", "NOAA OISST v2.1 (PSL)", F.oisst],
+    ["datos/indices/tsm_costera_diaria.csv", "Anomalía diaria de TSM costera por región", "Calculado de OISST", F.oisst],
+    ["datos/indices/icen.csv", "ICEN mensual desde 1950", "IGP / ENFEN", F.igp],
+    ["datos/indices/cpc_mensual.csv", "ONI y RONI mensuales desde 1950", "NOAA CPC", F.cpc],
+    ["datos/series/tsm.json", "Evento actual y análogos alineados", "Calculado de OISST", F.serie_tsm],
+    ["datos/campos/tsm_anom.png", "Campo del último día (imagen georreferenciada, ver tsm_anom.json)", "NOAA OISST", F.mapa_tsm],
+    ["datos/estado.json", "Alerta, probabilidades e índices vigentes", "ENFEN, IGP, CPC, OISST", F.estado],
+    ["datos/_meta.json", "Estado y fecha de cada fuente", "pipeline", null],
+  ];
+  $("#tabla-datos").innerHTML = `<tr><th>Archivo</th><th>Contenido</th><th>Fuente</th><th>Actualizado</th></tr>` +
+    filas.map(([ruta, desc, fuente, m]) => `<tr><td><a href="${ruta}" download>${ruta.split("/").pop()}</a></td>
+      <td>${esc(desc)}</td><td>${esc(fuente)}</td><td>${m?.ultimo_dato ? fecha(m.ultimo_dato) : m?.actualizado ? fecha(m.actualizado) : ""}${m?.estado === "fallo" ? " ⚠" : ""}</td></tr>`).join("");
+}
+function setPeriodo(p){ periodoAnios = p; pintarMonitoreo(); }
+window.setPeriodo = setPeriodo;
 window.ir = ir;
 
 /* ════════════════════════════════════════════════════════════════════════

@@ -35,6 +35,7 @@
   <nav>
     <button id="nav-home"  aria-current="true"  onclick="ir('home')">Inicio</button>
     <button id="nav-mapa"  aria-current="false" onclick="ir('mapa')">Mapa</button>
+    <button id="nav-monitoreo" aria-current="false" onclick="ir('monitoreo')">Monitoreo</button>
     <button id="nav-about" aria-current="false" onclick="ir('about')">Acerca de</button>
   </nav>
 </header>
@@ -159,6 +160,56 @@
       </div>
     </aside>
 
+  </div>
+</main>
+
+<!-- ══ MONITOREO · dashboards ══════════════════════════════════════════
+     Solo datos: series diarias y mensuales que produce el pipeline, con
+     selector de período, y la lista de archivos abiertos para descargar. -->
+<main id="v-monitoreo" class="view">
+  <div class="wrap mon">
+    <div class="mon-head">
+      <div>
+        <div class="thermo"></div>
+        <h1>Monitoreo</h1>
+        <p class="sub">Los datos tal cual los produce el pipeline, sin interpretación. Cada panel dice su fuente y su fecha.</p>
+      </div>
+      <div class="mon-ctl" role="group" aria-label="Período">
+        <button data-p="1" aria-pressed="true"  onclick="setPeriodo(1)">1 año</button>
+        <button data-p="3" aria-pressed="false" onclick="setPeriodo(3)">3 años</button>
+        <button data-p="10" aria-pressed="false" onclick="setPeriodo(10)">10 años</button>
+        <button data-p="0" aria-pressed="false" onclick="setPeriodo(0)">Todo</button>
+      </div>
+    </div>
+
+    <dl class="idx mon-kpi" id="mon-kpi"></dl>
+
+    <section class="panel-g">
+      <h2>Anomalía diaria de temperatura del mar por región Niño</h2>
+      <p class="sub" id="g-oisst-sub"></p>
+      <svg id="g-oisst" viewBox="0 0 1200 300" preserveAspectRatio="none" aria-label="Series diarias OISST"></svg>
+      <div class="leyenda" id="g-oisst-ley"></div>
+    </section>
+
+    <section class="panel-g">
+      <h2>Temperatura del mar frente a cada región del litoral</h2>
+      <p class="sub" id="g-costa-sub"></p>
+      <svg id="g-costa" viewBox="0 0 1200 300" preserveAspectRatio="none" aria-label="TSM costera por región"></svg>
+      <div class="leyenda" id="g-costa-ley"></div>
+    </section>
+
+    <section class="panel-g">
+      <h2>Índices mensuales oficiales</h2>
+      <p class="sub" id="g-idx-sub"></p>
+      <svg id="g-idx" viewBox="0 0 1200 300" preserveAspectRatio="none" aria-label="ICEN, ONI y RONI"></svg>
+      <div class="leyenda" id="g-idx-ley"></div>
+    </section>
+
+    <section class="panel-g">
+      <h2>Datos abiertos</h2>
+      <p class="sub">Todo lo que muestra esta página se puede descargar. Son los mismos archivos que lee la página.</p>
+      <table class="tabla" id="tabla-datos"></table>
+    </section>
   </div>
 </main>
 

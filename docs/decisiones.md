@@ -162,3 +162,34 @@ temporada se escribe en cada mes del selector.
 (no hay pronóstico mensual todavía); generar 6 textos distintos con los
 mismos datos sería inventar diferencias. Cuando entre el pronóstico
 estacional por mes (bloque 5), cada mes tendrá sus propias entradas.
+
+### 2026-10-12 · Dónde se guarda cada cosa
+
+**Qué:** tres lugares, según el tamaño y quién lo usa.
+
+| Qué | Dónde | Límite gratuito |
+|---|---|---|
+| Código, catálogo, JSON y CSV pequeños (< 5 MB), imagen diaria del campo | GitHub (este repo) | repo hasta ~1 GB; Pages hasta 1 GB y 100 GB/mes de tráfico |
+| Datos pesados: CHIRPS, rásters, NetCDF, PMTiles de provincias y cuencas, histórico OISST completo | Cloudflare R2, bucket `ensoperu-datos`, lectura pública | 10 GB y sin cobro por descarga (egreso) |
+| Documentos del equipo: bibliografía, PDF del ENFEN, borradores de texto | Google Drive compartido | el de la cuenta |
+
+GitHub Actions escribe en R2 con la API S3 (dos secretos: `R2_ACCESS_KEY_ID`
+y `R2_SECRET_ACCESS_KEY`); el servidor propio, con `rclone`. La página lee R2
+por URL pública. No hay base de datos con servidor: la "base de datos" son
+archivos CSV y Parquet con su catálogo; si hace falta consultar, DuckDB lee
+Parquet directamente desde R2.
+
+**Por qué:** R2 es el único almacén gratuito que no cobra por descarga, que
+es lo que dispara costos en un sitio público. Mantener el repo liviano
+protege la publicación diaria. Drive evita obligar a quien no programa a
+pasar por git. Se activa cuando entre el primer dato pesado (bloque 7).
+
+### 2026-10-12 · Vista Monitoreo: solo datos, sin interpretación
+
+**Qué:** una vista aparte con las series tal cual salen del pipeline (OISST
+diario por caja Niño, TSM costera por región, ICEN/ONI/RONI mensuales), un
+selector de período y la tabla de archivos abiertos para descargar. Los CSV
+se leen directo en el navegador (decenas de KB).
+
+**Por qué:** separa el dato del texto interpretado (portada y mapa), permite
+auditar lo que la IA recibió, y cumple el pedido de "dashboards puros".

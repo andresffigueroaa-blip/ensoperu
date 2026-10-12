@@ -32,6 +32,9 @@ def main():
         if "_borrador" in f.parts:        # los borradores de IA no se publican
             continue
         datos[f.relative_to(SITIO).as_posix()] = json.loads(leer(f))
+    # Los CSV del monitoreo van como texto
+    for f in sorted((SITIO / "datos").rglob("*.csv")):
+        datos[f.relative_to(SITIO).as_posix()] = leer(f)
     # Las imágenes del pipeline (campos del mapa) van incrustadas como data URI
     for f in sorted((SITIO / "datos").rglob("*.png")):
         datos[f.relative_to(SITIO).as_posix()] = "data:image/png;base64," + base64.b64encode(f.read_bytes()).decode()
