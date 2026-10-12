@@ -56,30 +56,10 @@ class _Base:
                               f"({r.headers.get('content-type', '?')}): {r.text[:200]!r}") from e
 
 
-class GithubModels(_Base):
-    """GitHub Models: gratis en repos públicos. En Actions el token es
-    GITHUB_TOKEN con permiso `models: read`; en una laptop, un token
-    personal (fine-grained) con ese mismo permiso."""
-    id = "github"
-    clave_env = "GITHUB_TOKEN"
-    URL = "https://models.github.ai/inference/chat/completions"
-
-    def generar(self, sistema: str, usuario: str) -> str:
-        datos = self._post(self.URL, {
-            "Authorization": f"Bearer {self.clave}",
-            "Accept": "application/vnd.github+json",
-            "X-GitHub-Api-Version": "2022-11-28",
-        }, {
-            "model": self.modelo,
-            "temperature": self.temperatura,
-            "response_format": {"type": "json_object"},
-            "messages": [{"role": "system", "content": sistema},
-                         {"role": "user", "content": usuario}],
-        })
-        try:
-            return datos["choices"][0]["message"]["content"]
-        except (KeyError, IndexError, TypeError) as e:
-            raise ErrorFuente(f"{self.nombre}: respuesta con forma inesperada") from e
+# Nota: GitHub Models (models.github.ai) fue el primer candidato por ser
+# gratis en repos públicos, pero GitHub lo retiró el 30 de julio de 2026.
+# Cualquier servicio compatible con la API de OpenAI se puede agregar aquí
+# con una clase como las de abajo.
 
 
 class Gemini(_Base):
@@ -145,11 +125,11 @@ class Simulado(_Base):
                            "sectores": {s: [p1, p2] for s in sectores}}, ensure_ascii=False)
 
 
-PROVEEDORES = {c.id: c for c in (GithubModels, Gemini, Claude, Simulado)}
+PROVEEDORES = {c.id: c for c in (Gemini, Claude, Simulado)}
 
 
 def crear(cfg: dict) -> _Base:
-    nombre = cfg.get("proveedor", "github")
+    nombre = cfg.get("proveedor", "gemini")
     if nombre not in PROVEEDORES:
         raise ErrorFuente(f"ia.yaml: proveedor '{nombre}' no existe; válidos: {sorted(PROVEEDORES)}")
     return PROVEEDORES[nombre](cfg)

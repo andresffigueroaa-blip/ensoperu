@@ -53,8 +53,8 @@ Eso fija cinco requisitos que valen para todos los bloques:
 - ⬜ Pronóstico de TSM a 10 días (Copernicus Marine, ya usado en el notebook)
 - **Necesita:** cuenta de Copernicus Marine para el último punto
 
-### 🔄 Bloque 4 · Inteligencia artificial (piloto: GitHub Models, gratis)
-- ✅ Proveedor intercambiable en `catalogo/ia.yaml`: GitHub Models (piloto), Gemini, Claude, simulado
+### 🔄 Bloque 4 · Inteligencia artificial (piloto: Gemini, nivel gratuito)
+- ✅ Proveedor intercambiable en `catalogo/ia.yaml`: Gemini (piloto), Claude, simulado. GitHub Models se descartó: retirado por GitHub el 30 jul 2026
 - ✅ Análisis por región ("ahora" y "temporada") y sector, con `entradas` y `huella`
 - ✅ Validación: JSON con la forma pedida, solo sectores pedidos, sin HTML, todo número presente en las entradas
 - ✅ Regenerar solo cuando cambian las entradas o las instrucciones; tope por corrida
@@ -64,7 +64,7 @@ Eso fija cinco requisitos que valen para todos los bloques:
 - ⬜ Boletín automático "qué cambió" (estilo ENSO Outlook de IWMI) y tarjeta para redes
 - ⬜ Ilustraciones en los textos al hacer clic en una unidad o capa
 - ⬜ Asistente de consultas: solo con respuestas pregeneradas o con límite diario; se evalúa después
-- **Necesita:** enlace a los comunicados del ENFEN; si se cambia a Gemini o Claude, su clave en *Settings → Secrets*
+- **Necesita:** ⏸️ clave `GEMINI_API_KEY` en *Settings → Secrets → Actions* (Andrés); enlace a los comunicados del ENFEN
 
 ### ⬜ Bloque 5 · Pronóstico estacional
 - ⬜ Copernicus C3S multimodelo: lluvia y temperatura por tercios, 1 a 6 meses, grillado tipo ENSO Outlook
@@ -211,7 +211,8 @@ Columna **Escala** = la más fina a la que el dato es válido.
 | Fecha | Decisión |
 |---|---|
 | 1 oct 2026 | Usuario final: toda la población del Perú potencialmente afectada |
-| 1 oct 2026 | IA: Claude Haiku 4.5, textos pregenerados; chat en vivo solo con límites, y después |
+| 1 oct 2026 | IA: textos pregenerados, proveedor intercambiable; chat en vivo solo con límites, y después |
+| 12 oct 2026 | IA piloto: Gemini (gratis). GitHub Models descartado: retirado el 30 jul 2026 |
 | 1 oct 2026 | Mapa futuro: MapLibre + PMTiles, sin servidor |
 | 12 oct 2026 | Escala fina: **provincia**, no distrito (es la que aguantan lluvia y pronóstico) |
 | 12 oct 2026 | TSM costera por región: franja marina a menos de 110 km del litoral, desde OISST |

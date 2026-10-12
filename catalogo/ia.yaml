@@ -17,14 +17,16 @@
 # Cambiar de modelo es cambiar estas dos líneas. Claves por variable de
 # entorno (en GitHub: Settings → Secrets → Actions).
 #
-#   proveedor  modelo (ejemplos)                 clave            costo
-#   github     openai/gpt-4o-mini                GITHUB_TOKEN     gratis en repos públicos
-#              meta/Llama-3.3-70B-Instruct                        (la da el propio Actions)
-#   gemini     gemini-2.5-flash                  GEMINI_API_KEY   nivel gratuito
+#   proveedor  modelo (ejemplos)                 clave              costo
+#   gemini     gemini-3.5-flash-lite             GEMINI_API_KEY     nivel gratuito (Google AI Studio)
+#              gemini-3.8-flash                                     más capaz; revisar si entra en el gratuito
 #   claude     claude-haiku-4-5                  ANTHROPIC_API_KEY  de pago, ~5 soles/mes
-#   simulado   (cualquiera)                      ninguna          solo para probar el flujo
-proveedor: github
-modelo: openai/gpt-4o-mini
+#   simulado   (cualquiera)                      ninguna            solo para probar el flujo
+#
+# (GitHub Models se evaluó primero, pero GitHub lo retiró el 30 de julio de 2026.
+#  Los modelos Gemini 2.5 ya son "legado" para proyectos nuevos; por eso 3.5.)
+proveedor: gemini
+modelo: gemini-3.5-flash-lite
 temperatura: 0.3
 
 # Cuántos análisis generar como máximo por corrida (los que falten quedan

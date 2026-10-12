@@ -161,14 +161,15 @@ probabilidades del ENFEN y los antecedentes escritos por el equipo, y redacta.
 Todo número del texto tiene que estar en `entradas`; si no, el texto se
 rechaza y la página usa la plantilla.
 
-- Proveedor y modelo se eligen en `catalogo/ia.yaml`. El piloto es **GitHub
-  Models** (gratis en repos públicos, sin clave extra). Cambiar a Gemini o a
-  Claude es cambiar dos líneas y poner la clave en *Settings → Secrets*.
+- Proveedor y modelo se eligen en `catalogo/ia.yaml`. El piloto es **Gemini**
+  (nivel gratuito de Google AI Studio; la clave va en *Settings → Secrets →
+  Actions* como `GEMINI_API_KEY`). Cambiar a Claude es cambiar dos líneas y
+  poner `ANTHROPIC_API_KEY`.
 - Solo se regenera cuando cambian las entradas (`huella`), nunca al hacer clic.
+- Los textos nacen en **borrador** (`analisis/_borrador/`, la página no los
+  muestra) hasta que el equipo los revise y ponga `modo: publicar`.
 - Para probar en la laptop sin clave: `ENSOPERU_IA_PROVEEDOR=simulado python pipeline/run.py --solo ia`
   (en PowerShell: `$env:ENSOPERU_IA_PROVEEDOR="simulado"` y luego el comando).
-- Para usar GitHub Models desde la laptop: un token personal *fine-grained*
-  con permiso **Models: read**, en la variable `GITHUB_TOKEN`.
 
 ### `analisis/<region>/<mes>.json`: el contrato más importante
 

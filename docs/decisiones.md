@@ -127,19 +127,19 @@ abril). El pronóstico estacional llega a 6 meses; no tiene sentido más.
 al año en el historial de git. Aceptable por ahora; si estorba, en el
 bloque 13 los campos pasan a Cloudflare R2 y el repo guarda solo el JSON.
 
-### 2026-10-12 · IA: piloto con GitHub Models, proveedor intercambiable
+### 2026-10-12 · IA: piloto con Gemini, proveedor intercambiable
 
 **Qué:** el generador de análisis (`productos/analisis_ia.py`) habla con el
 modelo a través de `ia/proveedores.py`, donde cada proveedor es una clase
-con `disponible()` y `generar()`. El piloto es GitHub Models
-(`openai/gpt-4o-mini`), gratis en repos públicos con el propio
-`GITHUB_TOKEN` del workflow (`permissions: models: read`). Gemini y Claude
-ya están implementados; cambiar es editar `catalogo/ia.yaml` y poner la
-clave en *Secrets*.
+con `disponible()` y `generar()`. El piloto es Gemini (`gemini-2.5-flash`,
+nivel gratuito de Google AI Studio, clave `GEMINI_API_KEY` en *Secrets*).
+Claude ya está implementado; cambiar es editar `catalogo/ia.yaml`.
 
-**Por qué:** el equipo decidió no gastar nada por ahora. GitHub Models no
-exige cuenta ni tarjeta nueva y corre donde ya corre el pipeline. El
-proveedor como pieza intercambiable evita atarse a uno.
+**Por qué:** el equipo decidió no gastar nada por ahora. Se intentó primero
+GitHub Models (gratis con el token del propio Actions), pero GitHub lo
+retiró el 30 de julio de 2026: su API respondía "OK" en texto plano a todo.
+El proveedor como pieza intercambiable es justamente lo que permitió cambiar
+en minutos.
 
 ### 2026-10-12 · Los textos de IA nacen en borrador
 
