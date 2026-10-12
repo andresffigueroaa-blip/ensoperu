@@ -97,6 +97,19 @@
   </div>
 
   <div class="wrap">
+    <section class="hist-idx">
+      <div class="thermo"></div>
+      <h2>Cómo se compara con la historia</h2>
+      <p class="sub" id="hist-sub">Índice mensual desde 1950. Las franjas marcan los umbrales de El Niño y La Niña.</p>
+      <div class="hist-idx-ctl" role="group" aria-label="Índice">
+        <button data-k="icen" aria-pressed="true"  onclick="setIndiceHist('icen')">ICEN (costa)</button>
+        <button data-k="oni"  aria-pressed="false" onclick="setIndiceHist('oni')">ONI (Niño 3.4)</button>
+        <button data-k="roni" aria-pressed="false" onclick="setIndiceHist('roni')">RONI</button>
+      </div>
+      <svg id="hist" viewBox="0 0 1200 260" preserveAspectRatio="none" aria-label="Serie histórica del índice"></svg>
+      <div class="hist-idx-ejes" id="hist-ejes"></div>
+    </section>
+
     <section class="fresh">
       <h3>Estado de los datos</h3>
       <ul id="frescura"></ul>

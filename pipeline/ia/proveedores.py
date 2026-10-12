@@ -47,7 +47,13 @@ class _Base:
             raise ErrorFuente(f"{self.nombre}: límite de uso alcanzado (429); se sigue mañana")
         if r.status_code >= 400:
             raise ErrorFuente(f"{self.nombre}: error {r.status_code}: {r.text[:300]}")
-        return r.json()
+        try:
+            return r.json()
+        except ValueError as e:
+            # Respuesta 2xx que no es JSON (página HTML, cuerpo vacío): se
+            # reporta el inicio del cuerpo para poder diagnosticar
+            raise ErrorFuente(f"{self.nombre}: respuesta {r.status_code} no es JSON "
+                              f"({r.headers.get('content-type', '?')}): {r.text[:200]!r}") from e
 
 
 class GithubModels(_Base):

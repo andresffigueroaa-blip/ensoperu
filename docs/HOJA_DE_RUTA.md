@@ -109,7 +109,7 @@ Eso fija cinco requisitos que valen para todos los bloques:
 - ⬜ Dashboard simple comparativo (dos meses, dos eventos, dos lugares)
 - ⬜ Modo claro y oscuro
 - ⬜ PWA: instalable y sin conexión
-- ⬜ Vista **Monitoreo** con series 1950-hoy (ONI, ICEN) y 1981-hoy (OISST)
+- 🔄 Vista **Monitoreo**: ✅ gráfica histórica de ICEN, ONI y RONI desde 1950 en la portada; ⬜ series OISST 1981-hoy con selector de período
 - ⬜ Accesibilidad y revisión de lenguaje con usuarios reales
 - ⬜ Dominio `ensoperu.pe`
 

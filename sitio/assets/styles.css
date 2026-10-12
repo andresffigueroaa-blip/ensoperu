@@ -105,6 +105,16 @@ nav button[aria-current="true"]{color:var(--ink); background:var(--paper-4)}
 .lede .ribbon-src{margin-top:8px; font-family:var(--sans); font-size:12px; line-height:1.5; color:var(--fog-dim)}
 .idx dd.pend{font-size:20px; color:var(--fog-dim); font-family:var(--sans); padding-top:10px}
 
+/* Historia: índice mensual desde 1950 */
+.hist-idx{padding:8px 0 30px}
+.hist-idx h2{font-size:25px; margin-bottom:6px}
+.hist-idx-ctl{display:inline-flex; border:1px solid var(--rule); border-radius:3px; overflow:hidden; margin-bottom:12px}
+.hist-idx-ctl button{padding:6px 12px; font-size:13px; color:var(--fog)}
+.hist-idx-ctl button[aria-pressed="true"]{background:var(--paper-4); color:var(--ink)}
+.hist-idx svg{display:block; width:100%; height:clamp(170px,24vh,260px); background:var(--paper-2);
+              border:1px solid var(--rule); border-radius:3px}
+.hist-idx-ejes{margin-top:8px; font-size:12px; line-height:1.5; color:var(--fog-dim)}
+
 /* Estado de los datos: de cuándo es cada dato y si su fuente falló */
 .fresh{border-top:1px solid var(--rule); padding:22px 0 6px}
 .fresh h3{font-family:var(--sans); font-size:12.5px; font-weight:600; color:var(--fog); margin-bottom:8px}

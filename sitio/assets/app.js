@@ -234,6 +234,55 @@ function pintarHero(){
 function setIndiceHero(k){ indiceHero = k; pintarHero(); }
 window.setIndiceHero = setIndiceHero;
 
+/* ── Historia: índice mensual desde 1950 ─────────────────────────────── */
+let indiceHist = "icen";
+function pintarHistoria(){
+  const S = D.indices, svg = $("#hist");
+  if (!S || !S[indiceHist]?.length){ $(".hist-idx").style.display = "none"; return; }
+  $$(".hist-idx-ctl button").forEach(b =>
+    b.setAttribute("aria-pressed", String(b.dataset.k === indiceHist)));
+  const W = 1200, H = 260, PAD = 26;
+  const v = S[indiceHist], n = v.length;
+  const vals = v.filter(x => x !== null);
+  const lo = Math.min(-3, Math.floor(Math.min(...vals))), hi = Math.max(3, Math.ceil(Math.max(...vals)));
+  const x = i => (i / (n - 1)) * W;
+  const y = t => H - PAD - ((t - lo) / (hi - lo)) * (H - 2 * PAD);
+  const U = S.umbrales[indiceHist === "roni" ? "oni" : indiceHist];
+  const um = U.nino[0][1], ul = U.nina[0][1];
+
+  // Barras: cálido por encima del umbral, frío por debajo, neutro en gris
+  let barras = "";
+  const bw = Math.max(0.8, W / n);
+  v.forEach((t, i) => {
+    if (t === null) return;
+    const col = t >= um ? escala(t, -1, 3, false) : t <= ul ? escala(t, -3, 1, false) : "#C9D2CC";
+    const y0 = y(0), y1 = y(t);
+    barras += `<rect x="${x(i).toFixed(1)}" y="${Math.min(y0, y1).toFixed(1)}" width="${bw.toFixed(2)}" height="${Math.abs(y1 - y0).toFixed(1)}" fill="${col}"/>`;
+  });
+  // Décadas en el eje
+  let ejes = "";
+  S.fechas.forEach((f, i) => {
+    if (f.endsWith("-01") && f.slice(0, 4) % 10 === 0)
+      ejes += `<line x1="${x(i)}" y1="${PAD}" x2="${x(i)}" y2="${H - PAD}" stroke="#E2E8E3"/>
+               <text x="${x(i) + 3}" y="${H - 8}" fill="#84959A" font-size="11" font-family="IBM Plex Sans">${f.slice(0, 4)}</text>`;
+  });
+  const ult = vals[vals.length - 1];
+  svg.innerHTML = `${ejes}
+    <rect x="0" y="${y(um)}" width="${W}" height="${y(0) - y(um)}" fill="#D9452C" fill-opacity=".06"/>
+    <rect x="0" y="${y(0)}" width="${W}" height="${y(ul) - y(0)}" fill="#1B6A87" fill-opacity=".06"/>
+    <line x1="0" y1="${y(um)}" x2="${W}" y2="${y(um)}" stroke="#D9452C" stroke-opacity=".5" stroke-dasharray="4 4"/>
+    <line x1="0" y1="${y(ul)}" x2="${W}" y2="${y(ul)}" stroke="#1B6A87" stroke-opacity=".5" stroke-dasharray="4 4"/>
+    <line x1="0" y1="${y(0)}" x2="${W}" y2="${y(0)}" stroke="#C9D2CC"/>
+    ${barras}
+    <text x="${W - 6}" y="${y(ult) - 8}" text-anchor="end" fill="#101A1D" font-size="16" font-family="IBM Plex Serif">${sg(ult)}</text>`;
+  const nombres = { icen: "ICEN", oni: "ONI", roni: "RONI" };
+  const iPrim = v.findIndex(t => t !== null), iUlt = v.findLastIndex(t => t !== null);
+  $("#hist-ejes").textContent = `${nombres[indiceHist]} de ${fecha(S.fechas[iPrim])} a ${fecha(S.fechas[iUlt])} · ${S.fuentes[indiceHist]} · `
+    + `El Niño desde ${sg(um)}, La Niña desde ${sg(ul)} (${U.fuente}). Eje de ${sg(lo, 0)} a ${sg(hi, 0)}.`;
+}
+function setIndiceHist(k){ indiceHist = k; pintarHistoria(); }
+window.setIndiceHist = setIndiceHist;
+
 // El titular se deduce del dato, nunca se escribe a mano.
 function titular(n12){
   if (n12 === null || n12 === undefined) return "Monitoreo del mar frente al Perú y de sus impactos.";
@@ -564,7 +613,7 @@ const recurso = ruta => window.__DATOS__?.[ruta] ?? ruta;
 
 async function iniciar(){
   try{
-    const [estado, config, regiones, geo, serie, plantillas, meta, campo] = await Promise.all([
+    const [estado, config, regiones, geo, serie, plantillas, meta, campo, indices] = await Promise.all([
       traer("datos/estado.json"),
       traer("datos/config.json"),
       traer("datos/regiones.json"),
@@ -573,8 +622,9 @@ async function iniciar(){
       traer("datos/analisis/_plantillas.json"),
       traerOpcional("datos/_meta.json"),
       traerOpcional("datos/campos/tsm_anom.json"),
+      traerOpcional("datos/series/indices.json"),
     ]);
-    D = { estado, config, regiones, geo, serie, plantillas, meta, campo };
+    D = { estado, config, regiones, geo, serie, plantillas, meta, campo, indices };
   }catch(err){
     document.body.innerHTML =
       `<div style="padding:60px 24px;max-width:600px;margin:0 auto;font-family:system-ui">
@@ -601,7 +651,7 @@ async function iniciar(){
        ${esc(m.n)}<small>${esc(m.s)}</small></button>`).join("");
 
   // Cada parte se pinta por separado: si una falla, las demás siguen.
-  for (const f of [pintarPortada, pintarHero, pintarFrescura, pintarLeyenda]){
+  for (const f of [pintarPortada, pintarHero, pintarHistoria, pintarFrescura, pintarLeyenda]){
     try { f(); } catch (e) { console.error(f.name, e); }
   }
   if (location.hash) ir(location.hash.slice(1));
