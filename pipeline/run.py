@@ -32,7 +32,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from comun import (ErrorFuente, guardar_meta, leer_meta, log, registrar,  # noqa: E402
                    resumen_actions)
 from fuentes import cpc, igp, oisst  # noqa: E402
-from productos import catalogo, estado, mapa_tsm, serie_tsm  # noqa: E402
+from productos import analisis_ia, catalogo, estado, mapa_tsm, serie_tsm  # noqa: E402
 
 # Orden de ejecución. Para agregar una fuente: escribir su módulo con una
 # función ejecutar(estado_previo) -> dict y sumarla aquí.
@@ -45,6 +45,7 @@ PASOS = {
     "serie_tsm": serie_tsm.ejecutar,    # csv -> series/tsm.json (curva de portada)
     "catalogo":  catalogo.ejecutar,     # catalogo/*.yaml + índices -> config, regiones, plantillas
     "estado":    estado.ejecutar,       # ENFEN + índices -> estado.json
+    "ia":        analisis_ia.ejecutar,  # todo lo anterior -> analisis/<region>/<mes>.json
 }
 
 

@@ -499,7 +499,7 @@ function pintarPanel(){
   const ant  = real?.antecedentes || D.plantillas.antecedentes[r.z] || "Sin antecedentes documentados.";
   const marca = !real ? "Texto de demostración"
     : real.demo ? "Ejemplo del formato, no es un análisis real"
-    : `Generado con IA el ${fecha(real.generado)}`;
+    : `Generado con IA el ${fecha(real.generado)}${real.modelo ? " · " + esc(real.modelo.split(":").pop()) : ""}`;
 
   $("#panel").innerHTML = `
     <div class="grab"></div>

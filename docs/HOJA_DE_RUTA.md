@@ -53,14 +53,18 @@ Eso fija cinco requisitos que valen para todos los bloques:
 - ⬜ Pronóstico de TSM a 10 días (Copernicus Marine, ya usado en el notebook)
 - **Necesita:** cuenta de Copernicus Marine para el último punto
 
-### ⬜ Bloque 4 · Inteligencia artificial (Claude Haiku 4.5)
+### 🔄 Bloque 4 · Inteligencia artificial (piloto: GitHub Models, gratis)
+- ✅ Proveedor intercambiable en `catalogo/ia.yaml`: GitHub Models (piloto), Gemini, Claude, simulado
+- ✅ Análisis por región ("ahora" y "temporada") y sector, con `entradas` y `huella`
+- ✅ Validación: JSON con la forma pedida, solo sectores pedidos, sin HTML, todo número presente en las entradas
+- ✅ Regenerar solo cuando cambian las entradas o las instrucciones; tope por corrida
+- ✅ Instrucciones al modelo editables por el equipo en `catalogo/ia.yaml`
+- 🔄 Primera generación real en GitHub Actions y revisión de los textos por el equipo
 - ⬜ Lectura automática de los comunicados PDF del ENFEN (alerta, probabilidades, texto)
-- ⬜ Análisis por región y sector, con `entradas` obligatorio y validación de números
-- ⬜ Regenerar solo cuando cambian las entradas (costo estimado: 4 a 7 soles/mes)
 - ⬜ Boletín automático "qué cambió" (estilo ENSO Outlook de IWMI) y tarjeta para redes
 - ⬜ Ilustraciones en los textos al hacer clic en una unidad o capa
-- ⬜ Asistente de consultas sobre capas y unidades: solo con respuestas pregeneradas o con límite diario; se evalúa después de lo anterior
-- **Necesita:** clave `ANTHROPIC_API_KEY` en GitHub (USD 5 de carga inicial); enlace a los comunicados del ENFEN
+- ⬜ Asistente de consultas: solo con respuestas pregeneradas o con límite diario; se evalúa después
+- **Necesita:** enlace a los comunicados del ENFEN; si se cambia a Gemini o Claude, su clave en *Settings → Secrets*
 
 ### ⬜ Bloque 5 · Pronóstico estacional
 - ⬜ Copernicus C3S multimodelo: lluvia y temperatura por tercios, 1 a 6 meses, grillado tipo ENSO Outlook

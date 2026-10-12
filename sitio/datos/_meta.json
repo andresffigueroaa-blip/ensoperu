@@ -77,7 +77,18 @@
       "corrida": "2026-10-12T06:48:28Z",
       "actualizado": "2026-10-12T06:48:28Z",
       "ultimo_dato": "2026-10-10"
+    },
+    "ia": {
+      "estado": "ok",
+      "corrida": "2026-10-12T06:57:22Z",
+      "actualizado": "2026-10-12T06:57:22Z",
+      "aviso": "IA sin clave (GITHUB_TOKEN); no se generó nada",
+      "modelo": "simulado:openai/gpt-4o-mini",
+      "generados": 2,
+      "rechazados": 0,
+      "pendientes": 48,
+      "modo": "borrador"
     }
   },
-  "generado": "2026-10-12T06:48:28Z"
+  "generado": "2026-10-12T06:57:22Z"
 }

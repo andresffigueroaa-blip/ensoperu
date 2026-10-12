@@ -30,6 +30,7 @@ permissions:
   contents: write     # para guardar los datos nuevos en el repo
   pages: write        # para publicar
   id-token: write     # lo exige actions/deploy-pages
+  models: read        # GitHub Models (IA gratuita) con el propio GITHUB_TOKEN
 
 # Nunca dos corridas a la vez: la segunda espera a que termine la primera
 concurrency:
@@ -57,6 +58,11 @@ jobs:
       - name: Correr el pipeline
         id: pipeline
         continue-on-error: true      # se publica igual; el fallo se reporta al final
+        env:
+          # Claves de IA. Solo hace falta la del proveedor elegido en catalogo/ia.yaml.
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: |
           if [ -n "${{ github.event.inputs.historico }}" ]; then
             python pipeline/run.py --solo oisst --historico "${{ github.event.inputs.historico }}"

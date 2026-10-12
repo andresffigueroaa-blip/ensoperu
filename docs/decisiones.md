@@ -126,3 +126,39 @@ abril). El pronóstico estacional llega a 6 meses; no tiene sentido más.
 **Peso en el repo:** la imagen pesa ~150 KB y cambia a diario, unos 50 MB
 al año en el historial de git. Aceptable por ahora; si estorba, en el
 bloque 13 los campos pasan a Cloudflare R2 y el repo guarda solo el JSON.
+
+### 2026-10-12 · IA: piloto con GitHub Models, proveedor intercambiable
+
+**Qué:** el generador de análisis (`productos/analisis_ia.py`) habla con el
+modelo a través de `ia/proveedores.py`, donde cada proveedor es una clase
+con `disponible()` y `generar()`. El piloto es GitHub Models
+(`openai/gpt-4o-mini`), gratis en repos públicos con el propio
+`GITHUB_TOKEN` del workflow (`permissions: models: read`). Gemini y Claude
+ya están implementados; cambiar es editar `catalogo/ia.yaml` y poner la
+clave en *Secrets*.
+
+**Por qué:** el equipo decidió no gastar nada por ahora. GitHub Models no
+exige cuenta ni tarjeta nueva y corre donde ya corre el pipeline. El
+proveedor como pieza intercambiable evita atarse a uno.
+
+### 2026-10-12 · Los textos de IA nacen en borrador
+
+**Qué:** `ia.yaml: modo: borrador` escribe los análisis en
+`sitio/datos/analisis/_borrador/`, carpeta que la página no lee. Cuando el
+equipo revise los textos en GitHub, cambia a `modo: publicar`.
+
+**Por qué:** es un servicio público; el primer lote de textos redactados por
+un modelo lo tienen que leer meteorólogos antes de que lo vea la gente. La
+validación automática (números presentes en las entradas, forma del JSON)
+atrapa invenciones de cifras, no errores de criterio.
+
+### 2026-10-12 · Un análisis por región y periodo, no por mes
+
+**Qué:** se generan dos textos por región: "ahora" (observado) y
+"temporada" (el periodo que cubre el ENFEN con sus probabilidades). El de
+temporada se escribe en cada mes del selector.
+
+**Por qué:** las entradas son las mismas para todos los meses futuros
+(no hay pronóstico mensual todavía); generar 6 textos distintos con los
+mismos datos sería inventar diferencias. Cuando entre el pronóstico
+estacional por mes (bloque 5), cada mes tendrá sus propias entradas.

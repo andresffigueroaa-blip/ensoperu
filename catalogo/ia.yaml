@@ -1,0 +1,70 @@
+# ════════════════════════════════════════════════════════════════════════
+# INTELIGENCIA ARTIFICIAL · editable a mano
+# ════════════════════════════════════════════════════════════════════════
+# Principio: la IA NO pronostica, TRADUCE. Recibe valores ya calculados
+# (índices, alerta y probabilidades del ENFEN, antecedentes escritos por el
+# equipo) y redacta la lectura para un público concreto. Nunca se le pide
+# que estime nada, y todo número que escriba tiene que estar en las
+# entradas; si no, el texto se rechaza y la página usa la plantilla.
+#
+# Cada análisis se guarda en sitio/datos/analisis/<region>/<mes>.json con el
+# campo `entradas` (los valores exactos que recibió el modelo) y `huella`
+# (resumen de esas entradas). Solo se vuelve a generar cuando la huella
+# cambia: un comunicado nuevo del ENFEN, un índice nuevo, un cambio aquí.
+# ════════════════════════════════════════════════════════════════════════
+
+# ── Proveedor ────────────────────────────────────────────────────────────
+# Cambiar de modelo es cambiar estas dos líneas. Claves por variable de
+# entorno (en GitHub: Settings → Secrets → Actions).
+#
+#   proveedor  modelo (ejemplos)                 clave            costo
+#   github     openai/gpt-4o-mini                GITHUB_TOKEN     gratis en repos públicos
+#              meta/Llama-3.3-70B-Instruct                        (la da el propio Actions)
+#   gemini     gemini-2.5-flash                  GEMINI_API_KEY   nivel gratuito
+#   claude     claude-haiku-4-5                  ANTHROPIC_API_KEY  de pago, ~5 soles/mes
+#   simulado   (cualquiera)                      ninguna          solo para probar el flujo
+proveedor: github
+modelo: openai/gpt-4o-mini
+temperatura: 0.3
+
+# Cuántos análisis generar como máximo por corrida (los que falten quedan
+# para el día siguiente). Respeta los límites del nivel gratuito.
+max_por_corrida: 60
+pausa_segundos: 5
+
+# ── Dónde se escriben los textos ─────────────────────────────────────────
+#   borrador   en sitio/datos/analisis/_borrador/<region>/<mes>.json. La
+#              página NO los muestra. Sirve para que el equipo los lea en
+#              GitHub antes de publicar.
+#   publicar   en sitio/datos/analisis/<region>/<mes>.json: la página los usa.
+# Empezamos en borrador. Cuando el equipo apruebe los textos, cambiar a
+# publicar (los borradores se regeneran en la carpeta definitiva).
+modo: borrador
+
+# ── Instrucciones al modelo ──────────────────────────────────────────────
+# Este texto lo puede afinar el equipo. Cambiarlo regenera todos los análisis.
+instrucciones: |
+  Eres el redactor de ENSO Perú, un servicio público que explica El Niño y
+  La Niña a la población del Perú. Escribes en español del Perú, claro y
+  directo, para personas sin formación técnica.
+
+  Reglas que no se negocian:
+  1. No pronosticas ni estimas nada. Solo explicas lo que dicen los datos y
+     el ENFEN que te entregan en las entradas.
+  2. Todo número que escribas debe venir de las entradas, tal cual. No
+     calcules, no redondees de más, no inventes cifras ni fechas.
+  3. Cita las probabilidades del ENFEN de forma explícita cuando hables del
+     escenario futuro, y di que son probabilidades, no certezas.
+  4. Los antecedentes históricos que uses son únicamente los que vienen en
+     "antecedentes". Si no hay, no inventes hechos pasados.
+  5. Señala la incertidumbre y recuerda que la autoridad es el ENFEN y el
+     SENAMHI; para decisiones operativas, consultar sus comunicados.
+  6. Nada de alarmismo ni de minimizar. Tono sereno, útil, concreto.
+  7. No uses guion largo. No uses listas ni títulos: solo párrafos.
+  8. Escribe entre 2 y 3 párrafos cortos por sector (cada uno de 2 a 4
+     oraciones). Habla de lo que esa actividad puede esperar y de qué
+     conviene revisar o preparar, sin dar órdenes.
+
+  Responde solo con un objeto JSON con esta forma exacta:
+  {"resumen": "una oración", "sectores": {"<id de sector>": ["párrafo", "párrafo"]}}
+  usando únicamente los ids de sector que se te piden.

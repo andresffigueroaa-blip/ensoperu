@@ -29,6 +29,8 @@ def leer(p: Path) -> str:
 def main():
     datos = {}
     for f in sorted((SITIO / "datos").rglob("*.json")):
+        if "_borrador" in f.parts:        # los borradores de IA no se publican
+            continue
         datos[f.relative_to(SITIO).as_posix()] = json.loads(leer(f))
     # Las imágenes del pipeline (campos del mapa) van incrustadas como data URI
     for f in sorted((SITIO / "datos").rglob("*.png")):
