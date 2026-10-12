@@ -2,23 +2,32 @@
   "fuentes": {
     "catalogo": {
       "estado": "ok",
-      "corrida": "2026-10-11T16:28:25Z",
-      "actualizado": "2026-10-11T16:28:25Z",
+      "corrida": "2026-10-12T06:38:58Z",
+      "actualizado": "2026-10-12T06:38:58Z",
       "regiones": 25,
       "capas_demo": [
-        "tsm",
         "lluvia",
         "sequia",
         "rios"
-      ]
+      ],
+      "meses": [
+        "now",
+        "2026-11",
+        "2026-12",
+        "2027-01",
+        "2027-02",
+        "2027-03",
+        "2027-04"
+      ],
+      "regiones_con_tsm_costera": 11
     },
     "oisst": {
       "estado": "ok",
-      "corrida": "2026-10-11T16:29:12Z",
-      "actualizado": "2026-10-11T16:29:12Z",
-      "ultimo_dato": "2026-10-09",
+      "corrida": "2026-10-12T06:38:37Z",
+      "actualizado": "2026-10-12T06:38:37Z",
+      "ultimo_dato": "2026-10-10",
       "archivos": {
-        "2026": "Sat, 10 Oct 2026 16:34:41 GMT",
+        "2026": "Sun, 11 Oct 2026 16:35:23 GMT",
         "1981": "Tue, 03 Jan 2023 22:24:59 GMT",
         "1982": "Tue, 03 Jan 2023 22:25:10 GMT",
         "1983": "Tue, 03 Jan 2023 22:25:21 GMT",
@@ -37,18 +46,38 @@
     },
     "serie_tsm": {
       "estado": "ok",
-      "corrida": "2026-10-11T16:29:12Z",
-      "actualizado": "2026-10-11T16:29:12Z",
-      "ultimo_dato": "2026-10-09",
+      "corrida": "2026-10-12T06:38:58Z",
+      "actualizado": "2026-10-12T06:38:58Z",
+      "ultimo_dato": "2026-10-10",
       "analogos_sin_datos": []
     },
     "estado": {
       "estado": "ok",
-      "corrida": "2026-10-11T16:29:12Z",
-      "actualizado": "2026-10-11T16:29:12Z",
+      "corrida": "2026-10-12T06:38:58Z",
+      "actualizado": "2026-10-12T06:38:58Z",
       "comunicado": "N° 13-2026",
       "aviso": null
+    },
+    "cpc": {
+      "estado": "sin_cambios",
+      "corrida": "2026-10-12T06:38:56Z",
+      "actualizado": "2026-10-12T06:38:56Z",
+      "ultimo_dato": "2026-08",
+      "fuente": "NOAA CPC (ONI y RONI, trimestres móviles)"
+    },
+    "igp": {
+      "estado": "sin_cambios",
+      "corrida": "2026-10-12T06:38:56Z",
+      "actualizado": "2026-10-12T06:38:56Z",
+      "ultimo_dato": "2026-07",
+      "fuente": "IGP / ENFEN (ICEN, Nota Técnica 2024)"
+    },
+    "mapa_tsm": {
+      "estado": "ok",
+      "corrida": "2026-10-12T06:38:58Z",
+      "actualizado": "2026-10-12T06:38:58Z",
+      "ultimo_dato": "2026-10-10"
     }
   },
-  "generado": "2026-10-11T16:29:12Z"
+  "generado": "2026-10-12T06:38:58Z"
 }

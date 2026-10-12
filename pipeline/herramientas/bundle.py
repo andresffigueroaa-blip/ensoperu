@@ -13,6 +13,7 @@ sitio/datos/ en window.__DATOS__. app.js lee primero de ahí (función traer),
 así que no hace falta reemplazar código: si app.js cambia, esto sigue
 funcionando.
 """
+import base64
 import json
 import sys
 from pathlib import Path
@@ -29,6 +30,9 @@ def main():
     datos = {}
     for f in sorted((SITIO / "datos").rglob("*.json")):
         datos[f.relative_to(SITIO).as_posix()] = json.loads(leer(f))
+    # Las imágenes del pipeline (campos del mapa) van incrustadas como data URI
+    for f in sorted((SITIO / "datos").rglob("*.png")):
+        datos[f.relative_to(SITIO).as_posix()] = "data:image/png;base64," + base64.b64encode(f.read_bytes()).decode()
 
     html = leer(SITIO / "index.html")
     css = leer(SITIO / "assets" / "styles.css")

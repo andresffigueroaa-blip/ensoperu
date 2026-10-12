@@ -1,5 +1,5 @@
 {
-  "_": "Generado por pipeline/productos/estado.py desde catalogo/enfen.yaml y OISST. No editar a mano.",
+  "_": "Generado por pipeline/productos/estado.py desde catalogo/enfen.yaml y los índices. No editar a mano.",
   "alerta": {
     "estado": "Alerta de El Niño Costero",
     "estados": [
@@ -13,23 +13,28 @@
   },
   "indices": {
     "icen": {
-      "valor": null,
-      "fecha": null,
-      "fuente": "ENFEN (Índice Costero El Niño)"
+      "valor": 3.38,
+      "fecha": "2026-07",
+      "fuente": "IGP / ENFEN, trimestre móvil (ERSST, Niño 1+2)"
+    },
+    "oni": {
+      "valor": 2.16,
+      "fecha": "2026-08",
+      "fuente": "NOAA CPC, trimestre móvil (ERSST, Niño 3.4)"
     },
     "roni": {
-      "valor": null,
-      "fecha": null,
-      "fuente": "NOAA CPC (pendiente de conectar)"
+      "valor": 1.7,
+      "fecha": "2026-08",
+      "fuente": "NOAA CPC, trimestre móvil, relativo al trópico"
     },
     "n12": {
-      "valor": 5.27,
-      "fecha": "2026-10-09",
+      "valor": 5.23,
+      "fecha": "2026-10-10",
       "fuente": "NOAA OISST, media de 7 días en la región Niño 1+2"
     },
     "n34": {
-      "valor": 3.36,
-      "fecha": "2026-10-09",
+      "valor": 3.37,
+      "fecha": "2026-10-10",
       "fuente": "NOAA OISST, media de 7 días en la región Niño 3.4"
     }
   },

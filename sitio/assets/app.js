@@ -111,14 +111,20 @@ const COLOR_MAGNITUD = { "Débil": "#E9C46A", "Moderado": "#E2913C", "Fuerte": "
    ════════════════════════════════════════════════════════════════════════ */
 const VISTAS = ["home", "mapa", "about"];
 function ir(v){
+  // Enlaces compartibles: …/#mapa (Perú) y …/#pacifico (regiones Niño)
+  if (v === "pacifico"){ scope = "pac"; v = "mapa"; }
   if (!VISTAS.includes(v)) v = "home";
   $$(".view").forEach(e => e.classList.remove("on"));
   $("#v-" + v).classList.add("on");
   VISTAS.forEach(k => $("#nav-" + k).setAttribute("aria-current", String(k === v)));
-  // La vista queda en la dirección (…/#mapa) para poder compartir el enlace
-  history.replaceState(null, "", v === "home" ? location.pathname : "#" + v);
+  history.replaceState(null, "", v === "home" ? location.pathname
+    : "#" + (v === "mapa" && scope === "pac" ? "pacifico" : v));
   window.scrollTo(0, 0);
-  if (v === "mapa") requestAnimationFrame(dibujarMapa);
+  if (v === "mapa"){
+    $("#sc-peru").setAttribute("aria-pressed", String(scope === "peru"));
+    $("#sc-pac").setAttribute("aria-pressed",  String(scope === "pac"));
+    requestAnimationFrame(dibujarMapa);
+  }
 }
 window.ir = ir;
 
@@ -240,7 +246,10 @@ function kpi(id, ind, unidad){
   const v = ind?.valor, falta = v === null || v === undefined;
   $("#k-" + id).textContent = falta ? "pendiente" : sg(v) + (unidad || "");
   $("#k-" + id).classList.toggle("pend", falta);
-  $("#f-" + id).textContent = ind?.fecha ? "al " + fecha(ind.fecha) : falta ? "sin conectar todavía" : "";
+  // Con día: "al 10 oct 2026". Solo mes (índices trimestrales): "(jul 2026)".
+  const f = ind?.fecha;
+  $("#f-" + id).textContent = !f ? (falta ? "sin conectar todavía" : "")
+    : String(f).length > 7 ? "al " + fecha(f) : `(${fecha(f)})`;
 }
 
 function pintarPortada(){
@@ -249,6 +258,9 @@ function pintarPortada(){
   kpi("roni", I.roni, "");
   kpi("n12", I.n12, " °C");
   kpi("n34", I.n34, " °C");
+  // El ONI clásico acompaña al RONI como dato secundario
+  $("#k-oni").textContent = I.oni?.valor === null || I.oni?.valor === undefined ? ""
+    : `ONI clásico: ${sg(I.oni.valor)} (${fecha(I.oni.fecha)}).`;
   $("#titular").innerHTML = titular(I.n12?.valor);
 
   $("#ribbon").innerHTML = e.alerta.estados.map(x =>
@@ -358,7 +370,13 @@ function dibujarMapa(){
               font-size="${fs}" fill="${on ? "#D9452C" : "#8CA2A8"}">${lab}</text>`;
   }).join("");
 
-  svg.innerHTML = reticula(vb) + cajas + deps;
+  // Campo de anomalía de TSM (imagen que dejó el pipeline, ya en la misma
+  // proyección): va debajo de todo y solo con la capa de temperatura del mar.
+  const F = D.campo;
+  const campo = (capa === "tsm" && F) ? `<image class="campo" href="${recurso("datos/campos/" + F.archivo)}"
+      x="${F.x}" y="${F.y}" width="${F.w}" height="${F.h}" preserveAspectRatio="none"/>` : "";
+
+  svg.innerHTML = campo + reticula(vb) + cajas + deps;
 
   svg.querySelectorAll(".dep").forEach(p => {
     p.addEventListener("click", () => elegir(p.dataset.n));
@@ -394,6 +412,11 @@ function pintarLeyenda(){
   }).join("");
   $("#leg-lo").textContent = c.loTx;
   $("#leg-hi").textContent = c.hiTx;
+  // De dónde sale el dato y de cuándo es
+  const nota = capa === "tsm" && D.campo
+    ? `${c.fuente || ""}. Campo en el mar: NOAA OISST del ${fecha(D.campo.fecha)}.`
+    : (c.fuente || "");
+  $("#leg-src").textContent = nota;
 }
 
 function setCapa(k){
@@ -406,6 +429,7 @@ function setScope(s){
   scope = s;
   $("#sc-peru").setAttribute("aria-pressed", String(s === "peru"));
   $("#sc-pac").setAttribute("aria-pressed",  String(s === "pac"));
+  history.replaceState(null, "", s === "pac" ? "#pacifico" : "#mapa");
   dibujarMapa();
 }
 async function setMes(m){
@@ -535,10 +559,12 @@ async function traer(ruta){
 async function traerOpcional(ruta){
   try { return await traer(ruta); } catch { return null; }
 }
+// Dirección de una imagen: en el archivo único viene incrustada como data URI
+const recurso = ruta => window.__DATOS__?.[ruta] ?? ruta;
 
 async function iniciar(){
   try{
-    const [estado, config, regiones, geo, serie, plantillas, meta] = await Promise.all([
+    const [estado, config, regiones, geo, serie, plantillas, meta, campo] = await Promise.all([
       traer("datos/estado.json"),
       traer("datos/config.json"),
       traer("datos/regiones.json"),
@@ -546,8 +572,9 @@ async function iniciar(){
       traerOpcional("datos/series/tsm.json"),
       traer("datos/analisis/_plantillas.json"),
       traerOpcional("datos/_meta.json"),
+      traerOpcional("datos/campos/tsm_anom.json"),
     ]);
-    D = { estado, config, regiones, geo, serie, plantillas, meta };
+    D = { estado, config, regiones, geo, serie, plantillas, meta, campo };
   }catch(err){
     document.body.innerHTML =
       `<div style="padding:60px 24px;max-width:600px;margin:0 auto;font-family:system-ui">

@@ -133,6 +133,29 @@ def departamentos() -> list:
     return sorted(out, key=lambda x: x["n"])
 
 
+def litoral() -> dict:
+    """Vértices (lon, lat) de los departamentos con litoral, según
+    catalogo/regiones.yaml. Los usa fuentes/oisst.py para asignar cada celda
+    marina cercana a la costa al departamento más próximo (TSM costera)."""
+    if not GEOJSON.exists():
+        sys.exit(f"Falta {GEOJSON}. Ver la cabecera de este archivo para descargarlo.")
+    con_mar = {n for n, r in leer_catalogo("regiones").items() if r.get("litoral")}
+    with open(GEOJSON, encoding="utf-8") as f:
+        src = json.load(f)
+    out = {}
+    for feat in src["features"]:
+        nombre = feat["properties"]["NOMBDEP"].title()
+        if nombre not in con_mar:
+            continue
+        geom = feat["geometry"]
+        rings = geom["coordinates"] if geom["type"] == "Polygon" else [p[0] for p in geom["coordinates"]]
+        out[nombre] = [[round(c[0], 3), round(c[1], 3)] for r in rings for c in r]
+    faltan = con_mar - set(out)
+    if faltan:
+        sys.exit(f"Regiones con litoral que no están en el GeoJSON: {sorted(faltan)}")
+    return out
+
+
 def main():
     ap = argparse.ArgumentParser(description="Geometrías del mapa")
     ap.add_argument("--cajas", action="store_true", help="solo recalcular recuadros Niño y vistas")
@@ -143,6 +166,10 @@ def main():
         data.update(vistas_y_cajas())
     else:
         data = {"deps": departamentos(), **vistas_y_cajas()}
+        lit = litoral()
+        escribir_json(SALIDA.with_name("litoral.json"), lit, compacto=True)
+        print(f"litoral.json: {len(lit)} departamentos con litoral, "
+              f"{sum(len(v) for v in lit.values())} vértices")
     escribir_json(SALIDA, data, compacto=True)
     print(f"{SALIDA.name}: {len(data['deps'])} departamentos")
     for k in ("viewPeru", "viewPac", "nino12", "nino3", "nino34", "nino4"):

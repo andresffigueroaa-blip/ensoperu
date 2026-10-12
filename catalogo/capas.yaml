@@ -7,9 +7,13 @@
 #   unidad     se agrega al valor ("°C", "%", o vacío)
 #   min, max   extremos de la escala de color
 #   invertida  true si los valores negativos son los "malos" (sequía)
-#   fuente     de dónde sale el valor. "demo" = todavía no hay fuente real
-#              y se usan los valores demo de regiones.yaml (la página lo
-#              marca como demostración)
+#   fuente     de dónde sale el valor:
+#                demo          todavía no hay fuente real; se usan los valores
+#                              demo de regiones.yaml y la página lo marca
+#                oisst_costera anomalía OISST en la franja marina a menos de
+#                              ~110 km del litoral de cada región (solo "Ahora";
+#                              los meses de pronóstico quedan sin dato hasta
+#                              que entre el pronóstico estacional)
 # ════════════════════════════════════════════════════════════════════════
 
 tsm:
@@ -17,7 +21,7 @@ tsm:
   unidad: "°C"
   min: -2
   max: 4
-  fuente: demo
+  fuente: oisst_costera
 
 lluvia:
   nombre: Precipitación

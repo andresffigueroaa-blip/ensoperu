@@ -74,3 +74,55 @@ de las magnitudes del ENFEN pasaron de `estado.json` a `app.js`.
 **Por qué:** el titular estaba escrito a mano y habría sido falso con La Niña.
 Los colores son decisión de diseño, no dato: si los escribe el pipeline, el
 equipo de datos pisa al de diseño.
+
+### 2026-10-12 · RONI se lee de la tabla HTML del CPC
+
+**Qué:** el CPC publica el ONI como texto plano, pero el RONI solo como
+tabla HTML (`/products/analysis_monitoring/enso/roni/`). `fuentes/cpc.py`
+quita las etiquetas y lee cada año seguido de sus 12 valores.
+
+**Por qué:** no existe archivo de texto para el RONI. Si el CPC cambia la
+tabla, la lectura falla de forma visible (menos de 100 valores) y la página
+conserva el último CSV bueno.
+
+### 2026-10-12 · ICEN desde el IGP, versión oficial
+
+**Qué:** `http://met.igp.gob.pe/datos/ICEN.txt`, la versión que sigue la
+Nota Técnica ENFEN 2024 (trimestre móvil de la anomalía ERSST en Niño 1+2).
+Los otros archivos del IGP (ICEN_81_10, ICEN_91_20, ICENr) usan otras
+climatologías y no se mezclan.
+
+### 2026-10-12 · TSM costera por región: franja de 110 km
+
+**Qué:** para cada departamento con litoral, la anomalía OISST se promedia
+sobre las celdas marinas cuyo vértice de polígono más cercano pertenece a
+ese departamento y está a menos de 1° (~110 km). Los vértices salen de
+`sitio/datos/geo/litoral.json` (lo genera `herramientas/build_geo.py`).
+
+**Por qué:** es simple, no necesita librerías geoespaciales y se puede
+explicar en una frase. La anchura de 110 km cubre la plataforma y la zona de
+pesca artesanal. Para los meses de pronóstico la capa queda sin dato hasta
+que entre el pronóstico estacional: mejor "sin dato" que un valor inventado.
+
+### 2026-10-12 · Campo de TSM como imagen en la misma proyección
+
+**Qué:** `productos/mapa_tsm.py` dibuja el campo del último día (150°E a
+65°W, 25°S a 15°N) con matplotlib, en la misma proyección Mercator de
+`build_geo.py` y con la misma escala de colores de `app.js`. El navegador
+solo coloca la imagen (`<image>`) en las coordenadas que indica
+`campos/tsm_anom.json`.
+
+**Por qué:** da un mapa real hoy, sin MapLibre ni servidor. Cuando llegue el
+bloque 6 la misma imagen se puede servir como ráster georreferenciado.
+
+### 2026-10-12 · Meses del selector generados, no escritos a mano
+
+**Qué:** `catalogo/meses.yaml` solo indica el horizonte (6). El pipeline
+genera "Ahora" más los próximos seis meses a partir del mes actual.
+
+**Por qué:** la lista a mano quedaba vieja (en octubre todavía decía enero a
+abril). El pronóstico estacional llega a 6 meses; no tiene sentido más.
+
+**Peso en el repo:** la imagen pesa ~150 KB y cambia a diario, unos 50 MB
+al año en el historial de git. Aceptable por ahora; si estorba, en el
+bloque 13 los campos pasan a Cloudflare R2 y el repo guarda solo el JSON.

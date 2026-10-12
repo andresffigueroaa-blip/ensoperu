@@ -180,6 +180,10 @@ footer p+p{margin-top:8px}
 .legend{display:flex; height:9px; border-radius:2px; overflow:hidden; margin-bottom:8px}
 .legend i{flex:1}
 .legend-ends{display:flex; justify-content:space-between; font-size:11.5px; color:var(--fog-dim)}
+.leg-src{margin-top:10px; font-size:11.5px; line-height:1.5; color:var(--fog-dim)}
+/* Campo ráster bajo el mapa: un poco atenuado para que los departamentos
+   y la retícula sigan leyéndose encima */
+.campo{opacity:.92; image-rendering:auto}
 
 /* El escenario del mapa es la única superficie oscura de la interfaz */
 .stage{position:relative; background:var(--stage); overflow:hidden}

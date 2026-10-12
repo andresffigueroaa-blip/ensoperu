@@ -9,6 +9,7 @@ por región y por actividad económica.
 > comunicados.
 
 Sitio: <https://andresffigueroaa-blip.github.io/ensoperu/>
+· Avance y próximos pasos: [`docs/HOJA_DE_RUTA.md`](docs/HOJA_DE_RUTA.md)
 
 ---
 
