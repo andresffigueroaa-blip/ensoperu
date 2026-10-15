@@ -193,3 +193,76 @@ se leen directo en el navegador (decenas de KB).
 
 **Por qué:** separa el dato del texto interpretado (portada y mapa), permite
 auditar lo que la IA recibió, y cumple el pedido de "dashboards puros".
+
+### 2026-10-15 · Mapa interactivo con MapLibre GL, sin servidor
+
+**Qué:** `sitio/assets/mapa.js` reemplaza el mapa SVG. Mapa base oscuro de
+OpenFreeMap (sin clave), relieve sombreado de los mosaicos Terrarium de AWS,
+el campo de TSM como imagen georreferenciada (`tsm_anom_ml.png`, recortado
+en 180°W), coropletas por región, provincia y distrito desde GeoJSON
+simplificados (59, 194 y 696 KB), puntos de OpenStreetMap con íconos
+dibujados en SVG y focos de calor como mapa de calor de lejos y puntos de
+cerca.
+
+**Por qué:** el pedido es un mapa que invite a entrar y que sirva para
+decidir por provincia o distrito; eso exige zoom, relieve y miles de puntos,
+que el SVG no aguanta. MapLibre es libre y va por CDN: sigue sin npm ni
+compilación. Los GeoJSON caben en el repo; si crecen (cuencas, centros
+poblados) pasan a PMTiles en R2.
+
+### 2026-10-15 · Fuente de límites: juaneladio/peru-geojson, con reparaciones
+
+**Qué:** los límites INEI simplificados de ese repositorio. Se fusionan
+unidades partidas con el mismo código (Piura 2001 venía como "PIURA" y
+"PUIRA"; Víctor Fajardo 0510), los nombres de provincias y regiones salen de
+la tabla de distritos, y 8 distritos sin geometría se omiten (Amantaní, El
+Parco, La Punta, Santa Anita, Goyllarisquizga, Acopampa, Trita, Bellavista
+de Sullana).
+
+**Por qué:** es lo mejor disponible sin clave hoy. Tiene 1834 distritos y el
+Perú tiene ~1890: se reemplaza cuando el equipo consiga los límites vigentes
+del INEI (tarea de Durand y Quintana).
+
+### 2026-10-15 · Lugares desde OpenStreetMap (Overpass), con límites claros
+
+**Qué:** presas, embalses con nombre, lagunas con nombre y glaciares desde
+OpenStreetMap, ubicados en su distrito por código INEI. Licencia ODbL,
+atribución "© colaboradores de OpenStreetMap" en el mapa.
+
+**Por qué:** es el único inventario gratuito y descargable hoy. Es
+colaborativo, no oficial: la ficha lo dice y los inventarios de la ANA
+(lagunas, presas) y del INAIGEM (glaciares) lo reemplazarán.
+
+### 2026-10-15 · Lluvia a 16 días de Open-Meteo e incendios de NASA FIRMS
+
+**Qué:** Open-Meteo (sin clave, uso no comercial) da lluvia diaria a 16 días
+por punto; se promedian hasta 5 puntos dentro de cada región y provincia. NASA
+FIRMS da los focos VIIRS de 7 días de Sudamérica en un CSV público.
+
+**Por qué:** dan "qué viene" y "qué pasa ahora" sin costo ni cuenta. Ninguno
+es fuente oficial peruana: la página remite al SENAMHI para avisos y aclara
+que un foco de calor no siempre es un incendio forestal. Open-Meteo se
+consulta como máximo cada 6 horas para respetar su nivel gratuito.
+
+### 2026-10-15 · Niveles de atención por amenaza, con la regla a la vista
+
+**Qué:** `catalogo/atencion.yaml` define cortes para mar cálido (anomalía
+costera), incendios (focos en 7 días) y lluvia próxima (días con más de
+20 mm). La ficha muestra el nivel con la regla que lo produjo.
+
+**Por qué:** una persona necesita una lectura rápida, pero un índice que
+mezcle amenazas sería opaco y discutible. Un nivel por amenaza y la regla
+visible es auditable y lo puede afinar el equipo sin tocar código. El de
+lluvia es provisional hasta tener la normal climática de cada lugar.
+
+### 2026-10-15 · Umbrales del ICEN: solo los verificados
+
+**Qué:** en la gráfica histórica se dibuja únicamente el umbral de condición
+cálida débil (ICEN >= +0,5), confirmado en el Comunicado Oficial ENFEN
+N° 07-2026 que cita la Nota Técnica 01-2024. Los demás cortes de la nota
+(moderada, fuerte, La Niña) no se dibujan hasta leer el PDF original.
+
+**Por qué:** antes había cortes escritos de memoria. Preferible mostrar menos
+a mostrar algo que el ENFEN no dice.
+
+**Peso en el repo:** `campos/incendios.geojson` (~550 KB) cambia entero cada día, unos 200 MB al año en el historial. Se tolera hasta que exista el bucket R2 (bloque 7); entonces los focos diarios van a R2 y el repo guarda solo los conteos por unidad.

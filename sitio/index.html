@@ -22,6 +22,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Serif:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css">
 <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
@@ -127,16 +128,23 @@
   <div class="mapview">
 
     <aside class="rail">
-      <section>
-        <h3>Capa</h3>
-        <div id="layers"></div>
+      <section class="rail-buscar">
+        <input id="buscar" list="lista-unidades" placeholder="Busca tu región, provincia o distrito" aria-label="Buscar lugar" autocomplete="off">
+        <datalist id="lista-unidades"></datalist>
       </section>
       <section>
-        <h3>Extensión</h3>
-        <div class="scope">
-          <button id="sc-peru" aria-pressed="true"  onclick="setScope('peru')">Perú</button>
-          <button id="sc-pac"  aria-pressed="false" onclick="setScope('pac')">Pacífico</button>
-        </div>
+        <h3>Tema</h3>
+        <div class="temas" id="temas"></div>
+      </section>
+      <section>
+        <h3>Capa</h3>
+        <div id="capas"></div>
+        <h3 class="h3-sep">Nivel</h3>
+        <div class="scope" id="niveles"></div>
+      </section>
+      <section>
+        <h3>Lugares</h3>
+        <div id="lugares-ctl"></div>
       </section>
       <section>
         <h3 id="leg-title">Escala</h3>
@@ -147,16 +155,16 @@
     </aside>
 
     <div class="stage" id="stage">
-      <svg id="map" role="img" aria-label="Mapa del Perú por departamentos"></svg>
+      <div id="mapa" role="region" aria-label="Mapa interactivo del Perú"></div>
       <div class="tip" id="tip"></div>
-      <div class="months" id="months"></div>
+      <div class="mapa-aviso" id="mapa-aviso">Elige un tema, o busca tu lugar, o haz clic en el mapa.</div>
     </div>
 
     <aside class="panel" id="panel">
       <div class="grab"></div>
       <div class="empty">
-        <b>Elige una región en el mapa</b>
-        Cada región abre su lectura del momento y del mes que selecciones abajo, con lo que eso significa para la pesca, la agricultura, el agua y el riesgo de desastres.
+        <b>Elige un lugar</b>
+        Haz clic en una región, provincia o distrito, o en una presa, laguna o glaciar. La ficha muestra qué pasa ahora, qué viene, qué hay expuesto y qué estudios lo explican.
       </div>
     </aside>
 
@@ -238,6 +246,9 @@
   </div>
 </main>
 
+<script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
+<script src="assets/iconos.js"></script>
 <script src="assets/app.js"></script>
+<script src="assets/mapa.js"></script>
 </body>
 </html>

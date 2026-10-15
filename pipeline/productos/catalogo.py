@@ -138,6 +138,26 @@ def ejecutar(estado: dict) -> dict:
         } for n, r in regiones.items()},
     })
 
+    # Niveles de atención (reglas visibles en la ficha) y estudios relacionados
+    atencion = leer_catalogo("atencion")
+    for k, a in atencion.items():
+        if len(a.get("cortes", [])) != 3 or sorted(a["cortes"]) != a["cortes"]:
+            raise ErrorValidacion(f"atencion.yaml: '{k}' necesita 3 cortes crecientes")
+    estudios = leer_catalogo("estudios") or []
+    for s in estudios:
+        faltan = {"id", "titulo", "autores", "anio", "url", "temas", "lugares", "hallazgo"} - set(s)
+        if faltan:
+            raise ErrorValidacion(f"estudios.yaml: '{s.get('id', '?')}' sin {sorted(faltan)}")
+        if not str(s["url"]).startswith("http"):
+            raise ErrorValidacion(f"estudios.yaml: '{s['id']}' sin enlace verificable")
+    if len({s["id"] for s in estudios}) != len(estudios):
+        raise ErrorValidacion("estudios.yaml: hay ids repetidos")
+    escribir_json(DATOS / "estudios.json", {
+        "_": "Generado desde catalogo/estudios.yaml y catalogo/atencion.yaml. No editar a mano.",
+        "atencion": atencion,
+        "estudios": [{**s, "lugares": [str(x) for x in s["lugares"]]} for s in estudios],
+    })
+
     escribir_json(DATOS / "analisis" / "_plantillas.json", {
         "_": "Generado desde catalogo/plantillas.yaml. No editar a mano.",
         **plantillas,

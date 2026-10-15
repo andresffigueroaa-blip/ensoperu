@@ -1,0 +1,29 @@
+# ════════════════════════════════════════════════════════════════════════
+# NIVELES DE ATENCIÓN · editable a mano
+# ════════════════════════════════════════════════════════════════════════
+# Reglas transparentes que la ficha de cada lugar muestra junto al nivel.
+# No son pronósticos: resumen lo observado o lo que dicen los modelos.
+# Un nivel por amenaza; nunca un índice que mezcle amenazas.
+#
+#   cortes   límites entre bajo | medio | alto | muy alto
+#   unidad   lo que se compara con los cortes
+#   regla    cómo se explica en la ficha
+# ════════════════════════════════════════════════════════════════════════
+
+mar:
+  nombre: Mar cálido
+  unidad: "°C"
+  cortes: [1.0, 2.0, 3.0]
+  regla: "Anomalía de temperatura del mar frente al litoral (media de 7 días). Menos de +1 °C bajo, +1 a +2 medio, +2 a +3 alto, más de +3 muy alto."
+
+incendios:
+  nombre: Incendios
+  unidad: focos en 7 días
+  cortes: [1, 10, 50]
+  regla: "Focos de calor detectados por satélite en los últimos 7 días. Ninguno bajo, 1 a 9 medio, 10 a 49 alto, 50 o más muy alto."
+
+lluvia:
+  nombre: Lluvia próxima
+  unidad: "días con más de 20 mm en 16 días"
+  cortes: [1, 3, 6]
+  regla: "Días con lluvia fuerte (más de 20 mm) en el pronóstico de 16 días. Ninguno bajo, 1 a 2 medio, 3 a 5 alto, 6 o más muy alto. Provisional: se reemplazará por la comparación con la lluvia normal del lugar."

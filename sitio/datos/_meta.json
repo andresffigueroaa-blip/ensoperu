@@ -2,8 +2,8 @@
   "fuentes": {
     "catalogo": {
       "estado": "ok",
-      "corrida": "2026-10-14T15:39:22Z",
-      "actualizado": "2026-10-14T15:39:22Z",
+      "corrida": "2026-10-15T05:47:56Z",
+      "actualizado": "2026-10-15T05:47:56Z",
       "regiones": 25,
       "capas_demo": [
         "lluvia",
@@ -73,10 +73,10 @@
       "fuente": "IGP / ENFEN (ICEN, Nota Técnica 2024)"
     },
     "mapa_tsm": {
-      "estado": "sin_cambios",
-      "corrida": "2026-10-14T15:39:22Z",
-      "actualizado": "2026-10-14T15:39:22Z",
-      "ultimo_dato": "2026-10-12"
+      "estado": "ok",
+      "corrida": "2026-10-15T05:54:22Z",
+      "actualizado": "2026-10-15T05:54:22Z",
+      "ultimo_dato": "2026-10-10"
     },
     "ia": {
       "estado": "sin_cambios",
@@ -91,11 +91,20 @@
     },
     "serie_indices": {
       "estado": "ok",
-      "corrida": "2026-10-14T15:39:22Z",
-      "actualizado": "2026-10-14T15:39:22Z",
+      "corrida": "2026-10-15T05:47:56Z",
+      "actualizado": "2026-10-15T05:47:56Z",
       "ultimo_dato": "2026-08",
       "meses": 920
+    },
+    "openmeteo": {
+      "estado": "ok",
+      "corrida": "2026-10-15T05:48:53Z",
+      "actualizado": "2026-10-15T05:48:53Z",
+      "ultimo_dato": "2026-10-15",
+      "unidades": 220,
+      "emitido": "2026-10-15T05:48:53Z",
+      "fuente": "Open-Meteo (modelos globales)"
     }
   },
-  "generado": "2026-10-14T15:39:22Z"
+  "generado": "2026-10-15T05:54:22Z"
 }

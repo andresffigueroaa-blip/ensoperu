@@ -31,7 +31,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from comun import (ErrorFuente, guardar_meta, leer_meta, log, registrar,  # noqa: E402
                    resumen_actions)
-from fuentes import cpc, igp, oisst  # noqa: E402
+from fuentes import cpc, firms, igp, oisst, openmeteo  # noqa: E402
 from productos import analisis_ia, catalogo, estado, mapa_tsm, serie_indices, serie_tsm  # noqa: E402
 
 # Orden de ejecución. Para agregar una fuente: escribir su módulo con una
@@ -41,6 +41,8 @@ PASOS = {
     "oisst":     oisst.ejecutar,        # NOAA OISST -> indices/oisst_diario.csv, tsm_costera_diaria.csv
     "cpc":       cpc.ejecutar,          # NOAA CPC   -> indices/cpc_mensual.csv (ONI, RONI)
     "igp":       igp.ejecutar,          # IGP        -> indices/icen.csv
+    "firms":     firms.ejecutar,        # NASA FIRMS -> campos/incendios.geojson, unidades/incendios.json
+    "openmeteo": openmeteo.ejecutar,    # Open-Meteo -> unidades/lluvia_16d.json
     "mapa_tsm":  mapa_tsm.ejecutar,     # campo OISST -> campos/tsm_anom.png
     "serie_tsm": serie_tsm.ejecutar,    # csv -> series/tsm.json (curva de portada)
     "serie_indices": serie_indices.ejecutar,  # icen + cpc -> series/indices.json (historia)

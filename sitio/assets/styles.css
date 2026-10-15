@@ -197,7 +197,59 @@ footer p+p{margin-top:8px}
 
 /* El escenario del mapa es la única superficie oscura de la interfaz */
 .stage{position:relative; background:var(--stage); overflow:hidden}
-.stage svg{width:100%; height:100%; display:block}
+#mapa{position:absolute; inset:0}
+.maplibregl-ctrl-group{background:var(--stage-2); box-shadow:none; border:1px solid var(--stage-rule)}
+.maplibregl-ctrl-group button{filter:invert(.85)}
+.maplibregl-ctrl-attrib{background:rgba(21,33,40,.8); color:var(--stage-fog); font-size:10px}
+.maplibregl-ctrl-attrib a{color:var(--stage-fog)}
+.mapa-aviso{position:absolute; left:12px; bottom:12px; max-width:min(440px,80%); padding:9px 12px; border-radius:3px;
+            background:rgba(21,33,40,.88); backdrop-filter:blur(8px); color:var(--stage-ink); font-size:12.5px; line-height:1.5;
+            border:1px solid var(--stage-rule); pointer-events:none}
+
+/* Riel del mapa */
+.rail-buscar input{width:100%; padding:9px 11px; border:1px solid var(--rule); border-radius:3px; font:inherit; font-size:13.5px;
+                   background:var(--paper); color:var(--ink)}
+.rail-buscar input:focus{outline:2px solid var(--accent); outline-offset:1px}
+.temas{display:grid; gap:5px}
+.temas button{text-align:left; padding:8px 10px; border:1px solid var(--rule); border-radius:3px; font-size:13px; color:var(--fog); background:var(--paper)}
+.temas button:hover{color:var(--ink); border-color:var(--fog-dim)}
+.temas button[aria-pressed="true"]{background:var(--paper-4); color:var(--ink); border-color:var(--paper-4)}
+.h3-sep{margin-top:14px}
+.scope button[disabled]{opacity:.4; cursor:not-allowed}
+.layer svg{flex:none}
+.foco{width:9px; height:9px; border-radius:50%; background:#F28C28; box-shadow:0 0 0 3px rgba(242,140,40,.25); flex:none; margin:0 2px}
+
+/* Ficha de lugar */
+.miga{font-size:12px; color:var(--fog-dim); margin-bottom:4px}
+.f-sec{padding:16px 24px 6px; border-bottom:1px solid var(--rule-soft)}
+.f-sec h3{font-family:var(--sans); font-size:12.5px; font-weight:600; color:var(--fog); margin-bottom:10px}
+.f-grid{display:grid; grid-template-columns:1fr 1fr; gap:10px 14px; margin:0 0 10px}
+.f-grid div{padding:10px 12px; border:1px solid var(--rule-soft); border-radius:3px; background:var(--paper)}
+.f-grid dt{font-size:11.5px; color:var(--fog-dim); line-height:1.35}
+.f-grid dd{margin:4px 0 6px; font-size:22px; font-family:var(--sans); font-weight:500; letter-spacing:-.01em}
+.chip{display:inline-flex; align-items:center; gap:5px; padding:2px 8px; border-radius:2px; font-size:11.5px; font-weight:500; cursor:help}
+.chip.bajo{background:#E5EBE6; color:#3E4F53}
+.chip.medio{background:#F6E7B4; color:#5A4300}
+.chip.alto{background:#F8D2B3; color:#6B2E00}
+.chip.muyalto{background:#B4101C; color:#FFF4F1}
+.chip.sin{background:var(--paper-3); color:var(--fog-dim)}
+.f-nota, .f-fuente{font-size:11.5px; color:var(--fog-dim); line-height:1.5; margin:0 0 10px}
+.f-txt{font-size:14px; line-height:1.6; margin:0 0 8px}
+.f-txt b{font-weight:600}
+.mini{display:block; width:100%; height:auto; margin:4px 0 6px}
+.f-lugares{display:flex; flex-wrap:wrap; gap:6px 14px; font-size:13px; margin-bottom:8px}
+.f-lugares span{display:inline-flex; align-items:center; gap:5px}
+.f-lista{list-style:none; margin:0 0 8px; padding:0; columns:2; font-size:13px}
+.f-lista li{break-inside:avoid; padding:2px 0}
+.f-lista a{display:inline-flex; align-items:center; gap:5px; color:var(--cold); text-decoration:none}
+.f-lista a:hover{text-decoration:underline}
+.f-est{list-style:none; margin:0 0 10px; padding:0}
+.f-est li{padding:8px 0; border-top:1px solid var(--rule-soft)}
+.f-est li:first-child{border-top:none}
+.f-est a{color:var(--ink); font-weight:500; text-decoration:none; font-size:13.5px}
+.f-est a:hover{text-decoration:underline}
+.f-est span{display:block; font-size:12px; color:var(--fog-dim); margin:2px 0 4px}
+.f-est p{font-size:13px; line-height:1.55; color:var(--fog)}
 .grat{stroke:#2B4149; stroke-width:.6; fill:none; vector-effect:non-scaling-stroke}
 .gratlab{fill:#5A7178; font-family:var(--sans)}
 .dep{fill:var(--stage-3); stroke:var(--stage); stroke-width:.8; cursor:pointer;
@@ -318,11 +370,16 @@ footer p+p{margin-top:8px}
   .mapview{grid-template-columns:1fr; position:relative}
   .rail{position:absolute; top:0; left:0; right:0; z-index:20; display:flex;
         border-right:none; border-bottom:1px solid var(--rule); overflow-x:auto}
-  .rail section{border-bottom:none; border-right:1px solid var(--rule-soft); padding:12px 14px; flex:none}
-  .rail section:first-child{display:flex; gap:6px; align-items:center}
+  .rail section{border-bottom:none; border-right:1px solid var(--rule-soft); padding:8px 10px; flex:none; display:flex; gap:6px; align-items:center}
   .rail h3{display:none}
-  .rail section:first-child .layer{width:auto; white-space:nowrap}
-  #layers{display:flex; gap:4px}
+  .rail .layer{width:auto; white-space:nowrap; padding:7px 9px; font-size:12.5px}
+  .rail-buscar input{width:190px; padding:7px 9px; font-size:13px}
+  .temas{display:flex; gap:5px}
+  .temas button{white-space:nowrap; padding:7px 9px; font-size:12.5px}
+  #capas, #lugares-ctl{display:flex; gap:4px}
+  .scope button{white-space:nowrap; padding:7px 9px; font-size:12.5px}
+  .rail section:last-child{display:none}        /* la escala va en la ficha y en la leyenda del mapa */
+  .mapa-aviso{display:none}
   .stage{padding-top:56px}
 
   /* En pantalla angosta el panel sube desde abajo como hoja deslizable */

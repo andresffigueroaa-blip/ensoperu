@@ -18,7 +18,7 @@ import math
 import numpy as np
 import xarray as xr
 
-from comun import DATOS, escribir_json, leer_catalogo, log
+from comun import DATOS, escribir_json, leer_catalogo, leer_json, log
 from fuentes.oisst import CAMPO
 
 DIR = DATOS / "campos"
@@ -74,7 +74,7 @@ def ejecutar(estado: dict) -> dict:
     with xr.open_dataarray(CAMPO) as da:
         campo = da.load()
     fecha = campo.attrs.get("fecha", "")
-    if estado.get("ultimo_dato") == fecha and PNG.exists():
+    if estado.get("ultimo_dato") == fecha and PNG.exists() and "lonlat_ml" in (leer_json(META) or {}):
         return {"estado": "sin_cambios", "ultimo_dato": fecha}
 
     capa = leer_catalogo("capas")["tsm"]
@@ -111,7 +111,28 @@ def ejecutar(estado: dict) -> dict:
         "x": round(float(x0), 1), "y": round(float(y0), 1),
         "w": round(float(x1 - x0), 1), "h": round(float(y1 - y0), 1),
         "min": lo, "max": hi, "unidad": "°C",
+        # Esquinas en grados (longitud continua: -210 = 150°E) para MapLibre
+        "lonlat": [round(float(lon[0] - dl / 2), 3), round(float(lat.min() - dl / 2), 3),
+                   round(float(lon[-1] + dl / 2), 3), round(float(lat.max() + dl / 2), 3)],
     })
+    # Segunda imagen para MapLibre: en lon/lat y recortada en 180°W (MapLibre
+    # no acepta longitudes menores a -180 en una imagen)
+    sel = lon >= -180
+    lon2, dat2 = lon[sel], datos[:, sel]
+    alto2 = int(round(ANCHO_PX * (lat.max() - lat.min()) / (lon2.max() - lon2.min()) / 2))
+    fig = plt.figure(figsize=(ANCHO_PX / dpi, max(alto2, 50) / dpi), dpi=dpi)
+    ax = fig.add_axes([0, 0, 1, 1]); ax.set_axis_off()
+    xb2 = np.concatenate([lon2 - dl / 2, [lon2[-1] + dl / 2]])
+    yb2 = np.concatenate([lat - dl / 2, [lat[-1] + dl / 2]])
+    # eje y en Mercator para que la imagen encaje al colocarla por sus esquinas
+    ax.pcolormesh(xb2, merc_y(yb2), dat2, cmap=_colormap(), vmin=lo, vmax=hi, shading="flat", rasterized=True)
+    ax.set_xlim(xb2.min(), xb2.max()); ax.set_ylim(float(merc_y(yb2.min())), float(merc_y(yb2.max())))
+    png_ml = DIR / "tsm_anom_ml.png"
+    tmp = png_ml.with_suffix(".tmp.png"); fig.savefig(tmp, dpi=dpi, transparent=True); plt.close(fig); tmp.replace(png_ml)
+    meta = leer_json(META)
+    meta["archivo_ml"] = png_ml.name
+    meta["lonlat_ml"] = [round(float(xb2.min()), 3), round(float(yb2.min()), 3), round(float(xb2.max()), 3), round(float(yb2.max()), 3)]
+    escribir_json(META, meta)
     kb = PNG.stat().st_size / 1024
-    log(f"  campo del {fecha}: {datos.count()} celdas marinas, {kb:.0f} KB")
+    log(f"  campo del {fecha}: {datos.count()} celdas marinas, {kb:.0f} KB (+ versión MapLibre)")
     return {"estado": "ok", "ultimo_dato": fecha}

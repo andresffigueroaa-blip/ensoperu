@@ -16,12 +16,14 @@ from fuentes import cpc, igp
 SALIDA = DATOS / "series" / "indices.json"
 DESDE = 1950
 
-# Umbrales operativos (ENFEN para el ICEN; CPC para el ONI), para la leyenda
+# Umbrales para la gráfica. Solo se dibujan los verificados en fuente oficial:
+#  ICEN: condición cálida débil >= +0,5 (Nota Técnica ENFEN 01-2024, citada en
+#        el Comunicado Oficial ENFEN N° 07-2026). Los demás cortes de la nota
+#        2024 están pendientes de verificar: no se dibujan.
+#  ONI:  +0,5 / -0,5 (NOAA CPC).
 UMBRALES = {
-    "icen": {"fuente": "ENFEN 2024", "nino": [["Débil", 0.4], ["Moderado", 1.0], ["Fuerte", 1.7], ["Extraordinario", 3.0]],
-             "nina": [["Débil", -1.0], ["Moderada", -1.2], ["Fuerte", -1.4]]},
-    "oni":  {"fuente": "NOAA CPC", "nino": [["Débil", 0.5], ["Moderado", 1.0], ["Fuerte", 1.5], ["Muy fuerte", 2.0]],
-             "nina": [["Débil", -0.5], ["Moderada", -1.0], ["Fuerte", -1.5]]},
+    "icen": {"fuente": "Nota Técnica ENFEN 01-2024", "nino": [["Cálida débil", 0.5]], "nina": []},
+    "oni":  {"fuente": "NOAA CPC", "nino": [["El Niño", 0.5]], "nina": [["La Niña", -0.5]]},
 }
 
 

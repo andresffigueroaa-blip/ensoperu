@@ -3,7 +3,7 @@
 Documento vivo. Se actualiza al cerrar cada tarea. Si algo no está aquí, no
 está planificado.
 
-**Última actualización:** 12 oct 2026 · **Bloques cerrados:** 1 y 2 · **En curso:** 3
+**Última actualización:** 15 oct 2026 · **Bloques cerrados:** 0, 1, 2, 3 · **En curso:** 4, 6, 7, 8, 9, 10
 
 Leyenda: ✅ hecho · 🔄 en curso · ⬜ pendiente · ⏸️ bloqueado (ver "Necesita")
 
@@ -43,13 +43,17 @@ Eso fija cinco requisitos que valen para todos los bloques:
 - ✅ Publicado en `andresffigueroaa-blip.github.io/ensoperu`; corre solo desde el 1 oct 2026
 - ⬜ Histórico completo 1981-2025 (opcional; botón *Run workflow*, campo `historico: 1981-2025`)
 
-### 🔄 Bloque 3 · Índices oficiales y primer mapa real
+### ✅ Bloque 0 · Skills y reglas del proyecto (15 oct 2026)
+- ✅ `CLAUDE.md` del repo y skills `ensoperu-diseno`, `ensoperu-datos`, `ensoperu-decision` en `.claude/skills/`
+- ✅ Diseño de gráficos y mapa revisado con el skill `dataviz` (colores por trabajo, marcas, interacción)
+
+### ✅ Bloque 3 · Índices oficiales y primer mapa real
 - ✅ ONI y RONI (NOAA CPC) en `indices/cpc_mensual.csv`
 - ✅ ICEN (IGP, versión oficial Nota Técnica ENFEN 2024) en `indices/icen.csv`
 - ✅ TSM costera por región litoral desde OISST (franja a menos de 110 km del litoral); reemplaza el valor demo de la capa "Temperatura del mar"
 - ✅ Campo diario de anomalía de TSM dibujado bajo el mapa (vista Perú y Pacífico)
 - ✅ Meses del selector generados por el pipeline (siempre los próximos 6)
-- 🔄 Pruebas, capturas y publicación
+- ✅ Publicado el 12 oct 2026
 - ⬜ Pronóstico de TSM a 10 días (Copernicus Marine, ya usado en el notebook)
 - **Necesita:** cuenta de Copernicus Marine para el último punto
 
@@ -73,34 +77,40 @@ Eso fija cinco requisitos que valen para todos los bloques:
 - ⬜ Revisar WeatherNext 2 (Google): qué entrega y si es de acceso libre
 - **Necesita:** cuenta de Copernicus CDS (gratuita)
 
-### ⬜ Bloque 6 · Mapa por unidades
-- ⬜ Migración a MapLibre + PMTiles (sigue sin servidor y sin compilación)
-- ⬜ Capas: región, **provincia** y cuenca (ANA)
-- ⬜ Puntos: lagos, glaciares, embalses, ciudades y centros poblados
-- ⬜ Datos grillados (mapas continuos) además de valores por unidad
-- ⬜ Buscador por nombre y botón "mi ubicación"
-- **Necesita:** bases de datos de límites y unidades (Durand y Quintana)
+### 🔄 Bloque 6 · Mapa interactivo por unidades (MapLibre)
+- ✅ Mapa MapLibre: base oscura (OpenFreeMap), relieve sombreado, campo de TSM, sin servidor ni compilación
+- ✅ Coropletas por **región, provincia y distrito** (límites INEI simplificados; 25 / 195 / 1826)
+- ✅ Lugares con ícono dibujado: 554 presas, 61 embalses, 2058 lagunas, 928 glaciares (OpenStreetMap)
+- ✅ Buscador por nombre (2046 unidades) y **ficha de lugar** al hacer clic
+- ✅ Temas: Mar y pesca · Lluvias e inundaciones · Sequía e incendios · Agua y glaciares
+- ⬜ Cuencas (ANA) y reemplazo de OSM por los inventarios oficiales (ANA, INAIGEM)
+- ⬜ Botón "mi ubicación"; PMTiles si los GeoJSON crecen
+- **Necesita:** límites INEI vigentes y capas oficiales (Durand y Quintana)
 
-### ⬜ Bloque 7 · Variables observadas y normal climática
+### 🔄 Bloque 7 · Variables observadas y normal climática
+- ✅ Focos de calor NASA FIRMS (7 días) por región, provincia y distrito; serie diaria por región
 - ⬜ Monitoreo de lluvia (CHIRPS, PISCO), SPI 1-3-6 y temperatura, por provincia y cuenca
 - ⬜ Humedad del suelo, escorrentía, humedad del aire y vientos (ERA5-Land, GLDAS; por evaluar)
 - ⬜ Normal climática de lluvia, temperatura, humedad del suelo y caudal, comparada con Niños anteriores
 - ⬜ Carga de datos históricos propios
 
-### ⬜ Bloque 8 · Caudales
-- ⬜ Pronóstico de inundaciones GloFAS (Copernicus) por tramo de río
+### 🔄 Bloque 8 · Caudales y lluvia próxima
+- ✅ Lluvia pronosticada a 16 días por región y provincia (Open-Meteo, modelos globales)
+- ⬜ Pronóstico de inundaciones GloFAS (Copernicus) por tramo de río (Open-Meteo lo expone por punto)
 - ⬜ Modelo estadístico simple lluvia a caudal (regresión), con metodología publicada
 - **Necesita:** metodología (Mariano); estaciones con caudal confiable (SENAMHI, ANA)
 
-### ⬜ Bloque 9 · Riesgo, exposición e impactos
+### 🔄 Bloque 9 · Riesgo, exposición e impactos
+- ✅ **Niveles de atención** por amenaza (mar, incendios, lluvia próxima) con reglas visibles en `catalogo/atencion.yaml`
+- ✅ "Qué hay expuesto": presas, embalses, lagunas y glaciares dentro de cada unidad
 - ⬜ Riesgo: inundaciones, deslizamientos y olas de calor (CENEPRED, INDECI)
 - ⬜ Índices de estrés hídrico y riesgo hídrico por cuenca (Aqueduct, WRI)
 - ⬜ Agricultura y ganadería: cultivos y zonas más afectadas, con fuente
 - ⬜ Población por provincia (INEI)
 
-### ⬜ Bloque 10 · Antecedentes por lugar
-- ⬜ Para cada unidad: qué pasó aquí en 1982-83, 1997-98, 2017 y 2023
-- ⬜ `catalogo/antecedentes/` con **cita bibliográfica obligatoria**
+### 🔄 Bloque 10 · Antecedentes y estudios por lugar
+- ✅ `catalogo/estudios.yaml` con referencias verificadas, filtradas por lugar y tema en la ficha (5 para empezar)
+- ⬜ Para cada unidad: qué pasó aquí en 1982-83, 1997-98, 2017 y 2023 (INDECI SINPAD, DesInventar)
 - ⬜ Lugares sensibles a ENSO (embalses, quebradas, puertos, ciudades) con su fuente
 - **Necesita:** recopilación del equipo (10 a 15 lugares citados para empezar)
 
@@ -215,6 +225,9 @@ Columna **Escala** = la más fina a la que el dato es válido.
 | 1 oct 2026 | IA: textos pregenerados, proveedor intercambiable; chat en vivo solo con límites, y después |
 | 12 oct 2026 | IA piloto: Gemini (gratis). GitHub Models descartado: retirado el 30 jul 2026 |
 | 12 oct 2026 | Almacenamiento: GitHub para lo liviano, Cloudflare R2 (gratis, sin cobro de egreso) para lo pesado, Google Drive para documentos del equipo |
+| 15 oct 2026 | Mapa: MapLibre GL con OpenFreeMap y relieve AWS; GeoJSON simplificados en el repo (PMTiles solo si crecen) |
+| 15 oct 2026 | Lugares desde OpenStreetMap (ODbL) hasta tener los inventarios de la ANA y el INAIGEM |
+| 15 oct 2026 | Niveles de atención: uno por amenaza, con la regla a la vista; nunca un índice mezclado |
 | 1 oct 2026 | Mapa futuro: MapLibre + PMTiles, sin servidor |
 | 12 oct 2026 | Escala fina: **provincia**, no distrito (es la que aguantan lluvia y pronóstico) |
 | 12 oct 2026 | TSM costera por región: franja marina a menos de 110 km del litoral, desde OISST |

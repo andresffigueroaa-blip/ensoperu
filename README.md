@@ -44,6 +44,13 @@ aunque entren miles de personas a la vez.
 
 ---
 
+## Trabajar con Claude Code
+
+Abrir Claude Code **en esta carpeta** (no en otra): lee `CLAUDE.md` y los
+skills de `.claude/skills/` (`ensoperu-diseno`, `ensoperu-datos`,
+`ensoperu-decision`), que guardan las reglas del proyecto. Antes de pedir
+algo, leer `docs/HOJA_DE_RUTA.md`.
+
 ## Puesta en marcha (laptop)
 
 Una vez:
