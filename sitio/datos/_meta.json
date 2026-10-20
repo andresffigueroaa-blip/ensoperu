@@ -2,8 +2,8 @@
   "fuentes": {
     "catalogo": {
       "estado": "ok",
-      "corrida": "2026-10-19T17:24:19Z",
-      "actualizado": "2026-10-19T17:24:19Z",
+      "corrida": "2026-10-20T15:36:17Z",
+      "actualizado": "2026-10-20T15:36:17Z",
       "regiones": 25,
       "capas_demo": [
         "lluvia",
@@ -22,9 +22,9 @@
       "regiones_con_tsm_costera": 11
     },
     "oisst": {
-      "estado": "ok",
-      "corrida": "2026-10-19T17:17:37Z",
-      "actualizado": "2026-10-19T17:17:37Z",
+      "estado": "sin_cambios",
+      "corrida": "2026-10-20T15:31:34Z",
+      "actualizado": "2026-10-20T15:31:34Z",
       "ultimo_dato": "2026-10-18",
       "archivos": {
         "2026": "Mon, 19 Oct 2026 16:35:06 GMT",
@@ -46,42 +46,42 @@
     },
     "serie_tsm": {
       "estado": "ok",
-      "corrida": "2026-10-19T17:24:19Z",
-      "actualizado": "2026-10-19T17:24:19Z",
+      "corrida": "2026-10-20T15:36:17Z",
+      "actualizado": "2026-10-20T15:36:17Z",
       "ultimo_dato": "2026-10-18",
       "analogos_sin_datos": []
     },
     "estado": {
       "estado": "ok",
-      "corrida": "2026-10-19T17:24:19Z",
-      "actualizado": "2026-10-19T17:24:19Z",
+      "corrida": "2026-10-20T15:36:17Z",
+      "actualizado": "2026-10-20T15:36:17Z",
       "comunicado": "N° 13-2026",
       "aviso": null
     },
     "cpc": {
       "estado": "sin_cambios",
-      "corrida": "2026-10-19T17:17:38Z",
-      "actualizado": "2026-10-19T17:17:38Z",
+      "corrida": "2026-10-20T15:31:35Z",
+      "actualizado": "2026-10-20T15:31:35Z",
       "ultimo_dato": "2026-08",
       "fuente": "NOAA CPC (ONI y RONI, trimestres móviles)"
     },
     "igp": {
-      "estado": "ok",
-      "corrida": "2026-10-19T17:17:39Z",
-      "actualizado": "2026-10-19T17:17:39Z",
+      "estado": "sin_cambios",
+      "corrida": "2026-10-20T15:31:36Z",
+      "actualizado": "2026-10-20T15:31:36Z",
       "ultimo_dato": "2026-08",
       "fuente": "IGP / ENFEN (ICEN, Nota Técnica 2024)"
     },
     "mapa_tsm": {
-      "estado": "ok",
-      "corrida": "2026-10-19T17:24:19Z",
-      "actualizado": "2026-10-19T17:24:19Z",
+      "estado": "sin_cambios",
+      "corrida": "2026-10-20T15:36:17Z",
+      "actualizado": "2026-10-20T15:36:17Z",
       "ultimo_dato": "2026-10-18"
     },
     "ia": {
       "estado": "sin_cambios",
-      "corrida": "2026-10-19T17:24:19Z",
-      "actualizado": "2026-10-19T17:24:19Z",
+      "corrida": "2026-10-20T15:36:17Z",
+      "actualizado": "2026-10-20T15:36:17Z",
       "aviso": "IA sin clave (GEMINI_API_KEY); no se generó nada",
       "modelo": "simulado:openai/gpt-4o-mini",
       "generados": 2,
@@ -91,29 +91,28 @@
     },
     "serie_indices": {
       "estado": "ok",
-      "corrida": "2026-10-19T17:24:19Z",
-      "actualizado": "2026-10-19T17:24:19Z",
+      "corrida": "2026-10-20T15:36:17Z",
+      "actualizado": "2026-10-20T15:36:17Z",
       "ultimo_dato": "2026-08",
       "meses": 920
     },
     "openmeteo": {
       "estado": "ok",
-      "corrida": "2026-10-19T17:24:18Z",
-      "actualizado": "2026-10-19T17:24:18Z",
-      "ultimo_dato": "2026-10-19",
+      "corrida": "2026-10-20T15:36:17Z",
+      "actualizado": "2026-10-20T15:36:17Z",
+      "ultimo_dato": "2026-10-20",
       "unidades": 220,
-      "emitido": "2026-10-19T17:24:18Z",
+      "emitido": "2026-10-20T15:36:17Z",
       "fuente": "Open-Meteo (modelos globales)"
     },
     "firms": {
-      "estado": "fallo",
-      "corrida": "2026-10-19T17:19:39Z",
-      "actualizado": "2026-10-18T14:13:44Z",
-      "ultimo_dato": "2026-10-18",
-      "focos_7d": 3774,
-      "fuente": "NASA FIRMS, VIIRS S-NPP",
-      "error": "NASA FIRMS no responde: HTTPSConnectionPool(host='firms.modaps.eosdis.nasa.gov', port=443): Max retries exceeded with url: /data/active_fire/suomi-npp-viirs-c2/csv/SUOMI_VIIRS_C2_South_America_7d.csv (Caused by NewConnectionError(\"HTTPSConnection(host='firms.modaps.eosdis.nasa.gov', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))"
+      "estado": "ok",
+      "corrida": "2026-10-20T15:31:37Z",
+      "actualizado": "2026-10-20T15:31:37Z",
+      "ultimo_dato": "2026-10-19",
+      "focos_7d": 3600,
+      "fuente": "NASA FIRMS, VIIRS S-NPP"
     }
   },
-  "generado": "2026-10-19T17:24:19Z"
+  "generado": "2026-10-20T15:36:17Z"
 }
