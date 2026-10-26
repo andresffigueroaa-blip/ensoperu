@@ -2,8 +2,8 @@
   "fuentes": {
     "catalogo": {
       "estado": "ok",
-      "corrida": "2026-10-25T14:50:29Z",
-      "actualizado": "2026-10-25T14:50:29Z",
+      "corrida": "2026-10-26T17:10:32Z",
+      "actualizado": "2026-10-26T17:10:32Z",
       "regiones": 25,
       "capas_demo": [
         "lluvia",
@@ -23,11 +23,11 @@
     },
     "oisst": {
       "estado": "ok",
-      "corrida": "2026-10-25T14:45:46Z",
-      "actualizado": "2026-10-25T14:45:46Z",
-      "ultimo_dato": "2026-10-23",
+      "corrida": "2026-10-26T17:06:04Z",
+      "actualizado": "2026-10-26T17:06:04Z",
+      "ultimo_dato": "2026-10-25",
       "archivos": {
-        "2026": "Sat, 24 Oct 2026 16:36:09 GMT",
+        "2026": "Mon, 26 Oct 2026 16:35:29 GMT",
         "1981": "Tue, 03 Jan 2023 22:24:59 GMT",
         "1982": "Tue, 03 Jan 2023 22:25:10 GMT",
         "1983": "Tue, 03 Jan 2023 22:25:21 GMT",
@@ -46,42 +46,42 @@
     },
     "serie_tsm": {
       "estado": "ok",
-      "corrida": "2026-10-25T14:50:29Z",
-      "actualizado": "2026-10-25T14:50:29Z",
-      "ultimo_dato": "2026-10-23",
+      "corrida": "2026-10-26T17:10:32Z",
+      "actualizado": "2026-10-26T17:10:32Z",
+      "ultimo_dato": "2026-10-25",
       "analogos_sin_datos": []
     },
     "estado": {
       "estado": "ok",
-      "corrida": "2026-10-25T14:50:29Z",
-      "actualizado": "2026-10-25T14:50:29Z",
+      "corrida": "2026-10-26T17:10:32Z",
+      "actualizado": "2026-10-26T17:10:32Z",
       "comunicado": "N° 13-2026",
       "aviso": null
     },
     "cpc": {
       "estado": "sin_cambios",
-      "corrida": "2026-10-25T14:45:47Z",
-      "actualizado": "2026-10-25T14:45:47Z",
+      "corrida": "2026-10-26T17:06:04Z",
+      "actualizado": "2026-10-26T17:06:04Z",
       "ultimo_dato": "2026-08",
       "fuente": "NOAA CPC (ONI y RONI, trimestres móviles)"
     },
     "igp": {
       "estado": "sin_cambios",
-      "corrida": "2026-10-25T14:45:49Z",
-      "actualizado": "2026-10-25T14:45:49Z",
+      "corrida": "2026-10-26T17:06:05Z",
+      "actualizado": "2026-10-26T17:06:05Z",
       "ultimo_dato": "2026-08",
       "fuente": "IGP / ENFEN (ICEN, Nota Técnica 2024)"
     },
     "mapa_tsm": {
       "estado": "ok",
-      "corrida": "2026-10-25T14:50:29Z",
-      "actualizado": "2026-10-25T14:50:29Z",
-      "ultimo_dato": "2026-10-23"
+      "corrida": "2026-10-26T17:10:32Z",
+      "actualizado": "2026-10-26T17:10:32Z",
+      "ultimo_dato": "2026-10-25"
     },
     "ia": {
       "estado": "sin_cambios",
-      "corrida": "2026-10-25T14:50:29Z",
-      "actualizado": "2026-10-25T14:50:29Z",
+      "corrida": "2026-10-26T17:10:32Z",
+      "actualizado": "2026-10-26T17:10:32Z",
       "aviso": "IA sin clave (GEMINI_API_KEY); no se generó nada",
       "modelo": "simulado:openai/gpt-4o-mini",
       "generados": 2,
@@ -91,28 +91,29 @@
     },
     "serie_indices": {
       "estado": "ok",
-      "corrida": "2026-10-25T14:50:29Z",
-      "actualizado": "2026-10-25T14:50:29Z",
+      "corrida": "2026-10-26T17:10:32Z",
+      "actualizado": "2026-10-26T17:10:32Z",
       "ultimo_dato": "2026-08",
       "meses": 920
     },
     "openmeteo": {
       "estado": "ok",
-      "corrida": "2026-10-25T14:50:28Z",
-      "actualizado": "2026-10-25T14:50:28Z",
-      "ultimo_dato": "2026-10-25",
+      "corrida": "2026-10-26T17:10:31Z",
+      "actualizado": "2026-10-26T17:10:31Z",
+      "ultimo_dato": "2026-10-26",
       "unidades": 220,
-      "emitido": "2026-10-25T14:50:28Z",
+      "emitido": "2026-10-26T17:10:31Z",
       "fuente": "Open-Meteo (modelos globales)"
     },
     "firms": {
-      "estado": "ok",
-      "corrida": "2026-10-25T14:45:50Z",
+      "estado": "fallo",
+      "corrida": "2026-10-26T17:08:06Z",
       "actualizado": "2026-10-25T14:45:50Z",
       "ultimo_dato": "2026-10-25",
       "focos_7d": 828,
-      "fuente": "NASA FIRMS, VIIRS S-NPP"
+      "fuente": "NASA FIRMS, VIIRS S-NPP",
+      "error": "NASA FIRMS no responde: HTTPSConnectionPool(host='firms.modaps.eosdis.nasa.gov', port=443): Max retries exceeded with url: /data/active_fire/suomi-npp-viirs-c2/csv/SUOMI_VIIRS_C2_South_America_7d.csv (Caused by NewConnectionError(\"HTTPSConnection(host='firms.modaps.eosdis.nasa.gov', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))"
     }
   },
-  "generado": "2026-10-25T14:50:29Z"
+  "generado": "2026-10-26T17:10:32Z"
 }
