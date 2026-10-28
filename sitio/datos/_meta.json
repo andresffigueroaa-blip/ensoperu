@@ -2,8 +2,8 @@
   "fuentes": {
     "catalogo": {
       "estado": "ok",
-      "corrida": "2026-10-27T16:12:45Z",
-      "actualizado": "2026-10-27T16:12:45Z",
+      "corrida": "2026-10-28T17:01:29Z",
+      "actualizado": "2026-10-28T17:01:29Z",
       "regiones": 25,
       "capas_demo": [
         "lluvia",
@@ -22,12 +22,12 @@
       "regiones_con_tsm_costera": 11
     },
     "oisst": {
-      "estado": "sin_cambios",
-      "corrida": "2026-10-27T16:08:02Z",
-      "actualizado": "2026-10-27T16:08:02Z",
-      "ultimo_dato": "2026-10-25",
+      "estado": "ok",
+      "corrida": "2026-10-28T16:56:21Z",
+      "actualizado": "2026-10-28T16:56:21Z",
+      "ultimo_dato": "2026-10-27",
       "archivos": {
-        "2026": "Mon, 26 Oct 2026 16:35:29 GMT",
+        "2026": "Wed, 28 Oct 2026 16:35:32 GMT",
         "1981": "Tue, 03 Jan 2023 22:24:59 GMT",
         "1982": "Tue, 03 Jan 2023 22:25:10 GMT",
         "1983": "Tue, 03 Jan 2023 22:25:21 GMT",
@@ -46,42 +46,42 @@
     },
     "serie_tsm": {
       "estado": "ok",
-      "corrida": "2026-10-27T16:12:45Z",
-      "actualizado": "2026-10-27T16:12:45Z",
-      "ultimo_dato": "2026-10-25",
+      "corrida": "2026-10-28T17:01:29Z",
+      "actualizado": "2026-10-28T17:01:29Z",
+      "ultimo_dato": "2026-10-27",
       "analogos_sin_datos": []
     },
     "estado": {
       "estado": "ok",
-      "corrida": "2026-10-27T16:12:45Z",
-      "actualizado": "2026-10-27T16:12:45Z",
+      "corrida": "2026-10-28T17:01:29Z",
+      "actualizado": "2026-10-28T17:01:29Z",
       "comunicado": "N° 13-2026",
-      "aviso": null
+      "aviso": "el comunicado ENFEN cargado tiene 46 días; revisar si salió uno nuevo"
     },
     "cpc": {
       "estado": "sin_cambios",
-      "corrida": "2026-10-27T16:08:03Z",
-      "actualizado": "2026-10-27T16:08:03Z",
+      "corrida": "2026-10-28T16:56:21Z",
+      "actualizado": "2026-10-28T16:56:21Z",
       "ultimo_dato": "2026-08",
       "fuente": "NOAA CPC (ONI y RONI, trimestres móviles)"
     },
     "igp": {
       "estado": "sin_cambios",
-      "corrida": "2026-10-27T16:08:04Z",
-      "actualizado": "2026-10-27T16:08:04Z",
+      "corrida": "2026-10-28T16:56:22Z",
+      "actualizado": "2026-10-28T16:56:22Z",
       "ultimo_dato": "2026-08",
       "fuente": "IGP / ENFEN (ICEN, Nota Técnica 2024)"
     },
     "mapa_tsm": {
-      "estado": "sin_cambios",
-      "corrida": "2026-10-27T16:12:45Z",
-      "actualizado": "2026-10-27T16:12:45Z",
-      "ultimo_dato": "2026-10-25"
+      "estado": "ok",
+      "corrida": "2026-10-28T17:01:29Z",
+      "actualizado": "2026-10-28T17:01:29Z",
+      "ultimo_dato": "2026-10-27"
     },
     "ia": {
       "estado": "sin_cambios",
-      "corrida": "2026-10-27T16:12:45Z",
-      "actualizado": "2026-10-27T16:12:45Z",
+      "corrida": "2026-10-28T17:01:29Z",
+      "actualizado": "2026-10-28T17:01:29Z",
       "aviso": "IA sin clave (GEMINI_API_KEY); no se generó nada",
       "modelo": "simulado:openai/gpt-4o-mini",
       "generados": 2,
@@ -91,28 +91,28 @@
     },
     "serie_indices": {
       "estado": "ok",
-      "corrida": "2026-10-27T16:12:45Z",
-      "actualizado": "2026-10-27T16:12:45Z",
+      "corrida": "2026-10-28T17:01:29Z",
+      "actualizado": "2026-10-28T17:01:29Z",
       "ultimo_dato": "2026-08",
       "meses": 920
     },
     "openmeteo": {
       "estado": "ok",
-      "corrida": "2026-10-27T16:12:45Z",
-      "actualizado": "2026-10-27T16:12:45Z",
-      "ultimo_dato": "2026-10-27",
+      "corrida": "2026-10-28T17:01:27Z",
+      "actualizado": "2026-10-28T17:01:27Z",
+      "ultimo_dato": "2026-10-28",
       "unidades": 220,
-      "emitido": "2026-10-27T16:12:45Z",
+      "emitido": "2026-10-28T17:01:27Z",
       "fuente": "Open-Meteo (modelos globales)"
     },
     "firms": {
       "estado": "ok",
-      "corrida": "2026-10-27T16:08:05Z",
-      "actualizado": "2026-10-27T16:08:05Z",
+      "corrida": "2026-10-28T16:56:23Z",
+      "actualizado": "2026-10-28T16:56:23Z",
       "ultimo_dato": "2026-10-27",
-      "focos_7d": 1231,
+      "focos_7d": 1225,
       "fuente": "NASA FIRMS, VIIRS S-NPP"
     }
   },
-  "generado": "2026-10-27T16:12:45Z"
+  "generado": "2026-10-28T17:01:29Z"
 }
