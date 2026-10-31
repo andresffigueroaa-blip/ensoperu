@@ -2,8 +2,8 @@
   "fuentes": {
     "catalogo": {
       "estado": "ok",
-      "corrida": "2026-10-30T17:00:38Z",
-      "actualizado": "2026-10-30T17:00:38Z",
+      "corrida": "2026-10-31T16:03:01Z",
+      "actualizado": "2026-10-31T16:03:01Z",
       "regiones": 25,
       "capas_demo": [
         "lluvia",
@@ -22,9 +22,9 @@
       "regiones_con_tsm_costera": 11
     },
     "oisst": {
-      "estado": "ok",
-      "corrida": "2026-10-30T16:55:50Z",
-      "actualizado": "2026-10-30T16:55:50Z",
+      "estado": "sin_cambios",
+      "corrida": "2026-10-31T15:55:55Z",
+      "actualizado": "2026-10-31T15:55:55Z",
       "ultimo_dato": "2026-10-29",
       "archivos": {
         "2026": "Fri, 30 Oct 2026 16:36:40 GMT",
@@ -46,42 +46,42 @@
     },
     "serie_tsm": {
       "estado": "ok",
-      "corrida": "2026-10-30T17:00:38Z",
-      "actualizado": "2026-10-30T17:00:38Z",
+      "corrida": "2026-10-31T16:03:01Z",
+      "actualizado": "2026-10-31T16:03:01Z",
       "ultimo_dato": "2026-10-29",
       "analogos_sin_datos": []
     },
     "estado": {
       "estado": "ok",
-      "corrida": "2026-10-30T17:00:38Z",
-      "actualizado": "2026-10-30T17:00:38Z",
+      "corrida": "2026-10-31T16:03:01Z",
+      "actualizado": "2026-10-31T16:03:01Z",
       "comunicado": "N° 13-2026",
-      "aviso": "el comunicado ENFEN cargado tiene 48 días; revisar si salió uno nuevo"
+      "aviso": "el comunicado ENFEN cargado tiene 49 días; revisar si salió uno nuevo"
     },
     "cpc": {
       "estado": "sin_cambios",
-      "corrida": "2026-10-30T16:55:50Z",
-      "actualizado": "2026-10-30T16:55:50Z",
+      "corrida": "2026-10-31T15:55:55Z",
+      "actualizado": "2026-10-31T15:55:55Z",
       "ultimo_dato": "2026-08",
       "fuente": "NOAA CPC (ONI y RONI, trimestres móviles)"
     },
     "igp": {
       "estado": "sin_cambios",
-      "corrida": "2026-10-30T16:55:51Z",
-      "actualizado": "2026-10-30T16:55:51Z",
+      "corrida": "2026-10-31T15:55:56Z",
+      "actualizado": "2026-10-31T15:55:56Z",
       "ultimo_dato": "2026-08",
       "fuente": "IGP / ENFEN (ICEN, Nota Técnica 2024)"
     },
     "mapa_tsm": {
-      "estado": "ok",
-      "corrida": "2026-10-30T17:00:38Z",
-      "actualizado": "2026-10-30T17:00:38Z",
+      "estado": "sin_cambios",
+      "corrida": "2026-10-31T16:03:01Z",
+      "actualizado": "2026-10-31T16:03:01Z",
       "ultimo_dato": "2026-10-29"
     },
     "ia": {
       "estado": "sin_cambios",
-      "corrida": "2026-10-30T17:00:38Z",
-      "actualizado": "2026-10-30T17:00:38Z",
+      "corrida": "2026-10-31T16:03:01Z",
+      "actualizado": "2026-10-31T16:03:01Z",
       "aviso": "IA sin clave (GEMINI_API_KEY); no se generó nada",
       "modelo": "simulado:openai/gpt-4o-mini",
       "generados": 2,
@@ -91,28 +91,29 @@
     },
     "serie_indices": {
       "estado": "ok",
-      "corrida": "2026-10-30T17:00:38Z",
-      "actualizado": "2026-10-30T17:00:38Z",
+      "corrida": "2026-10-31T16:03:01Z",
+      "actualizado": "2026-10-31T16:03:01Z",
       "ultimo_dato": "2026-08",
       "meses": 920
     },
     "openmeteo": {
       "estado": "ok",
-      "corrida": "2026-10-30T17:00:37Z",
-      "actualizado": "2026-10-30T17:00:37Z",
-      "ultimo_dato": "2026-10-30",
+      "corrida": "2026-10-31T16:03:01Z",
+      "actualizado": "2026-10-31T16:03:01Z",
+      "ultimo_dato": "2026-10-31",
       "unidades": 220,
-      "emitido": "2026-10-30T17:00:37Z",
+      "emitido": "2026-10-31T16:03:01Z",
       "fuente": "Open-Meteo (modelos globales)"
     },
     "firms": {
-      "estado": "ok",
-      "corrida": "2026-10-30T16:55:52Z",
+      "estado": "fallo",
+      "corrida": "2026-10-31T15:57:56Z",
       "actualizado": "2026-10-30T16:55:52Z",
       "ultimo_dato": "2026-10-30",
       "focos_7d": 1158,
-      "fuente": "NASA FIRMS, VIIRS S-NPP"
+      "fuente": "NASA FIRMS, VIIRS S-NPP",
+      "error": "NASA FIRMS no responde: HTTPSConnectionPool(host='firms.modaps.eosdis.nasa.gov', port=443): Max retries exceeded with url: /data/active_fire/suomi-npp-viirs-c2/csv/SUOMI_VIIRS_C2_South_America_7d.csv (Caused by NewConnectionError(\"HTTPSConnection(host='firms.modaps.eosdis.nasa.gov', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))"
     }
   },
-  "generado": "2026-10-30T17:00:38Z"
+  "generado": "2026-10-31T16:03:01Z"
 }
