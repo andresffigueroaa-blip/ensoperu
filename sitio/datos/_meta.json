@@ -2,8 +2,8 @@
   "fuentes": {
     "catalogo": {
       "estado": "ok",
-      "corrida": "2026-11-01T17:03:28Z",
-      "actualizado": "2026-11-01T17:03:28Z",
+      "corrida": "2026-11-02T20:41:30Z",
+      "actualizado": "2026-11-02T20:41:30Z",
       "regiones": 25,
       "capas_demo": [
         "lluvia",
@@ -23,11 +23,11 @@
     },
     "oisst": {
       "estado": "ok",
-      "corrida": "2026-11-01T16:58:47Z",
-      "actualizado": "2026-11-01T16:58:47Z",
-      "ultimo_dato": "2026-10-30",
+      "corrida": "2026-11-02T20:36:49Z",
+      "actualizado": "2026-11-02T20:36:49Z",
+      "ultimo_dato": "2026-11-01",
       "archivos": {
-        "2026": "Sat, 31 Oct 2026 16:38:17 GMT",
+        "2026": "Mon, 02 Nov 2026 17:39:30 GMT",
         "1981": "Tue, 03 Jan 2023 22:24:59 GMT",
         "1982": "Tue, 03 Jan 2023 22:25:10 GMT",
         "1983": "Tue, 03 Jan 2023 22:25:21 GMT",
@@ -46,42 +46,42 @@
     },
     "serie_tsm": {
       "estado": "ok",
-      "corrida": "2026-11-01T17:03:28Z",
-      "actualizado": "2026-11-01T17:03:28Z",
-      "ultimo_dato": "2026-10-30",
+      "corrida": "2026-11-02T20:41:30Z",
+      "actualizado": "2026-11-02T20:41:30Z",
+      "ultimo_dato": "2026-11-01",
       "analogos_sin_datos": []
     },
     "estado": {
       "estado": "ok",
-      "corrida": "2026-11-01T17:03:28Z",
-      "actualizado": "2026-11-01T17:03:28Z",
+      "corrida": "2026-11-02T20:41:30Z",
+      "actualizado": "2026-11-02T20:41:30Z",
       "comunicado": "N° 13-2026",
-      "aviso": "el comunicado ENFEN cargado tiene 50 días; revisar si salió uno nuevo"
+      "aviso": "el comunicado ENFEN cargado tiene 51 días; revisar si salió uno nuevo"
     },
     "cpc": {
       "estado": "sin_cambios",
-      "corrida": "2026-11-01T16:58:48Z",
-      "actualizado": "2026-11-01T16:58:48Z",
+      "corrida": "2026-11-02T20:36:49Z",
+      "actualizado": "2026-11-02T20:36:49Z",
       "ultimo_dato": "2026-08",
       "fuente": "NOAA CPC (ONI y RONI, trimestres móviles)"
     },
     "igp": {
       "estado": "sin_cambios",
-      "corrida": "2026-11-01T16:58:49Z",
-      "actualizado": "2026-11-01T16:58:49Z",
+      "corrida": "2026-11-02T20:36:50Z",
+      "actualizado": "2026-11-02T20:36:50Z",
       "ultimo_dato": "2026-08",
       "fuente": "IGP / ENFEN (ICEN, Nota Técnica 2024)"
     },
     "mapa_tsm": {
       "estado": "ok",
-      "corrida": "2026-11-01T17:03:28Z",
-      "actualizado": "2026-11-01T17:03:28Z",
-      "ultimo_dato": "2026-10-30"
+      "corrida": "2026-11-02T20:41:30Z",
+      "actualizado": "2026-11-02T20:41:30Z",
+      "ultimo_dato": "2026-11-01"
     },
     "ia": {
       "estado": "sin_cambios",
-      "corrida": "2026-11-01T17:03:28Z",
-      "actualizado": "2026-11-01T17:03:28Z",
+      "corrida": "2026-11-02T20:41:30Z",
+      "actualizado": "2026-11-02T20:41:30Z",
       "aviso": "IA sin clave (GEMINI_API_KEY); no se generó nada",
       "modelo": "simulado:openai/gpt-4o-mini",
       "generados": 2,
@@ -91,28 +91,28 @@
     },
     "serie_indices": {
       "estado": "ok",
-      "corrida": "2026-11-01T17:03:28Z",
-      "actualizado": "2026-11-01T17:03:28Z",
+      "corrida": "2026-11-02T20:41:30Z",
+      "actualizado": "2026-11-02T20:41:30Z",
       "ultimo_dato": "2026-08",
       "meses": 920
     },
     "openmeteo": {
       "estado": "ok",
-      "corrida": "2026-11-01T17:03:27Z",
-      "actualizado": "2026-11-01T17:03:27Z",
-      "ultimo_dato": "2026-11-01",
+      "corrida": "2026-11-02T20:41:29Z",
+      "actualizado": "2026-11-02T20:41:29Z",
+      "ultimo_dato": "2026-11-02",
       "unidades": 220,
-      "emitido": "2026-11-01T17:03:27Z",
+      "emitido": "2026-11-02T20:41:29Z",
       "fuente": "Open-Meteo (modelos globales)"
     },
     "firms": {
       "estado": "ok",
-      "corrida": "2026-11-01T16:58:49Z",
-      "actualizado": "2026-11-01T16:58:49Z",
+      "corrida": "2026-11-02T20:36:51Z",
+      "actualizado": "2026-11-02T20:36:51Z",
       "ultimo_dato": "2026-11-01",
-      "focos_7d": 1183,
+      "focos_7d": 961,
       "fuente": "NASA FIRMS, VIIRS S-NPP"
     }
   },
-  "generado": "2026-11-01T17:03:28Z"
+  "generado": "2026-11-02T20:41:30Z"
 }
