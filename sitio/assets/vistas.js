@@ -61,13 +61,23 @@ const COLOR_CAT = ["#163D66", "#1B6A87", "#79A8B4", "#C9D2CC", "#F0C178", "#E18C
 const TINTA_CAT = ["#fff", "#fff", "#101A1D", "#101A1D", "#101A1D", "#101A1D", "#fff", "#fff"];
 let regionProbs = "n12";
 
+// Un aviso vencido no se muestra, aunque el archivo sea de una lectura anterior
+function quitarAvisosVencidos(){
+  if (!D.avisos) return;
+  const hoy = new Date().toLocaleDateString("en-CA", { timeZone: "America/Lima" });
+  D.avisos.avisos = (D.avisos.avisos || []).filter(a => a.fin >= hoy);
+}
+
 function pintarPortada(){
   const e = D.estado, I = e.indices || {}, P = D.panorama;
+  quitarAvisosVencidos();
+  const rojos = (D.avisos?.avisos || []).filter(a => a.nivel === "ROJO").length;
+  const horasAvisos = D.avisos?.leido ? (Date.now() - new Date(D.avisos.leido)) / 36e5 : null;
   const dias = e.alerta.proximo ? Math.ceil((new Date(e.alerta.proximo + "T12:00") - new Date()) / 864e5) : null;
 
   $("#alerta-bar").innerHTML = `<b>${esc(e.alerta.estado)}</b>
     ${I.icen?.magnitud ? `<span>ICEN: ${esc(I.icen.magnitud)} (${fecha(I.icen.fecha)})</span>` : ""}
-    ${P?.totales ? `<span>${P.totales.rojos} avisos rojos del SENAMHI</span>` : ""}
+    ${rojos ? `<span>${rojos} ${rojos > 1 ? "avisos rojos" : "aviso rojo"} del SENAMHI</span>` : ""}
     ${e.alerta.proximo ? `<span>Próximo comunicado: ${fecha(e.alerta.proximo)}${dias >= 0 ? ` (en ${dias} días)` : ""}</span>` : ""}`;
 
   $("#titular").textContent = e.alerta.titular
@@ -100,7 +110,9 @@ function pintarPortada(){
 
   // Avisos del SENAMHI
   const A = D.avisos?.avisos || [];
-  $("#avisos-sub").innerHTML = `Vigentes o por empezar, de mayor a menor nivel. <a href="${esc(D.avisos?.url || "#")}" target="_blank" rel="noopener">Ver en el SENAMHI</a>`;
+  const atraso = horasAvisos !== null && horasAvisos > 36
+    ? `<b>Lectura atrasada: última del ${fecha(D.avisos.leido.slice(0, 10))}. Puede haber avisos nuevos.</b> ` : "";
+  $("#avisos-sub").innerHTML = `${atraso}Vigentes o por empezar, de mayor a menor nivel. <a href="${esc(D.avisos?.url || "https://www.senamhi.gob.pe/?p=aviso-meteorologico")}" target="_blank" rel="noopener">Ver en el SENAMHI</a>`;
   $("#avisos").innerHTML = A.map(a => `<article class="aviso ${NIVEL_AVISO[a.nivel]}">
     <div class="aviso-top"><span class="chip ${NIVEL_AVISO[a.nivel]}">${esc(a.nivel)}</span><span>N° ${a.numero} · ${fecha(a.inicio)} a ${fecha(a.fin)}</span></div>
     <h3>${esc(oracion(a.titulo))}</h3>

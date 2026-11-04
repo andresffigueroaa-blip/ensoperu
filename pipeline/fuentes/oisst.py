@@ -61,10 +61,18 @@ DOMINIO_CAMPO = dict(lat=slice(-25, 15), lon=slice(150, 295))     # 150°E a 65�
 # ── Red ───────────────────────────────────────────────────────────────────
 def _modificado(anio: int) -> tuple[str, int]:
     """Fecha de modificación y tamaño del archivo anual en NOAA."""
-    try:
-        r = requests.head(URL.format(anio=anio), timeout=60, allow_redirects=True)
-    except requests.RequestException as e:
-        raise ErrorFuente(f"NOAA PSL no responde: {e}") from e
+    # NOAA da errores 5xx pasajeros: se reintenta antes de declarar la falla
+    for intento in range(4):
+        try:
+            r = requests.head(URL.format(anio=anio), timeout=60, allow_redirects=True)
+        except requests.RequestException as e:
+            if intento == 3:
+                raise ErrorFuente(f"NOAA PSL no responde: {e}") from e
+            time.sleep(30 * (intento + 1))
+            continue
+        if r.status_code < 500 or intento == 3:
+            break
+        time.sleep(30 * (intento + 1))
     if r.status_code == 404:
         # Solo es normal que no exista el archivo del año en curso durante
         # los primeros días de enero. En otro caso NOAA cambió algo: es falla.

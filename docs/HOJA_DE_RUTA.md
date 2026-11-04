@@ -256,7 +256,7 @@ Detalle en `decisiones.md`.
 
 Hecho: portada de situación, Comparar, Boletín, Noticias, modo oscuro, guardados en el navegador, cursor en los gráficos. Datos nuevos: comunicados ENFEN por tema, avisos SENAMHI, SOI, OLR, vientos, calor, MEI, PDO, verificación contra el CPC, 30 ríos (GloFAS), tendencia estacional (SEAS5), oleaje, clima histórico y SPI (NASA POWER), riesgo CENEPRED por distrito, antecedentes.
 
-Por comprobar: si el ENFEN y el SENAMHI responden desde GitHub Actions. Si no, una tarea en la laptop que corra `--solo enfen,senamhi,estado`.
+Comprobado el 4 de noviembre: el ENFEN y el SENAMHI no responden desde GitHub Actions. Hace falta correr `--solo senamhi,enfen,estado,panorama` desde el Perú (tarea en la laptop, por decidir). Mientras tanto los avisos vencidos se ocultan y la portada avisa si la lectura tiene más de 36 horas.
 
 Pendiente: asistente IA (falta `GEMINI_API_KEY`), S2S de IRI y ECMWF, WeatherNext 2, cuencas ANA, inventarios oficiales ANA e INAIGEM, Aqueduct, cultivos y ganadería, Cloudflare R2, modelo lluvia-caudal, proyecciones climáticas.
 

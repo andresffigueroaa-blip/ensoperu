@@ -41,7 +41,9 @@ def ejecutar(estado: dict) -> dict:
     spi = leer_json(DATOS / "unidades" / "spi.json") or {}
     est = leer_json(DATOS / "unidades" / "estacional.json") or {}
     rios = (leer_json(DATOS / "rios" / "pronostico.json") or {}).get("rios", [])
-    avisos = (leer_json(DATOS / "senamhi" / "avisos.json") or {}).get("avisos", [])
+    # Si el SENAMHI no respondió, el archivo es viejo: un aviso vencido no cuenta
+    avisos = [a for a in (leer_json(DATOS / "senamhi" / "avisos.json") or {}).get("avisos", [])
+              if a["fin"] >= hoy().isoformat()]
     enfen = leer_json(DATOS / "enfen" / "comunicado.json") or {}
     estado_j = leer_json(DATOS / "estado.json") or {}
     regiones_j = (leer_json(DATOS / "regiones.json") or {}).get("regiones", {})
