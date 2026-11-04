@@ -2,8 +2,8 @@
 Producto: estado ENSO actual para la portada (sitio/datos/estado.json).
 
 Junta:
-  - lo que publica el ENFEN (hoy ingresado a mano en catalogo/enfen.yaml;
-    el bloque 4 lo leerá solo de los comunicados)
+  - el comunicado del ENFEN leído del PDF (fuentes/enfen.py) y, para las
+    probabilidades que vienen como imagen, la tabla de catalogo/enfen.yaml
   - los índices mensuales: ICEN (IGP), ONI y RONI (CPC)
   - las anomalías diarias Niño 1+2 y 3.4 de OISST (media de los últimos
     7 días, para que un día ruidoso no mueva la cifra principal)
@@ -18,7 +18,7 @@ import datetime as dt
 
 import pandas as pd
 
-from comun import DATOS, ErrorValidacion, escribir_json, leer_catalogo
+from comun import DATOS, ErrorValidacion, escribir_json, leer_catalogo, leer_json
 from fuentes import cpc, igp
 from fuentes.oisst import leer_csv
 from productos.catalogo import ESTADOS_ALERTA
@@ -58,26 +58,45 @@ def _indice_mensual(s: pd.Series, fuente: str) -> dict:
             "fuente": fuente}
 
 
+def _magnitud_icen(v):
+    if v is None:
+        return None
+    for corte, n in ((3.5, "Extraordinaria"), (2.1, "Fuerte"), (1.3, "Moderada"), (0.5, "Débil")):
+        if v > corte or (corte == 0.5 and v >= corte):
+            return "Cálida " + n.lower()
+    for corte, n in ((-1.3, "Fuerte"), (-1.1, "Moderada"), (-0.7, "Débil")):
+        if v < corte:
+            return "Fría " + n.lower()
+    return "Neutra"
+
+
 def ejecutar(estado: dict) -> dict:
     e = leer_catalogo("enfen")
-    _validar_enfen(e)
+    com = leer_json(DATOS / "enfen" / "comunicado.json")      # lo leído del PDF manda
+    hist = leer_json(DATOS / "enfen" / "historial.json") or {"comunicados": []}
     cajas = leer_catalogo("cajas_nino")
     df = leer_csv()
     mensual = cpc.leer_csv()
     icen = igp.leer_csv()
-    fecha_com = str(e.get("fecha") or "")
-    fuente_enfen = f"ENFEN, Comunicado Oficial {e.get('comunicado', '')}".strip()
+    alerta_est = com["alerta"] if com else e["alerta"]
+    fecha_com = com["fecha"] if com else str(e.get("fecha") or "")
+    id_com = com["id"] if com else e.get("comunicado", "")
+    fuente_enfen = f"ENFEN, Comunicado Oficial {id_com}"
+    ind_icen = _indice_mensual(icen, "IGP / ENFEN, trimestre móvil (ERSST, Niño 1+2)")
+    ind_icen["magnitud"] = _magnitud_icen(ind_icen["valor"])
 
+    # Probabilidades: la tabla que el equipo transcribe de la figura del PDF. Si
+    # el comunicado leído es más nuevo, la página avisa y muestra las figuras.
+    tabla = e.get("probabilidades_mensuales") or {}
     salida = {
-        "_": "Generado por pipeline/productos/estado.py desde catalogo/enfen.yaml y los índices. No editar a mano.",
-        "alerta": {
-            "estado": e["alerta"],
-            "estados": ESTADOS_ALERTA,
-            "fuente": fuente_enfen,
-            "fecha": fecha_com,
-        },
+        "_": "Generado por pipeline/productos/estado.py desde el comunicado del ENFEN y los índices. No editar a mano.",
+        "alerta": {"estado": alerta_est, "estados": ESTADOS_ALERTA, "fuente": fuente_enfen, "fecha": fecha_com,
+                   "titular": (com or {}).get("titular"), "resumen": (com or {}).get("resumen"),
+                   "proximo": (com or {}).get("proximo"), "url": (com or {}).get("url")},
+        "temas": (com or {}).get("temas", {}),
+        "figuras": (com or {}).get("figuras", []),
         "indices": {
-            "icen": _indice_mensual(icen, "IGP / ENFEN, trimestre móvil (ERSST, Niño 1+2)"),
+            "icen": ind_icen,
             "oni":  _indice_mensual(mensual["oni"] if "oni" in mensual else pd.Series(dtype=float),
                                     "NOAA CPC, trimestre móvil (ERSST, Niño 3.4)"),
             "roni": _indice_mensual(mensual["roni"] if "roni" in mensual else pd.Series(dtype=float),
@@ -85,24 +104,17 @@ def ejecutar(estado: dict) -> dict:
             "n12": _indice_oisst(df, "n12", cajas["n12"]["nombre"]),
             "n34": _indice_oisst(df, "n34", cajas["n34"]["nombre"]),
         },
-        "probabilidades": {
-            "periodo": e.get("probabilidades", {}).get("periodo"),
-            "region": e.get("probabilidades", {}).get("region"),
-            "fuente": fuente_enfen,
-            "valores": [{"magnitud": k, "p": v}
-                        for k, v in e.get("probabilidades", {}).get("valores", {}).items()],
-        },
-        "comunicados": [{"fecha": str(c["fecha"]), "texto": c["texto"]}
-                        for c in e.get("comunicados", [])],
+        "probabilidades": {**tabla, "meses": [str(m) for m in tabla.get("meses", [])], "vigente": tabla.get("comunicado") == id_com},
+        "comunicados": [{"fecha": c["fecha"], "id": c["id"], "texto": (c.get("titular") or c["alerta"]).capitalize(), "url": c.get("url")}
+                        for c in hist["comunicados"][:6]],
     }
     escribir_json(DATOS / "estado.json", salida)
 
-    # Un comunicado de hace más de 45 días probablemente quedó sin actualizar
     aviso = None
     try:
         dias = (dt.date.today() - dt.date.fromisoformat(fecha_com)).days
-        if dias > 45:
-            aviso = f"el comunicado ENFEN cargado tiene {dias} días; revisar si salió uno nuevo"
+        if dias > 21:
+            aviso = f"el comunicado ENFEN cargado tiene {dias} días"
     except ValueError:
-        aviso = "enfen.yaml no tiene una fecha válida"
-    return {"estado": "ok", "comunicado": e.get("comunicado"), "aviso": aviso}
+        aviso = "no hay fecha de comunicado válida"
+    return {"estado": "ok", "ultimo_dato": fecha_com, "comunicado": id_com, "aviso": aviso}

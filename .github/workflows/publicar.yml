@@ -2,7 +2,8 @@
 # Actualizar datos y publicar la página
 # ════════════════════════════════════════════════════════════════════════
 # Corre solo:
-#   - todos los días a las 06:00 de Lima (11:00 UTC)
+#   - dos veces al día, hacia las 05:00 y 17:00 de Lima (GitHub suele retrasar
+#     las corridas programadas a la hora en punto: por eso el minuto 17)
 #   - al apretar "Run workflow" en la pestaña Actions de GitHub
 #   - en cada push a main (para publicar cambios de diseño o de catálogo)
 #
@@ -16,7 +17,8 @@ name: Actualizar y publicar
 
 on:
   schedule:
-    - cron: "0 11 * * *"
+    - cron: "17 10 * * *"
+    - cron: "17 22 * * *"
   workflow_dispatch:
     inputs:
       historico:
@@ -39,7 +41,7 @@ concurrency:
 jobs:
   actualizar:
     runs-on: ubuntu-latest
-    timeout-minutes: 120
+    timeout-minutes: 150
     environment:
       name: github-pages
       url: ${{ steps.publicar.outputs.page_url }}

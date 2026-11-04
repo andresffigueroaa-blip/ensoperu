@@ -1,30 +1,52 @@
 {
-  "_": "Generado por pipeline/productos/estado.py desde catalogo/enfen.yaml y los índices. No editar a mano.",
+  "_": "Generado por pipeline/productos/estado.py desde el comunicado del ENFEN y los índices. No editar a mano.",
   "alerta": {
     "estado": "Alerta de El Niño Costero",
     "estados": [
       "No activo",
-      "Vigilancia",
+      "Vigilancia de El Niño Costero",
       "Alerta de El Niño Costero",
-      "Final del evento"
+      "Vigilancia de La Niña Costera",
+      "Alerta de La Niña Costera"
     ],
-    "fuente": "ENFEN, Comunicado Oficial N° 13-2026",
-    "fecha": "2026-09-12"
+    "fuente": "ENFEN, Comunicado Oficial N° 19-2026",
+    "fecha": "2026-10-30",
+    "titular": "EL NIÑO COSTERO CONTINUARÍA HASTA FINES DE OTOÑO DE 2027",
+    "resumen": "El calentamiento oceánico persiste en gran parte del Pacífico tropical, registrando la máxima intensidad frente a la costa peruana, desde el inicio del evento. El Niño costero (región Niño 1+2), mantendría una magnitud extraordinaria hasta febrero de 2027; luego, su magnitud tendería a disminuir gradualmente hasta junio de 2027. Por su parte, en el Pacífico central (región Niño 3.4) es más probable que El Niño continúe con un calentamiento de magnitud de muy fuerte hasta febrero de 2027, con un declive en su magnitud que llevaría a una condición neutra en junio de 2027.",
+    "proximo": "2026-11-13",
+    "url": "https://enfen.imarpe.gob.pe/download/comunicado-oficial-enfen-n-19-2026/"
   },
+  "temas": {
+    "lluvias": "Las lluvias, de noviembre 2026 a enero 2027, continuarían por encima de lo normal en la costa norte, sierra occidental, costa central y sierra central occidental, con episodios de moderada a fuerte intensidad. Por el contrario, en la sierra sur oriental, sierra centro oriental y la Amazonía, las precipitaciones serian de normales a inferiores; esta condición será más acentuada en la región del Titicaca, donde se esperan precipitaciones inferiores a lo normal.",
+    "verano": "Para el verano de 2027, continuarían las lluvias por encima de lo normal, en la costa norte, costa central y sierra norte occidental siendo estas más intensa s y con mayor frecuencia en la costa norte; mientras que, en la sierra suroriental, sierra centro oriental y la región amazónica central y sur se esperan lluvias inferiores o dentro de lo normal.",
+    "caudales": "Los caudales registrarían valores superiores a lo normal en los ríos de la costa norte, principalmente Tumbes, Chira, Piura, La Leche y Jequetepeque. Esta tendencia se acentuaría a partir de diciembre hacia la costa central, afectando las cuencas de los ríos Chillón, Rímac y Lurín. En contraste, en la sierra sur oriental y sierra centro oriental los caudales serían de normal a inferior. Por otro lado, los ríos tributarios del Lago Titicaca continuarían con caudales por debajo de lo normal, comprometiendo el nivel del Lago. Para la Amazonía, en la selva norte se registrarían caudales normales, pero en el centro y sur, los caudales serían menores a lo normal, afectando a ríos como el Ucayali, Huallaga, Apurímac y Vilcanota.",
+    "temperatura": "La temperatura del aire continué con valores muy superiores a los habituales en toda la costa peruana, con el registro de nuevos récords.",
+    "pesca": "La anchoveta se mantenga profundizada y muy cercana a la costa, lo que limitará su acceso para sus depredadores. Ante su escasa disponibilidad como alimento, las aves marinas principalmente las guaneras así como los lobos seguirán siendo afectados en su condición corporal debido a la falta de alimento. Por otra parte, en la costa centro-norte se mantendrá la disponibilidad de pez sierra, samasa, jaiva áspera y langostino café, mientras que especies como el perico, túnidos y picudos seguirán presentes frente a toda la costa.",
+    "embalses": "Los principales embalses del país, en su mayoría continuarían con una tendencia descendente acorde con su manejo hídrico multipropósito, pero dentro de sus condiciones normales. Sin embargo, los embalses de Tinajones (Lambayeque) y Paucarani (Tacna) continuarían con niveles bajos. Ante un posible escenario de déficit de precipitaciones en la sierra sur y sur-centro oriental, la situación de las reservas hídricas podrían verse afectadas para la próxima campaña agrícola del 2027.",
+    "mar": "El nivel del mar se mantendría por encima de sus valores normales durante los próximos meses, condición que, ante la ocurrencia de oleajes anómalos podrían incrementar el riesgo de inundación y erosión costera, especialmente en zonas con playas de poca pendiente. Se recomienda mantenerse informados de los Avisos Especiales de Oleajes publicados por la Dirección de Hidrografía y Navegación de la Marina de Guerra del Perú.",
+    "poblacion": "Se recomienda a la población ubicada en zonas expuestas a lluvias intensas, inundaciones, movimientos en masa y peligros asociados, reforzar la protección de sus viviendas y estar alerta de la información de las autoridades locales.",
+    "autoridades": "Se exhorta a los tomadores de decisiones considerar los estudios de escenarios de riesgo actualizados, tomando como base los avisos meteorológicos y pronósticos estacionales para la reducción de riesgo de desastres y la preparación ante peligros inminentes. Se insta a las autoridades y a la ciudadanía consultar los canales oficiales del ENFEN y de sus entidades técnico científicas adscritas. Se pone a disposición de los tres niveles de gobierno el uso del Visor INDECI como herramienta de soporte técnico para la gestión de emergencias."
+  },
+  "figuras": [
+    "figura_1.jpg",
+    "figura_2.jpg",
+    "figura_3.jpg"
+  ],
   "indices": {
     "icen": {
       "valor": 3.98,
       "fecha": "2026-08",
-      "fuente": "IGP / ENFEN, trimestre móvil (ERSST, Niño 1+2)"
+      "fuente": "IGP / ENFEN, trimestre móvil (ERSST, Niño 1+2)",
+      "magnitud": "Cálida extraordinaria"
     },
     "oni": {
-      "valor": 2.16,
-      "fecha": "2026-08",
+      "valor": 2.46,
+      "fecha": "2026-09",
       "fuente": "NOAA CPC, trimestre móvil (ERSST, Niño 3.4)"
     },
     "roni": {
-      "valor": 1.7,
-      "fecha": "2026-08",
+      "valor": 2.0,
+      "fecha": "2026-09",
       "fuente": "NOAA CPC, trimestre móvil, relativo al trópico"
     },
     "n12": {
@@ -39,40 +61,260 @@
     }
   },
   "probabilidades": {
-    "periodo": "verano 2026-2027",
-    "region": "Niño 1+2",
-    "fuente": "ENFEN, Comunicado Oficial N° 13-2026",
-    "valores": [
-      {
-        "magnitud": "Débil",
-        "p": 6
-      },
-      {
-        "magnitud": "Moderado",
-        "p": 23
-      },
-      {
-        "magnitud": "Fuerte",
-        "p": 38
-      },
-      {
-        "magnitud": "Extraordinario",
-        "p": 33
-      }
-    ]
+    "comunicado": "N° 19-2026",
+    "categorias_icen": [
+      "Fría fuerte",
+      "Fría moderada",
+      "Fría débil",
+      "Neutra",
+      "Cálida débil",
+      "Cálida moderada",
+      "Cálida fuerte",
+      "Cálida extraordinaria"
+    ],
+    "categorias_roni": [
+      "Fría fuerte",
+      "Fría moderada",
+      "Fría débil",
+      "Neutra",
+      "Cálida débil",
+      "Cálida moderada",
+      "Cálida fuerte",
+      "Cálida muy fuerte"
+    ],
+    "meses": [
+      "2026-11",
+      "2026-12",
+      "2027-01",
+      "2027-02",
+      "2027-03",
+      "2027-04",
+      "2027-05",
+      "2027-06",
+      "2027-07"
+    ],
+    "n12": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        98
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        10,
+        90
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        23,
+        75
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        1,
+        4,
+        45,
+        50
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        5,
+        11,
+        43,
+        41
+      ],
+      [
+        0,
+        0,
+        1,
+        3,
+        20,
+        25,
+        28,
+        23
+      ],
+      [
+        0,
+        0,
+        3,
+        10,
+        24,
+        25,
+        22,
+        16
+      ],
+      [
+        0,
+        1,
+        5,
+        20,
+        24,
+        22,
+        20,
+        8
+      ],
+      [
+        1,
+        2,
+        13,
+        35,
+        23,
+        15,
+        10,
+        1
+      ]
+    ],
+    "n34": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        3,
+        97
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        6,
+        94
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        18,
+        80
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        8,
+        43,
+        49
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        5,
+        34,
+        35,
+        25
+      ],
+      [
+        0,
+        0,
+        1,
+        10,
+        33,
+        32,
+        18,
+        6
+      ],
+      [
+        0,
+        1,
+        15,
+        30,
+        33,
+        16,
+        4,
+        1
+      ],
+      [
+        0,
+        6,
+        20,
+        47,
+        15,
+        10,
+        2,
+        0
+      ],
+      [
+        1,
+        7,
+        22,
+        45,
+        16,
+        9,
+        0,
+        0
+      ]
+    ],
+    "vigente": true
   },
   "comunicados": [
     {
-      "fecha": "2026-08-29",
-      "texto": "Se mantiene la Alerta de El Niño Costero. Anomalías cálidas persisten frente a la costa norte."
+      "fecha": "2026-10-30",
+      "id": "N° 19-2026",
+      "texto": "El niño costero continuaría hasta fines de otoño de 2027",
+      "url": "https://enfen.imarpe.gob.pe/download/comunicado-oficial-enfen-n-19-2026/"
     },
     {
-      "fecha": "2026-07-31",
-      "texto": "La anchoveta continúa replegada hacia el litoral y a mayor profundidad que lo normal."
+      "fecha": "2026-10-16",
+      "id": "N° 18-2026",
+      "texto": "El niño costero se extendería hasta el otoño de 2027",
+      "url": "https://enfen.imarpe.gob.pe/download/comunicado-oficial-enfen-n-18-2026/"
     },
     {
-      "fecha": "2026-06-26",
-      "texto": "Ingreso de especies indicadoras de aguas ecuatoriales en el norte: pez sierra, ayamarca y samasa."
+      "fecha": "2026-09-28",
+      "id": "N° 17-2026",
+      "texto": "El niño costero se prolongaría hasta el otoño de 2027",
+      "url": "https://enfen.imarpe.gob.pe/download/comunicado-oficial-enfen-n-17-2026/"
+    },
+    {
+      "fecha": "2026-09-14",
+      "id": "N° 16-2026",
+      "texto": "Resumen ejecutivo",
+      "url": "https://enfen.imarpe.gob.pe/download/comunicado-oficial-enfen-n-16-2026/"
+    },
+    {
+      "fecha": "2026-08-28",
+      "id": "N° 15-2026",
+      "texto": "Resumen ejecutivo",
+      "url": "https://enfen.imarpe.gob.pe/download/comunicado-oficial-enfen-n-15-2026/"
+    },
+    {
+      "fecha": "2026-08-14",
+      "id": "N° 14-2026",
+      "texto": "Resumen ejecutivo",
+      "url": "https://enfen.imarpe.gob.pe/download/comunicado-oficial-enfen-n-14-2026/"
     }
   ]
 }

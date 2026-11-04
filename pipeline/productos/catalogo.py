@@ -24,7 +24,7 @@ from fuentes.oisst import leer_costera
 # capa a medida que cada una tenga su fuente real.
 MODIFICADOR_DEMO = {"now": 0.85, "01": 1.0, "02": 1.15, "03": 1.05, "04": 0.8}
 
-ESTADOS_ALERTA = ["No activo", "Vigilancia", "Alerta de El Niño Costero", "Final del evento"]
+ESTADOS_ALERTA = ["No activo", "Vigilancia de El Niño Costero", "Alerta de El Niño Costero", "Vigilancia de La Niña Costera", "Alerta de La Niña Costera"]
 NOMBRES_MES = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio",
                "Julio", "Agosto", "Setiembre", "Octubre", "Noviembre", "Diciembre"]
 FUENTES_CAPA = {"demo", "oisst_costera"}
@@ -152,6 +152,16 @@ def ejecutar(estado: dict) -> dict:
             raise ErrorValidacion(f"estudios.yaml: '{s['id']}' sin enlace verificable")
     if len({s["id"] for s in estudios}) != len(estudios):
         raise ErrorValidacion("estudios.yaml: hay ids repetidos")
+    # Antecedentes: qué pasó en eventos anteriores, cada cifra con su fuente
+    antecedentes = leer_catalogo("antecedentes") or []
+    for a in antecedentes:
+        faltan = {"id", "evento", "texto", "fuente", "url", "lugares"} - set(a)
+        if faltan:
+            raise ErrorValidacion(f"antecedentes.yaml: '{a.get('id', '?')}' sin {sorted(faltan)}")
+    escribir_json(DATOS / "antecedentes.json", {
+        "_": "Generado desde catalogo/antecedentes.yaml. No editar a mano.",
+        "antecedentes": antecedentes,
+    })
     escribir_json(DATOS / "estudios.json", {
         "_": "Generado desde catalogo/estudios.yaml y catalogo/atencion.yaml. No editar a mano.",
         "atencion": atencion,

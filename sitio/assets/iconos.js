@@ -57,3 +57,23 @@ function imagenIcono(clave, tam = 24, escala = 2){
 function iconoHTML(clave, tam = 18){
   return `<svg width="${tam}" height="${tam}" viewBox="-1 -1 26 26" aria-hidden="true">${ICONOS[clave].svg}</svg>`;
 }
+
+/* Dibujos para los títulos de la ficha y de los temas: trazo simple, color de
+   tinta, para que acompañen el texto sin competir con los datos. */
+const DIBUJOS = {
+  lluvia: '<path d="M7 15a4 4 0 0 1 .6-8A5.5 5.5 0 0 1 18 8.5a3.3 3.3 0 0 1-.5 6.5z"/><path d="M9 18l-1 3M13 18l-1 3M17 18l-1 3"/>',
+  rio: '<path d="M3 8c3-2 5-2 8 0s5 2 10 0M3 13c3-2 5-2 8 0s5 2 10 0M3 18c3-2 5-2 8 0s5 2 10 0"/>',
+  embalse: '<path d="M12 3c3.3 4.2 6.2 7.6 6.2 11a6.2 6.2 0 0 1-12.4 0c0-3.4 2.9-6.8 6.2-11z"/>',
+  calor: '<circle cx="12" cy="12" r="4.5"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M19 5l-2 2M7 17l-2 2"/>',
+  pez: '<path d="M3 12c3-5 9-6 14-2l4-3v10l-4-3c-5 4-11 3-14-2z"/><circle cx="8" cy="11" r="1"/>',
+  ola: '<path d="M2 16c3 0 3-7 7-7 3 0 3 3 1.500 4 3 0 3-2 5-2 3 0 3 5 6.500 5M2 20h20"/>',
+  casa: '<path d="M4 11l8-6 8 6M6 10v9h12v-9M10 19v-5h4v5"/>',
+  mano: '<path d="M4 20h16M6 20V9l6-5 6 5v11M10 12h4M10 16h4"/>',
+  aviso: '<path d="M12 4l9 16H3zM12 10v5M12 17.500v.5"/>',
+  ojo: '<path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="2.500"/>',
+  historia: '<path d="M4 12a8 8 0 1 0 2.500-5.800L4 8.500V4M12 8v4l3 2"/>',
+  libro: '<path d="M4 5c3-1 6-1 8 1 2-2 5-2 8-1v14c-3-1-6-1-8 1-2-2-5-2-8-1zM12 6v14"/>',
+};
+function dibujo(k, tam = 16){
+  return `<svg class="dib" width="${tam}" height="${tam}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${DIBUJOS[k] || ""}</svg>`;
+}

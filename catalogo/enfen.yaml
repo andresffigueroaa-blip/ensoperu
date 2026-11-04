@@ -1,36 +1,44 @@
 # ════════════════════════════════════════════════════════════════════════
-# ENFEN · ingreso MANUAL (hasta que el bloque 4 lea los comunicados solo)
+# ENFEN · lo que no se puede leer solo del PDF
 # ════════════════════════════════════════════════════════════════════════
-# Copiar del Comunicado Oficial vigente. Cada vez que salga uno nuevo:
-# actualizar comunicado, fecha, alerta y probabilidades. Un valor que no
-# se conoce va como null: la página muestra "pendiente", no inventa nada.
+# El comunicado (número, fecha, alerta, texto) lo lee pipeline/fuentes/enfen.py.
+# Aquí queda solo:
+#   - alerta y fecha de respaldo, por si nunca se pudo leer el PDF
+#   - las probabilidades por mes, que en el PDF vienen como imagen (Figura 2):
+#     se transcriben a mano en cada comunicado. Si la tabla queda atrasada, la
+#     página lo dice y muestra las figuras, que siempre están al día.
+#
+# Para actualizar: abrir sitio/datos/enfen/figura_2.jpg y figura_3.jpg.
 # ════════════════════════════════════════════════════════════════════════
 
-comunicado: "N° 13-2026"
-fecha: 2026-09-12          # fecha del comunicado (AAAA-MM-DD)
-
-# Uno de: No activo | Vigilancia | Alerta de El Niño Costero | Final del evento
+comunicado: "N° 19-2026"
+fecha: 2026-10-30
 alerta: Alerta de El Niño Costero
 
-# Índices que publica el ENFEN / IGP. null = todavía no conectado.
-icen: null
-icen_mes: null             # mes al que corresponde el ICEN (AAAA-MM)
-
-probabilidades:
-  periodo: verano 2026-2027
-  region: Niño 1+2
-  valores:                 # en %, deben sumar 100
-    Débil: 6
-    Moderado: 23
-    Fuerte: 38
-    Extraordinario: 33
-
-# Últimos comunicados, del más reciente al más antiguo.
-# OJO: estos textos venían de la maqueta; verificar contra los comunicados reales.
-comunicados:
-  - fecha: 2026-08-29
-    texto: Se mantiene la Alerta de El Niño Costero. Anomalías cálidas persisten frente a la costa norte.
-  - fecha: 2026-07-31
-    texto: La anchoveta continúa replegada hacia el litoral y a mayor profundidad que lo normal.
-  - fecha: 2026-06-26
-    texto: "Ingreso de especies indicadoras de aguas ecuatoriales en el norte: pez sierra, ayamarca y samasa."
+probabilidades_mensuales:
+  comunicado: "N° 19-2026"
+  categorias_icen: [Fría fuerte, Fría moderada, Fría débil, Neutra, Cálida débil, Cálida moderada, Cálida fuerte, Cálida extraordinaria]
+  categorias_roni: [Fría fuerte, Fría moderada, Fría débil, Neutra, Cálida débil, Cálida moderada, Cálida fuerte, Cálida muy fuerte]
+  meses: ["2026-11", "2026-12", "2027-01", "2027-02", "2027-03", "2027-04", "2027-05", "2027-06", "2027-07"]
+  # Niño 1+2 (ICEN). Filas por mes, en el orden de categorias_icen
+  n12:
+    - [0, 0, 0, 0, 0, 0, 2, 98]
+    - [0, 0, 0, 0, 0, 0, 10, 90]
+    - [0, 0, 0, 0, 0, 2, 23, 75]
+    - [0, 0, 0, 0, 1, 4, 45, 50]
+    - [0, 0, 0, 1, 5, 11, 43, 41]
+    - [0, 0, 1, 3, 20, 25, 28, 23]
+    - [0, 0, 3, 10, 24, 25, 22, 16]
+    - [0, 1, 5, 20, 24, 22, 20, 8]
+    - [1, 2, 13, 35, 23, 15, 10, 1]
+  # Niño 3.4 (RONI)
+  n34:
+    - [0, 0, 0, 0, 0, 0, 3, 97]
+    - [0, 0, 0, 0, 0, 0, 6, 94]
+    - [0, 0, 0, 0, 0, 2, 18, 80]
+    - [0, 0, 0, 0, 0, 8, 43, 49]
+    - [0, 0, 0, 1, 5, 34, 35, 25]
+    - [0, 0, 1, 10, 33, 32, 18, 6]
+    - [0, 1, 15, 30, 33, 16, 4, 1]
+    - [0, 6, 20, 47, 15, 10, 2, 0]
+    - [1, 7, 22, 45, 16, 9, 0, 0]

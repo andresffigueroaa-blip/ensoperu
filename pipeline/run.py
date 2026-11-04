@@ -31,8 +31,11 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from comun import (ErrorFuente, guardar_meta, leer_meta, log, registrar,  # noqa: E402
                    resumen_actions)
-from fuentes import cpc, firms, igp, oisst, openmeteo  # noqa: E402
-from productos import analisis_ia, catalogo, estado, mapa_tsm, serie_indices, serie_tsm  # noqa: E402
+from fuentes import (cpc, enfen, estacional, firms, igp, noticias, oceano_atm, oisst,  # noqa: E402
+                     oleaje, openmeteo, rios, senamhi)
+from herramientas import build_clima  # noqa: E402
+from productos import (analisis_ia, catalogo, estado, mapa_tsm, panorama,  # noqa: E402
+                       serie_indices, serie_tsm)
 
 # Orden de ejecución. Para agregar una fuente: escribir su módulo con una
 # función ejecutar(estado_previo) -> dict y sumarla aquí.
@@ -41,13 +44,22 @@ PASOS = {
     "oisst":     oisst.ejecutar,        # NOAA OISST -> indices/oisst_diario.csv, tsm_costera_diaria.csv
     "cpc":       cpc.ejecutar,          # NOAA CPC   -> indices/cpc_mensual.csv (ONI, RONI)
     "igp":       igp.ejecutar,          # IGP        -> indices/icen.csv
+    "oceano_atm": oceano_atm.ejecutar,  # SOI, OLR, vientos, calor, MEI, PDO y verificación contra el CPC
+    "enfen":     enfen.ejecutar,        # ENFEN      -> enfen/comunicado.json (PDF oficial)
+    "senamhi":   senamhi.ejecutar,      # SENAMHI    -> senamhi/avisos.json
     "firms":     firms.ejecutar,        # NASA FIRMS -> campos/incendios.geojson, unidades/incendios.json
     "openmeteo": openmeteo.ejecutar,    # Open-Meteo -> unidades/lluvia_16d.json
+    "rios":      rios.ejecutar,         # GloFAS     -> rios/pronostico.json
+    "estacional": estacional.ejecutar,  # SEAS5      -> unidades/estacional.json
+    "oleaje":    oleaje.ejecutar,       # Marine     -> unidades/oleaje.json
+    "clima":     build_clima.ejecutar,  # NASA POWER -> clima/<id>.json, unidades/spi.json (mensual)
+    "noticias":  noticias.ejecutar,     # Google Noticias -> noticias.json
     "mapa_tsm":  mapa_tsm.ejecutar,     # campo OISST -> campos/tsm_anom.png
     "serie_tsm": serie_tsm.ejecutar,    # csv -> series/tsm.json (curva de portada)
     "serie_indices": serie_indices.ejecutar,  # icen + cpc -> series/indices.json (historia)
     "catalogo":  catalogo.ejecutar,     # catalogo/*.yaml + índices -> config, regiones, plantillas
     "estado":    estado.ejecutar,       # ENFEN + índices -> estado.json
+    "panorama":  panorama.ejecutar,     # todo lo anterior -> panorama.json, boletines/
     "ia":        analisis_ia.ejecutar,  # todo lo anterior -> analisis/<region>/<mes>.json
 }
 

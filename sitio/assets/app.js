@@ -88,7 +88,7 @@ const COLOR_MAGNITUD = { "Débil": "#E9C46A", "Moderado": "#E2913C", "Fuerte": "
 /* ════════════════════════════════════════════════════════════════════════
    NAVEGACIÓN
    ════════════════════════════════════════════════════════════════════════ */
-const VISTAS = ["home", "mapa", "monitoreo", "about"];
+const VISTAS = ["home", "mapa", "monitoreo", "comparar", "boletin", "noticias", "about"];
 function ir(v){
   // Enlaces compartibles: …/#mapa y …/#pacifico (el mapa abre sobre el Pacífico)
   if (v === "pacifico"){ window.vistaInicialMapa = "pacifico"; v = "mapa"; }
@@ -100,6 +100,9 @@ function ir(v){
   window.scrollTo(0, 0);
   if (v === "mapa") requestAnimationFrame(() => window.iniciarMapa?.());
   if (v === "monitoreo") pintarMonitoreo();
+  if (v === "comparar") pintarComparar();
+  if (v === "boletin") iniciarBoletin();
+  if (v === "noticias") pintarNoticias();
 }
 
 /* ════════════════════════════════════════════════════════════════════════
@@ -137,7 +140,7 @@ async function traerCsv(ruta){
 
 // Colores de las series del monitoreo: pocos y fijos. Niño 1+2 en rojo
 // (es el que gobierna la costa), 3.4 en teal, el resto en grises.
-const COLORES = ["#D9452C", "#1B6A87", "#8E0F16", "#79A8B4", "#E18C3E", "#163D66", "#84959A", "#55666A", "#C9A227", "#5B8C5A", "#9B59B6"];
+const COLORES = ["#2a78d6", "#eb6834", "#1baf7a", "#eda100"];     // paleta validada (skill dataviz), orden fijo
 
 // Trazador genérico: series = [{n, v:[], c}], fechas alineadas, umbrales opcionales
 function grafLineas(svg, fechas, series, op = {}){
@@ -184,9 +187,20 @@ function grafLineas(svg, fechas, series, op = {}){
     });
     const iu = s.v.findLastIndex(t => t !== null);
     const punto = iu >= 0 && s.destacar ? `<circle cx="${x(iu)}" cy="${y(s.v[iu])}" r="4" fill="${s.c}"/>` : "";
-    return `<path d="${d}" fill="none" stroke="${s.c}" stroke-width="${s.destacar ? 2.4 : 1.4}" stroke-opacity="${s.destacar ? 1 : .85}" stroke-linejoin="round"/>${punto}`;
+    return `<path d="${d}" fill="none" stroke="${s.c}" stroke-width="${s.gris ? 1 : 2}" stroke-opacity="${s.gris ? .5 : 1}" stroke-linejoin="round" vector-effect="non-scaling-stroke"/>${punto}`;
   }).join("");
-  svg.innerHTML = ejeY + ejes + umbrales + trazos;
+  svg.innerHTML = ejeY + ejes + umbrales + trazos + `<line class="cursor" x1="0" x2="0" y1="${T}" y2="${H - B}" stroke="#55666A" style="display:none"/>`;
+  svg.onpointermove = ev => {
+    const r = svg.getBoundingClientRect();
+    const i = Math.max(0, Math.min(n - 1, Math.round(((ev.clientX - r.left) / r.width * W - L) / (W - L - R) * (n - 1))));
+    const c = svg.querySelector(".cursor"); c.style.display = ""; c.setAttribute("x1", x(i)); c.setAttribute("x2", x(i));
+    const tip = $("#tip-g");
+    tip.innerHTML = `<b>${fecha(fechas[i])}</b>` + series.filter(s => s.v[i] !== null && s.v[i] !== undefined && !s.gris)
+      .map(s => `<span><i style="background:${s.c}"></i><strong>${op.entero ? s.v[i] : sg(s.v[i], 2)}</strong> ${esc(s.n)}</span>`).join("");
+    tip.style.opacity = 1;
+    tip.style.left = Math.min(ev.clientX + 14, innerWidth - 230) + "px"; tip.style.top = (ev.clientY - 20) + "px";
+  };
+  svg.onpointerleave = () => { $("#tip-g").style.opacity = 0; const c = svg.querySelector(".cursor"); if (c) c.style.display = "none"; };
 }
 
 function leyenda(el, series){
@@ -228,15 +242,19 @@ async function pintarMonitoreo(){
       + (periodoAnios === 0 ? "Solo están cargados los años análogos y el actual; el histórico completo se carga una vez." : "");
   }
 
-  // 2. TSM costera por región
+  // 2. TSM costera: una región destacada y el resto en gris (11 colores no se leen)
   const c = await traerCsv("datos/indices/tsm_costera_diaria.csv");
   if (c){
     const r = recortar(c.fechas, c.cols, periodoAnios);
-    const orden = ["Tumbes", "Piura", "Lambayeque", "La Libertad", "Ancash", "Lima", "Callao", "Ica", "Arequipa", "Moquegua", "Tacna"];
-    const series = orden.filter(k => r.cols[k]).map((k, i) => ({ n: k, v: r.cols[k], c: COLORES[i % COLORES.length], destacar: i === 0 }));
+    const orden = ["Tumbes", "Piura", "Lambayeque", "La Libertad", "Ancash", "Lima", "Callao", "Ica", "Arequipa", "Moquegua", "Tacna"].filter(k => r.cols[k]);
+    const sel = $("#costa-sel");
+    if (!sel.options.length) sel.innerHTML = orden.map(k => `<option>${k}</option>`).join("");
+    const elegida = sel.value || orden[0];
+    const series = [...orden.filter(k => k !== elegida).map(k => ({ n: k, v: r.cols[k], c: "#9FB0AC", gris: true })),
+                    { n: elegida, v: r.cols[elegida], c: COLORES[1], destacar: true }];
     grafLineas($("#g-costa"), r.fechas, series, { umbrales: [[0, "#9FB0AC"]] });
-    leyenda($("#g-costa-ley"), series);
-    $("#g-costa-sub").textContent = `Anomalía OISST promediada en la franja marina a menos de 110 km del litoral de cada departamento. Dato al ${fecha(c.fechas[c.fechas.length - 1])}.`;
+    leyenda($("#g-costa-ley"), [series[series.length - 1]]);
+    $("#g-costa-sub").textContent = `Anomalía OISST en la franja marina a menos de 110 km del litoral de cada departamento. En gris, las demás regiones. Dato al ${fecha(c.fechas[c.fechas.length - 1])}.`;
   }
 
   // 3. Índices mensuales
@@ -252,6 +270,37 @@ async function pintarMonitoreo(){
       + (periodoAnios === 1 ? " Para los mensuales se muestran al menos 3 años." : "");
   }
 
+  // 3 bis. Océano y atmósfera
+  const A = D.atm;
+  if (A){
+    const r = recortar(A.fechas, A.cols, periodoAnios ? Math.max(periodoAnios, 3) : 0);
+    const u = k => r.cols[k];
+    grafLineas($("#g-calor"), r.fechas, [{ n: "Calor 0-300 m, 180° a 100°W", v: u("calor"), c: COLORES[1], destacar: true }], { minRango: [-1, 1] });
+    $("#g-calor-sub").textContent = `Anomalía de temperatura media en los primeros 300 m del Pacífico ecuatorial (CPC, GODAS). Es la reserva que alimenta a El Niño: cuando baja, el evento empieza a agotarse. Último mes: ${fecha(r.fechas[r.fechas.length - 1])}.`;
+    const sv = [["viento_o", "Oeste, 135°E a 180°"], ["viento_c", "Centro, 175°W a 140°W"], ["viento_e", "Este, 135°W a 120°W"]].map(([k, n], i) => ({ n, v: u(k), c: COLORES[i] }));
+    grafLineas($("#g-viento"), r.fechas, sv, {}); leyenda($("#g-viento-ley"), sv);
+    const sa = [["soi", "SOI"], ["olr", "OLR"]].map(([k, n], i) => ({ n, v: u(k), c: COLORES[i] }));
+    grafLineas($("#g-atm"), r.fechas, sa, {}); leyenda($("#g-atm-ley"), sa);
+    const sm = [["mei", "MEI"], ["pdo", "PDO"]].map(([k, n], i) => ({ n, v: u(k), c: COLORES[i] }));
+    grafLineas($("#g-mei"), r.fechas, sm, {}); leyenda($("#g-mei-ley"), sm);
+  }
+
+  // 3 ter. Focos de calor por día, total nacional
+  const fo = await traerCsv("datos/indices/incendios_diarios.csv");
+  if (fo){
+    const total = fo.fechas.map((_, i) => Object.values(fo.cols).reduce((a, s) => a + (s[i] || 0), 0));
+    grafLineas($("#g-focos"), fo.fechas, [{ n: "Focos en el Perú", v: total, c: COLORES[1], destacar: true }], { entero: true });
+    $("#g-focos-sub").textContent = `Total nacional por día, NASA FIRMS (VIIRS), desde ${fecha(fo.fechas[0])}: la serie se va acumulando.`;
+  }
+
+  // 3 quater. Verificación contra el CPC
+  const ve = await traerOpcional("datos/indices/verificacion.json");
+  if (ve){
+    $("#verif-sub").textContent = `Cada corrida compara nuestra serie diaria con el archivo semanal oficial del CPC: diferencia media de ${String(ve.diferencia_media.n12).replace(".", ",")} °C en Niño 1+2 y ${String(ve.diferencia_media.n34).replace(".", ",")} °C en Niño 3.4 en las últimas semanas. Si pasara de 0,5 °C el sistema falla y avisa.`;
+    $("#tabla-verif").innerHTML = `<tr><th>Semana</th><th>CPC, Niño 1+2</th><th>Nuestro</th><th>CPC, Niño 3.4</th><th>Nuestro</th></tr>`
+      + ve.semanas.map(s => `<tr><td>${fecha(s.semana)}</td><td>${sg(s.cpc_n12)}</td><td>${sg(s.nuestro_n12, 2)}</td><td>${sg(s.cpc_n34)}</td><td>${sg(s.nuestro_n34, 2)}</td></tr>`).join("");
+  }
+
   // 4. Datos abiertos
   const F = D.meta?.fuentes || {};
   const filas = [
@@ -261,6 +310,17 @@ async function pintarMonitoreo(){
     ["datos/indices/cpc_mensual.csv", "ONI y RONI mensuales desde 1950", "NOAA CPC", F.cpc],
     ["datos/series/tsm.json", "Evento actual y análogos alineados", "Calculado de OISST", F.serie_tsm],
     ["datos/campos/tsm_anom.png", "Campo del último día (imagen georreferenciada, ver tsm_anom.json)", "NOAA OISST", F.mapa_tsm],
+    ["datos/indices/oceano_atm.csv", "SOI, OLR, vientos, calor, MEI y PDO mensuales", "NOAA CPC, PSL, NCEI", F.oceano_atm],
+    ["datos/indices/incendios_diarios.csv", "Focos de calor por día y región", "NASA FIRMS", F.firms],
+    ["datos/campos/incendios.geojson", "Focos de calor de 7 días, puntos", "NASA FIRMS", F.firms],
+    ["datos/unidades/lluvia_16d.json", "Lluvia y temperatura pronosticadas por región y provincia", "Open-Meteo", F.openmeteo],
+    ["datos/rios/pronostico.json", "Caudal pronosticado a 30 días en 30 ríos", "GloFAS", F.rios],
+    ["datos/unidades/estacional.json", "Tendencia de lluvia a 6 meses por región", "ECMWF SEAS5", F.estacional],
+    ["datos/unidades/riesgo.json", "Riesgo y exposición por distrito", "CENEPRED", null],
+    ["datos/unidades/spi.json", "SPI-3 y SPI-6 por región y provincia", "NASA POWER", F.clima],
+    ["datos/senamhi/avisos.json", "Avisos vigentes", "SENAMHI", F.senamhi],
+    ["datos/enfen/comunicado.json", "Comunicado vigente, por tema", "ENFEN", F.enfen],
+    ["datos/panorama.json", "Resumen nacional del día", "pipeline", F.panorama],
     ["datos/estado.json", "Alerta, probabilidades e índices vigentes", "ENFEN, IGP, CPC, OISST", F.estado],
     ["datos/_meta.json", "Estado y fecha de cada fuente", "pipeline", null],
   ];
@@ -364,7 +424,7 @@ function pintarHero(){
     <circle cx="${xu}" cy="${yu}" r="5" fill="${escala(last, -1, 3, false)}"/>
     <circle cx="${xu}" cy="${yu}" r="11" fill="none" stroke="${escala(last, -1, 3, false)}" stroke-opacity=".35"/>
     <text x="${derecha ? xu - 16 : xu + 16}" y="${yu + 6}" text-anchor="${derecha ? "end" : "start"}"
-          fill="#101A1D" font-size="19" font-family="IBM Plex Serif">${sg(last)} °C</text>`;
+          fill="#101A1D" font-size="19" font-family="IBM Plex Serif">${sg(D.estado.indices?.[indiceHero]?.valor ?? last)} °C</text>`;
 
   // Único movimiento no provocado por el usuario: la curva se traza al cargar.
   if (!matchMedia("(prefers-reduced-motion: reduce)").matches){
@@ -391,8 +451,7 @@ function pintarHistoria(){
   const lo = Math.min(-3, Math.floor(Math.min(...vals))), hi = Math.max(3, Math.ceil(Math.max(...vals)));
   const x = i => (i / (n - 1)) * W;
   const y = t => H - PAD - ((t - lo) / (hi - lo)) * (H - 2 * PAD);
-  // Solo se dibujan los umbrales verificados en fuente oficial; si falta
-  // uno (p. ej. La Niña costera en la nota ENFEN 2024), no se inventa.
+  // Categorías oficiales (ENFEN para el ICEN, CPC para ONI y RONI)
   const U = S.umbrales[indiceHist === "roni" ? "oni" : indiceHist];
   const um = U.nino?.[0]?.[1] ?? null, ul = U.nina?.[0]?.[1] ?? null;
 
@@ -413,7 +472,10 @@ function pintarHistoria(){
                <text x="${x(i) + 3}" y="${H - 8}" fill="#84959A" font-size="11" font-family="IBM Plex Sans">${f.slice(0, 4)}</text>`;
   });
   const ult = vals[vals.length - 1];
-  svg.innerHTML = `${ejes}
+  const lineasCat = [...U.nino, ...U.nina].slice(0).filter(([, c]) => c !== um && c !== ul).map(([n, c]) =>
+    `<line x1="0" y1="${y(c)}" x2="${W}" y2="${y(c)}" stroke="#84959A" stroke-opacity=".35"/>
+     <text x="4" y="${y(c) - 3}" fill="#84959A" font-size="10" font-family="IBM Plex Sans">${n} ${sg(c)}</text>`).join("");
+  svg.innerHTML = `${ejes}${lineasCat}
     ${um === null ? "" : `<rect x="0" y="${y(um)}" width="${W}" height="${y(0) - y(um)}" fill="#D9452C" fill-opacity=".06"/>
     <line x1="0" y1="${y(um)}" x2="${W}" y2="${y(um)}" stroke="#D9452C" stroke-opacity=".5" stroke-dasharray="4 4"/>`}
     ${ul === null ? "" : `<rect x="0" y="${y(0)}" width="${W}" height="${y(ul) - y(0)}" fill="#1B6A87" fill-opacity=".06"/>
@@ -424,73 +486,25 @@ function pintarHistoria(){
   const nombres = { icen: "ICEN", oni: "ONI", roni: "RONI" };
   const iPrim = v.findIndex(t => t !== null), iUlt = v.findLastIndex(t => t !== null);
   $("#hist-ejes").textContent = `${nombres[indiceHist]} de ${fecha(S.fechas[iPrim])} a ${fecha(S.fechas[iUlt])} · ${S.fuentes[indiceHist]} · `
-    + (um !== null ? `${U.nino[0][0]} desde ${sg(um)}` : "") + (ul !== null ? `, ${U.nina[0][0]} desde ${sg(ul)}` : "")
+    + (um !== null ? `El Niño desde ${sg(um)}` : "") + (ul !== null ? `, La Niña desde ${sg(ul)}` : "")
     + ` (${U.fuente}). Eje de ${sg(lo, 0)} a ${sg(hi, 0)}.`;
 }
 function setIndiceHist(k){ indiceHist = k; pintarHistoria(); }
 window.setIndiceHist = setIndiceHist;
 
-// El titular se deduce del dato, nunca se escribe a mano.
-function titular(n12){
-  if (n12 === null || n12 === undefined) return "Monitoreo del mar frente al Perú y de sus impactos.";
-  if (n12 >= 0.5)  return `El mar frente al Perú está <i>más caliente de lo normal</i>.`;
-  if (n12 <= -0.5) return `El mar frente al Perú está <i>más frío de lo normal</i>.`;
-  return `El mar frente al Perú está <i>cerca de lo normal</i>.`;
-}
-
-function kpi(id, ind, unidad){
-  const v = ind?.valor, falta = v === null || v === undefined;
-  $("#k-" + id).textContent = falta ? "pendiente" : sg(v) + (unidad || "");
-  $("#k-" + id).classList.toggle("pend", falta);
-  // Con día: "al 10 oct 2026". Solo mes (índices trimestrales): "(jul 2026)".
-  const f = ind?.fecha;
-  $("#f-" + id).textContent = !f ? (falta ? "sin conectar todavía" : "")
-    : String(f).length > 7 ? "al " + fecha(f) : `(${fecha(f)})`;
-}
-
-function pintarPortada(){
-  const e = D.estado, I = e.indices || {};
-  kpi("icen", I.icen, "");
-  kpi("roni", I.roni, "");
-  kpi("n12", I.n12, " °C");
-  kpi("n34", I.n34, " °C");
-  // El ONI clásico acompaña al RONI como dato secundario
-  $("#k-oni").textContent = I.oni?.valor === null || I.oni?.valor === undefined ? ""
-    : `ONI clásico: ${sg(I.oni.valor)} (${fecha(I.oni.fecha)}).`;
-  $("#titular").innerHTML = titular(I.n12?.valor);
-
-  $("#ribbon").innerHTML = e.alerta.estados.map(x =>
-    `<div ${x === e.alerta.estado ? "data-on" : ""}>${esc(x)}</div>`).join("");
-  $("#alerta-fuente").textContent = e.alerta.fuente + (e.alerta.fecha ? ", " + fecha(e.alerta.fecha) : "");
-
-  const P = e.probabilidades;
-  $("#probs-titulo").textContent = `Qué tan fuerte sería el ${P.periodo || "próximo verano"}`;
-  $("#probs-sub").textContent = `Probabilidad por magnitud en la región ${P.region || "Niño 1+2"}. ${P.fuente}.`;
-  const pmax = Math.max(...P.valores.map(p => p.p || 0), 1);
-  $("#probs").innerHTML = P.valores.map(p => `
-    <div class="prob-row">
-      <span>${esc(p.magnitud)}</span>
-      <span class="prob-bar"><i style="width:${(p.p / pmax) * 100}%;background:${COLOR_MAGNITUD[p.magnitud] || "#84959A"}"></i></span>
-      <b>${p.p} %</b>
-    </div>`).join("");
-
-  $("#bulletins").innerHTML = e.comunicados.map(c =>
-    `<div class="bul"><time>${fecha(c.fecha)}</time><p>${esc(c.texto)}</p></div>`).join("");
-}
-
 /* Estado de los datos: qué tan fresco está cada dato. Si la última
    actualización falló, se dice, y se muestra la fecha del último dato bueno. */
 const NOMBRE_FUENTE = {
-  oisst:  "Temperatura del mar · NOAA OISST",
-  estado: "Alerta y probabilidades · ENFEN (ingreso manual)",
+  enfen: "Comunicados del ENFEN", senamhi: "Avisos del SENAMHI", igp: "ICEN (IGP)", cpc: "ONI y RONI (NOAA CPC)",
+  oisst: "Temperatura del mar (NOAA OISST)", oceano_atm: "SOI, vientos, calor, MEI, PDO (NOAA)", firms: "Focos de calor (NASA FIRMS)",
+  openmeteo: "Lluvia y temperatura a 16 días (Open-Meteo)", rios: "Caudales (GloFAS)", estacional: "Tendencia estacional (ECMWF SEAS5)",
+  oleaje: "Oleaje (Open-Meteo Marine)", clima: "Clima histórico y SPI (NASA POWER)", noticias: "Noticias",
 };
 function pintarFrescura(){
   const F = D.meta?.fuentes || {};
   $("#frescura").innerHTML = Object.entries(NOMBRE_FUENTE).filter(([k]) => F[k]).map(([k, nom]) => {
     const f = F[k], fallo = f.estado === "fallo";
-    const dato = f.ultimo_dato ? "dato al " + fecha(f.ultimo_dato)
-      : k === "estado" && D.estado.alerta.fecha ? "comunicado del " + fecha(D.estado.alerta.fecha)
-      : "revisado el " + fecha(f.actualizado);
+    const dato = f.ultimo_dato ? "dato al " + fecha(f.ultimo_dato) : "revisado el " + fecha(f.actualizado);
     return `<li ${fallo ? 'class="falla"' : ""}><span>${esc(nom)}</span>
       <span>${esc(dato)}${fallo ? " · la última actualización falló; se muestra el último dato bueno" : ""}</span></li>`;
   }).join("") + (D.meta?.generado ? `<li><span>Última corrida del pipeline</span><span>${fecha(D.meta.generado)}</span></li>` : "");
@@ -520,18 +534,21 @@ const recurso = ruta => window.__DATOS__?.[ruta] ?? ruta;
 
 async function iniciar(){
   try{
-    const [estado, config, regiones, geo, serie, plantillas, meta, campo, indices] = await Promise.all([
+    const [estado, config, regiones, serie, plantillas, meta, campo, indices, panorama, avisos, noticias, atm] = await Promise.all([
       traer("datos/estado.json"),
       traer("datos/config.json"),
       traer("datos/regiones.json"),
-      traer("datos/geo/departamentos.json"),
       traerOpcional("datos/series/tsm.json"),
       traer("datos/analisis/_plantillas.json"),
       traerOpcional("datos/_meta.json"),
       traerOpcional("datos/campos/tsm_anom.json"),
       traerOpcional("datos/series/indices.json"),
+      traerOpcional("datos/panorama.json"),
+      traerOpcional("datos/senamhi/avisos.json"),
+      traerOpcional("datos/noticias.json"),
+      traerCsv("datos/indices/oceano_atm.csv"),
     ]);
-    D = { estado, config, regiones, geo, serie, plantillas, meta, campo, indices };
+    D = { estado, config, regiones, serie, plantillas, meta, campo, indices, panorama, avisos, noticias, atm };
   }catch(err){
     document.body.innerHTML =
       `<div style="padding:60px 24px;max-width:600px;margin:0 auto;font-family:system-ui">
@@ -547,7 +564,7 @@ async function iniciar(){
   }
 
   // Cada parte se pinta por separado: si una falla, las demás siguen.
-  for (const f of [pintarPortada, pintarHero, pintarHistoria, pintarFrescura]){
+  for (const f of [pintarPortada, pintarHero, pintarHistoria, pintarFrescura, pintarFuentes]){
     try { f(); } catch (e) { console.error(f.name, e); }
   }
   if (location.hash) ir(location.hash.slice(1));

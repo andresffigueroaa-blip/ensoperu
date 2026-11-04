@@ -4,19 +4,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>ENSO Perú · Monitoreo de El Niño y sus impactos</title>
-<meta name="description" content="Monitoreo de El Niño en el Perú. Estado del océano, pronósticos estacionales e interpretación por región y actividad económica.">
+<meta name="description" content="El Niño en el Perú, cada día: alerta del ENFEN, avisos del SENAMHI, temperatura del mar, lluvia, ríos, incendios y riesgo por región, provincia y distrito.">
 <meta name="theme-color" content="#F1F4F1">
 
 <!--
-  ENSO PERÚ · ensoperu.pe
-  Geoservidor de monitoreo de El Niño y sus impactos en el Perú.
-
-  Este archivo solo contiene estructura. La presentación está en
-  assets/styles.css, la lógica en assets/app.js y los datos en datos/
-  (los escribe el pipeline; ver README.md).
-
-  IMPORTANTE: no abrir con doble click. El navegador bloquea la lectura de
-  archivos locales. Usar:  python pipeline/servir.py
+  ENSO PERÚ. Este archivo solo contiene estructura. La presentación está en
+  assets/styles.css, la lógica en assets/*.js y los datos en datos/ (los escribe
+  el pipeline; ver README.md). No abrir con doble click: python pipeline/servir.py
 -->
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,6 +18,10 @@
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Serif:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css">
 <link rel="stylesheet" href="assets/styles.css">
+<script>
+  // Tema antes de pintar, para evitar un parpadeo
+  try { const t = localStorage.getItem("ensoperu_tema"); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+</script>
 </head>
 <body>
 
@@ -31,21 +29,22 @@
   <a class="brand" href="#" onclick="ir('home');return false">
     <span class="beak"></span>
     <b>ENSO Perú</b>
-    <span>ensoperu.pe</span>
   </a>
   <nav>
-    <button id="nav-home"  aria-current="true"  onclick="ir('home')">Inicio</button>
-    <button id="nav-mapa"  aria-current="false" onclick="ir('mapa')">Mapa</button>
+    <button id="nav-home"      aria-current="true"  onclick="ir('home')">Hoy</button>
+    <button id="nav-mapa"      aria-current="false" onclick="ir('mapa')">Mapa</button>
     <button id="nav-monitoreo" aria-current="false" onclick="ir('monitoreo')">Monitoreo</button>
-    <button id="nav-about" aria-current="false" onclick="ir('about')">Acerca de</button>
+    <button id="nav-comparar"  aria-current="false" onclick="ir('comparar')">Comparar</button>
+    <button id="nav-boletin"   aria-current="false" onclick="ir('boletin')">Boletín</button>
+    <button id="nav-noticias"  aria-current="false" onclick="ir('noticias')">Noticias</button>
+    <button id="nav-about"     aria-current="false" onclick="ir('about')">Acerca de</button>
   </nav>
+  <button class="tema-btn" id="tema-btn" onclick="cambiarTema()" aria-label="Cambiar entre modo claro y oscuro" title="Modo claro u oscuro">◐</button>
 </header>
 
-<!-- ══ PORTADA ══════════════════════════════════════════════════════════
-     El héroe es la curva de anomalía de temperatura del mar, no un número
-     grande con degradado. Es la imagen más reconocible del monitoreo de
-     El Niño y explica de un vistazo dónde estamos parados.            -->
+<!-- ══ HOY ═════════════════════════════════════════════════════════════ -->
 <main id="v-home" class="view on">
+  <div class="alerta-bar" id="alerta-bar"></div>
 
   <div class="band">
     <div class="band-meta">
@@ -57,52 +56,107 @@
       <span class="demo" id="band-estado">cargando</span>
       <span class="band-analogos" id="band-analogos"></span>
     </div>
-    <svg id="hero" viewBox="0 0 1200 240" preserveAspectRatio="none"
-         aria-label="Serie de anomalía de temperatura superficial del mar"></svg>
+    <svg id="hero" viewBox="0 0 1200 240" preserveAspectRatio="none" aria-label="Serie de anomalía de temperatura superficial del mar"></svg>
   </div>
 
   <div class="wrap">
     <div class="lede">
-      <!-- El titular lo escribe app.js a partir del dato: nunca a mano -->
-      <h1 id="titular">Monitoreo del mar frente al Perú y de sus impactos.</h1>
-      <p>Esta herramienta reúne lo que el ENFEN, el SENAMHI y los modelos globales ya publican, y lo traduce a una respuesta concreta para tu región y tu actividad.</p>
-
-      <!-- Cinta del sistema de alerta del ENFEN -->
+      <h1 id="titular">El Niño en el Perú, hoy.</h1>
+      <p id="lede-txt"></p>
       <div class="ribbon" id="ribbon" role="group" aria-label="Estado del sistema de alerta del ENFEN"></div>
       <p class="ribbon-src" id="alerta-fuente"></p>
+      <div class="lede-cta">
+        <button class="cta" onclick="ir('mapa')">Ver mi lugar en el mapa</button>
+        <button class="cta cta2" onclick="ir('boletin')">Boletín de hoy</button>
+      </div>
     </div>
   </div>
 
-  <dl class="idx">
-    <div><dt>ICEN</dt><dd id="k-icen">–</dd><small>Índice Costero El Niño del ENFEN, trimestre móvil <span id="f-icen"></span>.</small></div>
-    <div><dt>RONI</dt><dd id="k-roni">–</dd><small>Índice oceánico relativo al Niño 3.4 <span id="f-roni"></span>. <span id="k-oni"></span></small></div>
-    <div><dt>Anomalía Niño 1+2</dt><dd id="k-n12">–</dd><small>Frente a la costa norte del Perú. Media de 7 días <span id="f-n12"></span>.</small></div>
-    <div><dt>Anomalía Niño 3.4</dt><dd id="k-n34">–</dd><small>Pacífico central ecuatorial. Media de 7 días <span id="f-n34"></span>.</small></div>
-  </dl>
+  <dl class="idx idx6" id="kpis"></dl>
 
   <div class="wrap">
-    <div class="cols">
+    <section class="bloque">
+      <div class="thermo"></div>
+      <h2>Lo más importante hoy</h2>
+      <ul class="lectura" id="lectura"></ul>
+      <div id="mis-lugares"></div>
+    </section>
+
+    <section class="bloque">
+      <div class="thermo"></div>
+      <h2>Avisos del SENAMHI</h2>
+      <p class="sub" id="avisos-sub"></p>
+      <div class="avisos" id="avisos"></div>
+    </section>
+
+    <section class="bloque">
+      <div class="thermo"></div>
+      <h2>Qué dice el ENFEN, por tema</h2>
+      <p class="sub" id="temas-sub"></p>
+      <div class="temas-enfen" id="temas-enfen"></div>
+    </section>
+
+    <section class="bloque">
+      <div class="thermo"></div>
+      <h2>Probabilidades del ENFEN, mes a mes</h2>
+      <p class="sub" id="probs-sub"></p>
+      <div class="hist-idx-ctl" id="probs-ctl" role="group" aria-label="Región">
+        <button data-k="n12" aria-pressed="true"  onclick="setProbs('n12')">Niño 1+2 (costa)</button>
+        <button data-k="n34" aria-pressed="false" onclick="setProbs('n34')">Niño 3.4 (Pacífico central)</button>
+      </div>
+      <div class="probs-m" id="probs"></div>
+      <div class="leyenda" id="probs-ley"></div>
+      <details class="figs"><summary>Ver las figuras originales del comunicado</summary><div id="figs"></div></details>
+    </section>
+
+    <section class="bloque">
+      <div class="thermo"></div>
+      <h2>Las 25 regiones, hoy</h2>
+      <p class="sub">Haz clic en una región para abrir su ficha. Los niveles siguen reglas fijas y no son pronósticos. El aviso es el más alto que nombra su zona (costa norte, sierra sur...): el área exacta está en el aviso oficial.</p>
+      <div class="tabla-scroll"><table class="tabla tabla-reg" id="tabla-regiones"></table></div>
+    </section>
+
+    <section class="bloque cols3">
       <div>
         <div class="thermo"></div>
-        <h2 id="probs-titulo">Qué tan fuerte sería el próximo verano</h2>
-        <p class="sub" id="probs-sub"></p>
-        <div class="prob" id="probs"></div>
-        <button class="cta" onclick="ir('mapa')">Ver mi región en el mapa</button>
+        <h2>Ríos con crecida pronosticada</h2>
+        <p class="sub" id="rios-sub"></p>
+        <div class="rank" id="rank-rios"></div>
+      </div>
+      <div>
+        <div class="thermo"></div>
+        <h2>Más lluvia próxima</h2>
+        <p class="sub">Provincias, 16 días. Modelos globales, no es aviso oficial.</p>
+        <div class="rank" id="rank-lluvia"></div>
+      </div>
+      <div>
+        <div class="thermo"></div>
+        <h2>Más focos de calor</h2>
+        <p class="sub">Provincias, 7 días. NASA FIRMS. Un foco no siempre es un incendio forestal.</p>
+        <div class="rank" id="rank-focos"></div>
+      </div>
+    </section>
+
+    <section class="bloque cols">
+      <div>
+        <div class="thermo"></div>
+        <h2>Noticias</h2>
+        <p class="sub">Titulares de la prensa, no son fuente oficial.</p>
+        <div id="portada-noticias"></div>
+        <button class="enlace" onclick="ir('noticias')">Ver todas</button>
       </div>
       <div>
         <div class="thermo"></div>
         <h2>Últimos comunicados</h2>
-        <p class="sub">Comité multisectorial ENFEN.</p>
+        <p class="sub">Comisión multisectorial ENFEN.</p>
         <div id="bulletins"></div>
       </div>
-    </div>
-  </div>
+    </section>
 
-  <div class="wrap">
-    <section class="hist-idx">
+    <section class="hist-idx bloque">
       <div class="thermo"></div>
       <h2>Cómo se compara con la historia</h2>
-      <p class="sub" id="hist-sub">Índice mensual desde 1950. Las franjas marcan los umbrales de El Niño y La Niña.</p>
+      <p class="sub" id="hist-sub">Índice mensual desde 1950, con las categorías oficiales.</p>
       <div class="hist-idx-ctl" role="group" aria-label="Índice">
         <button data-k="icen" aria-pressed="true"  onclick="setIndiceHist('icen')">ICEN (costa)</button>
         <button data-k="oni"  aria-pressed="false" onclick="setIndiceHist('oni')">ONI (Niño 3.4)</button>
@@ -117,8 +171,8 @@
       <ul id="frescura"></ul>
     </section>
     <footer>
-      <p>ENSO Perú es un proyecto académico independiente. No es una fuente de pronóstico oficial: el ENFEN y el SENAMHI son la autoridad en la materia.</p>
-      <p>Para decisiones operativas consulte los comunicados oficiales del ENFEN, los avisos del SENAMHI y, en el caso pesquero, a IMARPE y PRODUCE.</p>
+      <p>ENSO Perú es un proyecto académico independiente. No emite alertas ni pronósticos propios: el ENFEN y el SENAMHI son la autoridad en la materia.</p>
+      <p>Ante una emergencia, siga a INDECI y a su gobierno local. Para decisiones operativas consulte los comunicados del ENFEN, los avisos del SENAMHI y, en pesca, a IMARPE y PRODUCE.</p>
     </footer>
   </div>
 </main>
@@ -139,14 +193,15 @@
       <section>
         <h3>Capa</h3>
         <div id="capas"></div>
+        <div id="meses-ctl"></div>
         <h3 class="h3-sep">Nivel</h3>
         <div class="scope" id="niveles"></div>
       </section>
       <section>
-        <h3>Lugares</h3>
+        <h3>Sobre el mapa</h3>
         <div id="lugares-ctl"></div>
       </section>
-      <section>
+      <section class="rail-ley">
         <h3 id="leg-title">Escala</h3>
         <div class="legend" id="legend"></div>
         <div class="legend-ends"><span id="leg-lo"></span><span id="leg-hi"></span></div>
@@ -157,30 +212,30 @@
     <div class="stage" id="stage">
       <div id="mapa" role="region" aria-label="Mapa interactivo del Perú"></div>
       <div class="tip" id="tip"></div>
-      <div class="mapa-aviso" id="mapa-aviso">Elige un tema, o busca tu lugar, o haz clic en el mapa.</div>
+      <div class="mapa-aviso" id="mapa-aviso">Elige un tema, busca tu lugar o haz clic en el mapa.</div>
     </div>
 
     <aside class="panel" id="panel">
       <div class="grab"></div>
       <div class="empty">
         <b>Elige un lugar</b>
-        Haz clic en una región, provincia o distrito, o en una presa, laguna o glaciar. La ficha muestra qué pasa ahora, qué viene, qué hay expuesto y qué estudios lo explican.
+        Haz clic en una región, provincia o distrito, o en un río, presa, laguna o glaciar. La ficha muestra qué pasa ahora, qué viene, qué pasó antes, qué está expuesto y qué estudios lo explican.
       </div>
     </aside>
 
   </div>
 </main>
 
-<!-- ══ MONITOREO · dashboards ══════════════════════════════════════════
-     Solo datos: series diarias y mensuales que produce el pipeline, con
-     selector de período, y la lista de archivos abiertos para descargar. -->
+<!-- ══ MONITOREO ═══════════════════════════════════════════════════════
+     Solo datos: series que produce el pipeline, con selector de período,
+     y la lista de archivos abiertos para descargar. -->
 <main id="v-monitoreo" class="view">
   <div class="wrap mon">
     <div class="mon-head">
       <div>
         <div class="thermo"></div>
         <h1>Monitoreo</h1>
-        <p class="sub">Los datos tal cual los produce el pipeline, sin interpretación. Cada panel dice su fuente y su fecha.</p>
+        <p class="sub">Los datos tal como los produce el pipeline, sin interpretación. Pasa el cursor sobre un gráfico para leer los valores.</p>
       </div>
       <div class="mon-ctl" role="group" aria-label="Período">
         <button data-p="1" aria-pressed="true"  onclick="setPeriodo(1)">1 año</button>
@@ -193,31 +248,108 @@
     <dl class="idx mon-kpi" id="mon-kpi"></dl>
 
     <section class="panel-g">
-      <h2>Anomalía diaria de temperatura del mar por región Niño</h2>
+      <h2>Temperatura del mar por región Niño</h2>
       <p class="sub" id="g-oisst-sub"></p>
       <svg id="g-oisst" viewBox="0 0 1200 300" preserveAspectRatio="none" aria-label="Series diarias OISST"></svg>
       <div class="leyenda" id="g-oisst-ley"></div>
     </section>
 
     <section class="panel-g">
-      <h2>Temperatura del mar frente a cada región del litoral</h2>
+      <h2>Temperatura del mar frente al litoral</h2>
       <p class="sub" id="g-costa-sub"></p>
+      <div class="sel-fila"><label for="costa-sel">Región destacada</label> <select id="costa-sel" onchange="pintarMonitoreo()"></select></div>
       <svg id="g-costa" viewBox="0 0 1200 300" preserveAspectRatio="none" aria-label="TSM costera por región"></svg>
       <div class="leyenda" id="g-costa-ley"></div>
     </section>
 
     <section class="panel-g">
-      <h2>Índices mensuales oficiales</h2>
+      <h2>Índices oficiales: ICEN, ONI y RONI</h2>
       <p class="sub" id="g-idx-sub"></p>
       <svg id="g-idx" viewBox="0 0 1200 300" preserveAspectRatio="none" aria-label="ICEN, ONI y RONI"></svg>
       <div class="leyenda" id="g-idx-ley"></div>
     </section>
 
     <section class="panel-g">
+      <h2>Calor bajo el mar</h2>
+      <p class="sub" id="g-calor-sub"></p>
+      <svg id="g-calor" viewBox="0 0 1200 300" preserveAspectRatio="none" aria-label="Contenido de calor"></svg>
+    </section>
+
+    <section class="panel-g">
+      <h2>Vientos en el Pacífico ecuatorial</h2>
+      <p class="sub">Anomalía del viento zonal a 850 hPa (m/s, CPC). Negativo: los alisios se debilitan, lo que favorece y sostiene a El Niño.</p>
+      <svg id="g-viento" viewBox="0 0 1200 300" preserveAspectRatio="none" aria-label="Vientos"></svg>
+      <div class="leyenda" id="g-viento-ley"></div>
+    </section>
+
+    <section class="panel-g">
+      <h2>La atmósfera responde: SOI y nubosidad</h2>
+      <p class="sub">SOI: presión entre Tahití y Darwin; negativo persistente es señal de El Niño. OLR: radiación saliente en el Pacífico central; negativo indica más nubes y lluvia. Ambos estandarizados (CPC).</p>
+      <svg id="g-atm" viewBox="0 0 1200 300" preserveAspectRatio="none" aria-label="SOI y OLR"></svg>
+      <div class="leyenda" id="g-atm-ley"></div>
+    </section>
+
+    <section class="panel-g">
+      <h2>Índices de gran escala: MEI y PDO</h2>
+      <p class="sub">MEI: índice multivariado de ENSO (NOAA PSL). PDO: oscilación decadal del Pacífico (NOAA NCEI), el fondo sobre el que ocurre cada evento.</p>
+      <svg id="g-mei" viewBox="0 0 1200 300" preserveAspectRatio="none" aria-label="MEI y PDO"></svg>
+      <div class="leyenda" id="g-mei-ley"></div>
+    </section>
+
+    <section class="panel-g">
+      <h2>Focos de calor por día</h2>
+      <p class="sub" id="g-focos-sub"></p>
+      <svg id="g-focos" viewBox="0 0 1200 300" preserveAspectRatio="none" aria-label="Focos de calor por día"></svg>
+    </section>
+
+    <section class="panel-g">
+      <h2>¿Podemos confiar en estos números?</h2>
+      <p class="sub" id="verif-sub"></p>
+      <div class="tabla-scroll"><table class="tabla" id="tabla-verif"></table></div>
+    </section>
+
+    <section class="panel-g">
       <h2>Datos abiertos</h2>
       <p class="sub">Todo lo que muestra esta página se puede descargar. Son los mismos archivos que lee la página.</p>
-      <table class="tabla" id="tabla-datos"></table>
+      <div class="tabla-scroll"><table class="tabla" id="tabla-datos"></table></div>
     </section>
+  </div>
+</main>
+
+<!-- ══ COMPARAR ════════════════════════════════════════════════════════ -->
+<main id="v-comparar" class="view">
+  <div class="wrap mon">
+    <div class="thermo"></div>
+    <h1 class="h1-vista">Comparar</h1>
+    <p class="sub">Elige dos lugares y míralos lado a lado: lo que pasa, lo que viene, el riesgo y lo que ocurrió en Niños anteriores.</p>
+    <div class="comp-sel">
+      <input id="comp-a" list="lista-unidades" placeholder="Primer lugar" aria-label="Primer lugar" autocomplete="off">
+      <span>y</span>
+      <input id="comp-b" list="lista-unidades" placeholder="Segundo lugar" aria-label="Segundo lugar" autocomplete="off">
+    </div>
+    <div id="comp-res"></div>
+  </div>
+</main>
+
+<!-- ══ BOLETÍN ═════════════════════════════════════════════════════════ -->
+<main id="v-boletin" class="view">
+  <div class="wrap mon boletin">
+    <div class="bol-ctl no-print">
+      <label for="bol-fecha">Boletín del</label> <select id="bol-fecha" onchange="pintarBoletin(this.value)"></select>
+      <button class="cta cta2" onclick="window.print()">Imprimir o guardar en PDF</button>
+    </div>
+    <article id="boletin"></article>
+  </div>
+</main>
+
+<!-- ══ NOTICIAS Y GUARDADOS ════════════════════════════════════════════ -->
+<main id="v-noticias" class="view">
+  <div class="wrap mon">
+    <div class="thermo"></div>
+    <h1 class="h1-vista">Noticias</h1>
+    <p class="sub">Titulares de la prensa nacional e internacional sobre El Niño y clima. El contenido es de cada medio y puede traer cifras preliminares.</p>
+    <div class="not-ctl" id="not-ctl"></div>
+    <div class="noticias" id="noticias"></div>
   </div>
 </main>
 
@@ -227,18 +359,20 @@
     <article class="about">
       <div class="thermo"></div>
       <h1>Qué es esto y qué no es</h1>
-      <p>ENSO Perú traduce a lenguaje y escala útiles lo que el ENFEN, el SENAMHI, el IMARPE y los centros globales de pronóstico ya publican. Toma el dato técnico, lo ubica en un mapa y responde una sola pregunta: <strong>qué puede pasar en mi región y en mi actividad.</strong></p>
-      <p>No producimos pronósticos. El ENFEN y el SENAMHI son la autoridad oficial en el Perú, y toda decisión operativa debe apoyarse en sus comunicados.</p>
+      <p>ENSO Perú reúne en un solo lugar lo que el ENFEN, el SENAMHI, el IGP, el CENEPRED y los centros globales ya publican, y lo traduce a lenguaje y escala útiles: <strong>qué puede pasar en mi lugar y qué conviene mirar.</strong></p>
+      <p>No producimos pronósticos ni emitimos alertas. El ENFEN y el SENAMHI son la autoridad oficial en el Perú; ante una emergencia, siga a INDECI y a su gobierno local.</p>
 
-      <h2>De dónde salen los datos</h2>
-      <p>Temperatura del mar de NOAA OISST y de OSTIA a través del SIOFEN del IMARPE. Índices ONI y RONI del Climate Prediction Center, e ICEN del ENFEN. Pronóstico estacional de ECMWF SEAS5, NMME e IRI. Precipitación de CHIRPS. Sequía a partir de los productos SPI e ISPI del SENAMHI. Hidrología del SENAMHI y de la ANA.</p>
+      <h2>De dónde sale cada dato</h2>
+      <div class="tabla-scroll"><table class="tabla" id="tabla-fuentes"></table></div>
 
-      <h2>Cómo se generan los análisis</h2>
-      <p>Los textos por región los redacta un modelo de inteligencia artificial, pero <strong>no estima nada</strong>: recibe los valores ya calculados, los antecedentes históricos que el equipo documentó, y la redacción del comunicado ENFEN vigente. Su trabajo es traducir, no pronosticar. Cada texto queda marcado como generado con IA, guarda las entradas exactas que recibió el modelo y cita sus fuentes.</p>
-      <p>Los análisis se generan por adelantado, una vez al día. Cuando alguien abre una región no se consulta ningún modelo en vivo, se lee un archivo que ya estaba escrito.</p>
+      <h2>Cómo leer los niveles</h2>
+      <p>Cada amenaza tiene su propio nivel, calculado con una regla fija y visible; no mezclamos amenazas en un número opaco. Las reglas están en la ficha de cada lugar. El riesgo por inundación y por movimientos en masa no lo calculamos nosotros: es el escenario oficial del CENEPRED.</p>
+
+      <h2>Qué tan cerca está cada dato de la realidad</h2>
+      <p>Los comunicados y avisos son oficiales. La temperatura del mar se compara a diario con el archivo oficial del CPC. La lluvia, los caudales y el pronóstico estacional vienen de modelos globales: sirven para ver tendencias y dónde mirar, no para medir un punto exacto. El clima histórico (NASA POWER) tiene unos 50 km de resolución. Los lugares vienen de OpenStreetMap, un inventario colaborativo; los oficiales son de la ANA y del INAIGEM.</p>
 
       <h2>Quiénes somos</h2>
-      <p>Cuatro meteorólogos peruanos. El proyecto es abierto, sin fines de lucro y sin publicidad.</p>
+      <p>Un equipo de meteorólogos peruanos. El proyecto es abierto, sin fines de lucro y sin publicidad. El código y los datos están en <a href="https://github.com/andresffigueroaa-blip/ensoperu">GitHub</a>.</p>
     </article>
     <footer>
       <p>Código abierto. El contenido puede reutilizarse citando la fuente.</p>
@@ -246,9 +380,12 @@
   </div>
 </main>
 
+<div class="tip tip-g" id="tip-g"></div>
+
 <script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
 <script src="assets/iconos.js"></script>
 <script src="assets/app.js"></script>
+<script src="assets/vistas.js"></script>
 <script src="assets/mapa.js"></script>
 </body>
 </html>

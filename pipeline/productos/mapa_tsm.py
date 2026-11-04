@@ -74,6 +74,11 @@ def ejecutar(estado: dict) -> dict:
     with xr.open_dataarray(CAMPO) as da:
         campo = da.load()
     fecha = campo.attrs.get("fecha", "")
+    # La caché puede ser más vieja que la imagen publicada: nunca retroceder
+    publicada = (leer_json(META) or {}).get("fecha", "")
+    if PNG.exists() and publicada > fecha:
+        log(f"  caché del {fecha}, más vieja que la imagen del {publicada}; se conserva la imagen")
+        return {"estado": "sin_cambios", "ultimo_dato": publicada}
     if estado.get("ultimo_dato") == fecha and PNG.exists() and "lonlat_ml" in (leer_json(META) or {}):
         return {"estado": "sin_cambios", "ultimo_dato": fecha}
 

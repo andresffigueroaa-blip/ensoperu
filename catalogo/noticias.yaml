@@ -1,0 +1,21 @@
+# ════════════════════════════════════════════════════════════════════════
+# NOTICIAS · editable a mano
+# ════════════════════════════════════════════════════════════════════════
+# Búsquedas en Google Noticias. Agregar una búsqueda aquí basta.
+#   tema    lluvias, incendios, mar, agua, agro, oficial, global
+#   ambito  nacional | internacional
+# ════════════════════════════════════════════════════════════════════════
+max_por_consulta: 15
+consultas:
+  - {q: '"Fenómeno El Niño" Perú', tema: lluvias, ambito: nacional}
+  - {q: 'ENFEN comunicado El Niño costero', tema: oficial, ambito: nacional}
+  - {q: 'SENAMHI aviso lluvias norte Perú', tema: lluvias, ambito: nacional}
+  - {q: 'INDECI COEN emergencia lluvias huaico', tema: lluvias, ambito: nacional}
+  - {q: 'incendios forestales Perú SERFOR', tema: incendios, ambito: nacional}
+  - {q: 'pesca anchoveta IMARPE El Niño', tema: mar, ambito: nacional}
+  - {q: 'embalse Poechos Tinajones Gallito Ciego nivel', tema: agua, ambito: nacional}
+  - {q: 'sequía Puno Titicaca El Niño agricultores', tema: agro, ambito: nacional}
+  - {q: 'cultivos arroz mango limón El Niño Piura Lambayeque', tema: agro, ambito: nacional}
+  - {q: 'El Niño 2026 impacto América Latina', tema: global, ambito: internacional}
+  - {q: 'El Niño 2026 NOAA forecast strongest', tema: global, ambito: internacional, idioma: en}
+  - {q: 'El Niño 2026 drought Africa Asia impact', tema: global, ambito: internacional, idioma: en}

@@ -251,3 +251,12 @@ Detalle en `decisiones.md`.
 2. Antes de editar: **Pull origin** en GitHub Desktop (el robot sube datos a diario).
 3. Después de editar: **Commit** y **Push origin**. La página se publica sola en ~2 minutos.
 4. Cada decisión técnica va a `docs/decisiones.md` con fecha y motivo.
+
+## Estado al 4 de noviembre de 2026
+
+Hecho: portada de situación, Comparar, Boletín, Noticias, modo oscuro, guardados en el navegador, cursor en los gráficos. Datos nuevos: comunicados ENFEN por tema, avisos SENAMHI, SOI, OLR, vientos, calor, MEI, PDO, verificación contra el CPC, 30 ríos (GloFAS), tendencia estacional (SEAS5), oleaje, clima histórico y SPI (NASA POWER), riesgo CENEPRED por distrito, antecedentes.
+
+Por comprobar: si el ENFEN y el SENAMHI responden desde GitHub Actions. Si no, una tarea en la laptop que corra `--solo enfen,senamhi,estado`.
+
+Pendiente: asistente IA (falta `GEMINI_API_KEY`), S2S de IRI y ECMWF, WeatherNext 2, cuencas ANA, inventarios oficiales ANA e INAIGEM, Aqueduct, cultivos y ganadería, Cloudflare R2, modelo lluvia-caudal, proyecciones climáticas.
+

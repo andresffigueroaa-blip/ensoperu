@@ -1,0 +1,48 @@
+# ════════════════════════════════════════════════════════════════════════
+# RÍOS VIGILADOS · editable a mano
+# ════════════════════════════════════════════════════════════════════════
+# Puntos donde se consulta el caudal pronosticado (GloFAS, vía Open-Meteo).
+# Las coordenadas son aproximadas: pipeline/herramientas/build_rios.py busca
+# en las celdas vecinas la de mayor caudal, para caer sobre el cauce principal.
+# Si agregas un río, corre esa herramienta.
+#
+# Es un modelo global de 5 km: en cuencas pequeñas y reguladas por presas
+# puede errar. Sirve para ver cuándo se espera una crecida inusual, no para
+# medir. Los caudales oficiales son del SENAMHI y de la ANA.
+# ════════════════════════════════════════════════════════════════════════
+
+# Costa norte: los que el ENFEN señala para este evento
+- {id: tumbes,        nombre: Tumbes,            lugar: "El Tigre",        region: "24", lat: -3.77,  lon: -80.46}
+- {id: chira,         nombre: Chira,             lugar: "Ardilla",         region: "20", lat: -4.52,  lon: -80.44}
+- {id: piura,         nombre: Piura,             lugar: "Puente Sánchez Cerro", region: "20", lat: -5.18, lon: -80.62}
+- {id: la-leche,      nombre: La Leche,          lugar: "Puchaca",         region: "14", lat: -6.38,  lon: -79.47}
+- {id: chancay-lamb,  nombre: Chancay-Lambayeque, lugar: "Racarrumi",      region: "14", lat: -6.63,  lon: -79.33}
+- {id: zana,          nombre: Zaña,              lugar: "Batán",           region: "14", lat: -6.82,  lon: -79.27}
+- {id: jequetepeque,  nombre: Jequetepeque,      lugar: "Yonán",           region: "13", lat: -7.25,  lon: -79.10}
+- {id: chicama,       nombre: Chicama,           lugar: "Salinar",         region: "13", lat: -7.67,  lon: -78.97}
+- {id: moche,         nombre: Moche,             lugar: "Quirihuac",       region: "13", lat: -8.08,  lon: -78.87}
+- {id: viru,          nombre: Virú,              lugar: "Huacapongo",      region: "13", lat: -8.38,  lon: -78.65}
+- {id: santa,         nombre: Santa,             lugar: "Condorcerro",     region: "02", lat: -8.65,  lon: -78.25}
+# Costa centro: el ENFEN anticipa aumento desde diciembre
+- {id: pativilca,     nombre: Pativilca,         lugar: "Yanapampa",       region: "15", lat: -10.70, lon: -77.60}
+- {id: chillon,       nombre: Chillón,           lugar: "Obrajillo",       region: "15", lat: -11.70, lon: -76.75}
+- {id: rimac,         nombre: Rímac,             lugar: "Chosica",         region: "15", lat: -11.93, lon: -76.69}
+- {id: lurin,         nombre: Lurín,             lugar: "Antapucro",       region: "15", lat: -12.10, lon: -76.75}
+- {id: canete,        nombre: Cañete,            lugar: "Socsi",           region: "15", lat: -13.03, lon: -76.20}
+- {id: pisco,         nombre: Pisco,             lugar: "Letrayoc",        region: "11", lat: -13.63, lon: -75.72}
+- {id: ica,           nombre: Ica,               lugar: "La Achirana",     region: "11", lat: -13.98, lon: -75.70}
+# Costa sur
+- {id: ocona,         nombre: Ocoña,             lugar: "Ocoña",           region: "04", lat: -16.40, lon: -73.10}
+- {id: majes,         nombre: Majes-Camaná,      lugar: "Huatiapa",        region: "04", lat: -16.00, lon: -72.47}
+- {id: tambo,         nombre: Tambo,             lugar: "Chucarapi",       region: "04", lat: -17.05, lon: -71.70}
+# Sierra y Titicaca: el ENFEN anticipa déficit
+- {id: vilcanota,     nombre: Vilcanota,         lugar: "Pisac",           region: "08", lat: -13.42, lon: -71.85}
+- {id: apurimac,      nombre: Apurímac,          lugar: "Puente Cunyac",   region: "03", lat: -13.56, lon: -72.57}
+- {id: ramis,         nombre: Ramis,             lugar: "Puente Ramis",    region: "21", lat: -15.25, lon: -69.87}
+- {id: ilave,         nombre: Ilave,             lugar: "Puente Ilave",    region: "21", lat: -16.08, lon: -69.64}
+# Selva
+- {id: huallaga,      nombre: Huallaga,          lugar: "Yurimaguas",      region: "16", lat: -5.89,  lon: -76.10}
+- {id: maranon,       nombre: Marañón,           lugar: "Borja",           region: "16", lat: -4.47,  lon: -77.54}
+- {id: ucayali,       nombre: Ucayali,           lugar: "Pucallpa",        region: "25", lat: -8.38,  lon: -74.52}
+- {id: amazonas,      nombre: Amazonas,          lugar: "Iquitos",         region: "16", lat: -3.75,  lon: -73.25}
+- {id: madre-dios,    nombre: Madre de Dios,     lugar: "Puerto Maldonado", region: "17", lat: -12.60, lon: -69.18}

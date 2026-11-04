@@ -266,3 +266,14 @@ N° 07-2026 que cita la Nota Técnica 01-2024. Los demás cortes de la nota
 a mostrar algo que el ENFEN no dice.
 
 **Peso en el repo:** `campos/incendios.geojson` (~550 KB) cambia entero cada día, unos 200 MB al año en el historial. Se tolera hasta que exista el bucket R2 (bloque 7); entonces los focos diarios van a R2 y el repo guarda solo los conteos por unidad.
+
+## 2026-11-04 · Plataforma de situación
+
+- **Portada de situación.** Barra de alerta, lectura del día armada con datos (sin IA), avisos, texto del ENFEN por tema, probabilidades, tabla de 25 regiones y rankings. Vistas nuevas: Comparar, Boletín (archivo diario en `datos/boletines/`) y Noticias.
+- **Riesgo en región o provincia.** No se muestra un solo nivel: heredaría el de su peor distrito (Piura y Puno saldrían iguales). Se dice cuántos distritos hay en alto y muy alto.
+- **Lluvia frente a lo normal.** Sin porcentaje si la normal del periodo es menor de 15 mm: en meses secos daba cifras como 1409 %, que asustan y no informan.
+- **Avisos por zona.** El SENAMHI publica zonas amplias, así que el aviso de cada región es el más alto que nombra su zona, no su área exacta. Se dice en pantalla.
+- **Antecedentes.** Cada cifra con fuente y alcance en `catalogo/antecedentes.yaml`. Las de sectores productivos (5,3 % y 2,9 % del PBI) y las de daños totales no se comparan entre sí.
+- **Mapa del mar.** `mapa_tsm` no reemplaza una imagen por otra más vieja: la caché local puede estar atrasada.
+- **Números.** Miles con espacio (1 044), decimales con coma.
+
