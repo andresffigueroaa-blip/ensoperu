@@ -275,6 +275,10 @@ a mostrar algo que el ENFEN no dice.
 - **Wikipedia solo si OpenStreetMap enlaza el artículo.** Buscar por nombre traería homónimos ("Laguna Negra") y diría algo falso del lugar.
 - **Noticias con imagen.** Canales RSS de los medios, filtrados por tema. Las imágenes se muestran desde el servidor del medio, con enlace a la nota; sin imagen, un dibujo por tema.
 
+## 2026-11-04 · Focos de calor: varios satélites
+
+S-NPP dejó de entregar el 2 de noviembre y los focos quedaron congelados. Se lee el primer satélite al día, en orden NOAA-20, NOAA-21, S-NPP. No se suman porque ven el mismo fuego. La serie diaria puede mostrar un pequeño salto al cambiar de satélite.
+
 ## 2026-11-04 · Plataforma de situación
 
 - **Portada de situación.** Barra de alerta, lectura del día armada con datos (sin IA), avisos, texto del ENFEN por tema, probabilidades, tabla de 25 regiones y rankings. Vistas nuevas: Comparar, Boletín (archivo diario en `datos/boletines/`) y Noticias.
