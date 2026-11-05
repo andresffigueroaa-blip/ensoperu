@@ -267,6 +267,14 @@ a mostrar algo que el ENFEN no dice.
 
 **Peso en el repo:** `campos/incendios.geojson` (~550 KB) cambia entero cada día, unos 200 MB al año en el historial. Se tolera hasta que exista el bucket R2 (bloque 7); entonces los focos diarios van a R2 y el repo guarda solo los conteos por unidad.
 
+## 2026-11-04 · Robot horario y figuras del mapa
+
+- **Cada hora, pero cada fuente a su ritmo.** El robot corre cada hora; `HORAS_ENTRE_LECTURAS` en `run.py` evita pedir cada hora lo que cambia cada 6 h o más, y respeta el límite de 10 000 consultas diarias de Open-Meteo. Actualizar no vuelve más nuevo un dato que la fuente publica una vez al día.
+- **Robot local para SENAMHI y ENFEN.** No responden desde GitHub. `pipeline/herramientas/robot_local.py` corre en una PC del equipo, en un clon propio que nunca toca la carpeta de trabajo. Si la PC está apagada no corre, y la portada avisa del atraso.
+- **Ficha de cada figura.** Lo fijo sale de `geo/lugares.geojson`; clima y caudal se piden en vivo a Open-Meteo solo para el punto abierto. Estaciones: 980 de la red pública del SENAMHI. Cumbres: sobre 4000 m o con artículo.
+- **Wikipedia solo si OpenStreetMap enlaza el artículo.** Buscar por nombre traería homónimos ("Laguna Negra") y diría algo falso del lugar.
+- **Noticias con imagen.** Canales RSS de los medios, filtrados por tema. Las imágenes se muestran desde el servidor del medio, con enlace a la nota; sin imagen, un dibujo por tema.
+
 ## 2026-11-04 · Plataforma de situación
 
 - **Portada de situación.** Barra de alerta, lectura del día armada con datos (sin IA), avisos, texto del ENFEN por tema, probabilidades, tabla de 25 regiones y rankings. Vistas nuevas: Comparar, Boletín (archivo diario en `datos/boletines/`) y Noticias.

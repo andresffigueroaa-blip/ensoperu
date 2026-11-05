@@ -14,7 +14,8 @@
 
 const M = {                    // estado del mapa
   mapa: null, listo: false, capa: "tsm", nivel: "region", tema: null, mesEst: 0,
-  lugares: { presa: false, embalse: true, laguna: false, glaciar: true }, incendios: false, rios: true,
+  lugares: { estacion: false, cumbre: false, presa: false, embalse: true, laguna: false, glaciar: true }, incendios: false, rios: true,
+  turno: 0,      // solo la última orden de pintar puede escribir colores
   sel: null, datos: {},
 };
 
@@ -24,10 +25,10 @@ const CAPAS_MAPA = {
   aviso:    { n: "Avisos del SENAMHI hoy", u: "", tipo: "aviso", niveles: ["region"], fuente: "SENAMHI. Según las zonas que nombra el texto de cada aviso; el detalle oficial está en su enlace" },
   tsm:      { n: "Temperatura del mar", u: "°C", lo: -2, hi: 6, tipo: "divergente", niveles: ["region"], fuente: "NOAA OISST, franja marina a menos de 110 km del litoral, media de 7 días" },
   lluvia:   { n: "Lluvia, próximos 16 días", u: "mm", lo: 0, hi: 240, tipo: "azul", niveles: ["region", "provincia"], fuente: "Open-Meteo (modelos globales). No es un aviso oficial: para alertas, SENAMHI" },
-  lluvia_n: { n: "Lluvia próxima frente a lo normal", u: "%", lo: -200, hi: 200, tipo: "divergente-inv", desplaza: 100, niveles: ["region", "provincia"], fuente: "Open-Meteo frente a la normal 1991-2020 de NASA POWER. Azul: más lluvia de lo normal; rojo: menos" },
+  lluvia_n: { n: "Lluvia próxima frente a lo normal", u: "%", lo: -200, hi: 200, tipo: "divergente-inv", desplaza: 100, niveles: ["region", "provincia"], fuente: "Open-Meteo frente a la normal 1991-2020 de NASA POWER. Azul: más lluvia de lo normal; rojo: menos. Sin color: meses normalmente secos, donde el porcentaje no dice nada" },
   ult30:    { n: "Lluvia, últimos 30 días", u: "mm", lo: 0, hi: 300, tipo: "azul", niveles: ["region", "provincia"], fuente: "Estimación de modelos (Open-Meteo), no estaciones" },
   estacional:{ n: "Tendencia estacional", u: "mm", lo: -200, hi: 200, tipo: "divergente-inv", niveles: ["region"], fuente: "ECMWF SEAS5, anomalía del mes frente a su propia historia. Vale a escala de región" },
-  spi:      { n: "Sequía (SPI-3)", u: "", lo: -2.5, hi: 2.5, tipo: "divergente-inv", niveles: ["region", "provincia"], fuente: "SPI de 3 meses calculado de NASA POWER. Rojo: más seco de lo normal" },
+  spi:      { n: "Sequía (SPI-3)", u: "", lo: -2.5, hi: 2.5, tipo: "divergente-inv", niveles: ["region", "provincia"], fuente: "SPI de 3 meses calculado de NASA POWER. Naranja y rojo: más seco de lo normal; azul: más húmedo" },
   tmax:     { n: "Calor, próximos 7 días", u: "°C", lo: 8, hi: 38, tipo: "naranja", niveles: ["region", "provincia"], fuente: "Temperatura máxima media pronosticada. Open-Meteo" },
   incendios:{ n: "Focos de calor, 7 días", u: "focos", lo: 0, hi: 60, tipo: "naranja", niveles: ["region", "provincia", "distrito"], fuente: "NASA FIRMS, satélite VIIRS. Un foco no siempre es un incendio forestal" },
   r_inu:    { n: "Riesgo oficial: inundación", u: "", tipo: "riesgo", clave: "inu", niveles: ["distrito"], fuente: "CENEPRED, escenario de riesgo ante El Niño (SIGRID)" },
@@ -38,10 +39,11 @@ const NIVELES = [["region", "Regiones"], ["provincia", "Provincias"], ["distrito
 // Temas: una combinación de capa, nivel, lugares y encuadre para cada pregunta
 const TEMAS = {
   lluvias:   { n: "Norte: lluvias e inundaciones", capa: "lluvia", nivel: "provincia", lugares: { presa: true, embalse: true }, rios: true, caja: [[-81.5, -9.2], [-74, -3]], texto: "Lluvia a 16 días, ríos, presas y embalses de la costa y sierra norte, donde el ENFEN espera lluvias sobre lo normal." },
-  incendios: { n: "Sur: sequía e incendios", capa: "incendios", nivel: "distrito", lugares: {}, focos: true, caja: [[-76, -17.5], [-68.5, -11]], texto: "Focos de calor en el sur andino, donde el ENFEN espera lluvias bajo lo normal y déficit en el Titicaca." },
+  incendios: { n: "Sur: sequía e incendios", capa: "spi", nivel: "provincia", lugares: { laguna: true }, focos: true, rios: false, caja: [[-76, -17.5], [-68.5, -11]], texto: "Sequía de 3 meses por provincia (naranja y rojo: más seco de lo normal; azul: más húmedo) y focos de calor en el sur andino, donde el ENFEN espera lluvias bajo lo normal y déficit en el Titicaca." },
   mar:       { n: "Mar y pesca", capa: "tsm", nivel: "region", lugares: {}, caja: [[-86, -19], [-69, -1]], texto: "El mar frente a la costa y su anomalía." },
   riesgo:    { n: "Riesgo oficial por distrito", capa: "r_inu", nivel: "distrito", lugares: {}, caja: [[-82, -18.6], [-68.4, 0.1]], texto: "Escenario del CENEPRED: viviendas, colegios, salud, vías y cultivos expuestos a inundación." },
-  glaciares: { n: "Agua y glaciares", capa: "ninguna", nivel: "provincia", lugares: { glaciar: true, laguna: true, embalse: true }, caja: [[-78.5, -10.5], [-76.5, -8.5]], texto: "Glaciares, lagunas y embalses en la Cordillera Blanca y el resto de los Andes." },
+  glaciares: { n: "Agua, nevados y cumbres", capa: "ninguna", nivel: "provincia", lugares: { glaciar: true, laguna: true, embalse: true, cumbre: true }, caja: [[-78.5, -10.5], [-76.5, -8.5]], texto: "Glaciares, cumbres, lagunas y embalses en la Cordillera Blanca y el resto de los Andes. Toca una figura para ver su ficha." },
+  estaciones:{ n: "Estaciones del SENAMHI", capa: "lluvia", nivel: "provincia", lugares: { estacion: true }, rios: false, caja: [[-82, -18.6], [-68.4, 0.1]], texto: "La red de estaciones del SENAMHI sobre la lluvia pronosticada. Acércate para ver más; toca una para ver su ficha y sus datos oficiales." },
   pacifico:  { n: "Pacífico ecuatorial", capa: "tsm", nivel: "region", lugares: {}, rios: false, caja: [[-178, -22], [-66, 14]], texto: "El campo de temperatura del mar en todo el Pacífico, con las regiones Niño." },
 };
 
@@ -75,6 +77,8 @@ function asegurarDatos(){
     ]);
     Object.assign(M.datos, { incendios, lluvia, estudios, lugares, focos, spi, estacional, rios, oleaje, antecedentes, unidades: unidades.unidades });
     M.datos.porId = Object.fromEntries(unidades.unidades.map(u => [u.id, u]));
+    M.conteoLugares = {};
+    for (const f of lugares?.features || []) M.conteoLugares[f.properties.tipo] = (M.conteoLugares[f.properties.tipo] || 0) + 1;
     M.datos.claveRegion = Object.fromEntries(unidades.unidades.filter(u => u.nivel === "region").map(u => [u.id, u.clave]));
     D.nombres = Object.fromEntries(unidades.unidades.map(u => [u.id, u.nombre]));
   })();
@@ -180,16 +184,21 @@ async function iniciarMapa(){
     if (M.datos.lugares){
       for (const k of Object.keys(ICONOS)) mapa.addImage("ic-" + k, await imagenIcono(k), { pixelRatio: 2 });
       mapa.addSource("lugares", { type: "geojson", data: M.datos.lugares });
-      mapa.addLayer({ id: "lugares", type: "symbol", source: "lugares", minzoom: 5.8,
-        layout: { "icon-image": ["concat", "ic-", ["get", "tipo"]], "icon-size": ["interpolate", ["linear"], ["zoom"], 5.8, 0.55, 9, 1],
+      mapa.addLayer({ id: "lugares", type: "symbol", source: "lugares", minzoom: 3.5,
+        layout: { "icon-image": ["concat", "ic-", ["get", "tipo"]], "icon-size": ["interpolate", ["linear"], ["zoom"], 3.5, 0.5, 6, 0.7, 9, 1.05],
                   "icon-allow-overlap": false, "icon-padding": 1,
+                  // Al quedar poco espacio ganan los que tienen nombre y artículo
+                  "symbol-sort-key": ["case", ["==", ["get", "nombre"], ""], 3, ["has", "wikidata"], 0, ["==", ["get", "tipo"], "embalse"], 0, 1],
                   "text-field": ["step", ["zoom"], "", 8, ["get", "nombre"]], "text-font": ["Noto Sans Regular"],
                   "text-size": 11, "text-offset": [0, 1.2], "text-anchor": "top", "text-optional": true },
         paint: { "text-color": "#E7EDEC", "text-halo-color": "#16222A", "text-halo-width": 1.2 } });
+      // Marca del lugar elegido
+      mapa.addSource("sel-lugar", { type: "geojson", data: { type: "FeatureCollection", features: [] } });
+      mapa.addLayer({ id: "sel-lugar", type: "circle", source: "sel-lugar", paint: { "circle-radius": 17, "circle-color": "rgba(0,0,0,0)", "circle-stroke-color": "#FFFFFF", "circle-stroke-width": 2.5 } });
       mapa.on("mousemove", "lugares", e => { const p = e.features[0].properties;
-        tipMapa(e.point, p.nombre || ICONOS[p.tipo].nombre, ICONOS[p.tipo].nombre + (p.altitud ? ` · ${p.altitud} m` : "")); });
-      mapa.on("mouseleave", "lugares", () => $("#tip").style.opacity = 0);
-      mapa.on("click", "lugares", e => { const p = e.features[0].properties; if (p.distrito) elegirUnidad(p.distrito, p); });
+        mapa.getCanvas().style.cursor = "pointer";
+        tipMapa(e.point, p.nombre || `${ICONOS[p.tipo].nombre} sin nombre`, `${ICONOS[p.tipo].nombre}${p.altitud ? ` · ${p.altitud} m` : ""} · toca para ver su ficha`); });
+      mapa.on("mouseleave", "lugares", () => { $("#tip").style.opacity = 0; mapa.getCanvas().style.cursor = ""; });
     }
 
     // Ríos vigilados: un círculo por punto, color según crecida pronosticada
@@ -207,14 +216,31 @@ async function iniciarMapa(){
       mapa.on("mousemove", "rios", e => { const p = e.features[0].properties; const r = M.datos.rios.rios.find(x => x.id === p.id);
         tipMapa(e.point, "Río " + p.nombre, `${r.lugar}: pico ${Math.round(r.pico)} m³/s en 15 días (nivel ${r.nivel})`); });
       mapa.on("mouseleave", "rios", () => { $("#tip").style.opacity = 0; mapa.getCanvas().style.cursor = ""; });
-      mapa.on("click", "rios", e => { pintarFichaRio(e.features[0].properties.id); });
     }
+
+    // Un solo clic para todo el mapa: primero lo que está encima (figuras, ríos, focos)
+    // y solo si no hay nada, la unidad de abajo. Con margen, para acertar con el dedo.
+    mapa.on("click", e => {
+      const m = 8, caja = [[e.point.x - m, e.point.y - m], [e.point.x + m, e.point.y + m]];
+      const visibles = l => mapa.getLayer(l) && mapa.getLayoutProperty(l, "visibility") !== "none";
+      const pick = l => visibles(l) ? mapa.queryRenderedFeatures(caja, { layers: [l] }) : [];
+      const rio = pick("rios")[0];
+      if (rio) return pintarFichaRio(rio.properties.id);
+      const lug = pick("lugares")[0];
+      if (lug){
+        const f = M.datos.lugares.features.find(x => x.properties.osm ? x.properties.osm === lug.properties.osm : x.properties.cod === lug.properties.cod);
+        if (f) return pintarFichaLugar(f);
+      }
+      const u = visibles(`${M.nivel}-relleno`) ? mapa.queryRenderedFeatures(e.point, { layers: [`${M.nivel}-relleno`] })[0] : null;
+      if (u) elegirUnidad(u.id);
+    });
 
     // Los créditos quedan plegados en su botón (i): abiertos tapan el pie del mapa
     mapa.getContainer().querySelector(".maplibregl-ctrl-attrib")?.classList.remove("maplibregl-compact-show");
     M.listo = true;
     document.body.dataset.mapaListo = "1";      // marca para pruebas automáticas
     await aplicarCapa(); aplicarLugares();
+    window.dispatchEvent(new Event("mapa-listo"));
     if (window.vistaInicialMapa === "pacifico"){ setTema("pacifico"); window.vistaInicialMapa = null; }
   });
 }
@@ -232,6 +258,7 @@ function agregarUnidades(nivel, antes){
   let encima = null;
   mapa.on("mousemove", `${nivel}-relleno`, e => {
     const f = e.features[0]; if (!f) return;
+    if (["lugares", "rios"].some(l => mapa.getLayer(l) && mapa.getLayoutProperty(l, "visibility") !== "none" && mapa.queryRenderedFeatures(e.point, { layers: [l] }).length)) return;
     if (encima !== null && encima !== f.id) mapa.setFeatureState({ source: nivel, id: encima }, { hover: false });
     encima = f.id; mapa.setFeatureState({ source: nivel, id: f.id }, { hover: true });
     mapa.getCanvas().style.cursor = "pointer";
@@ -242,7 +269,6 @@ function agregarUnidades(nivel, antes){
     if (encima !== null) mapa.setFeatureState({ source: nivel, id: encima }, { hover: false });
     encima = null; mapa.getCanvas().style.cursor = ""; $("#tip").style.opacity = 0;
   });
-  mapa.on("click", `${nivel}-relleno`, e => { const f = e.features[0]; if (f) elegirUnidad(f.id); });
 }
 
 function tipMapa(pt, titulo, detalle){
@@ -254,17 +280,28 @@ function tipMapa(pt, titulo, detalle){
 /* ── Capas y niveles ────────────────────────────────────────────────────── */
 async function aplicarCapa(){
   if (!M.listo) return;
-  const c = CAPAS_MAPA[M.capa];
-  if (c.niveles.length && !c.niveles.includes(M.nivel)) M.nivel = c.niveles[c.niveles.length - 1];
-  if (c.tipo === "riesgo") await asegurarRiesgo();
+  const turno = ++M.turno;
+  const c0 = CAPAS_MAPA[M.capa];
+  if (c0.niveles.length && !c0.niveles.includes(M.nivel)) M.nivel = c0.niveles[c0.niveles.length - 1];
+  pintarControles(); pintarLeyendaMapa();      // la respuesta al clic es inmediata; los colores llegan después
+  if (c0.tipo === "riesgo") await asegurarRiesgo();
   if (M.nivel === "distrito" && !M.mapa.getSource("distrito")) agregarUnidades("distrito", M.primerSimbolo);
   // El relleno de distritos necesita sus datos cargados antes de pintar estados
-  if (M.nivel === "distrito") await new Promise(r => { const s = M.mapa.getSource("distrito"); if (s.loaded?.()) r(); else { M.mapa.once("idle", r); setTimeout(r, 4000); } });
+  if (M.nivel === "distrito"){
+    $("#mapa-aviso").textContent = "Cargando los distritos…";
+    await new Promise(r => { const s = M.mapa.getSource("distrito"); if (s.loaded?.()) r(); else { M.mapa.once("idle", r); setTimeout(r, 4000); } });
+  }
+  if (turno !== M.turno) return;               // mientras tanto el usuario eligió otra cosa
+  const c = CAPAS_MAPA[M.capa];
+  if (M.nivel === "distrito") $("#mapa-aviso").textContent = TEMAS[M.tema]?.texto || "Toca un distrito para ver su ficha.";
   for (const [nivel] of NIVELES){
     if (!M.mapa.getSource(nivel)) continue;
     const on = nivel === M.nivel;
     M.mapa.setLayoutProperty(`${nivel}-relleno`, "visibility", on ? "visible" : "none");
     M.mapa.setLayoutProperty(`${nivel}-borde`, "visibility", on ? "visible" : "none");
+    // La capa de mar es del mar: en tierra, apenas un tinte para ubicar la región
+    const op = M.capa === "tsm" ? [0.42, 0.14] : [0.88, 0.66];
+    M.mapa.setPaintProperty(`${nivel}-relleno`, "fill-opacity", ["case", ["boolean", ["feature-state", "hover"], false], op[0], op[1]]);
     if (on) for (const u of M.datos.unidades.filter(u => u.nivel === nivel))
       M.mapa.setFeatureState({ source: nivel, id: u.id }, { color: M.capa === "ninguna" ? null : colorCapa(c, valorUnidad(u.id)) });
   }
@@ -274,7 +311,6 @@ async function aplicarCapa(){
   const vf = M.incendios || M.capa === "incendios" ? "visible" : "none";
   for (const l of ["focos", "focos-halo"]) if (M.mapa.getLayer(l)) M.mapa.setLayoutProperty(l, "visibility", vf);
   for (const l of ["rios", "rios-txt"]) if (M.mapa.getLayer(l)) M.mapa.setLayoutProperty(l, "visibility", M.rios ? "visible" : "none");
-  pintarControles(); pintarLeyendaMapa();
 }
 
 function aplicarLugares(){
@@ -288,17 +324,20 @@ function aplicarLugares(){
 function setCapaMapa(k){ M.capa = k; M.tema = null; aplicarCapa(); }
 function setNivel(n){ M.nivel = n; M.tema = null; aplicarCapa(); }
 function setMesEst(i){ M.mesEst = i; aplicarCapa(); }
-function toggleLugar(k){ M.lugares[k] = !M.lugares[k]; aplicarLugares(); }
+function toggleLugar(k){
+  M.lugares[k] = !M.lugares[k]; aplicarLugares();
+  if (M.lugares[k]) $("#mapa-aviso").textContent = `${M.conteoLugares[k]} ${ICONOS[k].plural.toLowerCase()} en total. De lejos se muestran menos para que se lean: acércate para ver más y toca una para abrir su ficha.`;
+}
 function toggleIncendios(){ M.incendios = !M.incendios; aplicarCapa(); }
 function toggleRios(){ M.rios = !M.rios; aplicarCapa(); }
 function setTema(k){
   const t = TEMAS[k]; M.tema = k; M.capa = t.capa; M.nivel = t.nivel;
   for (const l of Object.keys(M.lugares)) M.lugares[l] = !!t.lugares[l];
   M.incendios = !!t.focos;
-  if (t.rios !== undefined) M.rios = t.rios;
-  aplicarCapa(); aplicarLugares();
+  M.rios = t.rios !== false;
   M.mapa.fitBounds(t.caja, { padding: 30, duration: 1200 });
   $("#mapa-aviso").textContent = t.texto;
+  aplicarLugares(); return aplicarCapa();
 }
 Object.assign(window, { setCapaMapa, setNivel, setMesEst, toggleLugar, toggleIncendios, toggleRios, setTema });
 
@@ -317,7 +356,7 @@ function pintarControles(){
     `<button class="layer" aria-pressed="${M.rios}" onclick="toggleRios()"><span class="foco rio"></span>Ríos vigilados</button>`
     + `<button class="layer" aria-pressed="${M.incendios}" onclick="toggleIncendios()"><span class="foco"></span>Focos de calor</button>`
     + Object.keys(ICONOS).map(k =>
-      `<button class="layer" aria-pressed="${M.lugares[k]}" onclick="toggleLugar('${k}')">${iconoHTML(k, 16)}${ICONOS[k].nombre}s</button>`).join("");
+      `<button class="layer" aria-pressed="${!!M.lugares[k]}" onclick="toggleLugar('${k}')">${iconoHTML(k, 16)}${ICONOS[k].plural} <small class="cuenta">${M.conteoLugares?.[k] ?? ""}</small></button>`).join("");
 }
 
 function pintarLeyendaMapa(){
@@ -351,16 +390,26 @@ function llenarBuscador(){
     const ctx = u.nivel === "distrito" ? `${u.provincia_nombre}, ${u.region_nombre}` : u.nivel === "provincia" ? `provincia, ${u.region_nombre}` : "región";
     return `<option value="${esc(u.nombre)} (${esc(ctx)})" data-id="${u.id}">`;
   }).join("");
+  // Figuras con nombre: también se buscan. Solo en el buscador del mapa cuentan (Comparar usa data-id).
+  dl.insertAdjacentHTML("beforeend", (M.datos.lugares?.features || []).map((f, i) => {
+    const p = f.properties; if (!p.nombre) return "";
+    return `<option value="${esc(p.nombre)} (${esc(ICONOS[p.tipo].nombre.toLowerCase())}, ${esc(M.datos.porId[p.distrito]?.nombre || "")})" data-lugar="${i}">`;
+  }).join(""));
   const inp = $("#buscar");
   inp.addEventListener("change", () => {
     const op = [...dl.options].find(o => o.value === inp.value);
-    if (op){ elegirUnidad(op.dataset.id); inp.blur(); }
+    if (op?.dataset.lugar){
+      const f = M.datos.lugares.features[+op.dataset.lugar], k = f.properties.tipo;
+      if (!M.lugares[k]){ M.lugares[k] = true; aplicarLugares(); }
+      pintarFichaLugar(f); inp.blur();
+    } else if (op){ elegirUnidad(op.dataset.id); inp.blur(); }
   });
 }
 
 /* ── Ficha de lugar ─────────────────────────────────────────────────────── */
 async function elegirUnidad(id, lugar = null){
   const u = M.datos.porId[id]; if (!u) return;
+  marcarLugar(null); turnoFicha++;
   if (M.sel) for (const [n] of NIVELES) if (M.mapa.getSource(n)) M.mapa.removeFeatureState({ source: n, id: M.sel }, "sel");
   M.sel = id;
   if (u.nivel !== M.nivel){
@@ -371,6 +420,7 @@ async function elegirUnidad(id, lugar = null){
   M.mapa.setFeatureState({ source: u.nivel, id }, { sel: true });
   M.mapa.fitBounds([[u.caja[0], u.caja[1]], [u.caja[2], u.caja[3]]], { padding: 60, maxZoom: 10, duration: 900 });
   $("#panel").innerHTML = `<div class="grab"></div><div class="empty"><b>${esc(u.nombre)}</b>Cargando su ficha…</div>`;
+  $("#panel").scrollTop = 0;
   $("#panel").classList.add("up");
   await pintarFicha(u, lugar);
 }

@@ -50,6 +50,13 @@ function riesgoCorto(r){
 }
 
 function abrirLugar(id){ ir("mapa"); const f = () => M.listo ? elegirUnidad(id) : setTimeout(f, 300); f(); }
+// Tiempo desde la última corrida del robot, para que se vea que está vivo
+function haceCuanto(){
+  const c = Object.values(D.meta?.fuentes || {}).map(f => f.corrida).filter(Boolean).sort().pop();
+  if (!c) return "";
+  const min = Math.max(0, Math.round((Date.now() - new Date(c)) / 6e4));
+  return min < 60 ? `hace ${min} min` : min < 2880 ? `hace ${Math.round(min / 60)} h` : `hace ${Math.round(min / 1440)} días`;
+}
 window.abrirLugar = abrirLugar;
 
 // El ENFEN escribe los titulares en mayúsculas: se pasan a oración
@@ -78,7 +85,8 @@ function pintarPortada(){
   $("#alerta-bar").innerHTML = `<b>${esc(e.alerta.estado)}</b>
     ${I.icen?.magnitud ? `<span>ICEN: ${esc(I.icen.magnitud)} (${fecha(I.icen.fecha)})</span>` : ""}
     ${rojos ? `<span>${rojos} ${rojos > 1 ? "avisos rojos" : "aviso rojo"} del SENAMHI</span>` : ""}
-    ${e.alerta.proximo ? `<span>Próximo comunicado: ${fecha(e.alerta.proximo)}${dias >= 0 ? ` (en ${dias} días)` : ""}</span>` : ""}`;
+    ${e.alerta.proximo ? `<span>Próximo comunicado: ${fecha(e.alerta.proximo)}${dias >= 0 ? ` (en ${dias} días)` : ""}</span>` : ""}
+    ${haceCuanto() ? `<span class="alerta-act">Datos revisados ${haceCuanto()}</span>` : ""}`;
 
   $("#titular").textContent = e.alerta.titular
     ? oracion(e.alerta.titular)
@@ -155,8 +163,8 @@ function pintarPortada(){
   $("#rank-focos").innerHTML = (P?.top_focos || []).slice(0, 8).map(r => `<div class="rank-f" onclick="abrirLugar('${r.id}')"><span><b>${esc(r.nombre)}</b> <small>${esc(r.region)}</small></span><span>${r.focos}</span></div>`).join("");
 
   // Noticias y comunicados
-  $("#portada-noticias").innerHTML = (D.noticias?.noticias || []).filter(n => n.ambito === "nacional").slice(0, 6).map(n =>
-    `<div class="bul"><time>${fecha(n.fecha)}</time><p><a href="${esc(n.enlace)}" target="_blank" rel="noopener">${esc(n.titulo)}</a> <small>${esc(n.medio)}</small></p></div>`).join("");
+  const conFoto = (D.noticias?.noticias || []).filter(n => n.ambito === "nacional");
+  $("#portada-noticias").innerHTML = [...conFoto.filter(n => n.imagen), ...conFoto.filter(n => !n.imagen)].slice(0, 4).map(n => tarjetaNoticia(n, false)).join("");
   $("#bulletins").innerHTML = (e.comunicados || []).map(c =>
     `<div class="bul"><time>${fecha(c.fecha)}</time><p>${c.url ? `<a href="${esc(c.url)}" target="_blank" rel="noopener">${esc(c.id)}</a>` : esc(c.id)}. ${esc(c.texto)}</p></div>`).join("");
 }
@@ -215,20 +223,39 @@ window.pintarBoletin = pintarBoletin;
 
 /* ── NOTICIAS ───────────────────────────────────────────────────────────── */
 const TEMAS_NOT = { todos: "Todas", guardadas: "★ Guardadas", nacional: "Perú", internacional: "Mundo", oficial: "Oficial", lluvias: "Lluvias", incendios: "Incendios", mar: "Mar y pesca", agua: "Agua", agro: "Agro" };
-let filtroNot = "todos";
-function setFiltroNot(k){ filtroNot = k; pintarNoticias(); }
+let filtroNot = "todos", verNot = 24;
+function setFiltroNot(k){ filtroNot = k; verNot = 24; pintarNoticias(); }
+function masNoticias(){ verNot += 24; pintarNoticias(); }
+window.masNoticias = masNoticias;
 window.setFiltroNot = setFiltroNot;
+// Dibujo de reserva por tema: si la nota no trae foto o su servidor no la entrega
+const DIBUJO_TEMA = { lluvias: "lluvia", incendios: "calor", mar: "ola", agua: "embalse", agro: "pez", oficial: "aviso", global: "ojo" };
+function fotoNoticia(n){
+  const reserva = `<div class="not-sinfoto">${dibujo(DIBUJO_TEMA[n.tema] || "ojo", 34)}</div>`;
+  return n.imagen?.startsWith("https://")
+    ? `<div class="not-foto"><img src="${esc(n.imagen)}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentNode.classList.add('fallo')">${reserva}</div>`
+    : `<div class="not-foto fallo">${reserva}</div>`;
+}
+function tarjetaNoticia(n, estrella, guardada){
+  return `<article class="noticia">
+    <a class="not-enl" href="${esc(n.enlace)}" target="_blank" rel="noopener">${fotoNoticia(n)}
+      <span class="not-tit">${esc(n.titulo)}</span></a>
+    <div class="not-pie"><span class="not-meta">${fecha(n.fecha)} · ${esc(n.medio)}${n.idioma === "en" ? " · en inglés" : ""}</span>
+    ${estrella ? `<button class="estrella" aria-pressed="${guardada}" aria-label="Guardar" title="Guardar en este navegador" data-e="${esc(n.enlace)}" onclick="alternarNoticia(this.dataset.e)">${guardada ? "★" : "☆"}</button>` : ""}</div></article>`;
+}
 function pintarNoticias(){
-  const g = guardados(), todas = D.noticias?.noticias || [];
+  const g = guardados();
+  // Dentro de un mismo día, primero las que traen foto
+  const todas = [...(D.noticias?.noticias || [])].sort((a, b) => b.fecha.localeCompare(a.fecha) || (b.imagen ? 1 : 0) - (a.imagen ? 1 : 0));
+  const cuenta = k => k === "todos" ? todas.length : k === "guardadas" ? g.noticias.length : todas.filter(n => n.ambito === k || n.tema === k).length;
   const lista = filtroNot === "guardadas" ? g.noticias : filtroNot === "todos" ? todas
     : todas.filter(n => n.ambito === filtroNot || n.tema === filtroNot);
   const guard = new Set(g.noticias.map(n => n.enlace));
-  $("#not-ctl").innerHTML = Object.entries(TEMAS_NOT).map(([k, n]) => `<button aria-pressed="${filtroNot === k}" onclick="setFiltroNot('${k}')">${n}</button>`).join("");
-  $("#noticias").innerHTML = lista.map(n => `<article class="noticia">
-    <div><span class="not-meta">${fecha(n.fecha)} · ${esc(n.medio)}${n.idioma === "en" ? " · en inglés" : ""}</span>
-    <a href="${esc(n.enlace)}" target="_blank" rel="noopener">${esc(n.titulo)}</a></div>
-    <button class="estrella" aria-pressed="${guard.has(n.enlace)}" aria-label="Guardar" title="Guardar en este navegador" data-e="${esc(n.enlace)}" onclick="alternarNoticia(this.dataset.e)">${guard.has(n.enlace) ? "★" : "☆"}</button></article>`).join("")
+  $("#not-ctl").innerHTML = Object.entries(TEMAS_NOT).filter(([k]) => k === "guardadas" || cuenta(k)).map(([k, n]) => `<button aria-pressed="${filtroNot === k}" onclick="setFiltroNot('${k}')">${n}</button>`).join("");
+  $("#noticias").innerHTML = lista.slice(0, verNot).map(n => tarjetaNoticia(n, true, guard.has(n.enlace))).join("")
     || `<p class="f-txt">${filtroNot === "guardadas" ? "Todavía no guardaste noticias. Usa la estrella: quedan en este navegador." : "Sin noticias en este tema."}</p>`;
+  const mas = $("#not-mas");
+  if (mas) mas.innerHTML = lista.length > verNot ? `<button class="enlace" onclick="masNoticias()">Ver más noticias (quedan ${lista.length - verNot})</button>` : "";
 }
 
 /* ── COMPARAR ───────────────────────────────────────────────────────────── */
@@ -243,11 +270,11 @@ async function datosLugar(id){
 }
 function idDeTexto(txt){
   const op = [...$("#lista-unidades").options].find(o => o.value === txt);
-  return op?.dataset.id;
+  return op?.dataset.id || (op?.dataset.lugar ? M.datos.lugares.features[+op.dataset.lugar].properties.distrito : undefined);
 }
 async function pintarComparar(){
   await asegurarDatos();
-  if (!$("#lista-unidades").options.length) llenarBuscador();
+  llenarBuscador();
   const a = idDeTexto($("#comp-a").value), b = idDeTexto($("#comp-b").value);
   const res = $("#comp-res");
   if (!a || !b){ res.innerHTML = `<p class="f-txt">Escribe y elige dos lugares de la lista. Por ejemplo, Piura y Puno muestran las dos caras de El Niño: exceso de lluvia en el norte, déficit en el altiplano.</p>`; return; }

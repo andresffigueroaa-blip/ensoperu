@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """
-Lugares sensibles a El Niño para el mapa: presas, embalses, lagunas y glaciares.
+Lugares sensibles a El Niño para el mapa: presas, embalses, lagunas, glaciares,
+cumbres y estaciones.
 
 Se corre a mano (OpenStreetMap cambia poco), por ejemplo una vez al mes:
     python pipeline/herramientas/build_lugares.py
@@ -15,6 +16,8 @@ Qué se incluye:
   embalse   water=reservoir (o landuse=reservoir)
   laguna    natural=water + water=lake, con nombre
   glaciar   natural=glacier (centro del polígono)
+  cumbre    natural=peak o volcano, con nombre y sobre 4000 m o con artículo enciclopédico
+  estacion  red de estaciones del SENAMHI (su mapa público), no OpenStreetMap
 Cada lugar se ubica en su distrito (código INEI de 6 dígitos; los 4 y 2
 primeros son provincia y región). Los embalses sin nombre se omiten.
 
@@ -24,6 +27,7 @@ from __future__ import annotations
 
 import collections
 import json
+import re
 import sys
 import time
 from pathlib import Path
@@ -50,14 +54,20 @@ area["ISO3166-1"="PE"][admin_level=2]->.pe;
   nwr["water"="reservoir"](area.pe);
   nwr["landuse"="reservoir"](area.pe);
   nwr["natural"="water"]["water"="lake"]["name"](area.pe);
+  nwr["natural"="peak"]["name"](area.pe);
+  nwr["natural"="volcano"]["name"](area.pe);
 );
 out tags center qt;"""
 CACHE_OSM = CACHE / "osm_lugares.json"
+URL_ESTACIONES = "https://www.senamhi.gob.pe/mapas/mapa-estaciones-2/"
+ALTURA_MIN_CUMBRE = 4000
 
 
 def tipo(t: dict) -> str | None:
     if t.get("natural") == "glacier":
         return "glaciar"
+    if t.get("natural") in ("peak", "volcano"):
+        return "cumbre"
     if t.get("waterway") == "dam" or t.get("man_made") == "dam":
         return "presa"
     if t.get("water") == "reservoir" or t.get("landuse") == "reservoir":
@@ -87,6 +97,31 @@ def bajar() -> dict:
                 print(f"  {url} intento {intento + 1}: {e}")
                 time.sleep(15)
     raise SystemExit(f"Ningún servidor Overpass respondió: {ultimo}")
+
+
+def _metros(texto) -> float | None:
+    m = re.match(r"\s*(\d+(?:[.,]\d+)?)", str(texto or ""))
+    return float(m.group(1).replace(",", ".")) if m else None
+
+
+def estaciones() -> list[dict]:
+    """Lista de estaciones del mapa público del SENAMHI (solo responde desde el Perú)."""
+    r = requests.get(URL_ESTACIONES, timeout=90, headers={"User-Agent": "Mozilla/5.0 (ensoperu)"})
+    r.raise_for_status()
+    m = re.search(r"var\s+PruebaTest\s*=\s*(\[.*?\])\s*;", r.text, flags=re.S)
+    if not m:
+        raise SystemExit("SENAMHI: no encontré la lista de estaciones; ¿cambió la página?")
+    # Se lee estación por estación: algunas vienen sin coordenadas y rompen el JSON
+    salida, malas = [], []
+    for texto in re.findall(r"\{[^{}]*\}", m.group(1)):
+        try:
+            e = json.loads(re.sub(r":\s*(-?)\.(\d)", r": \g<1>0.\2", texto))    # "-.1172" no es JSON válido
+            if abs(e["lat"]) > 0 and abs(e["lon"]) > 0:
+                salida.append(e)
+        except (ValueError, KeyError, TypeError):
+            malas.append(re.sub(r"\s+", " ", texto)[:90])
+    print(f"Estaciones SENAMHI: {len(salida)} leídas, {len(malas)} sin coordenadas válidas {malas[:3]}")
+    return salida
 
 
 def ubicador():
@@ -134,15 +169,37 @@ def main():
         # llenan el mapa sin aportar. Presas y glaciares se quedan aunque no tengan nombre.
         if k == "embalse" and not nombre:
             continue
+        # Cumbres: solo las altas o las que tienen artículo; el resto llena el mapa
+        if k == "cumbre" and (_metros(t.get("ele")) or 0) < ALTURA_MIN_CUMBRE and not (t.get("wikidata") or t.get("wikipedia")):
+            continue
         # región y provincia se deducen del código de distrito (2 y 4 primeros dígitos)
         props = {"tipo": k, "nombre": nombre, "distrito": dist, "osm": f"{e['type']}/{e['id']}"}
         if t.get("ele"):
             props["altitud"] = t["ele"]
         if t.get("wikidata"):
             props["wikidata"] = t["wikidata"]
+        # Datos técnicos, cuando la comunidad los cargó
+        for clave, tag in (("wikipedia", "wikipedia"), ("operador", "operator"), ("altura", "height"),
+                           ("capacidad", "volume"), ("rio", "river"), ("uso", "usage"), ("alias", "alt_name")):
+            if t.get(tag):
+                props[clave] = t[tag]
+        if t.get("natural") == "volcano":
+            props["volcan"] = 1
         feats.append({"type": "Feature", "properties": props,
                       "geometry": {"type": "Point", "coordinates": [lon, lat]}})
         conteo[k] += 1
+
+    for e in estaciones():
+        lon, lat = round(e["lon"], 4), round(e["lat"], 4)
+        dist, _, _ = donde(lon, lat)
+        if not dist:
+            fuera += 1
+            continue
+        feats.append({"type": "Feature", "geometry": {"type": "Point", "coordinates": [lon, lat]},
+                      "properties": {"tipo": "estacion", "nombre": re.sub(r"\s+", " ", e["nom"]).strip().title(), "distrito": dist,
+                                     "cate": e.get("cate"), "clase": e.get("ico"), "cod": e.get("cod"),
+                                     "cod_old": e.get("cod_old"), "estado": e.get("estado")}})
+        conteo["estacion"] += 1
 
     escribir_json(DATOS / "geo" / "lugares.geojson", {
         "type": "FeatureCollection",

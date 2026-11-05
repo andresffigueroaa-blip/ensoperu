@@ -113,6 +113,7 @@ def registrar(meta: dict, paso: str, estado: str, **campos) -> None:
     if estado in ("ok", "sin_cambios"):
         nuevo["actualizado"] = campos.pop("actualizado", ahora_utc())
         nuevo.pop("error", None)
+        nuevo.pop("aviso", None)
     nuevo.update(campos)
     meta["fuentes"][paso] = nuevo
 

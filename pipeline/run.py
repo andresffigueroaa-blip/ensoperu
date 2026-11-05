@@ -22,6 +22,7 @@ Reglas:
 from __future__ import annotations
 
 import argparse
+import datetime as dt
 import sys
 import time
 import traceback
@@ -64,6 +65,21 @@ PASOS = {
 }
 
 
+# El robot corre cada hora, pero no todo cambia cada hora: horas mínimas entre
+# lecturas. Los modelos corren cada 6 h, y Open-Meteo limita a 10 000 consultas
+# diarias (son 660 por lectura). Lo que no aparece aquí se lee en cada corrida.
+HORAS_ENTRE_LECTURAS = {"cpc": 6, "igp": 6, "oceano_atm": 6, "rios": 6, "oleaje": 6, "estacional": 24}
+
+
+def _toca(paso: str, previo: dict) -> bool:
+    """¿Corresponde leer este paso ya? Tras una falla se reintenta siempre."""
+    horas = HORAS_ENTRE_LECTURAS.get(paso)
+    if not horas or previo.get("estado") == "fallo" or not previo.get("corrida"):
+        return True
+    ultima = dt.datetime.fromisoformat(previo["corrida"].replace("Z", "+00:00"))
+    return (dt.datetime.now(dt.timezone.utc) - ultima).total_seconds() >= (horas - 0.25) * 3600
+
+
 def _anios(texto: str) -> list[int]:
     if "-" in texto:
         a, b = texto.split("-")
@@ -98,6 +114,10 @@ def main() -> int:
         log(f"▶ {paso}")
         t0 = time.time()
         previo = meta["fuentes"].get(paso, {})
+        if not args.solo and not _toca(paso, previo):
+            log(f"  leído hace poco; toca más tarde")
+            resultados[paso] = (previo.get("estado", "sin_cambios"), "")
+            continue
         try:
             kwargs = {}
             if paso == "oisst":

@@ -10,28 +10,39 @@
 const FONDO_MAPA = "#16222A";
 
 const ICONOS = {
+  // Estación de medición: un mástil con sus brazos
+  estacion: {
+    nombre: "Estación", plural: "Estaciones",
+    svg: `<circle cx="12" cy="6" r="3" fill="#F2D06B"/>
+          <path d="M12 8.500V20.500M6 20.500h12M7.500 12.500h9" stroke="#F4FAFC" stroke-width="2" stroke-linecap="round" fill="none"/>`,
+  },
+  // Cumbre: un triángulo de roca
+  cumbre: {
+    nombre: "Cumbre", plural: "Cumbres",
+    svg: `<path d="M12 4.500 21 19.500H3z" fill="#B59E7E"/><path d="M12 4.500 9.300 9 12 8l2.700 1z" fill="#F4FAFC"/>`,
+  },
   // Presa: el muro, un trapecio, con el agua retenida a un lado
   presa: {
-    nombre: "Presa",
+    nombre: "Presa", plural: "Presas",
     svg: `<path d="M3 8.5h4.2v9H3z" fill="#5FA8D3"/>
           <path d="M7 6h10l-2.2 12.5H9.2z" fill="#B9C4C9"/>
           <path d="M8.2 9h7.6M8.6 12h6.8M9 15h6" stroke="#7C8A90" stroke-width="1"/>`,
   },
   // Embalse: una gota con una ola
   embalse: {
-    nombre: "Embalse",
+    nombre: "Embalse", plural: "Embalses",
     svg: `<path d="M12 3.2c3.3 4.2 6.2 7.6 6.2 11a6.2 6.2 0 0 1-12.4 0c0-3.4 2.9-6.8 6.2-11z" fill="#5FA8D3"/>
           <path d="M8.2 14.6c1.2-1 2.5-1 3.8 0s2.6 1 3.8 0" stroke="#E7F3FA" stroke-width="1.4" fill="none" stroke-linecap="round"/>`,
   },
   // Laguna: un óvalo de agua clara con una ola
   laguna: {
-    nombre: "Laguna",
+    nombre: "Laguna", plural: "Lagunas",
     svg: `<ellipse cx="12" cy="13" rx="8.6" ry="5.6" fill="#79C2D0"/>
           <path d="M7.4 13c1.5-1.1 3-1.1 4.6 0s3.1 1.1 4.6 0" stroke="#F1FAFC" stroke-width="1.4" fill="none" stroke-linecap="round"/>`,
   },
   // Glaciar o nevado: una montaña con la cumbre de hielo
   glaciar: {
-    nombre: "Glaciar",
+    nombre: "Glaciar", plural: "Glaciares",
     svg: `<path d="M2.5 19.5 10 5.5l3.4 6 2.2-3.2 5.9 11.2z" fill="#8FB3C4"/>
           <path d="M10 5.5 7.4 10.4l1.8-.9 1.1 1.3 1.3-1.2 1.8 1.6z" fill="#F4FAFC"/>
           <path d="m15.6 8.3-1.5 2.2.9-.3.7.8.9-.6z" fill="#F4FAFC"/>`,

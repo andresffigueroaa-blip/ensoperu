@@ -17,8 +17,7 @@ name: Actualizar y publicar
 
 on:
   schedule:
-    - cron: "17 10 * * *"
-    - cron: "17 22 * * *"
+    - cron: "17 * * * *"      # cada hora; run.py decide qué fuente toca leer
   workflow_dispatch:
     inputs:
       historico:
@@ -79,7 +78,11 @@ jobs:
             echo "Sin cambios en los datos."
           else
             git commit -m "datos: actualización automática $(date -u +%Y-%m-%d)"
-            git push
+            # El robot local puede haber subido avisos en el intermedio
+            for i in 1 2 3; do
+              git pull --rebase -X theirs origin main && git push && break
+              sleep 20
+            done
           fi
 
       - uses: actions/configure-pages@v5

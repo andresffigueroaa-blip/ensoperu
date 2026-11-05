@@ -6,6 +6,15 @@
 #   ambito  nacional | internacional
 # ════════════════════════════════════════════════════════════════════════
 max_por_consulta: 15
+# Canales directos de los medios: traen imagen. Solo entran las notas que tocan el tema.
+canales:
+  - {medio: RPP, url: 'https://rpp.pe/rss', ambito: nacional}
+  - {medio: El Comercio, url: 'https://elcomercio.pe/arc/outboundfeeds/rss/?outputType=xml', ambito: nacional}
+  - {medio: Gestión, url: 'https://gestion.pe/arc/outboundfeeds/rss/?outputType=xml', ambito: nacional}
+  - {medio: Perú21, url: 'https://peru21.pe/arc/outboundfeeds/rss/?outputType=xml', ambito: nacional}
+  - {medio: Infobae Perú, url: 'https://www.infobae.com/arc/outboundfeeds/rss/category/peru/', ambito: nacional}
+  - {medio: Mongabay, url: 'https://es.mongabay.com/feed/', ambito: internacional}
+  - {medio: ReliefWeb, url: 'https://reliefweb.int/updates/rss.xml?primary_country=186', ambito: nacional, idioma: en}
 consultas:
   - {q: '"Fenómeno El Niño" Perú', tema: lluvias, ambito: nacional}
   - {q: 'ENFEN comunicado El Niño costero', tema: oficial, ambito: nacional}
