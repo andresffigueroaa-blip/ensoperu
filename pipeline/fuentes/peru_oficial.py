@@ -433,13 +433,22 @@ BLOQUES = {"fenomeno": fenomeno, "coen": coen, "indeci_rss": indeci_rss, "escena
            "dhn": dhn, "inaigem": inaigem, "enfen_docs": enfen_docs}
 
 
+# Solo responden desde el Perú: en GitHub Actions no se intentan (los lee el robot local)
+SOLO_DESDE_PERU = {"fenomeno", "ana_rios", "ana_embalses", "ana_pc", "emergencia", "phisis", "prono", "enfen_docs"}
+
+
 def ejecutar(estado: dict) -> dict:
     DIR.mkdir(parents=True, exist_ok=True)
+    import os
+    en_actions = bool(os.environ.get("GITHUB_ACTIONS"))
     previo = leer_json(SALIDA) or {}
     idx = _indice_nombres()
     salida = {"_": "Generado por pipeline/fuentes/peru_oficial.py. Datos oficiales tal como se publican.",
               "actualizado": ahora_utc(), "fallas": []}
     for clave, f in BLOQUES.items():
+        if en_actions and clave in SOLO_DESDE_PERU and clave in previo:
+            salida[clave] = previo[clave]          # se conserva la lectura del robot del Perú, con su hora
+            continue
         try:
             salida[clave] = {**f(idx), "leido": ahora_utc()}
         except Exception as e:      # un servicio caído no tumba a los demás

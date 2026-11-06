@@ -23,6 +23,7 @@ from __future__ import annotations
 
 import argparse
 import datetime as dt
+import os
 import sys
 import time
 import traceback
@@ -74,6 +75,11 @@ PASOS = {
 HORAS_ENTRE_LECTURAS = {"cpc": 6, "igp": 6, "oceano_atm": 6, "rios": 6, "oleaje": 6, "estacional": 24, "internacional": 6}
 
 
+# Fuentes que solo responden desde el Perú: en GitHub Actions cada intento esperaba
+# hasta 90 s por servicio y alargaba la corrida a 20 minutos. Las lee el robot local.
+SOLO_DESDE_PERU = {"senamhi", "enfen"}
+
+
 def _toca(paso: str, previo: dict) -> bool:
     """¿Corresponde leer este paso ya? Tras una falla se reintenta siempre."""
     horas = HORAS_ENTRE_LECTURAS.get(paso)
@@ -117,6 +123,10 @@ def main() -> int:
         log(f"▶ {paso}")
         t0 = time.time()
         previo = meta["fuentes"].get(paso, {})
+        if os.environ.get("GITHUB_ACTIONS") and paso in SOLO_DESDE_PERU:
+            log("  solo responde desde el Perú: la lee el robot local")
+            resultados[paso] = (previo.get("estado", "sin_cambios"), "")
+            continue
         if not args.solo and not _toca(paso, previo):
             log(f"  leído hace poco; toca más tarde")
             resultados[paso] = (previo.get("estado", "sin_cambios"), "")
