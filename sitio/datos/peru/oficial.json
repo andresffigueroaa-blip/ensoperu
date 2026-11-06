@@ -1,6 +1,6 @@
 {
   "_": "Generado por pipeline/fuentes/peru_oficial.py. Datos oficiales tal como se publican.",
-  "actualizado": "2026-11-06T15:28:14Z",
+  "actualizado": "2026-11-06T15:43:08Z",
   "fallas": [
     "fenomeno",
     "ana_rios",
@@ -18,7 +18,7 @@
     "titular": "EL NIÑO COSTERO CONTINUARÍA HASTA FINES DE OTOÑO DE 2027",
     "url": "https://www.senamhi.gob.pe/?p=fenomeno-el-nino",
     "leido": "2026-11-06T15:24:12Z",
-    "atrasado": true
+    "atrasado": false
   },
   "coen": {
     "dias": 7,
@@ -206,20 +206,20 @@
       },
       {
         "fecha": "2026-11-04 15:30",
-        "peligro": "Incendios forestales",
-        "distrito": "030104",
-        "lugar": "Curahuasi, Abancay, Apurimac",
-        "hechos": "Se registra un incendio forestal que ocasiona daños a sectores diversos (cobertura natural), en el sector Ccoripampa, distrito de Curahuasi, provincia de Abancay.",
-        "pdf": "https://coen.indeci.gob.pe/api/v2/mer/files/view?key=mer/2026/10/1793884777165.pdf",
-        "sinpad": null
-      },
-      {
-        "fecha": "2026-11-04 15:30",
         "peligro": "Vientos fuertes",
         "distrito": "211204",
         "lugar": "Patambuco, Sandia, Puno",
         "hechos": "Se registraron vientos fuertes que causaron daños materiales (viviendas) en el sector de Cupuly, centro poblado de Sihuasihua, distrito de Patambuco, provincia de Sandia",
         "pdf": "https://coen.indeci.gob.pe/api/v2/mer/files/view?key=mer/2026/10/1793939643455.pdf",
+        "sinpad": null
+      },
+      {
+        "fecha": "2026-11-04 15:30",
+        "peligro": "Incendios forestales",
+        "distrito": "030104",
+        "lugar": "Curahuasi, Abancay, Apurimac",
+        "hechos": "Se registra un incendio forestal que ocasiona daños a sectores diversos (cobertura natural), en el sector Ccoripampa, distrito de Curahuasi, provincia de Abancay.",
+        "pdf": "https://coen.indeci.gob.pe/api/v2/mer/files/view?key=mer/2026/10/1793884777165.pdf",
         "sinpad": null
       },
       {
@@ -279,19 +279,19 @@
       {
         "fecha": "2026-11-04 13:00",
         "peligro": "Incendios forestales",
-        "distrito": "090103",
-        "lugar": "Acoria, Huancavelica, Huancavelica",
-        "hechos": "Se registró un incendio forestal que causó daños a sectores diversos (cobertura natural y producción agrícola) en la localidad de Ccocha distrito de Acoria, provincia de Huancavelica.",
-        "pdf": "https://coen.indeci.gob.pe/api/v2/mer/files/view?key=mer/2026/10/1793879349317.pdf",
+        "distrito": "040114",
+        "lugar": "Polobaya, Arequipa, Arequipa",
+        "hechos": "Se registró un incendio forestal que causó daños a sectores diversos (cobertura natural) en la zona de Poroto, distrito de Polobaya, provincia de Arequipa",
+        "pdf": "https://coen.indeci.gob.pe/api/v2/mer/files/view?key=mer/2026/10/1793843172697.pdf",
         "sinpad": null
       },
       {
         "fecha": "2026-11-04 13:00",
         "peligro": "Incendios forestales",
-        "distrito": "040114",
-        "lugar": "Polobaya, Arequipa, Arequipa",
-        "hechos": "Se registró un incendio forestal que causó daños a sectores diversos (cobertura natural) en la zona de Poroto, distrito de Polobaya, provincia de Arequipa",
-        "pdf": "https://coen.indeci.gob.pe/api/v2/mer/files/view?key=mer/2026/10/1793843172697.pdf",
+        "distrito": "090103",
+        "lugar": "Acoria, Huancavelica, Huancavelica",
+        "hechos": "Se registró un incendio forestal que causó daños a sectores diversos (cobertura natural y producción agrícola) en la localidad de Ccocha distrito de Acoria, provincia de Huancavelica.",
+        "pdf": "https://coen.indeci.gob.pe/api/v2/mer/files/view?key=mer/2026/10/1793879349317.pdf",
         "sinpad": null
       },
       {
@@ -423,7 +423,7 @@
     ],
     "sin_cruce": 1,
     "url": "https://coen.indeci.gob.pe/mer/",
-    "leido": "2026-11-06T15:29:47Z"
+    "leido": "2026-11-06T15:44:40Z"
   },
   "indeci_rss": {
     "reportes": [
@@ -499,7 +499,7 @@
       }
     ],
     "url": "https://portal.indeci.gob.pe/emergencias/",
-    "leido": "2026-11-06T15:29:48Z"
+    "leido": "2026-11-06T15:44:41Z"
   },
   "escenario": {
     "vigente": true,
@@ -2001,7 +2001,7 @@
       }
     },
     "url": "https://sigrid.cenepred.gob.pe/sigridv3/escenario-aviso",
-    "leido": "2026-11-06T15:29:52Z"
+    "leido": "2026-11-06T15:44:44Z"
   },
   "quebradas": {
     "fecha": "2026-11-05",
@@ -2369,7 +2369,7 @@
     },
     "sin_cruce": 0,
     "url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico",
-    "leido": "2026-11-06T15:29:54Z"
+    "leido": "2026-11-06T15:44:46Z"
   },
   "hidro": {
     "avisos": [
@@ -2411,7 +2411,7 @@
       }
     ],
     "url": "https://www.senamhi.gob.pe/?p=aviso-hidrologico",
-    "leido": "2026-11-06T15:29:55Z"
+    "leido": "2026-11-06T15:44:47Z"
   },
   "ana_rios": {
     "estaciones": [
@@ -4500,7 +4500,7 @@
     "en_emergencia": 0,
     "url": "https://snirh.ana.gob.pe/onrh/",
     "leido": "2026-11-06T15:24:24Z",
-    "atrasado": true
+    "atrasado": false
   },
   "ana_embalses": {
     "embalses": [
@@ -4738,7 +4738,7 @@
     ],
     "url": "https://snirh.ana.gob.pe/onrh/",
     "leido": "2026-11-06T15:24:24Z",
-    "atrasado": true
+    "atrasado": false
   },
   "ana_pc": {
     "total": 536,
@@ -4750,7 +4750,7 @@
     "avance_medio": 35.6,
     "url": "https://snirh.ana.gob.pe/",
     "leido": "2026-11-06T15:24:25Z",
-    "atrasado": true
+    "atrasado": false
   },
   "emergencia": {
     "decretos": {
@@ -9717,7 +9717,7 @@
     ],
     "url": "https://www.gob.pe/busquedas?contenido[]=normas&term=estado+de+emergencia",
     "leido": "2026-11-06T15:24:25Z",
-    "atrasado": true
+    "atrasado": false
   },
   "preparacion": {
     "conteo": {
@@ -16873,11 +16873,11 @@
       }
     },
     "url": "https://visor.geoperu.gob.pe/",
-    "leido": "2026-11-06T15:35:58Z"
+    "leido": "2026-11-06T15:50:49Z"
   },
   "agua": {
-    "total": 241,
-    "conexiones": 1271050,
+    "total": 240,
+    "conexiones": 1270850,
     "cortes": [
       {
         "eps": "SEDAPAL",
@@ -17486,8 +17486,8 @@
         "conexiones": 2010
       },
       "080101": {
-        "cortes": 18,
-        "conexiones": 47150
+        "cortes": 17,
+        "conexiones": 46950
       },
       "080106": {
         "cortes": 2,
@@ -17823,10 +17823,10 @@
       }
     },
     "url": "https://www.sunass.gob.pe/",
-    "leido": "2026-11-06T15:36:00Z"
+    "leido": "2026-11-06T15:50:50Z"
   },
   "incendios": {
-    "total": 82,
+    "total": 15,
     "lista": [
       {
         "fecha": "2026-11-06",
@@ -17910,51 +17910,6 @@
         "lon": -74.25293
       },
       {
-        "fecha": "2026-11-05",
-        "hora": "00:00",
-        "lugar": "Acostambo, Huancavelica",
-        "distrito": "090702",
-        "cobertura": " ",
-        "lat": -12.35377,
-        "lon": -75.06732
-      },
-      {
-        "fecha": "2026-11-05",
-        "hora": "00:00",
-        "lugar": "Ocobamba, Apurimac",
-        "distrito": "030605",
-        "cobertura": " ",
-        "lat": -13.46521,
-        "lon": -73.58583
-      },
-      {
-        "fecha": "2026-11-05",
-        "hora": "00:00",
-        "lugar": "Huando, Huancavelica",
-        "distrito": "090119",
-        "cobertura": " ",
-        "lat": -12.58478,
-        "lon": -74.96993
-      },
-      {
-        "fecha": "2026-11-05",
-        "hora": "00:00",
-        "lugar": "Santiago, Cusco",
-        "distrito": "080106",
-        "cobertura": " ",
-        "lat": -13.54674,
-        "lon": -71.99059
-      },
-      {
-        "fecha": "2026-11-05",
-        "hora": "00:00",
-        "lugar": "Polobaya, Arequipa",
-        "distrito": "040114",
-        "cobertura": " ",
-        "lat": -16.55072,
-        "lon": -71.35723
-      },
-      {
         "fecha": "2026-11-04",
         "hora": "20:45",
         "lugar": "Luricocha, Ayacucho",
@@ -17971,51 +17926,6 @@
         "cobertura": "Cobertura Forestal",
         "lat": -13.52685,
         "lon": -72.73432
-      },
-      {
-        "fecha": "2026-11-04",
-        "hora": "17:00",
-        "lugar": "Acoria, Huancavelica",
-        "distrito": "090103",
-        "cobertura": "Cobertura Forestal",
-        "lat": -12.58982,
-        "lon": -74.89137
-      },
-      {
-        "fecha": "2026-11-04",
-        "hora": "15:55",
-        "lugar": "Sepahua, Ucayali",
-        "distrito": "250202",
-        "cobertura": "Cobertura Forestal",
-        "lat": -11.14645,
-        "lon": -73.07877
-      },
-      {
-        "fecha": "2026-11-04",
-        "hora": "15:55",
-        "lugar": "Masisea, Ucayali",
-        "distrito": "250104",
-        "cobertura": "Cobertura Forestal",
-        "lat": -9.09317,
-        "lon": -73.68504
-      },
-      {
-        "fecha": "2026-11-04",
-        "hora": "15:55",
-        "lugar": "Masisea, Ucayali",
-        "distrito": "250104",
-        "cobertura": "Cobertura Forestal",
-        "lat": -9.09173,
-        "lon": -73.67548
-      },
-      {
-        "fecha": "2026-11-04",
-        "hora": "15:55",
-        "lugar": "Masisea, Ucayali",
-        "distrito": "250104",
-        "cobertura": "Cobertura Forestal",
-        "lat": -9.06323,
-        "lon": -74.15662
       },
       {
         "fecha": "2026-11-04",
@@ -18045,465 +17955,6 @@
         "lon": -74.39938
       },
       {
-        "fecha": "2026-11-04",
-        "hora": "15:30",
-        "lugar": "Tahuamanu, Madre De Dios",
-        "distrito": "170303",
-        "cobertura": "Cobertura Forestal",
-        "lat": -11.75895,
-        "lon": -69.37689
-      },
-      {
-        "fecha": "2026-11-04",
-        "hora": "15:20",
-        "lugar": "Santa Teresa, Cusco",
-        "distrito": "080908",
-        "cobertura": "Cobertura Forestal",
-        "lat": -13.03455,
-        "lon": -72.64676
-      },
-      {
-        "fecha": "2026-11-04",
-        "hora": "13:57",
-        "lugar": "Yuyapichis, Huanuco",
-        "distrito": "100905",
-        "cobertura": "Cobertura Forestal",
-        "lat": -9.52373,
-        "lon": -74.94503
-      },
-      {
-        "fecha": "2026-11-04",
-        "hora": "13:57",
-        "lugar": "Yuyapichis, Huanuco",
-        "distrito": "100905",
-        "cobertura": "Cobertura Forestal",
-        "lat": -9.52184,
-        "lon": -74.9438
-      },
-      {
-        "fecha": "2026-11-04",
-        "hora": "13:57",
-        "lugar": "Masisea, Ucayali",
-        "distrito": "250104",
-        "cobertura": "Cobertura Forestal",
-        "lat": -9.09224,
-        "lon": -73.68097
-      },
-      {
-        "fecha": "2026-11-04",
-        "hora": "13:57",
-        "lugar": "Masisea, Ucayali",
-        "distrito": "250104",
-        "cobertura": "Cobertura Forestal",
-        "lat": -9.08799,
-        "lon": -73.67962
-      },
-      {
-        "fecha": "2026-11-04",
-        "hora": "13:57",
-        "lugar": "Masisea, Ucayali",
-        "distrito": "250104",
-        "cobertura": "Cobertura Forestal",
-        "lat": -9.08729,
-        "lon": -73.68187
-      },
-      {
-        "fecha": "2026-11-04",
-        "hora": "13:57",
-        "lugar": "Masisea, Ucayali",
-        "distrito": "250104",
-        "cobertura": "Cobertura Forestal",
-        "lat": -9.08631,
-        "lon": -73.67622
-      },
-      {
-        "fecha": "2026-11-04",
-        "hora": "13:57",
-        "lugar": "Masisea, Ucayali",
-        "distrito": "250104",
-        "cobertura": "Cobertura Forestal",
-        "lat": -9.08304,
-        "lon": -73.68049
-      },
-      {
-        "fecha": "2026-11-04",
-        "hora": "13:57",
-        "lugar": "Masisea, Ucayali",
-        "distrito": "250104",
-        "cobertura": "Cobertura Forestal",
-        "lat": -9.0606,
-        "lon": -74.15426
-      },
-      {
-        "fecha": "2026-11-04",
-        "hora": "13:57",
-        "lugar": "Masisea, Ucayali",
-        "distrito": "250104",
-        "cobertura": "Cobertura Forestal",
-        "lat": -9.06043,
-        "lon": -74.15169
-      },
-      {
-        "fecha": "2026-11-04",
-        "hora": "13:57",
-        "lugar": "Masisea, Ucayali",
-        "distrito": "250104",
-        "cobertura": "Cobertura Forestal",
-        "lat": -9.05581,
-        "lon": -74.15508
-      },
-      {
-        "fecha": "2026-11-04",
-        "hora": "13:57",
-        "lugar": "Masisea, Ucayali",
-        "distrito": "250104",
-        "cobertura": "Cobertura Forestal",
-        "lat": -9.05563,
-        "lon": -74.15252
-      },
-      {
-        "fecha": "2026-11-04",
-        "hora": "13:57",
-        "lugar": "Balsapuerto, Loreto",
-        "distrito": "160202",
-        "cobertura": "Cobertura Forestal",
-        "lat": -5.67501,
-        "lon": -76.38956
-      },
-      {
-        "fecha": "2026-11-04",
-        "hora": "13:57",
-        "lugar": "Pinra, Huanuco",
-        "distrito": "100404",
-        "cobertura": "Cobertura Agrícola",
-        "lat": -8.95776,
-        "lon": -77.05424
-      },
-      {
-        "fecha": "2026-11-04",
-        "hora": "13:57",
-        "lugar": "Pinra, Huanuco",
-        "distrito": "100404",
-        "cobertura": "Cobertura Agrícola",
-        "lat": -8.95444,
-        "lon": -77.05866
-      },
-      {
-        "fecha": "2026-11-04",
-        "hora": "13:55",
-        "lugar": "Colquemarca, Cusco",
-        "distrito": "080704",
-        "cobertura": "Cobertura Forestal",
-        "lat": -14.34059,
-        "lon": -72.0838
-      },
-      {
-        "fecha": "2026-11-04",
-        "hora": "13:55",
-        "lugar": "Colquemarca, Cusco",
-        "distrito": "080704",
-        "cobertura": "Cobertura Forestal",
-        "lat": -14.34013,
-        "lon": -72.08147
-      },
-      {
-        "fecha": "2026-11-04",
-        "hora": "13:55",
-        "lugar": "Madre De Dios, Madre De Dios",
-        "distrito": "170203",
-        "cobertura": "Cobertura Forestal",
-        "lat": -12.4339,
-        "lon": -70.61264
-      },
-      {
-        "fecha": "2026-11-04",
-        "hora": "13:55",
-        "lugar": "Madre De Dios, Madre De Dios",
-        "distrito": "170203",
-        "cobertura": "Cobertura Forestal",
-        "lat": -12.43311,
-        "lon": -70.60863
-      },
-      {
-        "fecha": "2026-11-04",
-        "hora": "13:55",
-        "lugar": "Madre De Dios, Madre De Dios",
-        "distrito": "170203",
-        "cobertura": "Cobertura Forestal",
-        "lat": -12.4323,
-        "lon": -70.613
-      },
-      {
-        "fecha": "2026-11-04",
-        "hora": "13:55",
-        "lugar": "Madre De Dios, Madre De Dios",
-        "distrito": "170203",
-        "cobertura": "Cobertura Forestal",
-        "lat": -12.43153,
-        "lon": -70.60896
-      },
-      {
-        "fecha": "2026-11-04",
-        "hora": "13:55",
-        "lugar": "Madre De Dios, Madre De Dios",
-        "distrito": "170203",
-        "cobertura": "Cobertura Forestal",
-        "lat": -12.42742,
-        "lon": -70.60977
-      },
-      {
-        "fecha": "2026-11-04",
-        "hora": "13:55",
-        "lugar": "Madre De Dios, Madre De Dios",
-        "distrito": "170203",
-        "cobertura": "Cobertura Forestal",
-        "lat": -12.42662,
-        "lon": -70.60576
-      },
-      {
-        "fecha": "2026-11-04",
-        "hora": "13:55",
-        "lugar": "Madre De Dios, Madre De Dios",
-        "distrito": "170203",
-        "cobertura": "Cobertura Forestal",
-        "lat": -12.42584,
-        "lon": -70.61014
-      },
-      {
-        "fecha": "2026-11-04",
-        "hora": "13:55",
-        "lugar": "Tahuamanu, Madre De Dios",
-        "distrito": "170303",
-        "cobertura": "Cobertura Forestal",
-        "lat": -11.76037,
-        "lon": -69.37801
-      },
-      {
-        "fecha": "2026-11-04",
-        "hora": "13:55",
-        "lugar": "Tahuamanu, Madre De Dios",
-        "distrito": "170303",
-        "cobertura": "Cobertura Forestal",
-        "lat": -11.75628,
-        "lon": -69.37963
-      },
-      {
-        "fecha": "2026-11-04",
-        "hora": "13:55",
-        "lugar": "Tahuamanu, Madre De Dios",
-        "distrito": "170303",
-        "cobertura": "Cobertura Forestal",
-        "lat": -11.74909,
-        "lon": -69.37586
-      },
-      {
-        "fecha": "2026-11-04",
-        "hora": "13:55",
-        "lugar": "Pangoa, Junin",
-        "distrito": "120606",
-        "cobertura": "Cobertura Forestal",
-        "lat": -11.61289,
-        "lon": -74.45872
-      },
-      {
-        "fecha": "2026-11-04",
-        "hora": "13:55",
-        "lugar": "Pangoa, Junin",
-        "distrito": "120606",
-        "cobertura": "Cobertura Forestal",
-        "lat": -11.60994,
-        "lon": -74.45713
-      },
-      {
-        "fecha": "2026-11-04",
-        "hora": "13:55",
-        "lugar": "Pangoa, Junin",
-        "distrito": "120606",
-        "cobertura": "Cobertura Forestal",
-        "lat": -11.60842,
-        "lon": -74.45962
-      },
-      {
-        "fecha": "2026-11-04",
-        "hora": "13:17",
-        "lugar": "Balsapuerto, Loreto",
-        "distrito": "160202",
-        "cobertura": "Cobertura Forestal",
-        "lat": -5.67861,
-        "lon": -76.39231
-      },
-      {
-        "fecha": "2026-11-04",
-        "hora": "13:17",
-        "lugar": "Balsapuerto, Loreto",
-        "distrito": "160202",
-        "cobertura": "Cobertura Forestal",
-        "lat": -5.67796,
-        "lon": -76.38787
-      },
-      {
-        "fecha": "2026-11-04",
-        "hora": "13:15",
-        "lugar": "Madre De Dios, Madre De Dios",
-        "distrito": "170203",
-        "cobertura": "Cobertura Forestal",
-        "lat": -12.43768,
-        "lon": -70.61363
-      },
-      {
-        "fecha": "2026-11-04",
-        "hora": "13:15",
-        "lugar": "Madre De Dios, Madre De Dios",
-        "distrito": "170203",
-        "cobertura": "Cobertura Forestal",
-        "lat": -12.43364,
-        "lon": -70.61024
-      },
-      {
-        "fecha": "2026-11-04",
-        "hora": "13:15",
-        "lugar": "Madre De Dios, Madre De Dios",
-        "distrito": "170203",
-        "cobertura": "Cobertura Forestal",
-        "lat": -12.42869,
-        "lon": -70.61137
-      },
-      {
-        "fecha": "2026-11-04",
-        "hora": "13:15",
-        "lugar": "Madre De Dios, Madre De Dios",
-        "distrito": "170203",
-        "cobertura": "Cobertura Forestal",
-        "lat": -12.42812,
-        "lon": -70.60747
-      },
-      {
-        "fecha": "2026-11-04",
-        "hora": "13:15",
-        "lugar": "Pangoa, Junin",
-        "distrito": "120606",
-        "cobertura": "Cobertura Forestal",
-        "lat": -11.61292,
-        "lon": -74.45786
-      },
-      {
-        "fecha": "2026-11-04",
-        "hora": "13:15",
-        "lugar": "Pangoa, Junin",
-        "distrito": "120606",
-        "cobertura": "Cobertura Forestal",
-        "lat": -11.61242,
-        "lon": -74.45409
-      },
-      {
-        "fecha": "2026-11-04",
-        "hora": "13:15",
-        "lugar": "Sepahua, Ucayali",
-        "distrito": "250202",
-        "cobertura": "Cobertura Forestal",
-        "lat": -11.14669,
-        "lon": -73.0845
-      },
-      {
-        "fecha": "2026-11-04",
-        "hora": "13:15",
-        "lugar": "Sepahua, Ucayali",
-        "distrito": "250202",
-        "cobertura": "Cobertura Forestal",
-        "lat": -11.14529,
-        "lon": -73.07458
-      },
-      {
-        "fecha": "2026-11-04",
-        "hora": "13:15",
-        "lugar": "Yuyapichis, Huanuco",
-        "distrito": "100905",
-        "cobertura": "Cobertura Forestal",
-        "lat": -9.52195,
-        "lon": -74.94371
-      },
-      {
-        "fecha": "2026-11-04",
-        "hora": "13:15",
-        "lugar": "Masisea, Ucayali",
-        "distrito": "250104",
-        "cobertura": "Cobertura Forestal",
-        "lat": -9.0871,
-        "lon": -73.6778
-      },
-      {
-        "fecha": "2026-11-04",
-        "hora": "13:15",
-        "lugar": "Masisea, Ucayali",
-        "distrito": "250104",
-        "cobertura": "Cobertura Forestal",
-        "lat": -9.06079,
-        "lon": -74.1545
-      },
-      {
-        "fecha": "2026-11-04",
-        "hora": "13:15",
-        "lugar": "Masisea, Ucayali",
-        "distrito": "250104",
-        "cobertura": "Cobertura Forestal",
-        "lat": -9.06029,
-        "lon": -74.15089
-      },
-      {
-        "fecha": "2026-11-04",
-        "hora": "13:15",
-        "lugar": "Masisea, Ucayali",
-        "distrito": "250104",
-        "cobertura": "Cobertura Forestal",
-        "lat": -9.05674,
-        "lon": -74.1551
-      },
-      {
-        "fecha": "2026-11-04",
-        "hora": "13:00",
-        "lugar": "Masisea, Ucayali",
-        "distrito": "250104",
-        "cobertura": "Cobertura Forestal",
-        "lat": -9.08197,
-        "lon": -73.67084
-      },
-      {
-        "fecha": "2026-11-04",
-        "hora": "12:50",
-        "lugar": "Masisea, Ucayali",
-        "distrito": "250104",
-        "cobertura": "Cobertura Forestal",
-        "lat": -9.08197,
-        "lon": -73.6888
-      },
-      {
-        "fecha": "2026-11-04",
-        "hora": "12:50",
-        "lugar": "Masisea, Ucayali",
-        "distrito": "250104",
-        "cobertura": "Cobertura Forestal",
-        "lat": -9.09993,
-        "lon": -73.6888
-      },
-      {
-        "fecha": "2026-11-04",
-        "hora": "12:30",
-        "lugar": "Masisea, Ucayali",
-        "distrito": "250104",
-        "cobertura": "Cobertura Forestal",
-        "lat": -9.064,
-        "lon": -74.15593
-      },
-      {
-        "fecha": "2026-11-04",
-        "hora": "10:40",
-        "lugar": "Combapata, Cusco",
-        "distrito": "080603",
-        "cobertura": " ",
-        "lat": -14.09326,
-        "lon": -71.3651
-      },
-      {
         "fecha": "2026-11-03",
         "hora": "16:10",
         "lugar": "Santiago De Pischa, Ayacucho",
@@ -18511,46 +17962,10 @@
         "cobertura": "Cobertura Forestal",
         "lat": -13.10642,
         "lon": -74.38949
-      },
-      {
-        "fecha": "2026-11-03",
-        "hora": "13:32",
-        "lugar": "Tahuamanu, Madre De Dios",
-        "distrito": "170303",
-        "cobertura": "Cobertura Forestal",
-        "lat": -11.75104,
-        "lon": -69.37591
-      },
-      {
-        "fecha": "2026-11-03",
-        "hora": "13:32",
-        "lugar": "Tahuamanu, Madre De Dios",
-        "distrito": "170303",
-        "cobertura": "Cobertura Forestal",
-        "lat": -11.74882,
-        "lon": -69.3775
-      },
-      {
-        "fecha": "2026-11-03",
-        "hora": "13:32",
-        "lugar": "Sepahua, Ucayali",
-        "distrito": "250202",
-        "cobertura": "Cobertura Forestal",
-        "lat": -11.14734,
-        "lon": -73.08416
-      },
-      {
-        "fecha": "2026-11-03",
-        "hora": "13:32",
-        "lugar": "Sepahua, Ucayali",
-        "distrito": "250202",
-        "cobertura": "Cobertura Forestal",
-        "lat": -11.14626,
-        "lon": -73.07713
       }
     ],
     "url": "https://geo.serfor.gob.pe/visor/",
-    "leido": "2026-11-06T15:36:01Z"
+    "leido": "2026-11-06T15:50:51Z"
   },
   "phisis": {
     "estaciones": [
@@ -19978,7 +19393,7 @@
     "sobre_umbral": 3,
     "url": "https://www.senamhi.gob.pe/mapas/mapa-monitoreohidro/",
     "leido": "2026-11-06T15:24:29Z",
-    "atrasado": true
+    "atrasado": false
   },
   "prono": {
     "url": "https://www.senamhi.gob.pe/?p=pronostico-climatico",
@@ -20273,7 +19688,7 @@
       }
     ],
     "leido": "2026-11-06T15:25:19Z",
-    "atrasado": true
+    "atrasado": false
   },
   "igp": {
     "e": [
@@ -20478,7 +19893,7 @@
       "clasificacion": 99.88
     },
     "url": "http://met.igp.gob.pe/variabclim/",
-    "leido": "2026-11-06T15:39:04Z"
+    "leido": "2026-11-06T15:53:53Z"
   },
   "dhn": {
     "generado": "2026-11-05T13:46:20Z",
@@ -20990,7 +20405,7 @@
         }
       ]
     },
-    "leido": "2026-11-06T15:39:06Z"
+    "leido": "2026-11-06T15:53:54Z"
   },
   "inaigem": {
     "estaciones": [
@@ -21028,7 +20443,7 @@
       }
     ],
     "url": "https://www.inaigem.gob.pe/",
-    "leido": "2026-11-06T15:39:07Z"
+    "leido": "2026-11-06T15:53:54Z"
   },
   "enfen_docs": {
     "docs": [
@@ -21095,6 +20510,6 @@
     ],
     "url": "https://enfen.imarpe.gob.pe/",
     "leido": "2026-11-06T15:25:21Z",
-    "atrasado": true
+    "atrasado": false
   }
 }
