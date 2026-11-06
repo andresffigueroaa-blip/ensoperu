@@ -22,7 +22,7 @@ const tarjetaKpi = (n, v, d, destino) => `<div ${destino ? `class="kpi-enl" tabi
 function terciles(filas){
   return `<div class="terc">${filas.map(f => `<div class="terc-f"><span>${esc(f.sector)}</span>
     <div class="pm-barra"><i style="width:${f.bajo}%;background:#B8865B"><span>${f.bajo >= 12 ? f.bajo : ""}</span></i><i style="width:${f.normal}%;background:#C9D2CC"><span style="color:#101A1D">${f.normal >= 12 ? f.normal : ""}</span></i><i style="width:${f.sobre}%;background:#2A78D6"><span>${f.sobre >= 12 ? f.sobre : ""}</span></i></div></div>`).join("")}</div>
-    <div class="probs-ley"><span><i style="background:#B8865B"></i>Bajo lo normal</span><span><i style="background:#C9D2CC"></i>Normal</span><span><i style="background:#2A78D6"></i>Sobre lo normal</span></div>`;
+    <div class="probs-ley"><span><i style="background:#B8865B"></i>Bajo lo normal (%)</span><span><i style="background:#C9D2CC"></i>Normal (%)</span><span><i style="background:#2A78D6"></i>Sobre lo normal (%)</span></div>`;
 }
 
 /* ── EL ESTADO HOY ──────────────────────────────────────────────────────── */
