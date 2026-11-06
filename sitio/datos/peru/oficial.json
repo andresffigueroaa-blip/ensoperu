@@ -1,6 +1,6 @@
 {
   "_": "Generado por pipeline/fuentes/peru_oficial.py. Datos oficiales tal como se publican.",
-  "actualizado": "2026-11-06T16:24:55Z",
+  "actualizado": "2026-11-06T16:46:40Z",
   "fallas": [
     "fenomeno",
     "ana_rios",
@@ -17,7 +17,7 @@
     "color": "#ff0031",
     "titular": "EL NIÑO COSTERO CONTINUARÍA HASTA FINES DE OTOÑO DE 2027",
     "url": "https://www.senamhi.gob.pe/?p=fenomeno-el-nino",
-    "leido": "2026-11-06T16:15:41Z",
+    "leido": "2026-11-06T16:24:01Z",
     "atrasado": false
   },
   "coen": {
@@ -423,10 +423,15 @@
     ],
     "sin_cruce": 1,
     "url": "https://coen.indeci.gob.pe/mer/",
-    "leido": "2026-11-06T16:26:27Z"
+    "leido": "2026-11-06T16:48:12Z"
   },
   "indeci_rss": {
     "reportes": [
+      {
+        "titulo": "REPORTE COMPLEMENTARIO N.° 15568 – 6/11/2026 / COEN – INDECI / 10:50 HORAS (Reporte N.° 2) LLUVIAS INTENSAS EN EL DISTRITO DE LAGUNAS – PIURA",
+        "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-14810-23-10-2026-coen-indeci-1320-horas-reporte-n-1-lluvias-intensas-en-el-distrito-de-lagunas-piura/",
+        "fecha": "2026-11-06T16:29"
+      },
       {
         "titulo": "REPORTE COMPLEMENTARIO N.º 15543 – 5/11/2026 / COEN – INDECI / 19:40 HORAS (Reporte N.º 2) INCENDIO FORESTAL EN EL DISTRITO DE COLQUEMARCA – CUSCO",
         "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-15480-4-11-2026-coen-indeci-2040-horas-reporte-n-1-incendio-forestal-en-el-distrito-de-colquemarca-cusco/",
@@ -491,15 +496,10 @@
         "titulo": "REPORTE COMPLEMENTARIO N.º 15556 – 5/11/2026 / COEN – INDECI / 23:15 HORAS (Reporte N.º 1) INCENDIO URBANO EN EL DISTRITO DE ATE – LIMA",
         "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-o-15556-5-11-2026-coen-indeci-2315-horas-reporte-n-o-1-incendio-urbano-en-el-distrito-de-ate-lima/",
         "fecha": "2026-11-06T05:20"
-      },
-      {
-        "titulo": "REPORTE COMPLEMENTARIO N.° 15555 – 5/11/2026 / COEN-INDECI / 22:50 HORAS (Reporte N.° 1) LLUVIAS INTENSAS EN EL DISTRITO DE SAN JUAN DE LA VIRGEN – TUMBES",
-        "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-15555-5-11-2026-coen-indeci-2250-horas-reporte-n-1-lluvias-intensas-en-el-distrito-de-san-juan-de-la-virgen-tumbes/",
-        "fecha": "2026-11-06T05:18"
       }
     ],
     "url": "https://portal.indeci.gob.pe/emergencias/",
-    "leido": "2026-11-06T16:26:29Z"
+    "leido": "2026-11-06T16:48:13Z"
   },
   "escenario": {
     "vigente": true,
@@ -2001,7 +2001,7 @@
       }
     },
     "url": "https://sigrid.cenepred.gob.pe/sigridv3/escenario-aviso",
-    "leido": "2026-11-06T16:26:33Z"
+    "leido": "2026-11-06T16:48:18Z"
   },
   "quebradas": {
     "fecha": "2026-11-05",
@@ -2369,7 +2369,7 @@
     },
     "sin_cruce": 0,
     "url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico",
-    "leido": "2026-11-06T16:26:35Z"
+    "leido": "2026-11-06T16:48:20Z"
   },
   "hidro": {
     "avisos": [
@@ -2411,7 +2411,7 @@
       }
     ],
     "url": "https://www.senamhi.gob.pe/?p=aviso-hidrologico",
-    "leido": "2026-11-06T16:26:36Z"
+    "leido": "2026-11-06T16:48:20Z"
   },
   "ana_rios": {
     "estaciones": [
@@ -4547,7 +4547,7 @@
     "en_alerta": 2,
     "en_emergencia": 0,
     "url": "https://snirh.ana.gob.pe/onrh/",
-    "leido": "2026-11-06T16:15:53Z",
+    "leido": "2026-11-06T16:24:12Z",
     "atrasado": false
   },
   "ana_embalses": {
@@ -4785,7 +4785,7 @@
       }
     ],
     "url": "https://snirh.ana.gob.pe/onrh/",
-    "leido": "2026-11-06T16:15:54Z",
+    "leido": "2026-11-06T16:24:13Z",
     "atrasado": false
   },
   "ana_pc": {
@@ -4797,7 +4797,7 @@
     },
     "avance_medio": 35.6,
     "url": "https://snirh.ana.gob.pe/",
-    "leido": "2026-11-06T16:15:54Z",
+    "leido": "2026-11-06T16:24:13Z",
     "atrasado": false
   },
   "emergencia": {
@@ -9764,7 +9764,7 @@
       "ONRH/DEE_DS_140_2026_PCM"
     ],
     "url": "https://www.gob.pe/busquedas?contenido[]=normas&term=estado+de+emergencia",
-    "leido": "2026-11-06T16:15:55Z",
+    "leido": "2026-11-06T16:24:14Z",
     "atrasado": false
   },
   "preparacion": {
@@ -16921,7 +16921,7 @@
       }
     },
     "url": "https://visor.geoperu.gob.pe/",
-    "leido": "2026-11-06T16:32:39Z"
+    "leido": "2026-11-06T16:54:23Z"
   },
   "agua": {
     "total": 243,
@@ -17871,7 +17871,7 @@
       }
     },
     "url": "https://www.sunass.gob.pe/",
-    "leido": "2026-11-06T16:32:40Z"
+    "leido": "2026-11-06T16:54:25Z"
   },
   "incendios": {
     "total": 17,
@@ -18031,7 +18031,7 @@
       }
     ],
     "url": "https://geo.serfor.gob.pe/visor/",
-    "leido": "2026-11-06T16:32:41Z"
+    "leido": "2026-11-06T16:54:27Z"
   },
   "phisis": {
     "estaciones": [
@@ -19458,7 +19458,7 @@
     ],
     "sobre_umbral": 3,
     "url": "https://www.senamhi.gob.pe/mapas/mapa-monitoreohidro/",
-    "leido": "2026-11-06T16:16:02Z",
+    "leido": "2026-11-06T16:24:27Z",
     "atrasado": false
   },
   "prono": {
@@ -20057,7 +20057,7 @@
         ]
       ]
     },
-    "leido": "2026-11-06T16:16:02Z",
+    "leido": "2026-11-06T16:24:28Z",
     "atrasado": false
   },
   "igp": {
@@ -20263,7 +20263,7 @@
       "clasificacion": 99.88
     },
     "url": "http://met.igp.gob.pe/variabclim/",
-    "leido": "2026-11-06T16:35:44Z"
+    "leido": "2026-11-06T16:57:30Z"
   },
   "dhn": {
     "generado": "2026-11-06T16:10:08Z",
@@ -20775,7 +20775,7 @@
         }
       ]
     },
-    "leido": "2026-11-06T16:35:45Z"
+    "leido": "2026-11-06T16:57:31Z"
   },
   "inaigem": {
     "estaciones": [
@@ -20813,7 +20813,7 @@
       }
     ],
     "url": "https://www.inaigem.gob.pe/",
-    "leido": "2026-11-06T16:35:45Z"
+    "leido": "2026-11-06T16:57:32Z"
   },
   "enfen_docs": {
     "docs": [
@@ -20879,7 +20879,7 @@
       }
     ],
     "url": "https://enfen.imarpe.gob.pe/",
-    "leido": "2026-11-06T16:16:04Z",
+    "leido": "2026-11-06T16:24:30Z",
     "atrasado": false
   }
 }
