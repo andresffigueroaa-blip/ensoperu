@@ -34,6 +34,7 @@
     <button id="nav-home"      aria-current="true"  onclick="ir('home')">Hoy</button>
     <button id="nav-vivo"      aria-current="false" onclick="ir('vivo')">El Estado hoy</button>
     <button id="nav-mapa"      aria-current="false" onclick="ir('mapa')">Mapa</button>
+    <button id="nav-rios"      aria-current="false" onclick="ir('rios')">Ríos</button>
     <button id="nav-pronosticos" aria-current="false" onclick="ir('pronosticos')">Pronósticos</button>
     <button id="nav-monitoreo" aria-current="false" onclick="ir('monitoreo')">Monitoreo</button>
     <button id="nav-comparar"  aria-current="false" onclick="ir('comparar')">Comparar</button>
@@ -369,6 +370,23 @@
   </div>
 </main>
 
+<main id="v-rios" class="view">
+  <div class="wrap mon">
+    <div class="thermo"></div>
+    <h1 class="h1-vista">Ríos: seguimiento</h1>
+    <p class="sub">Los ríos y quebradas de la ANA, con lo que miden sus estaciones (ANA y SENAMHI), lo que pronostica GloFAS, las obras de prevención junto al cauce y la gente que vive cerca. Se actualiza cada hora; la historia se guarda día a día.</p>
+    <dl class="idx idx4" id="rios-kpis"></dl>
+    <section class="panel-g"><h2>Qué cambió desde ayer</h2><div id="rios-cambios"></div></section>
+    <section class="panel-g"><h2>Todos los ríos</h2>
+      <div class="rios-ctl"><div class="not-ctl" id="rios-estado"></div>
+        <select id="rios-region" onchange="setFiltroRios('region', this.value)"></select>
+        <input id="rios-buscar" type="search" placeholder="Buscar río o cuenca" oninput="setFiltroRios('texto', this.value)"></div>
+      <div class="tabla-scroll"><table class="tabla tabla-rios" id="rios-tabla"></table></div>
+      <p class="f-fuente" id="rios-nota"></p>
+      <p class="f-fuente">Estado: emergencia o alerta si una estación de la ANA pasa su umbral o una del SENAMHI está en naranja o rojo; vigilancia si el SENAMHI marca amarillo o GloFAS pronostica una crecida inusual. Ríos: ANA. Centros poblados: INEI.</p></section>
+  </div>
+</main>
+
 <main id="v-pronosticos" class="view">
   <div class="wrap mon">
     <div class="thermo"></div>
@@ -437,6 +455,7 @@
 <script src="assets/ficha_lugar.js"></script>
 <script src="assets/vivo.js"></script>
 <script src="assets/boletin.js"></script>
+<script src="assets/rios_ana.js"></script>
 <script src="assets/mapa.js"></script>
 </body>
 </html>

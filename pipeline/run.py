@@ -36,7 +36,7 @@ from fuentes import (cpc, enfen, estacional, firms, igp, internacional, noticias
                      oleaje, openmeteo, peru_oficial, rios, senamhi)
 from herramientas import build_clima  # noqa: E402
 from productos import (analisis_ia, catalogo, estado, mapa_tsm, panorama,  # noqa: E402
-                       serie_indices, serie_tsm)
+                       rios_monitoreo, serie_indices, serie_tsm)
 
 # Orden de ejecución. Para agregar una fuente: escribir su módulo con una
 # función ejecutar(estado_previo) -> dict y sumarla aquí.
@@ -62,6 +62,7 @@ PASOS = {
     "serie_indices": serie_indices.ejecutar,  # icen + cpc -> series/indices.json (historia)
     "catalogo":  catalogo.ejecutar,     # catalogo/*.yaml + índices -> config, regiones, plantillas
     "estado":    estado.ejecutar,       # ENFEN + índices -> estado.json
+    "rios_monitoreo": rios_monitoreo.ejecutar,  # ríos de la ANA + estaciones -> rios/monitoreo.json, historial
     "panorama":  panorama.ejecutar,     # todo lo anterior -> panorama.json, boletines/
     "ia":        analisis_ia.ejecutar,  # todo lo anterior -> analisis/<region>/<mes>.json
 }

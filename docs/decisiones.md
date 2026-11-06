@@ -275,6 +275,16 @@ a mostrar algo que el ENFEN no dice.
 - **Wikipedia solo si OpenStreetMap enlaza el artículo.** Buscar por nombre traería homónimos ("Laguna Negra") y diría algo falso del lugar.
 - **Noticias con imagen.** Canales RSS de los medios, filtrados por tema. Las imágenes se muestran desde el servidor del medio, con enlace a la nota; sin imagen, un dibujo por tema.
 
+## 2026-11-06 · Ríos de la ANA y capas oficiales de agua
+
+- Datos entregados por el equipo (DATA_INGRESO, 6-nov): ríos y quebradas y cuencas de la ANA, inventario 2020 del INAIGEM (glaciares y lagunas glaciares), lagunas de la ANA, población del censo 2025 y centros poblados. `herramientas/build_hidro.py` los convierte; se corre a mano con geopandas.
+- **Seguimiento por río, no por tramo.** La ANA parte cada río en tramos; se agrupan por nombre y cuenca (780 ríos de 1154 tramos).
+- **Estaciones asociadas por nombre y cercanía** (ANA y SENAMHI a menos de 3 km del cauce; GloFAS hasta 8 km si coincide el nombre). 105 ríos quedan con estaciones; el resto se dibuja gris: no hay medición para seguirlo.
+- **Estado con regla visible** (productos/rios_monitoreo.py). El nivel bajo va aparte: un aviso por descenso, o en un río cuya estación de la ANA usa umbrales de estiaje, no es crecida.
+- **Historial** diario por estación (ANA) y por río, para ver la evolución desde el 6 de noviembre.
+- Glaciares y lagunas: los inventarios oficiales reemplazan a OpenStreetMap. Quija_triangle repite el inventario de glaciares: no se usa.
+- Población del censo 2025 y centros poblados vienen redistribuidos por GeoGPS Perú: se citan así.
+
 ## 2026-11-06 · Boletín por región, con gráficos
 
 - Selector Perú o región. Cuatro partes fijas: la región hoy, el país hoy, noticias (de la región, nacionales, internacionales) y lo que viene.

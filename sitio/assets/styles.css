@@ -726,3 +726,18 @@ button:disabled{opacity:.4; cursor:not-allowed}
   .bol-pie{break-inside:avoid}
   a{color:inherit; text-decoration:none}
 }
+
+/* Ríos */
+.foco.rioana{width:16px; height:3px; border-radius:2px; background:#5FA8D3; box-shadow:none}
+.foco.cuenca{width:12px; height:12px; border-radius:2px; background:none; border:1.5px solid #C9A227; box-shadow:none}
+.rios-ctl{display:flex; flex-wrap:wrap; gap:8px 14px; align-items:center; margin-bottom:12px}
+.rios-ctl .not-ctl{margin:0}
+.rios-ctl select, .rios-ctl input{padding:7px 10px; font:inherit; font-size:13.5px; border:1px solid var(--rule); border-radius:3px; background:var(--paper-2); color:var(--ink)}
+.tabla-rios tr[tabindex]{cursor:pointer}
+.tabla-rios tr[tabindex]:hover td{background:var(--paper-3)}
+.tabla-rios td{font-size:13px; vertical-align:top}
+.sub-td{display:block; color:var(--fog-dim); font-size:11.5px}
+.est-ana{padding-bottom:8px; border-bottom:1px solid var(--rule-soft); margin-bottom:8px}
+.umbral{position:relative; height:8px; background:var(--paper-3); border-radius:4px; margin:6px 0 4px}
+.umbral i{position:absolute; left:0; top:0; bottom:0; background:#2A78D6; border-radius:4px}
+.umbral b{position:absolute; top:-3px; width:2px; height:14px; background:#E18C3E}

@@ -14,7 +14,7 @@
 
 const M = {                    // estado del mapa
   mapa: null, listo: false, capa: "tsm", nivel: "region", tema: null, mesEst: 0,
-  lugares: { estacion: false, cumbre: false, presa: false, embalse: true, laguna: false, glaciar: true }, incendios: false, rios: true,
+  lugares: { estacion: false, cumbre: false, presa: false, embalse: true, laguna: false, laguna_glaciar: false, glaciar: true }, incendios: false, rios: true,
   turno: 0,      // solo la última orden de pintar puede escribir colores
   sel: null, datos: {},
 };
@@ -45,9 +45,10 @@ const TEMAS = {
   lluvias:   { n: "Norte: lluvias e inundaciones", capa: "lluvia", nivel: "provincia", lugares: { presa: true, embalse: true }, rios: true, caja: [[-81.5, -9.2], [-74, -3]], texto: "Lluvia a 16 días, ríos, presas y embalses de la costa y sierra norte, donde el ENFEN espera lluvias sobre lo normal." },
   incendios: { n: "Sur: sequía e incendios", capa: "spi", nivel: "provincia", lugares: { laguna: true }, focos: true, rios: false, caja: [[-76, -17.5], [-68.5, -11]], texto: "Sequía de 3 meses por provincia (naranja y rojo: más seco de lo normal; azul: más húmedo) y focos de calor en el sur andino, donde el ENFEN espera lluvias bajo lo normal y déficit en el Titicaca." },
   mar:       { n: "Mar y pesca", capa: "tsm", nivel: "region", lugares: {}, caja: [[-86, -19], [-69, -1]], texto: "El mar frente a la costa y su anomalía." },
+  riosana:   { n: "Ríos: seguimiento", capa: "lluvia", nivel: "provincia", lugares: { embalse: true }, riosAna: true, cuencas: true, pcs: true, caja: [[-82, -18.6], [-68.4, 0.1]], texto: "Los ríos de la ANA, coloreados por su estado: azul normal, ámbar vigilancia, rojo alerta; gris, sin estación. Sobre la lluvia esperada y con las obras de prevención. Toca un río para ver su seguimiento." },
   hoy:       { n: "Hoy: riesgo y emergencias", capa: "esc", nivel: "distrito", lugares: {}, emergencias: true, caja: [[-82, -18.6], [-68.4, 0.1]], texto: "Distritos en riesgo por el aviso de lluvia vigente (CENEPRED) y emergencias registradas en 7 días (INDECI). Toca un punto para ver el reporte." },
   riesgo:    { n: "Riesgo oficial por distrito", capa: "r_inu", nivel: "distrito", lugares: {}, caja: [[-82, -18.6], [-68.4, 0.1]], texto: "Escenario del CENEPRED: viviendas, colegios, salud, vías y cultivos expuestos a inundación." },
-  glaciares: { n: "Agua, nevados y cumbres", capa: "ninguna", nivel: "provincia", lugares: { glaciar: true, laguna: true, embalse: true, cumbre: true }, caja: [[-78.5, -10.5], [-76.5, -8.5]], texto: "Glaciares, cumbres, lagunas y embalses en la Cordillera Blanca y el resto de los Andes. Toca una figura para ver su ficha." },
+  glaciares: { n: "Agua, nevados y cumbres", capa: "ninguna", nivel: "provincia", lugares: { glaciar: true, laguna_glaciar: true, embalse: true, cumbre: true }, caja: [[-78.5, -10.5], [-76.5, -8.5]], texto: "Glaciares, cumbres, lagunas y embalses en la Cordillera Blanca y el resto de los Andes. Toca una figura para ver su ficha." },
   estaciones:{ n: "Estaciones del SENAMHI", capa: "lluvia", nivel: "provincia", lugares: { estacion: true }, rios: false, caja: [[-82, -18.6], [-68.4, 0.1]], texto: "La red de estaciones del SENAMHI sobre la lluvia pronosticada. Acércate para ver más; toca una para ver su ficha y sus datos oficiales." },
   pacifico:  { n: "Pacífico ecuatorial", capa: "tsm", nivel: "region", lugares: {}, rios: false, caja: [[-178, -22], [-66, 14]], texto: "El campo de temperatura del mar en todo el Pacífico, con las regiones Niño." },
 };
@@ -86,12 +87,15 @@ function colorCapa(c, v){
 let promesaDatos = null, promesaRiesgo = null;
 function asegurarDatos(){
   promesaDatos ??= (async () => {
-    const [unidades, incendios, lluvia, estudios, lugares, focos, spi, estacional, rios, oleaje, antecedentes] = await Promise.all([
+    const [unidades, incendios, lluvia, estudios, lugares0, focos, spi, estacional, rios, oleaje, antecedentes, hidro] = await Promise.all([
       traer("datos/geo/unidades.json"), traerOpcional("datos/unidades/incendios.json"), traerOpcional("datos/unidades/lluvia_16d.json"),
       traerOpcional("datos/estudios.json"), traerOpcional("datos/geo/lugares.geojson"), traerOpcional("datos/campos/incendios.geojson"),
       traerOpcional("datos/unidades/spi.json"), traerOpcional("datos/unidades/estacional.json"), traerOpcional("datos/rios/pronostico.json"),
-      traerOpcional("datos/unidades/oleaje.json"), traerOpcional("datos/antecedentes.json"),
+      traerOpcional("datos/unidades/oleaje.json"), traerOpcional("datos/antecedentes.json"), traerOpcional("datos/geo/hidro_lugares.json"),
     ]);
+    // Glaciares y lagunas oficiales (INAIGEM, ANA) en lugar de los de OpenStreetMap; cada lugar con su número
+    const lugares = lugares0 ? lugaresOficiales(lugares0, hidro) : null;
+    (lugares?.features || []).forEach((f, i) => { f.properties.uid = i; });
     Object.assign(M.datos, { incendios, lluvia, estudios, lugares, focos, spi, estacional, rios, oleaje, antecedentes, unidades: unidades.unidades });
     M.datos.porId = Object.fromEntries(unidades.unidades.map(u => [u.id, u]));
     M.conteoLugares = {};
@@ -102,8 +106,8 @@ function asegurarDatos(){
   return promesaDatos;
 }
 function asegurarRiesgo(){
-  promesaRiesgo ??= Promise.all([traerOpcional("datos/unidades/riesgo.json"), traerOpcional("datos/peru/distritos.json")])
-    .then(([r, e]) => { M.datos.riesgo = r; M.datos.estadoDist = e; });
+  promesaRiesgo ??= Promise.all([traerOpcional("datos/unidades/riesgo.json"), traerOpcional("datos/peru/distritos.json"), traerOpcional("datos/geo/poblacion_2025.json")])
+    .then(([r, e, p]) => { M.datos.riesgo = r; M.datos.estadoDist = e; M.datos.pob2025 = p?.valores || {}; });
   return promesaRiesgo;
 }
 
@@ -258,12 +262,18 @@ async function iniciarMapa(){
       if (pc) return pintarFichaPunto("pc", pc.properties, pc.geometry.coordinates);
       const lug = pick("lugares")[0];
       if (lug){
-        const f = M.datos.lugares.features.find(x => x.properties.osm ? x.properties.osm === lug.properties.osm : x.properties.cod === lug.properties.cod);
+        const f = M.datos.lugares.features[lug.properties.uid];
         if (f) return pintarFichaLugar(f);
       }
+      const ra = pick("rios-ana")[0];
+      if (ra) return pintarFichaRioANA(ra.properties.rio);
+      const cu = visibles("cuencas-fill") ? mapa.queryRenderedFeatures(e.point, { layers: ["cuencas-fill"] })[0] : null;
+      if (cu && !visibles(`${M.nivel}-relleno`)) return pintarFichaCuenca(cu.properties.id);
       const u = visibles(`${M.nivel}-relleno`) ? mapa.queryRenderedFeatures(e.point, { layers: [`${M.nivel}-relleno`] })[0] : null;
       if (u) elegirUnidad(u.id);
     });
+
+    await agregarRiosANA(mapa, "lugares");
 
     // Los créditos quedan plegados en su botón (i): abiertos tapan el pie del mapa
     mapa.getContainer().querySelector(".maplibregl-ctrl-attrib")?.classList.remove("maplibregl-compact-show");
@@ -383,6 +393,7 @@ function setTema(k){
   M.incendios = !!t.focos;
   M.rios = t.rios !== false;
   M.emergencias = !!t.emergencias; M.pcs = !!t.pcs;
+  M.riosAna = !!t.riosAna || k === "lluvias"; M.cuencas = !!t.cuencas; aplicarRiosANA();
   M.mapa.fitBounds(t.caja, { padding: 30, duration: 1200 });
   $("#mapa-aviso").textContent = t.texto;
   aplicarLugares(); return aplicarCapa();
@@ -403,6 +414,8 @@ function pintarControles(){
   $("#lugares-ctl").innerHTML =
     `<button class="layer" aria-pressed="${M.rios}" onclick="toggleRios()"><span class="foco rio"></span>Ríos vigilados</button>`
     + `<button class="layer" aria-pressed="${M.incendios}" onclick="toggleIncendios()"><span class="foco"></span>Focos de calor</button>`
+    + `<button class="layer" aria-pressed="${!!M.riosAna}" onclick="toggleRiosANA()"><span class="foco rioana"></span>Ríos y quebradas <small class="cuenta">ANA</small></button>`
+    + `<button class="layer" aria-pressed="${!!M.cuencas}" onclick="toggleCuencas()"><span class="foco cuenca"></span>Cuencas <small class="cuenta">ANA</small></button>`
     + `<button class="layer" aria-pressed="${!!M.emergencias}" onclick="toggleEmergencias()"><span class="foco emerg"></span>Emergencias, 7 días <small class="cuenta">INDECI</small></button>`
     + `<button class="layer" aria-pressed="${!!M.pcs}" onclick="togglePcs()"><span class="foco pcrit"></span>Puntos críticos de ríos <small class="cuenta">ANA</small></button>`
     + Object.keys(ICONOS).map(k =>
@@ -461,6 +474,7 @@ function llenarBuscador(){
 async function elegirUnidad(id, lugar = null){
   const u = M.datos.porId[id]; if (!u) return;
   marcarLugar(null); turnoFicha++;
+  if (M.mapa.getLayer("rios-ana-sel")) M.mapa.setFilter("rios-ana-sel", ["==", ["get", "rio"], ""]);
   if (M.sel) for (const [n] of NIVELES) if (M.mapa.getSource(n)) M.mapa.removeFeatureState({ source: n, id: M.sel }, "sel");
   M.sel = id;
   if (u.nivel !== M.nivel){
@@ -617,7 +631,7 @@ async function pintarFicha(u, lugar){
         <tr><td>Establecimientos de salud</td><td>${entero(rs.eess)}</td><td>${entero(rs.inu.eess)}</td><td>${entero(rs.mm.eess)}</td></tr>
         <tr><td>Vías (km)</td><td>${entero(Math.round(rs.vias))}</td><td>${entero(Math.round(rs.inu.vias))}</td><td>${entero(Math.round(rs.mm.vias))}</td></tr>
         <tr><td>Superficie agrícola (ha)</td><td>${entero(rs.agri)}</td><td>${entero(rs.inu.agri)}</td><td>${entero(rs.mm.agri)}</td></tr></table></div>
-      <p class="f-fuente">Población: ${entero(rs.pob)} (censo 2017). CENEPRED, escenario de riesgo ante El Niño (SIGRID).${rs.distritos ? ` Suma de ${rs.distritos} distritos.` : ""}</p>
+      <p class="f-fuente">Población: ${pob2025(u) ? `${entero(pob2025(u))} (censo 2025); ` : ""}${entero(rs.pob)} (censo 2017). CENEPRED, escenario de riesgo ante El Niño (SIGRID).${rs.distritos ? ` Suma de ${rs.distritos} distritos.` : ""}</p>
       ${Object.keys(porTipo).length ? `<div class="f-lugares">${Object.keys(ICONOS).map(k => porTipo[k] ? `<span>${iconoHTML(k, 16)} ${porTipo[k]} ${ICONOS[k].nombre.toLowerCase()}${porTipo[k] > 1 ? "s" : ""}</span>` : "").join("")}</div>
         ${conNombre.length ? `<ul class="f-lista">${conNombre.map(f => `<li><a href="#" onclick="volarA(${f.geometry.coordinates[0]},${f.geometry.coordinates[1]});return false">${iconoHTML(f.properties.tipo, 14)} ${esc(f.properties.nombre)}</a></li>`).join("")}</ul>` : ""}
         <p class="f-fuente">Lugares de OpenStreetMap, inventario colaborativo; los oficiales son de la ANA y del INAIGEM.</p>` : ""}
@@ -669,6 +683,14 @@ function fichaEstado(u){
   return `<section class="f-sec f-estado"><h3>${dibujo("mano")} Lo que reporta el Estado hoy</h3>
     ${filas.map(([k, v, s]) => `<div class="rank-f"><span>${esc(k)} <small>${esc(s)}</small></span><span>${v}</span></div>`).join("")}
     <p class="f-fuente"><button class="enlace" onclick="ir('vivo')">Ver todo lo que reporta el Estado</button></p></section>`;
+}
+
+// Población del censo 2025: la del distrito, o la suma de sus distritos
+function pob2025(u){
+  const P = M.datos.pob2025 || {};
+  if (u.nivel === "distrito") return P[u.id] || null;
+  const s = Object.entries(P).filter(([k]) => k.startsWith(u.id)).reduce((a, [, v]) => a + v, 0);
+  return s || null;
 }
 
 function conteoNiveles(n){

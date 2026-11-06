@@ -88,7 +88,7 @@ const COLOR_MAGNITUD = { "Débil": "#E9C46A", "Moderado": "#E2913C", "Fuerte": "
 /* ════════════════════════════════════════════════════════════════════════
    NAVEGACIÓN
    ════════════════════════════════════════════════════════════════════════ */
-const VISTAS = ["home", "vivo", "mapa", "pronosticos", "monitoreo", "comparar", "boletin", "noticias", "about"];
+const VISTAS = ["home", "vivo", "mapa", "rios", "pronosticos", "monitoreo", "comparar", "boletin", "noticias", "about"];
 function ir(v){
   // Enlaces compartibles: …/#mapa y …/#pacifico (el mapa abre sobre el Pacífico)
   if (v === "pacifico"){ window.vistaInicialMapa = "pacifico"; v = "mapa"; }
@@ -102,6 +102,7 @@ function ir(v){
   if (v === "monitoreo") pintarMonitoreo();
   if (v === "comparar") pintarComparar();
   if (v === "vivo") pintarVivo();
+  if (v === "rios") pintarVistaRios();
   if (v === "pronosticos") pintarPronosticos();
   if (v === "boletin") iniciarBoletin();
   if (v === "noticias") pintarNoticias();

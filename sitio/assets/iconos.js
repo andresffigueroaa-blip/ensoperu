@@ -40,6 +40,12 @@ const ICONOS = {
     svg: `<ellipse cx="12" cy="13" rx="8.6" ry="5.6" fill="#79C2D0"/>
           <path d="M7.4 13c1.5-1.1 3-1.1 4.6 0s3.1 1.1 4.6 0" stroke="#F1FAFC" stroke-width="1.4" fill="none" stroke-linecap="round"/>`,
   },
+  // Laguna glaciar: agua turquesa al pie de un nevado
+  laguna_glaciar: {
+    nombre: "Laguna glaciar", plural: "Lagunas glaciares",
+    svg: `<path d="M5 13 10 5l3 4.5 2-2.5 4 6z" fill="#C9DCE4"/><ellipse cx="12" cy="16.5" rx="8.5" ry="4.2" fill="#3FB8C4"/>
+          <path d="M7.8 16.5c1.4-.9 2.8-.9 4.2 0s2.8.9 4.2 0" stroke="#EFFAFB" stroke-width="1.3" fill="none" stroke-linecap="round"/>`,
+  },
   // Glaciar o nevado: una montaña con la cumbre de hielo
   glaciar: {
     nombre: "Glaciar", plural: "Glaciares",

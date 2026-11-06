@@ -94,7 +94,7 @@ def main() -> int:
         log(f"sin cambios (lectura de hace {horas:.1f} h)")
         return 0
 
-    correr(python, "pipeline/run.py", "--solo", "estado,panorama", chequear=False, entorno=entorno)
+    correr(python, "pipeline/run.py", "--solo", "rios_monitoreo,estado,panorama", chequear=False, entorno=entorno)
     correr("git", "add", "sitio/datos")
     if not correr("git", "status", "--porcelain").stdout.strip():
         log("sin diferencias que subir")

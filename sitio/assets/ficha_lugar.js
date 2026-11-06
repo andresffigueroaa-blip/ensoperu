@@ -18,10 +18,11 @@ const QUE_ES = {
   embalse: "Agua guardada para riego, consumo o energía. En El Niño puede llenarse rápido en el norte y quedar corto en el sur.",
   laguna: "Cuerpo de agua natural. Las de origen glaciar pueden crecer con el deshielo.",
   glaciar: "Hielo de montaña, reserva de agua para la estación seca. El calor de El Niño acelera su pérdida.",
+  laguna_glaciar: "Laguna formada por el retroceso de un glaciar. Vigiladas porque algunas pueden desbordarse de golpe (aluviones).",
   cumbre: "Punto alto de la cordillera. La altura de la isoterma de 0 °C dice si allí cae nieve o lluvia.",
   estacion: "Punto de medición del SENAMHI. Sus datos son observaciones reales, a diferencia de los modelos de esta ficha.",
 };
-const TEMAS_LUGAR = { presa: ["agua", "inundaciones"], embalse: ["agua"], laguna: ["agua", "glaciares"], glaciar: ["glaciares", "agua"], cumbre: ["glaciares"], estacion: ["lluvias"] };
+const TEMAS_LUGAR = { laguna_glaciar: ["glaciares", "agua"], presa: ["agua", "inundaciones"], embalse: ["agua"], laguna: ["agua", "glaciares"], glaciar: ["glaciares", "agua"], cumbre: ["glaciares"], estacion: ["lluvias"] };
 
 let turnoFicha = 0;
 
@@ -31,6 +32,16 @@ function kmEntre(a, b){      // distancia aproximada en km entre [lon, lat]
 }
 const num = (v, d = 0) => v === null || v === undefined || Number.isNaN(v) ? "–" : Number(v).toFixed(d).replace(".", ",");
 
+// Distrito de un punto sin código: el del centro de distrito más cercano (aproximado)
+function distritoCercano(c){
+  let mejor = null, dm = Infinity;
+  for (const u of M.datos.unidades) if (u.nivel === "distrito" && u.centro){
+    const d = (u.centro[0] - c[0]) ** 2 + (u.centro[1] - c[1]) ** 2;
+    if (d < dm){ dm = d; mejor = u.id; }
+  }
+  return mejor;
+}
+
 function marcarLugar(coord){
   const s = M.mapa.getSource("sel-lugar");
   if (s) s.setData({ type: "FeatureCollection", features: coord ? [{ type: "Feature", properties: {}, geometry: { type: "Point", coordinates: coord } }] : [] });
@@ -39,6 +50,7 @@ function marcarLugar(coord){
 // Abre la ficha de una figurita. f: elemento de geo/lugares.geojson
 async function pintarFichaLugar(f){
   const p = f.properties, c = f.geometry.coordinates, turno = ++turnoFicha;
+  if (!p.distrito) p.distrito = distritoCercano(c);
   const d = M.datos, u = d.porId[p.distrito];
   const idProv = p.distrito.slice(0, 4), idReg = p.distrito.slice(0, 2);
   const titulo = p.nombre || `${ICONOS[p.tipo].nombre} sin nombre`;
@@ -55,6 +67,8 @@ async function pintarFichaLugar(f){
   } else {
     fila("Tipo", p.volcan ? "Volcán" : ICONOS[p.tipo].nombre); fila("Operador", p.operador); fila("Altura del muro", p.altura ? `${p.altura} m` : null);
     fila("Volumen", p.capacidad); fila("Río", p.rio); fila("Uso", p.uso); fila("También llamado", p.alias);
+    fila("Cordillera", p.cordillera); fila("Área", p.area_km2 ? `${String(p.area_km2).replace(".", ",")} km²` : null);
+    fila("Altitud mínima y máxima", p.alt_min ? `${entero(p.alt_min)} a ${entero(p.alt_max)} m` : null); fila("Cuenca", p.cuenca);
   }
   fila("Altitud", p.altitud ? `${p.altitud} m` : null);
   fila("Coordenadas", `${Math.abs(c[1]).toFixed(3).replace(".", ",")}° S, ${Math.abs(c[0]).toFixed(3).replace(".", ",")}° O`);
@@ -90,7 +104,7 @@ async function pintarFichaLugar(f){
     </div>
     <div id="fl-wiki"></div>
     <section class="f-sec"><h3>${dibujo("libro")} Datos del lugar</h3><dl class="f-grid">${filas.join("")}</dl>
-      ${p.tipo === "estacion" ? `<p class="f-fuente">Red de estaciones del SENAMHI.</p>` : `<p class="f-fuente">OpenStreetMap, inventario colaborativo; lo oficial está en la ANA y el INAIGEM.</p>`}</section>
+      <p class="f-fuente">${p.tipo === "estacion" ? "Red de estaciones del SENAMHI." : p.fuente ? `${esc(p.fuente)}.` : "OpenStreetMap, inventario colaborativo; lo oficial está en la ANA y el INAIGEM."}</p></section>
     <section class="f-sec" id="fl-clima"><h3>${dibujo("lluvia")} Tiempo en este punto</h3><p class="f-nota">Consultando…</p></section>
     ${["presa", "embalse", "estacion"].includes(p.tipo) && (p.tipo !== "estacion" || p.clase === "H") ? `<section class="f-sec" id="fl-caudal"><h3>${dibujo("rio")} Caudal del río en este punto</h3><p class="f-nota">Consultando…</p></section>` : ""}
     ${anaEmb && anaEmb.km <= 12 ? `<section class="f-sec"><h3>${dibujo("embalse")} Agua almacenada hoy</h3>

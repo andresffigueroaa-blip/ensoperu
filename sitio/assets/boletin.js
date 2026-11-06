@@ -52,7 +52,7 @@ const seccion = (n, titulo, cuerpo) => `<section class="bol-sec"><h2><span class
 const kpis = xs => `<dl class="bol-kpis">${xs.filter(Boolean).map(([n, v, d]) => `<div><dt>${esc(n)}</dt><dd>${v}</dd>${d ? `<small>${esc(d)}</small>` : ""}</div>`).join("")}</dl>`;
 
 async function iniciarBoletin(){
-  await asegurarDatos(); await asegurarRiesgo();
+  await asegurarDatos(); await asegurarRiesgo(); await asegurarRiosANA();
   const sel = $("#bol-region");
   if (!sel.options.length){
     sel.innerHTML = `<option value="PE">Todo el Perú</option>` + M.datos.unidades.filter(u => u.nivel === "region")
@@ -191,6 +191,9 @@ function boletinRegional(rid, ctx){
   const riosAna = (O.ana_rios?.estaciones || []).filter(e => enRegion(e.lugar));
   const riosSen = (O.phisis?.estaciones || []).filter(e => enRegion(e.lugar));
   const sobre = [...riosAna.filter(e => e.estado !== "normal"), ...riosSen.filter(e => e.nivel !== "normal")];
+  // Ríos de la ANA en la región con estaciones, primero los que no están normales
+  const riosANA = Object.entries(H.fichas || {}).filter(([k, f]) => f.regiones.includes(rid) && estadoDe(k) !== "sin_datos")
+    .sort((a, b) => (ORDEN_EST[estadoDe(b[0])] - ORDEN_EST[estadoDe(a[0])]) || b[1].personas - a[1].personas).slice(0, 8);
   if (sobre.length) frases.push(`${sobre.length} estaciones de ríos están sobre su umbral.`);
   if (riosG.some(r => r.nivel !== "normal")) frases.push(`Crecida inusual pronosticada en ${riosG.filter(r => r.nivel !== "normal").map(r => r.nombre).join(", ")} (GloFAS).`);
   if (rj.c && P.mar !== null && P.mar !== undefined) frases.push(`El mar frente a la región está ${sg(P.mar)} °C sobre lo normal.`);
@@ -235,8 +238,9 @@ function boletinRegional(rid, ctx){
       <div><h3>Ríos</h3>
         ${riosG.map(r => `<div class="rank-f"><span><b>${esc(r.nombre)}</b> <small>${esc(r.lugar)}, pico ${entero(Math.round(r.pico))} m³/s el ${fecha(r.fecha_pico)}</small></span><span>${chipNivel(r.nivel)}</span></div>`).join("")}
         ${sobre.map(e => `<div class="rank-f"><span><b>${esc(e.rio ? "Río " + e.rio : e.estacion)}</b> <small>${esc(e.estacion || "")}</small></span><span class="chip alto">${e.estiaje ? "Nivel bajo" : "Sobre umbral"}</span></div>`).join("")}
-        ${!riosG.length && !sobre.length ? `<p class="f-nota">Sin ríos vigilados con crecida en la región.</p>` : ""}
-        <p class="f-fuente">GloFAS (pronóstico), ANA y SENAMHI (observado).</p></div>
+        ${riosANA.length ? riosANA.map(([k, f]) => `<div class="rank-f"><span><b>${esc(f.nombre)}</b> <small>${esc(H.mon.rios[k]?.motivos?.[0] || "estaciones dentro de lo normal")}${f.personas ? `; ${entero(f.personas)} personas junto al cauce` : ""}</small></span><span class="chip ${ESTADO_RIO[estadoDe(k)][2]}">${ESTADO_RIO[estadoDe(k)][0]}</span></div>`).join("") : ""}
+        ${!riosG.length && !sobre.length && !riosANA.length ? `<p class="f-nota">Sin ríos vigilados con crecida en la región.</p>` : ""}
+        <p class="f-fuente">GloFAS (pronóstico), ANA y SENAMHI (observado). Seguimiento completo en la vista «Ríos».</p></div>
       <div>${embalses.length ? `<h3>Embalses</h3>${barrasH(embalses.map(e => ({ n: e.nombre, v: e.porcentaje, txt: `${String(e.porcentaje).replace(".", ",")} %`, c: "#5FA8D3" })), 100)}<p class="f-fuente">ANA, volumen útil almacenado.</p>` : ""}
         ${fc ? `<h3>Focos de calor por día, último mes</h3>${focosDia}<p class="f-fuente">NASA FIRMS.</p>` : ""}</div>
     </div>
