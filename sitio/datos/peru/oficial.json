@@ -1,6 +1,6 @@
 {
   "_": "Generado por pipeline/fuentes/peru_oficial.py. Datos oficiales tal como se publican.",
-  "actualizado": "2026-11-06T17:31:02Z",
+  "actualizado": "2026-11-06T17:53:05Z",
   "fallas": [
     "fenomeno",
     "ana_rios",
@@ -260,20 +260,20 @@
       },
       {
         "fecha": "2026-11-04 13:20",
-        "peligro": "Vientos fuertes",
-        "distrito": "060106",
-        "lugar": "Jesus, Cajamarca, Cajamarca",
-        "hechos": "Se registraron vientos fuertes que causaron daños materiales (vivienda) en el sector San Isidro, distrito de Jesús, provincia de Cajamarca",
-        "pdf": "https://coen.indeci.gob.pe/api/v2/mer/files/view?key=mer/2026/10/1793923118140.pdf",
-        "sinpad": null
-      },
-      {
-        "fecha": "2026-11-04 13:20",
         "peligro": "Incendios urbanos",
         "distrito": "030501",
         "lugar": "Tambobamba, Cotabambas, Apurimac",
         "hechos": "Se registró un incendio urbano que ocasionó daños materiales (vivienda) en el centro poblado de Ccahuaccahua, distrito de Tambobamba, provincia de Cotabambas",
         "pdf": "https://coen.indeci.gob.pe/api/v2/mer/files/view?key=mer/2026/10/1793939735515.pdf",
+        "sinpad": null
+      },
+      {
+        "fecha": "2026-11-04 13:20",
+        "peligro": "Vientos fuertes",
+        "distrito": "060106",
+        "lugar": "Jesus, Cajamarca, Cajamarca",
+        "hechos": "Se registraron vientos fuertes que causaron daños materiales (vivienda) en el sector San Isidro, distrito de Jesús, provincia de Cajamarca",
+        "pdf": "https://coen.indeci.gob.pe/api/v2/mer/files/view?key=mer/2026/10/1793923118140.pdf",
         "sinpad": null
       },
       {
@@ -288,19 +288,19 @@
       {
         "fecha": "2026-11-04 13:00",
         "peligro": "Incendios forestales",
-        "distrito": "090103",
-        "lugar": "Acoria, Huancavelica, Huancavelica",
-        "hechos": "Se registró un incendio forestal que causó daños a sectores diversos (cobertura natural y producción agrícola) en la localidad de Ccocha distrito de Acoria, provincia de Huancavelica.",
-        "pdf": "https://coen.indeci.gob.pe/api/v2/mer/files/view?key=mer/2026/10/1793879349317.pdf",
+        "distrito": "040114",
+        "lugar": "Polobaya, Arequipa, Arequipa",
+        "hechos": "Se registró un incendio forestal que causó daños a sectores diversos (cobertura natural) en la zona de Poroto, distrito de Polobaya, provincia de Arequipa",
+        "pdf": "https://coen.indeci.gob.pe/api/v2/mer/files/view?key=mer/2026/10/1793843172697.pdf",
         "sinpad": null
       },
       {
         "fecha": "2026-11-04 13:00",
         "peligro": "Incendios forestales",
-        "distrito": "040114",
-        "lugar": "Polobaya, Arequipa, Arequipa",
-        "hechos": "Se registró un incendio forestal que causó daños a sectores diversos (cobertura natural) en la zona de Poroto, distrito de Polobaya, provincia de Arequipa",
-        "pdf": "https://coen.indeci.gob.pe/api/v2/mer/files/view?key=mer/2026/10/1793843172697.pdf",
+        "distrito": "090103",
+        "lugar": "Acoria, Huancavelica, Huancavelica",
+        "hechos": "Se registró un incendio forestal que causó daños a sectores diversos (cobertura natural y producción agrícola) en la localidad de Ccocha distrito de Acoria, provincia de Huancavelica.",
+        "pdf": "https://coen.indeci.gob.pe/api/v2/mer/files/view?key=mer/2026/10/1793879349317.pdf",
         "sinpad": null
       },
       {
@@ -333,10 +333,10 @@
       {
         "fecha": "2026-11-04 07:00",
         "peligro": "Inundaciones por saturación del suelo para drenaje (pluvial)",
-        "distrito": "150142",
-        "lugar": "Villa El Salvador, Lima, Lima",
-        "hechos": "4/11/2026 07:00 horas A consecuencia de las lloviznas persistentes, se registró una inundación por saturación del suelo para drenaje (pluvial) en la Panamericana Sur Km 17.5, distrito de Villa El Salvador, provincia de Lima. 4/11/2026 21:00 horas Se registraron lloviznas persistentes durante varias horas de la tarde, que ocasionó el colapso de buzones del sistema de alcantarillado, como consecuenc",
-        "pdf": "https://coen.indeci.gob.pe/api/v2/mer/files/view?key=mer/2026/10/1793963845253.pdf",
+        "distrito": "150143",
+        "lugar": "Villa Maria Del Triunfo, Lima, Lima",
+        "hechos": "A consecuencia de las lloviznas persistentes, se registró una inundación por saturación del suelo para drenaje (pluvial) en la Av. Pachacútec con la Av. 26 de noviembre, distrito de Villa María del Triunfo, provincia de Lima.",
+        "pdf": "https://coen.indeci.gob.pe/api/v2/mer/files/view?key=mer/2026/10/1793963411806.pdf",
         "sinpad": null
       },
       {
@@ -351,10 +351,10 @@
       {
         "fecha": "2026-11-04 07:00",
         "peligro": "Inundaciones por saturación del suelo para drenaje (pluvial)",
-        "distrito": "150143",
-        "lugar": "Villa Maria Del Triunfo, Lima, Lima",
-        "hechos": "A consecuencia de las lloviznas persistentes, se registró una inundación por saturación del suelo para drenaje (pluvial) en la Av. Pachacútec con la Av. 26 de noviembre, distrito de Villa María del Triunfo, provincia de Lima.",
-        "pdf": "https://coen.indeci.gob.pe/api/v2/mer/files/view?key=mer/2026/10/1793963411806.pdf",
+        "distrito": "150142",
+        "lugar": "Villa El Salvador, Lima, Lima",
+        "hechos": "4/11/2026 07:00 horas A consecuencia de las lloviznas persistentes, se registró una inundación por saturación del suelo para drenaje (pluvial) en la Panamericana Sur Km 17.5, distrito de Villa El Salvador, provincia de Lima. 4/11/2026 21:00 horas Se registraron lloviznas persistentes durante varias horas de la tarde, que ocasionó el colapso de buzones del sistema de alcantarillado, como consecuenc",
+        "pdf": "https://coen.indeci.gob.pe/api/v2/mer/files/view?key=mer/2026/10/1793963845253.pdf",
         "sinpad": null
       },
       {
@@ -423,10 +423,15 @@
     ],
     "sin_cruce": 1,
     "url": "https://coen.indeci.gob.pe/mer/",
-    "leido": "2026-11-06T17:32:34Z"
+    "leido": "2026-11-06T17:54:37Z"
   },
   "indeci_rss": {
     "reportes": [
+      {
+        "titulo": "BOLETÍN INFORMATIVO DE AVISO DE CORTO PLAZO ANTE LLUVIAS INTENSAS N° 309-2026-INDECI/COEN",
+        "enlace": "https://portal.indeci.gob.pe/emergencias/boletin-informativo-de-aviso-de-corto-plazo-ante-lluvias-intensas-n-309-2026-indeci-coen/",
+        "fecha": "2026-11-06T17:20"
+      },
       {
         "titulo": "REPORTE COMPLEMENTARIO N.° 15568 – 6/11/2026 / COEN – INDECI / 10:50 HORAS (Reporte N.° 2) LLUVIAS INTENSAS EN EL DISTRITO DE LAGUNAS – PIURA",
         "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-14810-23-10-2026-coen-indeci-1320-horas-reporte-n-1-lluvias-intensas-en-el-distrito-de-lagunas-piura/",
@@ -491,15 +496,10 @@
         "titulo": "REPORTE COMPLEMENTARIO N.° 15557 – 5/11/2026 / COEN – INDECI / 23:20 HORAS (Reporte N.º 3) INCENDIO FORESTAL EN EL DISTRITO DE SANTIAGO DE PISCHA – AYACUCHO",
         "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-15435-3-11-2026-coen-indeci-1900-horas-reporte-n-o-1-incendio-forestal-en-el-distrito-de-santiago-de-pischa-ayacucho/",
         "fecha": "2026-11-06T05:21"
-      },
-      {
-        "titulo": "REPORTE COMPLEMENTARIO N.º 15556 – 5/11/2026 / COEN – INDECI / 23:15 HORAS (Reporte N.º 1) INCENDIO URBANO EN EL DISTRITO DE ATE – LIMA",
-        "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-o-15556-5-11-2026-coen-indeci-2315-horas-reporte-n-o-1-incendio-urbano-en-el-distrito-de-ate-lima/",
-        "fecha": "2026-11-06T05:20"
       }
     ],
     "url": "https://portal.indeci.gob.pe/emergencias/",
-    "leido": "2026-11-06T17:32:35Z"
+    "leido": "2026-11-06T17:54:38Z"
   },
   "escenario": {
     "vigente": true,
@@ -2001,7 +2001,7 @@
       }
     },
     "url": "https://sigrid.cenepred.gob.pe/sigridv3/escenario-aviso",
-    "leido": "2026-11-06T17:32:39Z"
+    "leido": "2026-11-06T17:54:42Z"
   },
   "quebradas": {
     "fecha": "2026-11-06",
@@ -3009,7 +3009,7 @@
     },
     "sin_cruce": 0,
     "url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico",
-    "leido": "2026-11-06T17:32:46Z"
+    "leido": "2026-11-06T17:54:46Z"
   },
   "hidro": {
     "avisos": [
@@ -3051,7 +3051,7 @@
       }
     ],
     "url": "https://www.senamhi.gob.pe/?p=aviso-hidrologico",
-    "leido": "2026-11-06T17:32:47Z"
+    "leido": "2026-11-06T17:54:50Z"
   },
   "ana_rios": {
     "estaciones": [
@@ -17577,7 +17577,7 @@
       }
     },
     "url": "https://visor.geoperu.gob.pe/",
-    "leido": "2026-11-06T17:38:49Z"
+    "leido": "2026-11-06T18:00:52Z"
   },
   "agua": {
     "total": 243,
@@ -18527,7 +18527,7 @@
       }
     },
     "url": "https://www.sunass.gob.pe/",
-    "leido": "2026-11-06T17:38:50Z"
+    "leido": "2026-11-06T18:00:53Z"
   },
   "incendios": {
     "total": 17,
@@ -18687,7 +18687,7 @@
       }
     ],
     "url": "https://geo.serfor.gob.pe/visor/",
-    "leido": "2026-11-06T17:38:51Z"
+    "leido": "2026-11-06T18:00:54Z"
   },
   "phisis": {
     "estaciones": [
@@ -20919,7 +20919,7 @@
       "clasificacion": 99.88
     },
     "url": "http://met.igp.gob.pe/variabclim/",
-    "leido": "2026-11-06T17:41:54Z"
+    "leido": "2026-11-06T18:03:56Z"
   },
   "dhn": {
     "generado": "2026-11-06T16:10:08Z",
@@ -21431,7 +21431,7 @@
         }
       ]
     },
-    "leido": "2026-11-06T17:41:55Z"
+    "leido": "2026-11-06T18:03:57Z"
   },
   "inaigem": {
     "estaciones": [
@@ -21469,7 +21469,7 @@
       }
     ],
     "url": "https://www.inaigem.gob.pe/",
-    "leido": "2026-11-06T17:41:55Z"
+    "leido": "2026-11-06T18:03:57Z"
   },
   "enfen_docs": {
     "docs": [
