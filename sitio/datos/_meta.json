@@ -53,8 +53,8 @@
     },
     "estado": {
       "estado": "ok",
-      "corrida": "2026-11-06T17:23:22Z",
-      "actualizado": "2026-11-06T17:23:22Z",
+      "corrida": "2026-11-06T17:24:42Z",
+      "actualizado": "2026-11-06T17:24:42Z",
       "comunicado": "N° 19-2026",
       "ultimo_dato": "2026-10-30",
       "aviso": null
@@ -115,23 +115,21 @@
       "fuente": "NASA FIRMS, VIIRS NOAA-20"
     },
     "senamhi": {
-      "estado": "sin_cambios",
-      "corrida": "2026-11-06T17:12:13Z",
-      "actualizado": "2026-11-06T17:12:13Z",
+      "estado": "ok",
+      "corrida": "2026-11-06T17:23:52Z",
+      "actualizado": "2026-11-06T17:23:52Z",
       "ultimo_dato": "2026-11-06",
       "avisos": 4,
       "rojos": 2,
-      "fuente": "SENAMHI, avisos meteorológicos",
-      "aviso": "SENAMHI sin respuesta desde este equipo"
+      "fuente": "SENAMHI, avisos meteorológicos"
     },
     "enfen": {
       "estado": "sin_cambios",
-      "corrida": "2026-11-06T17:11:12Z",
-      "actualizado": "2026-11-06T17:11:12Z",
+      "corrida": "2026-11-06T17:23:59Z",
+      "actualizado": "2026-11-06T17:23:59Z",
       "ultimo_dato": "2026-10-30",
       "comunicado": "N° 19-2026",
-      "fuente": "ENFEN, comunicados oficiales",
-      "aviso": "portal del ENFEN sin respuesta desde este equipo"
+      "fuente": "ENFEN, comunicados oficiales"
     },
     "oleaje": {
       "estado": "ok",
@@ -142,8 +140,8 @@
     },
     "noticias": {
       "estado": "ok",
-      "corrida": "2026-11-06T17:12:21Z",
-      "actualizado": "2026-11-06T17:12:21Z",
+      "corrida": "2026-11-06T17:24:39Z",
+      "actualizado": "2026-11-06T17:24:39Z",
       "ultimo_dato": "2026-11-06",
       "fuente": "Google Noticias (RSS), titulares"
     },
@@ -188,16 +186,16 @@
     },
     "panorama": {
       "estado": "ok",
-      "corrida": "2026-11-06T17:23:22Z",
-      "actualizado": "2026-11-06T17:23:22Z",
+      "corrida": "2026-11-06T17:24:42Z",
+      "actualizado": "2026-11-06T17:24:42Z",
       "ultimo_dato": "2026-11-06"
     },
     "peru_oficial": {
       "estado": "ok",
-      "corrida": "2026-11-06T17:23:22Z",
-      "actualizado": "2026-11-06T17:23:22Z",
+      "corrida": "2026-11-06T17:24:27Z",
+      "actualizado": "2026-11-06T17:24:27Z",
       "ultimo_dato": "2026-11-06",
-      "aviso": "fallaron: fenomeno, ana_rios, ana_embalses, ana_pc, emergencia, phisis, prono, enfen_docs"
+      "aviso": null
     },
     "internacional": {
       "estado": "ok",
@@ -207,5 +205,5 @@
       "aviso": null
     }
   },
-  "generado": "2026-11-06T17:23:22Z"
+  "generado": "2026-11-06T17:24:42Z"
 }
