@@ -1,6 +1,6 @@
 {
   "_": "Generado por pipeline/fuentes/peru_oficial.py. Datos oficiales tal como se publican.",
-  "actualizado": "2026-11-06T19:25:41Z",
+  "actualizado": "2026-11-06T19:32:41Z",
   "fallas": [],
   "fenomeno": {
     "fecha": "30 de octubre del 2026",
@@ -205,20 +205,20 @@
       },
       {
         "fecha": "2026-11-04 15:30",
-        "peligro": "Vientos fuertes",
-        "distrito": "211204",
-        "lugar": "Patambuco, Sandia, Puno",
-        "hechos": "Se registraron vientos fuertes que causaron daños materiales (viviendas) en el sector de Cupuly, centro poblado de Sihuasihua, distrito de Patambuco, provincia de Sandia",
-        "pdf": "https://coen.indeci.gob.pe/api/v2/mer/files/view?key=mer/2026/10/1793939643455.pdf",
-        "sinpad": null
-      },
-      {
-        "fecha": "2026-11-04 15:30",
         "peligro": "Incendios forestales",
         "distrito": "030104",
         "lugar": "Curahuasi, Abancay, Apurimac",
         "hechos": "Se registra un incendio forestal que ocasiona daños a sectores diversos (cobertura natural), en el sector Ccoripampa, distrito de Curahuasi, provincia de Abancay.",
         "pdf": "https://coen.indeci.gob.pe/api/v2/mer/files/view?key=mer/2026/10/1793884777165.pdf",
+        "sinpad": null
+      },
+      {
+        "fecha": "2026-11-04 15:30",
+        "peligro": "Vientos fuertes",
+        "distrito": "211204",
+        "lugar": "Patambuco, Sandia, Puno",
+        "hechos": "Se registraron vientos fuertes que causaron daños materiales (viviendas) en el sector de Cupuly, centro poblado de Sihuasihua, distrito de Patambuco, provincia de Sandia",
+        "pdf": "https://coen.indeci.gob.pe/api/v2/mer/files/view?key=mer/2026/10/1793939643455.pdf",
         "sinpad": null
       },
       {
@@ -269,15 +269,6 @@
       {
         "fecha": "2026-11-04 13:00",
         "peligro": "Incendios forestales",
-        "distrito": "090103",
-        "lugar": "Acoria, Huancavelica, Huancavelica",
-        "hechos": "Se registró un incendio forestal que causó daños a sectores diversos (cobertura natural y producción agrícola) en la localidad de Ccocha distrito de Acoria, provincia de Huancavelica.",
-        "pdf": "https://coen.indeci.gob.pe/api/v2/mer/files/view?key=mer/2026/10/1793879349317.pdf",
-        "sinpad": null
-      },
-      {
-        "fecha": "2026-11-04 13:00",
-        "peligro": "Incendios forestales",
         "distrito": "050405",
         "lugar": "Luricocha, Huanta, Ayacucho",
         "hechos": "Se registró un incendio forestal que causó daños a sectores diversos (cobertura natural) en la localidad de Maccaira, distrito de Luricocha, provincia Huanta.",
@@ -291,6 +282,15 @@
         "lugar": "Polobaya, Arequipa, Arequipa",
         "hechos": "Se registró un incendio forestal que causó daños a sectores diversos (cobertura natural) en la zona de Poroto, distrito de Polobaya, provincia de Arequipa",
         "pdf": "https://coen.indeci.gob.pe/api/v2/mer/files/view?key=mer/2026/10/1793843172697.pdf",
+        "sinpad": null
+      },
+      {
+        "fecha": "2026-11-04 13:00",
+        "peligro": "Incendios forestales",
+        "distrito": "090103",
+        "lugar": "Acoria, Huancavelica, Huancavelica",
+        "hechos": "Se registró un incendio forestal que causó daños a sectores diversos (cobertura natural y producción agrícola) en la localidad de Ccocha distrito de Acoria, provincia de Huancavelica.",
+        "pdf": "https://coen.indeci.gob.pe/api/v2/mer/files/view?key=mer/2026/10/1793879349317.pdf",
         "sinpad": null
       },
       {
@@ -323,6 +323,15 @@
       {
         "fecha": "2026-11-04 07:00",
         "peligro": "Inundaciones por saturación del suelo para drenaje (pluvial)",
+        "distrito": "150143",
+        "lugar": "Villa Maria Del Triunfo, Lima, Lima",
+        "hechos": "A consecuencia de las lloviznas persistentes, se registró una inundación por saturación del suelo para drenaje (pluvial) en la Av. Pachacútec con la Av. 26 de noviembre, distrito de Villa María del Triunfo, provincia de Lima.",
+        "pdf": "https://coen.indeci.gob.pe/api/v2/mer/files/view?key=mer/2026/10/1793963411806.pdf",
+        "sinpad": null
+      },
+      {
+        "fecha": "2026-11-04 07:00",
+        "peligro": "Inundaciones por saturación del suelo para drenaje (pluvial)",
         "distrito": "150133",
         "lugar": "San Juan De Miraflores, Lima, Lima",
         "hechos": "A consecuencia de las lloviznas persistentes, se registró una inundación por saturación del suelo para drenaje (pluvial), que causó daños materiales (vivienda, local público e infraestructura de transporte) en la Av. Los Héroes, distrito de Villa El Salvador, provincia de Lima.",
@@ -336,15 +345,6 @@
         "lugar": "Villa El Salvador, Lima, Lima",
         "hechos": "4/11/2026 07:00 horas A consecuencia de las lloviznas persistentes, se registró una inundación por saturación del suelo para drenaje (pluvial) en la Panamericana Sur Km 17.5, distrito de Villa El Salvador, provincia de Lima. 4/11/2026 21:00 horas Se registraron lloviznas persistentes durante varias horas de la tarde, que ocasionó el colapso de buzones del sistema de alcantarillado, como consecuenc",
         "pdf": "https://coen.indeci.gob.pe/api/v2/mer/files/view?key=mer/2026/10/1793963845253.pdf",
-        "sinpad": null
-      },
-      {
-        "fecha": "2026-11-04 07:00",
-        "peligro": "Inundaciones por saturación del suelo para drenaje (pluvial)",
-        "distrito": "150143",
-        "lugar": "Villa Maria Del Triunfo, Lima, Lima",
-        "hechos": "A consecuencia de las lloviznas persistentes, se registró una inundación por saturación del suelo para drenaje (pluvial) en la Av. Pachacútec con la Av. 26 de noviembre, distrito de Villa María del Triunfo, provincia de Lima.",
-        "pdf": "https://coen.indeci.gob.pe/api/v2/mer/files/view?key=mer/2026/10/1793963411806.pdf",
         "sinpad": null
       },
       {
@@ -413,7 +413,7 @@
     ],
     "sin_cruce": 1,
     "url": "https://coen.indeci.gob.pe/mer/",
-    "leido": "2026-11-06T19:25:43Z"
+    "leido": "2026-11-06T19:32:42Z"
   },
   "indeci_rss": {
     "reportes": [
@@ -489,7 +489,7 @@
       }
     ],
     "url": "https://portal.indeci.gob.pe/emergencias/",
-    "leido": "2026-11-06T19:25:44Z"
+    "leido": "2026-11-06T19:32:43Z"
   },
   "escenario": {
     "vigente": true,
@@ -1974,7 +1974,7 @@
       }
     },
     "url": "https://sigrid.cenepred.gob.pe/sigridv3/escenario-aviso",
-    "leido": "2026-11-06T19:25:50Z"
+    "leido": "2026-11-06T19:32:47Z"
   },
   "quebradas": {
     "fecha": "2026-11-06",
@@ -2982,7 +2982,7 @@
     },
     "sin_cruce": 0,
     "url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico",
-    "leido": "2026-11-06T19:25:55Z"
+    "leido": "2026-11-06T19:32:51Z"
   },
   "hidro": {
     "avisos": [
@@ -3024,7 +3024,7 @@
       }
     ],
     "url": "https://www.senamhi.gob.pe/?p=aviso-hidrologico",
-    "leido": "2026-11-06T19:25:56Z"
+    "leido": "2026-11-06T19:32:52Z"
   },
   "ana_rios": {
     "estaciones": [
@@ -17610,7 +17610,7 @@
       }
     },
     "url": "https://visor.geoperu.gob.pe/",
-    "leido": "2026-11-06T19:25:57Z"
+    "leido": "2026-11-06T19:32:53Z"
   },
   "agua": {
     "total": 66,
@@ -18484,7 +18484,7 @@
       }
     },
     "url": "https://www.sunass.gob.pe/",
-    "leido": "2026-11-06T19:25:59Z"
+    "leido": "2026-11-06T19:32:55Z"
   },
   "incendios": {
     "total": 19,
@@ -18662,7 +18662,7 @@
       }
     ],
     "url": "https://geo.serfor.gob.pe/visor/",
-    "leido": "2026-11-06T19:26:00Z"
+    "leido": "2026-11-06T19:32:56Z"
   },
   "phisis": {
     "estaciones": [
@@ -20892,7 +20892,7 @@
       "clasificacion": 99.88
     },
     "url": "http://met.igp.gob.pe/variabclim/",
-    "leido": "2026-11-06T19:26:02Z"
+    "leido": "2026-11-06T19:32:57Z"
   },
   "dhn": {
     "generado": "2026-11-06T16:10:08Z",
@@ -21404,7 +21404,7 @@
         }
       ]
     },
-    "leido": "2026-11-06T19:26:03Z"
+    "leido": "2026-11-06T19:32:58Z"
   },
   "inaigem": {
     "estaciones": [
@@ -21442,7 +21442,7 @@
       }
     ],
     "url": "https://www.inaigem.gob.pe/",
-    "leido": "2026-11-06T19:26:03Z"
+    "leido": "2026-11-06T19:32:58Z"
   },
   "enfen_docs": {
     "docs": [
