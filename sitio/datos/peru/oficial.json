@@ -1,6 +1,6 @@
 {
   "_": "Generado por pipeline/fuentes/peru_oficial.py. Datos oficiales tal como se publican.",
-  "actualizado": "2026-11-06T18:38:52Z",
+  "actualizado": "2026-11-06T18:52:13Z",
   "fallas": [],
   "fenomeno": {
     "fecha": "30 de octubre del 2026",
@@ -413,7 +413,7 @@
     ],
     "sin_cruce": 1,
     "url": "https://coen.indeci.gob.pe/mer/",
-    "leido": "2026-11-06T18:38:53Z"
+    "leido": "2026-11-06T18:52:14Z"
   },
   "indeci_rss": {
     "reportes": [
@@ -489,7 +489,7 @@
       }
     ],
     "url": "https://portal.indeci.gob.pe/emergencias/",
-    "leido": "2026-11-06T18:38:54Z"
+    "leido": "2026-11-06T18:52:19Z"
   },
   "escenario": {
     "vigente": true,
@@ -1991,7 +1991,7 @@
       }
     },
     "url": "https://sigrid.cenepred.gob.pe/sigridv3/escenario-aviso",
-    "leido": "2026-11-06T18:38:58Z"
+    "leido": "2026-11-06T18:52:22Z"
   },
   "quebradas": {
     "fecha": "2026-11-06",
@@ -2999,7 +2999,7 @@
     },
     "sin_cruce": 0,
     "url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico",
-    "leido": "2026-11-06T18:39:01Z"
+    "leido": "2026-11-06T18:52:26Z"
   },
   "hidro": {
     "avisos": [
@@ -3041,7 +3041,7 @@
       }
     ],
     "url": "https://www.senamhi.gob.pe/?p=aviso-hidrologico",
-    "leido": "2026-11-06T18:39:02Z"
+    "leido": "2026-11-06T18:52:26Z"
   },
   "ana_rios": {
     "estaciones": [
@@ -17563,11 +17563,11 @@
       }
     },
     "url": "https://visor.geoperu.gob.pe/",
-    "leido": "2026-11-06T18:39:03Z"
+    "leido": "2026-11-06T18:52:28Z"
   },
   "agua": {
-    "total": 245,
-    "conexiones": 1358585,
+    "total": 246,
+    "conexiones": 1358685,
     "cortes": [
       {
         "eps": "SEDAPAL",
@@ -18396,8 +18396,8 @@
         "conexiones": 164
       },
       "080104": {
-        "cortes": 1,
-        "conexiones": 5000
+        "cortes": 2,
+        "conexiones": 5100
       },
       "150108": {
         "cortes": 1,
@@ -18513,7 +18513,7 @@
       }
     },
     "url": "https://www.sunass.gob.pe/",
-    "leido": "2026-11-06T18:39:04Z"
+    "leido": "2026-11-06T18:52:29Z"
   },
   "incendios": {
     "total": 17,
@@ -18673,7 +18673,7 @@
       }
     ],
     "url": "https://geo.serfor.gob.pe/visor/",
-    "leido": "2026-11-06T18:39:05Z"
+    "leido": "2026-11-06T18:52:30Z"
   },
   "phisis": {
     "estaciones": [
@@ -20903,7 +20903,7 @@
       "clasificacion": 99.88
     },
     "url": "http://met.igp.gob.pe/variabclim/",
-    "leido": "2026-11-06T18:39:07Z"
+    "leido": "2026-11-06T18:52:31Z"
   },
   "dhn": {
     "generado": "2026-11-06T16:10:08Z",
@@ -21415,7 +21415,7 @@
         }
       ]
     },
-    "leido": "2026-11-06T18:39:08Z"
+    "leido": "2026-11-06T18:52:32Z"
   },
   "inaigem": {
     "estaciones": [
@@ -21453,7 +21453,7 @@
       }
     ],
     "url": "https://www.inaigem.gob.pe/",
-    "leido": "2026-11-06T18:39:08Z"
+    "leido": "2026-11-06T18:52:32Z"
   },
   "enfen_docs": {
     "docs": [
