@@ -56,7 +56,7 @@ def correr(*cmd, cwd=CLON, chequear=True, entorno=None) -> subprocess.CompletedP
 def _sin_horas(x):
     """Quita las horas de lectura, que cambian en cada corrida aunque el dato no cambie."""
     if isinstance(x, dict):
-        return {k: _sin_horas(v) for k, v in x.items() if k not in ("leido", "actualizado", "atrasado")}
+        return {k: _sin_horas(v) for k, v in x.items() if k not in ("leido", "actualizado", "atrasado", "fallas")}
     if isinstance(x, list):
         return [_sin_horas(v) for v in x]
     return x

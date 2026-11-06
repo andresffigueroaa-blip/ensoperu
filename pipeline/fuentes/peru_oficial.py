@@ -441,7 +441,11 @@ def ejecutar(estado: dict) -> dict:
             log(f"  {clave}: {type(e).__name__} {str(e)[:120]}")
             salida["fallas"].append(clave)
             if clave in previo:
-                salida[clave] = {**previo[clave], "atrasado": True}
+                # Si el robot del Perú lo leyó hace poco, el dato sigue vigente: no se marca atrasado.
+                # GitHub (fuera del Perú) no alcanza al SENAMHI, la ANA ni el ENFEN.
+                leido = previo[clave].get("leido") or "2000-01-01T00:00:00Z"
+                horas = (dt.datetime.now(dt.timezone.utc) - dt.datetime.fromisoformat(leido.replace("Z", "+00:00"))).total_seconds() / 3600
+                salida[clave] = {**previo[clave], "atrasado": horas > 3}
     if len(salida["fallas"]) > len(BLOQUES) // 2:
         raise ErrorFuente(f"más de la mitad de los servicios fallaron: {salida['fallas']}")
 
