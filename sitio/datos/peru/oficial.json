@@ -1,6 +1,6 @@
 {
   "_": "Generado por pipeline/fuentes/peru_oficial.py. Datos oficiales tal como se publican.",
-  "actualizado": "2026-11-06T19:32:41Z",
+  "actualizado": "2026-11-06T19:42:14Z",
   "fallas": [],
   "fenomeno": {
     "fecha": "30 de octubre del 2026",
@@ -413,7 +413,7 @@
     ],
     "sin_cruce": 1,
     "url": "https://coen.indeci.gob.pe/mer/",
-    "leido": "2026-11-06T19:32:42Z"
+    "leido": "2026-11-06T19:42:16Z"
   },
   "indeci_rss": {
     "reportes": [
@@ -489,7 +489,7 @@
       }
     ],
     "url": "https://portal.indeci.gob.pe/emergencias/",
-    "leido": "2026-11-06T19:32:43Z"
+    "leido": "2026-11-06T19:42:17Z"
   },
   "escenario": {
     "vigente": true,
@@ -1974,7 +1974,7 @@
       }
     },
     "url": "https://sigrid.cenepred.gob.pe/sigridv3/escenario-aviso",
-    "leido": "2026-11-06T19:32:47Z"
+    "leido": "2026-11-06T19:42:25Z"
   },
   "quebradas": {
     "fecha": "2026-11-06",
@@ -2982,7 +2982,7 @@
     },
     "sin_cruce": 0,
     "url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico",
-    "leido": "2026-11-06T19:32:51Z"
+    "leido": "2026-11-06T19:42:31Z"
   },
   "hidro": {
     "avisos": [
@@ -3024,7 +3024,7 @@
       }
     ],
     "url": "https://www.senamhi.gob.pe/?p=aviso-hidrologico",
-    "leido": "2026-11-06T19:32:52Z"
+    "leido": "2026-11-06T19:42:32Z"
   },
   "ana_rios": {
     "estaciones": [
@@ -17610,11 +17610,11 @@
       }
     },
     "url": "https://visor.geoperu.gob.pe/",
-    "leido": "2026-11-06T19:32:53Z"
+    "leido": "2026-11-06T19:42:34Z"
   },
   "agua": {
-    "total": 66,
-    "conexiones": 494210,
+    "total": 65,
+    "conexiones": 483639,
     "cortes": [
       {
         "eps": "SEDAPAL",
@@ -17705,16 +17705,6 @@
         "inicio": "2026-11-14",
         "restablece": "2026-11-14",
         "distrito": "080101"
-      },
-      {
-        "eps": "EPS GRAU S.A.",
-        "lugar": "Piura, Piura",
-        "conexiones": 10571,
-        "tipo": "Imprevista",
-        "motivo": "Otros",
-        "inicio": "2026-11-05",
-        "restablece": "2026-11-06",
-        "distrito": "200101"
       },
       {
         "eps": "SEDALIB S.A.",
@@ -18215,6 +18205,16 @@
         "inicio": "2026-11-05",
         "restablece": "2026-11-06",
         "distrito": "150504"
+      },
+      {
+        "eps": "EPS MOQUEGUA S.A.",
+        "lugar": "Moquegua, Moquegua",
+        "conexiones": 308,
+        "tipo": "Imprevista",
+        "motivo": "Rotura de tubería de agua potable",
+        "inicio": "2026-11-06",
+        "restablece": "2026-11-06",
+        "distrito": "180101"
       }
     ],
     "distritos": {
@@ -18253,10 +18253,6 @@
       "080101": {
         "cortes": 1,
         "conexiones": 16000
-      },
-      "200101": {
-        "cortes": 1,
-        "conexiones": 10571
       },
       "130101": {
         "cortes": 1,
@@ -18484,7 +18480,7 @@
       }
     },
     "url": "https://www.sunass.gob.pe/",
-    "leido": "2026-11-06T19:32:55Z"
+    "leido": "2026-11-06T19:42:35Z"
   },
   "incendios": {
     "total": 19,
@@ -18662,7 +18658,7 @@
       }
     ],
     "url": "https://geo.serfor.gob.pe/visor/",
-    "leido": "2026-11-06T19:32:56Z"
+    "leido": "2026-11-06T19:42:36Z"
   },
   "phisis": {
     "estaciones": [
@@ -20892,7 +20888,7 @@
       "clasificacion": 99.88
     },
     "url": "http://met.igp.gob.pe/variabclim/",
-    "leido": "2026-11-06T19:32:57Z"
+    "leido": "2026-11-06T19:42:38Z"
   },
   "dhn": {
     "generado": "2026-11-06T16:10:08Z",
@@ -21404,7 +21400,7 @@
         }
       ]
     },
-    "leido": "2026-11-06T19:32:58Z"
+    "leido": "2026-11-06T19:42:39Z"
   },
   "inaigem": {
     "estaciones": [
@@ -21442,7 +21438,7 @@
       }
     ],
     "url": "https://www.inaigem.gob.pe/",
-    "leido": "2026-11-06T19:32:58Z"
+    "leido": "2026-11-06T19:42:40Z"
   },
   "enfen_docs": {
     "docs": [
