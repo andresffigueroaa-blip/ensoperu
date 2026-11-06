@@ -72,7 +72,7 @@ function colorCapa(c, v){
   if (v === null || v === undefined) return null;
   if (COLOR_ESTADO[c.tipo]) return COLOR_ESTADO[c.tipo][v] || null;
   if (c.tipo === "riesgo") return NIVELES_R[v] || null;
-  if (c.tipo === "aviso") return COLOR_AVISO[v] || null;
+  if (c.tipo === "aviso") return COLOR_AVISO[v] || null;      // el nivel; el peligro va en el texto emergente
   if (c.tipo === "naranja" && c.lo === 0 && v === 0) return null;
   if (c.tipo === "divergente") return escala(v, c.lo, c.hi, false);
   if (c.tipo === "divergente-inv") return escala(c.desplaza ? v - c.desplaza : v, c.lo, c.hi, true);
@@ -137,6 +137,7 @@ function textoValor(v, c){
   if (c.tipo === "queb") return `Nivel ${v}`;
   if (c.tipo === "dee") return "En estado de emergencia";
   if (c.tipo === "prep") return { critico: "Crítica", parcial: "Parcial", adecuado: "Adecuada", sin_informacion: "Sin información" }[v] || v;
+  if (c.tipo === "aviso") return v ? `${v[0]}${v.slice(1).toLowerCase()}` : v;
   if (typeof v === "string") return v;
   if (!c.u) return sg(v);
   if (c.u === "focos") return `${v} focos`;
@@ -313,7 +314,8 @@ function agregarUnidades(nivel, antes){
     encima = f.id; mapa.setFeatureState({ source: nivel, id: f.id }, { hover: true });
     mapa.getCanvas().style.cursor = "pointer";
     const c = CAPAS_MAPA[M.capa];
-    tipMapa(e.point, f.properties.nombre, c.tipo ? `${c.n}: ${textoValor(valorUnidad(f.id), c)}` : "Haz clic para ver su ficha");
+    const ra = M.capa === "aviso" ? D.panorama?.regiones?.[f.id] : null;
+    tipMapa(e.point, f.properties.nombre, c.tipo ? `${c.n}: ${textoValor(valorUnidad(f.id), c)}${ra?.aviso_tipo ? ` · ${ra.aviso_tipo}` : ""}${ra?.aviso_desde ? `, desde el ${fecha(ra.aviso_desde)}` : ""}` : "Haz clic para ver su ficha");
   });
   mapa.on("mouseleave", `${nivel}-relleno`, () => {
     if (encima !== null) mapa.setFeatureState({ source: nivel, id: encima }, { hover: false });

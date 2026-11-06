@@ -147,7 +147,7 @@ function pintarPortada(){
   $("#tabla-regiones").innerHTML = `<tr><th>Región</th><th>Aviso</th><th>Mar</th><th>Lluvia, 16 días</th><th>Focos, 7 días</th><th>Tendencia de lluvia, próximo mes</th><th>Ríos en crecida</th></tr>`
     + filas.map(([id, r]) => `<tr onclick="abrirLugar('${id}')" tabindex="0" onkeydown="if(event.key==='Enter')abrirLugar('${id}')">
       <td><b>${esc(r.nombre)}</b></td>
-      <td>${r.aviso ? `<span class="chip ${NIVEL_AVISO[r.aviso]}">${esc(r.aviso[0] + r.aviso.slice(1).toLowerCase())}</span>` : '<span class="chip sin">–</span>'}</td>
+      <td>${r.aviso ? `<span class="chip ${NIVEL_AVISO[r.aviso]}">${esc(r.aviso[0] + r.aviso.slice(1).toLowerCase())}${r.aviso_tipo ? ` · ${esc(r.aviso_tipo)}` : ""}</span>${r.aviso_desde ? `<small class="sub-td">desde el ${fecha(r.aviso_desde)}</small>` : ""}` : '<span class="chip sin">–</span>'}</td>
       <td>${r.mar === null || r.mar === undefined ? "–" : `${sg(r.mar)} °C ${chipNivel(r.n_mar)}`}</td>
       <td>${r.lluvia16 === null || r.lluvia16 === undefined ? "–" : `${Math.round(r.lluvia16)} mm ${chipNivel(r.n_lluvia)}`}</td>
       <td>${r.focos} ${chipNivel(r.n_focos)}</td>
