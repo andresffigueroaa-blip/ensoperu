@@ -1,6 +1,6 @@
 {
   "_": "Generado por pipeline/fuentes/internacional.py. Cada bloque con su centro, fecha y enlace.",
-  "actualizado": "2026-11-06T12:25:26Z",
+  "actualizado": "2026-11-06T18:12:40Z",
   "fallas": [],
   "cpc": {
     "emitido": "2026-10-08",
@@ -519,18 +519,12 @@
   },
   "mjo": {
     "ultimo": {
-      "fecha": "2026-11-01",
-      "pc1": 0.134,
-      "pc2": 0.803,
-      "amplitud": 0.81
+      "fecha": "2026-11-02",
+      "pc1": 0.18,
+      "pc2": 0.545,
+      "amplitud": 0.57
     },
     "serie": [
-      {
-        "fecha": "2026-09-18",
-        "pc1": 0.237,
-        "pc2": 0.937,
-        "amplitud": 0.97
-      },
       {
         "fecha": "2026-09-19",
         "pc1": 0.057,
@@ -773,27 +767,33 @@
       },
       {
         "fecha": "2026-10-29",
-        "pc1": 0.223,
-        "pc2": 1.12,
-        "amplitud": 1.14
+        "pc1": 0.215,
+        "pc2": 1.013,
+        "amplitud": 1.04
       },
       {
         "fecha": "2026-10-30",
-        "pc1": 0.179,
-        "pc2": 0.984,
-        "amplitud": 1.0
+        "pc1": 0.174,
+        "pc2": 0.88,
+        "amplitud": 0.9
       },
       {
         "fecha": "2026-10-31",
-        "pc1": 0.168,
-        "pc2": 0.893,
-        "amplitud": 0.91
+        "pc1": 0.163,
+        "pc2": 0.787,
+        "amplitud": 0.8
       },
       {
         "fecha": "2026-11-01",
-        "pc1": 0.134,
-        "pc2": 0.803,
-        "amplitud": 0.81
+        "pc1": 0.133,
+        "pc2": 0.694,
+        "amplitud": 0.71
+      },
+      {
+        "fecha": "2026-11-02",
+        "pc1": 0.18,
+        "pc2": 0.545,
+        "amplitud": 0.57
       }
     ],
     "activa": false,
@@ -902,9 +902,9 @@
       "titulo": "Media de los modelos NMME, Niño 3.4",
       "fuente": "NOAA CPC, NMME",
       "origen": "https://www.cpc.ncep.noaa.gov/products/NMME/current/images/nino34.rescaling.ENSMEAN.png",
-      "huella": "9f702983d0db",
+      "huella": "d6402ae15135",
       "archivo": "nmme.png",
-      "fecha": "2026-10-16"
+      "fecha": "2026-11-06"
     },
     {
       "id": "mjo",

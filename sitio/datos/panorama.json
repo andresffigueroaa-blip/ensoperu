@@ -1,13 +1,13 @@
 {
   "_": "Generado por pipeline/productos/panorama.py. No editar a mano.",
-  "generado": "2026-11-06T18:04:11Z",
+  "generado": "2026-11-06T18:13:08Z",
   "fecha": "2026-11-06",
   "lectura": [
     "El ENFEN mantiene la Alerta de El Niño Costero (N° 19-2026, 30 de octubre de 2026). El Niño costero continuaría hasta fines de otoño de 2027.",
     "Mar: +5,7 °C en Niño 1+2 y +3,6 °C en Niño 3.4 (media de 7 días).",
     "SENAMHI tiene 4 avisos vigentes o por empezar, 2 en nivel rojo.",
     "Lluvia próxima: la mayor en 16 días es Tumbes (Tumbes), con 223 mm.",
-    "Ríos: 9 con crecida inusual pronosticada en 15 días, entre ellos Tumbes, Zaña, Piura, La Leche.",
+    "Ríos: 11 con crecida inusual pronosticada en 15 días, entre ellos Zaña, Chira, Chancay-Lambayeque, La Leche.",
     "CENEPRED: 142 distritos en riesgo muy alto por la lluvia hasta el 8 de noviembre, con 1 166 909 personas.",
     "INDECI registró 81 emergencias en 7 días; la más frecuente: incendios forestales.",
     "Focos de calor: 749 en 7 días; el mayor número en Tambopata (Madre de Dios), 86."
@@ -209,7 +209,10 @@
       "spi3": -0.38,
       "estacional": 50,
       "rios_altos": [
-        "Chicama"
+        "Jequetepeque",
+        "Chicama",
+        "Moche",
+        "Virú"
       ]
     },
     "14": {
@@ -244,9 +247,7 @@
       "lluvia16": 73.3,
       "spi3": -1.29,
       "estacional": 87,
-      "rios_altos": [
-        "Cañete"
-      ]
+      "rios_altos": []
     },
     "16": {
       "nombre": "Loreto",
@@ -1672,27 +1673,51 @@
   ],
   "rios_altos": [
     {
-      "id": "tumbes",
-      "nombre": "Tumbes",
-      "lugar": "El Tigre",
-      "region": "24",
-      "hoy": 702.07,
-      "pico": 923.7,
-      "fecha_pico": "2026-11-17",
-      "p90": 591.9,
-      "p99": 1409.6,
-      "nivel": "elevado"
-    },
-    {
       "id": "zana",
       "nombre": "Zaña",
       "lugar": "Batán",
       "region": "14",
       "hoy": 46.75,
-      "pico": 58.98,
+      "pico": 68.02,
       "fecha_pico": "2026-11-09",
       "p90": 45.1,
       "p99": 111.9,
+      "nivel": "elevado"
+    },
+    {
+      "id": "chira",
+      "nombre": "Chira",
+      "lugar": "Ardilla",
+      "region": "20",
+      "hoy": 836.53,
+      "pico": 1373.04,
+      "fecha_pico": "2026-11-18",
+      "p90": 932.2,
+      "p99": 2402.3,
+      "nivel": "elevado"
+    },
+    {
+      "id": "chancay-lamb",
+      "nombre": "Chancay-Lambayeque",
+      "lugar": "Racarrumi",
+      "region": "14",
+      "hoy": 96.05,
+      "pico": 150.36,
+      "fecha_pico": "2026-11-08",
+      "p90": 103.0,
+      "p99": 217.3,
+      "nivel": "elevado"
+    },
+    {
+      "id": "la-leche",
+      "nombre": "La Leche",
+      "lugar": "Puchaca",
+      "region": "14",
+      "hoy": 15.14,
+      "pico": 56.81,
+      "fecha_pico": "2026-11-17",
+      "p90": 39.7,
+      "p99": 172.9,
       "nivel": "elevado"
     },
     {
@@ -1708,63 +1733,15 @@
       "nivel": "elevado"
     },
     {
-      "id": "la-leche",
-      "nombre": "La Leche",
-      "lugar": "Puchaca",
-      "region": "14",
-      "hoy": 15.14,
-      "pico": 47.98,
-      "fecha_pico": "2026-11-17",
-      "p90": 39.7,
-      "p99": 172.9,
-      "nivel": "elevado"
-    },
-    {
-      "id": "pisco",
-      "nombre": "Pisco",
-      "lugar": "Letrayoc",
-      "region": "11",
-      "hoy": 27.91,
-      "pico": 173.18,
-      "fecha_pico": "2026-11-13",
-      "p90": 146.6,
-      "p99": 266.9,
-      "nivel": "elevado"
-    },
-    {
-      "id": "canete",
-      "nombre": "Cañete",
-      "lugar": "Socsi",
-      "region": "15",
-      "hoy": 71.28,
-      "pico": 308.74,
-      "fecha_pico": "2026-11-13",
-      "p90": 279.5,
-      "p99": 482.5,
-      "nivel": "elevado"
-    },
-    {
-      "id": "chancay-lamb",
-      "nombre": "Chancay-Lambayeque",
-      "lugar": "Racarrumi",
-      "region": "14",
-      "hoy": 96.05,
-      "pico": 111.98,
-      "fecha_pico": "2026-11-08",
-      "p90": 103.0,
-      "p99": 217.3,
-      "nivel": "elevado"
-    },
-    {
-      "id": "chira",
-      "nombre": "Chira",
-      "lugar": "Ardilla",
-      "region": "20",
-      "hoy": 836.53,
-      "pico": 967.28,
-      "fecha_pico": "2026-11-17",
-      "p90": 932.2,
-      "p99": 2402.3,
+      "id": "tumbes",
+      "nombre": "Tumbes",
+      "lugar": "El Tigre",
+      "region": "24",
+      "hoy": 702.07,
+      "pico": 702.07,
+      "fecha_pico": "2026-11-06",
+      "p90": 591.9,
+      "p99": 1409.6,
       "nivel": "elevado"
     },
     {
@@ -1773,10 +1750,58 @@
       "lugar": "Salinar",
       "region": "13",
       "hoy": 104.2,
-      "pico": 155.68,
-      "fecha_pico": "2026-11-15",
+      "pico": 169.22,
+      "fecha_pico": "2026-11-17",
       "p90": 151.1,
       "p99": 310.0,
+      "nivel": "elevado"
+    },
+    {
+      "id": "viru",
+      "nombre": "Virú",
+      "lugar": "Huacapongo",
+      "region": "13",
+      "hoy": 24.94,
+      "pico": 45.77,
+      "fecha_pico": "2026-11-17",
+      "p90": 41.8,
+      "p99": 74.5,
+      "nivel": "elevado"
+    },
+    {
+      "id": "pisco",
+      "nombre": "Pisco",
+      "lugar": "Letrayoc",
+      "region": "11",
+      "hoy": 27.91,
+      "pico": 158.96,
+      "fecha_pico": "2026-11-12",
+      "p90": 146.6,
+      "p99": 266.9,
+      "nivel": "elevado"
+    },
+    {
+      "id": "jequetepeque",
+      "nombre": "Jequetepeque",
+      "lugar": "Yonán",
+      "region": "13",
+      "hoy": 249.61,
+      "pico": 344.14,
+      "fecha_pico": "2026-11-08",
+      "p90": 320.4,
+      "p99": 603.0,
+      "nivel": "elevado"
+    },
+    {
+      "id": "moche",
+      "nombre": "Moche",
+      "lugar": "Quirihuac",
+      "region": "13",
+      "hoy": 38.63,
+      "pico": 58.16,
+      "fecha_pico": "2026-11-17",
+      "p90": 58.0,
+      "p99": 109.1,
       "nivel": "elevado"
     }
   ],
@@ -1895,7 +1920,7 @@
   "totales": {
     "avisos": 4,
     "rojos": 2,
-    "rios_altos": 9,
+    "rios_altos": 11,
     "focos": 749,
     "distritos_riesgo_alto": 766
   }

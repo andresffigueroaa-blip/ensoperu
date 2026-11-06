@@ -1,16 +1,7 @@
 {
   "_": "Generado por pipeline/fuentes/peru_oficial.py. Datos oficiales tal como se publican.",
-  "actualizado": "2026-11-06T17:53:05Z",
-  "fallas": [
-    "fenomeno",
-    "ana_rios",
-    "ana_embalses",
-    "ana_pc",
-    "emergencia",
-    "phisis",
-    "prono",
-    "enfen_docs"
-  ],
+  "actualizado": "2026-11-06T18:12:22Z",
+  "fallas": [],
   "fenomeno": {
     "fecha": "30 de octubre del 2026",
     "estado": "Alerta de El Niño Costero",
@@ -423,10 +414,15 @@
     ],
     "sin_cruce": 1,
     "url": "https://coen.indeci.gob.pe/mer/",
-    "leido": "2026-11-06T17:54:37Z"
+    "leido": "2026-11-06T18:12:24Z"
   },
   "indeci_rss": {
     "reportes": [
+      {
+        "titulo": "REPORTE COMPLEMENTARIO N.° 15565 – 6/11/2026 / COEN-INDECI / 07:30 HORAS (Reporte N.° 10) LLUVIAS INTENSAS EN EL DEPARTAMENTO DE TUMBES – TUMBES",
+        "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-preliminar-n-1106-2-11-2026-coen-indeci-0750-horas-lluvias-intensas-en-el-departamento-de-tumbes-tumbes/",
+        "fecha": "2026-11-06T18:08"
+      },
       {
         "titulo": "BOLETÍN INFORMATIVO DE AVISO DE CORTO PLAZO ANTE LLUVIAS INTENSAS N° 309-2026-INDECI/COEN",
         "enlace": "https://portal.indeci.gob.pe/emergencias/boletin-informativo-de-aviso-de-corto-plazo-ante-lluvias-intensas-n-309-2026-indeci-coen/",
@@ -446,11 +442,6 @@
         "titulo": "REPORTE COMPLEMENTARIO N.º 15566 – 6/11/2026 / COEN – INDECI / 07:55 HORAS (Reporte N.º 3) LLUVIAS INTENSAS EN EL DISTRITO DE SAN MIGUEL DE EL FAIQUE – PIURA",
         "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-o-15173-29-10-2026-coen-indeci-0820-horas-reporte-n-o-1-lluvias-intensas-en-la-provincia-de-huancabamba-piura/",
         "fecha": "2026-11-06T13:05"
-      },
-      {
-        "titulo": "REPORTE COMPLEMENTARIO N.° 15565 – 6/11/2026 / COEN-INDECI / 07:30 HORAS (Reporte N.° 10) LLUVIAS INTENSAS EN EL DEPARTAMENTO DE TUMBES – TUMBES",
-        "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-preliminar-n-1106-2-11-2026-coen-indeci-0750-horas-lluvias-intensas-en-el-departamento-de-tumbes-tumbes/",
-        "fecha": "2026-11-06T12:59"
       },
       {
         "titulo": "REPORTE COMPLEMENTARIO N.º 15564 – 6/11/2026 / COEN – INDECI / 07:25 HORAS (Reporte N.º 2) LLUVIAS INTENSAS EN EL DISTRITO DE MÁNCORA – PIURA",
@@ -499,7 +490,7 @@
       }
     ],
     "url": "https://portal.indeci.gob.pe/emergencias/",
-    "leido": "2026-11-06T17:54:38Z"
+    "leido": "2026-11-06T18:12:26Z"
   },
   "escenario": {
     "vigente": true,
@@ -2001,7 +1992,7 @@
       }
     },
     "url": "https://sigrid.cenepred.gob.pe/sigridv3/escenario-aviso",
-    "leido": "2026-11-06T17:54:42Z"
+    "leido": "2026-11-06T18:12:30Z"
   },
   "quebradas": {
     "fecha": "2026-11-06",
@@ -3009,7 +3000,7 @@
     },
     "sin_cruce": 0,
     "url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico",
-    "leido": "2026-11-06T17:54:46Z"
+    "leido": "2026-11-06T18:12:34Z"
   },
   "hidro": {
     "avisos": [
@@ -3051,7 +3042,7 @@
       }
     ],
     "url": "https://www.senamhi.gob.pe/?p=aviso-hidrologico",
-    "leido": "2026-11-06T17:54:50Z"
+    "leido": "2026-11-06T18:12:34Z"
   },
   "ana_rios": {
     "estaciones": [
@@ -17577,7 +17568,7 @@
       }
     },
     "url": "https://visor.geoperu.gob.pe/",
-    "leido": "2026-11-06T18:00:52Z"
+    "leido": "2026-11-06T18:12:36Z"
   },
   "agua": {
     "total": 243,
@@ -18527,7 +18518,7 @@
       }
     },
     "url": "https://www.sunass.gob.pe/",
-    "leido": "2026-11-06T18:00:53Z"
+    "leido": "2026-11-06T18:12:37Z"
   },
   "incendios": {
     "total": 17,
@@ -18687,7 +18678,7 @@
       }
     ],
     "url": "https://geo.serfor.gob.pe/visor/",
-    "leido": "2026-11-06T18:00:54Z"
+    "leido": "2026-11-06T18:12:38Z"
   },
   "phisis": {
     "estaciones": [
@@ -20919,7 +20910,7 @@
       "clasificacion": 99.88
     },
     "url": "http://met.igp.gob.pe/variabclim/",
-    "leido": "2026-11-06T18:03:56Z"
+    "leido": "2026-11-06T18:12:39Z"
   },
   "dhn": {
     "generado": "2026-11-06T16:10:08Z",
@@ -21431,7 +21422,7 @@
         }
       ]
     },
-    "leido": "2026-11-06T18:03:57Z"
+    "leido": "2026-11-06T18:12:40Z"
   },
   "inaigem": {
     "estaciones": [
@@ -21469,7 +21460,7 @@
       }
     ],
     "url": "https://www.inaigem.gob.pe/",
-    "leido": "2026-11-06T18:03:57Z"
+    "leido": "2026-11-06T18:12:40Z"
   },
   "enfen_docs": {
     "docs": [
