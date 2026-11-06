@@ -92,6 +92,18 @@ def _canales(cfg: dict, vistas: dict) -> list[dict]:
     return salida
 
 
+def _sin_casi_duplicados(xs: list[dict]) -> list[dict]:
+    """La misma nota con otro titular (en vivo, "pronóstico del día"): se queda la primera, que es la más reciente."""
+    import difflib
+    salida, vistos = [], []
+    for n in xs:
+        k = _norm(n["titulo"])
+        if n.get("enlace") in {x.get("enlace") for x in salida} or any(difflib.SequenceMatcher(None, k, v).ratio() >= 0.85 for v in vistos[-150:]):
+            continue
+        salida.append(n); vistos.append(k)
+    return salida
+
+
 def _norm(t: str) -> str:
     return re.sub(r"[^a-záéíóúñ0-9 ]", "", t.lower())[:70]
 
@@ -116,7 +128,7 @@ def ejecutar(estado: dict) -> dict:
             medio = (it.findtext("source") or "").strip()
             titulo = re.sub(rf"\s+-\s+{re.escape(medio)}$", "", titulo)
             k = _norm(titulo)
-            if not titulo or k in vistas:
+            if not titulo or k in vistas or not TOCA_TEMA.search(titulo):
                 continue
             vistas[k] = {}
             try:
@@ -128,7 +140,10 @@ def ejecutar(estado: dict) -> dict:
     if fallas == len(cfg["consultas"]):
         raise ErrorFuente("Google Noticias no respondió a ninguna consulta")
     corte = (hoy() - dt.timedelta(days=DIAS_MAX)).isoformat()
+    # Las guardadas también pasan el filtro de tema (entraron antes de que existiera)
+    previas = [n for n in previas if TOCA_TEMA.search(n["titulo"])]
     todas = sorted(nuevas + [n for n in previas if n["fecha"] >= corte], key=lambda n: (n["fecha"], n.get("ts", "")), reverse=True)[:MAX_GUARDADAS]
+    todas = _sin_casi_duplicados(todas)
     escribir_json(SALIDA, {"_": "Generado por pipeline/fuentes/noticias.py. Titulares y enlaces; el contenido es de cada medio.",
                            "actualizado": ahora_utc(), "noticias": todas}, compacto=True)
     log(f"  {len(nuevas)} nuevas ({con_foto} de canales con foto), {len(todas)} guardadas, {sum(1 for n in todas if n.get('imagen'))} con imagen")

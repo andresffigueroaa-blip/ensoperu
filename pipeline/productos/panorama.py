@@ -26,6 +26,21 @@ MESES = ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto
          "setiembre", "octubre", "noviembre", "diciembre"]
 
 
+RANGO_AVISO = {"AMARILLO": 1, "NARANJA": 2, "ROJO": 3}
+ORDEN_N = {"bajo": 0, "medio": 1, "alto": 2, "muy alto": 3}
+
+
+def tipo_peligro(titulo: str) -> str:
+    """El peligro de un aviso del SENAMHI, por su título."""
+    t = titulo.lower()
+    for clave, pat in (("lluvia", r"precipitac|lluvia|nevada|granizo|tormenta"), ("calor", r"temperatura diurna|calor"),
+                       ("frío", r"temperatura nocturna|heladas|friaje|descenso de temperatura"), ("viento", r"viento"),
+                       ("oleaje", r"oleaje")):
+        if re.search(pat, t):
+            return clave
+    return "otro"
+
+
 def _nivel(a: dict, v) -> str | None:
     if v is None:
         return None
@@ -81,12 +96,22 @@ def ejecutar(estado: dict) -> dict:
         df = ll.get(i, {}).get("dias_fuertes")
         e = est.get("valores", {}).get(i, {})
         # Aviso más alto de los que nombran su zona o a la región
-        niv = [a["nivel"] for a in avisos if rj.get("z") in a.get("zonas", []) or x.get("clave") in a.get("regiones", [])]
-        aviso = next((n for n in ("ROJO", "NARANJA", "AMARILLO") if n in niv), None)
-        regiones[i] = {"nombre": rj.get("nombre", x["nombre"]), "zona": rj.get("z"), "aviso": aviso,
+        suyos = [a for a in avisos if rj.get("z") in a.get("zonas", []) or x.get("clave") in a.get("regiones", [])]
+        # El aviso que se muestra es el de mayor nivel entre los ya vigentes; si no hay, el próximo
+        vig = [a for a in suyos if a["inicio"] <= hoy().isoformat()] or suyos
+        top = max(vig, key=lambda a: RANGO_AVISO[a["nivel"]], default=None)
+        aviso = top["nivel"] if top else None
+        aviso_tipo = tipo_peligro(top["titulo"]) if top else None
+        aviso_desde = top["inicio"] if top and top["inicio"] > hoy().isoformat() else None
+        # Si el SENAMHI tiene aviso de lluvia, el nivel de lluvia no puede decir "bajo"
+        lluvia_aviso = max((RANGO_AVISO[a["nivel"]] for a in suyos if tipo_peligro(a["titulo"]) == "lluvia"), default=0)
+        n_ll = _nivel(at["lluvia"], df)
+        if lluvia_aviso and (n_ll is None or ORDEN_N[n_ll] < lluvia_aviso):
+            n_ll = ["bajo", "medio", "alto", "muy alto"][lluvia_aviso]
+        regiones[i] = {"nombre": rj.get("nombre", x["nombre"]), "zona": rj.get("z"), "aviso": aviso, "aviso_tipo": aviso_tipo, "aviso_desde": aviso_desde,
                        "mar": tsm, "n_mar": _nivel(at["mar"], tsm) if tsm is not None else None,
                        "focos": focos, "n_focos": _nivel(at["incendios"], focos),
-                       "dias_fuertes": df, "n_lluvia": _nivel(at["lluvia"], df),
+                       "dias_fuertes": df, "n_lluvia": n_ll,
                        "lluvia16": ll.get(i, {}).get("total"), "spi3": spi.get("valores", {}).get(i, {}).get("spi3"),
                        "estacional": e.get("anom", [None])[1] if len(e.get("anom", [])) > 1 else None,
                        "rios_altos": [r["nombre"] for r in rios if r["region"] == i and r["nivel"] != "normal"]}
@@ -112,17 +137,24 @@ def ejecutar(estado: dict) -> dict:
         p = prov(top_lluvia[0])
         lectura.append(f"Lluvia próxima: la mayor en 16 días es {p['nombre']} ({p['region']}), con {ll[top_lluvia[0]]['total']:.0f} mm.")
     if rios_altos:
-        lectura.append(f"Ríos: {len(rios_altos)} con crecida inusual pronosticada en 15 días, entre ellos {', '.join(r['nombre'] for r in rios_altos[:4])}.")
+        crecidas_ana = (leer_json(DATOS / "rios" / "monitoreo.json") or {}).get("conteo", {})
+        medidas = (crecidas_ana.get("alerta", 0) + crecidas_ana.get("emergencia", 0))
+        lectura.append(f"Ríos: el modelo global GloFAS pronostica caudales por encima de lo habitual en {len(rios_altos)}, entre ellos "
+                       f"{', '.join(r['nombre'] for r in rios_altos[:4])}; es orientativo. "
+                       + (f"La ANA y el SENAMHI miden {medidas} ríos sobre su umbral de crecida." if medidas else "La ANA y el SENAMHI no miden ríos sobre su umbral de crecida."))
     # Lo que reporta el Estado (peru_oficial)
     of = leer_json(DATOS / "peru" / "oficial.json") or {}
     esc_ = of.get("escenario") or {}
     if esc_.get("vigente"):
         ma = (esc_.get("resumen") or {}).get("MA") or {}
-        fin = max(e["fin_vigencia"][:10] for e in esc_["escenarios"])
-        a, m_, d = fin.split("-")
+        fines = sorted({e["fin_vigencia"][:10] for e in esc_["escenarios"]})
+        def dia(f):
+            a, m_, d = f.split("-")
+            return f"{int(d)} de {MESES[int(m_) - 1]}"
+        hasta = dia(fines[0]) if len(fines) == 1 else f"entre el {dia(fines[0])} y el {dia(fines[-1])}"
         if ma.get("distritos"):
             pob = f"{ma.get('poblacion', 0):,}".replace(",", " ")
-            lectura.append(f"CENEPRED: {ma['distritos']} distritos en riesgo muy alto por la lluvia hasta el {int(d)} de {MESES[int(m_) - 1]}, con {pob} personas.")
+            lectura.append(f"CENEPRED: {ma['distritos']} distritos en riesgo muy alto por la lluvia hasta {"el " + hasta if len(fines) == 1 else hasta}, con {pob} personas.")
     if (of.get("coen") or {}).get("total"):
         c = of["coen"]
         principal = next(iter(c.get("por_peligro", {})), "")

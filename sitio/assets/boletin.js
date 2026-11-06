@@ -194,9 +194,11 @@ function boletinRegional(rid, ctx){
   // Ríos de la ANA en la región con estaciones, primero los que no están normales
   const riosANA = Object.entries(H.fichas || {}).filter(([k, f]) => f.regiones.includes(rid) && estadoDe(k) !== "sin_datos")
     .sort((a, b) => (ORDEN_EST[estadoDe(b[0])] - ORDEN_EST[estadoDe(a[0])]) || b[1].personas - a[1].personas).slice(0, 8);
-  if (sobre.length) frases.push(`${sobre.length} estaciones de ríos están sobre su umbral.`);
+  const crec = sobre.filter(e => !e.estiaje), baja = sobre.length - crec.length;
+  if (crec.length) frases.push(`${crec.length} estaciones de ríos están sobre su umbral.`);
+  if (baja) frases.push(`${baja} estaciones de ríos tienen nivel bajo.`);
   if (riosG.some(r => r.nivel !== "normal")) frases.push(`Crecida inusual pronosticada en ${riosG.filter(r => r.nivel !== "normal").map(r => r.nombre).join(", ")} (GloFAS).`);
-  if (rj.c && P.mar !== null && P.mar !== undefined) frases.push(`El mar frente a la región está ${sg(P.mar)} °C sobre lo normal.`);
+  if (rj.c && P.mar !== null && P.mar !== undefined) frases.push(`La anomalía del mar frente a la región es de ${sg(P.mar)} °C.`);
   if (P.lluvia16) frases.push(`Los modelos esperan ${Math.round(P.lluvia16)} mm de lluvia en 16 días.`);
   if (P.focos) frases.push(`${P.focos} ${P.focos > 1 ? "focos" : "foco"} de calor en 7 días.`);
 
@@ -229,8 +231,8 @@ function boletinRegional(rid, ctx){
   const parte1 = `
     <ul class="lectura">${frases.map(t => `<li>${esc(t)}</li>`).join("") || "<li>Sin avisos ni emergencias registradas para la región.</li>"}</ul>
     ${kpis([["Aviso del SENAMHI", P.aviso ? `<span class="chip ${NIVEL_AVISO[P.aviso]}">${esc(P.aviso[0] + P.aviso.slice(1).toLowerCase())}</span>` : "Ninguno", ""],
-      ["Riesgo muy alto por lluvia", `${porNivel("MA").length} distritos`, "CENEPRED, aviso vigente"], ["Emergencias, 7 días", entero(em.length), "INDECI"],
-      ["Lluvia próxima, 16 días", P.lluvia16 ? `${Math.round(P.lluvia16)} mm` : "–", "Open-Meteo"], rj.c ? ["Mar frente a la costa", `${sg(P.mar)} °C`, "NOAA OISST"] : ["Lluvia pasada, SPI-3", P.spi3 === null || P.spi3 === undefined ? "No aplica" : sg(P.spi3), P.spi3 === null || P.spi3 === undefined ? "temporada seca" : "últimos 3 meses con dato"],
+      ["Riesgo muy alto por lluvia", O.escenario?.vigente ? `${porNivel("MA").length} distritos` : "Sin escenario", "CENEPRED"], ["Emergencias, 7 días", entero(em.length), "INDECI"],
+      ["Lluvia próxima, 16 días", P.lluvia16 ? `${Math.round(P.lluvia16)} mm` : "–", "Open-Meteo"], rj.c ? ["Mar frente a la costa", `${sg(P.mar)} °C`, "NOAA OISST"] : ["Tendencia de lluvia, próximo mes", P.estacional === null || P.estacional === undefined ? "–" : `${sg(P.estacional, 0)} mm`, "modelo europeo, frente a lo normal"],
       ["Focos de calor, 7 días", entero(P.focos), "NASA FIRMS"]])}
     ${avisos.length ? `<h3>Avisos del SENAMHI</h3>${avisos.map(a => `<div class="f-aviso"><span class="chip ${NIVEL_AVISO[a.nivel]}">${esc(a.nivel)}</span> ${esc(oracion(a.titulo))}<small>${fecha(a.inicio)} a ${fecha(a.fin)}</small></div>`).join("")}` : ""}
     <div class="cols-2">

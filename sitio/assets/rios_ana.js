@@ -11,8 +11,9 @@
    ════════════════════════════════════════════════════════════════════════ */
 
 const ESTADO_RIO = {
-  emergencia: ["Emergencia", "#B4101C", "muyalto"], alerta: ["Alerta", "#E2341D", "alto"], vigilancia: ["Vigilancia", "#F0A23C", "medio"],
-  normal: ["Normal", "#2F8FE0", "bajo"], sin_datos: ["Sin estación", "#7FB8D6", "sin"],
+  emergencia: ["Emergencia", "#B4101C", "muyalto"], alerta: ["Alerta por crecida", "#E2341D", "alto"], vigilancia: ["Vigilancia", "#F0A23C", "medio"],
+  nivel_bajo: ["Nivel bajo", "#9C7BD4", "bajo"], normal: ["Normal", "#2F8FE0", "bajo"],
+  sin_lectura: ["Sin lectura reciente", "#C9D2CC", "sin"], sin_datos: ["Sin estación: no sabemos", "#8A9499", "sin"],
 };
 const H = { rios: null, fichas: null, mon: null, cuencas: null, hist: null };
 
@@ -98,7 +99,7 @@ function aplicarRiosANA(){
 function leyendaRiosANA(){
   const el = $("#leg-rios"); if (!el) return;
   if (!M.riosAna){ el.innerHTML = ""; return; }
-  el.innerHTML = `<h4>Ríos y quebradas (ANA)</h4><div class="leg-rios">${["emergencia", "alerta", "vigilancia", "normal", "sin_datos"].map(k =>
+  el.innerHTML = `<h4>Ríos y quebradas (ANA)</h4><div class="leg-rios">${["emergencia", "alerta", "vigilancia", "nivel_bajo", "normal", "sin_lectura", "sin_datos"].map(k =>
     `<span><i style="background:${ESTADO_RIO[k][1]}"></i>${ESTADO_RIO[k][0]}</span>`).join("")}</div>
     <p class="leg-src">Estado según sus estaciones (ANA, SENAMHI) y el pronóstico GloFAS. Toca un río para su ficha. <button class="enlace" onclick="ir('rios')">Seguimiento</button></p>`;
 }
@@ -150,7 +151,7 @@ async function pintarFichaRioANA(rid){
     <div class="p-head"><div class="miga">${esc(f.cuenca || "")} · ${esc(regs)}</div>
       <h2 class="h-lugar">${dibujo("rio", 24)} ${esc(f.nombre)}</h2>
       <div class="zone">${esc(f.tipo === "río" ? "Río" : "Quebrada")} · ${String(f.long_km).replace(".", ",")} km · ${esc(f.vertiente || "")}</div>
-      <p class="f-lectura"><span class="chip ${clase}">${n}</span> ${m.motivos.length ? esc(m.motivos.join("; ")) + "." : m.estado === "sin_datos" ? "Este río no tiene estaciones cerca: no se puede seguir con datos medidos." : "Sus estaciones están dentro de lo normal."}${m.nivel_bajo ? " Hay estaciones con nivel bajo." : ""}</p>
+      <p class="f-lectura"><span class="chip ${clase}">${n}</span> ${m.motivos.length ? esc(m.motivos.join("; ")) + "." : m.estado === "sin_datos" ? "Este río no tiene estaciones cerca: no se puede saber cómo está con datos medidos." : m.estado === "sin_lectura" ? "Sus estaciones no reportaron en las últimas 30 horas: no se puede afirmar que esté normal." : "Sus estaciones con lectura reciente están dentro de lo normal."}${m.nivel_bajo && m.estado !== "nivel_bajo" ? " Hay estaciones con nivel bajo." : ""}</p>
     </div>
     ${anaEst.length ? `<section class="f-sec"><h3>${dibujo("rio")} Caudal o nivel medido (ANA)</h3>
       ${anaEst.map(e => { const xs = hist[`ANA|${e.nombre}|${f.nombre.replace(/^Río\s+/i, "")}`] || hist[Object.keys(hist).find(k => k.startsWith(`ANA|${e.nombre}|`))] || [];
@@ -199,7 +200,7 @@ async function pintarFichaCuenca(cid){
       <p class="f-fuente">${entero(pers)} personas viven a menos de 1 km de estos cauces. ANA e INEI.</p></section>`;
   $("#panel").classList.add("up"); $("#panel").scrollTop = 0;
 }
-const ORDEN_EST = { emergencia: 4, alerta: 3, vigilancia: 2, normal: 1, sin_datos: 0 };
+const ORDEN_EST = { emergencia: 6, alerta: 5, vigilancia: 4, nivel_bajo: 3, normal: 2, sin_lectura: 1, sin_datos: 0 };
 
 /* ── Vista «Ríos»: el seguimiento ───────────────────────────────────────── */
 let filtroRios = { estado: "seguidos", region: "", texto: "" };
@@ -211,9 +212,9 @@ async function pintarVistaRios(){
   const obras = Object.values(m.rios || {}).reduce((s, r) => s + (r.obras?.total || 0), 0);
   $("#rios-kpis").innerHTML = [
     tarjetaKpi("Ríos con estaciones", entero(seguidos), `de ${entero(Object.keys(H.fichas).length)} del inventario de la ANA`, null),
-    tarjetaKpi("En emergencia o alerta", entero((c.emergencia || 0) + (c.alerta || 0)), "ANA y SENAMHI", "setFiltroRios('estado','alerta')"),
+    tarjetaKpi("En crecida sobre umbral", entero((c.emergencia || 0) + (c.alerta || 0)), "Alerta o emergencia, ANA y SENAMHI", "setFiltroRios('estado','alerta')"),
     tarjetaKpi("En vigilancia", entero(c.vigilancia || 0), "SENAMHI amarillo o crecida pronosticada", "setFiltroRios('estado','vigilancia')"),
-    tarjetaKpi("Con nivel bajo", entero(nb), "Umbrales de estiaje", "setFiltroRios('estado','bajo')"),
+    tarjetaKpi("Con nivel bajo", entero(c.nivel_bajo || 0), "Alerta por estiaje: navegación", "setFiltroRios('estado','bajo')"),
   ].join("");
   const regiones = M.datos.unidades.filter(u => u.nivel === "region").sort((a, b) => a.nombre.localeCompare(b.nombre, "es"));
   if (!$("#rios-region").options.length) $("#rios-region").innerHTML = `<option value="">Todas las regiones</option>` + regiones.map(u => `<option value="${u.id}">${esc(u.nombre)}</option>`).join("");
@@ -224,10 +225,10 @@ async function pintarVistaRios(){
     const r = m.rios?.[rid], e = estadoDe(rid);
     if (filtroRios.region && !f.regiones.includes(filtroRios.region)) return false;
     if (t && !norm(f.nombre).includes(t) && !norm(f.cuenca).includes(t)) return false;
-    return { seguidos: e !== "sin_datos", alerta: e === "alerta" || e === "emergencia", vigilancia: e === "vigilancia", bajo: r?.nivel_bajo,
+    return { seguidos: e !== "sin_datos", alerta: e === "alerta" || e === "emergencia", vigilancia: e === "vigilancia", bajo: r?.nivel_bajo || e === "nivel_bajo",
       obras: r?.obras?.total > 0, todos: true }[filtroRios.estado];
   }).sort((a, b) => (ORDEN_EST[estadoDe(b[0])] - ORDEN_EST[estadoDe(a[0])]) || b[1].personas - a[1].personas);
-  $("#rios-tabla").innerHTML = `<tr><th>Río</th><th>Región</th><th>Estado</th><th>Medición más reciente</th><th>Pronóstico GloFAS</th><th>Obras ANA</th><th>Personas junto al cauce</th></tr>`
+  $("#rios-tabla").innerHTML = `<tr><th>Río</th><th>Región</th><th>Estado</th><th>Medición más reciente</th><th>Modelo GloFAS, 15 días</th><th>Obras ANA</th><th>Personas junto al cauce</th></tr>`
     + filas.slice(0, 200).map(([rid, f]) => {
       const r = m.rios?.[rid] || {}, e = estadoDe(rid), ana = (r.estaciones || []).find(x => x.fuente === "ANA"), g = (r.estaciones || []).find(x => x.fuente === "GloFAS");
       const sen = (r.estaciones || []).find(x => x.fuente === "SENAMHI");
@@ -236,7 +237,7 @@ async function pintarVistaRios(){
         <td>${esc(f.regiones.map(x => M.datos.porId[x]?.nombre).filter(Boolean).join(", "))}</td>
         <td><span class="chip ${ESTADO_RIO[e][2]}">${ESTADO_RIO[e][0]}</span>${r.nivel_bajo ? ` <span class="chip alto">Nivel bajo</span>` : ""}</td>
         <td>${ana ? `${esc(ana.nombre)}: ${String(ana.valor).replace(".", ",")} ${esc(ana.unidad || "")} <small class="sub-td">alerta ${String(ana.alerta).replace(".", ",")} · ${esc((ana.tendencia || "").toLowerCase())}</small>` : sen ? `${esc(sen.nombre)}: ${esc(sen.nivel)} <small class="sub-td">SENAMHI</small>` : "–"}</td>
-        <td>${g ? `${entero(Math.round(g.pico))} m³/s el ${fecha(g.fecha_pico)} ${chipNivel(g.nivel)}` : "–"}</td>
+        <td>${g ? `${chipNivel(g.nivel)} <small class="sub-td">pico el ${fecha(g.fecha_pico)}; modelo, no comparable con la medición</small>` : "–"}</td>
         <td>${r.obras?.total ? `${r.obras.total} <small class="sub-td">avance ${String(r.obras.avance_medio ?? "–").replace(".", ",")} %</small>` : "–"}</td>
         <td>${f.personas ? entero(f.personas) : "–"}</td></tr>`; }).join("");
   $("#rios-nota").textContent = `${filas.length} ríos${filas.length > 200 ? "; se muestran los 200 primeros" : ""}. Ordenados por estado y por la gente que vive junto al cauce.`;

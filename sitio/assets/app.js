@@ -546,7 +546,7 @@ const recurso = ruta => window.__DATOS__?.[ruta] ?? ruta;
 
 async function iniciar(){
   try{
-    const [estado, config, regiones, serie, plantillas, meta, campo, indices, panorama, avisos, noticias, atm, oficial, inter] = await Promise.all([
+    const [estado, config, regiones, serie, plantillas, meta, campo, indices, panorama, avisos, noticias, atm, oficial, inter, rios] = await Promise.all([
       traer("datos/estado.json"),
       traer("datos/config.json"),
       traer("datos/regiones.json"),
@@ -561,8 +561,9 @@ async function iniciar(){
       traerCsv("datos/indices/oceano_atm.csv"),
       traerOpcional("datos/peru/oficial.json"),
       traerOpcional("datos/pronosticos/internacional.json"),
+      traerOpcional("datos/rios/monitoreo.json"),
     ]);
-    D = { estado, config, regiones, serie, plantillas, meta, campo, indices, panorama, avisos, noticias, atm, oficial, inter };
+    D = { estado, config, regiones, serie, plantillas, meta, campo, indices, panorama, avisos, noticias, atm, oficial, inter, rios };
   }catch(err){
     document.body.innerHTML =
       `<div style="padding:60px 24px;max-width:600px;margin:0 auto;font-family:system-ui">

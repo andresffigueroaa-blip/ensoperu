@@ -144,14 +144,14 @@ function pintarPortada(){
   const orden = { "muy alto": 4, alto: 3, medio: 2, bajo: 1 }, ordenAviso = { ROJO: 3, NARANJA: 2, AMARILLO: 1 };
   const peso = r => (ordenAviso[r.aviso] || 0) * 100 + (orden[r.n_lluvia] || 0) + (orden[r.n_mar] || 0) + (orden[r.n_focos] || 0);
   const filas = Object.entries(R).sort((a, b) => peso(b[1]) - peso(a[1]));
-  $("#tabla-regiones").innerHTML = `<tr><th>Región</th><th>Aviso</th><th>Mar</th><th>Lluvia, 16 días</th><th>Focos, 7 días</th><th>Lluvia pasada, SPI-3${M.datos.spi ? "" : ""}</th><th>Ríos en crecida</th></tr>`
+  $("#tabla-regiones").innerHTML = `<tr><th>Región</th><th>Aviso</th><th>Mar</th><th>Lluvia, 16 días</th><th>Focos, 7 días</th><th>Tendencia de lluvia, próximo mes</th><th>Ríos en crecida</th></tr>`
     + filas.map(([id, r]) => `<tr onclick="abrirLugar('${id}')" tabindex="0" onkeydown="if(event.key==='Enter')abrirLugar('${id}')">
       <td><b>${esc(r.nombre)}</b></td>
       <td>${r.aviso ? `<span class="chip ${NIVEL_AVISO[r.aviso]}">${esc(r.aviso[0] + r.aviso.slice(1).toLowerCase())}</span>` : '<span class="chip sin">–</span>'}</td>
       <td>${r.mar === null || r.mar === undefined ? "–" : `${sg(r.mar)} °C ${chipNivel(r.n_mar)}`}</td>
       <td>${r.lluvia16 === null || r.lluvia16 === undefined ? "–" : `${Math.round(r.lluvia16)} mm ${chipNivel(r.n_lluvia)}`}</td>
       <td>${r.focos} ${chipNivel(r.n_focos)}</td>
-      <td>${r.spi3 === null || r.spi3 === undefined ? "<small>no aplica</small>" : sg(r.spi3)}</td>
+      <td>${r.estacional === null || r.estacional === undefined ? "–" : `${sg(r.estacional, 0)} mm <small>${r.estacional >= 0 ? "sobre" : "bajo"} lo normal</small>`}</td>
       <td>${r.rios_altos?.length ? esc(r.rios_altos.join(", ")) : "–"}</td></tr>`).join("");
 
   // Rankings
@@ -168,8 +168,8 @@ function pintarPortada(){
     const R = O.escenario?.resumen || {};
     $("#portada-estado").innerHTML = [
       tarjetaKpi("Emergencias, 7 días", entero(O.coen?.total), "INDECI", "ir('vivo')"),
-      tarjetaKpi("Distritos en riesgo muy alto por lluvia", O.escenario?.vigente ? entero(R.MA?.distritos || 0) : "0", O.escenario?.vigente ? `${entero(R.MA?.poblacion || 0)} personas · CENEPRED` : "Sin aviso vigente · CENEPRED", "abrirCapa('esc')"),
-      tarjetaKpi("Ríos sobre umbral", entero((O.phisis?.sobre_umbral || 0) + (O.ana_rios?.en_alerta || 0) + (O.ana_rios?.en_emergencia || 0)), "SENAMHI y ANA", "ir('vivo')"),
+      tarjetaKpi("Distritos en riesgo muy alto por lluvia", O.escenario?.vigente ? entero(R.MA?.distritos || 0) : "Sin escenario", O.escenario?.vigente ? `${entero(R.MA?.poblacion || 0)} personas · CENEPRED` : "Sin aviso vigente · CENEPRED", "abrirCapa('esc')"),
+      tarjetaKpi("Ríos en crecida sobre umbral", entero((D.rios?.conteo?.alerta || 0) + (D.rios?.conteo?.emergencia || 0)), `${entero(D.rios?.conteo?.nivel_bajo || 0)} con nivel bajo · ANA y SENAMHI`, "ir('rios')"),
       tarjetaKpi("Distritos en estado de emergencia", entero(Object.keys(O.emergencia?.distritos || {}).length), "PCM", "abrirCapa('dee')"),
     ].join("");
   }
@@ -272,11 +272,10 @@ async function pintarComparar(){
     <tr><th></th><th>${esc(A.u.nombre)}<small>${esc(A.u.region_nombre || "Región")}</small></th><th>${esc(B.u.nombre)}<small>${esc(B.u.region_nombre || "Región")}</small></th></tr>
     ${fila("Mar frente a la costa", ...f(X => X.reg?.mar === null || X.reg?.mar === undefined ? null : `${sg(X.reg.mar)} °C ${chipNivel(X.reg.n_mar)}`))}
     ${fila("Lluvia, próximos 16 días", ...f(X => X.ll ? `${Math.round(X.ll.total)} mm` : null))}
-    ${fila("Días de lluvia fuerte, 16 días", ...f(X => X.ll ? decimal(X.ll.dias_fuertes) : null))}
+    ${fila("Días de lluvia fuerte, 16 días", ...f(X => X.ll ? X.ll.dias_fuertes : null))}
     ${fila("Lluvia, últimos 30 días (modelo)", ...f(X => X.ll?.ult30 !== undefined ? `${Math.round(X.ll.ult30)} mm` : null))}
     ${fila("Temperatura máxima, próximos 7 días", ...f(X => X.ll?.tmax7 !== undefined ? `${String(X.ll.tmax7).replace(".", ",")} °C` : null))}
     ${fila("Focos de calor, 7 días", ...f(X => X.inc?.focos ?? 0))}
-    ${fila("Lluvia pasada, 3 meses (SPI)", ...f(X => { const s = M.datos.spi?.valores?.[X.idProv]; return !s ? null : s.aplica === false ? "No aplica (temporada seca)" : `${sg(s.spi3)}, ${periodoSPI(s.mes)}`; }))}
     ${fila("Tendencia estacional, próximo mes", ...f(X => X.est ? `${sg(X.est.anom[1] ?? X.est.anom[0], 0)} mm` : null))}
     ${fila("Riesgo por inundación", ...f(X => riesgoCorto(X.rs?.inu)))}
     ${fila("Riesgo por movimientos en masa", ...f(X => riesgoCorto(X.rs?.mm)))}
@@ -298,14 +297,14 @@ function pintarFuentes(){
     ["ICEN", "IGP / ENFEN", "Oficial", "Mensual"], ["Riesgo por inundación y movimientos en masa", "CENEPRED (SIGRID)", "Oficial", "Por campaña"],
     ["Temperatura del mar, 25 km", "NOAA OISST v2.1", "Observado", "Diario"], ["ONI, RONI, SOI, OLR, vientos, calor", "NOAA CPC", "Observado", "Mensual"],
     ["MEI, PDO", "NOAA PSL, NCEI", "Observado", "Mensual"], ["Focos de calor", "NASA FIRMS (VIIRS)", "Satélite", "Diario"],
-    ["Lluvia y temperatura a 16 días", "Open-Meteo (ECMWF, GFS, ICON)", "Modelo", "Diario"], ["Caudales a 30 días", "GloFAS (Copernicus)", "Modelo", "Diario"],
+    ["Lluvia y temperatura a 16 días", "Open-Meteo (ECMWF, GFS, ICON)", "Modelo", "Diario"], ["Caudales a 15 días", "GloFAS (Copernicus)", "Modelo", "Diario"],
     ["Tendencia estacional, 6 meses", "ECMWF SEAS5", "Modelo", "Mensual"], ["Altura de ola, 7 días", "Open-Meteo Marine", "Modelo", "Diario"],
-    ["Clima histórico y sequía (SPI)", "NASA POWER (MERRA-2)", "Reanálisis, ~50 km", "Mensual"],
+    ["Clima histórico", "NASA POWER (MERRA-2)", "Reanálisis, ~50 km", "Mensual"],
     ["Emergencias registradas", "INDECI, COEN", "Oficial", "Cada hora"], ["Escenario de riesgo por aviso de lluvia", "CENEPRED", "Oficial", "Por aviso"],
     ["Activación de quebradas, avisos hidrológicos, umbrales de ríos", "SENAMHI", "Oficial", "Cada hora"], ["Pronóstico estacional por sector", "SENAMHI", "Oficial", "Mensual"],
     ["Caudales con umbrales, embalses, puntos críticos", "ANA", "Oficial", "Diario"], ["Estado de emergencia, preparación de distritos", "PCM, Geoperú", "Oficial", "Por decreto"],
     ["Cortes de agua", "SUNASS", "Oficial", "Diario"], ["Incendios forestales", "SERFOR", "Oficial", "Diario"], ["Lagunas glaciares", "INAIGEM", "Oficial", "Cada hora"],
-    ["Índices E y C, probabilidad de El Niño fuerte", "IGP", "Oficial", "Mensual"], ["Mar diario en regiones Niño", "Marina, DHN", "Oficial", "Diario"],
+    ["Índices E y C", "IGP", "Oficial", "Mensual"], ["Probabilidad de El Niño fuerte", "IGP, modelo experimental", "Modelo", "Mensual"], ["Mar diario en regiones Niño", "Marina, DHN", "Oficial", "Diario"],
     ["Pronóstico ENSO, probabilidades", "NOAA CPC", "Internacional", "Mensual"], ["Índices Niño 1+2 y 3", "JMA (Japón)", "Internacional", "Mensual"],
     ["Plumas de modelos", "IRI, Copernicus C3S, ECMWF, NMME", "Internacional", "Mensual"], ["MJO y semanas 2 y 3", "NOAA PSL y CPC", "Internacional", "Diario y semanal"],
     ["Boletines regionales y mundiales", "CIIFEN, OMM", "Internacional", "Mensual"],

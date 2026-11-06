@@ -9,7 +9,7 @@ disponibles para cada lugar (ECMWF, GFS, ICON y otros).
 
 Escribe sitio/datos/unidades/lluvia_16d.json:
   {id: {total, max_dia, dias_fuertes, serie:[16 valores diarios en mm]}}
-con la fecha de emisión. "dias_fuertes" = días con más de 20 mm (promedio de
+con la fecha de emisión. "dias_fuertes" = días con más de 20 mm (el máximo entre los puntos; antes, promedio de
 los puntos).
 
 Es pronóstico de modelos, no del SENAMHI: la página lo dice, y para avisos
@@ -105,9 +105,10 @@ def ejecutar(estado: dict) -> dict:
         a = np.nanmean(arr, axis=0)
         if np.nanmax(a) > MAX_MM_DIA or np.nanmin(a) < 0:
             raise ErrorValidacion(f"Open-Meteo: lluvia fuera de rango en {uid}")
-        fuertes = np.nanmean([(np.array(s) > UMBRAL_FUERTE).sum() for s in lista])
+        # El punto con más días fuertes: promediar daba fracciones (0,3 días) y escondía el punto más lluvioso
+        fuertes = np.nanmax([(np.array(s) > UMBRAL_FUERTE).sum() for s in lista])
         valores[uid] = {"total": round(float(np.nansum(a)), 1), "max_dia": round(float(np.nanmax(a)), 1),
-                        "dias_fuertes": round(float(fuertes), 1), "serie": [round(float(x), 1) for x in a],
+                        "dias_fuertes": int(fuertes), "serie": [round(float(x), 1) for x in a],
                         "puntos": len(lista), "tmax7": round(float(np.nanmean(tmax[uid])), 1),
                         "tmin7": round(float(np.nanmean(tmin[uid])), 1), **previa.get(uid, {})}
     if len(valores) < 0.9 * len(m):

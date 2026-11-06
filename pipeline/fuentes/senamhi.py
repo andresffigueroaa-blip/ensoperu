@@ -67,6 +67,8 @@ ZONAS = {  # palabra en el texto -> zonas de catalogo/regiones.yaml
 def zonas_de(titulo: str, cuerpo: str) -> tuple[list[str], list[str]]:
     """Zonas nombradas y regiones nombradas en el título y el texto del aviso."""
     t = (titulo + " " + cuerpo).lower()
+    # "costa centro y sur" -> "costa centro y costa sur", para que se reconozcan las dos
+    t = re.sub(r"\b(costa|sierra|selva) (norte|centro|sur) y (norte|centro|sur)\b", r"\1 \2 y \1 \3", t)
     zonas = set()
     for clave, valor in ZONAS.items():
         if re.search(rf"\b{clave}\b", t):

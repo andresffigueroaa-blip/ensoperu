@@ -30,16 +30,16 @@ function pintarVivo(){
   const O = D.oficial;
   if (!O){ $("#vivo").innerHTML = `<p class="f-txt">Todavía no hay lectura de los servicios del Estado.</p>`; return; }
   const esc0 = O.escenario || {}, R = esc0.resumen || {}, coen = O.coen || {}, ph = O.phisis || {}, ar = O.ana_rios || {};
-  const rios = (ph.sobre_umbral || 0) + (ar.en_alerta || 0) + (ar.en_emergencia || 0);
+  const cr = D.rios?.conteo || {}, crecida = (cr.alerta || 0) + (cr.emergencia || 0);
   const quebr = Object.keys(O.quebradas?.distritos || {}).length;
   const dee = Object.keys(O.emergencia?.distritos || {}).length;
   const lagunas = (O.inaigem?.estaciones || []).filter(e => e.semaforo !== "verde");
 
   $("#vivo-kpis").innerHTML = [
     tarjetaKpi("Emergencias registradas, 7 días", entero(coen.total), "INDECI, COEN", "document.getElementById('vivo-coen').scrollIntoView()"),
-    tarjetaKpi("Distritos en riesgo muy alto por lluvia", esc0.vigente ? entero(R.MA?.distritos || 0) : "0", esc0.vigente ? `${entero(R.MA?.poblacion || 0)} personas · CENEPRED` : "Sin aviso de lluvia vigente", "document.getElementById('vivo-esc').scrollIntoView()"),
+    tarjetaKpi("Distritos en riesgo muy alto por lluvia", esc0.vigente ? entero(R.MA?.distritos || 0) : "Sin escenario", esc0.vigente ? `${entero(R.MA?.poblacion || 0)} personas · CENEPRED` : "Sin aviso de lluvia vigente", "document.getElementById('vivo-esc').scrollIntoView()"),
     tarjetaKpi("Distritos con posible activación de quebradas", entero(quebr), "SENAMHI", "abrirCapa('queb')"),
-    tarjetaKpi("Estaciones de ríos sobre umbral", entero(rios), "SENAMHI y ANA", "document.getElementById('vivo-rios').scrollIntoView()"),
+    tarjetaKpi("Ríos en crecida sobre umbral", entero(crecida), `${entero(cr.nivel_bajo || 0)} con nivel bajo (navegación) · ANA y SENAMHI`, "ir('rios')"),
     tarjetaKpi("Distritos en estado de emergencia", entero(dee), Object.keys(O.emergencia?.decretos || {}).join(", ") || "PCM", "abrirCapa('dee')"),
     tarjetaKpi("Cortes de agua en curso", entero(O.agua?.total), `${entero(O.agua?.conexiones)} conexiones · SUNASS`, "document.getElementById('vivo-agua').scrollIntoView()"),
     tarjetaKpi("Incendios forestales, 7 días", entero(O.incendios?.total), "SERFOR", null),
@@ -138,7 +138,7 @@ function pintarPronosticos(){
   const filas = [
     ["ENFEN (Perú)", "Comisión oficial", `${esc(e.alerta.estado)}. ${mesN12.length ? `Probabilidad de El Niño costero en ${nombreMes(mesN12[1]?.mes)}: ${mesN12[1]?.nino} %, fuerte o extraordinario ${mesN12[1]?.fuerte} %` : ""}`, e.alerta.fecha, e.alerta.url],
     ["SENAMHI (Perú)", "Pronóstico estacional", (pr.trimestral || []).filter(s => /Costa Norte|Sierra Sur Oriental|Altiplano/i.test(s.sector)).map(s => `${esc(s.sector)}: ${s.sobre >= s.bajo ? `${s.sobre} % de lluvia sobre lo normal` : `${s.bajo} % bajo lo normal`}`).join("; ") + ` (${esc((pr.trimestral || [])[0]?.periodo || "")})`, (pr.trimestral || [])[0]?.emision, pr.url],
-    ["IGP (Perú)", "Modelo de inteligencia artificial", igp.prob_fuerte ? `Probabilidad de El Niño fuerte en el Pacífico oriental en ${igp.prob_fuerte.anio}: ${String(igp.prob_fuerte.clasificacion).replace(".", ",")} %` : "", null, igp.url],
+    ["IGP (Perú)", "Modelo experimental de inteligencia artificial, no es pronóstico oficial", igp.prob_fuerte ? `Probabilidad de El Niño fuerte en el Pacífico oriental en ${igp.prob_fuerte.anio}: ${igp.prob_fuerte.clasificacion >= 95 ? "cerca del 100 %" : `${Math.round(igp.prob_fuerte.clasificacion)} %`}` : "", null, igp.url],
     ["Marina, DHN (Perú)", "Observación diaria", dhn.nino12 ? `Niño 1+2: ${sg(dhn.nino12.atsm_actual)} °C; Niño 3.4: ${sg(dhn.nino34?.atsm_actual)} °C` : "", dhn.nino12?.atsm_fecha, dhn.url],
     ["NOAA CPC (EE. UU.)", "Oficial de EE. UU.", `${esc(cpc.estado_es || "")}. ${(cpc.probabilidades || []).slice(1, 4).map(p => `${p.trimestre}: ${p.nino} % El Niño`).join(", ")}`, cpc.emitido, cpc.url],
     ["JMA (Japón)", "Observación mensual", I.jma?.n12?.length ? `Niño 1+2 en ${nombreMes(I.jma.n12.at(-1).mes)}: ${sg(I.jma.n12.at(-1).valor)} °C` : "", I.jma?.n12?.at(-1)?.mes, I.jma?.url],

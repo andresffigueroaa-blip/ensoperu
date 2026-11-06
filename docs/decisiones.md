@@ -275,6 +275,22 @@ a mostrar algo que el ENFEN no dice.
 - **Wikipedia solo si OpenStreetMap enlaza el artículo.** Buscar por nombre traería homónimos ("Laguna Negra") y diría algo falso del lugar.
 - **Noticias con imagen.** Canales RSS de los medios, filtrados por tema. Las imágenes se muestran desde el servidor del medio, con enlace a la nota; sin imagen, un dibujo por tema.
 
+## 2026-11-06 · Auditoría independiente (datos, comunicación de riesgo, interfaz)
+
+Tres revisores sin acceso a mis supuestos. Lo verificado contra la fuente y correcto: temperatura del mar (CPC y Marina), ICEN, ONI, RONI, alerta y probabilidades del ENFEN N° 19, avisos del SENAMHI, caudales y umbrales de la ANA, escenario del CENEPRED, emergencias del COEN, focos FIRMS.
+
+Corregido:
+- **Retirado el SPI** del mapa, fichas, tabla, Comparar y boletín: un solo punto de reanálisis de ~50 km por unidad; frente al SPI-3 del SENAMHI, correlación de 0,3 y sesgo a seco (42 provincias en sequía frente a 24). El archivo se sigue generando, sin mostrarse.
+- **Retirada la capa «lluvia frente a lo normal»**: pronóstico de modelos frente a la normal de otra fuente; daba más lluvia de lo normal en 127 de 142 provincias, contra el ENFEN. En su lugar, la tendencia estacional (comparada con su propia historia).
+- **Ríos**: sin lectura en 30 h ya no es «normal» (estado «sin lectura reciente»); el nivel bajo es un estado propio; «sin estación» en gris; la crecida y el nivel bajo se cuentan aparte. GloFAS se presenta como modelo, no comparable con la medición de la ANA.
+- **Avisos**: cada región muestra el tipo de peligro (calor, lluvia, viento) y si el aviso aún no empieza; se reconocen zonas como «costa centro y sur». Si hay aviso de lluvia, el nivel de lluvia del modelo no puede decir «bajo».
+- **Días de lluvia fuerte**: el punto más lluvioso, no el promedio (salían fracciones).
+- **Cortes de agua**: solo en curso y uno por empresa y distrito (antes 246 cortes y 1,36 millones de conexiones; ahora 66 y 494 mil).
+- **CENEPRED**: fuera los escenarios de avisos cancelados; «Sin escenario» en lugar de 0.
+- **IGP**: su probabilidad de El Niño fuerte se rotula como modelo experimental, no oficial.
+- **Noticias**: tema obligatorio y sin casi duplicados.
+- **Análisis con IA**: usaba una estructura de probabilidades que ya no existía; habría fallado al poner la clave.
+
 ## 2026-11-06 · SPI con su límite, y el sur con la tendencia de la temporada
 
 - **El SPI-3 publicado era de julio a septiembre**, temporada seca: en zonas áridas unos milímetros de más daban valores extremos (Nazca +1,8) y se presentaba como sequía actual. Ahora no se muestra donde lo normal de esos tres meses es menor de 30 mm (la OMM advierte que el SPI no es fiable en zonas y temporadas secas) y se rotula «Lluvia pasada» con su período.

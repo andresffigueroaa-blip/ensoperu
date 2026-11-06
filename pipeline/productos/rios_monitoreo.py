@@ -7,9 +7,10 @@ las fuentes y decide un estado, con la regla a la vista:
   emergencia   una estación de la ANA sobre su umbral de emergencia
   alerta       una estación de la ANA sobre su umbral de alerta, o una del SENAMHI en naranja o rojo
   vigilancia   una estación del SENAMHI en amarillo, o crecida inusual pronosticada por GloFAS
-  normal       tiene estaciones y ninguna pasa sus umbrales
+  nivel_bajo   alerta por nivel o caudal bajo (umbrales de estiaje de la ANA, o aviso del SENAMHI por descenso)
+  normal       tiene lecturas recientes (menos de 30 h) y ninguna pasa sus umbrales
+  sin_lectura  tiene estaciones, pero ninguna reportó en las últimas 30 h: no se puede decir que esté normal
   sin_datos    el río no tiene estaciones cerca: se ve en el mapa, pero no se puede seguir
-  Aparte, "nivel bajo": la ANA marca umbrales de estiaje (nivel o caudal bajo).
 
 Suma además, por cercanía al cauce: obras en puntos críticos de la ANA (a menos de
 2 km) y emergencias del COEN de los últimos 7 días (a menos de 3 km).
@@ -32,7 +33,8 @@ from comun import DATOS, ahora_utc, escribir_json, hoy, leer_json, log
 SALIDA = DATOS / "rios" / "monitoreo.json"
 HIST_EST = DATOS / "rios" / "historial_estaciones.csv"
 HIST_RIO = DATOS / "rios" / "historial.csv"
-ORDEN = {"emergencia": 4, "alerta": 3, "vigilancia": 2, "normal": 1, "sin_datos": 0}
+ORDEN = {"emergencia": 6, "alerta": 5, "vigilancia": 4, "nivel_bajo": 3, "normal": 2, "sin_lectura": 1, "sin_datos": 0}
+HORAS_VIGENCIA = 30        # una lectura más vieja no permite decir cómo está el río
 KM_PC, KM_COEN = 2.0, 3.0
 
 
@@ -71,9 +73,17 @@ def ejecutar(estado: dict) -> dict:
     ems = (leer_json(DATOS / "peru" / "emergencias.geojson") or {}).get("features", [])
     vert = _vertices(leer_json(DATOS / "geo" / "rios_ana.geojson") or {})
 
+    ahora = dt.datetime.now(dt.timezone.utc)
+    def fresco(iso):
+        try:
+            return (ahora - dt.datetime.fromisoformat(str(iso).replace("Z", "+00:00"))).total_seconds() < HORAS_VIGENCIA * 3600
+        except ValueError:
+            return False
+    ana_fresca = fresco((of.get("ana_rios") or {}).get("leido"))
     salida, conteo = {}, {k: 0 for k in ORDEN}
     for rid, f in fichas.items():
-        estado_r, motivos, est = "sin_datos" if not f["estaciones"] else "normal", [], []
+        estado_r, motivos, est = "sin_datos" if not f["estaciones"] else "sin_lectura", [], []
+        medido = False                     # alguna estación con lectura reciente
         nivel_bajo = False
         # Si la ANA tiene en este río una estación con umbrales de estiaje fuera de lo normal,
         # el aviso del SENAMHI en el mismo río también es por nivel bajo, no por crecida
@@ -87,7 +97,11 @@ def ejecutar(estado: dict) -> dict:
             if clave in ana:
                 e = ana[clave]
                 est.append({"fuente": "ANA", "nombre": e["estacion"], "valor": e["valor"], "unidad": e["unidad"], "alerta": e["alerta"],
-                            "emergencia": e["emergencia"], "tendencia": e["tendencia"], "estado": e["estado"], "estiaje": e["estiaje"], "hora": e.get("hora")})
+                            "emergencia": e["emergencia"], "tendencia": e["tendencia"], "estado": e["estado"], "estiaje": e["estiaje"],
+                            "hora": e.get("hora"), "reciente": ana_fresca})
+                if not ana_fresca:
+                    continue
+                medido = True
                 if e["estiaje"] and e["estado"] != "normal":
                     nivel_bajo = True
                 elif e["estado"] == "emergencia":
@@ -96,7 +110,11 @@ def ejecutar(estado: dict) -> dict:
                     subir("alerta", f"{e['estacion']} sobre su umbral de alerta (ANA)")
             elif clave in sen:
                 e = sen[clave]
-                est.append({"fuente": "SENAMHI", "nombre": e["estacion"], "nivel": e["nivel"], "variable": e["variable"], "fecha": e["fecha"]})
+                reciente = fresco(e["fecha"])
+                est.append({"fuente": "SENAMHI", "nombre": e["estacion"], "nivel": e["nivel"], "variable": e["variable"], "fecha": e["fecha"], "reciente": reciente})
+                if not reciente:
+                    continue
+                medido = True
                 if e["nivel"] != "normal" and (norm_est(e["estacion"]) in descenso or estiaje_rio):
                     nivel_bajo = True
                     motivos.append(f"{e['estacion']} en {e['nivel']} por descenso del nivel (SENAMHI)")
@@ -110,11 +128,15 @@ def ejecutar(estado: dict) -> dict:
                             "fecha_pico": g["fecha_pico"], "nivel": g["nivel"]})
                 if g["nivel"] != "normal":
                     subir("vigilancia", f"crecida {g['nivel']} pronosticada en {g['lugar']} (GloFAS)")
+        if medido and estado_r == "sin_lectura":
+            estado_r = "normal"
+        if nivel_bajo and ORDEN[estado_r] < ORDEN["nivel_bajo"]:
+            estado_r = "nivel_bajo"
         v = vert.get(rid)
         pc = [p["properties"] for p in pcs if v is not None and _cerca(v, *p["geometry"]["coordinates"], KM_PC)]
         em = [e["properties"] for e in ems if v is not None and _cerca(v, *e["geometry"]["coordinates"], KM_COEN)]
         conteo[estado_r] += 1
-        if estado_r == "sin_datos" and not pc and not em and not nivel_bajo:
+        if estado_r == "sin_datos" and not pc and not em:
             continue                       # sin nada que seguir: el mapa lo dibuja gris sin entrada aquí
         avance = [p["avance"] for p in pc if isinstance(p.get("avance"), (int, float))]
         salida[rid] = {"estado": estado_r, "nivel_bajo": nivel_bajo, "motivos": motivos, "estaciones": est,
@@ -157,7 +179,7 @@ def _historial(ana: dict, salida: dict) -> None:
     if HIST_RIO.exists():
         with HIST_RIO.open(encoding="utf-8") as f:
             filas = [r for r in csv.DictReader(f) if r["fecha"] != hoy().isoformat()]
-    filas += [{"fecha": hoy().isoformat(), "rio": k, "estado": v["estado"]} for k, v in salida.items() if v["estado"] != "sin_datos"]
+    filas += [{"fecha": hoy().isoformat(), "rio": k, "estado": v["estado"]} for k, v in salida.items() if v["estado"] not in ("sin_datos",)]
     with HIST_RIO.open("w", encoding="utf-8", newline="") as f:
         w = csv.DictWriter(f, fieldnames=["fecha", "rio", "estado"], lineterminator="\n")
         w.writeheader()

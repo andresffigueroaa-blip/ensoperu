@@ -181,7 +181,9 @@ def escenario(_) -> dict:
     distritos, resumen, escenarios = {}, {"MA": {}, "A": {}, "M": {}}, []
     for e in sorted(vigentes, key=lambda x: int(x["id"])):
         d = _get(f"{base}/{e['id']}/traer-distritos").json()
-        escenarios.append({k: e.get(k) for k in ("id", "inicio_vigencia", "fin_vigencia", "ambito")})
+        if not d.get("g"):          # aviso cancelado por el SENAMHI: el escenario queda vacío
+            continue
+        escenarios.append({**{k: e.get(k) for k in ("id", "inicio_vigencia", "fin_vigencia", "ambito")}, "distritos": len(d["g"])})
         for g in d.get("g", []):
             n = str(g.get("nivel", "")).upper()
             if ORDEN_NIVEL.get(n, 0) > ORDEN_NIVEL.get(distritos.get(g["ubigeo"], {}).get("nivel"), 0):
@@ -191,6 +193,8 @@ def escenario(_) -> dict:
         r["distritos"] = r.get("distritos", 0) + 1
         r["poblacion"] = r.get("poblacion", 0) + (v["poblacion"] or 0)
         r["vivienda"] = r.get("vivienda", 0) + (v["vivienda"] or 0)
+    if not escenarios:
+        return {"vigente": False, "distritos": {}, "url": "https://sigrid.cenepred.gob.pe/sigridv3/escenario-aviso"}
     return {"vigente": True, "escenarios": escenarios, "resumen": resumen, "distritos": distritos,
             "url": "https://sigrid.cenepred.gob.pe/sigridv3/escenario-aviso"}
 
@@ -325,7 +329,7 @@ def agua(idx) -> dict:
     filas = _arcgis("https://geosunass.sunass.gob.pe/gisserver/rest/services/Hosted/WFS_SUNASS_Semaforo_interrupciones/MapServer/0",
                     where=f"situacion='SERVICIO INTERRUMPIDO' AND fecha_de_inicio > DATE '{corte}'",
                     campos="eps,departamento,provincia,distrito,n_de_conexiones_afectadas,tipo_de_interrupci_n,motivo_de_interrupci_n,fecha_de_inicio,fecha_estimada_de_restablecimie")
-    distritos, cortes, vistos = {}, [], set()
+    distritos, vistos = {}, {}
     for f in filas:
         a = f["attributes"]
         ub = _ubigeo(idx, a.get("departamento"), a.get("provincia"), a.get("distrito"))
@@ -333,19 +337,19 @@ def agua(idx) -> dict:
              "conexiones": int(a.get("n_de_conexiones_afectadas") or 0), "tipo": str(a.get("tipo_de_interrupci_n") or "").capitalize(),
              "motivo": str(a.get("motivo_de_interrupci_n") or "").capitalize(), "inicio": _ms(a.get("fecha_de_inicio")),
              "restablece": _ms(a.get("fecha_estimada_de_restablecimie")), "distrito": ub}
-        # Cortes sin cerrar en el sistema cuya reposición prevista ya pasó hace más de 2 días: no se cuentan
-        if c["restablece"] and c["restablece"] < (hoy() - dt.timedelta(days=2)).isoformat():
+        # En curso: con reposición prevista de hoy en adelante (los que ya pasaron quedaron sin cerrar en el sistema)
+        if c["restablece"] and c["restablece"] < hoy().isoformat():
             continue
-        # El mismo corte viene repetido en varias filas: se cuenta una vez
-        llave = (c["eps"], c["lugar"], c["inicio"], c["motivo"], c["conexiones"])
-        if llave in vistos:
+        # Un corte por empresa y distrito: el mismo corte diario venía en varias filas; se toma el de más conexiones
+        llave = (c["eps"], c["lugar"])
+        if llave in vistos and vistos[llave]["conexiones"] >= c["conexiones"]:
             continue
-        vistos.add(llave)
-        cortes.append(c)
-        if ub:
-            d = distritos.setdefault(ub, {"cortes": 0, "conexiones": 0})
+        vistos[llave] = c
+    cortes = sorted(vistos.values(), key=lambda c: -c["conexiones"])
+    for c in cortes:
+        if c["distrito"]:
+            d = distritos.setdefault(c["distrito"], {"cortes": 0, "conexiones": 0})
             d["cortes"] += 1; d["conexiones"] += c["conexiones"]
-    cortes.sort(key=lambda c: -c["conexiones"])
     return {"total": len(cortes), "conexiones": sum(c["conexiones"] for c in cortes), "cortes": cortes[:60], "distritos": distritos,
             "url": "https://www.sunass.gob.pe/"}
 
