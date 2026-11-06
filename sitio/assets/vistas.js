@@ -144,14 +144,14 @@ function pintarPortada(){
   const orden = { "muy alto": 4, alto: 3, medio: 2, bajo: 1 }, ordenAviso = { ROJO: 3, NARANJA: 2, AMARILLO: 1 };
   const peso = r => (ordenAviso[r.aviso] || 0) * 100 + (orden[r.n_lluvia] || 0) + (orden[r.n_mar] || 0) + (orden[r.n_focos] || 0);
   const filas = Object.entries(R).sort((a, b) => peso(b[1]) - peso(a[1]));
-  $("#tabla-regiones").innerHTML = `<tr><th>Región</th><th>Aviso</th><th>Mar</th><th>Lluvia, 16 días</th><th>Focos, 7 días</th><th>Sequía (SPI-3)</th><th>Ríos en crecida</th></tr>`
+  $("#tabla-regiones").innerHTML = `<tr><th>Región</th><th>Aviso</th><th>Mar</th><th>Lluvia, 16 días</th><th>Focos, 7 días</th><th>Lluvia pasada, SPI-3${M.datos.spi ? "" : ""}</th><th>Ríos en crecida</th></tr>`
     + filas.map(([id, r]) => `<tr onclick="abrirLugar('${id}')" tabindex="0" onkeydown="if(event.key==='Enter')abrirLugar('${id}')">
       <td><b>${esc(r.nombre)}</b></td>
       <td>${r.aviso ? `<span class="chip ${NIVEL_AVISO[r.aviso]}">${esc(r.aviso[0] + r.aviso.slice(1).toLowerCase())}</span>` : '<span class="chip sin">–</span>'}</td>
       <td>${r.mar === null || r.mar === undefined ? "–" : `${sg(r.mar)} °C ${chipNivel(r.n_mar)}`}</td>
       <td>${r.lluvia16 === null || r.lluvia16 === undefined ? "–" : `${Math.round(r.lluvia16)} mm ${chipNivel(r.n_lluvia)}`}</td>
       <td>${r.focos} ${chipNivel(r.n_focos)}</td>
-      <td>${r.spi3 === null || r.spi3 === undefined ? "–" : sg(r.spi3)}</td>
+      <td>${r.spi3 === null || r.spi3 === undefined ? "<small>no aplica</small>" : sg(r.spi3)}</td>
       <td>${r.rios_altos?.length ? esc(r.rios_altos.join(", ")) : "–"}</td></tr>`).join("");
 
   // Rankings
@@ -276,7 +276,7 @@ async function pintarComparar(){
     ${fila("Lluvia, últimos 30 días (modelo)", ...f(X => X.ll?.ult30 !== undefined ? `${Math.round(X.ll.ult30)} mm` : null))}
     ${fila("Temperatura máxima, próximos 7 días", ...f(X => X.ll?.tmax7 !== undefined ? `${String(X.ll.tmax7).replace(".", ",")} °C` : null))}
     ${fila("Focos de calor, 7 días", ...f(X => X.inc?.focos ?? 0))}
-    ${fila("Sequía, SPI-3", ...f(X => M.datos.spi?.valores?.[X.idProv]?.spi3 !== undefined ? sg(M.datos.spi.valores[X.idProv].spi3) : null))}
+    ${fila("Lluvia pasada, 3 meses (SPI)", ...f(X => { const s = M.datos.spi?.valores?.[X.idProv]; return !s ? null : s.aplica === false ? "No aplica (temporada seca)" : `${sg(s.spi3)}, ${periodoSPI(s.mes)}`; }))}
     ${fila("Tendencia estacional, próximo mes", ...f(X => X.est ? `${sg(X.est.anom[1] ?? X.est.anom[0], 0)} mm` : null))}
     ${fila("Riesgo por inundación", ...f(X => riesgoCorto(X.rs?.inu)))}
     ${fila("Riesgo por movimientos en masa", ...f(X => riesgoCorto(X.rs?.mm)))}

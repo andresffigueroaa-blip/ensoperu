@@ -76,6 +76,20 @@ def spi(p: np.ndarray, meses: np.ndarray, k: int) -> np.ndarray:
     return z
 
 
+# La OMM advierte que el SPI no es fiable donde casi no llueve: en zonas áridas y en la
+# temporada seca, unos milímetros de más dan valores extremos que no significan nada.
+# Si lo normal de los 3 meses es menor que esto, el SPI-3 no se muestra.
+SPI_MM_MIN = 30
+
+
+def marcar_spi(llave: str, s3: float, s6, normal_p: list) -> dict:
+    m = int(llave[4:6])
+    normal3 = sum(normal_p[(m - 1 - i) % 12] for i in range(3))
+    aplica = normal3 >= SPI_MM_MIN
+    return {"mes": llave[:4] + "-" + llave[4:6], "normal3": round(normal3), "aplica": aplica,
+            "spi3": round(s3, 2) if aplica else None, "spi6": round(s6, 2) if aplica and s6 is not None else None}
+
+
 def ficha(u: dict, punto: list[float], fin: int) -> dict:
     par = pedir(punto[0], punto[1], fin)
     llaves, p = serie(par[PARAM["p"]])
@@ -109,8 +123,7 @@ def ficha(u: dict, punto: list[float], fin: int) -> dict:
                      "t": [None if np.isnan(v) else round(float(v), 1) for v in tt[-n:]],
                      "spi3": [None if np.isnan(v) else round(float(v), 2) for v in s3[-n:]],
                      "spi6": [None if np.isnan(v) else round(float(v), 2) for v in s6[-n:]]},
-        "_spi": None if u_i is None else {"mes": llaves[u_i][:4] + "-" + llaves[u_i][4:6], "spi3": round(float(s3[u_i]), 2),
-                                          "spi6": None if np.isnan(s6[u_i]) else round(float(s6[u_i]), 2)},
+        "_spi": None if u_i is None else marcar_spi(llaves[u_i], float(s3[u_i]), None if np.isnan(s6[u_i]) else float(s6[u_i]), normal["p"]),
     }
 
 

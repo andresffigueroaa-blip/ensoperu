@@ -166,18 +166,23 @@ function grafLineas(svg, fechas, series, op = {}){
     const mes = f.slice(5, 7), dia = f.slice(8, 10);
     let esMarca;
     if (mensual) esMarca = corto ? +mes % 3 === 1 : mes === "01" && +f.slice(0, 4) % (n > 600 ? 5 : 1) === 0;
+    else if (n <= 120) esMarca = ["01", "08", "15", "22"].includes(dia);      // pocos días: una marca por semana
     else esMarca = corto ? dia === "01" : mes === "01" && dia === "01" && +f.slice(0, 4) % (n > 3000 ? 5 : 1) === 0;
     if (!esMarca) return;
-    const et = corto ? MESES_CORTOS[+mes - 1] + (mes === "01" ? " " + f.slice(0, 4) : "") : f.slice(0, 4);
+    const et = !mensual && n <= 120 ? `${+dia} ${MESES_CORTOS[+mes - 1]}`
+      : corto ? MESES_CORTOS[+mes - 1] + (mes === "01" ? " " + f.slice(0, 4) : "") : f.slice(0, 4);
     ejes += `<line x1="${x(i)}" y1="${T}" x2="${x(i)}" y2="${H - B}" stroke="#E2E8E3"/>
              <text x="${x(i) + 3}" y="${H - 10}" fill="#84959A" font-size="11" font-family="IBM Plex Sans">${et}</text>`;
   });
   // Eje vertical: 5 marcas redondas
   let ejeY = "";
-  const paso = [0.1, 0.2, 0.5, 1, 2, 5, 10].find(p => (hi - lo) / p <= 7) || 10;
-  for (let t = Math.ceil(lo / paso) * paso; t <= hi; t += paso){
+  // Paso "redondo" (1, 2 o 5 por una potencia de 10) para unas 5 marcas, sea cual sea la escala
+  const bruto = (hi - lo) / 5, pot = 10 ** Math.floor(Math.log10(bruto));
+  const paso = [1, 2, 5, 10].map(k => k * pot).find(p => (hi - lo) / p <= 7);
+  const etiqueta = t => op.entero ? entero(Math.round(t) || 0) : sg(Math.abs(t) < 1e-9 ? 0 : t, paso < 1 ? (paso < 0.1 ? 2 : 1) : 0);
+  for (let t = Math.ceil(lo / paso) * paso; t <= hi + 1e-9; t += paso){
     ejeY += `<line x1="${L}" y1="${y(t)}" x2="${W - R}" y2="${y(t)}" stroke="${Math.abs(t) < 1e-9 ? "#9FB0AC" : "#EEF2EF"}"/>
-             <text x="${L - 6}" y="${y(t) + 4}" text-anchor="end" fill="#84959A" font-size="11" font-family="IBM Plex Sans">${sg(t, paso < 1 ? 1 : 0)}</text>`;
+             <text x="${L - 6}" y="${y(t) + 4}" text-anchor="end" fill="#84959A" font-size="11" font-family="IBM Plex Sans">${etiqueta(t)}</text>`;
   }
   const umbrales = (op.umbrales || []).map(([t, c]) =>
     `<line x1="${L}" y1="${y(t)}" x2="${W - R}" y2="${y(t)}" stroke="${c}" stroke-opacity=".6" stroke-dasharray="4 4"/>`).join("");
@@ -291,9 +296,12 @@ async function pintarMonitoreo(){
   // 3 ter. Focos de calor por día, total nacional
   const fo = await traerCsv("datos/indices/incendios_diarios.csv");
   if (fo){
-    const total = fo.fechas.map((_, i) => Object.values(fo.cols).reduce((a, s) => a + (s[i] || 0), 0));
-    grafLineas($("#g-focos"), fo.fechas, [{ n: "Focos en el Perú", v: total, c: COLORES[1], destacar: true }], { entero: true });
-    $("#g-focos-sub").textContent = `Total nacional por día, NASA FIRMS (VIIRS), desde ${fecha(fo.fechas[0])}: la serie se va acumulando.`;
+    // El último día está incompleto (faltan pasadas del satélite): se deja fuera para no aparentar una caída
+    const hoyUTC = new Date().toISOString().slice(0, 10);
+    const nf = fo.fechas.filter(f => f < hoyUTC).length;
+    const total = fo.fechas.slice(0, nf).map((_, i) => Object.values(fo.cols).reduce((a, s) => a + (s[i] || 0), 0));
+    grafLineas($("#g-focos"), fo.fechas.slice(0, nf), [{ n: "Focos en el Perú", v: total, c: COLORES[1], destacar: true }], { entero: true });
+    $("#g-focos-sub").textContent = `Total nacional por día, NASA FIRMS (VIIRS), desde ${fecha(fo.fechas[0])}: la serie se va acumulando. Sin el día en curso, que aún está incompleto. El 2 de noviembre cambió el satélite de referencia (S-NPP dejó de transmitir; ahora NOAA-20).`;
   }
 
   // 3 quater. Verificación contra el CPC

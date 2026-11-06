@@ -275,6 +275,14 @@ a mostrar algo que el ENFEN no dice.
 - **Wikipedia solo si OpenStreetMap enlaza el artículo.** Buscar por nombre traería homónimos ("Laguna Negra") y diría algo falso del lugar.
 - **Noticias con imagen.** Canales RSS de los medios, filtrados por tema. Las imágenes se muestran desde el servidor del medio, con enlace a la nota; sin imagen, un dibujo por tema.
 
+## 2026-11-06 · SPI con su límite, y el sur con la tendencia de la temporada
+
+- **El SPI-3 publicado era de julio a septiembre**, temporada seca: en zonas áridas unos milímetros de más daban valores extremos (Nazca +1,8) y se presentaba como sequía actual. Ahora no se muestra donde lo normal de esos tres meses es menor de 30 mm (la OMM advierte que el SPI no es fiable en zonas y temporadas secas) y se rotula «Lluvia pasada» con su período.
+- **El tema «Sur» usaba ese dato.** Pasa a la tendencia estacional del modelo europeo, que se compara contra su propia historia y coincide con el ENFEN.
+- **«Lluvia próxima frente a lo normal» mezcla dos fuentes** (pronóstico Open-Meteo, normal NASA POWER): queda como aproximada, con su advertencia.
+- **Focos por día**: el día en curso está incompleto y aparentaba una caída; se excluye. Se anota el cambio de satélite del 2 de noviembre.
+- Eje vertical de los gráficos: el paso se calcula para cualquier escala (con más de 1000 focos salían 130 marcas encimadas).
+
 ## 2026-11-06 · Ríos de la ANA y capas oficiales de agua
 
 - Datos entregados por el equipo (DATA_INGRESO, 6-nov): ríos y quebradas y cuencas de la ANA, inventario 2020 del INAIGEM (glaciares y lagunas glaciares), lagunas de la ANA, población del censo 2025 y centros poblados. `herramientas/build_hidro.py` los convierte; se corre a mano con geopandas.

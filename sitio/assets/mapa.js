@@ -25,10 +25,10 @@ const CAPAS_MAPA = {
   aviso:    { n: "Avisos del SENAMHI hoy", u: "", tipo: "aviso", niveles: ["region"], fuente: "SENAMHI. Según las zonas que nombra el texto de cada aviso; el detalle oficial está en su enlace" },
   tsm:      { n: "Temperatura del mar", u: "°C", lo: -2, hi: 6, tipo: "divergente", niveles: ["region"], fuente: "NOAA OISST, franja marina a menos de 110 km del litoral, media de 7 días" },
   lluvia:   { n: "Lluvia, próximos 16 días", u: "mm", lo: 0, hi: 240, tipo: "azul", niveles: ["region", "provincia"], fuente: "Open-Meteo (modelos globales). No es un aviso oficial: para alertas, SENAMHI" },
-  lluvia_n: { n: "Lluvia próxima frente a lo normal", u: "%", lo: -200, hi: 200, tipo: "divergente-inv", desplaza: 100, niveles: ["region", "provincia"], fuente: "Open-Meteo frente a la normal 1991-2020 de NASA POWER. Azul: más lluvia de lo normal; rojo: menos. Sin color: meses normalmente secos, donde el porcentaje no dice nada" },
+  lluvia_n: { n: "Lluvia próxima frente a lo normal", u: "%", lo: -200, hi: 200, tipo: "divergente-inv", desplaza: 100, niveles: ["region", "provincia"], fuente: "Aproximado: el pronóstico de Open-Meteo frente a la normal 1991-2020 de NASA POWER, dos fuentes distintas. En los Andes los modelos globales pueden exagerar la lluvia. Para la tendencia de la temporada, mejor «Tendencia estacional» o el SENAMHI. Sin color: meses normalmente secos" },
   ult30:    { n: "Lluvia, últimos 30 días", u: "mm", lo: 0, hi: 300, tipo: "azul", niveles: ["region", "provincia"], fuente: "Estimación de modelos (Open-Meteo), no estaciones" },
   estacional:{ n: "Tendencia estacional", u: "mm", lo: -200, hi: 200, tipo: "divergente-inv", niveles: ["region"], fuente: "ECMWF SEAS5, anomalía del mes frente a su propia historia. Vale a escala de región" },
-  spi:      { n: "Sequía (SPI-3)", u: "", lo: -2.5, hi: 2.5, tipo: "divergente-inv", niveles: ["region", "provincia"], fuente: "SPI de 3 meses calculado de NASA POWER. Naranja y rojo: más seco de lo normal; azul: más húmedo" },
+  spi:      { n: "Lluvia pasada, 3 meses (SPI)", u: "", lo: -2.5, hi: 2.5, tipo: "divergente-inv", niveles: ["region", "provincia"], fuente: "Índice SPI-3: cuánto se apartó la lluvia de los últimos 3 meses con dato de su normal. Rojo: más seco; azul: más húmedo. Sin color: zona árida o temporada seca, donde el SPI no aplica (normal de esos meses menor de 30 mm). Es el pasado, no pronóstico. NASA POWER, unos 50 km" },
   tmax:     { n: "Calor, próximos 7 días", u: "°C", lo: 8, hi: 38, tipo: "naranja", niveles: ["region", "provincia"], fuente: "Temperatura máxima media pronosticada. Open-Meteo" },
   incendios:{ n: "Focos de calor, 7 días", u: "focos", lo: 0, hi: 60, tipo: "naranja", niveles: ["region", "provincia", "distrito"], fuente: "NASA FIRMS, satélite VIIRS. Un foco no siempre es un incendio forestal" },
   esc:      { n: "Riesgo por la lluvia de hoy", u: "", tipo: "esc", niveles: ["distrito"], fuente: "CENEPRED, escenario de riesgo del aviso de lluvia vigente del SENAMHI" },
@@ -43,7 +43,7 @@ const NIVELES = [["region", "Regiones"], ["provincia", "Provincias"], ["distrito
 // Temas: una combinación de capa, nivel, lugares y encuadre para cada pregunta
 const TEMAS = {
   lluvias:   { n: "Norte: lluvias e inundaciones", capa: "lluvia", nivel: "provincia", lugares: { presa: true, embalse: true }, rios: true, caja: [[-81.5, -9.2], [-74, -3]], texto: "Lluvia a 16 días, ríos, presas y embalses de la costa y sierra norte, donde el ENFEN espera lluvias sobre lo normal." },
-  incendios: { n: "Sur: sequía e incendios", capa: "spi", nivel: "provincia", lugares: { laguna: true }, focos: true, rios: false, caja: [[-76, -17.5], [-68.5, -11]], texto: "Sequía de 3 meses por provincia (naranja y rojo: más seco de lo normal; azul: más húmedo) y focos de calor en el sur andino, donde el ENFEN espera lluvias bajo lo normal y déficit en el Titicaca." },
+  incendios: { n: "Sur: sequía e incendios", capa: "estacional", nivel: "region", lugares: { laguna: true }, focos: true, rios: false, caja: [[-76, -17.5], [-68.5, -11]], texto: "Tendencia de la lluvia del mes elegido frente a lo normal, por región (rojo: menos lluvia; azul: más), y focos de calor. El ENFEN y el SENAMHI esperan lluvias bajo lo normal en el sur andino y déficit en el Titicaca. Cambia el mes arriba." },
   mar:       { n: "Mar y pesca", capa: "tsm", nivel: "region", lugares: {}, caja: [[-86, -19], [-69, -1]], texto: "El mar frente a la costa y su anomalía." },
   riosana:   { n: "Ríos: seguimiento", capa: "lluvia", nivel: "provincia", lugares: { embalse: true }, riosAna: true, cuencas: true, pcs: true, caja: [[-82, -18.6], [-68.4, 0.1]], texto: "Los ríos de la ANA, coloreados por su estado: azul normal, ámbar vigilancia, rojo alerta; gris, sin estación. Sobre la lluvia esperada y con las obras de prevención. Toca un río para ver su seguimiento." },
   hoy:       { n: "Hoy: riesgo y emergencias", capa: "esc", nivel: "distrito", lugares: {}, emergencias: true, caja: [[-82, -18.6], [-68.4, 0.1]], texto: "Distritos en riesgo por el aviso de lluvia vigente (CENEPRED) y emergencias registradas en 7 días (INDECI). Toca un punto para ver el reporte." },
@@ -598,7 +598,7 @@ async function pintarFicha(u, lugar){
         <div><dt>Días de lluvia fuerte, próximos 16</dt><dd>${ll ? String(ll.dias_fuertes).replace(".", ",") : "sin dato"}</dd>${chipAtencion(naLl)}</div>
         ${ll?.ult30 !== undefined ? `<div><dt>Lluvia, últimos 30 días</dt><dd>${Math.round(ll.ult30)} mm</dd><small>Estimación de modelos</small></div>` : ""}
         ${ll?.tmax7 !== undefined ? `<div><dt>Temperatura máxima, 7 días</dt><dd>${String(ll.tmax7).replace(".", ",")} °C</dd><small>Mínima ${String(ll.tmin7).replace(".", ",")} °C</small></div>` : ""}
-        ${spi ? `<div><dt>Sequía, SPI-3</dt><dd>${sg(spi.spi3)}</dd><small>${spi.spi3 <= -1 ? "Seco" : spi.spi3 >= 1 ? "Húmedo" : "Cerca de lo normal"}, ${fecha(spi.mes)}</small></div>` : ""}
+        ${spi ? `<div><dt>Lluvia pasada, 3 meses (SPI)</dt>${spi.aplica === false ? `<dd class="dd-txt">No aplica</dd><small>Temporada seca o zona árida: lo normal de esos meses es ${spi.normal3} mm</small>` : `<dd>${sg(spi.spi3)}</dd><small>${spi.spi3 <= -1 ? "Más seco de lo normal" : spi.spi3 >= 1 ? "Más húmedo de lo normal" : "Cerca de lo normal"}, ${periodoSPI(spi.mes)}</small>`}</div>` : ""}
         ${ola ? `<div><dt>Ola máxima, 7 días</dt><dd>${String(ola.max).replace(".", ",")} m</dd><small><a href="https://www.dhn.mil.pe/portal/" target="_blank" rel="noopener">Avisos oficiales: DHN</a></small></div>` : ""}
       </dl>
       <p class="f-nota">Los niveles siguen reglas fijas (pasa el cursor sobre cada uno); no son pronósticos. ${u.nivel === "distrito" ? "La lluvia es de su provincia; el mar, de su región." : ""}</p>
@@ -692,6 +692,14 @@ function pob2025(u){
   const s = Object.entries(P).filter(([k]) => k.startsWith(u.id)).reduce((a, [, v]) => a + v, 0);
   return s || null;
 }
+
+// "2026-09" -> "jul a sep 2026": los 3 meses que mide el SPI-3
+function periodoSPI(mes){
+  if (!mes) return "";
+  const m = +mes.slice(5, 7), a = mes.slice(0, 4), mc = i => ["ene", "feb", "mar", "abr", "may", "jun", "jul", "ago", "sep", "oct", "nov", "dic"][(i + 12) % 12];
+  return `${mc(m - 3)} a ${mc(m - 1)} ${a}`;
+}
+window.periodoSPI = periodoSPI;
 
 function conteoNiveles(n){
   if (!n) return "";

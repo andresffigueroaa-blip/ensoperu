@@ -210,6 +210,11 @@ function boletinRegional(rid, ctx){
     const r = ultimos(ctx.tsm, 120, { v: ctx.tsm.cols[clave] });
     graficos.push(() => grafLineas($("#bg-tsm"), r.fechas, [{ n: `Mar frente a ${nombre}`, v: r.cols.v, c: COLORES[1] }], { umbrales: [[0, "#9FB0AC"]] }));
   }
+  const hoyUTC = new Date().toISOString().slice(0, 10);
+  if (ctx.focos && !ctx.focos._sinHoy){        // sin el día en curso, incompleto
+    const nf = ctx.focos.fechas.filter(f => f < hoyUTC).length;
+    ctx.focos = { fechas: ctx.focos.fechas.slice(0, nf), cols: Object.fromEntries(Object.entries(ctx.focos.cols).map(([k, v]) => [k, v.slice(0, nf)])), _sinHoy: true };
+  }
   const fc = ctx.focos?.cols?.[rid];
   const focosDia = fc ? columnas(fc.slice(-30), ctx.focos.fechas.slice(-30).map(f => `${+f.slice(8, 10)}/${+f.slice(5, 7)}`), { u: "focos por día", cada: 5, color: () => "#E18C3E" }) : "";
   const embalses = (O.ana_embalses?.embalses || []).filter(e => enRegion(e.lugar) || norm(e.influencia) === nNombre);
@@ -225,7 +230,7 @@ function boletinRegional(rid, ctx){
     <ul class="lectura">${frases.map(t => `<li>${esc(t)}</li>`).join("") || "<li>Sin avisos ni emergencias registradas para la región.</li>"}</ul>
     ${kpis([["Aviso del SENAMHI", P.aviso ? `<span class="chip ${NIVEL_AVISO[P.aviso]}">${esc(P.aviso[0] + P.aviso.slice(1).toLowerCase())}</span>` : "Ninguno", ""],
       ["Riesgo muy alto por lluvia", `${porNivel("MA").length} distritos`, "CENEPRED, aviso vigente"], ["Emergencias, 7 días", entero(em.length), "INDECI"],
-      ["Lluvia próxima, 16 días", P.lluvia16 ? `${Math.round(P.lluvia16)} mm` : "–", "Open-Meteo"], rj.c ? ["Mar frente a la costa", `${sg(P.mar)} °C`, "NOAA OISST"] : ["Sequía, SPI-3", sg(P.spi3), "NASA POWER"],
+      ["Lluvia próxima, 16 días", P.lluvia16 ? `${Math.round(P.lluvia16)} mm` : "–", "Open-Meteo"], rj.c ? ["Mar frente a la costa", `${sg(P.mar)} °C`, "NOAA OISST"] : ["Lluvia pasada, SPI-3", P.spi3 === null || P.spi3 === undefined ? "No aplica" : sg(P.spi3), P.spi3 === null || P.spi3 === undefined ? "temporada seca" : "últimos 3 meses con dato"],
       ["Focos de calor, 7 días", entero(P.focos), "NASA FIRMS"]])}
     ${avisos.length ? `<h3>Avisos del SENAMHI</h3>${avisos.map(a => `<div class="f-aviso"><span class="chip ${NIVEL_AVISO[a.nivel]}">${esc(a.nivel)}</span> ${esc(oracion(a.titulo))}<small>${fecha(a.inicio)} a ${fecha(a.fin)}</small></div>`).join("")}` : ""}
     <div class="cols-2">
@@ -277,7 +282,8 @@ function boletinRegional(rid, ctx){
 function boletinNacional(ctx){
   const P = D.panorama, A = D.avisos?.avisos || [], O = D.oficial || {}, R = O.escenario?.resumen || {}, graficos = [];
   const tabla = (cab, filas) => `<div class="tabla-scroll"><table class="tabla">${`<tr>${cab.map(c => `<th>${c}</th>`).join("")}</tr>`}${filas.join("")}</table></div>`;
-  const fc = ctx.focos;
+  const hoyUTC = new Date().toISOString().slice(0, 10), nf = ctx.focos ? ctx.focos.fechas.filter(f => f < hoyUTC).length : 0;
+  const fc = ctx.focos ? { fechas: ctx.focos.fechas.slice(0, nf), cols: Object.fromEntries(Object.entries(ctx.focos.cols).map(([k, v]) => [k, v.slice(0, nf)])) } : null;
   const totalFocos = fc ? fc.fechas.map((_, i) => Object.values(fc.cols).reduce((a, s) => a + (s[i] || 0), 0)).slice(-30) : [];
   const porRegion = Object.entries(O.coen?.por_region || {}).map(([k, v]) => ({ n: D.regiones.regiones[M.datos.claveRegion[k]]?.nombre || k, v })).sort((a, b) => b.v - a.v).slice(0, 10);
   const parte1 = `
