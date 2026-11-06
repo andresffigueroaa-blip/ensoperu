@@ -1,14 +1,24 @@
 {
   "_": "Generado por pipeline/fuentes/peru_oficial.py. Datos oficiales tal como se publican.",
-  "actualizado": "2026-11-06T15:24:11Z",
-  "fallas": [],
+  "actualizado": "2026-11-06T15:28:14Z",
+  "fallas": [
+    "fenomeno",
+    "ana_rios",
+    "ana_embalses",
+    "ana_pc",
+    "emergencia",
+    "phisis",
+    "prono",
+    "enfen_docs"
+  ],
   "fenomeno": {
     "fecha": "30 de octubre del 2026",
     "estado": "Alerta de El Niño Costero",
     "color": "#ff0031",
     "titular": "EL NIÑO COSTERO CONTINUARÍA HASTA FINES DE OTOÑO DE 2027",
     "url": "https://www.senamhi.gob.pe/?p=fenomeno-el-nino",
-    "leido": "2026-11-06T15:24:12Z"
+    "leido": "2026-11-06T15:24:12Z",
+    "atrasado": true
   },
   "coen": {
     "dias": 7,
@@ -413,7 +423,7 @@
     ],
     "sin_cruce": 1,
     "url": "https://coen.indeci.gob.pe/mer/",
-    "leido": "2026-11-06T15:24:14Z"
+    "leido": "2026-11-06T15:29:47Z"
   },
   "indeci_rss": {
     "reportes": [
@@ -489,7 +499,7 @@
       }
     ],
     "url": "https://portal.indeci.gob.pe/emergencias/",
-    "leido": "2026-11-06T15:24:15Z"
+    "leido": "2026-11-06T15:29:48Z"
   },
   "escenario": {
     "vigente": true,
@@ -1991,7 +2001,7 @@
       }
     },
     "url": "https://sigrid.cenepred.gob.pe/sigridv3/escenario-aviso",
-    "leido": "2026-11-06T15:24:16Z"
+    "leido": "2026-11-06T15:29:52Z"
   },
   "quebradas": {
     "fecha": "2026-11-05",
@@ -2359,7 +2369,7 @@
     },
     "sin_cruce": 0,
     "url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico",
-    "leido": "2026-11-06T15:24:18Z"
+    "leido": "2026-11-06T15:29:54Z"
   },
   "hidro": {
     "avisos": [
@@ -2401,7 +2411,7 @@
       }
     ],
     "url": "https://www.senamhi.gob.pe/?p=aviso-hidrologico",
-    "leido": "2026-11-06T15:24:19Z"
+    "leido": "2026-11-06T15:29:55Z"
   },
   "ana_rios": {
     "estaciones": [
@@ -4489,7 +4499,8 @@
     "en_alerta": 2,
     "en_emergencia": 0,
     "url": "https://snirh.ana.gob.pe/onrh/",
-    "leido": "2026-11-06T15:24:24Z"
+    "leido": "2026-11-06T15:24:24Z",
+    "atrasado": true
   },
   "ana_embalses": {
     "embalses": [
@@ -4726,7 +4737,8 @@
       }
     ],
     "url": "https://snirh.ana.gob.pe/onrh/",
-    "leido": "2026-11-06T15:24:24Z"
+    "leido": "2026-11-06T15:24:24Z",
+    "atrasado": true
   },
   "ana_pc": {
     "total": 536,
@@ -4737,7 +4749,8 @@
     },
     "avance_medio": 35.6,
     "url": "https://snirh.ana.gob.pe/",
-    "leido": "2026-11-06T15:24:25Z"
+    "leido": "2026-11-06T15:24:25Z",
+    "atrasado": true
   },
   "emergencia": {
     "decretos": {
@@ -9703,7 +9716,8 @@
       "ONRH/DEE_DS_140_2026_PCM"
     ],
     "url": "https://www.gob.pe/busquedas?contenido[]=normas&term=estado+de+emergencia",
-    "leido": "2026-11-06T15:24:25Z"
+    "leido": "2026-11-06T15:24:25Z",
+    "atrasado": true
   },
   "preparacion": {
     "conteo": {
@@ -16859,11 +16873,11 @@
       }
     },
     "url": "https://visor.geoperu.gob.pe/",
-    "leido": "2026-11-06T15:24:27Z"
+    "leido": "2026-11-06T15:35:58Z"
   },
   "agua": {
-    "total": 240,
-    "conexiones": 1270756,
+    "total": 241,
+    "conexiones": 1271050,
     "cortes": [
       {
         "eps": "SEDAPAL",
@@ -17508,8 +17522,8 @@
         "conexiones": 13135
       },
       "150103": {
-        "cortes": 6,
-        "conexiones": 8584
+        "cortes": 7,
+        "conexiones": 9520
       },
       "150106": {
         "cortes": 5,
@@ -17612,8 +17626,8 @@
         "conexiones": 2488
       },
       "180101": {
-        "cortes": 2,
-        "conexiones": 976
+        "cortes": 3,
+        "conexiones": 1284
       },
       "070106": {
         "cortes": 4,
@@ -17803,20 +17817,16 @@
         "cortes": 1,
         "conexiones": 586
       },
-      "080401": {
-        "cortes": 1,
-        "conexiones": 950
-      },
       "240104": {
         "cortes": 1,
         "conexiones": 808
       }
     },
     "url": "https://www.sunass.gob.pe/",
-    "leido": "2026-11-06T15:24:28Z"
+    "leido": "2026-11-06T15:36:00Z"
   },
   "incendios": {
-    "total": 101,
+    "total": 82,
     "lista": [
       {
         "fecha": "2026-11-06",
@@ -17974,15 +17984,6 @@
       {
         "fecha": "2026-11-04",
         "hora": "15:55",
-        "lugar": "Yanatile, Cusco",
-        "distrito": "080408",
-        "cobertura": "Cobertura Forestal",
-        "lat": -12.61844,
-        "lon": -72.08022
-      },
-      {
-        "fecha": "2026-11-04",
-        "hora": "15:55",
         "lugar": "Sepahua, Ucayali",
         "distrito": "250202",
         "cobertura": "Cobertura Forestal",
@@ -18060,15 +18061,6 @@
         "cobertura": "Cobertura Forestal",
         "lat": -13.03455,
         "lon": -72.64676
-      },
-      {
-        "fecha": "2026-11-04",
-        "hora": "15:00",
-        "lugar": "Ayaviri, Puno",
-        "distrito": "210801",
-        "cobertura": "Cobertura Agrícola",
-        "lat": -14.85331,
-        "lon": -70.56583
       },
       {
         "fecha": "2026-11-04",
@@ -18217,33 +18209,6 @@
       {
         "fecha": "2026-11-04",
         "hora": "13:55",
-        "lugar": "Yanatile, Cusco",
-        "distrito": "080408",
-        "cobertura": "Cobertura Forestal",
-        "lat": -12.61813,
-        "lon": -72.0836
-      },
-      {
-        "fecha": "2026-11-04",
-        "hora": "13:55",
-        "lugar": "Yanatile, Cusco",
-        "distrito": "080408",
-        "cobertura": "Cobertura Forestal",
-        "lat": -12.61759,
-        "lon": -72.08078
-      },
-      {
-        "fecha": "2026-11-04",
-        "hora": "13:55",
-        "lugar": "Alto Inambari, Puno",
-        "distrito": "211209",
-        "cobertura": "Cobertura Forestal",
-        "lat": -14.05061,
-        "lon": -69.20306
-      },
-      {
-        "fecha": "2026-11-04",
-        "hora": "13:55",
         "lugar": "Madre De Dios, Madre De Dios",
         "distrito": "170203",
         "cobertura": "Cobertura Forestal",
@@ -18379,60 +18344,6 @@
       {
         "fecha": "2026-11-04",
         "hora": "13:15",
-        "lugar": "Yanatile, Cusco",
-        "distrito": "080408",
-        "cobertura": "Cobertura Forestal",
-        "lat": -12.6213,
-        "lon": -72.07893
-      },
-      {
-        "fecha": "2026-11-04",
-        "hora": "13:15",
-        "lugar": "Yanatile, Cusco",
-        "distrito": "080408",
-        "cobertura": "Cobertura Forestal",
-        "lat": -12.61769,
-        "lon": -72.08038
-      },
-      {
-        "fecha": "2026-11-04",
-        "hora": "13:15",
-        "lugar": "Yanatile, Cusco",
-        "distrito": "080408",
-        "cobertura": "Cobertura Forestal",
-        "lat": -12.69205,
-        "lon": -72.11343
-      },
-      {
-        "fecha": "2026-11-04",
-        "hora": "13:15",
-        "lugar": "Yanatile, Cusco",
-        "distrito": "080408",
-        "cobertura": "Cobertura Forestal",
-        "lat": -12.6915,
-        "lon": -72.10951
-      },
-      {
-        "fecha": "2026-11-04",
-        "hora": "13:15",
-        "lugar": "Yanatile, Cusco",
-        "distrito": "080408",
-        "cobertura": "Cobertura Forestal",
-        "lat": -12.68835,
-        "lon": -72.11434
-      },
-      {
-        "fecha": "2026-11-04",
-        "hora": "13:15",
-        "lugar": "Yanatile, Cusco",
-        "distrito": "080408",
-        "cobertura": "Cobertura Forestal",
-        "lat": -12.68781,
-        "lon": -72.11045
-      },
-      {
-        "fecha": "2026-11-04",
-        "hora": "13:15",
         "lugar": "Madre De Dios, Madre De Dios",
         "distrito": "170203",
         "cobertura": "Cobertura Forestal",
@@ -18537,10 +18448,109 @@
         "cobertura": "Cobertura Forestal",
         "lat": -9.06029,
         "lon": -74.15089
+      },
+      {
+        "fecha": "2026-11-04",
+        "hora": "13:15",
+        "lugar": "Masisea, Ucayali",
+        "distrito": "250104",
+        "cobertura": "Cobertura Forestal",
+        "lat": -9.05674,
+        "lon": -74.1551
+      },
+      {
+        "fecha": "2026-11-04",
+        "hora": "13:00",
+        "lugar": "Masisea, Ucayali",
+        "distrito": "250104",
+        "cobertura": "Cobertura Forestal",
+        "lat": -9.08197,
+        "lon": -73.67084
+      },
+      {
+        "fecha": "2026-11-04",
+        "hora": "12:50",
+        "lugar": "Masisea, Ucayali",
+        "distrito": "250104",
+        "cobertura": "Cobertura Forestal",
+        "lat": -9.08197,
+        "lon": -73.6888
+      },
+      {
+        "fecha": "2026-11-04",
+        "hora": "12:50",
+        "lugar": "Masisea, Ucayali",
+        "distrito": "250104",
+        "cobertura": "Cobertura Forestal",
+        "lat": -9.09993,
+        "lon": -73.6888
+      },
+      {
+        "fecha": "2026-11-04",
+        "hora": "12:30",
+        "lugar": "Masisea, Ucayali",
+        "distrito": "250104",
+        "cobertura": "Cobertura Forestal",
+        "lat": -9.064,
+        "lon": -74.15593
+      },
+      {
+        "fecha": "2026-11-04",
+        "hora": "10:40",
+        "lugar": "Combapata, Cusco",
+        "distrito": "080603",
+        "cobertura": " ",
+        "lat": -14.09326,
+        "lon": -71.3651
+      },
+      {
+        "fecha": "2026-11-03",
+        "hora": "16:10",
+        "lugar": "Santiago De Pischa, Ayacucho",
+        "distrito": "050111",
+        "cobertura": "Cobertura Forestal",
+        "lat": -13.10642,
+        "lon": -74.38949
+      },
+      {
+        "fecha": "2026-11-03",
+        "hora": "13:32",
+        "lugar": "Tahuamanu, Madre De Dios",
+        "distrito": "170303",
+        "cobertura": "Cobertura Forestal",
+        "lat": -11.75104,
+        "lon": -69.37591
+      },
+      {
+        "fecha": "2026-11-03",
+        "hora": "13:32",
+        "lugar": "Tahuamanu, Madre De Dios",
+        "distrito": "170303",
+        "cobertura": "Cobertura Forestal",
+        "lat": -11.74882,
+        "lon": -69.3775
+      },
+      {
+        "fecha": "2026-11-03",
+        "hora": "13:32",
+        "lugar": "Sepahua, Ucayali",
+        "distrito": "250202",
+        "cobertura": "Cobertura Forestal",
+        "lat": -11.14734,
+        "lon": -73.08416
+      },
+      {
+        "fecha": "2026-11-03",
+        "hora": "13:32",
+        "lugar": "Sepahua, Ucayali",
+        "distrito": "250202",
+        "cobertura": "Cobertura Forestal",
+        "lat": -11.14626,
+        "lon": -73.07713
       }
     ],
     "url": "https://geo.serfor.gob.pe/visor/",
-    "leido": "2026-11-06T15:24:29Z"
+    "leido": "2026-11-06T15:36:01Z"
   },
   "phisis": {
     "estaciones": [
@@ -19967,7 +19977,8 @@
     ],
     "sobre_umbral": 3,
     "url": "https://www.senamhi.gob.pe/mapas/mapa-monitoreohidro/",
-    "leido": "2026-11-06T15:24:29Z"
+    "leido": "2026-11-06T15:24:29Z",
+    "atrasado": true
   },
   "prono": {
     "url": "https://www.senamhi.gob.pe/?p=pronostico-climatico",
@@ -20261,7 +20272,8 @@
         "emision": "2026-10-16"
       }
     ],
-    "leido": "2026-11-06T15:25:19Z"
+    "leido": "2026-11-06T15:25:19Z",
+    "atrasado": true
   },
   "igp": {
     "e": [
@@ -20466,7 +20478,7 @@
       "clasificacion": 99.88
     },
     "url": "http://met.igp.gob.pe/variabclim/",
-    "leido": "2026-11-06T15:25:20Z"
+    "leido": "2026-11-06T15:39:04Z"
   },
   "dhn": {
     "generado": "2026-11-05T13:46:20Z",
@@ -20978,7 +20990,7 @@
         }
       ]
     },
-    "leido": "2026-11-06T15:25:20Z"
+    "leido": "2026-11-06T15:39:06Z"
   },
   "inaigem": {
     "estaciones": [
@@ -21016,7 +21028,7 @@
       }
     ],
     "url": "https://www.inaigem.gob.pe/",
-    "leido": "2026-11-06T15:25:21Z"
+    "leido": "2026-11-06T15:39:07Z"
   },
   "enfen_docs": {
     "docs": [
@@ -21082,6 +21094,7 @@
       }
     ],
     "url": "https://enfen.imarpe.gob.pe/",
-    "leido": "2026-11-06T15:25:21Z"
+    "leido": "2026-11-06T15:25:21Z",
+    "atrasado": true
   }
 }

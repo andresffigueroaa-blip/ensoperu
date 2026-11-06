@@ -1,6 +1,6 @@
 {
   "_": "Generado por pipeline/productos/panorama.py. No editar a mano.",
-  "generado": "2026-11-06T15:25:25Z",
+  "generado": "2026-11-06T15:39:17Z",
   "fecha": "2026-11-06",
   "lectura": [
     "El ENFEN mantiene la Alerta de El Niño Costero (N° 19-2026, 30 de octubre de 2026). El Niño costero continuaría hasta fines de otoño de 2027.",
@@ -10,7 +10,7 @@
     "Ríos: 9 con crecida inusual pronosticada en 15 días, entre ellos Tumbes, Zaña, Piura, La Leche.",
     "CENEPRED: 142 distritos en riesgo muy alto por la lluvia hasta el 8 de noviembre, con 1 166 909 personas.",
     "INDECI registró 81 emergencias en 7 días; la más frecuente: incendios forestales.",
-    "Focos de calor: 741 en 7 días; el mayor número en Tambopata (Madre de Dios), 86."
+    "Focos de calor: 749 en 7 días; el mayor número en Tambopata (Madre de Dios), 86."
   ],
   "regiones": {
     "01": {
@@ -124,7 +124,7 @@
       "aviso": "ROJO",
       "mar": null,
       "n_mar": null,
-      "focos": 28,
+      "focos": 30,
       "n_focos": "alto",
       "dias_fuertes": 1.0,
       "n_lluvia": "medio",
@@ -394,7 +394,7 @@
       "aviso": "AMARILLO",
       "mar": null,
       "n_mar": null,
-      "focos": 106,
+      "focos": 112,
       "n_focos": "muy alto",
       "dias_fuertes": 0.7,
       "n_lluvia": "bajo",
@@ -1617,8 +1617,8 @@
       "id": "2501",
       "nombre": "Coronel Portillo",
       "region": "Ucayali",
-      "focos": 56,
-      "frp": 622.3
+      "focos": 60,
+      "frp": 628.0
     },
     {
       "id": "1206",
@@ -1628,18 +1628,18 @@
       "frp": 325.8
     },
     {
+      "id": "2502",
+      "nombre": "Atalaya",
+      "region": "Ucayali",
+      "focos": 36,
+      "frp": 309.0
+    },
+    {
       "id": "1702",
       "nombre": "Manu",
       "region": "Madre de Dios",
       "focos": 36,
       "frp": 810.5
-    },
-    {
-      "id": "2502",
-      "nombre": "Atalaya",
-      "region": "Ucayali",
-      "focos": 34,
-      "frp": 306.6
     },
     {
       "id": "1602",
@@ -1649,18 +1649,18 @@
       "frp": 118.8
     },
     {
+      "id": "0809",
+      "nombre": "La Convencion",
+      "region": "Cusco",
+      "focos": 17,
+      "frp": 78.1
+    },
+    {
       "id": "2503",
       "nombre": "Padre Abad",
       "region": "Ucayali",
       "focos": 16,
       "frp": 93.2
-    },
-    {
-      "id": "0809",
-      "nombre": "La Convencion",
-      "region": "Cusco",
-      "focos": 15,
-      "frp": 76.7
     },
     {
       "id": "1606",
@@ -1896,7 +1896,7 @@
     "avisos": 4,
     "rojos": 2,
     "rios_altos": 9,
-    "focos": 741,
+    "focos": 749,
     "distritos_riesgo_alto": 766
   }
 }
