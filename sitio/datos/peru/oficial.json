@@ -1,6 +1,6 @@
 {
   "_": "Generado por pipeline/fuentes/peru_oficial.py. Datos oficiales tal como se publican.",
-  "actualizado": "2026-11-06T16:15:41Z",
+  "actualizado": "2026-11-06T16:24:01Z",
   "fallas": [],
   "fenomeno": {
     "fecha": "30 de octubre del 2026",
@@ -8,7 +8,7 @@
     "color": "#ff0031",
     "titular": "EL NIÑO COSTERO CONTINUARÍA HASTA FINES DE OTOÑO DE 2027",
     "url": "https://www.senamhi.gob.pe/?p=fenomeno-el-nino",
-    "leido": "2026-11-06T16:15:41Z"
+    "leido": "2026-11-06T16:24:01Z"
   },
   "coen": {
     "dias": 7,
@@ -413,7 +413,7 @@
     ],
     "sin_cruce": 1,
     "url": "https://coen.indeci.gob.pe/mer/",
-    "leido": "2026-11-06T16:15:43Z"
+    "leido": "2026-11-06T16:24:03Z"
   },
   "indeci_rss": {
     "reportes": [
@@ -489,7 +489,7 @@
       }
     ],
     "url": "https://portal.indeci.gob.pe/emergencias/",
-    "leido": "2026-11-06T16:15:44Z"
+    "leido": "2026-11-06T16:24:04Z"
   },
   "escenario": {
     "vigente": true,
@@ -1991,7 +1991,7 @@
       }
     },
     "url": "https://sigrid.cenepred.gob.pe/sigridv3/escenario-aviso",
-    "leido": "2026-11-06T16:15:45Z"
+    "leido": "2026-11-06T16:24:05Z"
   },
   "quebradas": {
     "fecha": "2026-11-05",
@@ -2359,7 +2359,7 @@
     },
     "sin_cruce": 0,
     "url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico",
-    "leido": "2026-11-06T16:15:47Z"
+    "leido": "2026-11-06T16:24:07Z"
   },
   "hidro": {
     "avisos": [
@@ -2401,7 +2401,7 @@
       }
     ],
     "url": "https://www.senamhi.gob.pe/?p=aviso-hidrologico",
-    "leido": "2026-11-06T16:15:47Z"
+    "leido": "2026-11-06T16:24:07Z"
   },
   "ana_rios": {
     "estaciones": [
@@ -2553,12 +2553,12 @@
         "rio": "Chira",
         "estacion": "El Ciruelo",
         "lugar": "Suyo, Piura",
-        "valor": 57.86,
+        "valor": 56.88,
         "unidad": "m³/s",
         "alerta": 800.0,
         "emergencia": 1000.0,
         "tendencia": "Ascendente",
-        "hora": "10:00",
+        "hora": "11:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -4.299054,
@@ -3129,12 +3129,12 @@
         "rio": "Cotahuasi",
         "estacion": "Cuyau",
         "lugar": "Cotahuasi, Arequipa",
-        "valor": 0.21,
+        "valor": 0.26,
         "unidad": "m",
         "alerta": null,
         "emergencia": null,
         "tendencia": "Descendente",
-        "hora": "10:00",
+        "hora": "11:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -15.218517,
@@ -3321,12 +3321,12 @@
         "rio": "Locumba",
         "estacion": "TICAPAMPA",
         "lugar": "Ilabaya, Tacna",
-        "valor": 2.75,
+        "valor": 2.67,
         "unidad": "m³/s",
         "alerta": 20.0,
         "emergencia": 40.0,
         "tendencia": "Descendente",
-        "hora": "10:00",
+        "hora": "11:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -17.47659,
@@ -4265,12 +4265,12 @@
         "rio": "Madre De Dios",
         "estacion": "Amaru Mayu",
         "lugar": "Las Piedras, Madre De Dios",
-        "valor": 3295.48,
+        "valor": 3319.18,
         "unidad": "m³/s",
         "alerta": 17000.0,
         "emergencia": 21000.0,
         "tendencia": "Descendente",
-        "hora": "08:00",
+        "hora": "08:15",
         "estado": "normal",
         "estiaje": false,
         "lat": -12.60033,
@@ -4537,7 +4537,7 @@
     "en_alerta": 2,
     "en_emergencia": 0,
     "url": "https://snirh.ana.gob.pe/onrh/",
-    "leido": "2026-11-06T16:15:53Z"
+    "leido": "2026-11-06T16:24:12Z"
   },
   "ana_embalses": {
     "embalses": [
@@ -4774,7 +4774,7 @@
       }
     ],
     "url": "https://snirh.ana.gob.pe/onrh/",
-    "leido": "2026-11-06T16:15:54Z"
+    "leido": "2026-11-06T16:24:13Z"
   },
   "ana_pc": {
     "total": 536,
@@ -4785,7 +4785,7 @@
     },
     "avance_medio": 35.6,
     "url": "https://snirh.ana.gob.pe/",
-    "leido": "2026-11-06T16:15:54Z"
+    "leido": "2026-11-06T16:24:13Z"
   },
   "emergencia": {
     "decretos": {
@@ -9751,7 +9751,7 @@
       "ONRH/DEE_DS_140_2026_PCM"
     ],
     "url": "https://www.gob.pe/busquedas?contenido[]=normas&term=estado+de+emergencia",
-    "leido": "2026-11-06T16:15:55Z"
+    "leido": "2026-11-06T16:24:14Z"
   },
   "preparacion": {
     "conteo": {
@@ -16907,11 +16907,11 @@
       }
     },
     "url": "https://visor.geoperu.gob.pe/",
-    "leido": "2026-11-06T16:15:56Z"
+    "leido": "2026-11-06T16:24:15Z"
   },
   "agua": {
-    "total": 240,
-    "conexiones": 1270850,
+    "total": 241,
+    "conexiones": 1278553,
     "cortes": [
       {
         "eps": "SEDAPAL",
@@ -17162,6 +17162,16 @@
         "inicio": "2026-11-05",
         "restablece": "2026-11-06",
         "distrito": "140301"
+      },
+      {
+        "eps": "SEDAPAL",
+        "lugar": "Miraflores, Lima",
+        "conexiones": 7703,
+        "tipo": "Imprevista",
+        "motivo": "Rotura de tubería de agua potable",
+        "inicio": "2026-11-06",
+        "restablece": "2026-11-06",
+        "distrito": "150122"
       },
       {
         "eps": "SEDAPAL",
@@ -17502,16 +17512,6 @@
         "inicio": "2026-11-03",
         "restablece": "2026-11-04",
         "distrito": "110106"
-      },
-      {
-        "eps": "EPS EMAPICA S.A.",
-        "lugar": "Ica, Ica",
-        "conexiones": 3981,
-        "tipo": "Imprevista",
-        "motivo": "Rotura de línea de impulsión",
-        "inicio": "2026-11-04",
-        "restablece": "2026-11-05",
-        "distrito": "110101"
       }
     ],
     "distritos": {
@@ -17568,8 +17568,8 @@
         "conexiones": 11822
       },
       "150122": {
-        "cortes": 1,
-        "conexiones": 523
+        "cortes": 2,
+        "conexiones": 8226
       },
       "150141": {
         "cortes": 1,
@@ -17857,7 +17857,7 @@
       }
     },
     "url": "https://www.sunass.gob.pe/",
-    "leido": "2026-11-06T16:15:57Z"
+    "leido": "2026-11-06T16:24:16Z"
   },
   "incendios": {
     "total": 17,
@@ -18017,7 +18017,7 @@
       }
     ],
     "url": "https://geo.serfor.gob.pe/visor/",
-    "leido": "2026-11-06T16:15:57Z"
+    "leido": "2026-11-06T16:24:16Z"
   },
   "phisis": {
     "estaciones": [
@@ -18134,7 +18134,7 @@
       {
         "estacion": "Lagartera",
         "cuenca": "Cuenca Chira",
-        "fecha": "2026-11-06T15:00:00Z",
+        "fecha": "2026-11-06T16:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "Las Lomas, Piura",
@@ -18144,7 +18144,7 @@
       {
         "estacion": "El Ciruelo",
         "cuenca": "Cuenca Chira",
-        "fecha": "2026-11-06T15:00:00Z",
+        "fecha": "2026-11-06T16:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "Suyo, Piura",
@@ -18504,7 +18504,7 @@
       {
         "estacion": "Autisha",
         "cuenca": "Cuenca Rímac",
-        "fecha": "2026-11-06T15:00:00Z",
+        "fecha": "2026-11-06T16:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "San Antonio, Lima",
@@ -18604,7 +18604,7 @@
       {
         "estacion": "Cuyau",
         "cuenca": "Cuenca Ocoña",
-        "fecha": "2026-11-06T15:00:00Z",
+        "fecha": "2026-11-06T16:00:00Z",
         "nivel": "normal",
         "variable": "nivel",
         "lugar": "Cotahuasi, Arequipa",
@@ -19444,7 +19444,7 @@
     ],
     "sobre_umbral": 3,
     "url": "https://www.senamhi.gob.pe/mapas/mapa-monitoreohidro/",
-    "leido": "2026-11-06T16:16:02Z"
+    "leido": "2026-11-06T16:24:27Z"
   },
   "prono": {
     "url": "https://www.senamhi.gob.pe/?p=pronostico-climatico",
@@ -19571,7 +19571,7 @@
         "emision": "2026-10-26"
       },
       {
-        "sector": "Selva Central ",
+        "sector": "Selva Central",
         "bajo": 48,
         "normal": 45,
         "sobre": 7,
@@ -19582,7 +19582,7 @@
         "emision": "2026-10-26"
       },
       {
-        "sector": "Selva Sur ",
+        "sector": "Selva Sur",
         "bajo": 46,
         "normal": 43,
         "sobre": 11,
@@ -19716,7 +19716,7 @@
         "emision": "2026-10-16"
       },
       {
-        "sector": "Selva Central ",
+        "sector": "Selva Central",
         "bajo": 42,
         "normal": 40,
         "sobre": 18,
@@ -19727,7 +19727,7 @@
         "emision": "2026-10-16"
       },
       {
-        "sector": "Selva Sur ",
+        "sector": "Selva Sur",
         "bajo": 44,
         "normal": 41,
         "sobre": 15,
@@ -19745,7 +19745,7 @@
           0.96
         ],
         [
-          "Selva Sur ",
+          "Selva Sur",
           0.04
         ]
       ],
@@ -19755,7 +19755,7 @@
           0.86
         ],
         [
-          "Selva Sur ",
+          "Selva Sur",
           0.13
         ],
         [
@@ -19773,7 +19773,7 @@
           0.27
         ],
         [
-          "Selva Sur ",
+          "Selva Sur",
           0.05
         ]
       ],
@@ -19791,7 +19791,7 @@
           0.05
         ],
         [
-          "Selva Sur ",
+          "Selva Sur",
           0.04
         ]
       ],
@@ -19849,7 +19849,7 @@
           0.91
         ],
         [
-          "Selva Sur ",
+          "Selva Sur",
           0.08
         ],
         [
@@ -19863,13 +19863,13 @@
           0.88
         ],
         [
-          "Selva Central ",
+          "Selva Central",
           0.12
         ]
       ],
       "17": [
         [
-          "Selva Sur ",
+          "Selva Sur",
           1.0
         ]
       ],
@@ -19903,7 +19903,7 @@
           0.76
         ],
         [
-          "Selva Central ",
+          "Selva Central",
           0.19
         ],
         [
@@ -19941,7 +19941,7 @@
           0.76
         ],
         [
-          "Selva Central ",
+          "Selva Central",
           0.24
         ]
       ],
@@ -19983,7 +19983,7 @@
       ],
       "25": [
         [
-          "Selva Central ",
+          "Selva Central",
           1.0
         ]
       ],
@@ -20042,7 +20042,7 @@
         ]
       ]
     },
-    "leido": "2026-11-06T16:16:02Z"
+    "leido": "2026-11-06T16:24:28Z"
   },
   "igp": {
     "e": [
@@ -20247,7 +20247,7 @@
       "clasificacion": 99.88
     },
     "url": "http://met.igp.gob.pe/variabclim/",
-    "leido": "2026-11-06T16:16:03Z"
+    "leido": "2026-11-06T16:24:28Z"
   },
   "dhn": {
     "generado": "2026-11-06T16:10:08Z",
@@ -20759,7 +20759,7 @@
         }
       ]
     },
-    "leido": "2026-11-06T16:16:03Z"
+    "leido": "2026-11-06T16:24:29Z"
   },
   "inaigem": {
     "estaciones": [
@@ -20797,7 +20797,7 @@
       }
     ],
     "url": "https://www.inaigem.gob.pe/",
-    "leido": "2026-11-06T16:16:03Z"
+    "leido": "2026-11-06T16:24:29Z"
   },
   "enfen_docs": {
     "docs": [
@@ -20863,6 +20863,6 @@
       }
     ],
     "url": "https://enfen.imarpe.gob.pe/",
-    "leido": "2026-11-06T16:16:04Z"
+    "leido": "2026-11-06T16:24:30Z"
   }
 }
