@@ -1,6 +1,6 @@
 {
   "_": "Generado por pipeline/fuentes/peru_oficial.py. Datos oficiales tal como se publican.",
-  "actualizado": "2026-11-06T16:46:40Z",
+  "actualizado": "2026-11-06T17:12:21Z",
   "fallas": [
     "fenomeno",
     "ana_rios",
@@ -22,9 +22,9 @@
   },
   "coen": {
     "dias": 7,
-    "total": 81,
+    "total": 80,
     "por_peligro": {
-      "Incendios forestales": 27,
+      "Incendios forestales": 26,
       "Lluvias intensas": 19,
       "Incendios urbanos": 14,
       "Vientos fuertes": 8,
@@ -43,7 +43,7 @@
       "09": 5,
       "21": 6,
       "22": 2,
-      "02": 6,
+      "02": 5,
       "15": 12,
       "24": 4,
       "20": 2,
@@ -170,20 +170,20 @@
       },
       {
         "fecha": "2026-11-04 19:00",
-        "peligro": "Lluvias intensas",
-        "distrito": "240105",
-        "lugar": "San Jacinto, Tumbes, Tumbes",
-        "hechos": "4/11/2026 19:00 horas Se registraron lluvias intensas que ocasionaron el desborde de la quebrada El Tablazo, generando daños materiales (viviendas), en el sector El Tablazo, caserío Casa Blanqueada, distrito de San Jacinto, provincia de Tumbes. 4/11/2026 19:00 horas Se registraron lluvias intensas que ocasionaron el desborde de la quebrada Higueron, generando daños materiales (viviendas), en el di",
-        "pdf": "https://coen.indeci.gob.pe/api/v2/mer/files/view?key=mer/2026/10/1793936285560.pdf",
-        "sinpad": null
-      },
-      {
-        "fecha": "2026-11-04 19:00",
         "peligro": "Incendios forestales",
         "distrito": "030605",
         "lugar": "Ocobamba, Chincheros, Apurimac",
         "hechos": "Se registra un incendio forestal que ocasiona daños materiales (cobertura natural) en la comunidad anexo Túpac Amaru y Tres Cruces, distrito Ocobamba, provincia de Chincheros",
         "pdf": "https://coen.indeci.gob.pe/api/v2/mer/files/view?key=mer/2026/10/1793936171342.pdf",
+        "sinpad": null
+      },
+      {
+        "fecha": "2026-11-04 19:00",
+        "peligro": "Lluvias intensas",
+        "distrito": "240105",
+        "lugar": "San Jacinto, Tumbes, Tumbes",
+        "hechos": "4/11/2026 19:00 horas Se registraron lluvias intensas que ocasionaron el desborde de la quebrada El Tablazo, generando daños materiales (viviendas), en el sector El Tablazo, caserío Casa Blanqueada, distrito de San Jacinto, provincia de Tumbes. 4/11/2026 19:00 horas Se registraron lluvias intensas que ocasionaron el desborde de la quebrada Higueron, generando daños materiales (viviendas), en el di",
+        "pdf": "https://coen.indeci.gob.pe/api/v2/mer/files/view?key=mer/2026/10/1793936285560.pdf",
         "sinpad": null
       },
       {
@@ -206,20 +206,20 @@
       },
       {
         "fecha": "2026-11-04 15:30",
-        "peligro": "Incendios forestales",
-        "distrito": "030104",
-        "lugar": "Curahuasi, Abancay, Apurimac",
-        "hechos": "Se registra un incendio forestal que ocasiona daños a sectores diversos (cobertura natural), en el sector Ccoripampa, distrito de Curahuasi, provincia de Abancay.",
-        "pdf": "https://coen.indeci.gob.pe/api/v2/mer/files/view?key=mer/2026/10/1793884777165.pdf",
-        "sinpad": null
-      },
-      {
-        "fecha": "2026-11-04 15:30",
         "peligro": "Vientos fuertes",
         "distrito": "211204",
         "lugar": "Patambuco, Sandia, Puno",
         "hechos": "Se registraron vientos fuertes que causaron daños materiales (viviendas) en el sector de Cupuly, centro poblado de Sihuasihua, distrito de Patambuco, provincia de Sandia",
         "pdf": "https://coen.indeci.gob.pe/api/v2/mer/files/view?key=mer/2026/10/1793939643455.pdf",
+        "sinpad": null
+      },
+      {
+        "fecha": "2026-11-04 15:30",
+        "peligro": "Incendios forestales",
+        "distrito": "030104",
+        "lugar": "Curahuasi, Abancay, Apurimac",
+        "hechos": "Se registra un incendio forestal que ocasiona daños a sectores diversos (cobertura natural), en el sector Ccoripampa, distrito de Curahuasi, provincia de Abancay.",
+        "pdf": "https://coen.indeci.gob.pe/api/v2/mer/files/view?key=mer/2026/10/1793884777165.pdf",
         "sinpad": null
       },
       {
@@ -251,20 +251,20 @@
       },
       {
         "fecha": "2026-11-04 13:20",
-        "peligro": "Incendios urbanos",
-        "distrito": "030501",
-        "lugar": "Tambobamba, Cotabambas, Apurimac",
-        "hechos": "Se registró un incendio urbano que ocasionó daños materiales (vivienda) en el centro poblado de Ccahuaccahua, distrito de Tambobamba, provincia de Cotabambas",
-        "pdf": "https://coen.indeci.gob.pe/api/v2/mer/files/view?key=mer/2026/10/1793939735515.pdf",
-        "sinpad": null
-      },
-      {
-        "fecha": "2026-11-04 13:20",
         "peligro": "Vientos fuertes",
         "distrito": "060106",
         "lugar": "Jesus, Cajamarca, Cajamarca",
         "hechos": "Se registraron vientos fuertes que causaron daños materiales (vivienda) en el sector San Isidro, distrito de Jesús, provincia de Cajamarca",
         "pdf": "https://coen.indeci.gob.pe/api/v2/mer/files/view?key=mer/2026/10/1793923118140.pdf",
+        "sinpad": null
+      },
+      {
+        "fecha": "2026-11-04 13:20",
+        "peligro": "Incendios urbanos",
+        "distrito": "030501",
+        "lugar": "Tambobamba, Cotabambas, Apurimac",
+        "hechos": "Se registró un incendio urbano que ocasionó daños materiales (vivienda) en el centro poblado de Ccahuaccahua, distrito de Tambobamba, provincia de Cotabambas",
+        "pdf": "https://coen.indeci.gob.pe/api/v2/mer/files/view?key=mer/2026/10/1793939735515.pdf",
         "sinpad": null
       },
       {
@@ -423,7 +423,7 @@
     ],
     "sin_cruce": 1,
     "url": "https://coen.indeci.gob.pe/mer/",
-    "leido": "2026-11-06T16:48:12Z"
+    "leido": "2026-11-06T17:13:53Z"
   },
   "indeci_rss": {
     "reportes": [
@@ -499,7 +499,7 @@
       }
     ],
     "url": "https://portal.indeci.gob.pe/emergencias/",
-    "leido": "2026-11-06T16:48:13Z"
+    "leido": "2026-11-06T17:13:54Z"
   },
   "escenario": {
     "vigente": true,
@@ -2001,7 +2001,7 @@
       }
     },
     "url": "https://sigrid.cenepred.gob.pe/sigridv3/escenario-aviso",
-    "leido": "2026-11-06T16:48:18Z"
+    "leido": "2026-11-06T17:13:58Z"
   },
   "quebradas": {
     "fecha": "2026-11-05",
@@ -2369,7 +2369,7 @@
     },
     "sin_cruce": 0,
     "url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico",
-    "leido": "2026-11-06T16:48:20Z"
+    "leido": "2026-11-06T17:14:02Z"
   },
   "hidro": {
     "avisos": [
@@ -2411,7 +2411,7 @@
       }
     ],
     "url": "https://www.senamhi.gob.pe/?p=aviso-hidrologico",
-    "leido": "2026-11-06T16:48:20Z"
+    "leido": "2026-11-06T17:14:03Z"
   },
   "ana_rios": {
     "estaciones": [
@@ -16921,11 +16921,11 @@
       }
     },
     "url": "https://visor.geoperu.gob.pe/",
-    "leido": "2026-11-06T16:54:23Z"
+    "leido": "2026-11-06T17:20:05Z"
   },
   "agua": {
     "total": 243,
-    "conexiones": 1297957,
+    "conexiones": 1287828,
     "cortes": [
       {
         "eps": "SEDAPAL",
@@ -17088,16 +17088,6 @@
         "distrito": "080105"
       },
       {
-        "eps": "SEDALIB S.A.",
-        "lugar": "Trujillo, La Libertad",
-        "conexiones": 19304,
-        "tipo": "Imprevista",
-        "motivo": "Otros",
-        "inicio": "2026-11-06",
-        "restablece": "2026-11-06",
-        "distrito": "130101"
-      },
-      {
         "eps": "EPS SEDACUSCO S.A.",
         "lugar": "Cusco, Cusco",
         "conexiones": 16000,
@@ -17166,6 +17156,16 @@
         "inicio": "2026-11-14",
         "restablece": "2026-11-14",
         "distrito": "080101"
+      },
+      {
+        "eps": "SEDALIB S.A.",
+        "lugar": "Trujillo, La Libertad",
+        "conexiones": 9175,
+        "tipo": "Imprevista",
+        "motivo": "Otros",
+        "inicio": "2026-11-06",
+        "restablece": "2026-11-06",
+        "distrito": "130101"
       },
       {
         "eps": "EPSEL S.A.",
@@ -17843,7 +17843,7 @@
       },
       "130101": {
         "cortes": 5,
-        "conexiones": 22805
+        "conexiones": 12676
       },
       "130103": {
         "cortes": 1,
@@ -17871,7 +17871,7 @@
       }
     },
     "url": "https://www.sunass.gob.pe/",
-    "leido": "2026-11-06T16:54:25Z"
+    "leido": "2026-11-06T17:20:06Z"
   },
   "incendios": {
     "total": 17,
@@ -18031,7 +18031,7 @@
       }
     ],
     "url": "https://geo.serfor.gob.pe/visor/",
-    "leido": "2026-11-06T16:54:27Z"
+    "leido": "2026-11-06T17:20:07Z"
   },
   "phisis": {
     "estaciones": [
@@ -20263,7 +20263,7 @@
       "clasificacion": 99.88
     },
     "url": "http://met.igp.gob.pe/variabclim/",
-    "leido": "2026-11-06T16:57:30Z"
+    "leido": "2026-11-06T17:23:10Z"
   },
   "dhn": {
     "generado": "2026-11-06T16:10:08Z",
@@ -20775,7 +20775,7 @@
         }
       ]
     },
-    "leido": "2026-11-06T16:57:31Z"
+    "leido": "2026-11-06T17:23:11Z"
   },
   "inaigem": {
     "estaciones": [
@@ -20813,7 +20813,7 @@
       }
     ],
     "url": "https://www.inaigem.gob.pe/",
-    "leido": "2026-11-06T16:57:32Z"
+    "leido": "2026-11-06T17:23:12Z"
   },
   "enfen_docs": {
     "docs": [
