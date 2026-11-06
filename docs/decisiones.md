@@ -275,6 +275,14 @@ a mostrar algo que el ENFEN no dice.
 - **Wikipedia solo si OpenStreetMap enlaza el artículo.** Buscar por nombre traería homónimos ("Laguna Negra") y diría algo falso del lugar.
 - **Noticias con imagen.** Canales RSS de los medios, filtrados por tema. Las imágenes se muestran desde el servidor del medio, con enlace a la nota; sin imagen, un dibujo por tema.
 
+## 2026-11-06 · Boletín por región, con gráficos
+
+- Selector Perú o región. Cuatro partes fijas: la región hoy, el país hoy, noticias (de la región, nacionales, internacionales) y lo que viene.
+- El pronóstico del SENAMHI va por sus 13 sectores; `herramientas/build_sectores.py` calcula una vez qué sectores tocan a cada región (centro de cada distrito en los polígonos). Los polígonos pesan 68 MB: no se piden cada hora.
+- Noticias de la región: titulares que nombran la región o una de sus provincias, sin palabras vagas ("Santa", "General").
+- El regional es siempre el de hoy; el nacional se archiva uno por día.
+- El robot de la PC también actualiza las noticias cada hora.
+
 ## 2026-11-06 · Unificar lo oficial: «El Estado hoy» y «Pronósticos»
 
 - Sondeo en tres frentes (Estado, instituciones científicas, centros internacionales), con cada servicio abierto y probado. Se integran solo servicios legibles por máquina y abiertos: `pipeline/fuentes/peru_oficial.py` (19 bloques) e `internacional.py`.

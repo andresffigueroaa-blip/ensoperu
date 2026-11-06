@@ -206,33 +206,6 @@ function pintarProbs(){
   $("#figs").innerHTML = (D.estado.figuras || []).map(f => `<img loading="lazy" src="${recurso("datos/enfen/" + f)}" alt="Figura del comunicado del ENFEN">`).join("");
 }
 
-/* ── BOLETÍN ────────────────────────────────────────────────────────────── */
-async function iniciarBoletin(){
-  const ind = await traerOpcional("datos/boletines/indice.json");
-  const f = (ind?.fechas || []).slice().reverse();
-  $("#bol-fecha").innerHTML = f.map(x => `<option value="${x}">${fecha(x)}</option>`).join("");
-  pintarBoletin(f[0]);
-}
-async function pintarBoletin(fec){
-  const hoy = D.panorama?.fecha === fec;
-  const P = hoy ? D.panorama : await traerOpcional(`datos/boletines/${fec}.json`);
-  if (!P){ $("#boletin").innerHTML = "<p>Sin boletín para esa fecha.</p>"; return; }
-  const e = D.estado, A = D.avisos?.avisos || [];
-  const tabla = (cab, filas) => `<table class="tabla"><tr>${cab.map(c => `<th>${c}</th>`).join("")}</tr>${filas.join("")}</table>`;
-  $("#boletin").innerHTML = `
-    <header class="bol-cab"><div><div class="thermo"></div><h1>Boletín ENSO Perú</h1><p>${fecha(P.fecha)}</p></div></header>
-    <section><h2>Lo más importante</h2><ul class="lectura">${P.lectura.map(t => `<li>${esc(t)}</li>`).join("")}</ul></section>
-    ${hoy && e.alerta.resumen ? `<section><h2>Comunicado vigente del ENFEN</h2><p>${esc(e.alerta.resumen)}</p><p class="f-fuente">${esc(e.alerta.fuente)}, ${fecha(e.alerta.fecha)}. Próximo: ${fecha(e.alerta.proximo)}.</p></section>` : ""}
-    ${hoy && A.length ? `<section><h2>Avisos del SENAMHI</h2>${tabla(["Nivel", "Aviso", "Vigencia"], A.map(a => `<tr><td><span class="chip ${NIVEL_AVISO[a.nivel]}">${esc(a.nivel)}</span></td><td>${esc(oracion(a.titulo))}</td><td>${fecha(a.inicio)} a ${fecha(a.fin)}</td></tr>`))}</section>` : ""}
-    ${P.rios_altos?.length ? `<section><h2>Ríos con crecida pronosticada</h2>${tabla(["Río", "Lugar", "Pico en 15 días", "Nivel"], P.rios_altos.map(r => `<tr><td>${esc(r.nombre)}</td><td>${esc(r.lugar)}</td><td>${entero(Math.round(r.pico))} m³/s, ${fecha(r.fecha_pico)}</td><td>${chipNivel(r.nivel)}</td></tr>`))}<p class="f-fuente">GloFAS (Copernicus), modelo global: orienta, no mide.</p></section>` : ""}
-    <section class="bol-2"><div><h2>Más lluvia próxima</h2>${tabla(["Provincia", "Región", "16 días"], P.top_lluvia.map(r => `<tr><td>${esc(r.nombre)}</td><td>${esc(r.region)}</td><td>${Math.round(r.total)} mm</td></tr>`))}</div>
-      <div><h2>Más focos de calor</h2>${tabla(["Provincia", "Región", "7 días"], P.top_focos.map(r => `<tr><td>${esc(r.nombre)}</td><td>${esc(r.region)}</td><td>${r.focos}</td></tr>`))}</div></section>
-    ${hoy && P.expuestos_inundacion ? `<section><h2>Distritos con mayor riesgo oficial ante inundación</h2>${tabla(["Distrito", "Provincia, región", "Riesgo", "Viviendas expuestas", "Colegios", "Salud"], P.expuestos_inundacion.map(r => `<tr><td>${esc(r.nombre)}</td><td>${esc(r.provincia)}, ${esc(r.region)}</td><td>${chipNivel(r.riesgo)}</td><td>${entero(r.viv)}</td><td>${entero(r.iiee)}</td><td>${entero(r.eess)}</td></tr>`))}<p class="f-fuente">CENEPRED, escenario de riesgo ante El Niño (SIGRID). Censo 2017.</p></section>` : ""}
-    <footer class="bol-pie"><p>ENSO Perú reúne datos oficiales y de centros globales; no emite alertas ni pronósticos propios. Para decisiones operativas consulte al ENFEN, al SENAMHI y a INDECI.</p>
-      <p>${esc(location.origin + location.pathname)}#boletin</p></footer>`;
-}
-window.pintarBoletin = pintarBoletin;
-
 /* ── NOTICIAS ───────────────────────────────────────────────────────────── */
 const TEMAS_NOT = { todos: "Todas", guardadas: "★ Guardadas", nacional: "Perú", internacional: "Mundo", oficial: "Oficial", lluvias: "Lluvias", incendios: "Incendios", mar: "Mar y pesca", agua: "Agua", agro: "Agro" };
 let filtroNot = "todos", verNot = 24;

@@ -344,7 +344,9 @@
 <main id="v-boletin" class="view">
   <div class="wrap mon boletin">
     <div class="bol-ctl no-print">
-      <label for="bol-fecha">Boletín del</label> <select id="bol-fecha" onchange="pintarBoletin(this.value)"></select>
+      <label for="bol-region">Boletín de</label> <select id="bol-region" onchange="pintarBoletin()"></select>
+      <label for="bol-fecha">del</label> <select id="bol-fecha" onchange="pintarBoletin()"></select>
+      <small class="f-nota" id="bol-fecha-nota"></small>
       <button class="cta cta2" onclick="window.print()">Imprimir o guardar en PDF</button>
     </div>
     <article id="boletin"></article>
@@ -434,6 +436,7 @@
 <script src="assets/vistas.js"></script>
 <script src="assets/ficha_lugar.js"></script>
 <script src="assets/vivo.js"></script>
+<script src="assets/boletin.js"></script>
 <script src="assets/mapa.js"></script>
 </body>
 </html>

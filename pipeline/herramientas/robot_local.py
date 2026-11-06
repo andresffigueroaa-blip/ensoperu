@@ -29,7 +29,8 @@ REPO_URL = "https://github.com/andresffigueroaa-blip/ensoperu.git"
 BASE = Path(os.environ["LOCALAPPDATA"]) / "ensoperu-robot"
 CLON = BASE / "repo"
 LOG = BASE / "robot.log"
-FUENTES = ["sitio/datos/senamhi/avisos.json", "sitio/datos/enfen/comunicado.json", "sitio/datos/peru/oficial.json"]
+FUENTES = ["sitio/datos/senamhi/avisos.json", "sitio/datos/enfen/comunicado.json", "sitio/datos/peru/oficial.json",
+           "sitio/datos/noticias.json"]
 HORAS_LATIDO = 6
 SIN_VENTANA = 0x08000000 if os.name == "nt" else 0   # sin consola que parpadee cada hora
 
@@ -88,7 +89,7 @@ def main() -> int:
     antes, horas = huella(), horas_desde_lectura()
     python = sys.executable.replace("pythonw.exe", "python.exe")
     entorno = {**os.environ, "PYTHONIOENCODING": "utf-8"}
-    r = correr(python, "pipeline/run.py", "--solo", "senamhi,enfen,peru_oficial", chequear=False, entorno=entorno)
+    r = correr(python, "pipeline/run.py", "--solo", "senamhi,enfen,peru_oficial,noticias", chequear=False, entorno=entorno)
     if huella() == antes and horas < HORAS_LATIDO:
         log(f"sin cambios (lectura de hace {horas:.1f} h)")
         return 0

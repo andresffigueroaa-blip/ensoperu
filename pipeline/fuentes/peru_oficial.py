@@ -379,13 +379,18 @@ def phisis(_) -> dict:
 def prono(_) -> dict:
     salida = {"url": "https://www.senamhi.gob.pe/?p=pronostico-climatico"}
     for clave, capa in (("trimestral", "spc:prono_trim_poligono_pp1"), ("verano", "spc:prono_verano_poligono")):
-        sec = [{"sector": str(p.get("sectores") or "").title(), "bajo": p.get("inferior"), "normal": p.get("normal"), "sobre": p.get("superior"),
+        # Solo las probabilidades: con la geometría la respuesta pesa 68 MB
+        campos = "sectores,inferior,normal,superior,umb_inferior,umb_superior,escenario,variable,trimestre,emision"
+        feats = _json(_get(IDESEP + capa + "&propertyName=" + campos)).get("features", [])
+        sec = [{"sector": str(p.get("sectores") or "").strip().title(), "bajo": p.get("inferior"), "normal": p.get("normal"), "sobre": p.get("superior"),
                 "escenario": p.get("escenario"), "umbral_bajo": p.get("umb_inferior"), "umbral_sobre": p.get("umb_superior"),
                 "periodo": str(p.get("trimestre") or "").replace("_", " a ").capitalize(), "emision": str(p.get("emision") or "")[:10]}
-               for p in (f["properties"] for f in _json(_get(IDESEP + capa)).get("features", []))]
+               for p in (f["properties"] for f in feats)]
         salida[clave] = sec
     if not salida["trimestral"]:
         raise ValueError("pronóstico estacional vacío")
+    # Sectores de cada región: fijos, calculados aparte (herramientas/build_sectores.py)
+    salida["regiones"] = (leer_json(DIR / "sectores_region.json") or {}).get("regiones", {})
     return salida
 
 
