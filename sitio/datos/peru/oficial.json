@@ -1,14 +1,24 @@
 {
   "_": "Generado por pipeline/fuentes/peru_oficial.py. Datos oficiales tal como se publican.",
-  "actualizado": "2026-11-06T05:41:48Z",
-  "fallas": [],
+  "actualizado": "2026-11-06T05:52:10Z",
+  "fallas": [
+    "fenomeno",
+    "ana_rios",
+    "ana_embalses",
+    "ana_pc",
+    "emergencia",
+    "phisis",
+    "prono",
+    "enfen_docs"
+  ],
   "fenomeno": {
     "fecha": "30 de octubre del 2026",
     "estado": "Alerta de El Niño Costero",
     "color": "#ff0031",
     "titular": "EL NIÑO COSTERO CONTINUARÍA HASTA FINES DE OTOÑO DE 2027",
     "url": "https://www.senamhi.gob.pe/?p=fenomeno-el-nino",
-    "leido": "2026-11-06T05:41:48Z"
+    "leido": "2026-11-06T05:41:48Z",
+    "atrasado": true
   },
   "coen": {
     "dias": 7,
@@ -413,7 +423,7 @@
     ],
     "sin_cruce": 1,
     "url": "https://coen.indeci.gob.pe/mer/",
-    "leido": "2026-11-06T05:41:49Z"
+    "leido": "2026-11-06T05:53:42Z"
   },
   "indeci_rss": {
     "reportes": [
@@ -489,7 +499,7 @@
       }
     ],
     "url": "https://portal.indeci.gob.pe/emergencias/",
-    "leido": "2026-11-06T05:41:50Z"
+    "leido": "2026-11-06T05:53:44Z"
   },
   "escenario": {
     "vigente": true,
@@ -1991,7 +2001,7 @@
       }
     },
     "url": "https://sigrid.cenepred.gob.pe/sigridv3/escenario-aviso",
-    "leido": "2026-11-06T05:41:51Z"
+    "leido": "2026-11-06T05:53:48Z"
   },
   "quebradas": {
     "fecha": "2026-11-05",
@@ -2359,7 +2369,7 @@
     },
     "sin_cruce": 0,
     "url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico",
-    "leido": "2026-11-06T05:41:53Z"
+    "leido": "2026-11-06T05:53:50Z"
   },
   "hidro": {
     "avisos": [
@@ -2401,7 +2411,7 @@
       }
     ],
     "url": "https://www.senamhi.gob.pe/?p=aviso-hidrologico",
-    "leido": "2026-11-06T05:41:54Z"
+    "leido": "2026-11-06T05:53:51Z"
   },
   "ana_rios": {
     "estaciones": [
@@ -4697,7 +4707,8 @@
     "en_alerta": 2,
     "en_emergencia": 0,
     "url": "https://snirh.ana.gob.pe/onrh/",
-    "leido": "2026-11-06T05:41:59Z"
+    "leido": "2026-11-06T05:41:59Z",
+    "atrasado": true
   },
   "ana_embalses": {
     "embalses": [
@@ -4934,7 +4945,8 @@
       }
     ],
     "url": "https://snirh.ana.gob.pe/onrh/",
-    "leido": "2026-11-06T05:42:00Z"
+    "leido": "2026-11-06T05:42:00Z",
+    "atrasado": true
   },
   "ana_pc": {
     "total": 536,
@@ -4945,7 +4957,8 @@
     },
     "avance_medio": 34.7,
     "url": "https://snirh.ana.gob.pe/",
-    "leido": "2026-11-06T05:42:01Z"
+    "leido": "2026-11-06T05:42:01Z",
+    "atrasado": true
   },
   "emergencia": {
     "decretos": {
@@ -9911,7 +9924,8 @@
       "ONRH/DEE_DS_140_2026_PCM"
     ],
     "url": "https://www.gob.pe/busquedas?contenido[]=normas&term=estado+de+emergencia",
-    "leido": "2026-11-06T05:42:05Z"
+    "leido": "2026-11-06T05:42:05Z",
+    "atrasado": true
   },
   "preparacion": {
     "conteo": {
@@ -17067,7 +17081,7 @@
       }
     },
     "url": "https://visor.geoperu.gob.pe/",
-    "leido": "2026-11-06T05:42:07Z"
+    "leido": "2026-11-06T05:59:55Z"
   },
   "agua": {
     "total": 226,
@@ -18013,7 +18027,7 @@
       }
     },
     "url": "https://www.sunass.gob.pe/",
-    "leido": "2026-11-06T05:42:07Z"
+    "leido": "2026-11-06T05:59:56Z"
   },
   "incendios": {
     "total": 100,
@@ -18740,7 +18754,7 @@
       }
     ],
     "url": "https://geo.serfor.gob.pe/visor/",
-    "leido": "2026-11-06T05:42:07Z"
+    "leido": "2026-11-06T05:59:57Z"
   },
   "phisis": {
     "estaciones": [
@@ -20157,7 +20171,8 @@
     ],
     "sobre_umbral": 3,
     "url": "https://www.senamhi.gob.pe/mapas/mapa-monitoreohidro/",
-    "leido": "2026-11-06T05:42:08Z"
+    "leido": "2026-11-06T05:42:08Z",
+    "atrasado": true
   },
   "prono": {
     "url": "https://www.senamhi.gob.pe/?p=pronostico-climatico",
@@ -20451,7 +20466,8 @@
         "emision": "2026-10-16"
       }
     ],
-    "leido": "2026-11-06T05:42:44Z"
+    "leido": "2026-11-06T05:42:44Z",
+    "atrasado": true
   },
   "igp": {
     "e": [
@@ -20656,7 +20672,7 @@
       "clasificacion": 99.88
     },
     "url": "http://met.igp.gob.pe/variabclim/",
-    "leido": "2026-11-06T05:42:44Z"
+    "leido": "2026-11-06T06:03:01Z"
   },
   "dhn": {
     "generado": "2026-11-05T13:46:20Z",
@@ -21168,7 +21184,7 @@
         }
       ]
     },
-    "leido": "2026-11-06T05:42:44Z"
+    "leido": "2026-11-06T06:03:02Z"
   },
   "inaigem": {
     "estaciones": [
@@ -21206,7 +21222,7 @@
       }
     ],
     "url": "https://www.inaigem.gob.pe/",
-    "leido": "2026-11-06T05:42:45Z"
+    "leido": "2026-11-06T06:03:02Z"
   },
   "enfen_docs": {
     "docs": [
@@ -21272,6 +21288,7 @@
       }
     ],
     "url": "https://enfen.imarpe.gob.pe/",
-    "leido": "2026-11-06T05:42:45Z"
+    "leido": "2026-11-06T05:42:45Z",
+    "atrasado": true
   }
 }
