@@ -12,7 +12,7 @@
 
 const ESTADO_RIO = {
   emergencia: ["Emergencia", "#B4101C", "muyalto"], alerta: ["Alerta por crecida", "#E2341D", "alto"], vigilancia: ["Vigilancia", "#F0A23C", "medio"],
-  nivel_bajo: ["Nivel bajo", "#9C7BD4", "bajo"], normal: ["Normal", "#2F8FE0", "bajo"],
+  nivel_bajo: ["Nivel bajo", "#9C7BD4", "nbajo"], normal: ["Normal", "#2F8FE0", "bajo"],
   sin_lectura: ["Sin lectura reciente", "#C9D2CC", "sin"], sin_datos: ["Sin estación: no sabemos", "#8A9499", "sin"],
 };
 const H = { rios: null, fichas: null, mon: null, cuencas: null, hist: null };
@@ -156,7 +156,7 @@ async function pintarFichaRioANA(rid){
     ${anaEst.length ? `<section class="f-sec"><h3>${dibujo("rio")} Caudal o nivel medido (ANA)</h3>
       ${anaEst.map(e => { const xs = hist[`ANA|${e.nombre}|${f.nombre.replace(/^Río\s+/i, "")}`] || hist[Object.keys(hist).find(k => k.startsWith(`ANA|${e.nombre}|`))] || [];
         return `<div class="est-ana"><div class="rank-f"><span><b>${esc(e.nombre)}</b> <small>${esc((e.tendencia || "").toLowerCase())}, ${esc(e.hora || "")}</small></span>
-          <span>${String(e.valor).replace(".", ",")} ${esc(e.unidad || "")} ${e.estado === "normal" ? chipNivel("normal") : `<span class="chip ${e.estado === "emergencia" ? "muyalto" : "alto"}">${e.estiaje ? "Nivel bajo" : e.estado === "emergencia" ? "Emergencia" : "Alerta"}</span>`}</span></div>
+          <span>${String(e.valor).replace(".", ",")} ${esc(e.unidad || "")} ${e.estado === "normal" ? chipNivel("normal") : `<span class="chip ${e.estiaje ? "nbajo" : e.estado === "emergencia" ? "muyalto" : "alto"}">${e.estiaje ? "Nivel bajo" : e.estado === "emergencia" ? "Emergencia" : "Alerta"}</span>`}</span></div>
           <div class="umbral"><i style="width:${Math.min(100, e.valor / Math.max(e.alerta, e.emergencia) * 100)}%"></i><b style="left:${Math.min(100, e.alerta / Math.max(e.alerta, e.emergencia) * 100)}%" title="Alerta"></b></div>
           <small class="f-nota">Umbral de alerta ${String(e.alerta).replace(".", ",")}, de emergencia ${String(e.emergencia).replace(".", ",")} ${esc(e.unidad || "")}${e.estiaje ? " (umbrales de nivel bajo)" : ""}.</small>
           ${xs.length >= 2 ? lineaUmbral(xs.slice(-60), e.unidad || "") : `<small class="f-nota">La historia se arma con cada lectura diaria: ${xs.length} hasta hoy.</small>`}</div>`; }).join("")}
@@ -235,8 +235,8 @@ async function pintarVistaRios(){
       return `<tr tabindex="0" onclick="abrirRio('${rid}')" onkeydown="if(event.key==='Enter')abrirRio('${rid}')">
         <td><b>${esc(f.nombre)}</b><small class="sub-td">${esc(f.cuenca || "")}</small></td>
         <td>${esc(f.regiones.map(x => M.datos.porId[x]?.nombre).filter(Boolean).join(", "))}</td>
-        <td><span class="chip ${ESTADO_RIO[e][2]}">${ESTADO_RIO[e][0]}</span>${r.nivel_bajo ? ` <span class="chip alto">Nivel bajo</span>` : ""}</td>
-        <td>${ana ? `${esc(ana.nombre)}: ${String(ana.valor).replace(".", ",")} ${esc(ana.unidad || "")} <small class="sub-td">alerta ${String(ana.alerta).replace(".", ",")} · ${esc((ana.tendencia || "").toLowerCase())}</small>` : sen ? `${esc(sen.nombre)}: ${esc(sen.nivel)} <small class="sub-td">SENAMHI</small>` : "–"}</td>
+        <td><span class="chip ${ESTADO_RIO[e][2]}">${ESTADO_RIO[e][0]}</span>${r.nivel_bajo && e !== "nivel_bajo" ? ` <span class="chip nbajo">Nivel bajo</span>` : ""}</td>
+        <td>${ana ? `${esc(ana.nombre)}: ${String(ana.valor).replace(".", ",")} ${esc(ana.unidad || "")} <small class="sub-td">${ana.alerta !== null && ana.alerta !== undefined ? `umbral de alerta ${String(ana.alerta).replace(".", ",")} ${esc(ana.unidad || "")} · ` : ""}${esc((ana.tendencia || "").toLowerCase())}</small>` : sen ? `${esc(sen.nombre)}: ${esc(sen.nivel)} <small class="sub-td">SENAMHI</small>` : "–"}</td>
         <td>${g ? `${chipNivel(g.nivel)} <small class="sub-td">pico el ${fecha(g.fecha_pico)}; modelo, no comparable con la medición</small>` : "–"}</td>
         <td>${r.obras?.total ? `${r.obras.total} <small class="sub-td">avance ${String(r.obras.avance_medio ?? "–").replace(".", ",")} %</small>` : "–"}</td>
         <td>${f.personas ? entero(f.personas) : "–"}</td></tr>`; }).join("");

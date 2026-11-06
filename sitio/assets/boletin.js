@@ -20,7 +20,7 @@ const ultimos = (s, n, cols = s.cols) => ({ fechas: s.fechas.slice(-n), cols: Ob
 
 // Barras horizontales con valor: [{n, v, txt, c}]
 const barrasH = (xs, max) => { const m = max || Math.max(1, ...xs.map(x => x.v || 0));
-  return `<div class="barras-h">${xs.map(x => `<div><span>${esc(x.n)}</span><i style="width:${Math.max(0.5, (x.v || 0) / m * 100)}%;background:${x.c || "#2A78D6"}"></i><b>${x.txt ?? entero(x.v)}</b></div>`).join("")}</div>`; };
+  return `<div class="barras-h">${xs.map(x => `<div><span>${esc(x.n)}</span><i style="width:${x.v ? Math.max(0.5, x.v / m * 100) : 0}%;background:${x.c || "#2A78D6"}"></i><b>${x.txt ?? entero(x.v)}</b></div>`).join("")}</div>`; };
 // Columnas con valores, eje cero y etiquetas. Tamaño fijo: se lee igual en pantalla y en papel.
 // op: u (unidad), dec, color(v, i), cada (cada cuántas columnas va la etiqueta), linea [valor, texto], alto
 function columnas(v, etq, op = {}){
@@ -30,7 +30,7 @@ function columnas(v, etq, op = {}){
   let hi = Math.max(0, ...xs, op.linea ? op.linea[0] : 0), lo = Math.min(0, ...xs);
   if (hi === lo) hi = lo + 1;
   const y = t => T + (hi - t) / (hi - lo) * (H - T - B), bw = (W - L - R) / n, cada = op.cada || 1;
-  const fmt = x => (op.signo && x > 0 ? "+" : "") + Number(x).toFixed(op.dec || 0).replace(".", ",");
+  const fmt = x => (op.signo && x > 0 ? "+" : "") + Number(x).toFixed(op.dec || 0).replace(".", ",").replace("-", "−");
   const cols = v.map((x, i) => {
     if (x === null || x === undefined) return "";
     const y0 = y(0), y1 = y(x), col = op.color ? op.color(x, i) : "#2A78D6", cx = L + i * bw + bw / 2;
@@ -221,7 +221,7 @@ function boletinRegional(rid, ctx){
   const focosDia = fc ? columnas(fc.slice(-30), ctx.focos.fechas.slice(-30).map(f => `${+f.slice(8, 10)}/${+f.slice(5, 7)}`), { u: "focos por día", cada: 5, color: () => "#E18C3E" }) : "";
   const embalses = (O.ana_embalses?.embalses || []).filter(e => enRegion(e.lugar) || norm(e.influencia) === nNombre);
   const ev = ctx.clima;
-  const antecedentes = ev ? columnas([ev.normal_temporada, ...ev.eventos.map(x => x.lluvia)], ["Normal", ...ev.eventos.map(x => x.id)], { u: "mm, diciembre a abril", color: (v, i) => i === 0 ? "#B7C2BD" : "#2A78D6" }) : "";
+  const antecedentes = ev ? columnas([ev.normal_temporada, ...ev.eventos.map(x => x.lluvia)], ["Normal", ...ev.eventos.map(x => x.id)], { u: "mm, diciembre a abril", color: (v, i) => i === 0 ? "#B7C2BD" : v >= ev.normal_temporada ? "#2A78D6" : "#B8865B" }) : "";
   // Lluvia de los últimos 12 meses frente a lo normal de cada mes
   const rc = ev?.reciente, ultimos12 = rc ? rc.meses.map((m, i) => [m, rc.lluvia[i]]).filter(x => x[1] !== null).slice(-12) : [];
   const lluvia12 = ultimos12.length ? columnas(ultimos12.map(([m, v]) => Math.round(v - ev.normal.p[+m.slice(5, 7) - 1])), ultimos12.map(([m]) => nombreMes(m)),
@@ -237,7 +237,7 @@ function boletinRegional(rid, ctx){
     ${avisos.length ? `<h3>Avisos del SENAMHI</h3>${avisos.map(a => `<div class="f-aviso"><span class="chip ${NIVEL_AVISO[a.nivel]}">${esc(a.nivel)}</span> ${esc(oracion(a.titulo))}<small>${fecha(a.inicio)} a ${fecha(a.fin)}</small></div>`).join("")}` : ""}
     <div class="cols-2">
       <div><h3>Lluvia esperada en 16 días, por provincia</h3>${lluviaProv}<p class="f-fuente">Open-Meteo, modelos globales.</p></div>
-      <div><h3>Lluvia día a día en la región</h3>${lluviaDia}<p class="f-fuente">La línea marca 20 mm. Avisos oficiales: SENAMHI.</p>
+      <div><h3>Lluvia pronosticada día a día, ${ll ? `${fecha(d.lluvia.fechas[0])} a ${fecha(d.lluvia.fechas[d.lluvia.fechas.length - 1])}` : ""}</h3>${lluviaDia}<p class="f-fuente">La línea marca 20 mm. Avisos oficiales: SENAMHI.</p>
         ${escD.length ? `<h3>Distritos en riesgo por la lluvia de estos días</h3>${barrasH([["MA", "Muy alto", "#B4101C"], ["A", "Alto", "#E18C3E"], ["M", "Medio", "#F0C178"]].map(([k, n, c]) => ({ n, v: porNivel(k).length, c })))}<p class="f-fuente">CENEPRED, escenario del aviso vigente.</p>` : ""}</div>
     </div>
     ${rj.c ? `<h3>Mar frente a ${esc(nombre)}, últimos 4 meses</h3><div class="bol-graf">${svgVacio("bg-tsm")}</div><p class="f-fuente">Anomalía en la franja a menos de 110 km del litoral. NOAA OISST.</p>` : ""}
@@ -295,7 +295,10 @@ function boletinNacional(ctx){
       <div><h3>Emergencias en 7 días, por región</h3>${barrasH(porRegion)}<p class="f-fuente">INDECI, COEN.</p></div>
     </div>
     <div class="cols-2">
-      <div><h3>Distritos en riesgo por la lluvia de estos días</h3>${O.escenario?.vigente ? barrasH([["MA", "Muy alto", "#B4101C"], ["A", "Alto", "#E18C3E"], ["M", "Medio", "#F0C178"]].map(([k, n, c]) => ({ n, v: R[k]?.distritos || 0, c, txt: `${R[k]?.distritos || 0} · ${entero(R[k]?.poblacion || 0)} personas` }))) : `<p class="f-nota">Sin aviso de lluvia vigente.</p>`}<p class="f-fuente">CENEPRED.</p></div>
+      <div><h3>Distritos en riesgo por la lluvia de estos días</h3>${O.escenario?.vigente
+        ? barrasH([["MA", "Muy alto", "#B4101C"], ["A", "Alto", "#E18C3E"], ["M", "Medio", "#F0C178"]].map(([k, n, c]) => ({ n, v: R[k]?.distritos || 0, c, txt: entero(R[k]?.distritos || 0) })))
+          + `<p class="f-nota">Personas en esos distritos: ${["MA", "A", "M"].map(k => `${{ MA: "muy alto", A: "alto", M: "medio" }[k]} ${entero(R[k]?.poblacion || 0)}`).join("; ")}.</p>`
+        : `<p class="f-nota">Sin escenario de riesgo vigente.</p>`}<p class="f-fuente">CENEPRED.</p></div>
       <div><h3>Focos de calor por día, último mes</h3>${totalFocos.length ? columnas(totalFocos, fc.fechas.slice(-30).map(f => `${+f.slice(8, 10)}/${+f.slice(5, 7)}`), { u: "focos por día", cada: 5, color: () => "#E18C3E" }) : ""}<p class="f-fuente">NASA FIRMS, todo el Perú.</p></div>
     </div>
     ${P.rios_altos?.length ? `<h3>Ríos con crecida pronosticada</h3>${tabla(["Río", "Lugar", "Pico en 15 días", "Nivel"], P.rios_altos.map(r => `<tr><td>${esc(r.nombre)}</td><td>${esc(r.lugar)}</td><td>${entero(Math.round(r.pico))} m³/s, ${fecha(r.fecha_pico)}</td><td>${chipNivel(r.nivel)}</td></tr>`))}<p class="f-fuente">GloFAS (Copernicus), modelo global: orienta, no mide.</p>` : ""}

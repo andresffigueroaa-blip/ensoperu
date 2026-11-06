@@ -277,7 +277,12 @@ a mostrar algo que el ENFEN no dice.
 
 ## 2026-11-06 · Auditoría independiente (datos, comunicación de riesgo, interfaz)
 
-Tres revisores sin acceso a mis supuestos. Lo verificado contra la fuente y correcto: temperatura del mar (CPC y Marina), ICEN, ONI, RONI, alerta y probabilidades del ENFEN N° 19, avisos del SENAMHI, caudales y umbrales de la ANA, escenario del CENEPRED, emergencias del COEN, focos FIRMS.
+Tres revisores sin acceso a mis supuestos. La parte visual (tercer informe), corregida:
+- **Escala del mar centrada en 0.** Tenía el blanco en +2 °C (mapa) y +1 °C (portada e imagen del mar): +0,5 a +1 °C, ya El Niño, se veía azul, como si fuera frío.
+- **Menú en celular** en varias filas (antes solo se veían 4 de 11 pestañas); **gráficos al tamaño real** (en celular los rótulos medían 3 px); **Comparar** cabe en la pantalla; **leyenda flotante** sobre el mapa; el texto de ayuda habla de la capa elegida.
+- **Capa de avisos solo de lluvia**: el de calor pintaba de rojo toda la costa y la sierra.
+- Colores de gráficos según tema claro u oscuro; rótulos del eje X sin cortarse; series diarias del mar hasta 3 años (con «Todo» se pegaban años sueltos).
+ Lo verificado contra la fuente y correcto: temperatura del mar (CPC y Marina), ICEN, ONI, RONI, alerta y probabilidades del ENFEN N° 19, avisos del SENAMHI, caudales y umbrales de la ANA, escenario del CENEPRED, emergencias del COEN, focos FIRMS.
 
 Corregido:
 - **Retirado el SPI** del mapa, fichas, tabla, Comparar y boletín: un solo punto de reanálisis de ~50 km por unidad; frente al SPI-3 del SENAMHI, correlación de 0,3 y sesgo a seco (42 provincias en sequía frente a 24). El archivo se sigue generando, sin mostrarse.

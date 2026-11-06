@@ -103,12 +103,17 @@ def ejecutar(estado: dict) -> dict:
         aviso = top["nivel"] if top else None
         aviso_tipo = tipo_peligro(top["titulo"]) if top else None
         aviso_desde = top["inicio"] if top and top["inicio"] > hoy().isoformat() else None
+        de_lluvia = [a for a in suyos if tipo_peligro(a["titulo"]) == "lluvia"]
+        vig_ll = [a for a in de_lluvia if a["inicio"] <= hoy().isoformat()] or de_lluvia
+        top_ll = max(vig_ll, key=lambda a: RANGO_AVISO[a["nivel"]], default=None)
         # Si el SENAMHI tiene aviso de lluvia, el nivel de lluvia no puede decir "bajo"
         lluvia_aviso = max((RANGO_AVISO[a["nivel"]] for a in suyos if tipo_peligro(a["titulo"]) == "lluvia"), default=0)
         n_ll = _nivel(at["lluvia"], df)
         if lluvia_aviso and (n_ll is None or ORDEN_N[n_ll] < lluvia_aviso):
             n_ll = ["bajo", "medio", "alto", "muy alto"][lluvia_aviso]
         regiones[i] = {"nombre": rj.get("nombre", x["nombre"]), "zona": rj.get("z"), "aviso": aviso, "aviso_tipo": aviso_tipo, "aviso_desde": aviso_desde,
+                       "aviso_lluvia": top_ll["nivel"] if top_ll else None,
+                       "aviso_lluvia_desde": top_ll["inicio"] if top_ll and top_ll["inicio"] > hoy().isoformat() else None,
                        "mar": tsm, "n_mar": _nivel(at["mar"], tsm) if tsm is not None else None,
                        "focos": focos, "n_focos": _nivel(at["incendios"], focos),
                        "dias_fuertes": df, "n_lluvia": n_ll,

@@ -157,7 +157,7 @@ function pintarPortada(){
   // Rankings
   const rr = P?.rios_altos || [];
   $("#rios-sub").textContent = "Máximo en 15 días frente a su historia 1984-2023. GloFAS, un modelo global: orienta, no mide.";
-  $("#rank-rios").innerHTML = rr.slice(0, 8).map(r => `<div class="rank-f" onclick="abrirLugar('${r.region}')"><span>${dibujo("rio")} <b>${esc(r.nombre)}</b> <small>${esc(r.lugar)}</small></span><span>${entero(Math.round(r.pico))} m³/s ${chipNivel(r.nivel)}</span></div>`).join("")
+  $("#rank-rios").innerHTML = (rr.length > 8 ? `<p class="f-nota">${rr.length} ríos; se muestran 8. <button class="enlace" onclick="ir('rios')">Ver todos en Ríos</button></p>` : "") + rr.slice(0, 8).map(r => `<div class="rank-f" onclick="abrirLugar('${r.region}')"><span>${dibujo("rio")} <b>${esc(r.nombre)}</b> <small>${esc(r.lugar)}</small></span><span>${entero(Math.round(r.pico))} m³/s ${chipNivel(r.nivel)}</span></div>`).join("")
     || `<p class="f-txt">Sin crecidas inusuales pronosticadas en los ríos vigilados.</p>`;
   $("#rank-lluvia").innerHTML = (P?.top_lluvia || []).slice(0, 8).map(r => `<div class="rank-f" onclick="abrirLugar('${r.id}')"><span><b>${esc(r.nombre)}</b> <small>${esc(r.region)}</small></span><span>${Math.round(r.total)} mm</span></div>`).join("");
   $("#rank-focos").innerHTML = (P?.top_focos || []).slice(0, 8).map(r => `<div class="rank-f" onclick="abrirLugar('${r.id}')"><span><b>${esc(r.nombre)}</b> <small>${esc(r.region)}</small></span><span>${r.focos}</span></div>`).join("");

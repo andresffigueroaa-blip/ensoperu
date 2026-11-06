@@ -22,8 +22,8 @@ const M = {                    // estado del mapa
 const NIVELES_R = { "Muy bajo": "#3E5A63", Bajo: "#3E5A63", Medio: "#F0C178", Alto: "#E18C3E", "Muy alto": "#B4101C" };
 const CAPAS_MAPA = {
   ninguna:  { n: "Solo el mapa", niveles: [] },
-  aviso:    { n: "Avisos del SENAMHI hoy", u: "", tipo: "aviso", niveles: ["region"], fuente: "SENAMHI. Según las zonas que nombra el texto de cada aviso; el detalle oficial está en su enlace" },
-  tsm:      { n: "Temperatura del mar", u: "°C", lo: -2, hi: 6, tipo: "divergente", niveles: ["region"], fuente: "NOAA OISST, franja marina a menos de 110 km del litoral, media de 7 días" },
+  aviso:    { n: "Avisos de lluvia del SENAMHI", u: "", tipo: "aviso", niveles: ["region"], fuente: "SENAMHI. Según las zonas que nombra el texto de cada aviso; el detalle oficial está en su enlace" },
+  tsm:      { n: "Temperatura del mar", u: "°C", lo: -3, hi: 6, tipo: "divergente", niveles: ["region"], fuente: "NOAA OISST, franja marina a menos de 110 km del litoral, media de 7 días" },
   lluvia:   { n: "Lluvia, próximos 16 días", u: "mm", lo: 0, hi: 240, tipo: "azul", niveles: ["region", "provincia"], fuente: "Open-Meteo (modelos globales). No es un aviso oficial: para alertas, SENAMHI" },
   ult30:    { n: "Lluvia, últimos 30 días", u: "mm", lo: 0, hi: 300, tipo: "azul", niveles: ["region", "provincia"], fuente: "Estimación de modelos (Open-Meteo), no estaciones" },
   estacional:{ n: "Tendencia estacional", u: "mm", lo: -200, hi: 200, tipo: "divergente-inv", niveles: ["region"], fuente: "ECMWF SEAS5, anomalía del mes frente a su propia historia. Vale a escala de región" },
@@ -41,9 +41,9 @@ const NIVELES = [["region", "Regiones"], ["provincia", "Provincias"], ["distrito
 // Temas: una combinación de capa, nivel, lugares y encuadre para cada pregunta
 const TEMAS = {
   lluvias:   { n: "Norte: lluvias e inundaciones", capa: "lluvia", nivel: "provincia", lugares: { presa: true, embalse: true }, rios: true, caja: [[-81.5, -9.2], [-74, -3]], texto: "Lluvia a 16 días, ríos, presas y embalses de la costa y sierra norte, donde el ENFEN espera lluvias sobre lo normal." },
-  incendios: { n: "Sur: sequía e incendios", capa: "estacional", nivel: "region", lugares: { laguna: true }, focos: true, rios: false, caja: [[-76, -17.5], [-68.5, -11]], texto: "Tendencia de la lluvia del mes elegido frente a lo normal, por región (rojo: menos lluvia; azul: más), y focos de calor. El ENFEN y el SENAMHI esperan lluvias bajo lo normal en el sur andino y déficit en el Titicaca. Cambia el mes arriba." },
+  incendios: { n: "Sur: sequía e incendios", capa: "estacional", nivel: "region", lugares: { laguna: true }, focos: true, rios: false, caja: [[-76, -17.5], [-68.5, -11]], texto: "Tendencia de la lluvia del mes elegido frente a lo normal, por región (marrón: menos lluvia; azul: más), y focos de calor. El ENFEN y el SENAMHI esperan lluvias bajo lo normal en el sur andino y déficit en el Titicaca. El mes se cambia en el panel, bajo «Capa»." },
   mar:       { n: "Mar y pesca", capa: "tsm", nivel: "region", lugares: {}, caja: [[-86, -19], [-69, -1]], texto: "El mar frente a la costa y su anomalía." },
-  riosana:   { n: "Ríos: seguimiento", capa: "lluvia", nivel: "provincia", lugares: { embalse: true }, riosAna: true, cuencas: true, pcs: true, caja: [[-82, -18.6], [-68.4, 0.1]], texto: "Los ríos de la ANA, coloreados por su estado: azul normal, ámbar vigilancia, rojo crecida, morado nivel bajo; gris, sin estación (no sabemos). Sobre la lluvia esperada y con las obras de prevención. Toca un río para ver su seguimiento." },
+  riosana:   { n: "Ríos: seguimiento", capa: "ninguna", nivel: "provincia", lugares: { embalse: true }, riosAna: true, cuencas: true, pcs: true, rios: false, caja: [[-82, -18.6], [-68.4, 0.1]], texto: "Los ríos de la ANA, coloreados por su estado: azul normal, ámbar vigilancia, rojo crecida, morado nivel bajo; gris, sin estación (no sabemos). Con las cuencas y las obras de prevención (puntos: verde ejecutada, amarillo en ejecución). Toca un río para ver su seguimiento." },
   hoy:       { n: "Hoy: riesgo y emergencias", capa: "esc", nivel: "distrito", lugares: {}, emergencias: true, caja: [[-82, -18.6], [-68.4, 0.1]], texto: "Distritos en riesgo por el aviso de lluvia vigente (CENEPRED) y emergencias registradas en 7 días (INDECI). Toca un punto para ver el reporte." },
   riesgo:    { n: "Riesgo oficial por distrito", capa: "r_inu", nivel: "distrito", lugares: {}, caja: [[-82, -18.6], [-68.4, 0.1]], texto: "Escenario del CENEPRED: viviendas, colegios, salud, vías y cultivos expuestos a inundación." },
   glaciares: { n: "Agua, nevados y cumbres", capa: "ninguna", nivel: "provincia", lugares: { glaciar: true, laguna_glaciar: true, embalse: true, cumbre: true }, caja: [[-78.5, -10.5], [-76.5, -8.5]], texto: "Glaciares, cumbres, lagunas y embalses en la Cordillera Blanca y el resto de los Andes. Toca una figura para ver su ficha." },
@@ -74,8 +74,8 @@ function colorCapa(c, v){
   if (c.tipo === "riesgo") return NIVELES_R[v] || null;
   if (c.tipo === "aviso") return COLOR_AVISO[v] || null;      // el nivel; el peligro va en el texto emergente
   if (c.tipo === "naranja" && c.lo === 0 && v === 0) return null;
-  if (c.tipo === "divergente") return escala(v, c.lo, c.hi, false);
-  if (c.tipo === "divergente-inv") return escala(c.desplaza ? v - c.desplaza : v, c.lo, c.hi, true);
+  if (c.tipo === "divergente") return escalaCentrada(v, c.lo, c.hi, false);
+  if (c.tipo === "divergente-inv") return escalaCentrada(c.desplaza ? v - c.desplaza : v, c.lo, c.hi, true);
   const r = c.tipo === "azul" ? RAMPA_AZUL : RAMPA_NARANJA;
   const t = Math.max(0, Math.min(1, (v - c.lo) / (c.hi - c.lo)));
   return r[Math.min(r.length - 1, Math.floor(t * r.length))];
@@ -114,7 +114,7 @@ function valorUnidad(id, capa = M.capa){
   const d = M.datos, c = CAPAS_MAPA[capa];
   const ll = d.lluvia?.valores?.[id];
   switch (capa){
-    case "aviso": return D.panorama?.regiones?.[id]?.aviso ?? null;
+    case "aviso": return D.panorama?.regiones?.[id]?.aviso_lluvia ?? null;
     case "tsm": { const r = D.regiones.regiones[d.claveRegion[id]]; return r?.c ? r?.v?.tsm?.now ?? null : null; }
     case "lluvia": return ll?.total ?? null;
     case "lluvia_n": return D.panorama?.lluvia_vs_normal?.[id]?.pct ?? null;
@@ -315,7 +315,7 @@ function agregarUnidades(nivel, antes){
     mapa.getCanvas().style.cursor = "pointer";
     const c = CAPAS_MAPA[M.capa];
     const ra = M.capa === "aviso" ? D.panorama?.regiones?.[f.id] : null;
-    tipMapa(e.point, f.properties.nombre, c.tipo ? `${c.n}: ${textoValor(valorUnidad(f.id), c)}${ra?.aviso_tipo ? ` · ${ra.aviso_tipo}` : ""}${ra?.aviso_desde ? `, desde el ${fecha(ra.aviso_desde)}` : ""}` : "Haz clic para ver su ficha");
+    tipMapa(e.point, f.properties.nombre, c.tipo ? `${c.n}: ${textoValor(valorUnidad(f.id), c) || "ninguno"}${ra?.aviso_lluvia_desde ? `, desde el ${fecha(ra.aviso_lluvia_desde)}` : ""}` : "Haz clic para ver su ficha");
   });
   mapa.on("mouseleave", `${nivel}-relleno`, () => {
     if (encima !== null) mapa.setFeatureState({ source: nivel, id: encima }, { hover: false });
@@ -375,7 +375,7 @@ function aplicarLugares(){
   pintarControles();
 }
 
-function setCapaMapa(k){ M.capa = k; M.tema = null; aplicarCapa(); }
+function setCapaMapa(k){ M.capa = k; M.tema = null; $("#mapa-aviso").textContent = k === "ninguna" ? "Elige un tema, busca tu lugar o toca el mapa." : `${CAPAS_MAPA[k].n}. ${CAPAS_MAPA[k].fuente}.`; aplicarCapa(); }
 function setNivel(n){ M.nivel = n; M.tema = null; aplicarCapa(); }
 function setMesEst(i){ M.mesEst = i; aplicarCapa(); }
 function toggleLugar(k){
@@ -444,6 +444,12 @@ function pintarLeyendaMapa(){
     : M.capa === "estacional" ? `Mes: ${nombreMes(M.datos.estacional?.meses?.[M.mesEst])}.`
     : f?.ultimo_dato ? "Dato al " + fecha(f.ultimo_dato) + "." : "";
   $("#leg-src").textContent = `${c.fuente}. ${cuando}${f?.estado === "fallo" ? " ⚠ La última actualización falló." : ""}`;
+  // Copia flotante sobre el mapa
+  const fl = $("#leg-flot");
+  if (fl){
+    fl.hidden = M.capa === "ninguna";
+    fl.innerHTML = `<b>${esc(c.n)}</b><div class="${L.className}">${L.innerHTML}</div>${lo.textContent || hi.textContent ? `<div class="legend-ends"><span>${esc(lo.textContent)}</span><span>${esc(hi.textContent)}</span></div>` : ""}`;
+  }
 }
 
 /* ── Buscador ───────────────────────────────────────────────────────────── */

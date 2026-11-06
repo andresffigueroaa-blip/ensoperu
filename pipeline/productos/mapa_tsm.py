@@ -99,7 +99,10 @@ def ejecutar(estado: dict) -> dict:
     fig = plt.figure(figsize=(ANCHO_PX / dpi, alto_px / dpi), dpi=dpi)
     ax = fig.add_axes([0, 0, 1, 1])
     ax.set_axis_off()
-    ax.pcolormesh(xb, yb, datos, cmap=_colormap(), vmin=lo, vmax=hi, shading="flat", rasterized=True)
+    # Blanco en 0 aunque el rango no sea simétrico: con una escala lineal de -2 a +4 el blanco caía en +1 °C
+    from matplotlib.colors import TwoSlopeNorm
+    norma = TwoSlopeNorm(vmin=lo, vcenter=0, vmax=hi)
+    ax.pcolormesh(xb, yb, datos, cmap=_colormap(), norm=norma, shading="flat", rasterized=True)
     ax.set_xlim(x0, x1)
     ax.set_ylim(y1, y0)                                       # el eje y del SVG crece hacia abajo
     DIR.mkdir(parents=True, exist_ok=True)
@@ -130,7 +133,7 @@ def ejecutar(estado: dict) -> dict:
     xb2 = np.concatenate([lon2 - dl / 2, [lon2[-1] + dl / 2]])
     yb2 = np.concatenate([lat - dl / 2, [lat[-1] + dl / 2]])
     # eje y en Mercator para que la imagen encaje al colocarla por sus esquinas
-    ax.pcolormesh(xb2, merc_y(yb2), dat2, cmap=_colormap(), vmin=lo, vmax=hi, shading="flat", rasterized=True)
+    ax.pcolormesh(xb2, merc_y(yb2), dat2, cmap=_colormap(), norm=norma, shading="flat", rasterized=True)
     ax.set_xlim(xb2.min(), xb2.max()); ax.set_ylim(float(merc_y(yb2.min())), float(merc_y(yb2.max())))
     png_ml = DIR / "tsm_anom_ml.png"
     tmp = png_ml.with_suffix(".tmp.png"); fig.savefig(tmp, dpi=dpi, transparent=True); plt.close(fig); tmp.replace(png_ml)

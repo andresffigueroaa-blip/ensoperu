@@ -753,3 +753,28 @@ button:disabled{opacity:.4; cursor:not-allowed}
 .brand .marca{width:22px; height:22px; flex:none; display:block}
 .brand .lema{font-size:12px; color:var(--fog-dim); letter-spacing:.02em; white-space:nowrap}
 @media (max-width:1100px){ .brand .lema{display:none} }
+
+/* Auditoría visual */
+.chip.nbajo{background:#E9E0F7; color:#4B2E83}
+:root[data-theme="dark"] .chip.nbajo{background:#3B2D5C; color:#E2D6F6}
+.enlace{color:var(--cold); text-decoration:underline; text-underline-offset:2px; cursor:pointer}
+.enlace:hover{color:var(--ink)}
+/* Leyenda flotante sobre el mapa */
+.leg-flot{position:absolute; top:12px; left:12px; z-index:5; width:230px; padding:10px 12px; border-radius:4px;
+  background:rgba(22,34,42,.88); color:#E7EDEC; font-size:12px; box-shadow:0 2px 10px rgba(0,0,0,.3)}
+.leg-flot b{display:block; font-weight:600; margin-bottom:6px}
+.leg-flot .legend{margin-bottom:4px}
+.leg-flot .legend.leg-cat{color:#E7EDEC}
+.leg-flot .legend-ends{display:flex; justify-content:space-between; color:#A9BABE}
+.mapview{height:calc(100dvh - var(--alto-cab, 58px))}
+@media (max-width:640px){
+  /* Menú en dos o tres filas: en una sola, 7 de 11 pestañas quedaban fuera de la pantalla */
+  header{height:auto; flex-wrap:wrap; padding:8px 12px; row-gap:6px}
+  header nav{order:3; width:100%; flex-wrap:wrap; overflow:visible; white-space:normal; gap:4px}
+  header nav button{padding:5px 9px; font-size:13px}
+  .leg-flot{top:64px; left:8px; width:190px; font-size:11px}
+  /* Comparar: las dos columnas caben en la pantalla */
+  .tabla-comp{font-size:12.5px}
+  .tabla-comp td{min-width:0}
+  .tabla-comp th:first-child{width:34%}
+}

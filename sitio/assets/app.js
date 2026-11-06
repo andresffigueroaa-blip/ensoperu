@@ -67,6 +67,13 @@ const PARADAS = [
   [0.88, [217,  69,  44]], [1.00, [142,  15,  22]]
 ];
 
+// Escala divergente con el blanco en 0, aunque el rango no sea simétrico
+// (por ejemplo, de -3 a +6 °C: +0,5 °C ya es cálido, no "neutro").
+function escalaCentrada(v, lo, hi, invertida){
+  const t = v < 0 ? 0.5 * (1 - Math.max(v, lo) / lo) : 0.5 + 0.5 * Math.min(v, hi) / hi;
+  return escala(t, 0, 1, invertida);
+}
+
 function escala(v, lo, hi, invertida){
   let t = Math.max(0, Math.min(1, (v - lo) / (hi - lo)));
   if (invertida) t = 1 - t;
@@ -97,6 +104,8 @@ function ir(v){
   $("#v-" + v).classList.add("on");
   VISTAS.forEach(k => $("#nav-" + k).setAttribute("aria-current", String(k === v)));
   history.replaceState(null, "", v === "home" ? location.pathname : "#" + v);
+  $("#nav-" + v)?.scrollIntoView?.({ block: "nearest", inline: "center" });
+  document.documentElement.style.setProperty("--alto-cab", document.querySelector("header").offsetHeight + "px");
   window.scrollTo(0, 0);
   if (v === "mapa") requestAnimationFrame(() => window.iniciarMapa?.());
   if (v === "monitoreo") pintarMonitoreo();
@@ -147,9 +156,11 @@ const COLORES = ["#2a78d6", "#eb6834", "#1baf7a", "#eda100"];     // paleta vali
 
 // Trazador genérico: series = [{n, v:[], c}], fechas alineadas, umbrales opcionales
 function grafLineas(svg, fechas, series, op = {}){
-  const W = 1200, H = 300, L = 44, R = 14, T = 16, B = 30;
+  // Se dibuja al tamaño real del recuadro: con un lienzo fijo de 1200 px, en celular los textos quedaban aplastados
+  const W = Math.round(svg.clientWidth) || 1200, H = Math.round(svg.clientHeight) || 300, L = 44, R = 14, T = 16, B = 30;
+  svg.setAttribute("viewBox", `0 0 ${W} ${H}`);
   const vals = series.flatMap(s => s.v).filter(x => x !== null);
-  if (!vals.length){ svg.innerHTML = `<text x="20" y="150" fill="#84959A" font-size="14" font-family="IBM Plex Sans">Sin datos en este período.</text>`; return; }
+  if (!vals.length){ svg.innerHTML = `<text x="20" y="150" style="fill:var(--fog-dim)" font-size="14" font-family="IBM Plex Sans">Sin datos en este período.</text>`; return; }
   let lo = Math.min(...vals), hi = Math.max(...vals);
   if (op.minRango){ lo = Math.min(lo, op.minRango[0]); hi = Math.max(hi, op.minRango[1]); }
   const m = (hi - lo) * 0.08 || 1; lo -= m; hi += m;
@@ -171,8 +182,8 @@ function grafLineas(svg, fechas, series, op = {}){
     if (!esMarca) return;
     const et = !mensual && n <= 120 ? `${+dia} ${MESES_CORTOS[+mes - 1]}`
       : corto ? MESES_CORTOS[+mes - 1] + (mes === "01" ? " " + f.slice(0, 4) : "") : f.slice(0, 4);
-    ejes += `<line x1="${x(i)}" y1="${T}" x2="${x(i)}" y2="${H - B}" stroke="#E2E8E3"/>
-             <text x="${x(i) + 3}" y="${H - 10}" fill="#84959A" font-size="11" font-family="IBM Plex Sans">${et}</text>`;
+    ejes += `<line x1="${x(i)}" y1="${T}" x2="${x(i)}" y2="${H - B}" style="stroke:var(--rule-soft)"/>
+             <text x="${x(i) > W - 60 ? x(i) - 3 : x(i) + 3}" y="${H - 10}" ${x(i) > W - 60 ? 'text-anchor="end"' : ""} style="fill:var(--fog-dim)" font-size="11" font-family="IBM Plex Sans">${et}</text>`;
   });
   // Eje vertical: 5 marcas redondas
   let ejeY = "";
@@ -181,8 +192,8 @@ function grafLineas(svg, fechas, series, op = {}){
   const paso = [1, 2, 5, 10].map(k => k * pot).find(p => (hi - lo) / p <= 7);
   const etiqueta = t => op.entero ? entero(Math.round(t) || 0) : sg(Math.abs(t) < 1e-9 ? 0 : t, paso < 1 ? (paso < 0.1 ? 2 : 1) : 0);
   for (let t = Math.ceil(lo / paso) * paso; t <= hi + 1e-9; t += paso){
-    ejeY += `<line x1="${L}" y1="${y(t)}" x2="${W - R}" y2="${y(t)}" stroke="${Math.abs(t) < 1e-9 ? "#9FB0AC" : "#EEF2EF"}"/>
-             <text x="${L - 6}" y="${y(t) + 4}" text-anchor="end" fill="#84959A" font-size="11" font-family="IBM Plex Sans">${etiqueta(t)}</text>`;
+    ejeY += `<line x1="${L}" y1="${y(t)}" x2="${W - R}" y2="${y(t)}" style="stroke:${Math.abs(t) < 1e-9 ? "var(--fog-dim)" : "var(--rule-soft)"}"/>
+             <text x="${L - 6}" y="${y(t) + 4}" text-anchor="end" style="fill:var(--fog-dim)" font-size="11" font-family="IBM Plex Sans">${etiqueta(t)}</text>`;
   }
   const umbrales = (op.umbrales || []).map(([t, c]) =>
     `<line x1="${L}" y1="${y(t)}" x2="${W - R}" y2="${y(t)}" stroke="${c}" stroke-opacity=".6" stroke-dasharray="4 4"/>`).join("");
@@ -219,6 +230,17 @@ function leyenda(el, series){
 }
 
 // Recorta un conjunto de fechas/series al período elegido
+let tRedibujo = null;
+window.addEventListener("resize", () => {
+  clearTimeout(tRedibujo);
+  tRedibujo = setTimeout(() => {
+    const v = document.querySelector(".view.on")?.id;
+    if (v === "v-monitoreo") pintarMonitoreo();
+    if (v === "v-pronosticos") pintarPronosticos();
+    document.documentElement.style.setProperty("--alto-cab", document.querySelector("header").offsetHeight + "px");
+  }, 250);
+});
+
 function recortar(fechas, cols, anios){
   if (!anios) return { fechas, cols };
   const ult = fechas[fechas.length - 1];
@@ -241,19 +263,19 @@ async function pintarMonitoreo(){
   // 1. OISST diario por caja Niño
   const o = await traerCsv("datos/indices/oisst_diario.csv");
   if (o){
-    const r = recortar(o.fechas, o.cols, periodoAnios);
+    const r = recortar(o.fechas, o.cols, Math.min(periodoAnios || 3, 3));
     const nom = { n12: "Niño 1+2", n3: "Niño 3", n34: "Niño 3.4", n4: "Niño 4" };
     const series = Object.keys(r.cols).map((k, i) => ({ n: nom[k] || k, v: r.cols[k], c: COLORES[i], destacar: k === "n12" || k === "n34" }));
     grafLineas($("#g-oisst"), r.fechas, series, { umbrales: [[0.5, "#D9452C"], [-0.5, "#1B6A87"]], minRango: [-2, 2] });
     leyenda($("#g-oisst-ley"), series);
     $("#g-oisst-sub").textContent = `NOAA OISST v2.1, anomalía respecto de 1991-2020, sin suavizar. Dato al ${fecha(o.fechas[o.fechas.length - 1])}. `
-      + (periodoAnios === 0 ? "Solo están cargados los años análogos y el actual; el histórico completo se carga una vez." : "");
+      + (periodoAnios === 0 || periodoAnios > 3 ? " La serie diaria se muestra hasta 3 años; los índices mensuales, abajo, cubren todo el período." : "");
   }
 
   // 2. TSM costera: una región destacada y el resto en gris (11 colores no se leen)
   const c = await traerCsv("datos/indices/tsm_costera_diaria.csv");
   if (c){
-    const r = recortar(c.fechas, c.cols, periodoAnios);
+    const r = recortar(c.fechas, c.cols, Math.min(periodoAnios || 3, 3));
     const orden = ["Tumbes", "Piura", "Lambayeque", "La Libertad", "Ancash", "Lima", "Callao", "Ica", "Arequipa", "Moquegua", "Tacna"].filter(k => r.cols[k]);
     const sel = $("#costa-sel");
     if (!sel.options.length) sel.innerHTML = orden.map(k => `<option>${k}</option>`).join("");
@@ -358,7 +380,7 @@ function pintarHero(){
     b.setAttribute("aria-pressed", String(b.dataset.k === indiceHero)));
 
   if (!actual){
-    svg.innerHTML = `<text x="20" y="${H / 2}" fill="#84959A" font-size="14"
+    svg.innerHTML = `<text x="20" y="${H / 2}" style="fill:var(--fog-dim)" font-size="14"
       font-family="IBM Plex Sans">Sin datos de temperatura del mar todavía.</text>`;
     $("#band-estado").textContent = "sin datos";
     return;
@@ -407,7 +429,7 @@ function pintarHero(){
   const a0 = actual.anio - 1;
   const marcas = [[0, "jul " + a0], [184, "ene " + (a0 + 1)], [365, "jul " + (a0 + 1)], [549, "ene " + (a0 + 2)]]
     .map(([i, t]) => `<line x1="${x(i)}" y1="${H - 24}" x2="${x(i)}" y2="${H - 18}" stroke="#C9D2CC"/>
-      <text x="${x(i) + 4}" y="${H - 8}" fill="#84959A" font-size="11" font-family="IBM Plex Sans">${t}</text>`).join("");
+      <text x="${x(i) + 4}" y="${H - 8}" style="fill:var(--fog-dim)" font-size="11" font-family="IBM Plex Sans">${t}</text>`).join("");
 
   // El trazo actual se colorea con la propia escala de anomalías, según su valor.
   const s = tramo(actual);
@@ -415,7 +437,7 @@ function pintarHero(){
   let stops = "";
   for (let p = 0; p <= 100; p += 4){
     const v = s[Math.round((p / 100) * (n - 1))];
-    if (v !== null) stops += `<stop offset="${p}%" stop-color="${escala(v, -1, 3, false)}"/>`;
+    if (v !== null) stops += `<stop offset="${p}%" stop-color="${escalaCentrada(v, -3, 3, false)}"/>`;
   }
   const last = s[iu], xu = x(iu), yu = y(last);
   const y0 = y(0), dA = trazo(s);
@@ -426,16 +448,16 @@ function pintarHero(){
       <linearGradient id="g" gradientUnits="userSpaceOnUse" x1="0" x2="${x(n - 1)}">${stops}</linearGradient>
     </defs>
     <line x1="0" y1="${y0}" x2="${W}" y2="${y0}" stroke="#C9D2CC" stroke-width="1"/>
-    <text x="8" y="${y0 - 7}" fill="#84959A" font-size="11" font-family="IBM Plex Sans">normal</text>
+    <text x="8" y="${y0 - 7}" style="fill:var(--fog-dim)" font-size="11" font-family="IBM Plex Sans">normal</text>
     ${marcas}
     ${analogos}
     ${textosAnalogos}
     <path id="heroline" d="${dA}" fill="none" stroke="url(#g)" stroke-width="2.8"
           stroke-linejoin="round" stroke-linecap="round"/>
-    <circle cx="${xu}" cy="${yu}" r="5" fill="${escala(last, -1, 3, false)}"/>
-    <circle cx="${xu}" cy="${yu}" r="11" fill="none" stroke="${escala(last, -1, 3, false)}" stroke-opacity=".35"/>
+    <circle cx="${xu}" cy="${yu}" r="5" fill="${escalaCentrada(last, -3, 3, false)}"/>
+    <circle cx="${xu}" cy="${yu}" r="11" fill="none" stroke="${escalaCentrada(last, -3, 3, false)}" stroke-opacity=".35"/>
     <text x="${derecha ? xu - 16 : xu + 16}" y="${yu + 6}" text-anchor="${derecha ? "end" : "start"}"
-          fill="#101A1D" font-size="19" font-family="IBM Plex Serif">${sg(D.estado.indices?.[indiceHero]?.valor ?? last)} °C</text>`;
+          style="fill:var(--ink)" font-size="19" font-family="IBM Plex Serif">${sg(D.estado.indices?.[indiceHero]?.valor ?? last)} °C</text>`;
 
   // Único movimiento no provocado por el usuario: la curva se traza al cargar.
   if (!matchMedia("(prefers-reduced-motion: reduce)").matches){
@@ -471,7 +493,7 @@ function pintarHistoria(){
   const bw = Math.max(0.8, W / n);
   v.forEach((t, i) => {
     if (t === null) return;
-    const col = (um !== null && t >= um) ? escala(t, -1, 3, false) : (ul !== null && t <= ul) ? escala(t, -3, 1, false) : "#C9D2CC";
+    const col = (um !== null && t >= um) ? escalaCentrada(t, -3, 3, false) : (ul !== null && t <= ul) ? escalaCentrada(t, -3, 3, false) : "#C9D2CC";
     const y0 = y(0), y1 = y(t);
     barras += `<rect x="${x(i).toFixed(1)}" y="${Math.min(y0, y1).toFixed(1)}" width="${bw.toFixed(2)}" height="${Math.abs(y1 - y0).toFixed(1)}" fill="${col}"/>`;
   });
@@ -479,13 +501,13 @@ function pintarHistoria(){
   let ejes = "";
   S.fechas.forEach((f, i) => {
     if (f.endsWith("-01") && f.slice(0, 4) % 10 === 0)
-      ejes += `<line x1="${x(i)}" y1="${PAD}" x2="${x(i)}" y2="${H - PAD}" stroke="#E2E8E3"/>
-               <text x="${x(i) + 3}" y="${H - 8}" fill="#84959A" font-size="11" font-family="IBM Plex Sans">${f.slice(0, 4)}</text>`;
+      ejes += `<line x1="${x(i)}" y1="${PAD}" x2="${x(i)}" y2="${H - PAD}" style="stroke:var(--rule-soft)"/>
+               <text x="${x(i) + 3}" y="${H - 8}" style="fill:var(--fog-dim)" font-size="11" font-family="IBM Plex Sans">${f.slice(0, 4)}</text>`;
   });
   const ult = vals[vals.length - 1];
   const lineasCat = [...U.nino, ...U.nina].slice(0).filter(([, c]) => c !== um && c !== ul).map(([n, c]) =>
     `<line x1="0" y1="${y(c)}" x2="${W}" y2="${y(c)}" stroke="#84959A" stroke-opacity=".35"/>
-     <text x="4" y="${y(c) - 3}" fill="#84959A" font-size="10" font-family="IBM Plex Sans">${n} ${sg(c)}</text>`).join("");
+     <text x="4" y="${y(c) - 3}" style="fill:var(--fog-dim)" font-size="10" font-family="IBM Plex Sans">${n} ${sg(c)}</text>`).join("");
   svg.innerHTML = `${ejes}${lineasCat}
     ${um === null ? "" : `<rect x="0" y="${y(um)}" width="${W}" height="${y(0) - y(um)}" fill="#D9452C" fill-opacity=".06"/>
     <line x1="0" y1="${y(um)}" x2="${W}" y2="${y(um)}" stroke="#D9452C" stroke-opacity=".5" stroke-dasharray="4 4"/>`}

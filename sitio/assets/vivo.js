@@ -68,11 +68,11 @@ function pintarVivo(){
   const emb = [...(O.ana_embalses?.embalses || [])].filter(e => e.porcentaje !== null).sort((a, b) => b.porcentaje - a.porcentaje);
   $("#vivo-rios").innerHTML = `
     <div class="cols-2">
-      <div><h3>Estaciones sobre su umbral</h3>
+      <div><h3>Estaciones fuera de lo normal</h3><p class="f-nota">Crecida en rojo o ámbar; nivel bajo (navegación) en morado.</p>
         ${sobre.length || anaAl.length ? [...sobre.map(e => { const av = (O.hidro?.avisos || []).find(a => a.estacion.toLowerCase() === e.estacion.toLowerCase());
           const baja = av && /descenso/i.test(av.titulo);
-          return `<div class="rank-f"><span><b>${esc(e.estacion)}</b> <small>${esc(e.cuenca || "")}, ${esc(e.lugar)}${baja ? " · por descenso del nivel" : ""}</small></span><span class="chip ${{ amarillo: "medio", naranja: "alto", rojo: "muyalto" }[e.nivel] || "sin"}">${esc(e.nivel[0].toUpperCase() + e.nivel.slice(1))}</span></div>`; }),
-          ...anaAl.map(e => `<div class="rank-f"><span><b>Río ${esc(e.rio)}</b> <small>${esc(e.estacion)}, ${esc(e.lugar)}: ${String(e.valor).replace(".", ",")} ${esc(e.unidad || "")}, ${esc((e.tendencia || "").toLowerCase())}</small></span><span><span class="chip ${e.estado === "emergencia" ? "muyalto" : "alto"}">${e.estiaje ? "Nivel bajo" : e.estado === "emergencia" ? "Emergencia" : "Alerta"}</span></span></div>`)].join("")
+          return `<div class="rank-f"><span><b>${esc(e.estacion)}</b> <small>${esc(e.cuenca || "")}, ${esc(e.lugar)}${baja ? " · por descenso del nivel" : ""}</small></span><span class="chip ${baja ? "nbajo" : { amarillo: "medio", naranja: "alto", rojo: "muyalto" }[e.nivel] || "sin"}">${esc(e.nivel[0].toUpperCase() + e.nivel.slice(1))}</span></div>`; }),
+          ...anaAl.map(e => `<div class="rank-f"><span><b>Río ${esc(e.rio)}</b> <small>${esc(e.estacion)}, ${esc(e.lugar)}: ${String(e.valor).replace(".", ",")} ${esc(e.unidad || "")}, ${esc((e.tendencia || "").toLowerCase())}</small></span><span><span class="chip ${e.estiaje ? "nbajo" : e.estado === "emergencia" ? "muyalto" : "alto"}">${e.estiaje ? "Nivel bajo" : e.estado === "emergencia" ? "Emergencia" : "Alerta"}</span></span></div>`)].join("")
           : `<p class="f-txt">Ninguna estación está sobre su umbral ahora.</p>`}
         ${fuenteDe(ph, `SENAMHI, monitoreo hidrológico de ${(ph.estaciones || []).length} estaciones`)}${fuenteDe(ar, `ANA, reporte nacional de ${(ar.estaciones || []).length} estaciones`)}
         ${(O.hidro?.avisos || []).length ? `<h3 class="h3-sep">Avisos hidrológicos del SENAMHI</h3>${O.hidro.avisos.map(a => `<div class="f-aviso"><span class="chip ${NIVEL_AVISO[a.nivel] || "sin"}">${esc(a.nivel || "")}</span> ${esc(a.titulo)}<small>${esc(a.lugar)} · ${esc(a.fecha || "")}</small></div>`).join("")}` : ""}
@@ -156,7 +156,7 @@ function pintarPronosticos(){
 
   // CPC
   $("#pron-cpc").innerHTML = cpc.probabilidades ? `
-    <p class="f-txt"><b>${esc(cpc.estado_es)}</b>. ${esc(cpc.sinopsis || "")}</p>
+    <p class="f-txt"><b>${esc(cpc.estado_es)}</b>. Probabilidad de cada fase en los próximos trimestres, según NOAA (texto completo en inglés en su enlace).</p>
     ${cpc.probabilidades.map(p => `<div class="pm-fila"><span>${esc(p.trimestre)}</span><div class="pm-barra">${[["nina", "#1B6A87"], ["neutral", "#C9D2CC"], ["nino", "#D9452C"]].map(([k, c]) => p[k] ? `<i style="width:${p[k]}%;background:${c}"><span style="color:${k === "neutral" ? "#101A1D" : "#fff"}">${p[k] >= 10 ? p[k] : ""}</span></i>` : "").join("")}</div></div>`).join("")}
     <div class="probs-ley"><span><i style="background:#1B6A87"></i>La Niña</span><span><i style="background:#C9D2CC"></i>Neutral</span><span><i style="background:#D9452C"></i>El Niño</span></div>
     ${cpc.percentiles?.length ? `<p class="f-txt">Valor más probable del RONI (mediana): ${cpc.percentiles.slice(0, 5).map(p => `${p.trimestre} ${sg(p.p[3])}`).join(" · ")}.</p>` : ""}

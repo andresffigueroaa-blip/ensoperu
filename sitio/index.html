@@ -245,6 +245,7 @@
     <div class="stage" id="stage">
       <div id="mapa" role="region" aria-label="Mapa interactivo del Perú"></div>
       <div class="tip" id="tip"></div>
+      <div class="leg-flot" id="leg-flot" hidden></div>
       <div class="mapa-aviso" id="mapa-aviso">Elige un tema, busca tu lugar o haz clic en el mapa.</div>
     </div>
 
@@ -406,7 +407,7 @@
         <input id="rios-buscar" type="search" placeholder="Buscar río o cuenca" oninput="setFiltroRios('texto', this.value)"></div>
       <div class="tabla-scroll"><table class="tabla tabla-rios" id="rios-tabla"></table></div>
       <p class="f-fuente" id="rios-nota"></p>
-      <p class="f-fuente">Estado: emergencia o alerta si una estación de la ANA pasa su umbral o una del SENAMHI está en naranja o rojo; vigilancia si el SENAMHI marca amarillo o GloFAS pronostica una crecida inusual. Ríos: ANA. Centros poblados: INEI.</p></section>
+      <p class="f-fuente">Estado: alerta o emergencia por crecida si una estación de la ANA pasa su umbral de crecida o una del SENAMHI está en naranja o rojo; vigilancia si el SENAMHI marca amarillo o el modelo GloFAS pronostica un caudal por encima de lo habitual; nivel bajo si la alerta es por estiaje o descenso del agua (navegación); sin lectura reciente si sus estaciones no reportaron en 30 horas. Ríos: ANA. Centros poblados: INEI.</p></section>
   </div>
 </main>
 
