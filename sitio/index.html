@@ -5,7 +5,28 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>ENSO Perú · Monitoreo de El Niño y sus impactos</title>
 <meta name="description" content="El Niño en el Perú, cada día: alerta del ENFEN, avisos del SENAMHI, temperatura del mar, lluvia, ríos, incendios y riesgo por región, provincia y distrito.">
-<meta name="theme-color" content="#F1F4F1">
+<meta name="theme-color" content="#F1F4F1" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#10191E" media="(prefers-color-scheme: dark)">
+<!-- Marca: el punto térmico (pipeline/herramientas/build_marca.py) -->
+<link rel="icon" href="assets/marca/marca.svg" type="image/svg+xml">
+<link rel="icon" href="assets/marca/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="icon" href="assets/marca/favicon-16.png" type="image/png" sizes="16x16">
+<link rel="alternate icon" href="assets/marca/favicon.ico">
+<link rel="apple-touch-icon" href="assets/marca/apple-touch-icon.png">
+<link rel="manifest" href="manifest.webmanifest">
+<!-- Vista previa al compartir el enlace -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="ENSO Perú">
+<meta property="og:title" content="ENSO Perú · El Niño en el Perú, hoy">
+<meta property="og:description" content="Alerta del ENFEN, avisos del SENAMHI, mar, lluvia, ríos y riesgo por región, provincia y distrito. Datos oficiales y de centros globales.">
+<meta property="og:url" content="https://andresffigueroaa-blip.github.io/ensoperu/">
+<meta property="og:image" content="https://andresffigueroaa-blip.github.io/ensoperu/assets/marca/compartir.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="ENSO Perú: El Niño en el Perú, hoy.">
+<meta property="og:locale" content="es_PE">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://andresffigueroaa-blip.github.io/ensoperu/assets/marca/compartir.png">
 
 <!--
   ENSO PERÚ. Este archivo solo contiene estructura. La presentación está en
@@ -27,8 +48,9 @@
 
 <header>
   <a class="brand" href="#" onclick="ir('home');return false">
-    <span class="beak"></span>
+    <img class="marca" src="assets/marca/marca.svg" width="22" height="22" alt="">
     <b>ENSO Perú</b>
+    <span class="lema">El Niño en el Perú, hoy</span>
   </a>
   <nav>
     <button id="nav-home"      aria-current="true"  onclick="ir('home')">Hoy</button>

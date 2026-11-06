@@ -747,3 +747,9 @@ button:disabled{opacity:.4; cursor:not-allowed}
 .leg-rios span{display:inline-flex; align-items:center; gap:6px}
 .leg-rios i{width:18px; height:4px; border-radius:2px; flex:none}
 .foco.rioana{background:#2F8FE0}
+
+/* Marca en la cabecera: el mismo punto térmico del ícono, y el lema */
+.brand{align-items:center}
+.brand .marca{width:22px; height:22px; flex:none; display:block}
+.brand .lema{font-size:12px; color:var(--fog-dim); letter-spacing:.02em; white-space:nowrap}
+@media (max-width:1100px){ .brand .lema{display:none} }
