@@ -1,6 +1,6 @@
 {
   "_": "Generado por pipeline/fuentes/peru_oficial.py. Datos oficiales tal como se publican.",
-  "actualizado": "2026-11-06T18:24:01Z",
+  "actualizado": "2026-11-06T18:28:04Z",
   "fallas": [],
   "fenomeno": {
     "fecha": "30 de octubre del 2026",
@@ -413,10 +413,15 @@
     ],
     "sin_cruce": 1,
     "url": "https://coen.indeci.gob.pe/mer/",
-    "leido": "2026-11-06T18:24:03Z"
+    "leido": "2026-11-06T18:28:06Z"
   },
   "indeci_rss": {
     "reportes": [
+      {
+        "titulo": "BOLETÍN INFORMATIVO SÍSMICO NACIONALN° 766-2026-INDECI/COEN",
+        "enlace": "https://portal.indeci.gob.pe/emergencias/boletin-informativo-sismico-nacionaln-766-2026-indeci-coen/",
+        "fecha": "2026-11-06T18:26"
+      },
       {
         "titulo": "REPORTE COMPLEMENTARIO N.° 15571 – 6/11/2026 / COEN – INDECI / 12:43 HORAS (Reporte N.° 4) LLUVIAS INTENSAS EN EL DISTRITO DE BUENOS AIRES – PIURA",
         "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-15182-29-10-2026-coen-indeci-1300-horas-reporte-n-1-lluvias-intensas-en-el-distrito-de-buenos-aires-piura/",
@@ -481,15 +486,10 @@
         "titulo": "REPORTE COMPLEMENTARIO N.° 15560 – 6/11/2026 / COEN-INDECI / 06:20 HORAS (Reporte N.° 1) INCENDIO URBANO EN EL DISTRITO DE CALLAO – LIMA",
         "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-15560-6-11-2026-coen-indeci-0620-horas-reporte-n-1-incendio-urbano-en-el-distrito-de-callao-lima/",
         "fecha": "2026-11-06T11:27"
-      },
-      {
-        "titulo": "REPORTE COMPLEMENTARIO N.º 15559 – 6/11/2026 / COEN – INDECI / 06:10 HORAS (Reporte N.° 5) INUNDACIÓN POR SATURACIÓN DEL SUELO PARA DRENAJE (PLUVIAL) EN EL DISTRITO DE VILLA EL SALVADOR – LIMA",
-        "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-o-15478-4-11-2026-coen-indeci-1850-horas-reporte-n-1-inundacion-por-saturacion-del-suelo-para-drenaje-pluvial-en-el-distrito-de-villa-el-salvador-lima/",
-        "fecha": "2026-11-06T11:24"
       }
     ],
     "url": "https://portal.indeci.gob.pe/emergencias/",
-    "leido": "2026-11-06T18:24:04Z"
+    "leido": "2026-11-06T18:28:07Z"
   },
   "escenario": {
     "vigente": true,
@@ -1991,7 +1991,7 @@
       }
     },
     "url": "https://sigrid.cenepred.gob.pe/sigridv3/escenario-aviso",
-    "leido": "2026-11-06T18:24:05Z"
+    "leido": "2026-11-06T18:28:12Z"
   },
   "quebradas": {
     "fecha": "2026-11-06",
@@ -2999,7 +2999,7 @@
     },
     "sin_cruce": 0,
     "url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico",
-    "leido": "2026-11-06T18:24:08Z"
+    "leido": "2026-11-06T18:28:18Z"
   },
   "hidro": {
     "avisos": [
@@ -3041,7 +3041,7 @@
       }
     ],
     "url": "https://www.senamhi.gob.pe/?p=aviso-hidrologico",
-    "leido": "2026-11-06T18:24:09Z"
+    "leido": "2026-11-06T18:28:19Z"
   },
   "ana_rios": {
     "estaciones": [
@@ -17563,7 +17563,7 @@
       }
     },
     "url": "https://visor.geoperu.gob.pe/",
-    "leido": "2026-11-06T18:24:17Z"
+    "leido": "2026-11-06T18:28:20Z"
   },
   "agua": {
     "total": 244,
@@ -18513,7 +18513,7 @@
       }
     },
     "url": "https://www.sunass.gob.pe/",
-    "leido": "2026-11-06T18:24:18Z"
+    "leido": "2026-11-06T18:28:22Z"
   },
   "incendios": {
     "total": 17,
@@ -18673,7 +18673,7 @@
       }
     ],
     "url": "https://geo.serfor.gob.pe/visor/",
-    "leido": "2026-11-06T18:24:18Z"
+    "leido": "2026-11-06T18:28:23Z"
   },
   "phisis": {
     "estaciones": [
@@ -20903,7 +20903,7 @@
       "clasificacion": 99.88
     },
     "url": "http://met.igp.gob.pe/variabclim/",
-    "leido": "2026-11-06T18:24:20Z"
+    "leido": "2026-11-06T18:28:25Z"
   },
   "dhn": {
     "generado": "2026-11-06T16:10:08Z",
@@ -21415,7 +21415,7 @@
         }
       ]
     },
-    "leido": "2026-11-06T18:24:20Z"
+    "leido": "2026-11-06T18:28:30Z"
   },
   "inaigem": {
     "estaciones": [
@@ -21453,7 +21453,7 @@
       }
     ],
     "url": "https://www.inaigem.gob.pe/",
-    "leido": "2026-11-06T18:24:21Z"
+    "leido": "2026-11-06T18:28:30Z"
   },
   "enfen_docs": {
     "docs": [
