@@ -1,39 +1,49 @@
 {
   "_": "Generado por pipeline/fuentes/peru_oficial.py. Datos oficiales tal como se publican.",
-  "actualizado": "2026-11-06T17:23:59Z",
-  "fallas": [],
+  "actualizado": "2026-11-06T17:31:02Z",
+  "fallas": [
+    "fenomeno",
+    "ana_rios",
+    "ana_embalses",
+    "ana_pc",
+    "emergencia",
+    "phisis",
+    "prono",
+    "enfen_docs"
+  ],
   "fenomeno": {
     "fecha": "30 de octubre del 2026",
     "estado": "Alerta de El Niño Costero",
     "color": "#ff0031",
     "titular": "EL NIÑO COSTERO CONTINUARÍA HASTA FINES DE OTOÑO DE 2027",
     "url": "https://www.senamhi.gob.pe/?p=fenomeno-el-nino",
-    "leido": "2026-11-06T17:23:59Z"
+    "leido": "2026-11-06T17:23:59Z",
+    "atrasado": false
   },
   "coen": {
     "dias": 7,
-    "total": 80,
+    "total": 81,
     "por_peligro": {
       "Incendios forestales": 26,
       "Lluvias intensas": 19,
       "Incendios urbanos": 14,
       "Vientos fuertes": 8,
+      "Huaico (flujo de detritos)": 3,
       "Inundaciones por saturación del suelo para drenaje (pluvial)": 3,
       "Colapso de estructura por agente climático": 2,
       "Deslizamiento": 2,
-      "Huaico (flujo de detritos)": 2,
       "Accidentes de transporte terrestre": 1,
       "C00 erosión": 1,
       "Derrumbe de roca": 1,
       "Inundaciones por desborde de canales o drenes": 1
     },
     "por_region": {
+      "02": 6,
       "07": 1,
       "01": 4,
       "09": 5,
       "21": 6,
       "22": 2,
-      "02": 5,
       "15": 12,
       "24": 4,
       "20": 2,
@@ -50,6 +60,15 @@
       "25": 2
     },
     "ultimas": [
+      {
+        "fecha": "2026-11-06 12:14",
+        "peligro": "Huaico (flujo de detritos)",
+        "distrito": "022001",
+        "lugar": "Yungay, Yungay, Ancash",
+        "hechos": "Las lluvias intensas y la colmatación de la quebrada Chicherupampa podrían generar un huaico que causaría daños personales y materiales (viviendas, comercio, turismo, infraestructura de servicios básicos, infraestructura de transporte e infraestructura educativa) asimismo a medios de vida (agricultura y ganadería) en el centro poblado de Shorocoto, distrito y provincia de Yungay.",
+        "pdf": "https://coen.indeci.gob.pe/api/v2/mer/files/view?key=mer/2026/10/1793985805494.pdf",
+        "sinpad": null
+      },
       {
         "fecha": "2026-11-05 19:15",
         "peligro": "Incendios urbanos",
@@ -160,20 +179,20 @@
       },
       {
         "fecha": "2026-11-04 19:00",
-        "peligro": "Incendios forestales",
-        "distrito": "030605",
-        "lugar": "Ocobamba, Chincheros, Apurimac",
-        "hechos": "Se registra un incendio forestal que ocasiona daños materiales (cobertura natural) en la comunidad anexo Túpac Amaru y Tres Cruces, distrito Ocobamba, provincia de Chincheros",
-        "pdf": "https://coen.indeci.gob.pe/api/v2/mer/files/view?key=mer/2026/10/1793936171342.pdf",
-        "sinpad": null
-      },
-      {
-        "fecha": "2026-11-04 19:00",
         "peligro": "Lluvias intensas",
         "distrito": "240105",
         "lugar": "San Jacinto, Tumbes, Tumbes",
         "hechos": "4/11/2026 19:00 horas Se registraron lluvias intensas que ocasionaron el desborde de la quebrada El Tablazo, generando daños materiales (viviendas), en el sector El Tablazo, caserío Casa Blanqueada, distrito de San Jacinto, provincia de Tumbes. 4/11/2026 19:00 horas Se registraron lluvias intensas que ocasionaron el desborde de la quebrada Higueron, generando daños materiales (viviendas), en el di",
         "pdf": "https://coen.indeci.gob.pe/api/v2/mer/files/view?key=mer/2026/10/1793936285560.pdf",
+        "sinpad": null
+      },
+      {
+        "fecha": "2026-11-04 19:00",
+        "peligro": "Incendios forestales",
+        "distrito": "030605",
+        "lugar": "Ocobamba, Chincheros, Apurimac",
+        "hechos": "Se registra un incendio forestal que ocasiona daños materiales (cobertura natural) en la comunidad anexo Túpac Amaru y Tres Cruces, distrito Ocobamba, provincia de Chincheros",
+        "pdf": "https://coen.indeci.gob.pe/api/v2/mer/files/view?key=mer/2026/10/1793936171342.pdf",
         "sinpad": null
       },
       {
@@ -196,20 +215,20 @@
       },
       {
         "fecha": "2026-11-04 15:30",
-        "peligro": "Vientos fuertes",
-        "distrito": "211204",
-        "lugar": "Patambuco, Sandia, Puno",
-        "hechos": "Se registraron vientos fuertes que causaron daños materiales (viviendas) en el sector de Cupuly, centro poblado de Sihuasihua, distrito de Patambuco, provincia de Sandia",
-        "pdf": "https://coen.indeci.gob.pe/api/v2/mer/files/view?key=mer/2026/10/1793939643455.pdf",
-        "sinpad": null
-      },
-      {
-        "fecha": "2026-11-04 15:30",
         "peligro": "Incendios forestales",
         "distrito": "030104",
         "lugar": "Curahuasi, Abancay, Apurimac",
         "hechos": "Se registra un incendio forestal que ocasiona daños a sectores diversos (cobertura natural), en el sector Ccoripampa, distrito de Curahuasi, provincia de Abancay.",
         "pdf": "https://coen.indeci.gob.pe/api/v2/mer/files/view?key=mer/2026/10/1793884777165.pdf",
+        "sinpad": null
+      },
+      {
+        "fecha": "2026-11-04 15:30",
+        "peligro": "Vientos fuertes",
+        "distrito": "211204",
+        "lugar": "Patambuco, Sandia, Puno",
+        "hechos": "Se registraron vientos fuertes que causaron daños materiales (viviendas) en el sector de Cupuly, centro poblado de Sihuasihua, distrito de Patambuco, provincia de Sandia",
+        "pdf": "https://coen.indeci.gob.pe/api/v2/mer/files/view?key=mer/2026/10/1793939643455.pdf",
         "sinpad": null
       },
       {
@@ -314,15 +333,6 @@
       {
         "fecha": "2026-11-04 07:00",
         "peligro": "Inundaciones por saturación del suelo para drenaje (pluvial)",
-        "distrito": "150143",
-        "lugar": "Villa Maria Del Triunfo, Lima, Lima",
-        "hechos": "A consecuencia de las lloviznas persistentes, se registró una inundación por saturación del suelo para drenaje (pluvial) en la Av. Pachacútec con la Av. 26 de noviembre, distrito de Villa María del Triunfo, provincia de Lima.",
-        "pdf": "https://coen.indeci.gob.pe/api/v2/mer/files/view?key=mer/2026/10/1793963411806.pdf",
-        "sinpad": null
-      },
-      {
-        "fecha": "2026-11-04 07:00",
-        "peligro": "Inundaciones por saturación del suelo para drenaje (pluvial)",
         "distrito": "150142",
         "lugar": "Villa El Salvador, Lima, Lima",
         "hechos": "4/11/2026 07:00 horas A consecuencia de las lloviznas persistentes, se registró una inundación por saturación del suelo para drenaje (pluvial) en la Panamericana Sur Km 17.5, distrito de Villa El Salvador, provincia de Lima. 4/11/2026 21:00 horas Se registraron lloviznas persistentes durante varias horas de la tarde, que ocasionó el colapso de buzones del sistema de alcantarillado, como consecuenc",
@@ -336,6 +346,15 @@
         "lugar": "San Juan De Miraflores, Lima, Lima",
         "hechos": "A consecuencia de las lloviznas persistentes, se registró una inundación por saturación del suelo para drenaje (pluvial), que causó daños materiales (vivienda, local público e infraestructura de transporte) en la Av. Los Héroes, distrito de Villa El Salvador, provincia de Lima.",
         "pdf": "https://coen.indeci.gob.pe/api/v2/mer/files/view?key=mer/2026/10/1793967708172.pdf",
+        "sinpad": null
+      },
+      {
+        "fecha": "2026-11-04 07:00",
+        "peligro": "Inundaciones por saturación del suelo para drenaje (pluvial)",
+        "distrito": "150143",
+        "lugar": "Villa Maria Del Triunfo, Lima, Lima",
+        "hechos": "A consecuencia de las lloviznas persistentes, se registró una inundación por saturación del suelo para drenaje (pluvial) en la Av. Pachacútec con la Av. 26 de noviembre, distrito de Villa María del Triunfo, provincia de Lima.",
+        "pdf": "https://coen.indeci.gob.pe/api/v2/mer/files/view?key=mer/2026/10/1793963411806.pdf",
         "sinpad": null
       },
       {
@@ -400,20 +419,11 @@
         "hechos": "Se registró un accidente de transporte medio terrestre ocasionando daños a la vida de una persona y a la salud de otra persona en la comunidad Torno, distrito de Huatasani, provincia de Huancané",
         "pdf": "https://coen.indeci.gob.pe/api/v2/mer/files/view?key=mer/2026/10/1793762420030.pdf",
         "sinpad": null
-      },
-      {
-        "fecha": "2026-11-03 11:30",
-        "peligro": "Incendios forestales",
-        "distrito": "050108",
-        "lugar": "Quinua, Huamanga, Ayacucho",
-        "hechos": "Se registró un incendio forestal que causó daños a sectores diversos (cobertura natural) en la localidad Moya, distrito de Quinua, provincia de Huamanga.",
-        "pdf": "https://coen.indeci.gob.pe/api/v2/mer/files/view?key=mer/2026/10/1793899844724.pdf",
-        "sinpad": null
       }
     ],
     "sin_cruce": 1,
     "url": "https://coen.indeci.gob.pe/mer/",
-    "leido": "2026-11-06T17:24:06Z"
+    "leido": "2026-11-06T17:32:34Z"
   },
   "indeci_rss": {
     "reportes": [
@@ -489,7 +499,7 @@
       }
     ],
     "url": "https://portal.indeci.gob.pe/emergencias/",
-    "leido": "2026-11-06T17:24:07Z"
+    "leido": "2026-11-06T17:32:35Z"
   },
   "escenario": {
     "vigente": true,
@@ -1991,7 +2001,7 @@
       }
     },
     "url": "https://sigrid.cenepred.gob.pe/sigridv3/escenario-aviso",
-    "leido": "2026-11-06T17:24:09Z"
+    "leido": "2026-11-06T17:32:39Z"
   },
   "quebradas": {
     "fecha": "2026-11-06",
@@ -2999,7 +3009,7 @@
     },
     "sin_cruce": 0,
     "url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico",
-    "leido": "2026-11-06T17:24:13Z"
+    "leido": "2026-11-06T17:32:46Z"
   },
   "hidro": {
     "avisos": [
@@ -3041,7 +3051,7 @@
       }
     ],
     "url": "https://www.senamhi.gob.pe/?p=aviso-hidrologico",
-    "leido": "2026-11-06T17:24:14Z"
+    "leido": "2026-11-06T17:32:47Z"
   },
   "ana_rios": {
     "estaciones": [
@@ -5193,7 +5203,8 @@
     "en_alerta": 2,
     "en_emergencia": 0,
     "url": "https://snirh.ana.gob.pe/onrh/",
-    "leido": "2026-11-06T17:24:19Z"
+    "leido": "2026-11-06T17:24:19Z",
+    "atrasado": false
   },
   "ana_embalses": {
     "embalses": [
@@ -5430,7 +5441,8 @@
       }
     ],
     "url": "https://snirh.ana.gob.pe/onrh/",
-    "leido": "2026-11-06T17:24:19Z"
+    "leido": "2026-11-06T17:24:19Z",
+    "atrasado": false
   },
   "ana_pc": {
     "total": 536,
@@ -5441,7 +5453,8 @@
     },
     "avance_medio": 35.6,
     "url": "https://snirh.ana.gob.pe/",
-    "leido": "2026-11-06T17:24:19Z"
+    "leido": "2026-11-06T17:24:19Z",
+    "atrasado": false
   },
   "emergencia": {
     "decretos": {
@@ -10407,7 +10420,8 @@
       "ONRH/DEE_DS_140_2026_PCM"
     ],
     "url": "https://www.gob.pe/busquedas?contenido[]=normas&term=estado+de+emergencia",
-    "leido": "2026-11-06T17:24:20Z"
+    "leido": "2026-11-06T17:24:20Z",
+    "atrasado": false
   },
   "preparacion": {
     "conteo": {
@@ -17563,7 +17577,7 @@
       }
     },
     "url": "https://visor.geoperu.gob.pe/",
-    "leido": "2026-11-06T17:24:22Z"
+    "leido": "2026-11-06T17:38:49Z"
   },
   "agua": {
     "total": 243,
@@ -18513,7 +18527,7 @@
       }
     },
     "url": "https://www.sunass.gob.pe/",
-    "leido": "2026-11-06T17:24:22Z"
+    "leido": "2026-11-06T17:38:50Z"
   },
   "incendios": {
     "total": 17,
@@ -18673,7 +18687,7 @@
       }
     ],
     "url": "https://geo.serfor.gob.pe/visor/",
-    "leido": "2026-11-06T17:24:23Z"
+    "leido": "2026-11-06T17:38:51Z"
   },
   "phisis": {
     "estaciones": [
@@ -20100,7 +20114,8 @@
     ],
     "sobre_umbral": 3,
     "url": "https://www.senamhi.gob.pe/mapas/mapa-monitoreohidro/",
-    "leido": "2026-11-06T17:24:24Z"
+    "leido": "2026-11-06T17:24:24Z",
+    "atrasado": false
   },
   "prono": {
     "url": "https://www.senamhi.gob.pe/?p=pronostico-climatico",
@@ -20698,7 +20713,8 @@
         ]
       ]
     },
-    "leido": "2026-11-06T17:24:24Z"
+    "leido": "2026-11-06T17:24:24Z",
+    "atrasado": false
   },
   "igp": {
     "e": [
@@ -20903,7 +20919,7 @@
       "clasificacion": 99.88
     },
     "url": "http://met.igp.gob.pe/variabclim/",
-    "leido": "2026-11-06T17:24:25Z"
+    "leido": "2026-11-06T17:41:54Z"
   },
   "dhn": {
     "generado": "2026-11-06T16:10:08Z",
@@ -21415,7 +21431,7 @@
         }
       ]
     },
-    "leido": "2026-11-06T17:24:25Z"
+    "leido": "2026-11-06T17:41:55Z"
   },
   "inaigem": {
     "estaciones": [
@@ -21453,7 +21469,7 @@
       }
     ],
     "url": "https://www.inaigem.gob.pe/",
-    "leido": "2026-11-06T17:24:26Z"
+    "leido": "2026-11-06T17:41:55Z"
   },
   "enfen_docs": {
     "docs": [
@@ -21519,6 +21535,7 @@
       }
     ],
     "url": "https://enfen.imarpe.gob.pe/",
-    "leido": "2026-11-06T17:24:27Z"
+    "leido": "2026-11-06T17:24:27Z",
+    "atrasado": false
   }
 }
