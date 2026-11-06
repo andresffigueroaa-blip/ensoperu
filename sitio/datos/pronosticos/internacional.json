@@ -1,0 +1,937 @@
+{
+  "_": "Generado por pipeline/fuentes/internacional.py. Cada bloque con su centro, fecha y enlace.",
+  "actualizado": "2026-11-06T05:46:36Z",
+  "fallas": [],
+  "cpc": {
+    "emitido": "2026-10-08",
+    "estado": "El Niño Advisory",
+    "sinopsis": "El Niño continues to strengthen, with a strong-to-very strong El Niño likely through January-March 2027 (remaining greater than an 83% chance).",
+    "proxima": "2026-11-12",
+    "url": "https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/enso_advisory/ensodisc.shtml",
+    "estado_es": "Advertencia de El Niño",
+    "probabilidades": [
+      {
+        "trimestre": "SON",
+        "nina": 0.0,
+        "neutral": 0.0,
+        "nino": 100.0
+      },
+      {
+        "trimestre": "OND",
+        "nina": 0.0,
+        "neutral": 0.0,
+        "nino": 100.0
+      },
+      {
+        "trimestre": "NDJ",
+        "nina": 0.0,
+        "neutral": 0.0,
+        "nino": 100.0
+      },
+      {
+        "trimestre": "DJF",
+        "nina": 0.0,
+        "neutral": 0.0,
+        "nino": 100.0
+      },
+      {
+        "trimestre": "JFM",
+        "nina": 0.0,
+        "neutral": 0.0,
+        "nino": 100.0
+      },
+      {
+        "trimestre": "FMA",
+        "nina": 0.0,
+        "neutral": 2.0,
+        "nino": 98.0
+      },
+      {
+        "trimestre": "MAM",
+        "nina": 0.0,
+        "neutral": 15.0,
+        "nino": 85.0
+      },
+      {
+        "trimestre": "AMJ",
+        "nina": 1.0,
+        "neutral": 54.0,
+        "nino": 45.0
+      },
+      {
+        "trimestre": "MJJ",
+        "nina": 13.0,
+        "neutral": 70.0,
+        "nino": 17.0
+      }
+    ],
+    "percentiles": [
+      {
+        "trimestre": "SON",
+        "p": [
+          2.18,
+          2.29,
+          2.35,
+          2.47,
+          2.59,
+          2.65,
+          2.76
+        ]
+      },
+      {
+        "trimestre": "OND",
+        "p": [
+          2.25,
+          2.43,
+          2.54,
+          2.74,
+          2.94,
+          3.05,
+          3.23
+        ]
+      },
+      {
+        "trimestre": "NDJ",
+        "p": [
+          2.0,
+          2.24,
+          2.39,
+          2.65,
+          2.92,
+          3.06,
+          3.31
+        ]
+      },
+      {
+        "trimestre": "DJF",
+        "p": [
+          1.58,
+          1.87,
+          2.04,
+          2.36,
+          2.68,
+          2.85,
+          3.14
+        ]
+      },
+      {
+        "trimestre": "JFM",
+        "p": [
+          1.13,
+          1.42,
+          1.59,
+          1.9,
+          2.22,
+          2.39,
+          2.67
+        ]
+      },
+      {
+        "trimestre": "FMA",
+        "p": [
+          0.66,
+          0.91,
+          1.05,
+          1.33,
+          1.6,
+          1.75,
+          2.0
+        ]
+      },
+      {
+        "trimestre": "MAM",
+        "p": [
+          0.23,
+          0.45,
+          0.58,
+          0.83,
+          1.08,
+          1.21,
+          1.43
+        ]
+      },
+      {
+        "trimestre": "AMJ",
+        "p": [
+          -0.22,
+          0.01,
+          0.14,
+          0.4,
+          0.66,
+          0.79,
+          1.02
+        ]
+      },
+      {
+        "trimestre": "MJJ",
+        "p": [
+          -0.68,
+          -0.41,
+          -0.26,
+          0.03,
+          0.32,
+          0.48,
+          0.74
+        ]
+      }
+    ],
+    "intensidad": {
+      "bandas": [
+        "Index ≤ -2.0°C",
+        "-1.5°C ≥ Index > -2.0°C",
+        "-1.0°C ≥ Index > -1.5°C",
+        "-0.5°C ≥ Index > -1.0°C",
+        "−0.5°C < Index < 0.5°C",
+        "0.5°C ≤ Index < 1.0°C",
+        "1.0°C ≤ Index < 1.5°C",
+        "1.5°C ≤ Index < 2.0°C",
+        "Index ≥ 2.0°C"
+      ],
+      "filas": [
+        {
+          "trimestre": "SON",
+          "p": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            100.0
+          ]
+        },
+        {
+          "trimestre": "OND",
+          "p": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            100.0
+          ]
+        },
+        {
+          "trimestre": "NDJ",
+          "p": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            4.0,
+            96.0
+          ]
+        },
+        {
+          "trimestre": "DJF",
+          "p": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            3.0,
+            16.0,
+            81.0
+          ]
+        },
+        {
+          "trimestre": "JFM",
+          "p": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            2.0,
+            15.0,
+            37.0,
+            46.0
+          ]
+        },
+        {
+          "trimestre": "FMA",
+          "p": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            2.0,
+            16.0,
+            44.0,
+            32.0,
+            6.0
+          ]
+        },
+        {
+          "trimestre": "MAM",
+          "p": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            15.0,
+            48.0,
+            32.0,
+            5.0,
+            0.0
+          ]
+        },
+        {
+          "trimestre": "AMJ",
+          "p": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            54.0,
+            38.0,
+            7.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "trimestre": "MJJ",
+          "p": [
+            0.0,
+            0.0,
+            1.0,
+            12.0,
+            70.0,
+            15.0,
+            2.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    }
+  },
+  "jma": {
+    "url": "https://ds.data.jma.go.jp/tcc/tcc/products/elnino/outlook.html",
+    "n12": [
+      {
+        "mes": "2024-10",
+        "valor": -0.5
+      },
+      {
+        "mes": "2024-11",
+        "valor": 0.1
+      },
+      {
+        "mes": "2024-12",
+        "valor": 0.0
+      },
+      {
+        "mes": "2025-01",
+        "valor": 0.0
+      },
+      {
+        "mes": "2025-02",
+        "valor": 0.6
+      },
+      {
+        "mes": "2025-03",
+        "valor": 1.2
+      },
+      {
+        "mes": "2025-04",
+        "valor": 0.9
+      },
+      {
+        "mes": "2025-05",
+        "valor": 0.2
+      },
+      {
+        "mes": "2025-06",
+        "valor": 0.3
+      },
+      {
+        "mes": "2025-07",
+        "valor": 0.2
+      },
+      {
+        "mes": "2025-08",
+        "valor": 0.3
+      },
+      {
+        "mes": "2025-09",
+        "valor": -0.3
+      },
+      {
+        "mes": "2025-10",
+        "valor": -0.1
+      },
+      {
+        "mes": "2025-11",
+        "valor": -0.4
+      },
+      {
+        "mes": "2025-12",
+        "valor": -0.4
+      },
+      {
+        "mes": "2026-01",
+        "valor": 0.0
+      },
+      {
+        "mes": "2026-02",
+        "valor": 1.1
+      },
+      {
+        "mes": "2026-03",
+        "valor": 1.2
+      },
+      {
+        "mes": "2026-04",
+        "valor": 1.5
+      },
+      {
+        "mes": "2026-05",
+        "valor": 1.9
+      },
+      {
+        "mes": "2026-06",
+        "valor": 3.0
+      },
+      {
+        "mes": "2026-07",
+        "valor": 3.8
+      },
+      {
+        "mes": "2026-08",
+        "valor": 4.5
+      },
+      {
+        "mes": "2026-09",
+        "valor": 5.0
+      }
+    ],
+    "n3": [
+      {
+        "mes": "2024-10",
+        "valor": -0.4
+      },
+      {
+        "mes": "2024-11",
+        "valor": -0.2
+      },
+      {
+        "mes": "2024-12",
+        "valor": -0.5
+      },
+      {
+        "mes": "2025-01",
+        "valor": -0.2
+      },
+      {
+        "mes": "2025-02",
+        "valor": 0.2
+      },
+      {
+        "mes": "2025-03",
+        "valor": 0.7
+      },
+      {
+        "mes": "2025-04",
+        "valor": 0.1
+      },
+      {
+        "mes": "2025-05",
+        "valor": -0.3
+      },
+      {
+        "mes": "2025-06",
+        "valor": -0.2
+      },
+      {
+        "mes": "2025-07",
+        "valor": 0.0
+      },
+      {
+        "mes": "2025-08",
+        "valor": -0.2
+      },
+      {
+        "mes": "2025-09",
+        "valor": -0.5
+      },
+      {
+        "mes": "2025-10",
+        "valor": -0.5
+      },
+      {
+        "mes": "2025-11",
+        "valor": -0.6
+      },
+      {
+        "mes": "2025-12",
+        "valor": -0.7
+      },
+      {
+        "mes": "2026-01",
+        "valor": -0.5
+      },
+      {
+        "mes": "2026-02",
+        "valor": 0.1
+      },
+      {
+        "mes": "2026-03",
+        "valor": 0.3
+      },
+      {
+        "mes": "2026-04",
+        "valor": 0.7
+      },
+      {
+        "mes": "2026-05",
+        "valor": 1.2
+      },
+      {
+        "mes": "2026-06",
+        "valor": 1.9
+      },
+      {
+        "mes": "2026-07",
+        "valor": 2.6
+      },
+      {
+        "mes": "2026-08",
+        "valor": 3.5
+      },
+      {
+        "mes": "2026-09",
+        "valor": 4.0
+      }
+    ],
+    "proxima": null
+  },
+  "mjo": {
+    "ultimo": {
+      "fecha": "2026-11-01",
+      "pc1": 0.134,
+      "pc2": 0.803,
+      "amplitud": 0.81
+    },
+    "serie": [
+      {
+        "fecha": "2026-09-18",
+        "pc1": 0.237,
+        "pc2": 0.937,
+        "amplitud": 0.97
+      },
+      {
+        "fecha": "2026-09-19",
+        "pc1": 0.057,
+        "pc2": 0.946,
+        "amplitud": 0.95
+      },
+      {
+        "fecha": "2026-09-20",
+        "pc1": -0.069,
+        "pc2": 0.908,
+        "amplitud": 0.91
+      },
+      {
+        "fecha": "2026-09-21",
+        "pc1": -0.059,
+        "pc2": 0.838,
+        "amplitud": 0.84
+      },
+      {
+        "fecha": "2026-09-22",
+        "pc1": 0.089,
+        "pc2": 0.696,
+        "amplitud": 0.7
+      },
+      {
+        "fecha": "2026-09-23",
+        "pc1": 0.237,
+        "pc2": 0.568,
+        "amplitud": 0.62
+      },
+      {
+        "fecha": "2026-09-24",
+        "pc1": 0.335,
+        "pc2": 0.41,
+        "amplitud": 0.53
+      },
+      {
+        "fecha": "2026-09-25",
+        "pc1": 0.509,
+        "pc2": 0.223,
+        "amplitud": 0.56
+      },
+      {
+        "fecha": "2026-09-26",
+        "pc1": 0.709,
+        "pc2": 0.049,
+        "amplitud": 0.71
+      },
+      {
+        "fecha": "2026-09-27",
+        "pc1": 0.892,
+        "pc2": -0.162,
+        "amplitud": 0.91
+      },
+      {
+        "fecha": "2026-09-28",
+        "pc1": 0.996,
+        "pc2": -0.405,
+        "amplitud": 1.08
+      },
+      {
+        "fecha": "2026-09-29",
+        "pc1": 1.057,
+        "pc2": -0.582,
+        "amplitud": 1.21
+      },
+      {
+        "fecha": "2026-09-30",
+        "pc1": 1.031,
+        "pc2": -0.703,
+        "amplitud": 1.25
+      },
+      {
+        "fecha": "2026-10-01",
+        "pc1": 0.882,
+        "pc2": -0.74,
+        "amplitud": 1.15
+      },
+      {
+        "fecha": "2026-10-02",
+        "pc1": 0.821,
+        "pc2": -0.753,
+        "amplitud": 1.11
+      },
+      {
+        "fecha": "2026-10-03",
+        "pc1": 0.799,
+        "pc2": -0.777,
+        "amplitud": 1.12
+      },
+      {
+        "fecha": "2026-10-04",
+        "pc1": 0.759,
+        "pc2": -0.777,
+        "amplitud": 1.09
+      },
+      {
+        "fecha": "2026-10-05",
+        "pc1": 0.724,
+        "pc2": -0.791,
+        "amplitud": 1.07
+      },
+      {
+        "fecha": "2026-10-06",
+        "pc1": 0.718,
+        "pc2": -0.72,
+        "amplitud": 1.02
+      },
+      {
+        "fecha": "2026-10-07",
+        "pc1": 0.802,
+        "pc2": -0.577,
+        "amplitud": 0.99
+      },
+      {
+        "fecha": "2026-10-08",
+        "pc1": 0.838,
+        "pc2": -0.51,
+        "amplitud": 0.98
+      },
+      {
+        "fecha": "2026-10-09",
+        "pc1": 0.912,
+        "pc2": -0.442,
+        "amplitud": 1.01
+      },
+      {
+        "fecha": "2026-10-10",
+        "pc1": 1.064,
+        "pc2": -0.375,
+        "amplitud": 1.13
+      },
+      {
+        "fecha": "2026-10-11",
+        "pc1": 1.211,
+        "pc2": -0.324,
+        "amplitud": 1.25
+      },
+      {
+        "fecha": "2026-10-12",
+        "pc1": 1.307,
+        "pc2": -0.238,
+        "amplitud": 1.33
+      },
+      {
+        "fecha": "2026-10-13",
+        "pc1": 1.274,
+        "pc2": -0.15,
+        "amplitud": 1.28
+      },
+      {
+        "fecha": "2026-10-14",
+        "pc1": 1.19,
+        "pc2": -0.023,
+        "amplitud": 1.19
+      },
+      {
+        "fecha": "2026-10-15",
+        "pc1": 1.141,
+        "pc2": 0.046,
+        "amplitud": 1.14
+      },
+      {
+        "fecha": "2026-10-16",
+        "pc1": 1.069,
+        "pc2": 0.071,
+        "amplitud": 1.07
+      },
+      {
+        "fecha": "2026-10-17",
+        "pc1": 0.984,
+        "pc2": 0.14,
+        "amplitud": 0.99
+      },
+      {
+        "fecha": "2026-10-18",
+        "pc1": 0.885,
+        "pc2": 0.182,
+        "amplitud": 0.9
+      },
+      {
+        "fecha": "2026-10-19",
+        "pc1": 0.775,
+        "pc2": 0.338,
+        "amplitud": 0.85
+      },
+      {
+        "fecha": "2026-10-20",
+        "pc1": 0.687,
+        "pc2": 0.592,
+        "amplitud": 0.91
+      },
+      {
+        "fecha": "2026-10-21",
+        "pc1": 0.594,
+        "pc2": 0.87,
+        "amplitud": 1.05
+      },
+      {
+        "fecha": "2026-10-22",
+        "pc1": 0.541,
+        "pc2": 1.048,
+        "amplitud": 1.18
+      },
+      {
+        "fecha": "2026-10-23",
+        "pc1": 0.506,
+        "pc2": 1.138,
+        "amplitud": 1.25
+      },
+      {
+        "fecha": "2026-10-24",
+        "pc1": 0.401,
+        "pc2": 1.242,
+        "amplitud": 1.31
+      },
+      {
+        "fecha": "2026-10-25",
+        "pc1": 0.361,
+        "pc2": 1.312,
+        "amplitud": 1.36
+      },
+      {
+        "fecha": "2026-10-26",
+        "pc1": 0.33,
+        "pc2": 1.33,
+        "amplitud": 1.37
+      },
+      {
+        "fecha": "2026-10-27",
+        "pc1": 0.264,
+        "pc2": 1.371,
+        "amplitud": 1.4
+      },
+      {
+        "fecha": "2026-10-28",
+        "pc1": 0.244,
+        "pc2": 1.212,
+        "amplitud": 1.24
+      },
+      {
+        "fecha": "2026-10-29",
+        "pc1": 0.223,
+        "pc2": 1.12,
+        "amplitud": 1.14
+      },
+      {
+        "fecha": "2026-10-30",
+        "pc1": 0.179,
+        "pc2": 0.984,
+        "amplitud": 1.0
+      },
+      {
+        "fecha": "2026-10-31",
+        "pc1": 0.168,
+        "pc2": 0.893,
+        "amplitud": 0.91
+      },
+      {
+        "fecha": "2026-11-01",
+        "pc1": 0.134,
+        "pc2": 0.803,
+        "amplitud": 0.81
+      }
+    ],
+    "activa": false,
+    "fuente": "NOAA PSL, índice ROMI",
+    "url": "https://www.cpc.ncep.noaa.gov/products/precip/CWlink/MJO/mjo.shtml"
+  },
+  "gth": {
+    "url": "https://www.cpc.ncep.noaa.gov/products/precip/CWlink/ghaz/",
+    "semanas": {
+      "W2": {
+        "zonas": [
+          {
+            "tipo": "DRY",
+            "ciudades": [
+              "Ayacucho",
+              "Cusco",
+              "Huancayo",
+              "Iquitos",
+              "Pucallpa",
+              "Puerto Maldonado",
+              "Tarapoto"
+            ]
+          }
+        ],
+        "emitido": "2026-11-03",
+        "desde": "2026-11-11",
+        "hasta": "2026-11-17"
+      },
+      "W3": {
+        "zonas": [
+          {
+            "tipo": "DRY",
+            "ciudades": [
+              "Iquitos"
+            ]
+          }
+        ],
+        "emitido": "2026-11-03",
+        "desde": "2026-11-18",
+        "hasta": "2026-11-24"
+      }
+    }
+  },
+  "ciifen": {
+    "url": "https://ciifen.org/",
+    "boletin_enso": {
+      "titulo": "Boletín_ElNino_LaNina_Octubre_2026",
+      "fecha": "2026-10-20",
+      "url": "https://ciifen.org/wp-content/uploads/2026/10/Boletin_ElNino_LaNina_Octubre_2026.pdf"
+    },
+    "estacional": {
+      "titulo": "Pronostico_Estacional_Sudamerica_SON_2026",
+      "fecha": "2026-10-23",
+      "url": "https://ciifen.org/wp-content/uploads/2026/10/Pronostico_Estacional_Sudamerica_SON_2026.pdf"
+    },
+    "oceano": {
+      "titulo": "Boletin_oceano_septiembre_2026",
+      "fecha": "2026-10-02",
+      "url": "https://ciifen.org/wp-content/uploads/2026/10/Boletin_oceano_septiembre_2026.pdf"
+    }
+  },
+  "wmo": {
+    "titulo": "El Niño/La Niña Update (August 2026)",
+    "url": "https://wmo.int/resources/publication-series/el-ninola-nina-updates/august-2026",
+    "pdf": "https://wmo.int/sites/default/files/2026-08/Factsheet-ENSO-Update-August-2026-en.pdf"
+  },
+  "imagenes": [
+    {
+      "id": "c3s_n12",
+      "titulo": "Pluma multimodelo Copernicus C3S, Niño 1+2",
+      "fuente": "Copernicus C3S / ECMWF",
+      "origen": "https://charts.ecmwf.int/content/20261103133140-7d07fb38712f694b2e46811ee89d86fa296508d1.png",
+      "huella": "9a6a76e1ec42",
+      "archivo": "c3s_n12.png",
+      "fecha": "2026-11-03"
+    },
+    {
+      "id": "c3s_n34",
+      "titulo": "Pluma multimodelo Copernicus C3S, Niño 3.4",
+      "fuente": "Copernicus C3S / ECMWF",
+      "origen": "https://charts.ecmwf.int/content/20261105180854-cde606234f5d63a85609354db0f43d2bc0c90929.png",
+      "huella": "3a7bfb51151c",
+      "archivo": "c3s_n34.png",
+      "fecha": "2026-11-05"
+    },
+    {
+      "id": "seas5",
+      "titulo": "Pluma del modelo ECMWF SEAS5, regiones Niño",
+      "fuente": "ECMWF",
+      "origen": "https://charts.ecmwf.int/content/20261105101257-1ce0d3d33dcc93507e0fb45faa2409d7e509da26.png",
+      "huella": "77caca8c1d45",
+      "archivo": "seas5.png",
+      "fecha": "2026-11-05"
+    },
+    {
+      "id": "iri",
+      "titulo": "Pluma de modelos dinámicos y estadísticos, Niño 3.4",
+      "fuente": "IRI, Universidad de Columbia",
+      "origen": "https://ensoforecast.iri.columbia.edu/figure4_plot/2026/11/png",
+      "huella": "77e48ebfb428",
+      "archivo": "iri.png",
+      "fecha": "2026-11-06"
+    },
+    {
+      "id": "nmme",
+      "titulo": "Media de los modelos NMME, Niño 3.4",
+      "fuente": "NOAA CPC, NMME",
+      "origen": "https://www.cpc.ncep.noaa.gov/products/NMME/current/images/nino34.rescaling.ENSMEAN.png",
+      "huella": "9f702983d0db",
+      "archivo": "nmme.png",
+      "fecha": "2026-10-16"
+    },
+    {
+      "id": "mjo",
+      "titulo": "Pronóstico de la MJO, ECMWF corregido",
+      "fuente": "NOAA CPC",
+      "origen": "https://www.cpc.ncep.noaa.gov/products/precip/mjo/img/ECMF_BC.png",
+      "huella": "7c81407520be",
+      "archivo": "mjo.png",
+      "fecha": "2026-11-05"
+    },
+    {
+      "id": "gth",
+      "titulo": "Zonas de riesgo tropical, semanas 2 y 3",
+      "fuente": "NOAA CPC",
+      "origen": "https://www.cpc.ncep.noaa.gov/products/precip/CWlink/ghaz/gth_full.png",
+      "huella": "e9e05d81a693",
+      "archivo": "gth.png",
+      "fecha": "2026-11-03"
+    },
+    {
+      "id": "chirps10",
+      "titulo": "Lluvia pronosticada a 10 días, Sudamérica",
+      "fuente": "CIIFEN (CHIRPS-GEFS)",
+      "origen": "https://ciifen.org/wp-content/uploads/imagenes_clima/pronostico/pron_precipitacion/chirps_forecast_10days.png",
+      "huella": "f3b13e511a8e",
+      "archivo": "chirps10.png",
+      "fecha": "2026-11-05"
+    }
+  ]
+}

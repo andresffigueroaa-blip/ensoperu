@@ -113,6 +113,20 @@ def ejecutar(estado: dict) -> dict:
         lectura.append(f"Lluvia próxima: la mayor en 16 días es {p['nombre']} ({p['region']}), con {ll[top_lluvia[0]]['total']:.0f} mm.")
     if rios_altos:
         lectura.append(f"Ríos: {len(rios_altos)} con crecida inusual pronosticada en 15 días, entre ellos {', '.join(r['nombre'] for r in rios_altos[:4])}.")
+    # Lo que reporta el Estado (peru_oficial)
+    of = leer_json(DATOS / "peru" / "oficial.json") or {}
+    esc_ = of.get("escenario") or {}
+    if esc_.get("vigente"):
+        ma = (esc_.get("resumen") or {}).get("MA") or {}
+        fin = max(e["fin_vigencia"][:10] for e in esc_["escenarios"])
+        a, m_, d = fin.split("-")
+        if ma.get("distritos"):
+            pob = f"{ma.get('poblacion', 0):,}".replace(",", " ")
+            lectura.append(f"CENEPRED: {ma['distritos']} distritos en riesgo muy alto por la lluvia hasta el {int(d)} de {MESES[int(m_) - 1]}, con {pob} personas.")
+    if (of.get("coen") or {}).get("total"):
+        c = of["coen"]
+        principal = next(iter(c.get("por_peligro", {})), "")
+        lectura.append(f"INDECI registró {c['total']} emergencias en 7 días; la más frecuente: {principal.lower()}.")
     if top_focos:
         p = prov(top_focos[0])
         total = sum(fo[i]["focos"] for i in provincias if i in fo)

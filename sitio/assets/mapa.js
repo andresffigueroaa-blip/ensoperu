@@ -31,6 +31,10 @@ const CAPAS_MAPA = {
   spi:      { n: "Sequía (SPI-3)", u: "", lo: -2.5, hi: 2.5, tipo: "divergente-inv", niveles: ["region", "provincia"], fuente: "SPI de 3 meses calculado de NASA POWER. Naranja y rojo: más seco de lo normal; azul: más húmedo" },
   tmax:     { n: "Calor, próximos 7 días", u: "°C", lo: 8, hi: 38, tipo: "naranja", niveles: ["region", "provincia"], fuente: "Temperatura máxima media pronosticada. Open-Meteo" },
   incendios:{ n: "Focos de calor, 7 días", u: "focos", lo: 0, hi: 60, tipo: "naranja", niveles: ["region", "provincia", "distrito"], fuente: "NASA FIRMS, satélite VIIRS. Un foco no siempre es un incendio forestal" },
+  esc:      { n: "Riesgo por la lluvia de hoy", u: "", tipo: "esc", niveles: ["distrito"], fuente: "CENEPRED, escenario de riesgo del aviso de lluvia vigente del SENAMHI" },
+  queb:     { n: "Activación de quebradas", u: "", tipo: "queb", niveles: ["distrito"], fuente: "SENAMHI, aviso de activación de quebradas por distrito, vía INDECI" },
+  dee:      { n: "Estado de emergencia", u: "", tipo: "dee", niveles: ["distrito"], fuente: "PCM, decretos de estado de emergencia vigentes, publicados por la ANA" },
+  prep:     { n: "Preparación del distrito", u: "", tipo: "prep", niveles: ["distrito"], fuente: "Geoperú (PCM), distritos priorizados del DS 124-2026-PCM" },
   r_inu:    { n: "Riesgo oficial: inundación", u: "", tipo: "riesgo", clave: "inu", niveles: ["distrito"], fuente: "CENEPRED, escenario de riesgo ante El Niño (SIGRID)" },
   r_mm:     { n: "Riesgo oficial: movimientos en masa", u: "", tipo: "riesgo", clave: "mm", niveles: ["distrito"], fuente: "CENEPRED, escenario de riesgo ante El Niño (SIGRID)" },
 };
@@ -41,6 +45,7 @@ const TEMAS = {
   lluvias:   { n: "Norte: lluvias e inundaciones", capa: "lluvia", nivel: "provincia", lugares: { presa: true, embalse: true }, rios: true, caja: [[-81.5, -9.2], [-74, -3]], texto: "Lluvia a 16 días, ríos, presas y embalses de la costa y sierra norte, donde el ENFEN espera lluvias sobre lo normal." },
   incendios: { n: "Sur: sequía e incendios", capa: "spi", nivel: "provincia", lugares: { laguna: true }, focos: true, rios: false, caja: [[-76, -17.5], [-68.5, -11]], texto: "Sequía de 3 meses por provincia (naranja y rojo: más seco de lo normal; azul: más húmedo) y focos de calor en el sur andino, donde el ENFEN espera lluvias bajo lo normal y déficit en el Titicaca." },
   mar:       { n: "Mar y pesca", capa: "tsm", nivel: "region", lugares: {}, caja: [[-86, -19], [-69, -1]], texto: "El mar frente a la costa y su anomalía." },
+  hoy:       { n: "Hoy: riesgo y emergencias", capa: "esc", nivel: "distrito", lugares: {}, emergencias: true, caja: [[-82, -18.6], [-68.4, 0.1]], texto: "Distritos en riesgo por el aviso de lluvia vigente (CENEPRED) y emergencias registradas en 7 días (INDECI). Toca un punto para ver el reporte." },
   riesgo:    { n: "Riesgo oficial por distrito", capa: "r_inu", nivel: "distrito", lugares: {}, caja: [[-82, -18.6], [-68.4, 0.1]], texto: "Escenario del CENEPRED: viviendas, colegios, salud, vías y cultivos expuestos a inundación." },
   glaciares: { n: "Agua, nevados y cumbres", capa: "ninguna", nivel: "provincia", lugares: { glaciar: true, laguna: true, embalse: true, cumbre: true }, caja: [[-78.5, -10.5], [-76.5, -8.5]], texto: "Glaciares, cumbres, lagunas y embalses en la Cordillera Blanca y el resto de los Andes. Toca una figura para ver su ficha." },
   estaciones:{ n: "Estaciones del SENAMHI", capa: "lluvia", nivel: "provincia", lugares: { estacion: true }, rios: false, caja: [[-82, -18.6], [-68.4, 0.1]], texto: "La red de estaciones del SENAMHI sobre la lluvia pronosticada. Acércate para ver más; toca una para ver su ficha y sus datos oficiales." },
@@ -53,8 +58,20 @@ const RAMPA_NARANJA = ["#FCE3CF", "#F7B27E", "#EF8A3F", "#D96A1B", "#A8460C", "#
 const COLOR_RIO = { normal: "#79C2D0", elevado: "#F0A23C", "muy alto": "#E2341D" };
 const COLOR_AVISO = { AMARILLO: "#E9C46A", NARANJA: "#E18C3E", ROJO: "#B4101C" };
 
+const COLOR_ESTADO = {
+  esc: { MA: "#B4101C", A: "#E18C3E", M: "#F0C178" },
+  queb: { 1: "#F0C178", 2: "#E18C3E", 3: "#B4101C" },
+  dee: { 1: "#8B6FB8" },
+  prep: { critico: "#B4101C", parcial: "#F0C178", adecuado: "#3E8E7E", sin_informacion: "#7C8A90" },
+};
+const LEYENDA_ESTADO = {
+  esc: [["MA", "Muy alto"], ["A", "Alto"], ["M", "Medio"]], queb: [["3", "Nivel 3"], ["2", "Nivel 2"], ["1", "Nivel 1"]],
+  dee: [["1", "En estado de emergencia"]], prep: [["critico", "Crítica"], ["parcial", "Parcial"], ["adecuado", "Adecuada"], ["sin_informacion", "Sin información"]],
+};
+
 function colorCapa(c, v){
   if (v === null || v === undefined) return null;
+  if (COLOR_ESTADO[c.tipo]) return COLOR_ESTADO[c.tipo][v] || null;
   if (c.tipo === "riesgo") return NIVELES_R[v] || null;
   if (c.tipo === "aviso") return COLOR_AVISO[v] || null;
   if (c.tipo === "naranja" && c.lo === 0 && v === 0) return null;
@@ -85,7 +102,8 @@ function asegurarDatos(){
   return promesaDatos;
 }
 function asegurarRiesgo(){
-  promesaRiesgo ??= traerOpcional("datos/unidades/riesgo.json").then(r => { M.datos.riesgo = r; });
+  promesaRiesgo ??= Promise.all([traerOpcional("datos/unidades/riesgo.json"), traerOpcional("datos/peru/distritos.json")])
+    .then(([r, e]) => { M.datos.riesgo = r; M.datos.estadoDist = e; });
   return promesaRiesgo;
 }
 
@@ -104,11 +122,19 @@ function valorUnidad(id, capa = M.capa){
     case "spi": return d.spi?.valores?.[id]?.spi3 ?? null;
     case "incendios": return d.incendios?.valores?.[id]?.focos ?? 0;
     case "r_inu": case "r_mm": return d.riesgo?.valores?.[id]?.[c.clave]?.riesgo ?? null;
+    case "esc": return d.estadoDist?.valores?.[id]?.esc ?? null;
+    case "queb": return d.estadoDist?.valores?.[id]?.queb ?? null;
+    case "dee": return d.estadoDist?.valores?.[id]?.dee ? 1 : null;
+    case "prep": return d.estadoDist?.valores?.[id]?.prep?.nivel ?? null;
   }
   return null;
 }
 function textoValor(v, c){
   if (v === null || v === undefined) return "sin dato";
+  if (c.tipo === "esc") return { MA: "Muy alto", A: "Alto", M: "Medio" }[v] || v;
+  if (c.tipo === "queb") return `Nivel ${v}`;
+  if (c.tipo === "dee") return "En estado de emergencia";
+  if (c.tipo === "prep") return { critico: "Crítica", parcial: "Parcial", adecuado: "Adecuada", sin_informacion: "Sin información" }[v] || v;
   if (typeof v === "string") return v;
   if (!c.u) return sg(v);
   if (c.u === "focos") return `${v} focos`;
@@ -226,6 +252,10 @@ async function iniciarMapa(){
       const pick = l => visibles(l) ? mapa.queryRenderedFeatures(caja, { layers: [l] }) : [];
       const rio = pick("rios")[0];
       if (rio) return pintarFichaRio(rio.properties.id);
+      const em = pick("emergencias")[0];
+      if (em) return pintarFichaPunto("emergencia", em.properties, em.geometry.coordinates);
+      const pc = pick("pc")[0];
+      if (pc) return pintarFichaPunto("pc", pc.properties, pc.geometry.coordinates);
       const lug = pick("lugares")[0];
       if (lug){
         const f = M.datos.lugares.features.find(x => x.properties.osm ? x.properties.osm === lug.properties.osm : x.properties.cod === lug.properties.cod);
@@ -237,6 +267,18 @@ async function iniciarMapa(){
 
     // Los créditos quedan plegados en su botón (i): abiertos tapan el pie del mapa
     mapa.getContainer().querySelector(".maplibregl-ctrl-attrib")?.classList.remove("maplibregl-compact-show");
+    // Emergencias del COEN (7 días) y puntos críticos de ríos de la ANA
+    const puntos = [["emergencias", "datos/peru/emergencias.geojson", "#F5F0E6", "#B4101C"], ["pc", "datos/peru/puntos_criticos.geojson", "#C9A227", "#16222A"]];
+    for (const [id, url, relleno, borde] of puntos){
+      mapa.addSource(id, { type: "geojson", data: url });
+      mapa.addLayer({ id, type: "circle", source: id, layout: { visibility: "none" },
+        paint: { "circle-radius": ["interpolate", ["linear"], ["zoom"], 4, 3.5, 9, 7], "circle-color": id === "pc"
+          ? ["match", ["get", "estado"], "Ejecutado", "#3E8E7E", "En Ejecución", "#C9A227", "#B9C4C9"] : relleno,
+          "circle-stroke-color": borde, "circle-stroke-width": id === "emergencias" ? 2 : 1 } });
+      mapa.on("mousemove", id, e => { const p = e.features[0].properties; mapa.getCanvas().style.cursor = "pointer";
+        tipMapa(e.point, id === "pc" ? `Río ${p.rio}: ${p.sector || ""}` : p.peligro, id === "pc" ? `${p.estado}, avance ${p.avance ?? "–"} %` : `${p.fecha} · ${p.lugar}`); });
+      mapa.on("mouseleave", id, () => { $("#tip").style.opacity = 0; mapa.getCanvas().style.cursor = ""; });
+    }
     M.listo = true;
     document.body.dataset.mapaListo = "1";      // marca para pruebas automáticas
     await aplicarCapa(); aplicarLugares();
@@ -284,7 +326,7 @@ async function aplicarCapa(){
   const c0 = CAPAS_MAPA[M.capa];
   if (c0.niveles.length && !c0.niveles.includes(M.nivel)) M.nivel = c0.niveles[c0.niveles.length - 1];
   pintarControles(); pintarLeyendaMapa();      // la respuesta al clic es inmediata; los colores llegan después
-  if (c0.tipo === "riesgo") await asegurarRiesgo();
+  if (c0.tipo === "riesgo" || COLOR_ESTADO[c0.tipo]) await asegurarRiesgo();
   if (M.nivel === "distrito" && !M.mapa.getSource("distrito")) agregarUnidades("distrito", M.primerSimbolo);
   // El relleno de distritos necesita sus datos cargados antes de pintar estados
   if (M.nivel === "distrito"){
@@ -311,6 +353,8 @@ async function aplicarCapa(){
   const vf = M.incendios || M.capa === "incendios" ? "visible" : "none";
   for (const l of ["focos", "focos-halo"]) if (M.mapa.getLayer(l)) M.mapa.setLayoutProperty(l, "visibility", vf);
   for (const l of ["rios", "rios-txt"]) if (M.mapa.getLayer(l)) M.mapa.setLayoutProperty(l, "visibility", M.rios ? "visible" : "none");
+  if (M.mapa.getLayer("emergencias")) M.mapa.setLayoutProperty("emergencias", "visibility", M.emergencias ? "visible" : "none");
+  if (M.mapa.getLayer("pc")) M.mapa.setLayoutProperty("pc", "visibility", M.pcs ? "visible" : "none");
 }
 
 function aplicarLugares(){
@@ -330,11 +374,15 @@ function toggleLugar(k){
 }
 function toggleIncendios(){ M.incendios = !M.incendios; aplicarCapa(); }
 function toggleRios(){ M.rios = !M.rios; aplicarCapa(); }
+function toggleEmergencias(){ M.emergencias = !M.emergencias; aplicarCapa(); }
+function togglePcs(){ M.pcs = !M.pcs; aplicarCapa(); }
+window.toggleEmergencias = toggleEmergencias; window.togglePcs = togglePcs;
 function setTema(k){
   const t = TEMAS[k]; M.tema = k; M.capa = t.capa; M.nivel = t.nivel;
   for (const l of Object.keys(M.lugares)) M.lugares[l] = !!t.lugares[l];
   M.incendios = !!t.focos;
   M.rios = t.rios !== false;
+  M.emergencias = !!t.emergencias; M.pcs = !!t.pcs;
   M.mapa.fitBounds(t.caja, { padding: 30, duration: 1200 });
   $("#mapa-aviso").textContent = t.texto;
   aplicarLugares(); return aplicarCapa();
@@ -355,6 +403,8 @@ function pintarControles(){
   $("#lugares-ctl").innerHTML =
     `<button class="layer" aria-pressed="${M.rios}" onclick="toggleRios()"><span class="foco rio"></span>Ríos vigilados</button>`
     + `<button class="layer" aria-pressed="${M.incendios}" onclick="toggleIncendios()"><span class="foco"></span>Focos de calor</button>`
+    + `<button class="layer" aria-pressed="${!!M.emergencias}" onclick="toggleEmergencias()"><span class="foco emerg"></span>Emergencias, 7 días <small class="cuenta">INDECI</small></button>`
+    + `<button class="layer" aria-pressed="${!!M.pcs}" onclick="togglePcs()"><span class="foco pcrit"></span>Puntos críticos de ríos <small class="cuenta">ANA</small></button>`
     + Object.keys(ICONOS).map(k =>
       `<button class="layer" aria-pressed="${!!M.lugares[k]}" onclick="toggleLugar('${k}')">${iconoHTML(k, 16)}${ICONOS[k].plural} <small class="cuenta">${M.conteoLugares?.[k] ?? ""}</small></button>`).join("");
 }
@@ -365,7 +415,8 @@ function pintarLeyendaMapa(){
   lo.textContent = hi.textContent = ""; L.innerHTML = "";
   $("#leg-title").textContent = c.n;
   if (M.capa === "ninguna"){ $("#leg-src").textContent = "Elige lugares arriba, o haz clic en una unidad para ver su ficha."; return; }
-  if (c.tipo === "riesgo"){ L.classList.add("leg-cat"); L.innerHTML = ["Bajo", "Medio", "Alto", "Muy alto"].map(n => `<span><i style="background:${NIVELES_R[n]}"></i>${n}</span>`).join(""); }
+  if (LEYENDA_ESTADO[c.tipo]){ L.classList.add("leg-cat"); L.innerHTML = LEYENDA_ESTADO[c.tipo].map(([k, n]) => `<span><i style="background:${COLOR_ESTADO[c.tipo][k]}"></i>${n}</span>`).join(""); }
+  else if (c.tipo === "riesgo"){ L.classList.add("leg-cat"); L.innerHTML = ["Bajo", "Medio", "Alto", "Muy alto"].map(n => `<span><i style="background:${NIVELES_R[n]}"></i>${n}</span>`).join(""); }
   else if (c.tipo === "aviso"){ L.classList.add("leg-cat"); L.innerHTML = ["AMARILLO", "NARANJA", "ROJO"].map(n => `<span><i style="background:${COLOR_AVISO[n]}"></i>${n[0] + n.slice(1).toLowerCase()}</span>`).join(""); }
   else {
     L.classList.remove("leg-cat");
@@ -522,6 +573,7 @@ async function pintarFicha(u, lugar){
       ${frases.length ? `<p class="f-lectura">${esc(frases.join(" "))}</p>` : ""}
     </div>
 
+    ${fichaEstado(u)}
     ${avisos.length ? `<section class="f-sec"><h3>${dibujo("aviso")} Avisos del SENAMHI</h3>${avisos.slice(0, 5).map(a => `<div class="f-aviso"><span class="chip ${NIVEL_AVISO[a.nivel]}">${esc(a.nivel)}</span> <a href="${esc(a.enlace)}" target="_blank" rel="noopener">${esc(a.titulo.charAt(0) + a.titulo.slice(1).toLowerCase())}</a><small>${fecha(a.inicio)} a ${fecha(a.fin)}</small></div>`).join("")}<p class="f-fuente">Según las zonas que nombra el aviso; el área exacta está en el detalle oficial.</p></section>` : ""}
 
     <section class="f-sec">
@@ -587,6 +639,36 @@ async function pintarFicha(u, lugar){
       ${est.length ? `<ul class="f-est">${est.map(s => `<li><a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.titulo)}</a><span>${esc(s.autores)}, ${s.anio}</span><p>${esc(s.hallazgo)}</p></li>`).join("")}</ul>`
         : `<p class="f-txt">Todavía no hay estudios cargados para este lugar.</p>`}
     </section>`;
+}
+
+// Lo que el Estado reporta hoy para esta unidad. En región o provincia se suman sus distritos.
+function fichaEstado(u){
+  const E = M.datos.estadoDist?.valores; if (!E) return "";
+  const ids = u.nivel === "distrito" ? [u.id] : Object.keys(E).filter(k => k.startsWith(u.id));
+  const xs = ids.map(k => E[k]).filter(Boolean);
+  if (!xs.length) return "";
+  const n = f => xs.filter(f).length, uno = u.nivel === "distrito" ? xs[0] : null;
+  const filas = [];
+  if (uno){
+    if (uno.esc) filas.push(["Riesgo por la lluvia de estos días", chipNivel({ MA: "Muy alto", A: "Alto", M: "Medio" }[uno.esc]), "CENEPRED"]);
+    if (uno.queb) filas.push(["Posible activación de quebradas", `Nivel ${uno.queb}`, "SENAMHI"]);
+    if (uno.dee) filas.push(["Estado de emergencia", uno.dee.map(d => `${esc(d.ds)} hasta el ${fecha(d.fin)}`).join("; "), "PCM"]);
+    if (uno.prep) filas.push(["Preparación del distrito", `${{ critico: "Crítica", parcial: "Parcial", adecuado: "Adecuada", sin_informacion: "Sin información" }[uno.prep.nivel] || esc(uno.prep.nivel)}${uno.prep.brigadas ? `, ${uno.prep.brigadas} brigada${uno.prep.brigadas > 1 ? "s" : ""}` : ""}${uno.prep.almacen === false ? ", sin almacén" : ""}`, "Geoperú"]);
+    if (uno.coen) filas.push(["Emergencias registradas, 7 días", uno.coen, "INDECI"]);
+    if (uno.agua) filas.push(["Cortes de agua en curso", `${uno.agua.cortes}, ${entero(uno.agua.conexiones)} conexiones`, "SUNASS"]);
+  } else {
+    const t = (k, n2, src) => { if (n2) filas.push([k, `${n2} distrito${n2 > 1 ? "s" : ""}`, src]); };
+    t("Distritos en riesgo muy alto o alto por la lluvia de estos días", n(x => x.esc === "MA" || x.esc === "A"), "CENEPRED");
+    t("Con posible activación de quebradas", n(x => x.queb), "SENAMHI");
+    t("En estado de emergencia", n(x => x.dee), "PCM");
+    t("Con preparación crítica", n(x => x.prep?.nivel === "critico"), "Geoperú");
+    const em = xs.reduce((a, x) => a + (x.coen || 0), 0);
+    if (em) filas.push(["Emergencias registradas, 7 días", em, "INDECI"]);
+  }
+  if (!filas.length) return "";
+  return `<section class="f-sec f-estado"><h3>${dibujo("mano")} Lo que reporta el Estado hoy</h3>
+    ${filas.map(([k, v, s]) => `<div class="rank-f"><span>${esc(k)} <small>${esc(s)}</small></span><span>${v}</span></div>`).join("")}
+    <p class="f-fuente"><button class="enlace" onclick="ir('vivo')">Ver todo lo que reporta el Estado</button></p></section>`;
 }
 
 function conteoNiveles(n){

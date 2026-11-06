@@ -275,6 +275,14 @@ a mostrar algo que el ENFEN no dice.
 - **Wikipedia solo si OpenStreetMap enlaza el artículo.** Buscar por nombre traería homónimos ("Laguna Negra") y diría algo falso del lugar.
 - **Noticias con imagen.** Canales RSS de los medios, filtrados por tema. Las imágenes se muestran desde el servidor del medio, con enlace a la nota; sin imagen, un dibujo por tema.
 
+## 2026-11-06 · Unificar lo oficial: «El Estado hoy» y «Pronósticos»
+
+- Sondeo en tres frentes (Estado, instituciones científicas, centros internacionales), con cada servicio abierto y probado. Se integran solo servicios legibles por máquina y abiertos: `pipeline/fuentes/peru_oficial.py` (19 bloques) e `internacional.py`.
+- **Se respetan los bloqueos.** Australia (BoM) prohíbe el acceso automático; el MTC, IMARPE y los PDF de la DHN responden con antibot. No se fuerzan: quedan como enlaces.
+- **Datos sucios, corregidos en la lectura y dichos en pantalla.** SUNASS deja abiertos cortes viejos y repite filas: solo cortes de 30 días, sin reposición vencida y sin duplicados. La ANA marca alerta también por nivel bajo: se dice «nivel bajo». Un escenario de 2019 del CENEPRED trae una fecha mal escrita: se descarta.
+- **Semanas 2 y 3.** Las zonas del CPC se cruzan con 18 ciudades: decir «cerca del Perú» con una caja era vago y contradictorio.
+- Cada bloque se lee aparte; si falla se conserva el último dato con su hora de lectura.
+
 ## 2026-11-04 · Focos de calor: varios satélites
 
 S-NPP dejó de entregar el 2 de noviembre y los focos quedaron congelados. Se lee el primer satélite al día, en orden NOAA-20, NOAA-21, S-NPP. No se suman porque ven el mismo fuego. La serie diaria puede mostrar un pequeño salto al cambiar de satélite.

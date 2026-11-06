@@ -32,8 +32,8 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from comun import (ErrorFuente, guardar_meta, leer_meta, log, registrar,  # noqa: E402
                    resumen_actions)
-from fuentes import (cpc, enfen, estacional, firms, igp, noticias, oceano_atm, oisst,  # noqa: E402
-                     oleaje, openmeteo, rios, senamhi)
+from fuentes import (cpc, enfen, estacional, firms, igp, internacional, noticias, oceano_atm, oisst,  # noqa: E402
+                     oleaje, openmeteo, peru_oficial, rios, senamhi)
 from herramientas import build_clima  # noqa: E402
 from productos import (analisis_ia, catalogo, estado, mapa_tsm, panorama,  # noqa: E402
                        serie_indices, serie_tsm)
@@ -55,6 +55,8 @@ PASOS = {
     "oleaje":    oleaje.ejecutar,       # Marine     -> unidades/oleaje.json
     "clima":     build_clima.ejecutar,  # NASA POWER -> clima/<id>.json, unidades/spi.json (mensual)
     "noticias":  noticias.ejecutar,     # Google Noticias -> noticias.json
+    "peru_oficial": peru_oficial.ejecutar,    # INDECI, CENEPRED, ANA, SUNASS, SERFOR, PCM -> peru/
+    "internacional": internacional.ejecutar,  # CPC, JMA, IRI, C3S, NMME, MJO, CIIFEN, WMO -> pronosticos/
     "mapa_tsm":  mapa_tsm.ejecutar,     # campo OISST -> campos/tsm_anom.png
     "serie_tsm": serie_tsm.ejecutar,    # csv -> series/tsm.json (curva de portada)
     "serie_indices": serie_indices.ejecutar,  # icen + cpc -> series/indices.json (historia)
@@ -68,7 +70,7 @@ PASOS = {
 # El robot corre cada hora, pero no todo cambia cada hora: horas mínimas entre
 # lecturas. Los modelos corren cada 6 h, y Open-Meteo limita a 10 000 consultas
 # diarias (son 660 por lectura). Lo que no aparece aquí se lee en cada corrida.
-HORAS_ENTRE_LECTURAS = {"cpc": 6, "igp": 6, "oceano_atm": 6, "rios": 6, "oleaje": 6, "estacional": 24}
+HORAS_ENTRE_LECTURAS = {"cpc": 6, "igp": 6, "oceano_atm": 6, "rios": 6, "oleaje": 6, "estacional": 24, "internacional": 6}
 
 
 def _toca(paso: str, previo: dict) -> bool:

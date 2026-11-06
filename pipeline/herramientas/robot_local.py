@@ -29,7 +29,7 @@ REPO_URL = "https://github.com/andresffigueroaa-blip/ensoperu.git"
 BASE = Path(os.environ["LOCALAPPDATA"]) / "ensoperu-robot"
 CLON = BASE / "repo"
 LOG = BASE / "robot.log"
-FUENTES = ["sitio/datos/senamhi/avisos.json", "sitio/datos/enfen/comunicado.json"]
+FUENTES = ["sitio/datos/senamhi/avisos.json", "sitio/datos/enfen/comunicado.json", "sitio/datos/peru/oficial.json"]
 HORAS_LATIDO = 6
 SIN_VENTANA = 0x08000000 if os.name == "nt" else 0   # sin consola que parpadee cada hora
 
@@ -53,16 +53,18 @@ def correr(*cmd, cwd=CLON, chequear=True, entorno=None) -> subprocess.CompletedP
     return r
 
 
+def _sin_horas(x):
+    """Quita las horas de lectura, que cambian en cada corrida aunque el dato no cambie."""
+    if isinstance(x, dict):
+        return {k: _sin_horas(v) for k, v in x.items() if k not in ("leido", "actualizado", "atrasado")}
+    if isinstance(x, list):
+        return [_sin_horas(v) for v in x]
+    return x
+
+
 def huella() -> dict:
     """Contenido de las fuentes sin la hora de lectura: lo que de verdad cambió."""
-    salida = {}
-    for f in FUENTES:
-        p = CLON / f
-        if p.exists():
-            d = json.loads(p.read_text(encoding="utf-8"))
-            d.pop("leido", None)
-            salida[f] = d
-    return salida
+    return {f: _sin_horas(json.loads((CLON / f).read_text(encoding="utf-8"))) for f in FUENTES if (CLON / f).exists()}
 
 
 def horas_desde_lectura() -> float:
@@ -86,7 +88,7 @@ def main() -> int:
     antes, horas = huella(), horas_desde_lectura()
     python = sys.executable.replace("pythonw.exe", "python.exe")
     entorno = {**os.environ, "PYTHONIOENCODING": "utf-8"}
-    r = correr(python, "pipeline/run.py", "--solo", "senamhi,enfen", chequear=False, entorno=entorno)
+    r = correr(python, "pipeline/run.py", "--solo", "senamhi,enfen,peru_oficial", chequear=False, entorno=entorno)
     if huella() == antes and horas < HORAS_LATIDO:
         log(f"sin cambios (lectura de hace {horas:.1f} h)")
         return 0

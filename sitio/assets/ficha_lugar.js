@@ -71,6 +71,8 @@ async function pintarFichaLugar(f){
   const est = (d.estudios?.estudios || []).filter(s => (TEMAS_LUGAR[p.tipo] || []).some(t => s.temas?.includes(t))
     && s.lugares.some(l => ["Peru", rj?.nombre, d.claveRegion[idReg], p.distrito, idProv].includes(l)));
   const enfenTema = { embalse: "embalses", presa: "embalses", estacion: null }[p.tipo];
+  const anaEmb = ["embalse", "presa"].includes(p.tipo) ? (D.oficial?.ana_embalses?.embalses || []).filter(e => e.lat && e.lon)
+    .map(e => ({ e, km: kmEntre(c, [e.lon, e.lat]) })).sort((a, b) => a.km - b.km)[0] : null;
   const textoEnfen = enfenTema ? D.estado.temas?.[enfenTema] : null;
 
   const enlaces = [];
@@ -91,6 +93,10 @@ async function pintarFichaLugar(f){
       ${p.tipo === "estacion" ? `<p class="f-fuente">Red de estaciones del SENAMHI.</p>` : `<p class="f-fuente">OpenStreetMap, inventario colaborativo; lo oficial está en la ANA y el INAIGEM.</p>`}</section>
     <section class="f-sec" id="fl-clima"><h3>${dibujo("lluvia")} Tiempo en este punto</h3><p class="f-nota">Consultando…</p></section>
     ${["presa", "embalse", "estacion"].includes(p.tipo) && (p.tipo !== "estacion" || p.clase === "H") ? `<section class="f-sec" id="fl-caudal"><h3>${dibujo("rio")} Caudal del río en este punto</h3><p class="f-nota">Consultando…</p></section>` : ""}
+    ${anaEmb && anaEmb.km <= 12 ? `<section class="f-sec"><h3>${dibujo("embalse")} Agua almacenada hoy</h3>
+      <dl class="f-grid"><div><dt>${esc(anaEmb.e.nombre)}</dt><dd>${String(anaEmb.e.porcentaje).replace(".", ",")} %</dd><small>${String(anaEmb.e.almacenado).replace(".", ",")} de ${String(anaEmb.e.util).replace(".", ",")} hm³ útiles, ${esc(anaEmb.e.fecha || "")}</small></div></dl>
+      <div class="pm-barra"><i style="width:${Math.min(100, anaEmb.e.porcentaje)}%;background:#5FA8D3"></i></div>
+      <p class="f-fuente">ANA, reporte nacional de embalses${anaEmb.km > 1 ? `; embalse a ${Math.round(anaEmb.km)} km de este punto` : ""}.</p></section>` : ""}
     ${textoEnfen ? `<section class="f-sec"><h3>${dibujo("embalse")} Qué dice el ENFEN de los embalses</h3><p class="f-txt">${esc(textoEnfen)}</p><p class="f-fuente">${esc(D.estado.alerta.fuente)}, ${fecha(D.estado.alerta.fecha)}.</p></section>` : ""}
     <section class="f-sec"><h3>${dibujo("ojo")} Alrededor</h3>
       <dl class="f-grid">
@@ -111,6 +117,27 @@ async function pintarFichaLugar(f){
   fichaWiki(p, titulo, turno);
 }
 window.pintarFichaLugar = pintarFichaLugar;
+
+function pintarFichaPunto(tipo, p, c){
+  marcarLugar(c); turnoFicha++;
+  const ub = p.distrito, u = ub ? M.datos.porId[ub] : null;
+  const pie = ub ? `<p class="f-fuente"><button class="enlace" onclick="elegirUnidad('${ub}')">Ver la ficha del distrito${u ? ` de ${esc(u.nombre)}` : ""}</button></p>` : "";
+  $("#panel").innerHTML = `<div class="grab"></div>` + (tipo === "emergencia" ? `
+    <div class="p-head"><div class="miga">INDECI · COEN</div><h2>${esc(p.peligro)}</h2><div class="zone">${esc(p.lugar)} · ${esc(p.fecha)}</div></div>
+    <section class="f-sec"><p class="f-txt">${esc(p.hechos || "Sin descripción.")}</p>
+      ${p.pdf ? `<p><a href="${esc(p.pdf)}" target="_blank" rel="noopener">Reporte oficial en PDF</a></p>` : ""}
+      <p class="f-fuente">Emergencia registrada por el Centro de Operaciones de Emergencia Nacional. Las cifras de daños se actualizan en sus reportes.</p>${pie}</section>`
+    : `
+    <div class="p-head"><div class="miga">ANA · Puntos críticos 2026</div><h2>Río ${esc(p.rio)}${p.sector ? `, ${esc(p.sector)}` : ""}</h2><div class="zone">${esc(p.lugar)}</div></div>
+    <section class="f-sec"><p class="f-txt">${esc(p.actividad || "")}</p>
+      <dl class="f-grid"><div><dt>Estado</dt><dd class="dd-txt">${esc(p.estado || "–")}</dd></div><div><dt>Avance</dt><dd>${p.avance ?? "–"} %</dd></div>
+        <div><dt>Costo</dt><dd class="dd-txt">S/ ${entero(p.costo)}</dd></div><div><dt>Población protegida</dt><dd>${entero(p.pob)}</dd><small>${entero(p.viv)} viviendas</small></div></dl>
+      ${p.peligro ? `<p class="f-nota">Peligro: ${esc(p.peligro)}</p>` : ""}
+      <p>${p.ficha ? `<a href="${esc(p.ficha)}" target="_blank" rel="noopener">Ficha técnica</a>` : ""} ${p.galeria ? ` · <a href="${esc(p.galeria)}" target="_blank" rel="noopener">Fotos de la obra</a>` : ""}</p>
+      <p class="f-fuente">Autoridad Nacional del Agua. Obras de prevención en cauces: limpieza, descolmatación y defensas.</p>${pie}</section>`);
+  $("#panel").classList.add("up"); $("#panel").scrollTop = 0;
+}
+window.pintarFichaPunto = pintarFichaPunto;
 window.abrirLugarIdx = i => pintarFichaLugar(M.datos.lugares.features[i]);
 
 async function fichaClima(p, c, turno){

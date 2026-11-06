@@ -162,6 +162,18 @@ function pintarPortada(){
   $("#rank-lluvia").innerHTML = (P?.top_lluvia || []).slice(0, 8).map(r => `<div class="rank-f" onclick="abrirLugar('${r.id}')"><span><b>${esc(r.nombre)}</b> <small>${esc(r.region)}</small></span><span>${Math.round(r.total)} mm</span></div>`).join("");
   $("#rank-focos").innerHTML = (P?.top_focos || []).slice(0, 8).map(r => `<div class="rank-f" onclick="abrirLugar('${r.id}')"><span><b>${esc(r.nombre)}</b> <small>${esc(r.region)}</small></span><span>${r.focos}</span></div>`).join("");
 
+  // El Estado hoy, en cuatro cifras
+  const O = D.oficial;
+  if (O){
+    const R = O.escenario?.resumen || {};
+    $("#portada-estado").innerHTML = [
+      tarjetaKpi("Emergencias, 7 días", entero(O.coen?.total), "INDECI", "ir('vivo')"),
+      tarjetaKpi("Distritos en riesgo muy alto por lluvia", O.escenario?.vigente ? entero(R.MA?.distritos || 0) : "0", O.escenario?.vigente ? `${entero(R.MA?.poblacion || 0)} personas · CENEPRED` : "Sin aviso vigente · CENEPRED", "abrirCapa('esc')"),
+      tarjetaKpi("Ríos sobre umbral", entero((O.phisis?.sobre_umbral || 0) + (O.ana_rios?.en_alerta || 0) + (O.ana_rios?.en_emergencia || 0)), "SENAMHI y ANA", "ir('vivo')"),
+      tarjetaKpi("Distritos en estado de emergencia", entero(Object.keys(O.emergencia?.distritos || {}).length), "PCM", "abrirCapa('dee')"),
+    ].join("");
+  }
+
   // Noticias y comunicados
   const conFoto = (D.noticias?.noticias || []).filter(n => n.ambito === "nacional");
   $("#portada-noticias").innerHTML = [...conFoto.filter(n => n.imagen), ...conFoto.filter(n => !n.imagen)].slice(0, 4).map(n => tarjetaNoticia(n, false)).join("");
@@ -316,7 +328,15 @@ function pintarFuentes(){
     ["Lluvia y temperatura a 16 días", "Open-Meteo (ECMWF, GFS, ICON)", "Modelo", "Diario"], ["Caudales a 30 días", "GloFAS (Copernicus)", "Modelo", "Diario"],
     ["Tendencia estacional, 6 meses", "ECMWF SEAS5", "Modelo", "Mensual"], ["Altura de ola, 7 días", "Open-Meteo Marine", "Modelo", "Diario"],
     ["Clima histórico y sequía (SPI)", "NASA POWER (MERRA-2)", "Reanálisis, ~50 km", "Mensual"],
-    ["Presas, embalses, lagunas, glaciares", "OpenStreetMap", "Colaborativo", "Mensual"], ["Límites", "CENEPRED, INEI", "Oficial", "Fijo"], ["Noticias", "Google Noticias", "Prensa", "Diario"],
+    ["Emergencias registradas", "INDECI, COEN", "Oficial", "Cada hora"], ["Escenario de riesgo por aviso de lluvia", "CENEPRED", "Oficial", "Por aviso"],
+    ["Activación de quebradas, avisos hidrológicos, umbrales de ríos", "SENAMHI", "Oficial", "Cada hora"], ["Pronóstico estacional por sector", "SENAMHI", "Oficial", "Mensual"],
+    ["Caudales con umbrales, embalses, puntos críticos", "ANA", "Oficial", "Diario"], ["Estado de emergencia, preparación de distritos", "PCM, Geoperú", "Oficial", "Por decreto"],
+    ["Cortes de agua", "SUNASS", "Oficial", "Diario"], ["Incendios forestales", "SERFOR", "Oficial", "Diario"], ["Lagunas glaciares", "INAIGEM", "Oficial", "Cada hora"],
+    ["Índices E y C, probabilidad de El Niño fuerte", "IGP", "Oficial", "Mensual"], ["Mar diario en regiones Niño", "Marina, DHN", "Oficial", "Diario"],
+    ["Pronóstico ENSO, probabilidades", "NOAA CPC", "Internacional", "Mensual"], ["Índices Niño 1+2 y 3", "JMA (Japón)", "Internacional", "Mensual"],
+    ["Plumas de modelos", "IRI, Copernicus C3S, ECMWF, NMME", "Internacional", "Mensual"], ["MJO y semanas 2 y 3", "NOAA PSL y CPC", "Internacional", "Diario y semanal"],
+    ["Boletines regionales y mundiales", "CIIFEN, OMM", "Internacional", "Mensual"],
+    ["Presas, embalses, lagunas, glaciares", "OpenStreetMap", "Colaborativo", "Mensual"], ["Estaciones", "SENAMHI", "Oficial", "Fijo"], ["Límites", "CENEPRED, INEI", "Oficial", "Fijo"], ["Noticias", "Google Noticias", "Prensa", "Diario"],
   ];
   $("#tabla-fuentes").innerHTML = `<tr><th>Dato</th><th>Fuente</th><th>Tipo</th><th>Frecuencia</th></tr>` + filas.map(f => `<tr>${f.map(x => `<td>${esc(x)}</td>`).join("")}</tr>`).join("");
 }

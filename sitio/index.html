@@ -32,7 +32,9 @@
   </a>
   <nav>
     <button id="nav-home"      aria-current="true"  onclick="ir('home')">Hoy</button>
+    <button id="nav-vivo"      aria-current="false" onclick="ir('vivo')">El Estado hoy</button>
     <button id="nav-mapa"      aria-current="false" onclick="ir('mapa')">Mapa</button>
+    <button id="nav-pronosticos" aria-current="false" onclick="ir('pronosticos')">Pronósticos</button>
     <button id="nav-monitoreo" aria-current="false" onclick="ir('monitoreo')">Monitoreo</button>
     <button id="nav-comparar"  aria-current="false" onclick="ir('comparar')">Comparar</button>
     <button id="nav-boletin"   aria-current="false" onclick="ir('boletin')">Boletín</button>
@@ -135,6 +137,13 @@
         <p class="sub">Provincias, 7 días. NASA FIRMS. Un foco no siempre es un incendio forestal.</p>
         <div class="rank" id="rank-focos"></div>
       </div>
+    </section>
+
+    <section class="bloque">
+      <div class="thermo"></div>
+      <h2>Lo que reporta el Estado hoy</h2>
+      <p class="sub">INDECI, CENEPRED, SENAMHI, ANA, SUNASS y otros. <button class="enlace" onclick="ir('vivo')">Ver todo</button></p>
+      <dl class="idx idx4" id="portada-estado"></dl>
     </section>
 
     <section class="bloque cols">
@@ -343,6 +352,39 @@
 </main>
 
 <!-- ══ NOTICIAS Y GUARDADOS ════════════════════════════════════════════ -->
+<main id="v-vivo" class="view">
+  <div class="wrap mon">
+    <div class="thermo"></div>
+    <h1 class="h1-vista">El Estado hoy</h1>
+    <p class="sub">Lo que publican en este momento INDECI, CENEPRED, SENAMHI, ANA, SUNASS, SERFOR, la PCM y el INAIGEM, en un solo lugar. Cada cifra es de su institución, con su fecha y su enlace.</p>
+    <dl class="idx idx4" id="vivo-kpis"></dl>
+    <section class="panel-g"><h2>Riesgo por la lluvia de estos días</h2><div id="vivo-esc"></div></section>
+    <section class="panel-g"><h2>Emergencias registradas</h2><p class="sub">Últimos 7 días, por tipo de peligro.</p><div id="vivo-coen"></div></section>
+    <section class="panel-g"><h2>Ríos y embalses</h2><div id="vivo-rios"></div></section>
+    <section class="panel-g"><h2>Prevención y estado de emergencia</h2><div id="vivo-prev"></div></section>
+    <section class="panel-g"><h2>Agua, incendios y lagunas</h2><div id="vivo-agua"></div></section>
+    <section class="panel-g"><h2>Últimos reportes oficiales</h2><div id="vivo-docs"></div></section>
+  </div>
+</main>
+
+<main id="v-pronosticos" class="view">
+  <div class="wrap mon">
+    <div class="thermo"></div>
+    <h1 class="h1-vista">Pronósticos</h1>
+    <p class="sub">Qué esperan los centros del Perú y del mundo para los próximos meses. ENSO Perú no pronostica: reúne lo que cada centro publica, con su fecha. Para decisiones en el Perú manda el ENFEN.</p>
+    <section class="panel-g"><h2>Lo que dice cada centro</h2><div class="tabla-scroll"><table class="tabla tabla-pron" id="pron-tabla"></table></div></section>
+    <section class="panel-g"><h2>Lluvia de los próximos meses, por sector (SENAMHI)</h2><div id="pron-senamhi"></div></section>
+    <section class="panel-g"><h2>Probabilidad de El Niño en el Pacífico central (NOAA)</h2><div id="pron-cpc"></div></section>
+    <div class="cols-2">
+      <section class="panel-g"><h2>Índices E y C (IGP)</h2><p class="sub">E: calentamiento del Pacífico oriental, frente al Perú. C: del Pacífico central. Mensual, ERSST.</p><svg id="g-ec" viewBox="0 0 1200 300" preserveAspectRatio="none"></svg><div class="leyenda" id="g-ec-ley"></div></section>
+      <section class="panel-g"><h2>Mar diario, según la Marina</h2><p class="sub">Anomalía de temperatura del mar, últimos 60 días. DHN con datos OSTIA.</p><svg id="g-dhn" viewBox="0 0 1200 300" preserveAspectRatio="none"></svg><div class="leyenda" id="g-dhn-ley"></div></section>
+    </div>
+    <section class="panel-g"><h2>Las próximas semanas</h2><div id="pron-sub"></div></section>
+    <section class="panel-g"><h2>Gráficos de los centros</h2><p class="sub">Tal como los publica cada centro, en inglés. Toca uno para verlo grande.</p><div class="pron-galeria" id="pron-galeria"></div></section>
+    <section class="panel-g"><h2>Boletines</h2><div id="pron-docs"></div></section>
+  </div>
+</main>
+
 <main id="v-noticias" class="view">
   <div class="wrap mon">
     <div class="thermo"></div>
@@ -391,6 +433,7 @@
 <script src="assets/app.js"></script>
 <script src="assets/vistas.js"></script>
 <script src="assets/ficha_lugar.js"></script>
+<script src="assets/vivo.js"></script>
 <script src="assets/mapa.js"></script>
 </body>
 </html>

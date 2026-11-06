@@ -88,7 +88,7 @@ const COLOR_MAGNITUD = { "Débil": "#E9C46A", "Moderado": "#E2913C", "Fuerte": "
 /* ════════════════════════════════════════════════════════════════════════
    NAVEGACIÓN
    ════════════════════════════════════════════════════════════════════════ */
-const VISTAS = ["home", "mapa", "monitoreo", "comparar", "boletin", "noticias", "about"];
+const VISTAS = ["home", "vivo", "mapa", "pronosticos", "monitoreo", "comparar", "boletin", "noticias", "about"];
 function ir(v){
   // Enlaces compartibles: …/#mapa y …/#pacifico (el mapa abre sobre el Pacífico)
   if (v === "pacifico"){ window.vistaInicialMapa = "pacifico"; v = "mapa"; }
@@ -101,6 +101,8 @@ function ir(v){
   if (v === "mapa") requestAnimationFrame(() => window.iniciarMapa?.());
   if (v === "monitoreo") pintarMonitoreo();
   if (v === "comparar") pintarComparar();
+  if (v === "vivo") pintarVivo();
+  if (v === "pronosticos") pintarPronosticos();
   if (v === "boletin") iniciarBoletin();
   if (v === "noticias") pintarNoticias();
 }
@@ -499,6 +501,7 @@ const NOMBRE_FUENTE = {
   oisst: "Temperatura del mar (NOAA OISST)", oceano_atm: "SOI, vientos, calor, MEI, PDO (NOAA)", firms: "Focos de calor (NASA FIRMS)",
   openmeteo: "Lluvia y temperatura a 16 días (Open-Meteo)", rios: "Caudales (GloFAS)", estacional: "Tendencia estacional (ECMWF SEAS5)",
   oleaje: "Oleaje (Open-Meteo Marine)", clima: "Clima histórico y SPI (NASA POWER)", noticias: "Noticias",
+  peru_oficial: "Estado peruano en vivo (INDECI, CENEPRED, ANA, SUNASS...)", internacional: "Pronósticos internacionales (CPC, JMA, IRI, C3S...)",
 };
 function pintarFrescura(){
   const F = D.meta?.fuentes || {};
@@ -534,7 +537,7 @@ const recurso = ruta => window.__DATOS__?.[ruta] ?? ruta;
 
 async function iniciar(){
   try{
-    const [estado, config, regiones, serie, plantillas, meta, campo, indices, panorama, avisos, noticias, atm] = await Promise.all([
+    const [estado, config, regiones, serie, plantillas, meta, campo, indices, panorama, avisos, noticias, atm, oficial, inter] = await Promise.all([
       traer("datos/estado.json"),
       traer("datos/config.json"),
       traer("datos/regiones.json"),
@@ -547,8 +550,10 @@ async function iniciar(){
       traerOpcional("datos/senamhi/avisos.json"),
       traerOpcional("datos/noticias.json"),
       traerCsv("datos/indices/oceano_atm.csv"),
+      traerOpcional("datos/peru/oficial.json"),
+      traerOpcional("datos/pronosticos/internacional.json"),
     ]);
-    D = { estado, config, regiones, serie, plantillas, meta, campo, indices, panorama, avisos, noticias, atm };
+    D = { estado, config, regiones, serie, plantillas, meta, campo, indices, panorama, avisos, noticias, atm, oficial, inter };
   }catch(err){
     document.body.innerHTML =
       `<div style="padding:60px 24px;max-width:600px;margin:0 auto;font-family:system-ui">

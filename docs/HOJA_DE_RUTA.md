@@ -252,6 +252,12 @@ Detalle en `decisiones.md`.
 3. Después de editar: **Commit** y **Push origin**. La página se publica sola en ~2 minutos.
 4. Cada decisión técnica va a `docs/decisiones.md` con fecha y motivo.
 
+## Estado al 6 de noviembre de 2026
+
+Nuevas vistas «El Estado hoy» (INDECI, CENEPRED, SENAMHI, ANA, SUNASS, SERFOR, PCM, INAIGEM) y «Pronósticos» (ENFEN, SENAMHI, IGP, DHN, CPC, JMA, IRI, C3S, NMME, CIIFEN, OMM). Capas del mapa: riesgo por la lluvia de hoy, quebradas, estado de emergencia, preparación, emergencias COEN y puntos críticos ANA.
+
+Pendiente: el cron horario de GitHub se cumple cada 6 a 8 horas; disparador externo o robot local. Pronóstico por ciudades del SENAMHI; datos de estaciones dentro de la ficha; sala de dengue (MINSA, solo PDF).
+
 ## Estado al 4 de noviembre de 2026
 
 Hecho: portada de situación, Comparar, Boletín, Noticias, modo oscuro, guardados en el navegador, cursor en los gráficos. Datos nuevos: comunicados ENFEN por tema, avisos SENAMHI, SOI, OLR, vientos, calor, MEI, PDO, verificación contra el CPC, 30 ríos (GloFAS), tendencia estacional (SEAS5), oleaje, clima histórico y SPI (NASA POWER), riesgo CENEPRED por distrito, antecedentes.
