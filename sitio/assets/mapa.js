@@ -14,7 +14,7 @@
 
 const M = {                    // estado del mapa
   mapa: null, listo: false, capa: "tsm", nivel: "region", tema: null, mesEst: 0,
-  lugares: { estacion: false, cumbre: false, presa: false, embalse: true, laguna: false, laguna_glaciar: false, glaciar: true }, incendios: false, rios: true,
+  lugares: { estacion: false, cumbre: false, presa: false, embalse: true, laguna: false, laguna_glaciar: false, glaciar: true }, incendios: false, rios: true, riosAna: true,
   turno: 0,      // solo la última orden de pintar puede escribir colores
   sel: null, datos: {},
 };
@@ -393,7 +393,7 @@ function setTema(k){
   M.incendios = !!t.focos;
   M.rios = t.rios !== false;
   M.emergencias = !!t.emergencias; M.pcs = !!t.pcs;
-  M.riosAna = !!t.riosAna || k === "lluvias"; M.cuencas = !!t.cuencas; aplicarRiosANA();
+  M.riosAna = t.riosAna !== false && k !== "pacifico"; M.cuencas = !!t.cuencas; aplicarRiosANA();
   M.mapa.fitBounds(t.caja, { padding: 30, duration: 1200 });
   $("#mapa-aviso").textContent = t.texto;
   aplicarLugares(); return aplicarCapa();
@@ -412,7 +412,7 @@ function pintarControles(){
   $("#niveles").innerHTML = NIVELES.map(([k, n]) =>
     `<button aria-pressed="${M.nivel === k}" ${niv.includes(k) ? "" : "disabled"} onclick="setNivel('${k}')">${n}</button>`).join("");
   $("#lugares-ctl").innerHTML =
-    `<button class="layer" aria-pressed="${M.rios}" onclick="toggleRios()"><span class="foco rio"></span>Ríos vigilados</button>`
+    `<button class="layer" aria-pressed="${M.rios}" onclick="toggleRios()"><span class="foco rio"></span>Pronóstico de caudal <small class="cuenta">GloFAS</small></button>`
     + `<button class="layer" aria-pressed="${M.incendios}" onclick="toggleIncendios()"><span class="foco"></span>Focos de calor</button>`
     + `<button class="layer" aria-pressed="${!!M.riosAna}" onclick="toggleRiosANA()"><span class="foco rioana"></span>Ríos y quebradas <small class="cuenta">ANA</small></button>`
     + `<button class="layer" aria-pressed="${!!M.cuencas}" onclick="toggleCuencas()"><span class="foco cuenca"></span>Cuencas <small class="cuenta">ANA</small></button>`

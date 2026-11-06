@@ -12,7 +12,7 @@
 
 const ESTADO_RIO = {
   emergencia: ["Emergencia", "#B4101C", "muyalto"], alerta: ["Alerta", "#E2341D", "alto"], vigilancia: ["Vigilancia", "#F0A23C", "medio"],
-  normal: ["Normal", "#5FA8D3", "bajo"], sin_datos: ["Sin estación", "#7C9BA6", "sin"],
+  normal: ["Normal", "#2F8FE0", "bajo"], sin_datos: ["Sin estación", "#7FB8D6", "sin"],
 };
 const H = { rios: null, fichas: null, mon: null, cuencas: null, hist: null };
 
@@ -49,6 +49,7 @@ async function agregarRiosANA(mapa, antes){
   await asegurarRiosANA();
   if (!H.rios) return;
   const colores = ["match", ["get", "rio"]];
+  const seguidos = Object.keys(H.mon.rios || {}).filter(k => H.mon.rios[k].estado !== "sin_datos");
   for (const [rid, r] of Object.entries(H.mon.rios || {})) colores.push(rid, ESTADO_RIO[r.estado][1]);
   colores.push(ESTADO_RIO.sin_datos[1]);
   if (H.cuencas){
@@ -60,12 +61,21 @@ async function agregarRiosANA(mapa, antes){
       "text-font": ["Noto Sans Regular"], "text-size": 11 }, paint: { "text-color": "#E8D9A0", "text-halo-color": "#16222A", "text-halo-width": 1.2 } });
   }
   mapa.addSource("rios-ana", { type: "geojson", data: H.rios });
+  // Borde oscuro bajo cada río: así se distingue sobre cualquier capa de colores (lluvia, riesgo, mar)
+  const ancho = (base, seg) => ["interpolate", ["linear"], ["zoom"],
+    4, ["case", ["in", ["get", "rio"], ["literal", seguidos]], 2 + seg, ["match", ["get", "tipo"], "río", 1.1 + base, 0.6 + base]],
+    9, ["case", ["in", ["get", "rio"], ["literal", seguidos]], 4.5 + seg, ["match", ["get", "tipo"], "río", 3 + base, 1.6 + base]]];
+  mapa.addLayer({ id: "rios-ana-borde", type: "line", source: "rios-ana", layout: { visibility: "none", "line-cap": "round", "line-join": "round" },
+    paint: { "line-color": "#0B1217", "line-opacity": 0.75, "line-width": ancho(1.6, 2.2) } }, antes);
   mapa.addLayer({ id: "rios-ana", type: "line", source: "rios-ana", layout: { visibility: "none", "line-cap": "round", "line-join": "round" },
     paint: { "line-color": colores,
-      "line-width": ["interpolate", ["linear"], ["zoom"], 4, ["match", ["get", "tipo"], "río", 1.1, 0.5], 9, ["match", ["get", "tipo"], "río", 3.2, 1.6]] } }, antes);
+      "line-opacity": ["case", ["in", ["get", "rio"], ["literal", seguidos]], 1, 0.8],
+      "line-width": ["interpolate", ["linear"], ["zoom"],
+        4, ["case", ["in", ["get", "rio"], ["literal", seguidos]], 2, ["match", ["get", "tipo"], "río", 1.1, 0.6]],
+        9, ["case", ["in", ["get", "rio"], ["literal", seguidos]], 4.5, ["match", ["get", "tipo"], "río", 3, 1.6]]] } }, antes);
   mapa.addLayer({ id: "rios-ana-sel", type: "line", source: "rios-ana", filter: ["==", ["get", "rio"], ""],
     paint: { "line-color": "#FFFFFF", "line-width": ["interpolate", ["linear"], ["zoom"], 4, 3, 9, 6], "line-opacity": 0.85 } }, "rios-ana");
-  mapa.addLayer({ id: "rios-ana-txt", type: "symbol", source: "rios-ana", minzoom: 7, layout: { visibility: "none", "symbol-placement": "line",
+  mapa.addLayer({ id: "rios-ana-txt", type: "symbol", source: "rios-ana", minzoom: 6, filter: ["==", ["get", "tipo"], "río"], layout: { visibility: "none", "symbol-placement": "line",
     "text-field": ["get", "nombre"], "text-font": ["Noto Sans Regular"], "text-size": 11 },
     paint: { "text-color": "#CFE6F2", "text-halo-color": "#16222A", "text-halo-width": 1.4 } });
   mapa.on("mousemove", "rios-ana", e => {
@@ -80,9 +90,19 @@ async function agregarRiosANA(mapa, antes){
 function aplicarRiosANA(){
   if (!M.mapa?.getLayer("rios-ana")) return;
   const v = k => k ? "visible" : "none";
-  for (const l of ["rios-ana", "rios-ana-txt"]) M.mapa.setLayoutProperty(l, "visibility", v(M.riosAna));
+  for (const l of ["rios-ana-borde", "rios-ana", "rios-ana-txt"]) M.mapa.setLayoutProperty(l, "visibility", v(M.riosAna));
   for (const l of ["cuencas-fill", "cuencas-borde", "cuencas-txt"]) if (M.mapa.getLayer(l)) M.mapa.setLayoutProperty(l, "visibility", v(M.cuencas));
+  leyendaRiosANA();
 }
+// Leyenda de los ríos, debajo de la de la capa activa
+function leyendaRiosANA(){
+  const el = $("#leg-rios"); if (!el) return;
+  if (!M.riosAna){ el.innerHTML = ""; return; }
+  el.innerHTML = `<h4>Ríos y quebradas (ANA)</h4><div class="leg-rios">${["emergencia", "alerta", "vigilancia", "normal", "sin_datos"].map(k =>
+    `<span><i style="background:${ESTADO_RIO[k][1]}"></i>${ESTADO_RIO[k][0]}</span>`).join("")}</div>
+    <p class="leg-src">Estado según sus estaciones (ANA, SENAMHI) y el pronóstico GloFAS. Toca un río para su ficha. <button class="enlace" onclick="ir('rios')">Seguimiento</button></p>`;
+}
+
 function toggleRiosANA(){ M.riosAna = !M.riosAna; aplicarRiosANA(); pintarControles(); }
 function toggleCuencas(){ M.cuencas = !M.cuencas; aplicarRiosANA(); pintarControles(); }
 
