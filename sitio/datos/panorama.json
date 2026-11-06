@@ -1,11 +1,11 @@
 {
   "_": "Generado por pipeline/productos/panorama.py. No editar a mano.",
-  "generado": "2026-11-05T22:46:46Z",
-  "fecha": "2026-11-05",
+  "generado": "2026-11-06T03:30:20Z",
+  "fecha": "2026-11-06",
   "lectura": [
     "El ENFEN mantiene la Alerta de El Niño Costero (N° 19-2026, 30 de octubre de 2026). El Niño costero continuaría hasta fines de otoño de 2027.",
     "Mar: +5,6 °C en Niño 1+2 y +3,6 °C en Niño 3.4 (media de 7 días).",
-    "SENAMHI tiene 5 avisos vigentes o por empezar, 2 en nivel rojo.",
+    "SENAMHI tiene 4 avisos vigentes o por empezar, 2 en nivel rojo.",
     "Lluvia próxima: la mayor en 16 días es Morropon (Piura), con 258 mm.",
     "Ríos: 9 con crecida inusual pronosticada en 15 días, entre ellos Tumbes, Zaña, Piura, La Leche.",
     "Focos de calor: 784 en 7 días; el mayor número en Tambopata (Madre de Dios), 86."
@@ -14,7 +14,7 @@
     "01": {
       "nombre": "Amazonas",
       "zona": "Selva norte",
-      "aviso": "NARANJA",
+      "aviso": null,
       "mar": null,
       "n_mar": null,
       "focos": 15,
@@ -249,7 +249,7 @@
     "16": {
       "nombre": "Loreto",
       "zona": "Selva norte",
-      "aviso": "NARANJA",
+      "aviso": null,
       "mar": null,
       "n_mar": null,
       "focos": 58,
@@ -264,7 +264,7 @@
     "17": {
       "nombre": "Madre de Dios",
       "zona": "Selva sur",
-      "aviso": "NARANJA",
+      "aviso": null,
       "mar": null,
       "n_mar": null,
       "focos": 204,
@@ -342,7 +342,7 @@
     "22": {
       "nombre": "San Martín",
       "zona": "Selva norte",
-      "aviso": "NARANJA",
+      "aviso": null,
       "mar": null,
       "n_mar": null,
       "focos": 29,
@@ -389,7 +389,7 @@
     "25": {
       "nombre": "Ucayali",
       "zona": "Selva sur",
-      "aviso": "NARANJA",
+      "aviso": null,
       "mar": null,
       "n_mar": null,
       "focos": 107,
@@ -1891,7 +1891,7 @@
     }
   ],
   "totales": {
-    "avisos": 5,
+    "avisos": 4,
     "rojos": 2,
     "rios_altos": 9,
     "focos": 784,
