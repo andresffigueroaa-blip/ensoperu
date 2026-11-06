@@ -2,32 +2,11 @@
   "_": "Generado por pipeline/fuentes/senamhi.py. Avisos oficiales vigentes o por empezar.",
   "fuente": "SENAMHI, avisos meteorológicos",
   "url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico",
-  "leido": "2026-11-05T00:57:29Z",
+  "leido": "2026-11-06T15:24:03Z",
   "avisos": [
     {
-      "numero": 451,
-      "situacion": "vigente",
-      "titulo": "PRECIPITACIONES EN LA COSTA NORTE Y SIERRA",
-      "emitido": "2026-11-02",
-      "inicio": "2026-11-04",
-      "fin": "2026-11-06",
-      "nivel": "ROJO",
-      "enlace": "https://www.senamhi.gob.pe/?p=aviso-meteorologico-vigente&a=2026&b=29348&c=00&d=SENA",
-      "texto": "El SENAMHI informa que entre el miércoles 4 al viernes 6 de noviembre, continuarán las precipitaciones (lluvias) de ligera a fuerte intensidad en la sierra. Se prevé la ocurrencia de granizo en zonas ubicadas por encima de los 2800 m s. n. m. de la sierra norte. Estas precipitaciones estarán acompañadas de descargas eléctricas y ráfagas de viento cercanas a los 40 km/h. Asimismo, en la costa norte se esperan lluvias de fuerte a extrema intensidad, principalmente en Tumbes, y de moderada a fuerte intensidad en la costa interior de Piura. El miércoles 4 de noviembre se esperan acumulados de lluvia entre 5 mm/día y 55 mm/día en la costa norte, entre 8 mm/día y 29 mm/día en la sierra norte, entre 6 mm/día y 17 mm/día en la sierra centro y valores próximos a 11 mm/día en la sierra sur. El jueves 5 de noviembre se esperan acumulados de lluvia entre 5 mm/día y 55 mm/día en la costa norte, entre",
-      "zonas": [
-        "Costa norte",
-        "Sierra centro",
-        "Sierra norte",
-        "Sierra sur"
-      ],
-      "regiones": [
-        "Tumbes",
-        "Piura"
-      ]
-    },
-    {
       "numero": 453,
-      "situacion": "emitido",
+      "situacion": "vigente",
       "titulo": "INCREMENTO DE TEMPERATURA DIURNA EN LA COSTA Y SIERRA (EXTENSION DEL AVISO 447)",
       "emitido": "2026-11-03",
       "inicio": "2026-11-05",
@@ -46,39 +25,30 @@
       "regiones": []
     },
     {
-      "numero": 452,
+      "numero": 456,
       "situacion": "vigente",
-      "titulo": "INCREMENTO DE TEMPERATURA DIURNA EN LA SELVA",
-      "emitido": "2026-11-02",
-      "inicio": "2026-11-04",
-      "fin": "2026-11-05",
-      "nivel": "NARANJA",
-      "enlace": "https://www.senamhi.gob.pe/?p=aviso-meteorologico-vigente&a=2026&b=29349&c=00&d=SENA",
-      "texto": "El SENAMHI informa que, del miércoles 4 al jueves 5 de noviembre, continuará el incremento de la temperatura diurna, de moderada a fuerte intensidad, en la selva. Asimismo, se espera escasa cobertura nubosa durante el día, lo que favorecerá el incremento de la radiación ultravioleta (UV). Además, se prevén ráfagas de viento con velocidades cercanas a los 45 km/h, principalmente durante las tardes. El miércoles 4 de noviembre se prevén temperaturas máximas entre 32 °C y 38 °C en la selva norte, entre 22 °C y 38 °C en la selva centro, y valores entre 32 °C y 37 °C en la selva sur. El jueves 5 de noviembre se prevén temperaturas máximas entre 31 °C y 37 °C en la selva norte, entre 21 °C y 37 °C en la selva centro, y valores entre 31 °C y 36 °C en la selva sur.",
-      "zonas": [
-        "Selva norte",
-        "Selva sur"
-      ],
-      "regiones": []
-    },
-    {
-      "numero": 455,
-      "situacion": "emitido",
-      "titulo": "PRECIPITACIONES EN LA SIERRA SUR",
-      "emitido": "2026-11-04",
+      "titulo": "PRECIPITACIONES EN LA COSTA Y SIERRA",
+      "emitido": "2026-11-05",
       "inicio": "2026-11-06",
       "fin": "2026-11-08",
-      "nivel": "NARANJA",
-      "enlace": "https://www.senamhi.gob.pe/?p=aviso-meteorologico-vigente&a=2026&b=29352&c=00&d=SENA",
-      "texto": "El SENAMHI informa que, del viernes 6 al domingo 8 de noviembre, se presentarán precipitaciones (nieve, granizo, aguanieve y lluvia), de moderada a fuerte intensidad, en la sierra sur. Se espera la ocurrencia de granizo en zonas por encima de los 2800 m s. n. m. y nevadas en localidades sobre los 3800 m s. n. m. Estas precipitaciones estarán acompañadas de descargas eléctricas y ráfagas de viento con velocidades cercanas a los 50 km/h. El viernes 6 de noviembre se esperan acumulados de lluvia entre 8 mm/día y 17 mm/día en la sierra sur . El sabado 7 de noviembre se esperan acumulados de lluvia entre 7 mm/día y 16 mm/día en la sierra sur . El domingo 8 de noviembre se esperan acumulados de lluvia entre 7 mm/día y 17 mm/día en la sierra sur .",
+      "nivel": "ROJO",
+      "enlace": "https://www.senamhi.gob.pe/?p=aviso-meteorologico-vigente&a=2026&b=29353&c=00&d=SENA",
+      "texto": "El SENAMHI informa que entre el viernes 6 al domingo 8 de noviembre, continuarán las precipitaciones (lluvias) de ligera a fuerte intensidad en la sierra. Se prevé la ocurrencia de granizo en zonas ubicadas por encima de los 2800 m s. n. m. de la sierra norte. Estas precipitaciones estarán acompañadas de descargas eléctricas y ráfagas de viento cercanas a los 40 km/h. Asimismo, en la costa norte se esperan lluvias de fuerte a extrema intensidad, principalmente en Tumbes, y de moderada a fuerte intensidad en la costa interior de Piura. El viernes 6 de noviembre, se prevén acumulados de lluvia próximos a 100 mm/día en la costa norte, alrededor de 1 mm/día en Ica, entre 8 y 30 mm/día en la sierra norte, entre 6 y 17 mm/día en la sierra centro y valores próximos a 17 mm/día en la sierra sur. El sábado 7 de noviembre, se prevén acumulados de lluvia alrededor de 100 mm/día en la costa norte, e",
       "zonas": [
+        "Costa norte",
+        "Sierra centro",
+        "Sierra norte",
         "Sierra sur"
       ],
-      "regiones": []
+      "regiones": [
+        "Tumbes",
+        "Piura",
+        "Ica"
+      ]
     },
     {
       "numero": 454,
-      "situacion": "emitido",
+      "situacion": "vigente",
       "titulo": "PRECIPITACIONES EN LA COSTA CENTRO Y SUR (EXTENSIÓN DEL AVISO N 450)",
       "emitido": "2026-11-04",
       "inicio": "2026-11-05",
@@ -96,6 +66,22 @@
         "Moquegua",
         "Tacna"
       ]
+    },
+    {
+      "numero": 457,
+      "situacion": "emitido",
+      "titulo": "LLUVIA EN LA SELVA - DÉCIMO QUINTO FRIAJE",
+      "emitido": "2026-11-05",
+      "inicio": "2026-11-08",
+      "fin": "2026-11-09",
+      "nivel": "AMARILLO",
+      "enlace": "https://www.senamhi.gob.pe/?p=aviso-meteorologico-vigente&a=2026&b=29354&c=00&d=SENA",
+      "texto": "El SENAMHI informa que, desde el domingo 8 hasta el lunes 9 de noviembre, se esperan lluvias de ligera a moderada intensidad en la selva, acompañadas de descargas eléctricas y ráfagas de viento con velocidades cercanas a los 45 km/h. El domingo 8 de noviembre, se prevén acumulados de lluvia cercanos a 55 mm/día en la selva norte, próximos a 50 mm/día en la selva centro y alrededor de 45 mm/día en la selva sur. El lunes 9 de noviembre, se prevén acumulados de lluvia cercanos a 55 mm/día en la selva norte y valores próximos a 65 mm/día en la selva centro.",
+      "zonas": [
+        "Selva norte",
+        "Selva sur"
+      ],
+      "regiones": []
     }
   ]
 }

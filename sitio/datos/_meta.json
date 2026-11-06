@@ -53,8 +53,8 @@
     },
     "estado": {
       "estado": "ok",
-      "corrida": "2026-11-06T12:25:43Z",
-      "actualizado": "2026-11-06T12:25:43Z",
+      "corrida": "2026-11-06T15:25:25Z",
+      "actualizado": "2026-11-06T15:25:25Z",
       "comunicado": "N° 19-2026",
       "ultimo_dato": "2026-10-30",
       "aviso": null
@@ -115,23 +115,21 @@
       "fuente": "NASA FIRMS, VIIRS NOAA-20"
     },
     "senamhi": {
-      "estado": "sin_cambios",
-      "corrida": "2026-11-06T12:11:57Z",
-      "actualizado": "2026-11-06T12:11:57Z",
-      "ultimo_dato": "2026-11-04",
-      "avisos": 6,
-      "rojos": 3,
-      "fuente": "SENAMHI, avisos meteorológicos",
-      "aviso": "SENAMHI sin respuesta desde este equipo"
+      "estado": "ok",
+      "corrida": "2026-11-06T15:24:03Z",
+      "actualizado": "2026-11-06T15:24:03Z",
+      "ultimo_dato": "2026-11-06",
+      "avisos": 4,
+      "rojos": 2,
+      "fuente": "SENAMHI, avisos meteorológicos"
     },
     "enfen": {
       "estado": "sin_cambios",
-      "corrida": "2026-11-06T12:10:57Z",
-      "actualizado": "2026-11-06T12:10:57Z",
+      "corrida": "2026-11-06T15:24:11Z",
+      "actualizado": "2026-11-06T15:24:11Z",
       "ultimo_dato": "2026-10-30",
       "comunicado": "N° 19-2026",
-      "fuente": "ENFEN, comunicados oficiales",
-      "aviso": "portal del ENFEN sin respuesta desde este equipo"
+      "fuente": "ENFEN, comunicados oficiales"
     },
     "oleaje": {
       "estado": "ok",
@@ -188,16 +186,16 @@
     },
     "panorama": {
       "estado": "ok",
-      "corrida": "2026-11-06T12:25:44Z",
-      "actualizado": "2026-11-06T12:25:44Z",
+      "corrida": "2026-11-06T15:25:25Z",
+      "actualizado": "2026-11-06T15:25:25Z",
       "ultimo_dato": "2026-11-06"
     },
     "peru_oficial": {
       "estado": "ok",
-      "corrida": "2026-11-06T12:25:26Z",
-      "actualizado": "2026-11-06T12:25:26Z",
+      "corrida": "2026-11-06T15:25:22Z",
+      "actualizado": "2026-11-06T15:25:22Z",
       "ultimo_dato": "2026-11-06",
-      "aviso": "fallaron: fenomeno, ana_rios, ana_embalses, ana_pc, emergencia, phisis, prono, enfen_docs"
+      "aviso": null
     },
     "internacional": {
       "estado": "ok",
@@ -207,5 +205,5 @@
       "aviso": null
     }
   },
-  "generado": "2026-11-06T12:25:44Z"
+  "generado": "2026-11-06T15:25:25Z"
 }
