@@ -1,6 +1,6 @@
 {
   "_": "Generado por pipeline/fuentes/peru_oficial.py. Datos oficiales tal como se publican.",
-  "actualizado": "2026-11-07T17:25:21Z",
+  "actualizado": "2026-11-07T18:05:57Z",
   "fallas": [],
   "fenomeno": {
     "fecha": "30 de octubre del 2026",
@@ -12,9 +12,9 @@
   },
   "coen": {
     "dias": 7,
-    "total": 88,
+    "total": 87,
     "por_peligro": {
-      "Incendios forestales": 26,
+      "Incendios forestales": 25,
       "Lluvias intensas": 23,
       "Incendios urbanos": 14,
       "Vientos fuertes": 8,
@@ -39,7 +39,7 @@
       "07": 1,
       "01": 4,
       "21": 6,
-      "05": 5,
+      "05": 4,
       "22": 2,
       "24": 4,
       "20": 2,
@@ -314,20 +314,20 @@
       },
       {
         "fecha": "2026-11-04 15:30",
-        "peligro": "Granizada",
-        "distrito": "081206",
-        "lugar": "Cusipata, Quispicanchi, Cusco",
-        "hechos": "Se registró una granizada que ocasionó daños materiales (medios de vida), en el sector y distrito de Cusipata, provincia de Quispicanchi.",
-        "pdf": "https://coen.indeci.gob.pe/api/v2/mer/files/view?key=mer/2026/10/1793999603120.pdf",
-        "sinpad": null
-      },
-      {
-        "fecha": "2026-11-04 15:30",
         "peligro": "Incendios forestales",
         "distrito": "030104",
         "lugar": "Curahuasi, Abancay, Apurimac",
         "hechos": "Se registró un incendio forestal que ocasionó daños a sectores diversos (cobertura natural), en el sector Ccoripampa, distrito de Curahuasi, provincia de Abancay.",
         "pdf": "https://coen.indeci.gob.pe/api/v2/mer/files/view?key=mer/2026/10/1794007894462.pdf",
+        "sinpad": null
+      },
+      {
+        "fecha": "2026-11-04 15:30",
+        "peligro": "Granizada",
+        "distrito": "081206",
+        "lugar": "Cusipata, Quispicanchi, Cusco",
+        "hechos": "Se registró una granizada que ocasionó daños materiales (medios de vida), en el sector y distrito de Cusipata, provincia de Quispicanchi.",
+        "pdf": "https://coen.indeci.gob.pe/api/v2/mer/files/view?key=mer/2026/10/1793999603120.pdf",
         "sinpad": null
       },
       {
@@ -359,20 +359,20 @@
       },
       {
         "fecha": "2026-11-04 13:20",
-        "peligro": "Vientos fuertes",
-        "distrito": "060106",
-        "lugar": "Jesus, Cajamarca, Cajamarca",
-        "hechos": "Se registraron vientos fuertes que causaron daños materiales (vivienda) en el sector San Isidro, distrito de Jesús, provincia de Cajamarca",
-        "pdf": "https://coen.indeci.gob.pe/api/v2/mer/files/view?key=mer/2026/10/1793923118140.pdf",
-        "sinpad": null
-      },
-      {
-        "fecha": "2026-11-04 13:20",
         "peligro": "Incendios urbanos",
         "distrito": "030501",
         "lugar": "Tambobamba, Cotabambas, Apurimac",
         "hechos": "Se registró un incendio urbano que ocasionó daños materiales (vivienda) en el centro poblado de Ccahuaccahua, distrito de Tambobamba, provincia de Cotabambas",
         "pdf": "https://coen.indeci.gob.pe/api/v2/mer/files/view?key=mer/2026/10/1793939735515.pdf",
+        "sinpad": null
+      },
+      {
+        "fecha": "2026-11-04 13:20",
+        "peligro": "Vientos fuertes",
+        "distrito": "060106",
+        "lugar": "Jesus, Cajamarca, Cajamarca",
+        "hechos": "Se registraron vientos fuertes que causaron daños materiales (vivienda) en el sector San Isidro, distrito de Jesús, provincia de Cajamarca",
+        "pdf": "https://coen.indeci.gob.pe/api/v2/mer/files/view?key=mer/2026/10/1793923118140.pdf",
         "sinpad": null
       },
       {
@@ -387,19 +387,19 @@
       {
         "fecha": "2026-11-04 13:00",
         "peligro": "Incendios forestales",
-        "distrito": "050405",
-        "lugar": "Luricocha, Huanta, Ayacucho",
-        "hechos": "Se registró un incendio forestal que causó daños a sectores diversos (cobertura natural) en la localidad de Maccaira, distrito de Luricocha, provincia Huanta.",
-        "pdf": "https://coen.indeci.gob.pe/api/v2/mer/files/view?key=mer/2026/10/1793919336270.pdf",
+        "distrito": "090103",
+        "lugar": "Acoria, Huancavelica, Huancavelica",
+        "hechos": "Se registró un incendio forestal que causó daños a sectores diversos (cobertura natural y producción agrícola) en la localidad de Ccocha distrito de Acoria, provincia de Huancavelica.",
+        "pdf": "https://coen.indeci.gob.pe/api/v2/mer/files/view?key=mer/2026/10/1793879349317.pdf",
         "sinpad": null
       },
       {
         "fecha": "2026-11-04 13:00",
         "peligro": "Incendios forestales",
-        "distrito": "090103",
-        "lugar": "Acoria, Huancavelica, Huancavelica",
-        "hechos": "Se registró un incendio forestal que causó daños a sectores diversos (cobertura natural y producción agrícola) en la localidad de Ccocha distrito de Acoria, provincia de Huancavelica.",
-        "pdf": "https://coen.indeci.gob.pe/api/v2/mer/files/view?key=mer/2026/10/1793879349317.pdf",
+        "distrito": "050405",
+        "lugar": "Luricocha, Huanta, Ayacucho",
+        "hechos": "Se registró un incendio forestal que causó daños a sectores diversos (cobertura natural) en la localidad de Maccaira, distrito de Luricocha, provincia Huanta.",
+        "pdf": "https://coen.indeci.gob.pe/api/v2/mer/files/view?key=mer/2026/10/1793919336270.pdf",
         "sinpad": null
       },
       {
@@ -414,7 +414,7 @@
     ],
     "sin_cruce": 1,
     "url": "https://coen.indeci.gob.pe/mer/",
-    "leido": "2026-11-07T17:25:23Z"
+    "leido": "2026-11-07T18:05:59Z"
   },
   "indeci_rss": {
     "reportes": [
@@ -490,7 +490,7 @@
       }
     ],
     "url": "https://portal.indeci.gob.pe/emergencias/",
-    "leido": "2026-11-07T17:25:24Z"
+    "leido": "2026-11-07T18:06:00Z"
   },
   "escenario": {
     "vigente": true,
@@ -1975,7 +1975,7 @@
       }
     },
     "url": "https://sigrid.cenepred.gob.pe/sigridv3/escenario-aviso",
-    "leido": "2026-11-07T17:25:26Z"
+    "leido": "2026-11-07T18:06:03Z"
   },
   "quebradas": {
     "fecha": "2026-11-07",
@@ -3883,7 +3883,7 @@
     },
     "sin_cruce": 16,
     "url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico",
-    "leido": "2026-11-07T17:25:34Z"
+    "leido": "2026-11-07T18:06:12Z"
   },
   "hidro": {
     "avisos": [
@@ -3900,18 +3900,6 @@
         "numero": 1663
       },
       {
-        "estacion": "Borja",
-        "titulo": "Descenso del nivel del río marañón - estación borja",
-        "nivel": "AMARILLO",
-        "fecha": "05-NOV-26",
-        "cuenca": "Intercuenca 49877",
-        "lugar": "Manseriche, Loreto",
-        "lat": -4.4702,
-        "lon": -77.5477,
-        "recomendacion": "Se recomienda a la población mantenerse informada sobre las condiciones hidrológicas y ser precavida al realizar el tránsito fluvial en los ríos.",
-        "numero": 1673
-      },
-      {
         "estacion": "Santa María De Nanay",
         "titulo": "Descenso del nivel del río nanay - estación santa maría de nanay",
         "nivel": "NARANJA",
@@ -3925,7 +3913,7 @@
       }
     ],
     "url": "https://www.senamhi.gob.pe/?p=aviso-hidrologico",
-    "leido": "2026-11-07T17:25:35Z"
+    "leido": "2026-11-07T18:06:13Z"
   },
   "ana_rios": {
     "estaciones": [
@@ -18175,11 +18163,11 @@
       }
     },
     "url": "https://visor.geoperu.gob.pe/",
-    "leido": "2026-11-07T17:25:36Z"
+    "leido": "2026-11-07T18:06:14Z"
   },
   "agua": {
-    "total": 63,
-    "conexiones": 398886,
+    "total": 64,
+    "conexiones": 400886,
     "cortes": [
       {
         "eps": "SEDAPAL",
@@ -18522,6 +18510,16 @@
         "distrito": "180303"
       },
       {
+        "eps": "EPS EMUSAP ABANCAY S.A.C.",
+        "lugar": "Abancay, Apurimac",
+        "conexiones": 2000,
+        "tipo": "Imprevista",
+        "motivo": "Otros",
+        "inicio": "2026-11-07",
+        "restablece": "2026-11-07",
+        "distrito": "030101"
+      },
+      {
         "eps": "SEDALIB S.A.",
         "lugar": "Florencia De Mora, La Libertad",
         "conexiones": 1996,
@@ -18770,16 +18768,6 @@
         "inicio": "2026-11-11",
         "restablece": "2026-11-11",
         "distrito": "080106"
-      },
-      {
-        "eps": "UE AGUA TUMBES",
-        "lugar": "Matapalo, Tumbes",
-        "conexiones": 146,
-        "tipo": "Imprevista",
-        "motivo": "Otros",
-        "inicio": "2026-11-06",
-        "restablece": "2026-11-09",
-        "distrito": "240303"
       }
     ],
     "distritos": {
@@ -18919,6 +18907,10 @@
         "cortes": 1,
         "conexiones": 2188
       },
+      "030101": {
+        "cortes": 1,
+        "conexiones": 2000
+      },
       "130103": {
         "cortes": 1,
         "conexiones": 1996
@@ -19037,7 +19029,7 @@
       }
     },
     "url": "https://www.sunass.gob.pe/",
-    "leido": "2026-11-07T17:25:37Z"
+    "leido": "2026-11-07T18:06:16Z"
   },
   "incendios": {
     "total": 25,
@@ -19269,7 +19261,7 @@
       }
     ],
     "url": "https://geo.serfor.gob.pe/visor/",
-    "leido": "2026-11-07T17:25:38Z"
+    "leido": "2026-11-07T18:06:17Z"
   },
   "phisis": {
     "estaciones": [
@@ -21499,7 +21491,7 @@
       "clasificacion": 99.88
     },
     "url": "http://met.igp.gob.pe/variabclim/",
-    "leido": "2026-11-07T17:25:40Z"
+    "leido": "2026-11-07T18:06:19Z"
   },
   "dhn": {
     "generado": "2026-11-06T16:10:08Z",
@@ -22011,7 +22003,7 @@
         }
       ]
     },
-    "leido": "2026-11-07T17:25:41Z"
+    "leido": "2026-11-07T18:06:20Z"
   },
   "inaigem": {
     "estaciones": [
@@ -22049,7 +22041,7 @@
       }
     ],
     "url": "https://www.inaigem.gob.pe/",
-    "leido": "2026-11-07T17:25:41Z"
+    "leido": "2026-11-07T18:06:21Z"
   },
   "enfen_docs": {
     "docs": [
