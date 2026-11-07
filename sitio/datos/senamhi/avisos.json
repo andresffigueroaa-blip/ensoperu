@@ -2,7 +2,7 @@
   "_": "Generado por pipeline/fuentes/senamhi.py. Avisos oficiales vigentes o por empezar.",
   "fuente": "SENAMHI, avisos meteorológicos",
   "url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico",
-  "leido": "2026-11-06T20:23:50Z",
+  "leido": "2026-11-07T16:48:48Z",
   "avisos": [
     {
       "numero": 453,
@@ -47,26 +47,56 @@
       ]
     },
     {
-      "numero": 454,
-      "situacion": "vigente",
-      "titulo": "PRECIPITACIONES EN LA COSTA CENTRO Y SUR (EXTENSIÓN DEL AVISO N 450)",
-      "emitido": "2026-11-04",
-      "inicio": "2026-11-05",
-      "fin": "2026-11-06",
-      "nivel": "AMARILLO",
-      "enlace": "https://www.senamhi.gob.pe/?p=aviso-meteorologico-vigente&a=2026&b=29351&c=00&d=SENA",
-      "texto": "El SENAMHI informa que, desde el jueves 5 al viernes 6 de noviembre, se presentará lluvia y/o llovizna de ligera a moderada intensidad en la costa centro y sur. Este evento estará acompañado por el incremento de la velocidad del viento. Asimismo, se espera cobertura nubosa con presencia de niebla y neblina en sectores cercanos al litoral, principalmente durante las noches, madrugadas y primeras horas de la mañana, lo que incrementaría la sensación de frío. El jueves 5 de noviembre, se prevén acumulados de lluvia y/o llovizna superiores a 0.5 mm/día en la costa de Lima e Ica, alrededor de 2 mm/día en la costa de Arequipa, próximos a 1 mm/día en Moquegua y valores cercanos a 2 mm/día en Tacna. El viernes 6 de noviembre, se prevén acumulados de lluvia y/o llovizna superiores a 0.5 mm/día en la costa de Lima, alrededor de 2 mm/día en la costa de Arequipa, próximos a 1 mm/día en Moquegua y va",
+      "numero": 458,
+      "situacion": "emitido",
+      "titulo": "INCREMENTO DE TEMPERATURA DIURNA EN LA COSTA Y SIERRA",
+      "emitido": "2026-11-06",
+      "inicio": "2026-11-09",
+      "fin": "2026-11-12",
+      "nivel": "ROJO",
+      "enlace": "https://www.senamhi.gob.pe/?p=aviso-meteorologico-vigente&a=2026&b=29355&c=00&d=SENA",
+      "texto": "El SENAMHI informa que, desde el lunes 9 al jueves 12 de noviembre, continuará el incremento de la temperatura diurna, de moderada a extrema intensidad en la costa y de moderada a fuerte intensidad en la sierra del país. Se prevé escasa nubosidad hacia el mediodía, lo que contribuirá al aumento de los niveles de radiación ultravioleta (UV). Asimismo, se esperan ráfagas de viento con velocidades cercanas a los 45 km/h, principalmente durante las horas de la tarde. No se descarta lluvias dispersas en la costa norte. El lunes 9 de noviembre se prevén temperaturas máximas entre 23 °C y 36 °C en la costa norte, entre 23 °C y 31 °C en la costa centro y valores entre 25 °C y 30 °C en la costa sur. En la sierra norte, las temperaturas oscilarán entre 19 °C y 32 °C, entre 20 °C y 24 °C en la sierra centro, y registros entre 20 °C y 30 °C en la sierra sur. El martes 10 de noviembre prevén temperat",
       "zonas": [
         "Costa centro",
-        "Costa sur"
+        "Costa norte",
+        "Costa sur",
+        "Sierra centro",
+        "Sierra norte",
+        "Sierra sur"
       ],
-      "regiones": [
-        "Lima",
-        "Ica",
-        "Arequipa",
-        "Moquegua",
-        "Tacna"
-      ]
+      "regiones": []
+    },
+    {
+      "numero": 461,
+      "situacion": "emitido",
+      "titulo": "INCREMENTO DE VIENTO EN LA SELVA CENTRO Y SUR - DECIMO QUINTO FRIAJE",
+      "emitido": "2026-11-06",
+      "inicio": "2026-11-08",
+      "fin": "2026-11-09",
+      "nivel": "NARANJA",
+      "enlace": "https://www.senamhi.gob.pe/?p=aviso-meteorologico-vigente&a=2026&b=29358&c=00&d=SENA",
+      "texto": "El SENAMHI informa que, desde el domingo 8 al lunes 9 de noviembre, se presentará el incremento de la velocidad del viento de moderada a fuerte intensidad en la selva, debido al décimo quinto friaje del año. Asimismo, se esperan ráfagas de viento con velocidades superiores a los 55 km/h. El domingo 8 de noviembre, se prevén vientos con velocidades cercanas a los 44 km/h en la selva sur. El lunes 9 de noviembre, se prevén vientos con velocidades cercanas a los 31 km/h en la selva centro y sur.",
+      "zonas": [
+        "Selva norte",
+        "Selva sur"
+      ],
+      "regiones": []
+    },
+    {
+      "numero": 459,
+      "situacion": "emitido",
+      "titulo": "DESCENSO DE TEMPERATURA DIURNA EN LA SELVA CENTRO Y SUR - DECIMO QUINTO FRIAJE",
+      "emitido": "2026-11-06",
+      "inicio": "2026-11-08",
+      "fin": "2026-11-09",
+      "nivel": "NARANJA",
+      "enlace": "https://www.senamhi.gob.pe/?p=aviso-meteorologico-vigente&a=2026&b=29356&c=00&d=SENA",
+      "texto": "El SENAMHI informa que, desde el domingo 8 al lunes 9 de noviembre, se prevé el descenso de la temperatura diurna, de moderada a fuerte intensidad, en la selva sur, asociado al décimo quinto friaje del año. Este evento estará acompañado de cobertura nubosa, lluvias y ráfagas de viento con velocidades cercanas a los 45 km/h. El domingo 8 de noviembre, se prevén temperaturas máximas alrededor de los 24°C en la selva sur. El lunes 9 de noviembre, se prevén temperaturas máximas alrededor de los 27°C en la selva sur y valores próximos 26°C en la selva central.",
+      "zonas": [
+        "Selva norte",
+        "Selva sur"
+      ],
+      "regiones": []
     },
     {
       "numero": 457,
@@ -80,6 +110,21 @@
       "texto": "El SENAMHI informa que, desde el domingo 8 hasta el lunes 9 de noviembre, se esperan lluvias de ligera a moderada intensidad en la selva, acompañadas de descargas eléctricas y ráfagas de viento con velocidades cercanas a los 45 km/h. El domingo 8 de noviembre, se prevén acumulados de lluvia cercanos a 55 mm/día en la selva norte, próximos a 50 mm/día en la selva centro y alrededor de 45 mm/día en la selva sur. El lunes 9 de noviembre, se prevén acumulados de lluvia cercanos a 55 mm/día en la selva norte y valores próximos a 65 mm/día en la selva centro.",
       "zonas": [
         "Selva norte",
+        "Selva sur"
+      ],
+      "regiones": []
+    },
+    {
+      "numero": 460,
+      "situacion": "emitido",
+      "titulo": "DECIMO QUINTO FRIAJE",
+      "emitido": "2026-11-06",
+      "inicio": "2026-11-09",
+      "fin": "2026-11-09",
+      "nivel": "AMARILLO",
+      "enlace": "https://www.senamhi.gob.pe/?p=aviso-meteorologico-vigente&a=2026&b=29357&c=00&d=SENA",
+      "texto": "El SENAMHI informa que, desde el domingo 8 al lunes 9 de noviembre, se prevé el descenso de la temperatura diurna, de moderada a fuerte intensidad, en la selva sur, asociado al décimo quinto friaje del año. Este evento estará acompañado de cobertura nubosa, lluvias y ráfagas de viento con velocidades cercanas a los 45 km/h. El domingo 8 de noviembre, se prevén temperaturas máximas alrededor de los 24°C en la selva sur. El lunes 9 de noviembre, se prevén temperaturas máximas alrededor de los 27°C en la selva sur y valores próximos 26°C en la selva central.",
+      "zonas": [
         "Selva sur"
       ],
       "regiones": []
