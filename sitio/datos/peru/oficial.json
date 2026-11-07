@@ -1,6 +1,6 @@
 {
   "_": "Generado por pipeline/fuentes/peru_oficial.py. Datos oficiales tal como se publican.",
-  "actualizado": "2026-11-06T20:25:07Z",
+  "actualizado": "2026-11-07T00:08:29Z",
   "fallas": [],
   "fenomeno": {
     "fecha": "30 de octubre del 2026",
@@ -12,23 +12,24 @@
   },
   "coen": {
     "dias": 7,
-    "total": 82,
+    "total": 84,
     "por_peligro": {
       "Incendios forestales": 27,
-      "Lluvias intensas": 19,
+      "Lluvias intensas": 20,
       "Incendios urbanos": 13,
       "Vientos fuertes": 8,
       "Huaico (flujo de detritos)": 4,
       "Inundaciones por saturación del suelo para drenaje (pluvial)": 3,
       "Colapso de estructura por agente climático": 2,
       "Deslizamiento": 2,
+      "Granizada": 1,
       "Accidentes de transporte terrestre": 1,
       "C00 erosión": 1,
       "Derrumbe de roca": 1,
       "Inundaciones por desborde de canales o drenes": 1
     },
     "por_region": {
-      "02": 6,
+      "02": 8,
       "07": 1,
       "03": 6,
       "01": 4,
@@ -39,10 +40,10 @@
       "15": 11,
       "24": 4,
       "20": 2,
+      "08": 7,
       "16": 2,
       "06": 5,
-      "04": 2,
-      "08": 6,
+      "04": 1,
       "19": 6,
       "18": 3,
       "17": 1,
@@ -128,7 +129,7 @@
         "distrito": "220910",
         "lugar": "Morales, San Martin, San Martin",
         "hechos": "Se registró un incendio forestal que causó daños a sectores diversos (cobertura natural) en el sector Aucaloma, distrito Morales, provincia de San Martín.",
-        "pdf": "https://coen.indeci.gob.pe/api/v2/mer/files/view?key=mer/2026/10/1793966460621.pdf",
+        "pdf": "https://coen.indeci.gob.pe/api/v2/mer/files/view?key=mer/2026/10/1793997777195.pdf",
         "sinpad": null
       },
       {
@@ -232,11 +233,20 @@
       },
       {
         "fecha": "2026-11-04 15:30",
+        "peligro": "Granizada",
+        "distrito": "081206",
+        "lugar": "Cusipata, Quispicanchi, Cusco",
+        "hechos": "Se registró una granizada que ocasionó daños materiales (medios de vida), en el sector y distrito de Cusipata, provincia de Quispicanchi.",
+        "pdf": "https://coen.indeci.gob.pe/api/v2/mer/files/view?key=mer/2026/10/1793999603120.pdf",
+        "sinpad": null
+      },
+      {
+        "fecha": "2026-11-04 15:30",
         "peligro": "Incendios forestales",
         "distrito": "030104",
         "lugar": "Curahuasi, Abancay, Apurimac",
-        "hechos": "Se registra un incendio forestal que ocasiona daños a sectores diversos (cobertura natural), en el sector Ccoripampa, distrito de Curahuasi, provincia de Abancay.",
-        "pdf": "https://coen.indeci.gob.pe/api/v2/mer/files/view?key=mer/2026/10/1793884777165.pdf",
+        "hechos": "Se registró un incendio forestal que ocasionó daños a sectores diversos (cobertura natural), en el sector Ccoripampa, distrito de Curahuasi, provincia de Abancay.",
+        "pdf": "https://coen.indeci.gob.pe/api/v2/mer/files/view?key=mer/2026/10/1794007894462.pdf",
         "sinpad": null
       },
       {
@@ -296,19 +306,19 @@
       {
         "fecha": "2026-11-04 13:00",
         "peligro": "Incendios forestales",
-        "distrito": "090103",
-        "lugar": "Acoria, Huancavelica, Huancavelica",
-        "hechos": "Se registró un incendio forestal que causó daños a sectores diversos (cobertura natural y producción agrícola) en la localidad de Ccocha distrito de Acoria, provincia de Huancavelica.",
-        "pdf": "https://coen.indeci.gob.pe/api/v2/mer/files/view?key=mer/2026/10/1793879349317.pdf",
+        "distrito": "040114",
+        "lugar": "Polobaya, Arequipa, Arequipa",
+        "hechos": "Se registró un incendio forestal que causó daños a sectores diversos (cobertura natural) en la zona de Poroto, distrito de Polobaya, provincia de Arequipa",
+        "pdf": "https://coen.indeci.gob.pe/api/v2/mer/files/view?key=mer/2026/10/1793843172697.pdf",
         "sinpad": null
       },
       {
         "fecha": "2026-11-04 13:00",
         "peligro": "Incendios forestales",
-        "distrito": "040114",
-        "lugar": "Polobaya, Arequipa, Arequipa",
-        "hechos": "Se registró un incendio forestal que causó daños a sectores diversos (cobertura natural) en la zona de Poroto, distrito de Polobaya, provincia de Arequipa",
-        "pdf": "https://coen.indeci.gob.pe/api/v2/mer/files/view?key=mer/2026/10/1793843172697.pdf",
+        "distrito": "090103",
+        "lugar": "Acoria, Huancavelica, Huancavelica",
+        "hechos": "Se registró un incendio forestal que causó daños a sectores diversos (cobertura natural y producción agrícola) en la localidad de Ccocha distrito de Acoria, provincia de Huancavelica.",
+        "pdf": "https://coen.indeci.gob.pe/api/v2/mer/files/view?key=mer/2026/10/1793879349317.pdf",
         "sinpad": null
       },
       {
@@ -326,7 +336,7 @@
         "distrito": "080704",
         "lugar": "Colquemarca, Chumbivilcas, Cusco",
         "hechos": "Se registra un incendio forestal que ocasiona daños a sectores diversos (cobertura natural) en el sector Quinsa Wayko, distrito de Colquemarca, provincia de Chumbivilcas.",
-        "pdf": "https://coen.indeci.gob.pe/api/v2/mer/files/view?key=mer/2026/10/1793979826232.pdf",
+        "pdf": "https://coen.indeci.gob.pe/api/v2/mer/files/view?key=mer/2026/10/1794008250211.pdf",
         "sinpad": null
       },
       {
@@ -341,19 +351,19 @@
       {
         "fecha": "2026-11-04 07:00",
         "peligro": "Inundaciones por saturación del suelo para drenaje (pluvial)",
-        "distrito": "150133",
-        "lugar": "San Juan De Miraflores, Lima, Lima",
-        "hechos": "A consecuencia de las lloviznas persistentes, se registró una inundación por saturación del suelo para drenaje (pluvial), que causó daños materiales (vivienda, local público e infraestructura de transporte) en la Av. Los Héroes, distrito de Villa El Salvador, provincia de Lima.",
-        "pdf": "https://coen.indeci.gob.pe/api/v2/mer/files/view?key=mer/2026/10/1793967708172.pdf",
+        "distrito": "150143",
+        "lugar": "Villa Maria Del Triunfo, Lima, Lima",
+        "hechos": "A consecuencia de las lloviznas persistentes, se registró una inundación por saturación del suelo para drenaje (pluvial) en la Av. Pachacútec con la Av. 26 de noviembre, distrito de Villa María del Triunfo, provincia de Lima.",
+        "pdf": "https://coen.indeci.gob.pe/api/v2/mer/files/view?key=mer/2026/10/1793963411806.pdf",
         "sinpad": null
       },
       {
         "fecha": "2026-11-04 07:00",
         "peligro": "Inundaciones por saturación del suelo para drenaje (pluvial)",
-        "distrito": "150143",
-        "lugar": "Villa Maria Del Triunfo, Lima, Lima",
-        "hechos": "A consecuencia de las lloviznas persistentes, se registró una inundación por saturación del suelo para drenaje (pluvial) en la Av. Pachacútec con la Av. 26 de noviembre, distrito de Villa María del Triunfo, provincia de Lima.",
-        "pdf": "https://coen.indeci.gob.pe/api/v2/mer/files/view?key=mer/2026/10/1793963411806.pdf",
+        "distrito": "150133",
+        "lugar": "San Juan De Miraflores, Lima, Lima",
+        "hechos": "A consecuencia de las lloviznas persistentes, se registró una inundación por saturación del suelo para drenaje (pluvial), que causó daños materiales (vivienda, local público e infraestructura de transporte) en la Av. Los Héroes, distrito de Villa El Salvador, provincia de Lima.",
+        "pdf": "https://coen.indeci.gob.pe/api/v2/mer/files/view?key=mer/2026/10/1793967708172.pdf",
         "sinpad": null
       },
       {
@@ -400,96 +410,87 @@
         "hechos": "A consecuencia de las lluvias intensas se produjo filtración de agua que causó daños materiales (Institución Educativa) en el sector de Grapanazu, distrito de Huancabamba, provincia de Oxapampa.",
         "pdf": "https://coen.indeci.gob.pe/api/v2/mer/files/view?key=mer/2026/10/1793846167431.pdf",
         "sinpad": null
-      },
-      {
-        "fecha": "2026-11-03 15:30",
-        "peligro": "Colapso de estructura por agente climático",
-        "distrito": "030714",
-        "lugar": "Curasco, Grau, Apurimac",
-        "hechos": "Debido a los efectos del clima y el tiempo, se produjo el colapso de las paredes de una vivienda en el sector Barrio Arriba del Centro Poblado de Curasco, distrito de Curasco, provincia de Grau.",
-        "pdf": "https://coen.indeci.gob.pe/api/v2/mer/files/view?key=mer/2026/10/1793893661252.pdf",
-        "sinpad": null
       }
     ],
     "sin_cruce": 1,
     "url": "https://coen.indeci.gob.pe/mer/",
-    "leido": "2026-11-06T20:25:09Z"
+    "leido": "2026-11-07T00:08:31Z"
   },
   "indeci_rss": {
     "reportes": [
       {
-        "titulo": "REPORTE DE PELIGRO INMINENTE N.º 0107 – 6/11/2026/ COEN – INDECI / 12:14 HORAS (Reporte N.º 1) POR HUAYCO EN EL DISTRITO DE YUNGAY – ÁNCASH",
-        "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-de-peligro-inminente-n-o-0107-6-11-2026-coen-indeci-1214-horas-reporte-n-o-1-por-huayco-en-el-distrito-de-yungay-ancash/",
-        "fecha": "2026-11-06T18:36"
-      },
-      {
-        "titulo": "BOLETÍN INFORMATIVO SÍSMICO NACIONALN° 766-2026-INDECI/COEN",
-        "enlace": "https://portal.indeci.gob.pe/emergencias/boletin-informativo-sismico-nacionaln-766-2026-indeci-coen/",
-        "fecha": "2026-11-06T18:26"
-      },
-      {
-        "titulo": "REPORTE COMPLEMENTARIO N.° 15571 – 6/11/2026 / COEN – INDECI / 12:43 HORAS (Reporte N.° 4) LLUVIAS INTENSAS EN EL DISTRITO DE BUENOS AIRES – PIURA",
-        "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-15182-29-10-2026-coen-indeci-1300-horas-reporte-n-1-lluvias-intensas-en-el-distrito-de-buenos-aires-piura/",
-        "fecha": "2026-11-06T18:18"
-      },
-      {
-        "titulo": "REPORTE COMPLEMENTARIO N.° 15570 – 6/11/2026 / COEN-INDECI / 12:22 HORAS (Reporte N.º 2) LLUVIAS INTENSAS EN EL DISTRITO DE MONTERO – PIURA",
-        "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-15209-29-10-2026-coen-indeci-2045-horas-reporte-n-o-1-lluvias-intensas-en-el-distrito-de-montero-piura/",
-        "fecha": "2026-11-06T18:11"
-      },
-      {
-        "titulo": "BOLETÍN INFORMATIVO DE AVISO DE CORTO PLAZO ANTE POSIBLE ACTIVACIÓN DE QUEBRADAS N° 211-2026-INDECI/COEN",
-        "enlace": "https://portal.indeci.gob.pe/emergencias/boletin-informativo-de-aviso-de-corto-plazo-ante-posible-activacion-de-quebradas-n-211-2026-indeci-coen/",
-        "fecha": "2026-11-06T18:09"
-      },
-      {
-        "titulo": "REPORTE COMPLEMENTARIO N.° 15565 – 6/11/2026 / COEN-INDECI / 07:30 HORAS (Reporte N.° 10) LLUVIAS INTENSAS EN EL DEPARTAMENTO DE TUMBES – TUMBES",
-        "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-preliminar-n-1106-2-11-2026-coen-indeci-0750-horas-lluvias-intensas-en-el-departamento-de-tumbes-tumbes/",
-        "fecha": "2026-11-06T18:08"
-      },
-      {
-        "titulo": "BOLETÍN INFORMATIVO DE AVISO DE CORTO PLAZO ANTE LLUVIAS INTENSAS N° 309-2026-INDECI/COEN",
-        "enlace": "https://portal.indeci.gob.pe/emergencias/boletin-informativo-de-aviso-de-corto-plazo-ante-lluvias-intensas-n-309-2026-indeci-coen/",
-        "fecha": "2026-11-06T17:20"
-      },
-      {
-        "titulo": "REPORTE COMPLEMENTARIO N.° 15568 – 6/11/2026 / COEN – INDECI / 10:50 HORAS (Reporte N.° 2) LLUVIAS INTENSAS EN EL DISTRITO DE LAGUNAS – PIURA",
-        "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-14810-23-10-2026-coen-indeci-1320-horas-reporte-n-1-lluvias-intensas-en-el-distrito-de-lagunas-piura/",
-        "fecha": "2026-11-06T16:29"
-      },
-      {
-        "titulo": "REPORTE COMPLEMENTARIO N.º 15543 – 5/11/2026 / COEN – INDECI / 19:40 HORAS (Reporte N.º 2) INCENDIO FORESTAL EN EL DISTRITO DE COLQUEMARCA – CUSCO",
+        "titulo": "REPORTE COMPLEMENTARIO N.º 15585 – 6/11/2026 / COEN – INDECI / 18:34 HORAS (Reporte N.º 4) INCENDIO FORESTAL EN EL DISTRITO DE COLQUEMARCA – CUSCO",
         "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-15480-4-11-2026-coen-indeci-2040-horas-reporte-n-1-incendio-forestal-en-el-distrito-de-colquemarca-cusco/",
-        "fecha": "2026-11-06T16:25"
+        "fecha": "2026-11-06T23:48"
       },
       {
-        "titulo": "REPORTE COMPLEMENTARIO N.º 15566 – 6/11/2026 / COEN – INDECI / 07:55 HORAS (Reporte N.º 3) LLUVIAS INTENSAS EN EL DISTRITO DE SAN MIGUEL DE EL FAIQUE – PIURA",
-        "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-o-15173-29-10-2026-coen-indeci-0820-horas-reporte-n-o-1-lluvias-intensas-en-la-provincia-de-huancabamba-piura/",
-        "fecha": "2026-11-06T13:05"
+        "titulo": "REPORTE COMPLEMENTARIO N.° 15584 – 6/11/2026/ COEN – INDECI / 18:27 HORAS (Reporte N.° 2) INCENDIO FORESTAL EN EL DISTRITO DE CURAHUASI – APURÍMAC",
+        "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-15518-5-11-2026-coen-indeci-0815-horas-reporte-n-1-incendio-forestal-en-el-distrito-de-curahuasi-apurimac/",
+        "fecha": "2026-11-06T23:37"
       },
       {
-        "titulo": "REPORTE COMPLEMENTARIO N.º 15564 – 6/11/2026 / COEN – INDECI / 07:25 HORAS (Reporte N.º 2) LLUVIAS INTENSAS EN EL DISTRITO DE MÁNCORA – PIURA",
-        "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-o-15532-5-11-2026-coen-indeci-1430-horas-reporte-n-o-1-lluvias-intensas-en-el-distrito-de-mancora-piura/",
-        "fecha": "2026-11-06T12:56"
+        "titulo": "REPORTE COMPLEMENTARIO N.° 15583 – 611/2026 / COEN-INDECI / 18:16 HORAS (Reporte N.° 1) LLUVIAS INTENSAS EN EL DISTRITO DE CARHUAZ – ÁNCASH",
+        "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-15583-611-2026-coen-indeci-1816-horas-reporte-n-1-lluvias-intensas-en-el-distrito-de-carhuaz-ancash/",
+        "fecha": "2026-11-06T23:33"
       },
       {
-        "titulo": "REPORTE COMPLEMENTARIO N.º 15563 – 6/11/2026 / COEN – INDECI / 07:20 HORAS (Reporte N.° 2) INUNDACIÓN POR SATURACIÓN DEL SUELO PARA DRENAJE (PLUVIAL) EN EL DISTRITO DE SAN JUAN DE MIRAFLORES – LIMA",
-        "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-o-15483-4-11-2026-coen-indeci-2100-horas-reporte-n-1-inundacion-por-saturacion-del-suelo-para-drenaje-pluvial-en-el-distrito-de-san-juan-de-miraflores-li/",
-        "fecha": "2026-11-06T12:53"
+        "titulo": "REPORTE COMPLEMENTARIO N.º 15582 – 6/11/2026 / COEN – INDECI / 17:58 HORAS (Reporte N.° 2) LLUVIAS INTENSAS EN EL DISTRITO DE COMAS – JUNÍN",
+        "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-o-15213-29-10-2026-coen-indeci-2245-horas-reporte-n-1-lluvias-intensas-en-el-distrito-de-comas-junin/",
+        "fecha": "2026-11-06T23:28"
       },
       {
-        "titulo": "REPORTE COMPLEMENTARIO N.º 15562 – 6/11/2026/ COEN – INDECI / 06:55 HORAS (Reporte N.º 1) INCENDIO FORESTAL EN EL DISTRITO DE MORALES – SAN MARTÍN",
+        "titulo": "REPORTE COMPLEMENTARIO N.° 15581 – 611/2026 / COEN-INDECI / 17:06 HORAS (Reporte N.° 1) LLUVIAS INTENSAS EN EL DISTRITO DE CARHUAZ – ÁNCASH",
+        "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-15581-611-2026-coen-indeci-1706-horas-reporte-n-1-lluvias-intensas-en-el-distrito-de-carhuaz-ancash/",
+        "fecha": "2026-11-06T23:00"
+      },
+      {
+        "titulo": "REPORTE COMPLEMENTARIO N.° 15580 – 6/11/2026 / COEN – INDECI / 16:44 HORAS (Reporte N.° 1) VIENTOS FUERTES EN EL DISTRITO DE LLUSCO – CUSCO",
+        "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-15580-6-11-2026-coen-indeci-1644-horas-reporte-n-1-vientos-fuertes-en-el-distrito-de-llusco-cusco/",
+        "fecha": "2026-11-06T22:55"
+      },
+      {
+        "titulo": "REPORTE PRELIMINAR N.° 1117 – 6/11/2026 / COEN – INDECI / 15:08 HORAS HUAICO EN EL DISTRITO DE JUSTO APU SAHUARAURA – APURÍMAC",
+        "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-preliminar-n-1117-6-11-2026-coen-indeci-1508-horas-huaico-en-el-distrito-de-justo-apu-sahuaraura-apurimac/",
+        "fecha": "2026-11-06T22:50"
+      },
+      {
+        "titulo": "REPORTE COMPLEMENTARIO N.° 15579 – 6/11/2026 / COEN – INDECI / 15:51 HORAS (Reporte N.º 3) INCENDIO FORESTAL EN EL DISTRITO DE SANTIAGO DE PISCHA – AYACUCHO",
+        "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-15435-3-11-2026-coen-indeci-1900-horas-reporte-n-o-1-incendio-forestal-en-el-distrito-de-santiago-de-pischa-ayacucho/",
+        "fecha": "2026-11-06T22:42"
+      },
+      {
+        "titulo": "REPORTE COMPLEMENTARIO N.° 15578 – 6/11/2026 / COEN – INDECI / 15:40 HORAS (Reporte N.º 1) GRANIZADA EN EL DISTRITO DE CUSIPATA – CUSCO",
+        "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-15578-6-11-2026-coen-indeci-1540-horas-reporte-n-o-1-granizada-en-el-distrito-de-cusipata-cusco/",
+        "fecha": "2026-11-06T22:31"
+      },
+      {
+        "titulo": "REPORTE COMPLEMENTARIO N.° 15577 – 6/11/2026 / COEN-INDECI / 15:25 HORAS (Reporte N.° 4) INCENDIO FORESTAL EN EL DISTRITO DE LUCRE – APURÍMAC",
+        "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-13785-9-10-2026-coen-indeci-1100-horas-reporte-n-2-incendio-forestal-en-el-distrito-de-lucre-apurimac/",
+        "fecha": "2026-11-06T22:26"
+      },
+      {
+        "titulo": "REPORTE COMPLEMENTARIO N.º 15576 – 6/11/2026/ COEN – INDECI /15:10 HORAS (Reporte N.º 2) INCENDIO FORESTAL EN EL DISTRITO DE MORALES – SAN MARTÍN",
         "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-o-15562-6-11-2026-coen-indeci-0655-horas-reporte-n-o-1-incendio-forestal-en-el-distrito-de-morales-san-martin/",
-        "fecha": "2026-11-06T12:06"
+        "fecha": "2026-11-06T22:23"
       },
       {
-        "titulo": "REPORTE PRELIMINAR N.° 1116 – 6/11/2026 / COEN – INDECI / 06:50 HORAS LLUVIAS INTENSAS EN EL DISTRITO DE ASCENSIÓN – HUANCAVELICA",
-        "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-preliminar-n-1116-6-11-2026-coen-indeci-0650-horas-lluvias-intensas-en-el-distrito-de-ascension-huancavelica/",
-        "fecha": "2026-11-06T11:55"
+        "titulo": "REPORTE COMPLEMENTARIO N.º 15575 – 6/11/2026 / COEN – INDECI / 15:18 HORAS (Reporte N.º 1) INCENDIO FORESTAL EN EL DISTRITO DE VILCAS HUAMÁN – AYACUCHO",
+        "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-o-15575-6-11-2026-coen-indeci-1518-horas-reporte-n-o-1-incendio-forestal-en-el-distrito-de-vilcas-huaman-ayacucho/",
+        "fecha": "2026-11-06T22:20"
+      },
+      {
+        "titulo": "REPORTE COMPLEMENTARIO N.º 15574 – 6/11/2026 / COEN – INDECI / 14:32 HORAS (Reporte N.º 4) LLUVIAS INTENSAS EN EL DISTRITO DE SAN MIGUEL DE EL FAIQUE – PIURA",
+        "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-o-15173-29-10-2026-coen-indeci-0820-horas-reporte-n-o-1-lluvias-intensas-en-la-provincia-de-huancabamba-piura/",
+        "fecha": "2026-11-06T22:16"
+      },
+      {
+        "titulo": "REPORTE COMPLEMENTARIO N.° 15573 – 6/11/2026 / COEN-INDECI / 13:10 HORAS (Reporte N.º 4) VIENTOS FUERTES EN EL DISTRITO DE CARHUAZ- ÁNCASH",
+        "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-11873-7-9-2026-coen-indeci-0615-horas-reporte-n-o-1-vientos-fuertes-en-el-distrito-de-carhuaz-ancash/",
+        "fecha": "2026-11-06T22:08"
       }
     ],
     "url": "https://portal.indeci.gob.pe/emergencias/",
-    "leido": "2026-11-06T20:25:10Z"
+    "leido": "2026-11-07T00:08:32Z"
   },
   "escenario": {
     "vigente": true,
@@ -1974,7 +1975,7 @@
       }
     },
     "url": "https://sigrid.cenepred.gob.pe/sigridv3/escenario-aviso",
-    "leido": "2026-11-06T20:25:15Z"
+    "leido": "2026-11-07T00:08:37Z"
   },
   "quebradas": {
     "fecha": "2026-11-06",
@@ -2982,7 +2983,7 @@
     },
     "sin_cruce": 0,
     "url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico",
-    "leido": "2026-11-06T20:25:19Z"
+    "leido": "2026-11-07T00:08:41Z"
   },
   "hidro": {
     "avisos": [
@@ -3024,7 +3025,7 @@
       }
     ],
     "url": "https://www.senamhi.gob.pe/?p=aviso-hidrologico",
-    "leido": "2026-11-06T20:25:22Z"
+    "leido": "2026-11-07T00:08:42Z"
   },
   "ana_rios": {
     "estaciones": [
@@ -17658,42 +17659,12 @@
       }
     },
     "url": "https://visor.geoperu.gob.pe/",
-    "leido": "2026-11-06T20:25:23Z"
+    "leido": "2026-11-07T00:08:43Z"
   },
   "agua": {
-    "total": 65,
-    "conexiones": 483639,
+    "total": 58,
+    "conexiones": 268660,
     "cortes": [
-      {
-        "eps": "SEDAPAL",
-        "lugar": "Villa El Salvador, Lima",
-        "conexiones": 82206,
-        "tipo": "Imprevista",
-        "motivo": "Otros",
-        "inicio": "2026-11-05",
-        "restablece": "2026-11-06",
-        "distrito": "150142"
-      },
-      {
-        "eps": "SEDAPAL",
-        "lugar": "Villa Maria Del Triunfo, Lima",
-        "conexiones": 68390,
-        "tipo": "Imprevista",
-        "motivo": "Mantenimiento de redes secundarias",
-        "inicio": "2026-11-06",
-        "restablece": "2026-11-06",
-        "distrito": "150143"
-      },
-      {
-        "eps": "SEDAPAL",
-        "lugar": "Los Olivos, Lima",
-        "conexiones": 47810,
-        "tipo": "Imprevista",
-        "motivo": "Otros",
-        "inicio": "2026-11-05",
-        "restablece": "2026-11-06",
-        "distrito": "150117"
-      },
       {
         "eps": "SEDAPAL",
         "lugar": "San Juan De Lurigancho, Lima",
@@ -17755,34 +17726,14 @@
         "distrito": "080101"
       },
       {
-        "eps": "SEDALIB S.A.",
-        "lugar": "Trujillo, La Libertad",
-        "conexiones": 9175,
+        "eps": "EPS GRAU S.A.",
+        "lugar": "Piura, Piura",
+        "conexiones": 10571,
         "tipo": "Imprevista",
         "motivo": "Otros",
         "inicio": "2026-11-06",
-        "restablece": "2026-11-06",
-        "distrito": "130101"
-      },
-      {
-        "eps": "EPSEL S.A.",
-        "lugar": "Lambayeque, Lambayeque",
-        "conexiones": 8000,
-        "tipo": "Imprevista",
-        "motivo": "Otros",
-        "inicio": "2026-11-05",
-        "restablece": "2026-11-06",
-        "distrito": "140301"
-      },
-      {
-        "eps": "SEDAPAL",
-        "lugar": "Miraflores, Lima",
-        "conexiones": 7703,
-        "tipo": "Imprevista",
-        "motivo": "Rotura de tubería de agua potable",
-        "inicio": "2026-11-06",
-        "restablece": "2026-11-06",
-        "distrito": "150122"
+        "restablece": "2026-11-07",
+        "distrito": "200101"
       },
       {
         "eps": "SEDAPAL",
@@ -17875,16 +17826,6 @@
         "distrito": "150114"
       },
       {
-        "eps": "EPS EMAPICA S.A.",
-        "lugar": "Parcona, Ica",
-        "conexiones": 5000,
-        "tipo": "Imprevista",
-        "motivo": "Otros",
-        "inicio": "2026-11-05",
-        "restablece": "2026-11-06",
-        "distrito": "110106"
-      },
-      {
         "eps": "SEDALIB S.A.",
         "lugar": "El Porvenir, La Libertad",
         "conexiones": 4777,
@@ -17906,6 +17847,16 @@
       },
       {
         "eps": "SEDAPAL",
+        "lugar": "Villa Maria Del Triunfo, Lima",
+        "conexiones": 3941,
+        "tipo": "Programada",
+        "motivo": "Ejecución de empalme",
+        "inicio": "2026-11-12",
+        "restablece": "2026-11-12",
+        "distrito": "150143"
+      },
+      {
+        "eps": "SEDAPAL",
         "lugar": "El Agustino, Lima",
         "conexiones": 3813,
         "tipo": "Programada",
@@ -17913,6 +17864,16 @@
         "inicio": "2026-11-10",
         "restablece": "2026-11-11",
         "distrito": "150111"
+      },
+      {
+        "eps": "SEDAPAL",
+        "lugar": "Villa El Salvador, Lima",
+        "conexiones": 3632,
+        "tipo": "Programada",
+        "motivo": "Limpieza y desinfección de reservorio/cisterna",
+        "inicio": "2026-11-12",
+        "restablece": "2026-11-13",
+        "distrito": "150142"
       },
       {
         "eps": "EPS EMAPA CAÑETE S.A",
@@ -17945,14 +17906,14 @@
         "distrito": "150110"
       },
       {
-        "eps": "EPSEL S.A.",
-        "lugar": "Eten, Lambayeque",
-        "conexiones": 2700,
-        "tipo": "Programada",
-        "motivo": "Limpieza y desinfección de reservorio/cisterna",
+        "eps": "EPS GRAU S.A.",
+        "lugar": "La Brea, Piura",
+        "conexiones": 2796,
+        "tipo": "Imprevista",
+        "motivo": "Otros",
         "inicio": "2026-11-06",
-        "restablece": "2026-11-06",
-        "distrito": "140103"
+        "restablece": "2026-11-07",
+        "distrito": "200703"
       },
       {
         "eps": "EPS CHAVIN S.A.",
@@ -17986,16 +17947,6 @@
       },
       {
         "eps": "SEDAPAL",
-        "lugar": "Lima, Lima",
-        "conexiones": 2238,
-        "tipo": "Programada",
-        "motivo": "Ejecución de empalme",
-        "inicio": "2026-11-05",
-        "restablece": "2026-11-06",
-        "distrito": "150101"
-      },
-      {
-        "eps": "SEDAPAL",
         "lugar": "Jesus Maria, Lima",
         "conexiones": 2197,
         "tipo": "Programada",
@@ -18026,16 +17977,6 @@
       },
       {
         "eps": "SEDAPAL",
-        "lugar": "Pachacamac, Lima",
-        "conexiones": 1892,
-        "tipo": "Programada",
-        "motivo": "Limpieza y desinfección de reservorio/cisterna",
-        "inicio": "2026-11-05",
-        "restablece": "2026-11-06",
-        "distrito": "150123"
-      },
-      {
-        "eps": "SEDAPAL",
         "lugar": "San Martin De Porres, Lima",
         "conexiones": 1850,
         "tipo": "Programada",
@@ -18043,6 +17984,16 @@
         "inicio": "2026-11-09",
         "restablece": "2026-11-10",
         "distrito": "150135"
+      },
+      {
+        "eps": "SEDAPAL",
+        "lugar": "Los Olivos, Lima",
+        "conexiones": 1817,
+        "tipo": "Programada",
+        "motivo": "Limpieza y desinfección de reservorio/cisterna",
+        "inicio": "2026-11-11",
+        "restablece": "2026-11-12",
+        "distrito": "150117"
       },
       {
         "eps": "UE AGUA TUMBES",
@@ -18053,16 +18004,6 @@
         "inicio": "2026-11-06",
         "restablece": "2026-11-07",
         "distrito": "240103"
-      },
-      {
-        "eps": "SEDAPAL",
-        "lugar": "Carabayllo, Lima",
-        "conexiones": 1687,
-        "tipo": "Imprevista",
-        "motivo": "Rotura de tubería de agua potable",
-        "inicio": "2026-11-06",
-        "restablece": "2026-11-06",
-        "distrito": "150106"
       },
       {
         "eps": "SEDAPAL",
@@ -18095,6 +18036,16 @@
         "distrito": "040107"
       },
       {
+        "eps": "SEDALIB S.A.",
+        "lugar": "Trujillo, La Libertad",
+        "conexiones": 1288,
+        "tipo": "Programada",
+        "motivo": "Limpieza y desinfección de reservorio/cisterna",
+        "inicio": "2026-11-11",
+        "restablece": "2026-11-12",
+        "distrito": "130101"
+      },
+      {
         "eps": "EPS GRAU S.A.",
         "lugar": "El Alto, Piura",
         "conexiones": 1280,
@@ -18105,16 +18056,6 @@
         "distrito": "200702"
       },
       {
-        "eps": "UE AGUA TUMBES",
-        "lugar": "San Jacinto, Tumbes",
-        "conexiones": 1248,
-        "tipo": "Imprevista",
-        "motivo": "Otros",
-        "inicio": "2026-11-05",
-        "restablece": "2026-11-06",
-        "distrito": "240105"
-      },
-      {
         "eps": "SEDAPAL",
         "lugar": "Pueblo Libre, Lima",
         "conexiones": 1245,
@@ -18123,16 +18064,6 @@
         "inicio": "2026-11-10",
         "restablece": "2026-11-11",
         "distrito": "150121"
-      },
-      {
-        "eps": "SEDAPAL",
-        "lugar": "Surquillo, Lima",
-        "conexiones": 1193,
-        "tipo": "Programada",
-        "motivo": "Ejecución de empalme",
-        "inicio": "2026-11-05",
-        "restablece": "2026-11-06",
-        "distrito": "150141"
       },
       {
         "eps": "SEDAPAR  S.A.",
@@ -18165,6 +18096,16 @@
         "distrito": "040104"
       },
       {
+        "eps": "EPS SEDA HUANUCO S.A.",
+        "lugar": "Jose Crespo Y Castillo, Huanuco",
+        "conexiones": 1050,
+        "tipo": "Programada",
+        "motivo": "Ejecución de empalme",
+        "inicio": "2026-11-14",
+        "restablece": "2026-11-14",
+        "distrito": "100604"
+      },
+      {
         "eps": "EPS EMAPA CAÑETE S.A",
         "lugar": "San Vicente De Cañete, Lima",
         "conexiones": 847,
@@ -18183,16 +18124,6 @@
         "inicio": "2026-11-08",
         "restablece": "2026-11-12",
         "distrito": "150204"
-      },
-      {
-        "eps": "UE AGUA TUMBES",
-        "lugar": "Pampas De Hospital, Tumbes",
-        "conexiones": 808,
-        "tipo": "Imprevista",
-        "motivo": "Otros",
-        "inicio": "2026-11-06",
-        "restablece": "2026-11-06",
-        "distrito": "240104"
       },
       {
         "eps": "SEDAPAL",
@@ -18225,14 +18156,24 @@
         "distrito": "150512"
       },
       {
-        "eps": "EPS ILO S.A.",
-        "lugar": "Ilo, Moquegua",
-        "conexiones": 451,
+        "eps": "UE AGUA TUMBES",
+        "lugar": "Tumbes, Tumbes",
+        "conexiones": 449,
         "tipo": "Imprevista",
-        "motivo": "Fuga en conexión",
+        "motivo": "Otros",
         "inicio": "2026-11-06",
-        "restablece": "2026-11-06",
-        "distrito": "180301"
+        "restablece": "2026-11-09",
+        "distrito": "240101"
+      },
+      {
+        "eps": "SEDAPAR  S.A.",
+        "lugar": "Punta De Bombon, Arequipa",
+        "conexiones": 436,
+        "tipo": "Imprevista",
+        "motivo": "Otros",
+        "inicio": "2026-11-06",
+        "restablece": "2026-11-07",
+        "distrito": "040706"
       },
       {
         "eps": "EPS CHAVIN S.A.",
@@ -18247,37 +18188,65 @@
       {
         "eps": "EPS EMAPA CAÑETE S.A",
         "lugar": "Cerro Azul, Lima",
-        "conexiones": 340,
+        "conexiones": 215,
         "tipo": "Imprevista",
-        "motivo": "Otros",
-        "inicio": "2026-11-05",
-        "restablece": "2026-11-06",
+        "motivo": "Rotura de tubería por tercero",
+        "inicio": "2026-10-31",
+        "restablece": "2026-11-10",
         "distrito": "150504"
       },
       {
-        "eps": "EPS MOQUEGUA S.A.",
-        "lugar": "Moquegua, Moquegua",
-        "conexiones": 308,
+        "eps": "EPS SEDACUSCO S.A.",
+        "lugar": "Santiago, Cusco",
+        "conexiones": 200,
+        "tipo": "Programada",
+        "motivo": "Limpieza y desinfección de reservorio/cisterna",
+        "inicio": "2026-11-11",
+        "restablece": "2026-11-11",
+        "distrito": "080106"
+      },
+      {
+        "eps": "UE AGUA TUMBES",
+        "lugar": "Matapalo, Tumbes",
+        "conexiones": 146,
         "tipo": "Imprevista",
-        "motivo": "Rotura de tubería de agua potable",
+        "motivo": "Otros",
         "inicio": "2026-11-06",
-        "restablece": "2026-11-06",
-        "distrito": "180101"
+        "restablece": "2026-11-09",
+        "distrito": "240303"
+      },
+      {
+        "eps": "EPS MUNICIPAL MANTARO S.A.",
+        "lugar": "Yauyos, Junin",
+        "conexiones": 100,
+        "tipo": "Programada",
+        "motivo": "Otros",
+        "inicio": "2026-11-10",
+        "restablece": "2026-11-10",
+        "distrito": "120434"
+      },
+      {
+        "eps": "SEDAPAL",
+        "lugar": "Carabayllo, Lima",
+        "conexiones": 93,
+        "tipo": "Programada",
+        "motivo": "Limpieza y desinfección de reservorio/cisterna",
+        "inicio": "2026-11-13",
+        "restablece": "2026-11-14",
+        "distrito": "150106"
+      },
+      {
+        "eps": "EPS MUNICIPAL MANTARO S.A.",
+        "lugar": "Jauja, Junin",
+        "conexiones": 50,
+        "tipo": "Programada",
+        "motivo": "Otros",
+        "inicio": "2026-11-11",
+        "restablece": "2026-11-11",
+        "distrito": "120401"
       }
     ],
     "distritos": {
-      "150142": {
-        "cortes": 1,
-        "conexiones": 82206
-      },
-      "150143": {
-        "cortes": 1,
-        "conexiones": 68390
-      },
-      "150117": {
-        "cortes": 1,
-        "conexiones": 47810
-      },
       "150132": {
         "cortes": 1,
         "conexiones": 26814
@@ -18302,17 +18271,9 @@
         "cortes": 1,
         "conexiones": 16000
       },
-      "130101": {
+      "200101": {
         "cortes": 1,
-        "conexiones": 9175
-      },
-      "140301": {
-        "cortes": 1,
-        "conexiones": 8000
-      },
-      "150122": {
-        "cortes": 1,
-        "conexiones": 7703
+        "conexiones": 10571
       },
       "070102": {
         "cortes": 1,
@@ -18350,10 +18311,6 @@
         "cortes": 1,
         "conexiones": 5175
       },
-      "110106": {
-        "cortes": 1,
-        "conexiones": 5000
-      },
       "130102": {
         "cortes": 1,
         "conexiones": 4777
@@ -18362,9 +18319,17 @@
         "cortes": 1,
         "conexiones": 4595
       },
+      "150143": {
+        "cortes": 1,
+        "conexiones": 3941
+      },
       "150111": {
         "cortes": 1,
         "conexiones": 3813
+      },
+      "150142": {
+        "cortes": 1,
+        "conexiones": 3632
       },
       "150507": {
         "cortes": 1,
@@ -18378,9 +18343,9 @@
         "cortes": 1,
         "conexiones": 3067
       },
-      "140103": {
+      "200703": {
         "cortes": 1,
-        "conexiones": 2700
+        "conexiones": 2796
       },
       "021201": {
         "cortes": 1,
@@ -18394,10 +18359,6 @@
         "cortes": 1,
         "conexiones": 2392
       },
-      "150101": {
-        "cortes": 1,
-        "conexiones": 2238
-      },
       "150113": {
         "cortes": 1,
         "conexiones": 2197
@@ -18410,21 +18371,17 @@
         "cortes": 1,
         "conexiones": 1981
       },
-      "150123": {
-        "cortes": 1,
-        "conexiones": 1892
-      },
       "150135": {
         "cortes": 1,
         "conexiones": 1850
       },
+      "150117": {
+        "cortes": 1,
+        "conexiones": 1817
+      },
       "240103": {
         "cortes": 1,
         "conexiones": 1813
-      },
-      "150106": {
-        "cortes": 1,
-        "conexiones": 1687
       },
       "150128": {
         "cortes": 1,
@@ -18438,21 +18395,17 @@
         "cortes": 1,
         "conexiones": 1298
       },
+      "130101": {
+        "cortes": 1,
+        "conexiones": 1288
+      },
       "200702": {
         "cortes": 1,
         "conexiones": 1280
       },
-      "240105": {
-        "cortes": 1,
-        "conexiones": 1248
-      },
       "150121": {
         "cortes": 1,
         "conexiones": 1245
-      },
-      "150141": {
-        "cortes": 1,
-        "conexiones": 1193
       },
       "040122": {
         "cortes": 1,
@@ -18466,6 +18419,10 @@
         "cortes": 1,
         "conexiones": 1077
       },
+      "100604": {
+        "cortes": 1,
+        "conexiones": 1050
+      },
       "150501": {
         "cortes": 1,
         "conexiones": 847
@@ -18473,10 +18430,6 @@
       "150204": {
         "cortes": 1,
         "conexiones": 810
-      },
-      "240104": {
-        "cortes": 1,
-        "conexiones": 808
       },
       "150125": {
         "cortes": 1,
@@ -18490,9 +18443,13 @@
         "cortes": 1,
         "conexiones": 480
       },
-      "180301": {
+      "240101": {
         "cortes": 1,
-        "conexiones": 451
+        "conexiones": 449
+      },
+      "040706": {
+        "cortes": 1,
+        "conexiones": 436
       },
       "020105": {
         "cortes": 1,
@@ -18500,11 +18457,7 @@
       },
       "150504": {
         "cortes": 1,
-        "conexiones": 340
-      },
-      "180101": {
-        "cortes": 1,
-        "conexiones": 308
+        "conexiones": 215
       },
       "080106": {
         "cortes": 1,
@@ -18512,15 +18465,15 @@
       },
       "240303": {
         "cortes": 1,
-        "conexiones": 164
+        "conexiones": 146
       },
       "120434": {
         "cortes": 1,
         "conexiones": 100
       },
-      "080104": {
+      "150106": {
         "cortes": 1,
-        "conexiones": 100
+        "conexiones": 93
       },
       "120401": {
         "cortes": 1,
@@ -18528,10 +18481,10 @@
       }
     },
     "url": "https://www.sunass.gob.pe/",
-    "leido": "2026-11-06T20:25:24Z"
+    "leido": "2026-11-07T00:08:45Z"
   },
   "incendios": {
-    "total": 20,
+    "total": 21,
     "lista": [
       {
         "fecha": "2026-11-06",
@@ -18706,6 +18659,15 @@
       },
       {
         "fecha": "2026-11-03",
+        "hora": "18:45",
+        "lugar": "Quinua, Ayacucho",
+        "distrito": "050108",
+        "cobertura": "Cobertura Forestal",
+        "lat": -13.01243,
+        "lon": -74.12084
+      },
+      {
+        "fecha": "2026-11-03",
         "hora": "16:10",
         "lugar": "Santiago De Pischa, Ayacucho",
         "distrito": "050111",
@@ -18715,7 +18677,7 @@
       }
     ],
     "url": "https://geo.serfor.gob.pe/visor/",
-    "leido": "2026-11-06T20:25:25Z"
+    "leido": "2026-11-07T00:08:46Z"
   },
   "phisis": {
     "estaciones": [
@@ -20945,7 +20907,7 @@
       "clasificacion": 99.88
     },
     "url": "http://met.igp.gob.pe/variabclim/",
-    "leido": "2026-11-06T20:25:28Z"
+    "leido": "2026-11-07T00:08:48Z"
   },
   "dhn": {
     "generado": "2026-11-06T16:10:08Z",
@@ -21457,7 +21419,7 @@
         }
       ]
     },
-    "leido": "2026-11-06T20:25:29Z"
+    "leido": "2026-11-07T00:08:50Z"
   },
   "inaigem": {
     "estaciones": [
@@ -21495,7 +21457,7 @@
       }
     ],
     "url": "https://www.inaigem.gob.pe/",
-    "leido": "2026-11-06T20:25:29Z"
+    "leido": "2026-11-07T00:08:50Z"
   },
   "enfen_docs": {
     "docs": [
