@@ -1,6 +1,6 @@
 {
   "_": "Generado por pipeline/fuentes/peru_oficial.py. Datos oficiales tal como se publican.",
-  "actualizado": "2026-11-07T22:23:55Z",
+  "actualizado": "2026-11-07T22:25:11Z",
   "fallas": [],
   "fenomeno": {
     "fecha": "30 de octubre del 2026",
@@ -219,7 +219,7 @@
         "distrito": "220910",
         "lugar": "Morales, San Martin, San Martin",
         "hechos": "Se registró un incendio forestal que causó daños a sectores diversos (cobertura natural) en el sector Aucaloma, distrito Morales, provincia de San Martín.",
-        "pdf": "https://coen.indeci.gob.pe/api/v2/mer/files/view?key=mer/2026/10/1793997777195.pdf",
+        "pdf": "https://coen.indeci.gob.pe/api/v2/mer/files/view?key=mer/2026/10/1794090390264.pdf",
         "sinpad": null
       },
       {
@@ -387,15 +387,6 @@
       {
         "fecha": "2026-11-04 13:00",
         "peligro": "Incendios forestales",
-        "distrito": "040114",
-        "lugar": "Polobaya, Arequipa, Arequipa",
-        "hechos": "Se registró un incendio forestal que causó daños a sectores diversos (cobertura natural) en la zona de Poroto, distrito de Polobaya, provincia de Arequipa",
-        "pdf": "https://coen.indeci.gob.pe/api/v2/mer/files/view?key=mer/2026/10/1793843172697.pdf",
-        "sinpad": null
-      },
-      {
-        "fecha": "2026-11-04 13:00",
-        "peligro": "Incendios forestales",
         "distrito": "050405",
         "lugar": "Luricocha, Huanta, Ayacucho",
         "hechos": "Se registró un incendio forestal que causó daños a sectores diversos (cobertura natural) en la localidad de Maccaira, distrito de Luricocha, provincia Huanta.",
@@ -410,11 +401,20 @@
         "hechos": "Se registró un incendio forestal que causó daños a sectores diversos (cobertura natural y producción agrícola) en la localidad de Ccocha distrito de Acoria, provincia de Huancavelica.",
         "pdf": "https://coen.indeci.gob.pe/api/v2/mer/files/view?key=mer/2026/10/1793879349317.pdf",
         "sinpad": null
+      },
+      {
+        "fecha": "2026-11-04 13:00",
+        "peligro": "Incendios forestales",
+        "distrito": "040114",
+        "lugar": "Polobaya, Arequipa, Arequipa",
+        "hechos": "Se registró un incendio forestal que causó daños a sectores diversos (cobertura natural) en la zona de Poroto, distrito de Polobaya, provincia de Arequipa",
+        "pdf": "https://coen.indeci.gob.pe/api/v2/mer/files/view?key=mer/2026/10/1793843172697.pdf",
+        "sinpad": null
       }
     ],
     "sin_cruce": 1,
     "url": "https://coen.indeci.gob.pe/mer/",
-    "leido": "2026-11-07T22:23:57Z"
+    "leido": "2026-11-07T22:25:13Z"
   },
   "indeci_rss": {
     "reportes": [
@@ -490,7 +490,7 @@
       }
     ],
     "url": "https://portal.indeci.gob.pe/emergencias/",
-    "leido": "2026-11-07T22:23:58Z"
+    "leido": "2026-11-07T22:25:14Z"
   },
   "escenario": {
     "vigente": true,
@@ -1975,7 +1975,7 @@
       }
     },
     "url": "https://sigrid.cenepred.gob.pe/sigridv3/escenario-aviso",
-    "leido": "2026-11-07T22:23:58Z"
+    "leido": "2026-11-07T22:25:17Z"
   },
   "quebradas": {
     "fecha": "2026-11-07",
@@ -3883,7 +3883,7 @@
     },
     "sin_cruce": 16,
     "url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico",
-    "leido": "2026-11-07T22:24:06Z"
+    "leido": "2026-11-07T22:25:27Z"
   },
   "hidro": {
     "avisos": [
@@ -3913,7 +3913,7 @@
       }
     ],
     "url": "https://www.senamhi.gob.pe/?p=aviso-hidrologico",
-    "leido": "2026-11-07T22:24:07Z"
+    "leido": "2026-11-07T22:25:27Z"
   },
   "ana_rios": {
     "estaciones": [
@@ -18179,7 +18179,7 @@
       }
     },
     "url": "https://visor.geoperu.gob.pe/",
-    "leido": "2026-11-07T22:24:16Z"
+    "leido": "2026-11-07T22:25:28Z"
   },
   "agua": {
     "total": 66,
@@ -19053,7 +19053,7 @@
       }
     },
     "url": "https://www.sunass.gob.pe/",
-    "leido": "2026-11-07T22:24:17Z"
+    "leido": "2026-11-07T22:25:30Z"
   },
   "incendios": {
     "total": 33,
@@ -19357,7 +19357,7 @@
       }
     ],
     "url": "https://geo.serfor.gob.pe/visor/",
-    "leido": "2026-11-07T22:24:17Z"
+    "leido": "2026-11-07T22:25:31Z"
   },
   "phisis": {
     "estaciones": [
@@ -21587,7 +21587,7 @@
       "clasificacion": 99.88
     },
     "url": "http://met.igp.gob.pe/variabclim/",
-    "leido": "2026-11-07T22:24:17Z"
+    "leido": "2026-11-07T22:25:33Z"
   },
   "dhn": {
     "generado": "2026-11-06T16:10:08Z",
@@ -22099,7 +22099,7 @@
         }
       ]
     },
-    "leido": "2026-11-07T22:24:18Z"
+    "leido": "2026-11-07T22:25:35Z"
   },
   "inaigem": {
     "estaciones": [
@@ -22137,7 +22137,7 @@
       }
     ],
     "url": "https://www.inaigem.gob.pe/",
-    "leido": "2026-11-07T22:24:18Z"
+    "leido": "2026-11-07T22:25:35Z"
   },
   "enfen_docs": {
     "docs": [
