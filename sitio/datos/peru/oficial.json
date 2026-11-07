@@ -1,6 +1,6 @@
 {
   "_": "Generado por pipeline/fuentes/peru_oficial.py. Datos oficiales tal como se publican.",
-  "actualizado": "2026-11-07T06:07:04Z",
+  "actualizado": "2026-11-07T13:13:30Z",
   "fallas": [],
   "fenomeno": {
     "fecha": "30 de octubre del 2026",
@@ -12,16 +12,16 @@
   },
   "coen": {
     "dias": 7,
-    "total": 88,
+    "total": 89,
     "por_peligro": {
-      "Incendios forestales": 28,
+      "Incendios forestales": 27,
       "Lluvias intensas": 22,
-      "Incendios urbanos": 14,
+      "Incendios urbanos": 15,
       "Vientos fuertes": 8,
       "Huaico (flujo de detritos)": 4,
+      "Colapso de estructura por agente climático": 3,
       "Inundaciones por saturación del suelo para drenaje (pluvial)": 3,
       "Deslizamiento": 2,
-      "Colapso de estructura por agente climático": 2,
       "Granizada": 1,
       "Accidentes de transporte terrestre": 1,
       "C00 erosión": 1,
@@ -29,17 +29,18 @@
       "Inundaciones por desborde de canales o drenes": 1
     },
     "por_region": {
+      "15": 12,
       "14": 2,
       "02": 10,
-      "03": 8,
+      "11": 1,
       "18": 4,
+      "03": 8,
       "07": 1,
       "01": 4,
       "09": 5,
       "21": 6,
-      "05": 6,
+      "05": 5,
       "22": 2,
-      "15": 11,
       "24": 4,
       "20": 2,
       "08": 7,
@@ -50,6 +51,15 @@
       "17": 1
     },
     "ultimas": [
+      {
+        "fecha": "2026-11-07 05:05",
+        "peligro": "Incendios urbanos",
+        "distrito": "150101",
+        "lugar": "Lima, Lima, Lima",
+        "hechos": "Se registró un incendio urbano que causó daños materiales (vivienda) en el jirón Juan Alfaro 461, distrito y provincia de Lima.",
+        "pdf": "https://coen.indeci.gob.pe/api/v2/mer/files/view?key=mer/2026/10/1794055903083.pdf",
+        "sinpad": null
+      },
       {
         "fecha": "2026-11-06 18:55",
         "peligro": "Incendios urbanos",
@@ -69,6 +79,15 @@
         "sinpad": null
       },
       {
+        "fecha": "2026-11-06 13:35",
+        "peligro": "Colapso de estructura por agente climático",
+        "distrito": "110210",
+        "lugar": "Sunampe, Chincha, Ica",
+        "hechos": "Se registró el colapso de estructura por agente climático que causó daños materiales (vivienda) en la localidad de San Ignacio, distrito de Sunampe, provincia de Chincha.",
+        "pdf": "https://coen.indeci.gob.pe/api/v2/mer/files/view?key=mer/2026/10/1794049953818.pdf",
+        "sinpad": null
+      },
+      {
         "fecha": "2026-11-06 12:14",
         "peligro": "Huaico (flujo de detritos)",
         "distrito": "022001",
@@ -79,20 +98,20 @@
       },
       {
         "fecha": "2026-11-06 12:00",
-        "peligro": "Incendios forestales",
-        "distrito": "030101",
-        "lugar": "Abancay, Abancay, Apurimac",
-        "hechos": "Se registra un incendio forestal que causa daños a sectores diversos (cobertura natural) en la comunidad Atumpata Baja, distrito y provincia de Abancay.",
-        "pdf": "https://coen.indeci.gob.pe/api/v2/mer/files/view?key=mer/2026/10/1794017793504.pdf",
-        "sinpad": null
-      },
-      {
-        "fecha": "2026-11-06 12:00",
         "peligro": "Lluvias intensas",
         "distrito": "180204",
         "lugar": "Ichuña, General Sanchez Cerro, Moquegua",
         "hechos": "Se registró lluvias intensas que generaron daños materiales (viviendas) en el distrito de Ichuña, provincia de General Sánchez Cerro .",
         "pdf": "https://coen.indeci.gob.pe/api/v2/mer/files/view?key=mer/2026/10/1794022344088.pdf",
+        "sinpad": null
+      },
+      {
+        "fecha": "2026-11-06 12:00",
+        "peligro": "Incendios forestales",
+        "distrito": "030101",
+        "lugar": "Abancay, Abancay, Apurimac",
+        "hechos": "Se registra un incendio forestal que causa daños a sectores diversos (cobertura natural) en la comunidad Atumpata Baja, distrito y provincia de Abancay.",
+        "pdf": "https://coen.indeci.gob.pe/api/v2/mer/files/view?key=mer/2026/10/1794017793504.pdf",
         "sinpad": null
       },
       {
@@ -241,20 +260,20 @@
       },
       {
         "fecha": "2026-11-04 19:00",
-        "peligro": "Lluvias intensas",
-        "distrito": "240105",
-        "lugar": "San Jacinto, Tumbes, Tumbes",
-        "hechos": "4/11/2026 19:00 horas Como consecuencia de las lluvias intensas, se registró el desborde de la quebrada El Tablazo que produjo daños materiales (viviendas), en el sector El Tablazo, caserío Casa Blanqueada, distrito de San Jacinto, provincia de Tumbes. 4/11/2026 19:00 horas Como consecuencia de las lluvias intensas, se registró el desborde de la quebrada Higuerón, que produjo daños materiales (viv",
-        "pdf": "https://coen.indeci.gob.pe/api/v2/mer/files/view?key=mer/2026/10/1794019381894.pdf",
-        "sinpad": null
-      },
-      {
-        "fecha": "2026-11-04 19:00",
         "peligro": "Incendios forestales",
         "distrito": "030605",
         "lugar": "Ocobamba, Chincheros, Apurimac",
         "hechos": "Se registra un incendio forestal que ocasiona daños materiales (cobertura natural) en las comunidades Túpac Amaru y Tres Cruces, distrito Ocobamba, provincia de Chincheros.",
         "pdf": "https://coen.indeci.gob.pe/api/v2/mer/files/view?key=mer/2026/10/1794022241291.pdf",
+        "sinpad": null
+      },
+      {
+        "fecha": "2026-11-04 19:00",
+        "peligro": "Lluvias intensas",
+        "distrito": "240105",
+        "lugar": "San Jacinto, Tumbes, Tumbes",
+        "hechos": "4/11/2026 19:00 horas Como consecuencia de las lluvias intensas, se registró el desborde de la quebrada El Tablazo que produjo daños materiales (viviendas), en el sector El Tablazo, caserío Casa Blanqueada, distrito de San Jacinto, provincia de Tumbes. 4/11/2026 19:00 horas Como consecuencia de las lluvias intensas, se registró el desborde de la quebrada Higuerón, que produjo daños materiales (viv",
+        "pdf": "https://coen.indeci.gob.pe/api/v2/mer/files/view?key=mer/2026/10/1794019381894.pdf",
         "sinpad": null
       },
       {
@@ -277,11 +296,11 @@
       },
       {
         "fecha": "2026-11-04 15:30",
-        "peligro": "Incendios forestales",
-        "distrito": "030104",
-        "lugar": "Curahuasi, Abancay, Apurimac",
-        "hechos": "Se registró un incendio forestal que ocasionó daños a sectores diversos (cobertura natural), en el sector Ccoripampa, distrito de Curahuasi, provincia de Abancay.",
-        "pdf": "https://coen.indeci.gob.pe/api/v2/mer/files/view?key=mer/2026/10/1794007894462.pdf",
+        "peligro": "Vientos fuertes",
+        "distrito": "211204",
+        "lugar": "Patambuco, Sandia, Puno",
+        "hechos": "Se registraron vientos fuertes que causaron daños materiales (viviendas) en el sector de Cupuly, centro poblado de Sihuasihua, distrito de Patambuco, provincia de Sandia",
+        "pdf": "https://coen.indeci.gob.pe/api/v2/mer/files/view?key=mer/2026/10/1793939643455.pdf",
         "sinpad": null
       },
       {
@@ -295,11 +314,11 @@
       },
       {
         "fecha": "2026-11-04 15:30",
-        "peligro": "Vientos fuertes",
-        "distrito": "211204",
-        "lugar": "Patambuco, Sandia, Puno",
-        "hechos": "Se registraron vientos fuertes que causaron daños materiales (viviendas) en el sector de Cupuly, centro poblado de Sihuasihua, distrito de Patambuco, provincia de Sandia",
-        "pdf": "https://coen.indeci.gob.pe/api/v2/mer/files/view?key=mer/2026/10/1793939643455.pdf",
+        "peligro": "Incendios forestales",
+        "distrito": "030104",
+        "lugar": "Curahuasi, Abancay, Apurimac",
+        "hechos": "Se registró un incendio forestal que ocasionó daños a sectores diversos (cobertura natural), en el sector Ccoripampa, distrito de Curahuasi, provincia de Abancay.",
+        "pdf": "https://coen.indeci.gob.pe/api/v2/mer/files/view?key=mer/2026/10/1794007894462.pdf",
         "sinpad": null
       },
       {
@@ -331,15 +350,6 @@
       },
       {
         "fecha": "2026-11-04 13:20",
-        "peligro": "Vientos fuertes",
-        "distrito": "060106",
-        "lugar": "Jesus, Cajamarca, Cajamarca",
-        "hechos": "Se registraron vientos fuertes que causaron daños materiales (vivienda) en el sector San Isidro, distrito de Jesús, provincia de Cajamarca",
-        "pdf": "https://coen.indeci.gob.pe/api/v2/mer/files/view?key=mer/2026/10/1793923118140.pdf",
-        "sinpad": null
-      },
-      {
-        "fecha": "2026-11-04 13:20",
         "peligro": "Incendios urbanos",
         "distrito": "030501",
         "lugar": "Tambobamba, Cotabambas, Apurimac",
@@ -348,12 +358,12 @@
         "sinpad": null
       },
       {
-        "fecha": "2026-11-04 13:00",
-        "peligro": "Incendios forestales",
-        "distrito": "050405",
-        "lugar": "Luricocha, Huanta, Ayacucho",
-        "hechos": "Se registró un incendio forestal que causó daños a sectores diversos (cobertura natural) en la localidad de Maccaira, distrito de Luricocha, provincia Huanta.",
-        "pdf": "https://coen.indeci.gob.pe/api/v2/mer/files/view?key=mer/2026/10/1793919336270.pdf",
+        "fecha": "2026-11-04 13:20",
+        "peligro": "Vientos fuertes",
+        "distrito": "060106",
+        "lugar": "Jesus, Cajamarca, Cajamarca",
+        "hechos": "Se registraron vientos fuertes que causaron daños materiales (vivienda) en el sector San Isidro, distrito de Jesús, provincia de Cajamarca",
+        "pdf": "https://coen.indeci.gob.pe/api/v2/mer/files/view?key=mer/2026/10/1793923118140.pdf",
         "sinpad": null
       },
       {
@@ -375,6 +385,15 @@
         "sinpad": null
       },
       {
+        "fecha": "2026-11-04 13:00",
+        "peligro": "Incendios forestales",
+        "distrito": "050405",
+        "lugar": "Luricocha, Huanta, Ayacucho",
+        "hechos": "Se registró un incendio forestal que causó daños a sectores diversos (cobertura natural) en la localidad de Maccaira, distrito de Luricocha, provincia Huanta.",
+        "pdf": "https://coen.indeci.gob.pe/api/v2/mer/files/view?key=mer/2026/10/1793919336270.pdf",
+        "sinpad": null
+      },
+      {
         "fecha": "2026-11-04 12:00",
         "peligro": "Incendios forestales",
         "distrito": "090119",
@@ -391,41 +410,73 @@
         "hechos": "Se registra un incendio forestal que ocasiona daños a sectores diversos (cobertura natural) en el sector Quinsa Wayko, distrito de Colquemarca, provincia de Chumbivilcas.",
         "pdf": "https://coen.indeci.gob.pe/api/v2/mer/files/view?key=mer/2026/10/1794008250211.pdf",
         "sinpad": null
-      },
-      {
-        "fecha": "2026-11-04 10:30",
-        "peligro": "Incendios forestales",
-        "distrito": "080603",
-        "lugar": "Combapata, Canchis, Cusco",
-        "hechos": "Se registró un incendio forestal, que causó daños a sectores diversos (cobertura natural) en el sector Apu Calvario, distrito Combapata, provincia de Canchis.",
-        "pdf": "https://coen.indeci.gob.pe/api/v2/mer/files/view?key=mer/2026/10/1793926271639.pdf",
-        "sinpad": null
-      },
-      {
-        "fecha": "2026-11-04 07:00",
-        "peligro": "Inundaciones por saturación del suelo para drenaje (pluvial)",
-        "distrito": "150143",
-        "lugar": "Villa Maria Del Triunfo, Lima, Lima",
-        "hechos": "A consecuencia de las lloviznas persistentes, se registró una inundación por saturación del suelo para drenaje (pluvial) en la Av. Pachacútec con la Av. 26 de noviembre, distrito de Villa María del Triunfo, provincia de Lima.",
-        "pdf": "https://coen.indeci.gob.pe/api/v2/mer/files/view?key=mer/2026/10/1793963411806.pdf",
-        "sinpad": null
       }
     ],
     "sin_cruce": 1,
     "url": "https://coen.indeci.gob.pe/mer/",
-    "leido": "2026-11-07T06:07:06Z"
+    "leido": "2026-11-07T13:13:32Z"
   },
   "indeci_rss": {
     "reportes": [
       {
+        "titulo": "REPORTE DE PELIGRO INMINENTE N.º 0108 – 7/11/2026/ COEN – INDECI / 07:50 HORAS (Reporte N.º 1) POR LLUVIAS INTENSAS EN EL DISTRITO DE CHUPAMARCA – HUANCAVELICA",
+        "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-de-peligro-inminente-n-o-0108-7-11-2026-coen-indeci-0750-horas-reporte-n-o-1-por-lluvias-intensas-en-el-distrito-de-chupamarca-huancavelica/",
+        "fecha": "2026-11-07T13:04"
+      },
+      {
+        "titulo": "REPORTE COMPLEMENTARIO N.° 15613 – 7/11/2026 / COEN-INDECI / 07:49 HORAS (Reporte N.º 1) INCENDIO URBANO EN EL DISTRITO DE LIMA CERCADO- LIMA",
+        "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-15613-7-11-2026-coen-indeci-0749-horas-reporte-n-o-1-incendio-urbano-en-el-distrito-de-lima-cercado-lima/",
+        "fecha": "2026-11-07T13:01"
+      },
+      {
+        "titulo": "REPORTE COMPLEMENTARIO N.º 15612 – 7/11/2026 / COEN-INDECI / 06:55 HORAS (Reporte N.° 2) LLUVIAS INTENSAS EN EL DISTRITO DE LLATA – HUÁNUCO",
+        "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-o-15126-28-10-2026-coen-indeci-1425-horas-reporte-n-1-lluvias-intensas-en-el-distrito-de-llata-huanuco/",
+        "fecha": "2026-11-07T12:58"
+      },
+      {
+        "titulo": "REPORTE COMPLEMENTARIO N.° 15611 – 7/11/2026 / COEN – INDECI / 06:50 HORAS (Reporte N.° 2) VIENTOS FUERTES EN EL DISTRITO DE LLUSCO – CUSCO",
+        "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-15580-6-11-2026-coen-indeci-1644-horas-reporte-n-1-vientos-fuertes-en-el-distrito-de-llusco-cusco/",
+        "fecha": "2026-11-07T12:38"
+      },
+      {
+        "titulo": "REPORTE COMPLEMENTARIO N.º 15610 – 7/11/2026 / COEN – INDECI / 07:15 HORAS (Reporte N.º 2) LLUVIAS INTENSAS EN EL DISTRITO DE SALITRAL – PIURA",
+        "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-o-15525-5-11-2026-coen-indeci-1215-horas-reporte-n-o-1-lluvias-intensas-en-el-distrito-de-salitral-piura/",
+        "fecha": "2026-11-07T12:36"
+      },
+      {
+        "titulo": "REPORTE COMPLEMENTARIO N.° 15609 – 7/11/2026 / COEN-INDECI / 06:35 HORAS (Reporte N.° 13) LLUVIAS INTENSAS EN EL DEPARTAMENTO DE TUMBES – TUMBES",
+        "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-preliminar-n-1106-2-11-2026-coen-indeci-0750-horas-lluvias-intensas-en-el-departamento-de-tumbes-tumbes/",
+        "fecha": "2026-11-07T12:34"
+      },
+      {
+        "titulo": "REPORTE COMPLEMENTARIO N.º 15607 – 7/11/2026 / COEN – INDECI / 06:19 HORAS (Reporte N.° 4) LLUVIAS INTENSAS EN EL DISTRITO DE CANOAS DE PUNTA SAL – TUMBES",
+        "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-o-15100-28-10-2026-coen-indeci-0535-horas-reporte-n-1-lluvias-intensas-en-el-distrito-de-canoas-de-punta-sal-tumbes/",
+        "fecha": "2026-11-07T12:17"
+      },
+      {
+        "titulo": "REPORTE COMPLEMENTARIO N.° 15608 – 7/11/2026 / COEN – INDECI / 06:25 HORAS (Reporte N.º 2) INCENDIO FORESTAL EN EL DISTRITO DE SANTA ROSA – PUNO",
+        "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-14692-21-10-2026-coen-indeci-2120-horas-reporte-n-o-1-incendio-forestal-en-el-distrito-de-santa-rosa-puno/",
+        "fecha": "2026-11-07T12:14"
+      },
+      {
+        "titulo": "REPORTE COMPLEMENTARIO N.° 15606 – 7/11/2026 / COEN – INDECI / 06:09 HORAS (Reporte N.º 1) COLAPSO DE ESTRUCTURA POR AGENTE CLIMÁTICO EN EL DISTRITO DE SUNAMPE – ICA",
+        "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-15606-7-11-2026-coen-indeci-0609-horas-reporte-n-o-1-colapso-de-estructura-por-agente-climatico-en-el-distrito-de-sunampe-ica/",
+        "fecha": "2026-11-07T12:08"
+      },
+      {
+        "titulo": "BOLETÍN INFORMATIVO SÍSMICO NACIONALN° 768-2026-INDECI/COEN",
+        "enlace": "https://portal.indeci.gob.pe/emergencias/boletin-informativo-sismico-nacionaln-768-2026-indeci-coen/",
+        "fecha": "2026-11-07T07:40"
+      },
+      {
+        "titulo": "REPORTE COMPLEMENTARIO N.º 15605 – 7/11/2026 / COEN-INDECI / 00:16 HORAS (Reporte N.° 2) SISMO DE MAGNITUD 5.0 CON EPICENTRO EN EL MAR FRENTE HUARMEY – ÁNCASH",
+        "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-preliminar-n-o-1107-2-11-2026-coen-indeci-1100-horas-sismo-de-magnitud-5-0-con-epicentro-en-el-mar-frente-huarmey-ancash/",
+        "fecha": "2026-11-07T06:07"
+      },
+      {
         "titulo": "BOLETÍN INFORMATIVO SÍSMICO NACIONALN° 767-2026-INDECI/COEN",
         "enlace": "https://portal.indeci.gob.pe/emergencias/boletin-informativo-sismico-nacionaln-767-2026-indeci-coen/",
         "fecha": "2026-11-07T05:54"
-      },
-      {
-        "titulo": "REPORTE COMPLEMENTARIO N.° 15604 – 7/11/2026 / COEN-INDECI / 00:05 HORAS (Reporte N.° 12) LLUVIAS INTENSAS EN EL DEPARTAMENTO DE TUMBES – TUMBES",
-        "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-preliminar-n-1106-2-11-2026-coen-indeci-0750-horas-lluvias-intensas-en-el-departamento-de-tumbes-tumbes/",
-        "fecha": "2026-11-07T05:21"
       },
       {
         "titulo": "REPORTE COMPLEMENTARIO N.° 15603 – 6/11/2026 / COEN-INDECI / 23:40 HORAS (Reporte N.° 2) INCENDIO FORESTAL EN EL DISTRITO DE SANTO TOMÁS DE PATA – HUANCAVELICA",
@@ -436,60 +487,10 @@
         "titulo": "REPORTE COMPLEMENTARIO N.° 15602 – 6/11/2026 / COEN – INDECI / 23:38 HORAS (Reporte N.° 5) DÉFICIT HÍDRICO EN EL DISTRITO DE PILPICHACA – HUANCAVELICA",
         "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-11913-7-9-2026-coen-indeci-2214-horas-reporte-n-1-deficit-hidrico-en-el-distrito-de-pilpichaca-huancavelica/",
         "fecha": "2026-11-07T05:08"
-      },
-      {
-        "titulo": "BOLETÍN INFORMATIVO DE AVISO METEOROLÓGICO N° 461-2026-INDECI/COEN",
-        "enlace": "https://portal.indeci.gob.pe/emergencias/boletin-informativo-de-aviso-meteorologico-n-461-2026-indeci-coen/",
-        "fecha": "2026-11-07T04:50"
-      },
-      {
-        "titulo": "REPORTE COMPLEMENTARIO N.° 15601 – 6/11/2026 / COEN-INDECI / 23:20 HORAS (Reporte N.° 1) LLUVIAS INTENSAS EN EL DISTRITO DE SHILLA – ÁNCASH",
-        "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-15601-6-11-2026-coen-indeci-2320-horas-reporte-n-1-lluvias-intensas-en-el-distrito-de-shilla-ancash/",
-        "fecha": "2026-11-07T04:48"
-      },
-      {
-        "titulo": "REPORTE COMPLEMENTARIO N.º 15600 – 06/11/2026 / COEN – INDECI / 23:30 HORAS (Reporte N.° 1) DESLIZAMIENTO EN EL DISTRITO DE HUAQUIRCA – APURÍMAC",
-        "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-o-15600-06-11-2026-coen-indeci-2330-horas-reporte-n-1-deslizamiento-en-el-distrito-de-huaquirca-apurimac/",
-        "fecha": "2026-11-07T04:46"
-      },
-      {
-        "titulo": "REPORTE COMPLEMENTARIO N.º 15599 – 6/11/2026 / COEN-INDECI / 22:48 HORAS (Reporte N.° 1) HELADA EN EL DISTRITO DE CONGALLA – HUANCAVELICA",
-        "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-o-15599-6-11-2026-coen-indeci-2248-horas-reporte-n-1-helada-en-el-distrito-de-congalla-huancavelica/",
-        "fecha": "2026-11-07T04:44"
-      },
-      {
-        "titulo": "REPORTE COMPLEMENTARIO N.° 15598 – 6/11/2026 / COEN – INDECI / 22:42 HORAS (Reporte N.° 1) LLUVIAS INTENSAS EN EL DISTRITO DE HUARAZ – ÁNCASH",
-        "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-15598-6-11-2026-coen-indeci-2242-horas-reporte-n-1-lluvias-intensas-en-el-distrito-de-huaraz-ancash/",
-        "fecha": "2026-11-07T04:41"
-      },
-      {
-        "titulo": "BOLETÍN INFORMATIVO DE AVISO METEOROLÓGICO N° 460-2026-INDECI/COEN",
-        "enlace": "https://portal.indeci.gob.pe/emergencias/boletin-informativo-de-aviso-meteorologico-n-460-2026-indeci-coen/",
-        "fecha": "2026-11-07T04:40"
-      },
-      {
-        "titulo": "REPORTE COMPLEMENTARIO N.° 15597 – 6/11/2026 / COEN – INDECI / 22:37 HORAS (Reporte N.º 1) INCENDIO URBANO EN EL DISTRITO DE LA VICTORIA – LAMBAYEQUE",
-        "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-15597-6-11-2026-coen-indeci-2237-horas-reporte-n-o-1-incendio-urbano-en-el-distrito-de-la-victoria-lambayeque/",
-        "fecha": "2026-11-07T04:38"
-      },
-      {
-        "titulo": "REPORTE COMPLEMENTARIO N.° 15596 – 6/11/2026 / COEN-INDECI / 22:32 HORAS (Reporte N.° 1) LLUVIAS INTENSAS EN EL DISTRITO DE ICHUÑA – MOQUEGUA",
-        "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-15596-6-11-2026-coen-indeci-2232-horas-reporte-n-1-lluvias-intensas-en-el-distrito-de-ichuna-moquegua/",
-        "fecha": "2026-11-07T04:36"
-      },
-      {
-        "titulo": "BOLETÍN INFORMATIVO DE AVISO METEOROLÓGICO N° 459-2026-INDECI/COEN",
-        "enlace": "https://portal.indeci.gob.pe/emergencias/boletin-informativo-de-aviso-meteorologico-n-459-2026-indeci-coen/",
-        "fecha": "2026-11-07T04:35"
-      },
-      {
-        "titulo": "REPORTE COMPLEMENTARIO N.° 15595 – 6/11/2026/ COEN-INDECI / 22:27 HORAS (Reporte N° 3) INCENDIO FORESTAL EN EL DISTRITO OCOBAMBA – APURÍMAC",
-        "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-15489-4-11-2026-coen-indeci-2330-horas-reporte-n-1-incendio-forestal-en-el-distrito-ocobamba-apurimac/",
-        "fecha": "2026-11-07T04:33"
       }
     ],
     "url": "https://portal.indeci.gob.pe/emergencias/",
-    "leido": "2026-11-07T06:07:07Z"
+    "leido": "2026-11-07T13:13:36Z"
   },
   "escenario": {
     "vigente": true,
@@ -1974,7 +1975,7 @@
       }
     },
     "url": "https://sigrid.cenepred.gob.pe/sigridv3/escenario-aviso",
-    "leido": "2026-11-07T06:07:09Z"
+    "leido": "2026-11-07T13:13:39Z"
   },
   "quebradas": {
     "fecha": "2026-11-06",
@@ -2982,7 +2983,7 @@
     },
     "sin_cruce": 0,
     "url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico",
-    "leido": "2026-11-07T06:07:13Z"
+    "leido": "2026-11-07T13:13:45Z"
   },
   "hidro": {
     "avisos": [
@@ -3024,7 +3025,7 @@
       }
     ],
     "url": "https://www.senamhi.gob.pe/?p=aviso-hidrologico",
-    "leido": "2026-11-07T06:07:14Z"
+    "leido": "2026-11-07T13:13:46Z"
   },
   "ana_rios": {
     "estaciones": [
@@ -17658,12 +17659,22 @@
       }
     },
     "url": "https://visor.geoperu.gob.pe/",
-    "leido": "2026-11-07T06:07:15Z"
+    "leido": "2026-11-07T13:13:47Z"
   },
   "agua": {
-    "total": 58,
-    "conexiones": 268660,
+    "total": 60,
+    "conexiones": 345340,
     "cortes": [
+      {
+        "eps": "SEDAPAL",
+        "lugar": "Villa El Salvador, Lima",
+        "conexiones": 68390,
+        "tipo": "Imprevista",
+        "motivo": "Otros",
+        "inicio": "2026-11-07",
+        "restablece": "2026-11-07",
+        "distrito": "150142"
+      },
       {
         "eps": "SEDAPAL",
         "lugar": "San Juan De Lurigancho, Lima",
@@ -17733,6 +17744,16 @@
         "inicio": "2026-11-06",
         "restablece": "2026-11-07",
         "distrito": "200101"
+      },
+      {
+        "eps": "SEDAPAL",
+        "lugar": "Villa Maria Del Triunfo, Lima",
+        "conexiones": 9373,
+        "tipo": "Imprevista",
+        "motivo": "Fuga en conexión",
+        "inicio": "2026-11-07",
+        "restablece": "2026-11-07",
+        "distrito": "150143"
       },
       {
         "eps": "SEDAPAL",
@@ -17846,16 +17867,6 @@
       },
       {
         "eps": "SEDAPAL",
-        "lugar": "Villa Maria Del Triunfo, Lima",
-        "conexiones": 3941,
-        "tipo": "Programada",
-        "motivo": "Ejecución de empalme",
-        "inicio": "2026-11-12",
-        "restablece": "2026-11-12",
-        "distrito": "150143"
-      },
-      {
-        "eps": "SEDAPAL",
         "lugar": "El Agustino, Lima",
         "conexiones": 3813,
         "tipo": "Programada",
@@ -17863,16 +17874,6 @@
         "inicio": "2026-11-10",
         "restablece": "2026-11-11",
         "distrito": "150111"
-      },
-      {
-        "eps": "SEDAPAL",
-        "lugar": "Villa El Salvador, Lima",
-        "conexiones": 3632,
-        "tipo": "Programada",
-        "motivo": "Limpieza y desinfección de reservorio/cisterna",
-        "inicio": "2026-11-12",
-        "restablece": "2026-11-13",
-        "distrito": "150142"
       },
       {
         "eps": "EPS EMAPA CAÑETE S.A",
@@ -17883,6 +17884,16 @@
         "inicio": "2026-11-08",
         "restablece": "2026-11-16",
         "distrito": "150507"
+      },
+      {
+        "eps": "SEDAPAR  S.A.",
+        "lugar": "Socabaya, Arequipa",
+        "conexiones": 3491,
+        "tipo": "Imprevista",
+        "motivo": "Rotura de tubería de agua potable",
+        "inicio": "2026-11-07",
+        "restablece": "2026-11-07",
+        "distrito": "040122"
       },
       {
         "eps": "SEDAPAL",
@@ -17903,6 +17914,16 @@
         "inicio": "2026-11-06",
         "restablece": "2026-11-07",
         "distrito": "150110"
+      },
+      {
+        "eps": "SEDA AYACUCHO S.A.",
+        "lugar": "Huanta, Ayacucho",
+        "conexiones": 2800,
+        "tipo": "Programada",
+        "motivo": "Limpieza y desinfección de reservorio/cisterna",
+        "inicio": "2026-11-11",
+        "restablece": "2026-11-12",
+        "distrito": "050401"
       },
       {
         "eps": "EPS GRAU S.A.",
@@ -18015,6 +18036,16 @@
         "distrito": "150128"
       },
       {
+        "eps": "EPS ILO S.A.",
+        "lugar": "Ilo, Moquegua",
+        "conexiones": 1348,
+        "tipo": "Imprevista",
+        "motivo": "Otros",
+        "inicio": "2026-11-07",
+        "restablece": "2026-11-07",
+        "distrito": "180301"
+      },
+      {
         "eps": "EPS CHAVIN S.A.",
         "lugar": "Huaraz, Ancash",
         "conexiones": 1335,
@@ -18063,16 +18094,6 @@
         "inicio": "2026-11-10",
         "restablece": "2026-11-11",
         "distrito": "150121"
-      },
-      {
-        "eps": "SEDAPAR  S.A.",
-        "lugar": "Socabaya, Arequipa",
-        "conexiones": 1149,
-        "tipo": "Programada",
-        "motivo": "Limpieza y desinfección de reservorio/cisterna",
-        "inicio": "2026-11-12",
-        "restablece": "2026-11-13",
-        "distrito": "040122"
       },
       {
         "eps": "SEDAPAL",
@@ -18246,6 +18267,10 @@
       }
     ],
     "distritos": {
+      "150142": {
+        "cortes": 1,
+        "conexiones": 68390
+      },
       "150132": {
         "cortes": 1,
         "conexiones": 26814
@@ -18273,6 +18298,10 @@
       "200101": {
         "cortes": 1,
         "conexiones": 10571
+      },
+      "150143": {
+        "cortes": 1,
+        "conexiones": 9373
       },
       "070102": {
         "cortes": 1,
@@ -18318,21 +18347,17 @@
         "cortes": 1,
         "conexiones": 4595
       },
-      "150143": {
-        "cortes": 1,
-        "conexiones": 3941
-      },
       "150111": {
         "cortes": 1,
         "conexiones": 3813
       },
-      "150142": {
-        "cortes": 1,
-        "conexiones": 3632
-      },
       "150507": {
         "cortes": 1,
         "conexiones": 3585
+      },
+      "040122": {
+        "cortes": 1,
+        "conexiones": 3491
       },
       "070106": {
         "cortes": 1,
@@ -18341,6 +18366,10 @@
       "150110": {
         "cortes": 1,
         "conexiones": 3067
+      },
+      "050401": {
+        "cortes": 1,
+        "conexiones": 2800
       },
       "200703": {
         "cortes": 1,
@@ -18386,6 +18415,10 @@
         "cortes": 1,
         "conexiones": 1545
       },
+      "180301": {
+        "cortes": 1,
+        "conexiones": 1348
+      },
       "020101": {
         "cortes": 1,
         "conexiones": 1335
@@ -18405,10 +18438,6 @@
       "150121": {
         "cortes": 1,
         "conexiones": 1245
-      },
-      "040122": {
-        "cortes": 1,
-        "conexiones": 1149
       },
       "150130": {
         "cortes": 1,
@@ -18480,7 +18509,7 @@
       }
     },
     "url": "https://www.sunass.gob.pe/",
-    "leido": "2026-11-07T06:07:15Z"
+    "leido": "2026-11-07T13:13:48Z"
   },
   "incendios": {
     "total": 22,
@@ -18685,7 +18714,7 @@
       }
     ],
     "url": "https://geo.serfor.gob.pe/visor/",
-    "leido": "2026-11-07T06:07:16Z"
+    "leido": "2026-11-07T13:13:49Z"
   },
   "phisis": {
     "estaciones": [
@@ -20915,7 +20944,7 @@
       "clasificacion": 99.88
     },
     "url": "http://met.igp.gob.pe/variabclim/",
-    "leido": "2026-11-07T06:07:18Z"
+    "leido": "2026-11-07T13:13:50Z"
   },
   "dhn": {
     "generado": "2026-11-06T16:10:08Z",
@@ -21427,7 +21456,7 @@
         }
       ]
     },
-    "leido": "2026-11-07T06:07:19Z"
+    "leido": "2026-11-07T13:13:51Z"
   },
   "inaigem": {
     "estaciones": [
@@ -21465,7 +21494,7 @@
       }
     ],
     "url": "https://www.inaigem.gob.pe/",
-    "leido": "2026-11-07T06:07:19Z"
+    "leido": "2026-11-07T13:13:51Z"
   },
   "enfen_docs": {
     "docs": [
