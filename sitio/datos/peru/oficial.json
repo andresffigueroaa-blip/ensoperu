@@ -1,6 +1,6 @@
 {
   "_": "Generado por pipeline/fuentes/peru_oficial.py. Datos oficiales tal como se publican.",
-  "actualizado": "2026-11-08T04:23:58Z",
+  "actualizado": "2026-11-08T04:26:46Z",
   "fallas": [],
   "fenomeno": {
     "fecha": "30 de octubre del 2026",
@@ -414,10 +414,15 @@
     ],
     "sin_cruce": 2,
     "url": "https://coen.indeci.gob.pe/mer/",
-    "leido": "2026-11-08T04:24:00Z"
+    "leido": "2026-11-08T04:26:47Z"
   },
   "indeci_rss": {
     "reportes": [
+      {
+        "titulo": "REPORTE COMPLEMENTARIO N.º 15631 – 7/11/2026 / COEN – INDECI / 21:40 HORAS (Reporte N.º 1) LLUVIAS INTENSAS EN EL DEPARTAMENTO DE PIURA",
+        "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-o-15631-7-11-2026-coen-indeci-2140-horas-reporte-n-o-1-lluvias-intensas-en-el-departamento-de-piura/",
+        "fecha": "2026-11-08T04:24"
+      },
       {
         "titulo": "REPORTE COMPLEMENTARIO N.º 15630 – 7/11/2026 / COEN – INDECI / 21:10 HORAS (Reporte N.° 2) LLUVIAS INTENSAS EN EL DISTRITO DE SAN IGNACIO – CAJAMARCA",
         "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-o-14794-22-10-2026-coen-indeci-2320-horas-reporte-n-1-lluvias-intensas-en-el-distrito-de-san-ignacio-cajamarca/",
@@ -482,15 +487,10 @@
         "titulo": "REPORTE COMPLEMENTARIO N.° 15620 – 7/11/2026 / COEN – INDECI / 16:50 HORAS (Reporte N° 1) INCENDIO FORESTAL EN EL DISTRITO DE ABANCAY – APURÍMAC",
         "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-preliminar-n-1118-6-11-2026-coen-indeci-2107-horas-incendio-forestal-en-el-distrito-de-abancay-apurimac/",
         "fecha": "2026-11-07T23:37"
-      },
-      {
-        "titulo": "REPORTE COMPLEMENTARIO N.º 15619 – 7/11/2026 / COEN – INDECI / 15:35 HORAS (Reporte N.º 2) INCENDIO FORESTAL EN EL DISTRITO DE PISACOMA – PUNO",
-        "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-o-15547-5-11-2026-coen-indeci-2125-horas-reporte-n-o-1-incendio-forestal-en-el-distrito-de-pisacoma-puno/",
-        "fecha": "2026-11-07T23:34"
       }
     ],
     "url": "https://portal.indeci.gob.pe/emergencias/",
-    "leido": "2026-11-08T04:24:01Z"
+    "leido": "2026-11-08T04:26:51Z"
   },
   "escenario": {
     "vigente": true,
@@ -1975,7 +1975,7 @@
       }
     },
     "url": "https://sigrid.cenepred.gob.pe/sigridv3/escenario-aviso",
-    "leido": "2026-11-08T04:24:01Z"
+    "leido": "2026-11-08T04:26:53Z"
   },
   "quebradas": {
     "fecha": "2026-11-07",
@@ -3883,7 +3883,7 @@
     },
     "sin_cruce": 16,
     "url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico",
-    "leido": "2026-11-08T04:24:14Z"
+    "leido": "2026-11-08T04:27:05Z"
   },
   "hidro": {
     "avisos": [
@@ -3913,7 +3913,7 @@
       }
     ],
     "url": "https://www.senamhi.gob.pe/?p=aviso-hidrologico",
-    "leido": "2026-11-08T04:24:15Z"
+    "leido": "2026-11-08T04:27:06Z"
   },
   "ana_rios": {
     "estaciones": [
@@ -18259,7 +18259,7 @@
       }
     },
     "url": "https://visor.geoperu.gob.pe/",
-    "leido": "2026-11-08T04:24:23Z"
+    "leido": "2026-11-08T04:27:07Z"
   },
   "agua": {
     "total": 57,
@@ -19067,7 +19067,7 @@
       }
     },
     "url": "https://www.sunass.gob.pe/",
-    "leido": "2026-11-08T04:24:24Z"
+    "leido": "2026-11-08T04:27:08Z"
   },
   "incendios": {
     "total": 36,
@@ -19398,7 +19398,7 @@
       }
     ],
     "url": "https://geo.serfor.gob.pe/visor/",
-    "leido": "2026-11-08T04:24:24Z"
+    "leido": "2026-11-08T04:27:09Z"
   },
   "phisis": {
     "estaciones": [
@@ -21628,7 +21628,7 @@
       "clasificacion": 99.88
     },
     "url": "http://met.igp.gob.pe/variabclim/",
-    "leido": "2026-11-08T04:24:25Z"
+    "leido": "2026-11-08T04:27:12Z"
   },
   "dhn": {
     "generado": "2026-11-06T16:10:08Z",
@@ -22140,7 +22140,7 @@
         }
       ]
     },
-    "leido": "2026-11-08T04:24:25Z"
+    "leido": "2026-11-08T04:27:13Z"
   },
   "inaigem": {
     "estaciones": [
@@ -22178,7 +22178,7 @@
       }
     ],
     "url": "https://www.inaigem.gob.pe/",
-    "leido": "2026-11-08T04:24:26Z"
+    "leido": "2026-11-08T04:27:13Z"
   },
   "enfen_docs": {
     "docs": [
