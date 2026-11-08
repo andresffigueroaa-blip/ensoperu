@@ -1,6 +1,6 @@
 {
   "_": "Generado por pipeline/fuentes/peru_oficial.py. Datos oficiales tal como se publican.",
-  "actualizado": "2026-11-08T09:06:56Z",
+  "actualizado": "2026-11-08T16:03:05Z",
   "fallas": [],
   "fenomeno": {
     "fecha": "30 de octubre del 2026",
@@ -12,15 +12,15 @@
   },
   "coen": {
     "dias": 7,
-    "total": 91,
+    "total": 89,
     "por_peligro": {
-      "Incendios forestales": 26,
       "Lluvias intensas": 26,
+      "Incendios forestales": 22,
       "Incendios urbanos": 15,
       "Vientos fuertes": 8,
-      "Huaico (flujo de detritos)": 4,
+      "Huaico (flujo de detritos)": 5,
+      "Colapso de estructura por agente climático": 3,
       "Inundaciones por saturación del suelo para drenaje (pluvial)": 3,
-      "Colapso de estructura por agente climático": 2,
       "Deslizamiento": 2,
       "Granizada": 1,
       "Accidentes de transporte terrestre": 1,
@@ -29,24 +29,24 @@
       "Inundaciones por desborde de canales o drenes": 1
     },
     "por_region": {
-      "15": 11,
+      "15": 12,
       "04": 2,
       "09": 6,
       "20": 3,
       "16": 2,
       "14": 2,
-      "02": 10,
+      "02": 9,
       "19": 7,
       "11": 1,
       "03": 8,
       "18": 4,
       "07": 1,
+      "24": 5,
       "01": 4,
-      "21": 6,
+      "21": 4,
       "05": 4,
       "22": 2,
-      "24": 4,
-      "08": 6,
+      "08": 5,
       "06": 5,
       "17": 1
     },
@@ -57,7 +57,7 @@
         "distrito": "150110",
         "lugar": "Comas, Lima, Lima",
         "hechos": "Se registra un incendio urbano que ocasiona daños materiales (establecimiento comercial) en la calle Los Jazmines N.° 100, cruce con Av. Tupac Amaru y Av. Belaunde, distrito de Comas, provincia de Lima.",
-        "pdf": "https://coen.indeci.gob.pe/api/v2/mer/files/view?key=mer/2026/10/1794109841250.pdf",
+        "pdf": "https://coen.indeci.gob.pe/api/v2/mer/files/view?key=mer/2026/10/1794136947639.pdf",
         "sinpad": null
       },
       {
@@ -85,6 +85,15 @@
         "lugar": "Lima, Lima, Lima",
         "hechos": "Se registró un incendio urbano que causó daños materiales (vivienda) en el jirón Juan Alfaro 461, distrito y provincia de Lima.",
         "pdf": "https://coen.indeci.gob.pe/api/v2/mer/files/view?key=mer/2026/10/1794055903083.pdf",
+        "sinpad": null
+      },
+      {
+        "fecha": "2026-11-07 04:40",
+        "peligro": "Colapso de estructura por agente climático",
+        "distrito": "150116",
+        "lugar": "Lince, Lima, Lima",
+        "hechos": "Se registró un colapso de estructura por agente climático que causó daños materiales (vivienda) en la calle San Roberto 294, distrito de Lince, Provincia de Lima.",
+        "pdf": "https://coen.indeci.gob.pe/api/v2/mer/files/view?key=mer/2026/10/1794141878367.pdf",
         "sinpad": null
       },
       {
@@ -214,6 +223,15 @@
         "sinpad": null
       },
       {
+        "fecha": "2026-11-05 18:00",
+        "peligro": "Huaico (flujo de detritos)",
+        "distrito": "240202",
+        "lugar": "Casitas, Contralmirante Villar, Tumbes",
+        "hechos": "A consecuencias de las lluvias intensas, se activaron las quebradas Bocapan, Corralito y Paneles que produjo huaico, causando daños materiales (infraestructura de transporte) dejando aislado a los centros poblados Tacna Libre, Bellavista, Cherrelique, La Choza, Cienego Sur, Cienego Norte, Chicana y El Cardo, distrito de Casitas, provincia de Contralmirante Villar.",
+        "pdf": "https://coen.indeci.gob.pe/api/v2/mer/files/view?key=mer/2026/10/1794133702259.pdf",
+        "sinpad": null
+      },
+      {
         "fecha": "2026-11-05 17:00",
         "peligro": "Lluvias intensas",
         "distrito": "010706",
@@ -323,20 +341,20 @@
       },
       {
         "fecha": "2026-11-04 19:00",
-        "peligro": "Incendios forestales",
-        "distrito": "030605",
-        "lugar": "Ocobamba, Chincheros, Apurimac",
-        "hechos": "Se registra un incendio forestal que ocasiona daños materiales (cobertura natural) en las comunidades Túpac Amaru y Tres Cruces, distrito Ocobamba, provincia de Chincheros.",
-        "pdf": "https://coen.indeci.gob.pe/api/v2/mer/files/view?key=mer/2026/10/1794097694617.pdf",
-        "sinpad": null
-      },
-      {
-        "fecha": "2026-11-04 19:00",
         "peligro": "Lluvias intensas",
         "distrito": "240105",
         "lugar": "San Jacinto, Tumbes, Tumbes",
         "hechos": "4/11/2026 19:00 horas Como consecuencia de las lluvias intensas, se registró el desborde de la quebrada El Tablazo que produjo daños materiales (viviendas), en el sector El Tablazo, caserío Casa Blanqueada, distrito de San Jacinto, provincia de Tumbes. 4/11/2026 19:00 horas Como consecuencia de las lluvias intensas, se registró el desborde de la quebrada Higuerón, que produjo daños materiales (viv",
         "pdf": "https://coen.indeci.gob.pe/api/v2/mer/files/view?key=mer/2026/10/1794019381894.pdf",
+        "sinpad": null
+      },
+      {
+        "fecha": "2026-11-04 19:00",
+        "peligro": "Incendios forestales",
+        "distrito": "030605",
+        "lugar": "Ocobamba, Chincheros, Apurimac",
+        "hechos": "Se registra un incendio forestal que ocasiona daños materiales (cobertura natural) en las comunidades Túpac Amaru y Tres Cruces, distrito Ocobamba, provincia de Chincheros.",
+        "pdf": "https://coen.indeci.gob.pe/api/v2/mer/files/view?key=mer/2026/10/1794097694617.pdf",
         "sinpad": null
       },
       {
@@ -392,32 +410,69 @@
         "hechos": "Se registra un incendio urbano que ocasiona daños materiales (vivienda) en la calle Los Tacones N.° 211, distrito de Villa María del Triunfo, provincia de Lima.",
         "pdf": "https://coen.indeci.gob.pe/api/v2/mer/files/view?key=mer/2026/10/1793831299244.pdf",
         "sinpad": null
-      },
-      {
-        "fecha": "2026-11-04 14:40",
-        "peligro": "Vientos fuertes",
-        "distrito": "160703",
-        "lugar": "Manseriche, Datem Del Marañon, Loreto",
-        "hechos": "Se registraron vientos fuertes que ocasionaron daños materiales (vivienda) en la localidad de Puerto Linda, distrito de Manseriche, provincia de Datem del Marañón.",
-        "pdf": "https://coen.indeci.gob.pe/api/v2/mer/files/view?key=mer/2026/10/1793881075286.pdf",
-        "sinpad": null
-      },
-      {
-        "fecha": "2026-11-04 14:20",
-        "peligro": "Vientos fuertes",
-        "distrito": "010110",
-        "lugar": "Leimebamba, Chachapoyas, Amazonas",
-        "hechos": "Se registraron vientos fuertes que causaron daños materiales (viviendas) en el barrio La Variante, centro poblado de Palmira, distrito de Leimebamba, provincia de Chachapoyas.",
-        "pdf": "https://coen.indeci.gob.pe/api/v2/mer/files/view?key=mer/2026/10/1793908055369.pdf",
-        "sinpad": null
       }
     ],
     "sin_cruce": 2,
     "url": "https://coen.indeci.gob.pe/mer/",
-    "leido": "2026-11-08T09:06:57Z"
+    "leido": "2026-11-08T16:03:06Z"
   },
   "indeci_rss": {
     "reportes": [
+      {
+        "titulo": "BOLETÍN INFORMATIVO DE OLEAJES N°047-2026-INDECI/COEN",
+        "enlace": "https://portal.indeci.gob.pe/emergencias/boletin-informativo-de-oleajes-n047-2026-indeci-coen/",
+        "fecha": "2026-11-08T15:54"
+      },
+      {
+        "titulo": "REPORTE COMPLEMENTARIO N.° 15638 – 8/11/2026 / COEN – INDECI / 08:20 HORAS (Reporte N.° 1) INCENDIO FORESTAL EN EL DISTRITO DE VENTANILLA – CALLAO",
+        "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-15638-8-11-2026-coen-indeci-0820-horas-reporte-n-1-incendio-forestal-en-el-distrito-de-ventanilla-callao/",
+        "fecha": "2026-11-08T13:25"
+      },
+      {
+        "titulo": "REPORTE COMPLEMENTARIO N.º 15637 – 8/11/2026 / COEN – INDECI / 07:50 HORAS (Reporte N.º 12) LLUVIAS INTENSAS EN EL DISTRITO DE BOQUERÓN – UCAYALI",
+        "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-o-15290-31-10-2026-coen-indeci-1340-horas-reporte-n-o-1-deslizamiento-en-el-distrito-de-boqueron-ucayali/",
+        "fecha": "2026-11-08T13:06"
+      },
+      {
+        "titulo": "REPORTE COMPLEMENTARIO N.º 15636 – 8/11/2026/ COEN – INDECI / 07:30 HORAS (Reporte N.º 1) COLAPSO DE ESTRUCTURA POR AGENTE CLIMÁTICO EN EL DISTRITO DE LINCE – LIMA",
+        "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-o-15636-8-11-2026-coen-indeci-0730-horas-reporte-n-o-1-colapso-de-estructura-por-agente-climatico-en-el-distrito-de-lince-lima/",
+        "fecha": "2026-11-08T12:50"
+      },
+      {
+        "titulo": "REPORTE COMPLEMENTARIO N.° 15635 – 7/11/2026 / COEN – INDECI / 07:10 HORAS (Reporte N.º 4) INCENDIO FORESTAL EN EL DISTRITO DE SANTIAGO DE PISCHA – AYACUCHO",
+        "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-15435-3-11-2026-coen-indeci-1900-horas-reporte-n-o-1-incendio-forestal-en-el-distrito-de-santiago-de-pischa-ayacucho/",
+        "fecha": "2026-11-08T12:45"
+      },
+      {
+        "titulo": "BOLETÍN INFORMATIVO SÍSMICO NACIONAL Nº 771-2026 del 8 de noviembre de 2026",
+        "enlace": "https://portal.indeci.gob.pe/emergencias/boletin-informativo-sismico-nacional-no-771-2026-del-8-de-noviembre-de-2026/",
+        "fecha": "2026-11-08T12:24"
+      },
+      {
+        "titulo": "REPORTE COMPLEMENTARIO N.º 15634 – 8/11/2026 / COEN – INDECI / 02:00 HORAS (Reporte N.° 1) INCENDIO URBANO EN EL DISTRITO DE COMAS – LIMA",
+        "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-preliminar-n-o-1119-7-11-2026-coen-indeci-2050-horas-incendio-urbano-en-el-distrito-de-comas-lima/",
+        "fecha": "2026-11-08T12:06"
+      },
+      {
+        "titulo": "REPORTE PRELIMINAR N.° 1120 – 7/11/2026 / COEN – INDECI / 23:00 HORAS HUAICO EN EL DISTRITO DE CASITAS – TUMBES",
+        "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-preliminar-n-1120-7-11-2026-coen-indeci-2300-horas-huaico-en-el-distrito-de-casitas-tumbes/",
+        "fecha": "2026-11-08T12:04"
+      },
+      {
+        "titulo": "BOLETÍN INFORMATIVO SÍSMICO NACIONAL Nº 770-2026 del 8 de noviembre de 2026",
+        "enlace": "https://portal.indeci.gob.pe/emergencias/boletin-informativo-sismico-nacional-no-770-2026-del-8-de-noviembre-de-2026/",
+        "fecha": "2026-11-08T10:53"
+      },
+      {
+        "titulo": "BOLETÍN INFORMATIVO SÍSMICO NACIONAL Nº 769-2026 del 8 de noviembre de 2026",
+        "enlace": "https://portal.indeci.gob.pe/emergencias/boletin-informativo-sismico-nacional-no-769-2026-del-8-de-noviembre-de-2026/",
+        "fecha": "2026-11-08T09:31"
+      },
+      {
+        "titulo": "BOLETÍN INFORMATIVO DE AVISO HIDROLÓGICO N°1667-2026 Del 08-11-2026",
+        "enlace": "https://portal.indeci.gob.pe/emergencias/boletin-informativo-de-aviso-hidrologico-n1667-2026-del-08-11-2026/",
+        "fecha": "2026-11-08T09:27"
+      },
       {
         "titulo": "REPORTE COMPLEMENTARIO N.° 15633 – 7/11/2026 / COEN-INDECI / 22:40 HORAS (Reporte N.º 1) LLUVIAS INTENSAS EN EL DISTRITO DE TUMBES- TUMBES",
         "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-15633-7-11-2026-coen-indeci-2240-horas-reporte-n-o-1-lluvias-intensas-en-el-distrito-de-tumbes-tumbes/",
@@ -432,65 +487,10 @@
         "titulo": "REPORTE COMPLEMENTARIO N.º 15631 – 7/11/2026 / COEN – INDECI / 21:40 HORAS (Reporte N.º 1) LLUVIAS INTENSAS EN EL DEPARTAMENTO DE PIURA",
         "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-o-15631-7-11-2026-coen-indeci-2140-horas-reporte-n-o-1-lluvias-intensas-en-el-departamento-de-piura/",
         "fecha": "2026-11-08T04:24"
-      },
-      {
-        "titulo": "REPORTE COMPLEMENTARIO N.º 15630 – 7/11/2026 / COEN – INDECI / 21:10 HORAS (Reporte N.° 2) LLUVIAS INTENSAS EN EL DISTRITO DE SAN IGNACIO – CAJAMARCA",
-        "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-o-14794-22-10-2026-coen-indeci-2320-horas-reporte-n-1-lluvias-intensas-en-el-distrito-de-san-ignacio-cajamarca/",
-        "fecha": "2026-11-08T04:20"
-      },
-      {
-        "titulo": "REPORTE COMPLEMENTARIO N.º 15629 – 7/11/2026 / COEN – INDECI / 21:00 HORAS (Reporte N.º 2) LLUVIAS INTENSAS EN EL DISTRITO DE LONYA GRANDE – AMAZONAS",
-        "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-o-15548-5-11-2026-coen-indeci-2135-horas-reporte-n-o-1-lluvias-intensas-en-el-distrito-de-lonya-grande-amazonas/",
-        "fecha": "2026-11-08T04:17"
-      },
-      {
-        "titulo": "REPORTE COMPLEMENTARIO N.º 15626 – 7/11/2026 / COEN – INDECI / 19:10 HORAS (Reporte N.º 1) LLUVIAS INTENSAS EN EL DISTRITO DE LOBITOS – PIURA",
-        "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-o-15626-7-11-2026-coen-indeci-1910-horas-reporte-n-o-1-lluvias-intensas-en-el-distrito-de-lobitos-piura/",
-        "fecha": "2026-11-08T04:15"
-      },
-      {
-        "titulo": "REPORTE COMPLEMENTARIO N.° 15625 – 7/11/2026 / COEN-INDECI / 18:50 HORAS (Reporte N.° 2) INCENDIO URBANO EN EL DISTRITO DE CALLAO – LIMA",
-        "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-15560-6-11-2026-coen-indeci-0620-horas-reporte-n-1-incendio-urbano-en-el-distrito-de-callao-lima/",
-        "fecha": "2026-11-08T04:12"
-      },
-      {
-        "titulo": "REPORTE COMPLEMENTARIO N.° 15628 – 7/11/2026 / COEN-INDECI / 20:50 HORAS (Reporte N.° 15) LLUVIAS INTENSAS EN EL DEPARTAMENTO DE TUMBES – TUMBES",
-        "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-15614-7-11-2026-coen-indeci-1130-horas-reporte-n-14-lluvias-intensas-en-el-departamento-de-tumbes-tumbes/",
-        "fecha": "2026-11-08T04:07"
-      },
-      {
-        "titulo": "REPORTE COMPLEMENTARIO N.º 15627 – 7/11/2026 / COEN – INDECI / 20:10 HORAS (Reporte N.° 2) LLUVIAS INTENSAS EN EL DISTRITO DE HUANCABAMBA – PASCO",
-        "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-o-15484-4-11-2026-coen-indeci-2115-horas-reporte-n-1-lluvias-intensas-en-el-distrito-de-huancabamba-pasco/",
-        "fecha": "2026-11-08T03:57"
-      },
-      {
-        "titulo": "REPORTE PRELIMINAR N.º 1119 – 7/11/2026 / COEN – INDECI / 20:50 HORAS INCENDIO URBANO EN EL DISTRITO DE COMAS – LIMA",
-        "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-preliminar-n-o-1119-7-11-2026-coen-indeci-2050-horas-incendio-urbano-en-el-distrito-de-comas-lima/",
-        "fecha": "2026-11-08T03:53"
-      },
-      {
-        "titulo": "REPORTE COMPLEMENTARIO N.º 15624 – 7/11/2026 / COEN – INDECI / 18:40 HORAS (Reporte N.º 1) INCENDIO FORESTAL EN EL DISTRITO DE YANAQUIHUA – AREQUIPA",
-        "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-o-15624-7-11-2026-coen-indeci-1840-horas-reporte-n-o-1-incendio-forestal-en-el-distrito-de-yanaquihua-arequipa/",
-        "fecha": "2026-11-08T00:48"
-      },
-      {
-        "titulo": "REPORTE COMPLEMENTARIO N.° 15623 – 7/11/2026/ COEN-INDECI / 18:30 HORAS (Reporte N.° 4) INCENDIO FORESTAL EN EL DISTRITO OCOBAMBA – APURÍMAC",
-        "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-15489-4-11-2026-coen-indeci-2330-horas-reporte-n-1-incendio-forestal-en-el-distrito-ocobamba-apurimac/",
-        "fecha": "2026-11-08T00:45"
-      },
-      {
-        "titulo": "INFORME DE EMERGENCIA N.° 2550 – 7/11/2026 / COEN-INDECI / 17:50 HORAS (Informe N.° 1) LLUVIAS INTENSAS EN EL DISTRITO DE JOSÉ SABOGAL – CAJAMARCA",
-        "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-14634-20-10-2026-coen-indeci-2215-horas-reporte-n-1-lluvias-intensas-en-el-distrito-de-jose-sabogal-cajamarca/",
-        "fecha": "2026-11-07T23:47"
-      },
-      {
-        "titulo": "REPORTE COMPLEMENTARIO N.º 15622 – 7/11/2026 / COEN – INDECI / 17:50 HORAS (Reporte N.º 2) LLUVIAS INTENSAS EN EL DISTRITO DE SAN PABLO – CAJAMARCA",
-        "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-o-14601-20-10-2026-coen-indeci-1645-horas-reporte-n-o-1-lluvias-intensas-en-el-distrito-de-san-pablo-cajamarca/",
-        "fecha": "2026-11-07T23:42"
       }
     ],
     "url": "https://portal.indeci.gob.pe/emergencias/",
-    "leido": "2026-11-08T09:07:01Z"
+    "leido": "2026-11-08T16:03:07Z"
   },
   "escenario": {
     "vigente": true,
@@ -3104,7 +3104,7 @@
       }
     },
     "url": "https://sigrid.cenepred.gob.pe/sigridv3/escenario-aviso",
-    "leido": "2026-11-08T09:07:04Z"
+    "leido": "2026-11-08T16:03:11Z"
   },
   "quebradas": {
     "fecha": "2026-11-07",
@@ -5012,7 +5012,7 @@
     },
     "sin_cruce": 16,
     "url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico",
-    "leido": "2026-11-08T09:07:14Z"
+    "leido": "2026-11-08T16:03:22Z"
   },
   "hidro": {
     "avisos": [
@@ -5042,7 +5042,7 @@
       }
     ],
     "url": "https://www.senamhi.gob.pe/?p=aviso-hidrologico",
-    "leido": "2026-11-08T09:07:15Z"
+    "leido": "2026-11-08T16:03:22Z"
   },
   "ana_rios": {
     "estaciones": [
@@ -19388,12 +19388,22 @@
       }
     },
     "url": "https://visor.geoperu.gob.pe/",
-    "leido": "2026-11-08T09:07:16Z"
+    "leido": "2026-11-08T16:03:23Z"
   },
   "agua": {
-    "total": 57,
-    "conexiones": 269359,
+    "total": 70,
+    "conexiones": 358764,
     "cortes": [
+      {
+        "eps": "SEDAPAL",
+        "lugar": "Puente Piedra, Lima",
+        "conexiones": 35779,
+        "tipo": "Imprevista",
+        "motivo": "Problemas en colectores",
+        "inicio": "2026-11-08",
+        "restablece": "2026-11-08",
+        "distrito": "150125"
+      },
       {
         "eps": "SEDAPAL",
         "lugar": "San Juan De Lurigancho, Lima",
@@ -19465,6 +19475,26 @@
         "distrito": "080101"
       },
       {
+        "eps": "UE AGUA TUMBES",
+        "lugar": "Tumbes, Tumbes",
+        "conexiones": 15400,
+        "tipo": "Imprevista",
+        "motivo": "Corte de servicio de electricidad",
+        "inicio": "2026-11-08",
+        "restablece": "2026-11-08",
+        "distrito": "240101"
+      },
+      {
+        "eps": "SEDAPAL",
+        "lugar": "Santa Anita, Lima",
+        "conexiones": 8694,
+        "tipo": "Imprevista",
+        "motivo": "Fuga en conexión",
+        "inicio": "2026-11-08",
+        "restablece": "2026-11-08",
+        "distrito": "150137"
+      },
+      {
         "eps": "SEDAPAL",
         "lugar": "Bellavista, Callao",
         "conexiones": 7301,
@@ -19483,6 +19513,16 @@
         "inicio": "2026-11-13",
         "restablece": "2026-11-13",
         "distrito": "040520"
+      },
+      {
+        "eps": "SEDAPAL",
+        "lugar": "Villa El Salvador, Lima",
+        "conexiones": 6529,
+        "tipo": "Programada",
+        "motivo": "Limpieza y desinfección de reservorio/cisterna",
+        "inicio": "2026-11-19",
+        "restablece": "2026-11-20",
+        "distrito": "150142"
       },
       {
         "eps": "EPS EMAPAT S.A._",
@@ -19525,6 +19565,16 @@
         "distrito": "150601"
       },
       {
+        "eps": "SEDALIB S.A.",
+        "lugar": "Trujillo, La Libertad",
+        "conexiones": 5300,
+        "tipo": "Programada",
+        "motivo": "Limpieza y desinfección de reservorio/cisterna",
+        "inicio": "2026-11-22",
+        "restablece": "2026-11-23",
+        "distrito": "130101"
+      },
+      {
         "eps": "SEDAPAL",
         "lugar": "Lurigancho, Lima",
         "conexiones": 5249,
@@ -19543,6 +19593,16 @@
         "inicio": "2026-11-07",
         "restablece": "2026-11-08",
         "distrito": "150114"
+      },
+      {
+        "eps": "EPS ILO S.A.",
+        "lugar": "Ilo, Moquegua",
+        "conexiones": 4884,
+        "tipo": "Imprevista",
+        "motivo": "Otros",
+        "inicio": "2026-11-08",
+        "restablece": "2026-11-08",
+        "distrito": "180301"
       },
       {
         "eps": "SEDALIB S.A.",
@@ -19566,6 +19626,26 @@
       },
       {
         "eps": "SEDAPAL",
+        "lugar": "San Bartolo, Lima",
+        "conexiones": 4515,
+        "tipo": "Imprevista",
+        "motivo": "Fuga en conexión",
+        "inicio": "2026-11-08",
+        "restablece": "2026-11-08",
+        "distrito": "150129"
+      },
+      {
+        "eps": "SEDAPAL",
+        "lugar": "Ventanilla, Callao",
+        "conexiones": 3998,
+        "tipo": "Programada",
+        "motivo": "Limpieza y desinfección de reservorio/cisterna",
+        "inicio": "2026-11-18",
+        "restablece": "2026-11-19",
+        "distrito": "070106"
+      },
+      {
+        "eps": "SEDAPAL",
         "lugar": "Villa Maria Del Triunfo, Lima",
         "conexiones": 3941,
         "tipo": "Programada",
@@ -19585,16 +19665,6 @@
         "distrito": "150111"
       },
       {
-        "eps": "SEDAPAL",
-        "lugar": "Villa El Salvador, Lima",
-        "conexiones": 3632,
-        "tipo": "Programada",
-        "motivo": "Limpieza y desinfección de reservorio/cisterna",
-        "inicio": "2026-11-12",
-        "restablece": "2026-11-13",
-        "distrito": "150142"
-      },
-      {
         "eps": "EPS EMAPA CAÑETE S.A",
         "lugar": "Imperial, Lima",
         "conexiones": 3585,
@@ -19603,16 +19673,6 @@
         "inicio": "2026-11-08",
         "restablece": "2026-11-16",
         "distrito": "150507"
-      },
-      {
-        "eps": "SEDAPAL",
-        "lugar": "Ventanilla, Callao",
-        "conexiones": 3147,
-        "tipo": "Programada",
-        "motivo": "Limpieza y desinfección de reservorio/cisterna",
-        "inicio": "2026-11-12",
-        "restablece": "2026-11-13",
-        "distrito": "070106"
       },
       {
         "eps": "SEDAPAL",
@@ -19665,6 +19725,16 @@
         "distrito": "150108"
       },
       {
+        "eps": "UE AGUA TUMBES",
+        "lugar": "Aguas Verdes, Tumbes",
+        "conexiones": 2217,
+        "tipo": "Imprevista",
+        "motivo": "Otros",
+        "inicio": "2026-11-08",
+        "restablece": "2026-11-10",
+        "distrito": "240302"
+      },
+      {
         "eps": "SEDAPAL",
         "lugar": "Jesus Maria, Lima",
         "conexiones": 2197,
@@ -19673,6 +19743,26 @@
         "inicio": "2026-11-12",
         "restablece": "2026-11-13",
         "distrito": "150113"
+      },
+      {
+        "eps": "SEDAPAL",
+        "lugar": "Lurin, Lima",
+        "conexiones": 2188,
+        "tipo": "Programada",
+        "motivo": "Limpieza y desinfección de reservorio/cisterna",
+        "inicio": "2026-11-19",
+        "restablece": "2026-11-20",
+        "distrito": "150119"
+      },
+      {
+        "eps": "SEDAPAL",
+        "lugar": "Carabayllo, Lima",
+        "conexiones": 2066,
+        "tipo": "Imprevista",
+        "motivo": "Baja producción en planta",
+        "inicio": "2026-11-08",
+        "restablece": "2026-11-08",
+        "distrito": "150106"
       },
       {
         "eps": "SEDALIB S.A.",
@@ -19715,6 +19805,16 @@
         "distrito": "150117"
       },
       {
+        "eps": "SEDALIB S.A.",
+        "lugar": "Salaverry, La Libertad",
+        "conexiones": 1724,
+        "tipo": "Programada",
+        "motivo": "Limpieza y desinfección de reservorio/cisterna",
+        "inicio": "2026-11-20",
+        "restablece": "2026-11-21",
+        "distrito": "130109"
+      },
+      {
         "eps": "UE AGUA TUMBES",
         "lugar": "La Cruz, Tumbes",
         "conexiones": 1500,
@@ -19723,6 +19823,16 @@
         "inicio": "2026-11-07",
         "restablece": "2026-11-09",
         "distrito": "240103"
+      },
+      {
+        "eps": "SEDAPAL",
+        "lugar": "Ate, Lima",
+        "conexiones": 1342,
+        "tipo": "Programada",
+        "motivo": "Limpieza y desinfección de reservorio/cisterna",
+        "inicio": "2026-11-17",
+        "restablece": "2026-11-18",
+        "distrito": "150103"
       },
       {
         "eps": "EPS CHAVIN S.A.",
@@ -19745,16 +19855,6 @@
         "distrito": "040107"
       },
       {
-        "eps": "SEDALIB S.A.",
-        "lugar": "Trujillo, La Libertad",
-        "conexiones": 1288,
-        "tipo": "Programada",
-        "motivo": "Limpieza y desinfección de reservorio/cisterna",
-        "inicio": "2026-11-11",
-        "restablece": "2026-11-12",
-        "distrito": "130101"
-      },
-      {
         "eps": "EPS GRAU S.A.",
         "lugar": "El Alto, Piura",
         "conexiones": 1280,
@@ -19773,6 +19873,16 @@
         "inicio": "2026-11-10",
         "restablece": "2026-11-11",
         "distrito": "150121"
+      },
+      {
+        "eps": "SEDACHIMBOTE S.A.",
+        "lugar": "Chimbote, Ancash",
+        "conexiones": 1200,
+        "tipo": "Imprevista",
+        "motivo": "Otros",
+        "inicio": "2026-11-08",
+        "restablece": "2026-11-08",
+        "distrito": "021801"
       },
       {
         "eps": "SEDAPAR  S.A.",
@@ -19815,6 +19925,16 @@
         "distrito": "100604"
       },
       {
+        "eps": "SEDALIB S.A.",
+        "lugar": "Moche, La Libertad",
+        "conexiones": 950,
+        "tipo": "Programada",
+        "motivo": "Limpieza y desinfección de reservorio/cisterna",
+        "inicio": "2026-11-17",
+        "restablece": "2026-11-17",
+        "distrito": "130107"
+      },
+      {
         "eps": "SEDAPAR  S.A.",
         "lugar": "Arequipa, Arequipa",
         "conexiones": 894,
@@ -19835,6 +19955,16 @@
         "distrito": "150501"
       },
       {
+        "eps": "SEDALIB S.A.",
+        "lugar": "Huanchaco, La Libertad",
+        "conexiones": 814,
+        "tipo": "Programada",
+        "motivo": "Limpieza y desinfección de reservorio/cisterna",
+        "inicio": "2026-11-16",
+        "restablece": "2026-11-16",
+        "distrito": "130104"
+      },
+      {
         "eps": "EPS BARRANCA S.A.",
         "lugar": "Supe, Lima",
         "conexiones": 810,
@@ -19845,23 +19975,13 @@
         "distrito": "150204"
       },
       {
-        "eps": "SEDAPAL",
-        "lugar": "Puente Piedra, Lima",
-        "conexiones": 591,
-        "tipo": "Programada",
-        "motivo": "Limpieza y desinfección de reservorio/cisterna",
-        "inicio": "2026-11-07",
-        "restablece": "2026-11-08",
-        "distrito": "150125"
-      },
-      {
         "eps": "SEDALIB S.A.",
         "lugar": "La Esperanza, La Libertad",
-        "conexiones": 586,
+        "conexiones": 654,
         "tipo": "Programada",
         "motivo": "Limpieza y desinfección de reservorio/cisterna",
-        "inicio": "2026-11-14",
-        "restablece": "2026-11-15",
+        "inicio": "2026-11-16",
+        "restablece": "2026-11-17",
         "distrito": "130105"
       },
       {
@@ -19873,99 +19993,13 @@
         "inicio": "2026-11-10",
         "restablece": "2026-11-11",
         "distrito": "150128"
-      },
-      {
-        "eps": "EPS EMAPA CAÑETE S.A",
-        "lugar": "Quilmana, Lima",
-        "conexiones": 480,
-        "tipo": "Imprevista",
-        "motivo": "Otros",
-        "inicio": "2026-11-02",
-        "restablece": "2026-11-10",
-        "distrito": "150512"
-      },
-      {
-        "eps": "UE AGUA TUMBES",
-        "lugar": "Tumbes, Tumbes",
-        "conexiones": 449,
-        "tipo": "Imprevista",
-        "motivo": "Otros",
-        "inicio": "2026-11-06",
-        "restablece": "2026-11-09",
-        "distrito": "240101"
-      },
-      {
-        "eps": "EPS CHAVIN S.A.",
-        "lugar": "Independencia, Ancash",
-        "conexiones": 346,
-        "tipo": "Programada",
-        "motivo": "Limpieza y desinfección de reservorio/cisterna",
-        "inicio": "2026-11-09",
-        "restablece": "2026-11-10",
-        "distrito": "020105"
-      },
-      {
-        "eps": "EPS EMAPA CAÑETE S.A",
-        "lugar": "Cerro Azul, Lima",
-        "conexiones": 215,
-        "tipo": "Imprevista",
-        "motivo": "Rotura de tubería por tercero",
-        "inicio": "2026-10-31",
-        "restablece": "2026-11-10",
-        "distrito": "150504"
-      },
-      {
-        "eps": "EPS SEDACUSCO S.A.",
-        "lugar": "Santiago, Cusco",
-        "conexiones": 200,
-        "tipo": "Programada",
-        "motivo": "Limpieza y desinfección de reservorio/cisterna",
-        "inicio": "2026-11-11",
-        "restablece": "2026-11-11",
-        "distrito": "080106"
-      },
-      {
-        "eps": "UE AGUA TUMBES",
-        "lugar": "Matapalo, Tumbes",
-        "conexiones": 146,
-        "tipo": "Imprevista",
-        "motivo": "Otros",
-        "inicio": "2026-11-06",
-        "restablece": "2026-11-09",
-        "distrito": "240303"
-      },
-      {
-        "eps": "EPS MUNICIPAL MANTARO S.A.",
-        "lugar": "Yauyos, Junin",
-        "conexiones": 100,
-        "tipo": "Programada",
-        "motivo": "Otros",
-        "inicio": "2026-11-10",
-        "restablece": "2026-11-10",
-        "distrito": "120434"
-      },
-      {
-        "eps": "SEDAPAL",
-        "lugar": "Carabayllo, Lima",
-        "conexiones": 93,
-        "tipo": "Programada",
-        "motivo": "Limpieza y desinfección de reservorio/cisterna",
-        "inicio": "2026-11-13",
-        "restablece": "2026-11-14",
-        "distrito": "150106"
-      },
-      {
-        "eps": "EPS MUNICIPAL MANTARO S.A.",
-        "lugar": "Jauja, Junin",
-        "conexiones": 50,
-        "tipo": "Programada",
-        "motivo": "Otros",
-        "inicio": "2026-11-11",
-        "restablece": "2026-11-11",
-        "distrito": "120401"
       }
     ],
     "distritos": {
+      "150125": {
+        "cortes": 1,
+        "conexiones": 35779
+      },
       "150132": {
         "cortes": 1,
         "conexiones": 26814
@@ -19994,6 +20028,14 @@
         "cortes": 1,
         "conexiones": 16000
       },
+      "240101": {
+        "cortes": 1,
+        "conexiones": 15400
+      },
+      "150137": {
+        "cortes": 1,
+        "conexiones": 8694
+      },
       "070102": {
         "cortes": 1,
         "conexiones": 7301
@@ -20001,6 +20043,10 @@
       "040520": {
         "cortes": 1,
         "conexiones": 6773
+      },
+      "150142": {
+        "cortes": 1,
+        "conexiones": 6529
       },
       "170103": {
         "cortes": 1,
@@ -20018,6 +20064,10 @@
         "cortes": 1,
         "conexiones": 5614
       },
+      "130101": {
+        "cortes": 1,
+        "conexiones": 5300
+      },
       "150118": {
         "cortes": 1,
         "conexiones": 5249
@@ -20025,6 +20075,10 @@
       "150114": {
         "cortes": 1,
         "conexiones": 5175
+      },
+      "180301": {
+        "cortes": 1,
+        "conexiones": 4884
       },
       "130102": {
         "cortes": 1,
@@ -20034,6 +20088,14 @@
         "cortes": 1,
         "conexiones": 4595
       },
+      "150129": {
+        "cortes": 1,
+        "conexiones": 4515
+      },
+      "070106": {
+        "cortes": 1,
+        "conexiones": 3998
+      },
       "150143": {
         "cortes": 1,
         "conexiones": 3941
@@ -20042,17 +20104,9 @@
         "cortes": 1,
         "conexiones": 3813
       },
-      "150142": {
-        "cortes": 1,
-        "conexiones": 3632
-      },
       "150507": {
         "cortes": 1,
         "conexiones": 3585
-      },
-      "070106": {
-        "cortes": 1,
-        "conexiones": 3147
       },
       "150110": {
         "cortes": 1,
@@ -20074,9 +20128,21 @@
         "cortes": 1,
         "conexiones": 2480
       },
+      "240302": {
+        "cortes": 1,
+        "conexiones": 2217
+      },
       "150113": {
         "cortes": 1,
         "conexiones": 2197
+      },
+      "150119": {
+        "cortes": 1,
+        "conexiones": 2188
+      },
+      "150106": {
+        "cortes": 1,
+        "conexiones": 2066
       },
       "130103": {
         "cortes": 1,
@@ -20094,9 +20160,17 @@
         "cortes": 1,
         "conexiones": 1817
       },
+      "130109": {
+        "cortes": 1,
+        "conexiones": 1724
+      },
       "240103": {
         "cortes": 1,
         "conexiones": 1500
+      },
+      "150103": {
+        "cortes": 1,
+        "conexiones": 1342
       },
       "020101": {
         "cortes": 1,
@@ -20106,10 +20180,6 @@
         "cortes": 1,
         "conexiones": 1298
       },
-      "130101": {
-        "cortes": 1,
-        "conexiones": 1288
-      },
       "200702": {
         "cortes": 1,
         "conexiones": 1280
@@ -20117,6 +20187,10 @@
       "150121": {
         "cortes": 1,
         "conexiones": 1245
+      },
+      "021801": {
+        "cortes": 1,
+        "conexiones": 1200
       },
       "040122": {
         "cortes": 1,
@@ -20134,6 +20208,10 @@
         "cortes": 1,
         "conexiones": 1050
       },
+      "130107": {
+        "cortes": 1,
+        "conexiones": 950
+      },
       "040101": {
         "cortes": 1,
         "conexiones": 894
@@ -20142,33 +20220,37 @@
         "cortes": 1,
         "conexiones": 847
       },
+      "130104": {
+        "cortes": 1,
+        "conexiones": 814
+      },
       "150204": {
         "cortes": 1,
         "conexiones": 810
       },
-      "150125": {
-        "cortes": 1,
-        "conexiones": 591
-      },
       "130105": {
         "cortes": 1,
-        "conexiones": 586
+        "conexiones": 654
       },
       "150128": {
         "cortes": 1,
         "conexiones": 513
       },
+      "240203": {
+        "cortes": 1,
+        "conexiones": 500
+      },
       "150512": {
         "cortes": 1,
         "conexiones": 480
       },
-      "240101": {
-        "cortes": 1,
-        "conexiones": 449
-      },
       "020105": {
         "cortes": 1,
         "conexiones": 346
+      },
+      "080108": {
+        "cortes": 1,
+        "conexiones": 300
       },
       "150504": {
         "cortes": 1,
@@ -20182,13 +20264,13 @@
         "cortes": 1,
         "conexiones": 146
       },
+      "150123": {
+        "cortes": 1,
+        "conexiones": 137
+      },
       "120434": {
         "cortes": 1,
         "conexiones": 100
-      },
-      "150106": {
-        "cortes": 1,
-        "conexiones": 93
       },
       "120401": {
         "cortes": 1,
@@ -20196,7 +20278,7 @@
       }
     },
     "url": "https://www.sunass.gob.pe/",
-    "leido": "2026-11-08T09:07:17Z"
+    "leido": "2026-11-08T16:03:24Z"
   },
   "incendios": {
     "total": 36,
@@ -20527,7 +20609,7 @@
       }
     ],
     "url": "https://geo.serfor.gob.pe/visor/",
-    "leido": "2026-11-08T09:07:18Z"
+    "leido": "2026-11-08T16:03:25Z"
   },
   "phisis": {
     "estaciones": [
@@ -22757,7 +22839,7 @@
       "clasificacion": 99.88
     },
     "url": "http://met.igp.gob.pe/variabclim/",
-    "leido": "2026-11-08T09:07:19Z"
+    "leido": "2026-11-08T16:03:27Z"
   },
   "dhn": {
     "generado": "2026-11-06T16:10:08Z",
@@ -23269,7 +23351,7 @@
         }
       ]
     },
-    "leido": "2026-11-08T09:07:20Z"
+    "leido": "2026-11-08T16:03:28Z"
   },
   "inaigem": {
     "estaciones": [
@@ -23307,7 +23389,7 @@
       }
     ],
     "url": "https://www.inaigem.gob.pe/",
-    "leido": "2026-11-08T09:07:20Z"
+    "leido": "2026-11-08T16:03:28Z"
   },
   "enfen_docs": {
     "docs": [
