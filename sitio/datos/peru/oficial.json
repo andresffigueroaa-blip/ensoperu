@@ -1,6 +1,6 @@
 {
   "_": "Generado por pipeline/fuentes/peru_oficial.py. Datos oficiales tal como se publican.",
-  "actualizado": "2026-11-08T19:24:03Z",
+  "actualizado": "2026-11-08T19:31:39Z",
   "fallas": [],
   "fenomeno": {
     "fecha": "30 de octubre del 2026",
@@ -413,7 +413,7 @@
     ],
     "sin_cruce": 1,
     "url": "https://coen.indeci.gob.pe/mer/",
-    "leido": "2026-11-08T19:24:05Z"
+    "leido": "2026-11-08T19:31:41Z"
   },
   "indeci_rss": {
     "reportes": [
@@ -489,7 +489,7 @@
       }
     ],
     "url": "https://portal.indeci.gob.pe/emergencias/",
-    "leido": "2026-11-08T19:24:06Z"
+    "leido": "2026-11-08T19:31:42Z"
   },
   "escenario": {
     "vigente": true,
@@ -3103,7 +3103,7 @@
       }
     },
     "url": "https://sigrid.cenepred.gob.pe/sigridv3/escenario-aviso",
-    "leido": "2026-11-08T19:24:07Z"
+    "leido": "2026-11-08T19:31:47Z"
   },
   "quebradas": {
     "fecha": "2026-11-08",
@@ -4259,7 +4259,7 @@
     },
     "sin_cruce": 12,
     "url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico",
-    "leido": "2026-11-08T19:24:12Z"
+    "leido": "2026-11-08T19:31:54Z"
   },
   "hidro": {
     "avisos": [
@@ -4289,7 +4289,7 @@
       }
     ],
     "url": "https://www.senamhi.gob.pe/?p=aviso-hidrologico",
-    "leido": "2026-11-08T19:24:13Z"
+    "leido": "2026-11-08T19:31:55Z"
   },
   "ana_rios": {
     "estaciones": [
@@ -18443,7 +18443,7 @@
       }
     },
     "url": "https://visor.geoperu.gob.pe/",
-    "leido": "2026-11-08T19:24:23Z"
+    "leido": "2026-11-08T19:31:56Z"
   },
   "agua": {
     "total": 71,
@@ -19337,11 +19337,20 @@
       }
     },
     "url": "https://www.sunass.gob.pe/",
-    "leido": "2026-11-08T19:24:24Z"
+    "leido": "2026-11-08T19:31:58Z"
   },
   "incendios": {
-    "total": 36,
+    "total": 37,
     "lista": [
+      {
+        "fecha": "2026-11-08",
+        "hora": "14:30",
+        "lugar": "Huancayo, Junin",
+        "distrito": " ",
+        "cobertura": " ",
+        "lat": -12.04176,
+        "lon": -75.17807
+      },
       {
         "fecha": "2026-11-07",
         "hora": "19:20",
@@ -19668,7 +19677,7 @@
       }
     ],
     "url": "https://geo.serfor.gob.pe/visor/",
-    "leido": "2026-11-08T19:24:24Z"
+    "leido": "2026-11-08T19:31:59Z"
   },
   "phisis": {
     "estaciones": [
@@ -21898,7 +21907,7 @@
       "clasificacion": 99.88
     },
     "url": "http://met.igp.gob.pe/variabclim/",
-    "leido": "2026-11-08T19:24:29Z"
+    "leido": "2026-11-08T19:32:01Z"
   },
   "dhn": {
     "generado": "2026-11-06T16:10:08Z",
@@ -22410,7 +22419,7 @@
         }
       ]
     },
-    "leido": "2026-11-08T19:24:30Z"
+    "leido": "2026-11-08T19:32:02Z"
   },
   "inaigem": {
     "estaciones": [
@@ -22448,7 +22457,7 @@
       }
     ],
     "url": "https://www.inaigem.gob.pe/",
-    "leido": "2026-11-08T19:24:30Z"
+    "leido": "2026-11-08T19:32:02Z"
   },
   "enfen_docs": {
     "docs": [
