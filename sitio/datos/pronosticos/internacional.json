@@ -1,6 +1,6 @@
 {
   "_": "Generado por pipeline/fuentes/internacional.py. Cada bloque con su centro, fecha y enlace.",
-  "actualizado": "2026-11-08T16:03:28Z",
+  "actualizado": "2026-11-08T22:30:51Z",
   "fallas": [],
   "cpc": {
     "emitido": "2026-10-08",
@@ -519,18 +519,12 @@
   },
   "mjo": {
     "ultimo": {
-      "fecha": "2026-11-03",
-      "pc1": 0.21,
-      "pc2": 0.298,
-      "amplitud": 0.36
+      "fecha": "2026-11-04",
+      "pc1": 0.271,
+      "pc2": 0.15,
+      "amplitud": 0.31
     },
     "serie": [
-      {
-        "fecha": "2026-09-20",
-        "pc1": -0.069,
-        "pc2": 0.908,
-        "amplitud": 0.91
-      },
       {
         "fecha": "2026-09-21",
         "pc1": -0.059,
@@ -773,27 +767,33 @@
       },
       {
         "fecha": "2026-10-31",
-        "pc1": 0.224,
-        "pc2": 0.677,
-        "amplitud": 0.71
+        "pc1": 0.27,
+        "pc2": 0.61,
+        "amplitud": 0.67
       },
       {
         "fecha": "2026-11-01",
-        "pc1": 0.206,
-        "pc2": 0.581,
-        "amplitud": 0.62
+        "pc1": 0.258,
+        "pc2": 0.517,
+        "amplitud": 0.58
       },
       {
         "fecha": "2026-11-02",
-        "pc1": 0.255,
-        "pc2": 0.438,
-        "amplitud": 0.51
+        "pc1": 0.307,
+        "pc2": 0.385,
+        "amplitud": 0.49
       },
       {
         "fecha": "2026-11-03",
-        "pc1": 0.21,
-        "pc2": 0.298,
-        "amplitud": 0.36
+        "pc1": 0.277,
+        "pc2": 0.259,
+        "amplitud": 0.38
+      },
+      {
+        "fecha": "2026-11-04",
+        "pc1": 0.271,
+        "pc2": 0.15,
+        "amplitud": 0.31
       }
     ],
     "activa": false,
@@ -883,10 +883,10 @@
       "id": "seas5",
       "titulo": "Pluma del modelo ECMWF SEAS5, regiones Niño",
       "fuente": "ECMWF",
-      "origen": "https://charts.ecmwf.int/content/20261105101257-1ce0d3d33dcc93507e0fb45faa2409d7e509da26.png",
-      "huella": "77caca8c1d45",
+      "origen": "https://charts.ecmwf.int/content/20261108162923-d580815f423d90b075160b32d60e6307c503c566.png",
+      "huella": "a7720bbf81d5",
       "archivo": "seas5.png",
-      "fecha": "2026-11-05"
+      "fecha": "2026-11-08"
     },
     {
       "id": "iri",
@@ -902,9 +902,9 @@
       "titulo": "Media de los modelos NMME, Niño 3.4",
       "fuente": "NOAA CPC, NMME",
       "origen": "https://www.cpc.ncep.noaa.gov/products/NMME/current/images/nino34.rescaling.ENSMEAN.png",
-      "huella": "d0a1bd655284",
+      "huella": "1d473529418e",
       "archivo": "nmme.png",
-      "fecha": "2026-11-07"
+      "fecha": "2026-11-08"
     },
     {
       "id": "mjo",
