@@ -1,6 +1,6 @@
 {
   "_": "Generado por pipeline/fuentes/peru_oficial.py. Datos oficiales tal como se publican.",
-  "actualizado": "2026-11-08T20:25:48Z",
+  "actualizado": "2026-11-08T20:30:39Z",
   "fallas": [],
   "fenomeno": {
     "fecha": "30 de octubre del 2026",
@@ -37,8 +37,8 @@
       "02": 7,
       "19": 6,
       "11": 1,
-      "18": 3,
       "03": 8,
+      "18": 3,
       "07": 1,
       "24": 5,
       "01": 4,
@@ -169,20 +169,20 @@
       },
       {
         "fecha": "2026-11-06 12:00",
-        "peligro": "Lluvias intensas",
-        "distrito": "180204",
-        "lugar": "Ichuña, General Sanchez Cerro, Moquegua",
-        "hechos": "Se registró lluvias intensas que generaron daños materiales (viviendas) en el distrito de Ichuña, provincia de General Sánchez Cerro .",
-        "pdf": "https://coen.indeci.gob.pe/api/v2/mer/files/view?key=mer/2026/10/1794022344088.pdf",
-        "sinpad": null
-      },
-      {
-        "fecha": "2026-11-06 12:00",
         "peligro": "Incendios forestales",
         "distrito": "030101",
         "lugar": "Abancay, Abancay, Apurimac",
         "hechos": "Se registra un incendio forestal que causa daños a sectores diversos (cobertura natural) en la comunidad Atumpata Baja, distrito y provincia de Abancay.",
         "pdf": "https://coen.indeci.gob.pe/api/v2/mer/files/view?key=mer/2026/10/1794093011053.pdf",
+        "sinpad": null
+      },
+      {
+        "fecha": "2026-11-06 12:00",
+        "peligro": "Lluvias intensas",
+        "distrito": "180204",
+        "lugar": "Ichuña, General Sanchez Cerro, Moquegua",
+        "hechos": "Se registró lluvias intensas que generaron daños materiales (viviendas) en el distrito de Ichuña, provincia de General Sánchez Cerro .",
+        "pdf": "https://coen.indeci.gob.pe/api/v2/mer/files/view?key=mer/2026/10/1794022344088.pdf",
         "sinpad": null
       },
       {
@@ -340,20 +340,20 @@
       },
       {
         "fecha": "2026-11-04 19:00",
-        "peligro": "Lluvias intensas",
-        "distrito": "240105",
-        "lugar": "San Jacinto, Tumbes, Tumbes",
-        "hechos": "4/11/2026 19:00 horas Como consecuencia de las lluvias intensas, se registró el desborde de la quebrada El Tablazo que produjo daños materiales (viviendas), en el sector El Tablazo, caserío Casa Blanqueada, distrito de San Jacinto, provincia de Tumbes. 4/11/2026 19:00 horas Como consecuencia de las lluvias intensas, se registró el desborde de la quebrada Higuerón, que produjo daños materiales (viv",
-        "pdf": "https://coen.indeci.gob.pe/api/v2/mer/files/view?key=mer/2026/10/1794019381894.pdf",
-        "sinpad": null
-      },
-      {
-        "fecha": "2026-11-04 19:00",
         "peligro": "Incendios forestales",
         "distrito": "030605",
         "lugar": "Ocobamba, Chincheros, Apurimac",
         "hechos": "Se registra un incendio forestal que ocasiona daños materiales (cobertura natural) en las comunidades Túpac Amaru y Tres Cruces, distrito Ocobamba, provincia de Chincheros.",
         "pdf": "https://coen.indeci.gob.pe/api/v2/mer/files/view?key=mer/2026/10/1794158249647.pdf",
+        "sinpad": null
+      },
+      {
+        "fecha": "2026-11-04 19:00",
+        "peligro": "Lluvias intensas",
+        "distrito": "240105",
+        "lugar": "San Jacinto, Tumbes, Tumbes",
+        "hechos": "4/11/2026 19:00 horas Como consecuencia de las lluvias intensas, se registró el desborde de la quebrada El Tablazo que produjo daños materiales (viviendas), en el sector El Tablazo, caserío Casa Blanqueada, distrito de San Jacinto, provincia de Tumbes. 4/11/2026 19:00 horas Como consecuencia de las lluvias intensas, se registró el desborde de la quebrada Higuerón, que produjo daños materiales (viv",
+        "pdf": "https://coen.indeci.gob.pe/api/v2/mer/files/view?key=mer/2026/10/1794019381894.pdf",
         "sinpad": null
       },
       {
@@ -413,10 +413,15 @@
     ],
     "sin_cruce": 1,
     "url": "https://coen.indeci.gob.pe/mer/",
-    "leido": "2026-11-08T20:25:50Z"
+    "leido": "2026-11-08T20:30:40Z"
   },
   "indeci_rss": {
     "reportes": [
+      {
+        "titulo": "INFORME DE EMERGENCIA N.° 2552 – 8/11/2026 / COEN-INDECI / 15:00 HORAS (Informe N.° 2) INCENDIO FORESTAL EN EL DISTRITO DE SAN MIGUEL DE CHACCRAMPA – APURÍMAC",
+        "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-preliminar-n-0969-3-10-2026-coen-indeci-0110-horas-incendio-forestal-en-el-distrito-de-san-miguel-de-chaccrampa-apurimac/",
+        "fecha": "2026-11-08T20:29"
+      },
       {
         "titulo": "REPORTE COMPLEMENTARIO N.° 15651 – 8/11/2026 / COEN-INDECI / 15:15 HORAS (Reporte N.° 2) LLUVIAS INTENSAS EN EL DISTRITO DE HUAYLLAY – PASCO",
         "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-14897-24-10-2026-coen-indeci-1715-horas-reporte-n-1-lluvias-intensas-en-el-distrito-de-huayllay-pasco/",
@@ -481,15 +486,10 @@
         "titulo": "REPORTE COMPLEMENTARIO N.° 15642 – 8/11/2026 / COEN-INDECI / 11:50 HORAS (Reporte N.° 6) INCENDIO FORESTAL EN EL DISTRITO DE CHUQUIBAMBILLA – APURÍMAC",
         "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-o-13607-6-10-2026-coen-indeci-2020-horas-reporte-n-1-incendio-forestal-en-el-distrito-de-chuquibambilla-apurimac/",
         "fecha": "2026-11-08T17:45"
-      },
-      {
-        "titulo": "REPORTE COMPLEMENTARIO N.º 15641 – 8/11/2026/ COEN – INDECI / 11:40 HORAS (Reporte N.º 3) INCENDIO FORESTAL EN EL DISTRITO DE PAUCARTAMBO – PASCO",
-        "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-o-14308-16-10-2026-coen-indeci-1040-horas-reporte-n-o-1-incendio-forestal-en-el-distrito-de-paucartambo-pasco/",
-        "fecha": "2026-11-08T17:41"
       }
     ],
     "url": "https://portal.indeci.gob.pe/emergencias/",
-    "leido": "2026-11-08T20:25:51Z"
+    "leido": "2026-11-08T20:30:42Z"
   },
   "escenario": {
     "vigente": true,
@@ -3103,7 +3103,7 @@
       }
     },
     "url": "https://sigrid.cenepred.gob.pe/sigridv3/escenario-aviso",
-    "leido": "2026-11-08T20:25:56Z"
+    "leido": "2026-11-08T20:30:49Z"
   },
   "quebradas": {
     "fecha": "2026-11-08",
@@ -4259,7 +4259,7 @@
     },
     "sin_cruce": 12,
     "url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico",
-    "leido": "2026-11-08T20:26:01Z"
+    "leido": "2026-11-08T20:30:55Z"
   },
   "hidro": {
     "avisos": [
@@ -4289,7 +4289,7 @@
       }
     ],
     "url": "https://www.senamhi.gob.pe/?p=aviso-hidrologico",
-    "leido": "2026-11-08T20:26:02Z"
+    "leido": "2026-11-08T20:30:56Z"
   },
   "ana_rios": {
     "estaciones": [
@@ -18459,7 +18459,7 @@
       }
     },
     "url": "https://visor.geoperu.gob.pe/",
-    "leido": "2026-11-08T20:26:03Z"
+    "leido": "2026-11-08T20:30:58Z"
   },
   "agua": {
     "total": 71,
@@ -19353,7 +19353,7 @@
       }
     },
     "url": "https://www.sunass.gob.pe/",
-    "leido": "2026-11-08T20:26:05Z"
+    "leido": "2026-11-08T20:31:00Z"
   },
   "incendios": {
     "total": 37,
@@ -19693,7 +19693,7 @@
       }
     ],
     "url": "https://geo.serfor.gob.pe/visor/",
-    "leido": "2026-11-08T20:26:06Z"
+    "leido": "2026-11-08T20:31:01Z"
   },
   "phisis": {
     "estaciones": [
@@ -21923,7 +21923,7 @@
       "clasificacion": 99.88
     },
     "url": "http://met.igp.gob.pe/variabclim/",
-    "leido": "2026-11-08T20:26:08Z"
+    "leido": "2026-11-08T20:31:03Z"
   },
   "dhn": {
     "generado": "2026-11-06T16:10:08Z",
@@ -22435,7 +22435,7 @@
         }
       ]
     },
-    "leido": "2026-11-08T20:26:09Z"
+    "leido": "2026-11-08T20:31:04Z"
   },
   "inaigem": {
     "estaciones": [
@@ -22473,7 +22473,7 @@
       }
     ],
     "url": "https://www.inaigem.gob.pe/",
-    "leido": "2026-11-08T20:26:10Z"
+    "leido": "2026-11-08T20:31:04Z"
   },
   "enfen_docs": {
     "docs": [
