@@ -1,6 +1,6 @@
 {
   "_": "Generado por pipeline/fuentes/peru_oficial.py. Datos oficiales tal como se publican.",
-  "actualizado": "2026-11-09T15:24:05Z",
+  "actualizado": "2026-11-09T15:25:21Z",
   "fallas": [],
   "fenomeno": {
     "fecha": "30 de octubre del 2026",
@@ -414,7 +414,7 @@
     ],
     "sin_cruce": 1,
     "url": "https://coen.indeci.gob.pe/mer/",
-    "leido": "2026-11-09T15:24:07Z"
+    "leido": "2026-11-09T15:25:23Z"
   },
   "indeci_rss": {
     "reportes": [
@@ -490,7 +490,7 @@
       }
     ],
     "url": "https://portal.indeci.gob.pe/emergencias/",
-    "leido": "2026-11-09T15:24:08Z"
+    "leido": "2026-11-09T15:25:24Z"
   },
   "escenario": {
     "vigente": true,
@@ -5654,7 +5654,7 @@
       }
     },
     "url": "https://sigrid.cenepred.gob.pe/sigridv3/escenario-aviso",
-    "leido": "2026-11-09T15:24:13Z"
+    "leido": "2026-11-09T15:25:30Z"
   },
   "quebradas": {
     "fecha": "2026-11-08",
@@ -6810,7 +6810,7 @@
     },
     "sin_cruce": 12,
     "url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico",
-    "leido": "2026-11-09T15:24:17Z"
+    "leido": "2026-11-09T15:25:35Z"
   },
   "hidro": {
     "avisos": [
@@ -6840,7 +6840,7 @@
       }
     ],
     "url": "https://www.senamhi.gob.pe/?p=aviso-hidrologico",
-    "leido": "2026-11-09T15:24:19Z"
+    "leido": "2026-11-09T15:25:35Z"
   },
   "ana_rios": {
     "estaciones": [
@@ -21442,7 +21442,7 @@
       }
     },
     "url": "https://visor.geoperu.gob.pe/",
-    "leido": "2026-11-09T15:24:27Z"
+    "leido": "2026-11-09T15:25:36Z"
   },
   "agua": {
     "total": 68,
@@ -22324,7 +22324,7 @@
       }
     },
     "url": "https://www.sunass.gob.pe/",
-    "leido": "2026-11-09T15:24:27Z"
+    "leido": "2026-11-09T15:25:37Z"
   },
   "incendios": {
     "total": 35,
@@ -22646,7 +22646,7 @@
       }
     ],
     "url": "https://geo.serfor.gob.pe/visor/",
-    "leido": "2026-11-09T15:24:28Z"
+    "leido": "2026-11-09T15:25:38Z"
   },
   "phisis": {
     "estaciones": [
@@ -24886,35 +24886,23 @@
       "clasificacion": 99.88
     },
     "url": "http://met.igp.gob.pe/variabclim/",
-    "leido": "2026-11-09T15:24:30Z"
+    "leido": "2026-11-09T15:25:40Z"
   },
   "dhn": {
-    "generado": "2026-11-06T16:10:08Z",
+    "generado": "2026-11-09T15:08:22Z",
     "fuente": "Copernicus Marine - OSTIA L4 NRT (METOFFICE-GLO-SST-L4-NRT-OBS-SST-V2)",
     "url": "https://www.dhn.mil.pe/",
     "nino12": {
-      "tsm_actual": 27.1173,
-      "tsm_fecha": "2026-11-05",
-      "atsm_actual": 5.8048,
-      "atsm_fecha": "2026-11-05",
+      "tsm_actual": 27.3692,
+      "tsm_fecha": "2026-11-08",
+      "atsm_actual": 6.0398,
+      "atsm_fecha": "2026-11-08",
       "atsm_mensual": {
         "mes": "Noviembre 2026",
-        "valor": 5.8623,
-        "dias": 5
+        "valor": 5.9155,
+        "dias": 8
       },
       "atsm": [
-        {
-          "fecha": "2026-09-07",
-          "valor": 4.8922
-        },
-        {
-          "fecha": "2026-09-08",
-          "valor": 5.0731
-        },
-        {
-          "fecha": "2026-09-09",
-          "valor": 5.2055
-        },
         {
           "fecha": "2026-09-10",
           "valor": 5.2365
@@ -25142,32 +25130,32 @@
         {
           "fecha": "2026-11-05",
           "valor": 5.8048
+        },
+        {
+          "fecha": "2026-11-06",
+          "valor": 5.9233
+        },
+        {
+          "fecha": "2026-11-07",
+          "valor": 6.0489
+        },
+        {
+          "fecha": "2026-11-08",
+          "valor": 6.0398
         }
       ]
     },
     "nino34": {
-      "tsm_actual": 30.0241,
-      "tsm_fecha": "2026-11-05",
-      "atsm_actual": 3.3031,
-      "atsm_fecha": "2026-11-05",
+      "tsm_actual": 29.9908,
+      "tsm_fecha": "2026-11-08",
+      "atsm_actual": 3.2743,
+      "atsm_fecha": "2026-11-08",
       "atsm_mensual": {
         "mes": "Noviembre 2026",
-        "valor": 3.2745,
-        "dias": 5
+        "valor": 3.2825,
+        "dias": 8
       },
       "atsm": [
-        {
-          "fecha": "2026-09-07",
-          "valor": 2.8706
-        },
-        {
-          "fecha": "2026-09-08",
-          "valor": 2.9347
-        },
-        {
-          "fecha": "2026-09-09",
-          "valor": 2.9042
-        },
         {
           "fecha": "2026-09-10",
           "valor": 2.8996
@@ -25395,10 +25383,22 @@
         {
           "fecha": "2026-11-05",
           "valor": 3.3031
+        },
+        {
+          "fecha": "2026-11-06",
+          "valor": 3.3215
+        },
+        {
+          "fecha": "2026-11-07",
+          "valor": 3.2913
+        },
+        {
+          "fecha": "2026-11-08",
+          "valor": 3.2743
         }
       ]
     },
-    "leido": "2026-11-09T15:24:30Z"
+    "leido": "2026-11-09T15:25:41Z"
   },
   "inaigem": {
     "estaciones": [
@@ -25436,7 +25436,7 @@
       }
     ],
     "url": "https://www.inaigem.gob.pe/",
-    "leido": "2026-11-09T15:24:31Z"
+    "leido": "2026-11-09T15:25:41Z"
   },
   "enfen_docs": {
     "docs": [
