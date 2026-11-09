@@ -1,6 +1,6 @@
 {
   "_": "Generado por pipeline/fuentes/peru_oficial.py. Datos oficiales tal como se publican.",
-  "actualizado": "2026-11-09T04:25:13Z",
+  "actualizado": "2026-11-09T05:24:09Z",
   "fallas": [],
   "fenomeno": {
     "fecha": "30 de octubre del 2026",
@@ -8,15 +8,15 @@
     "color": "#ff0031",
     "titular": "EL NIÑO COSTERO CONTINUARÍA HASTA FINES DE OTOÑO DE 2027",
     "url": "https://www.senamhi.gob.pe/?p=fenomeno-el-nino",
-    "leido": "2026-11-09T04:24:04Z"
+    "leido": "2026-11-09T05:24:09Z"
   },
   "coen": {
     "dias": 7,
     "total": 86,
     "por_peligro": {
-      "Lluvias intensas": 25,
+      "Lluvias intensas": 24,
       "Incendios forestales": 22,
-      "Incendios urbanos": 15,
+      "Incendios urbanos": 16,
       "Vientos fuertes": 9,
       "Huaico (flujo de detritos)": 4,
       "Colapso de estructura por agente climático": 3,
@@ -27,19 +27,19 @@
       "C00 erosión": 1
     },
     "por_region": {
+      "15": 14,
       "10": 2,
       "04": 3,
-      "15": 13,
       "12": 1,
       "09": 6,
       "20": 3,
       "16": 2,
       "14": 2,
-      "02": 7,
+      "02": 8,
       "19": 6,
       "11": 1,
-      "03": 8,
       "18": 3,
+      "03": 8,
       "07": 1,
       "24": 5,
       "01": 4,
@@ -47,10 +47,19 @@
       "05": 4,
       "22": 2,
       "08": 4,
-      "06": 4,
+      "06": 2,
       "17": 1
     },
     "ultimas": [
+      {
+        "fecha": "2026-11-08 19:31",
+        "peligro": "Incendios urbanos",
+        "distrito": "150125",
+        "lugar": "Puente Piedra, Lima, Lima",
+        "hechos": "Se registró un incendio urbano que ocasionó daños materiales (vivienda) en la calle José Olaya Mz. A Lt. 13, distrito de Puente Piedra, provincia de Lima",
+        "pdf": "https://coen.indeci.gob.pe/api/v2/mer/files/view?key=mer/2026/10/1794198266205.pdf",
+        "sinpad": null
+      },
       {
         "fecha": "2026-11-08 16:30",
         "peligro": "Incendios forestales",
@@ -224,20 +233,20 @@
       },
       {
         "fecha": "2026-11-06 12:00",
-        "peligro": "Incendios forestales",
-        "distrito": "030101",
-        "lugar": "Abancay, Abancay, Apurimac",
-        "hechos": "Se registra un incendio forestal que causa daños a sectores diversos (cobertura natural) en la comunidad Atumpata Baja, distrito y provincia de Abancay.",
-        "pdf": "https://coen.indeci.gob.pe/api/v2/mer/files/view?key=mer/2026/10/1794093011053.pdf",
-        "sinpad": null
-      },
-      {
-        "fecha": "2026-11-06 12:00",
         "peligro": "Lluvias intensas",
         "distrito": "180204",
         "lugar": "Ichuña, General Sanchez Cerro, Moquegua",
         "hechos": "Se registró lluvias intensas que generaron daños materiales (viviendas) en el distrito de Ichuña, provincia de General Sánchez Cerro .",
         "pdf": "https://coen.indeci.gob.pe/api/v2/mer/files/view?key=mer/2026/10/1794022344088.pdf",
+        "sinpad": null
+      },
+      {
+        "fecha": "2026-11-06 12:00",
+        "peligro": "Incendios forestales",
+        "distrito": "030101",
+        "lugar": "Abancay, Abancay, Apurimac",
+        "hechos": "Se registra un incendio forestal que causa daños a sectores diversos (cobertura natural) en la comunidad Atumpata Baja, distrito y provincia de Abancay.",
+        "pdf": "https://coen.indeci.gob.pe/api/v2/mer/files/view?key=mer/2026/10/1794093011053.pdf",
         "sinpad": null
       },
       {
@@ -401,23 +410,44 @@
         "hechos": "4/11/2026 19:00 horas Como consecuencia de las lluvias intensas, se registró el desborde de la quebrada El Tablazo que produjo daños materiales (viviendas), en el sector El Tablazo, caserío Casa Blanqueada, distrito de San Jacinto, provincia de Tumbes. 4/11/2026 19:00 horas Como consecuencia de las lluvias intensas, se registró el desborde de la quebrada Higuerón, que produjo daños materiales (viv",
         "pdf": "https://coen.indeci.gob.pe/api/v2/mer/files/view?key=mer/2026/10/1794019381894.pdf",
         "sinpad": null
-      },
-      {
-        "fecha": "2026-11-04 19:00",
-        "peligro": "Incendios forestales",
-        "distrito": "030605",
-        "lugar": "Ocobamba, Chincheros, Apurimac",
-        "hechos": "Se registra un incendio forestal que ocasiona daños materiales (cobertura natural) en las comunidades Túpac Amaru y Tres Cruces, distrito Ocobamba, provincia de Chincheros.",
-        "pdf": "https://coen.indeci.gob.pe/api/v2/mer/files/view?key=mer/2026/10/1794158249647.pdf",
-        "sinpad": null
       }
     ],
     "sin_cruce": 1,
     "url": "https://coen.indeci.gob.pe/mer/",
-    "leido": "2026-11-09T04:25:15Z"
+    "leido": "2026-11-09T05:24:11Z"
   },
   "indeci_rss": {
     "reportes": [
+      {
+        "titulo": "REPORTE COMPLEMENTARIO N.º 15679 – 8/11/2026 / COEN-INDECI / 23:40 HORAS (Reporte N.° 4) HELADA EN EL DISTRITO DE CUENCA – HUANCAVELICA",
+        "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-o-13381-3-10-2026-coen-indeci-0545-horas-reporte-n-1-helada-en-el-distrito-de-cuenca-huancavelica/",
+        "fecha": "2026-11-09T04:56"
+      },
+      {
+        "titulo": "REPORTE COMPLEMENTARIO N.° 15678 – 8/11/2026 / COEN – INDECI / 23:35 HORAS (Reporte N.° 2) INCENDIO FORESTAL EN EL DISTRITO DE PICHIGUA – CUSCO",
+        "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-13545-6-10-2026-coen-indeci-0536-horas-reporte-n-1-incendio-forestal-en-el-distrito-de-pichigua-cusco/",
+        "fecha": "2026-11-09T04:53"
+      },
+      {
+        "titulo": "REPORTE COMPLEMENTARIO N.° 15677 – 8/11/2026 / COEN – INDECI / 23:30 HORAS (Reporte N.º 4) INCENDIO FORESTAL EN EL DISTRITO DE CUSIPATA – CUSCO",
+        "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-13410-3-10-2026-coen-indeci-1555-horas-reporte-n-o-1-incendio-forestal-en-el-distrito-de-cusipata-cusco/",
+        "fecha": "2026-11-09T04:38"
+      },
+      {
+        "titulo": "REPORTE COMPLEMENTARIO N.º 15676 – 8/11/2026 / COEN – INDECI / 23:10 HORAS (Reporte N.° 1) LLUVIAS INTENSAS EN EL DISTRITO DE SAN PEDRO DE CHANA – ÁNCASH",
+        "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-o-15676-8-11-2026-coen-indeci-2310-horas-reporte-n-1-lluvias-intensas-en-el-distrito-de-san-pedro-de-chana-ancash/",
+        "fecha": "2026-11-09T04:35"
+      },
+      {
+        "titulo": "REPORTE COMPLEMENTARIO N.º 15675 – 8/11/2026 / COEN – INDECI / 23:00 HORAS (Reporte N.º 1) INCENDIO URBANO EN EL DISTRITO DE PUENTE PIEDRA – LIMA",
+        "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-o-15675-8-11-2026-coen-indeci-2300-horas-reporte-n-o-1-incendio-urbano-en-el-distrito-de-puente-piedra-lima/",
+        "fecha": "2026-11-09T04:33"
+      },
+      {
+        "titulo": "REPORTE COMPLEMENTARIO N.º 15674 – 8/11/2026 / COEN – INDECI / 23:00 HORAS (Reporte N.º 1) INCENDIO FORESTAL EN EL DISTRITO DE VELILLE – CUSCO",
+        "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-o-13295-2-10-2026-coen-indeci-0123horas-reporte-n-o-1-incendio-forestal-en-el-distrito-de-velille-cusco/",
+        "fecha": "2026-11-09T04:30"
+      },
       {
         "titulo": "REPORTE COMPLEMENTARIO N.º 15673 – 8/11/2026/ COEN – INDECI / 22:50 HORAS (Reporte N.° 1) INCENDIO FORESTAL EN EL DISTRITO DE AMARILIS – HUÁNUCO",
         "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-o-15673-8-11-2026-coen-indeci-2250-horas-reporte-n-1-incendio-forestal-en-el-distrito-de-amarilis-huanuco/",
@@ -457,1529 +487,47 @@
         "titulo": "REPORTE COMPLEMENTARIO N.° 15666 – 8/11/2026 / COEN-INDECI / 19:20 HORAS (Reporte N.º 3) INCENDIO FORESTAL EN EL DISTRITO DE AJOYANI – PUNO",
         "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-03715-8-10-2026-coen-indeci-0715-horas-reporte-n-o-1-incendio-forestal-en-el-distrito-de-ajoyani-puno/",
         "fecha": "2026-11-09T00:20"
-      },
-      {
-        "titulo": "REPORTE COMPLEMENTARIO N.° 15665 – 8/11/2026 / COEN-INDECI / 18:30 HORAS (Reporte N.° 2) INCENDIO URBANO EN EL DISTRITO DE IQUITOS – LORETO",
-        "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-15615-7-11-2026-coen-indeci-1230-horas-reporte-n-1-incendio-urbano-en-el-distrito-de-iquitos-loreto/",
-        "fecha": "2026-11-09T00:05"
-      },
-      {
-        "titulo": "REPORTE COMPLEMENTARIO N.° 15664 – 8/11/2026 / COEN – INDECI / 18:20 HORAS (Reporte N.º 1) VIENTOS FUERTES EN EL DISTRITO DE SAPALLANGA – JUNÍN",
-        "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-15664-8-11-2026-coen-indeci-1820-horas-reporte-n-o-1-vientos-fuertes-en-el-distrito-de-sapallanga-junin/",
-        "fecha": "2026-11-08T23:42"
-      },
-      {
-        "titulo": "REPORTE COPLEMENTARIO N.° 15663 – 8/11/2026 / COEN – INDECI / 18:00 HORAS (Reporte N° 02) HELADA EN EL DISTRITO DE URCOS – CUSCO",
-        "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-coplementario-n-13453-4-10-2026-coen-indeci-0620-horas-reporte-n-01-helada-en-el-distrito-de-urcos-cusco/",
-        "fecha": "2026-11-08T23:30"
-      },
-      {
-        "titulo": "REPORTE PRELIMINAR N.º 1121 – 8/11/2026 / COEN – INDECI / 16:20 HORAS DESLIZAMIENTO EN EL DISTRITO DE OYÓN – LIMA",
-        "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-preliminar-n-o-1121-8-11-2026-coen-indeci-1620-horas-deslizamiento-en-el-distrito-de-oyon-lima/",
-        "fecha": "2026-11-08T22:44"
-      },
-      {
-        "titulo": "REPORTE COMPLEMENTARIO N.º 15662 – 8/11/2026 / COEN – INDECI / 17:20 HORAS (Reporte N.° 2) HELADA EN EL DISTRITO DE TARAY – CUSCO",
-        "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-o-13294-2-10-2026-coen-indeci-0116-horas-reporte-n-1-helada-en-el-distrito-de-taray-cusco/",
-        "fecha": "2026-11-08T22:40"
-      },
-      {
-        "titulo": "REPORTE COMPLEMENTARIO N.° 15661 – 8/11/2026 / COEN – INDECI / 17:10 HORAS (Reporte N.° 2) HELADA EN EL DISTRITO DE HUARO – CUSCO",
-        "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-preliminar-n-0956-1-10-2026-coen-indeci-2028-horas-helada-en-el-distrito-de-huaro-cusco/",
-        "fecha": "2026-11-08T22:35"
       }
     ],
     "url": "https://portal.indeci.gob.pe/emergencias/",
-    "leido": "2026-11-09T04:25:16Z"
+    "leido": "2026-11-09T05:24:14Z"
   },
   "escenario": {
     "vigente": true,
     "escenarios": [
-      {
-        "id": "1136",
-        "inicio_vigencia": "2026-11-06 00:00:49",
-        "fin_vigencia": "2026-11-08 23:59:49",
-        "ambito": "COSTA Y SIERRA",
-        "distritos": 247
-      },
       {
         "id": "1137",
         "inicio_vigencia": "2026-11-08 00:00:37",
         "fin_vigencia": "2026-11-09 23:59:37",
         "ambito": "SELVA",
         "distritos": 194
+      },
+      {
+        "id": "1138",
+        "inicio_vigencia": "2026-11-09 00:00:44",
+        "fin_vigencia": "2026-11-11 23:59:44",
+        "ambito": "COSTA Y SIERRA",
+        "distritos": 668
       }
     ],
     "resumen": {
       "MA": {
-        "distritos": 175,
-        "poblacion": 1487675,
-        "vivienda": 419908
+        "distritos": 359,
+        "poblacion": 1808862,
+        "vivienda": 538463
       },
       "A": {
-        "distritos": 200,
-        "poblacion": 2507986,
-        "vivienda": 668962
+        "distritos": 413,
+        "poblacion": 3450775,
+        "vivienda": 967104
       },
       "M": {
-        "distritos": 54,
-        "poblacion": 1091978,
-        "vivienda": 270111
+        "distritos": 82,
+        "poblacion": 1653754,
+        "vivienda": 420753
       }
     },
     "distritos": {
-      "021502": {
-        "nivel": "A",
-        "poblacion": 986,
-        "vivienda": 272,
-        "escenario": "1136"
-      },
-      "021504": {
-        "nivel": "A",
-        "poblacion": 523,
-        "vivienda": 147,
-        "escenario": "1136"
-      },
-      "021505": {
-        "nivel": "M",
-        "poblacion": 1001,
-        "vivienda": 285,
-        "escenario": "1136"
-      },
-      "021506": {
-        "nivel": "MA",
-        "poblacion": 505,
-        "vivienda": 155,
-        "escenario": "1136"
-      },
-      "021508": {
-        "nivel": "MA",
-        "poblacion": 2364,
-        "vivienda": 676,
-        "escenario": "1136"
-      },
-      "040402": {
-        "nivel": "MA",
-        "poblacion": 1038,
-        "vivienda": 333,
-        "escenario": "1136"
-      },
-      "040403": {
-        "nivel": "A",
-        "poblacion": 242,
-        "vivienda": 112,
-        "escenario": "1136"
-      },
-      "040404": {
-        "nivel": "MA",
-        "poblacion": 1646,
-        "vivienda": 492,
-        "escenario": "1136"
-      },
-      "040405": {
-        "nivel": "A",
-        "poblacion": 947,
-        "vivienda": 269,
-        "escenario": "1136"
-      },
-      "040406": {
-        "nivel": "MA",
-        "poblacion": 702,
-        "vivienda": 297,
-        "escenario": "1136"
-      },
-      "040408": {
-        "nivel": "A",
-        "poblacion": 488,
-        "vivienda": 217,
-        "escenario": "1136"
-      },
-      "040409": {
-        "nivel": "A",
-        "poblacion": 8177,
-        "vivienda": 1978,
-        "escenario": "1136"
-      },
-      "040410": {
-        "nivel": "A",
-        "poblacion": 2032,
-        "vivienda": 702,
-        "escenario": "1136"
-      },
-      "040411": {
-        "nivel": "A",
-        "poblacion": 432,
-        "vivienda": 173,
-        "escenario": "1136"
-      },
-      "040412": {
-        "nivel": "A",
-        "poblacion": 207,
-        "vivienda": 74,
-        "escenario": "1136"
-      },
-      "040414": {
-        "nivel": "A",
-        "poblacion": 1545,
-        "vivienda": 515,
-        "escenario": "1136"
-      },
-      "040501": {
-        "nivel": "A",
-        "poblacion": 5770,
-        "vivienda": 1615,
-        "escenario": "1136"
-      },
-      "040502": {
-        "nivel": "A",
-        "poblacion": 841,
-        "vivienda": 352,
-        "escenario": "1136"
-      },
-      "040503": {
-        "nivel": "A",
-        "poblacion": 2096,
-        "vivienda": 728,
-        "escenario": "1136"
-      },
-      "040504": {
-        "nivel": "A",
-        "poblacion": 1458,
-        "vivienda": 614,
-        "escenario": "1136"
-      },
-      "040506": {
-        "nivel": "A",
-        "poblacion": 1089,
-        "vivienda": 366,
-        "escenario": "1136"
-      },
-      "040507": {
-        "nivel": "A",
-        "poblacion": 670,
-        "vivienda": 298,
-        "escenario": "1136"
-      },
-      "040508": {
-        "nivel": "A",
-        "poblacion": 1010,
-        "vivienda": 400,
-        "escenario": "1136"
-      },
-      "040509": {
-        "nivel": "A",
-        "poblacion": 555,
-        "vivienda": 223,
-        "escenario": "1136"
-      },
-      "040510": {
-        "nivel": "A",
-        "poblacion": 904,
-        "vivienda": 327,
-        "escenario": "1136"
-      },
-      "040511": {
-        "nivel": "MA",
-        "poblacion": 718,
-        "vivienda": 334,
-        "escenario": "1136"
-      },
-      "040512": {
-        "nivel": "A",
-        "poblacion": 701,
-        "vivienda": 296,
-        "escenario": "1136"
-      },
-      "040513": {
-        "nivel": "MA",
-        "poblacion": 648,
-        "vivienda": 265,
-        "escenario": "1136"
-      },
-      "040515": {
-        "nivel": "A",
-        "poblacion": 669,
-        "vivienda": 247,
-        "escenario": "1136"
-      },
-      "040516": {
-        "nivel": "MA",
-        "poblacion": 772,
-        "vivienda": 200,
-        "escenario": "1136"
-      },
-      "040518": {
-        "nivel": "A",
-        "poblacion": 621,
-        "vivienda": 253,
-        "escenario": "1136"
-      },
-      "040519": {
-        "nivel": "A",
-        "poblacion": 2117,
-        "vivienda": 690,
-        "escenario": "1136"
-      },
-      "040601": {
-        "nivel": "M",
-        "poblacion": 3290,
-        "vivienda": 1003,
-        "escenario": "1136"
-      },
-      "040603": {
-        "nivel": "MA",
-        "poblacion": 3212,
-        "vivienda": 731,
-        "escenario": "1136"
-      },
-      "040604": {
-        "nivel": "MA",
-        "poblacion": 675,
-        "vivienda": 231,
-        "escenario": "1136"
-      },
-      "040607": {
-        "nivel": "MA",
-        "poblacion": 478,
-        "vivienda": 211,
-        "escenario": "1136"
-      },
-      "040608": {
-        "nivel": "M",
-        "poblacion": 3928,
-        "vivienda": 1307,
-        "escenario": "1136"
-      },
-      "040801": {
-        "nivel": "A",
-        "poblacion": 2925,
-        "vivienda": 935,
-        "escenario": "1136"
-      },
-      "040802": {
-        "nivel": "MA",
-        "poblacion": 1849,
-        "vivienda": 571,
-        "escenario": "1136"
-      },
-      "040803": {
-        "nivel": "MA",
-        "poblacion": 577,
-        "vivienda": 180,
-        "escenario": "1136"
-      },
-      "040804": {
-        "nivel": "MA",
-        "poblacion": 1913,
-        "vivienda": 615,
-        "escenario": "1136"
-      },
-      "040805": {
-        "nivel": "MA",
-        "poblacion": 1122,
-        "vivienda": 400,
-        "escenario": "1136"
-      },
-      "040806": {
-        "nivel": "MA",
-        "poblacion": 2342,
-        "vivienda": 759,
-        "escenario": "1136"
-      },
-      "040807": {
-        "nivel": "MA",
-        "poblacion": 265,
-        "vivienda": 115,
-        "escenario": "1136"
-      },
-      "040810": {
-        "nivel": "A",
-        "poblacion": 658,
-        "vivienda": 218,
-        "escenario": "1136"
-      },
-      "040811": {
-        "nivel": "MA",
-        "poblacion": 556,
-        "vivienda": 237,
-        "escenario": "1136"
-      },
-      "060101": {
-        "nivel": "A",
-        "poblacion": 218741,
-        "vivienda": 51111,
-        "escenario": "1136"
-      },
-      "060102": {
-        "nivel": "MA",
-        "poblacion": 7939,
-        "vivienda": 2377,
-        "escenario": "1136"
-      },
-      "060103": {
-        "nivel": "MA",
-        "poblacion": 3660,
-        "vivienda": 1023,
-        "escenario": "1136"
-      },
-      "060104": {
-        "nivel": "MA",
-        "poblacion": 6760,
-        "vivienda": 1839,
-        "escenario": "1136"
-      },
-      "060105": {
-        "nivel": "MA",
-        "poblacion": 19175,
-        "vivienda": 5947,
-        "escenario": "1136"
-      },
-      "060106": {
-        "nivel": "MA",
-        "poblacion": 15020,
-        "vivienda": 4067,
-        "escenario": "1136"
-      },
-      "060107": {
-        "nivel": "MA",
-        "poblacion": 5639,
-        "vivienda": 1637,
-        "escenario": "1136"
-      },
-      "060108": {
-        "nivel": "A",
-        "poblacion": 46149,
-        "vivienda": 11922,
-        "escenario": "1136"
-      },
-      "060109": {
-        "nivel": "MA",
-        "poblacion": 8271,
-        "vivienda": 2393,
-        "escenario": "1136"
-      },
-      "060110": {
-        "nivel": "MA",
-        "poblacion": 3469,
-        "vivienda": 1204,
-        "escenario": "1136"
-      },
-      "060111": {
-        "nivel": "MA",
-        "poblacion": 9267,
-        "vivienda": 2731,
-        "escenario": "1136"
-      },
-      "060112": {
-        "nivel": "MA",
-        "poblacion": 4343,
-        "vivienda": 1273,
-        "escenario": "1136"
-      },
-      "060202": {
-        "nivel": "MA",
-        "poblacion": 23524,
-        "vivienda": 5771,
-        "escenario": "1136"
-      },
-      "060304": {
-        "nivel": "MA",
-        "poblacion": 10657,
-        "vivienda": 3269,
-        "escenario": "1136"
-      },
-      "060401": {
-        "nivel": "A",
-        "poblacion": 47279,
-        "vivienda": 13424,
-        "escenario": "1136"
-      },
-      "060402": {
-        "nivel": "MA",
-        "poblacion": 3211,
-        "vivienda": 927,
-        "escenario": "1136"
-      },
-      "060404": {
-        "nivel": "MA",
-        "poblacion": 3641,
-        "vivienda": 1158,
-        "escenario": "1136"
-      },
-      "060407": {
-        "nivel": "MA",
-        "poblacion": 5546,
-        "vivienda": 1735,
-        "escenario": "1136"
-      },
-      "060408": {
-        "nivel": "MA",
-        "poblacion": 5643,
-        "vivienda": 1730,
-        "escenario": "1136"
-      },
-      "060409": {
-        "nivel": "MA",
-        "poblacion": 7972,
-        "vivienda": 2468,
-        "escenario": "1136"
-      },
-      "060410": {
-        "nivel": "MA",
-        "poblacion": 11093,
-        "vivienda": 3544,
-        "escenario": "1136"
-      },
-      "060411": {
-        "nivel": "MA",
-        "poblacion": 7075,
-        "vivienda": 2264,
-        "escenario": "1136"
-      },
-      "060412": {
-        "nivel": "MA",
-        "poblacion": 3203,
-        "vivienda": 900,
-        "escenario": "1136"
-      },
-      "060415": {
-        "nivel": "MA",
-        "poblacion": 8023,
-        "vivienda": 2300,
-        "escenario": "1136"
-      },
-      "060416": {
-        "nivel": "MA",
-        "poblacion": 958,
-        "vivienda": 316,
-        "escenario": "1136"
-      },
-      "060417": {
-        "nivel": "MA",
-        "poblacion": 15704,
-        "vivienda": 4612,
-        "escenario": "1136"
-      },
-      "060419": {
-        "nivel": "MA",
-        "poblacion": 9134,
-        "vivienda": 2993,
-        "escenario": "1136"
-      },
-      "060501": {
-        "nivel": "MA",
-        "poblacion": 7461,
-        "vivienda": 2181,
-        "escenario": "1136"
-      },
-      "060502": {
-        "nivel": "MA",
-        "poblacion": 2635,
-        "vivienda": 798,
-        "escenario": "1136"
-      },
-      "060504": {
-        "nivel": "MA",
-        "poblacion": 2679,
-        "vivienda": 869,
-        "escenario": "1136"
-      },
-      "060505": {
-        "nivel": "MA",
-        "poblacion": 3399,
-        "vivienda": 1037,
-        "escenario": "1136"
-      },
-      "060506": {
-        "nivel": "A",
-        "poblacion": 994,
-        "vivienda": 309,
-        "escenario": "1136"
-      },
-      "060601": {
-        "nivel": "MA",
-        "poblacion": 50905,
-        "vivienda": 15430,
-        "escenario": "1136"
-      },
-      "060602": {
-        "nivel": "MA",
-        "poblacion": 9361,
-        "vivienda": 2725,
-        "escenario": "1136"
-      },
-      "060603": {
-        "nivel": "A",
-        "poblacion": 2878,
-        "vivienda": 857,
-        "escenario": "1136"
-      },
-      "060606": {
-        "nivel": "MA",
-        "poblacion": 5100,
-        "vivienda": 1504,
-        "escenario": "1136"
-      },
-      "060607": {
-        "nivel": "MA",
-        "poblacion": 12987,
-        "vivienda": 3749,
-        "escenario": "1136"
-      },
-      "060608": {
-        "nivel": "MA",
-        "poblacion": 4172,
-        "vivienda": 1196,
-        "escenario": "1136"
-      },
-      "060610": {
-        "nivel": "MA",
-        "poblacion": 3000,
-        "vivienda": 971,
-        "escenario": "1136"
-      },
-      "060611": {
-        "nivel": "MA",
-        "poblacion": 2622,
-        "vivienda": 755,
-        "escenario": "1136"
-      },
-      "060612": {
-        "nivel": "MA",
-        "poblacion": 4701,
-        "vivienda": 1355,
-        "escenario": "1136"
-      },
-      "060613": {
-        "nivel": "MA",
-        "poblacion": 6988,
-        "vivienda": 2001,
-        "escenario": "1136"
-      },
-      "060614": {
-        "nivel": "MA",
-        "poblacion": 9054,
-        "vivienda": 2618,
-        "escenario": "1136"
-      },
-      "060701": {
-        "nivel": "MA",
-        "poblacion": 59913,
-        "vivienda": 19982,
-        "escenario": "1136"
-      },
-      "060702": {
-        "nivel": "MA",
-        "poblacion": 2920,
-        "vivienda": 848,
-        "escenario": "1136"
-      },
-      "060703": {
-        "nivel": "MA",
-        "poblacion": 15111,
-        "vivienda": 4223,
-        "escenario": "1136"
-      },
-      "060801": {
-        "nivel": "A",
-        "poblacion": 94153,
-        "vivienda": 23582,
-        "escenario": "1136"
-      },
-      "060803": {
-        "nivel": "A",
-        "poblacion": 9810,
-        "vivienda": 2769,
-        "escenario": "1136"
-      },
-      "060804": {
-        "nivel": "MA",
-        "poblacion": 10238,
-        "vivienda": 3028,
-        "escenario": "1136"
-      },
-      "060807": {
-        "nivel": "MA",
-        "poblacion": 8344,
-        "vivienda": 2424,
-        "escenario": "1136"
-      },
-      "060808": {
-        "nivel": "A",
-        "poblacion": 6834,
-        "vivienda": 1970,
-        "escenario": "1136"
-      },
-      "060809": {
-        "nivel": "MA",
-        "poblacion": 7033,
-        "vivienda": 1805,
-        "escenario": "1136"
-      },
-      "060810": {
-        "nivel": "MA",
-        "poblacion": 4693,
-        "vivienda": 1425,
-        "escenario": "1136"
-      },
-      "060811": {
-        "nivel": "A",
-        "poblacion": 6960,
-        "vivienda": 1964,
-        "escenario": "1136"
-      },
-      "060901": {
-        "nivel": "A",
-        "poblacion": 34659,
-        "vivienda": 9426,
-        "escenario": "1136"
-      },
-      "060902": {
-        "nivel": "MA",
-        "poblacion": 14592,
-        "vivienda": 4018,
-        "escenario": "1136"
-      },
-      "060904": {
-        "nivel": "A",
-        "poblacion": 19562,
-        "vivienda": 5424,
-        "escenario": "1136"
-      },
-      "060905": {
-        "nivel": "MA",
-        "poblacion": 9098,
-        "vivienda": 2417,
-        "escenario": "1136"
-      },
-      "060907": {
-        "nivel": "MA",
-        "poblacion": 17651,
-        "vivienda": 4877,
-        "escenario": "1136"
-      },
-      "061001": {
-        "nivel": "A",
-        "poblacion": 19870,
-        "vivienda": 5830,
-        "escenario": "1136"
-      },
-      "061004": {
-        "nivel": "A",
-        "poblacion": 5136,
-        "vivienda": 1728,
-        "escenario": "1136"
-      },
-      "061101": {
-        "nivel": "MA",
-        "poblacion": 13432,
-        "vivienda": 4394,
-        "escenario": "1136"
-      },
-      "061102": {
-        "nivel": "A",
-        "poblacion": 1319,
-        "vivienda": 462,
-        "escenario": "1136"
-      },
-      "061103": {
-        "nivel": "MA",
-        "poblacion": 4094,
-        "vivienda": 1306,
-        "escenario": "1136"
-      },
-      "061104": {
-        "nivel": "MA",
-        "poblacion": 2747,
-        "vivienda": 857,
-        "escenario": "1136"
-      },
-      "061105": {
-        "nivel": "MA",
-        "poblacion": 1627,
-        "vivienda": 543,
-        "escenario": "1136"
-      },
-      "061106": {
-        "nivel": "A",
-        "poblacion": 2165,
-        "vivienda": 766,
-        "escenario": "1136"
-      },
-      "061107": {
-        "nivel": "MA",
-        "poblacion": 4481,
-        "vivienda": 1470,
-        "escenario": "1136"
-      },
-      "061109": {
-        "nivel": "MA",
-        "poblacion": 3293,
-        "vivienda": 1094,
-        "escenario": "1136"
-      },
-      "061110": {
-        "nivel": "MA",
-        "poblacion": 2229,
-        "vivienda": 760,
-        "escenario": "1136"
-      },
-      "061111": {
-        "nivel": "MA",
-        "poblacion": 3652,
-        "vivienda": 1183,
-        "escenario": "1136"
-      },
-      "061112": {
-        "nivel": "MA",
-        "poblacion": 2688,
-        "vivienda": 854,
-        "escenario": "1136"
-      },
-      "061113": {
-        "nivel": "A",
-        "poblacion": 3026,
-        "vivienda": 954,
-        "escenario": "1136"
-      },
-      "061201": {
-        "nivel": "MA",
-        "poblacion": 12463,
-        "vivienda": 3842,
-        "escenario": "1136"
-      },
-      "061202": {
-        "nivel": "MA",
-        "poblacion": 4294,
-        "vivienda": 1306,
-        "escenario": "1136"
-      },
-      "061203": {
-        "nivel": "MA",
-        "poblacion": 958,
-        "vivienda": 327,
-        "escenario": "1136"
-      },
-      "061204": {
-        "nivel": "MA",
-        "poblacion": 3387,
-        "vivienda": 933,
-        "escenario": "1136"
-      },
-      "061301": {
-        "nivel": "A",
-        "poblacion": 9226,
-        "vivienda": 2902,
-        "escenario": "1136"
-      },
-      "061302": {
-        "nivel": "MA",
-        "poblacion": 1337,
-        "vivienda": 438,
-        "escenario": "1136"
-      },
-      "061303": {
-        "nivel": "MA",
-        "poblacion": 8958,
-        "vivienda": 2408,
-        "escenario": "1136"
-      },
-      "061304": {
-        "nivel": "MA",
-        "poblacion": 3355,
-        "vivienda": 1001,
-        "escenario": "1136"
-      },
-      "061305": {
-        "nivel": "MA",
-        "poblacion": 2321,
-        "vivienda": 796,
-        "escenario": "1136"
-      },
-      "061306": {
-        "nivel": "MA",
-        "poblacion": 2097,
-        "vivienda": 656,
-        "escenario": "1136"
-      },
-      "061307": {
-        "nivel": "MA",
-        "poblacion": 3896,
-        "vivienda": 1281,
-        "escenario": "1136"
-      },
-      "061308": {
-        "nivel": "MA",
-        "poblacion": 1446,
-        "vivienda": 494,
-        "escenario": "1136"
-      },
-      "061309": {
-        "nivel": "A",
-        "poblacion": 425,
-        "vivienda": 109,
-        "escenario": "1136"
-      },
-      "061310": {
-        "nivel": "MA",
-        "poblacion": 1259,
-        "vivienda": 372,
-        "escenario": "1136"
-      },
-      "061311": {
-        "nivel": "MA",
-        "poblacion": 2844,
-        "vivienda": 808,
-        "escenario": "1136"
-      },
-      "130110": {
-        "nivel": "A",
-        "poblacion": 4061,
-        "vivienda": 1128,
-        "escenario": "1136"
-      },
-      "130501": {
-        "nivel": "MA",
-        "poblacion": 11505,
-        "vivienda": 3839,
-        "escenario": "1136"
-      },
-      "130502": {
-        "nivel": "MA",
-        "poblacion": 4866,
-        "vivienda": 1594,
-        "escenario": "1136"
-      },
-      "130503": {
-        "nivel": "MA",
-        "poblacion": 6221,
-        "vivienda": 1879,
-        "escenario": "1136"
-      },
-      "130504": {
-        "nivel": "MA",
-        "poblacion": 5432,
-        "vivienda": 1562,
-        "escenario": "1136"
-      },
-      "130601": {
-        "nivel": "MA",
-        "poblacion": 24169,
-        "vivienda": 6933,
-        "escenario": "1136"
-      },
-      "130602": {
-        "nivel": "MA",
-        "poblacion": 9252,
-        "vivienda": 2642,
-        "escenario": "1136"
-      },
-      "130604": {
-        "nivel": "MA",
-        "poblacion": 2420,
-        "vivienda": 846,
-        "escenario": "1136"
-      },
-      "130605": {
-        "nivel": "MA",
-        "poblacion": 3940,
-        "vivienda": 1153,
-        "escenario": "1136"
-      },
-      "130606": {
-        "nivel": "MA",
-        "poblacion": 614,
-        "vivienda": 214,
-        "escenario": "1136"
-      },
-      "130608": {
-        "nivel": "MA",
-        "poblacion": 2693,
-        "vivienda": 826,
-        "escenario": "1136"
-      },
-      "130610": {
-        "nivel": "MA",
-        "poblacion": 523,
-        "vivienda": 146,
-        "escenario": "1136"
-      },
-      "130611": {
-        "nivel": "MA",
-        "poblacion": 5831,
-        "vivienda": 1865,
-        "escenario": "1136"
-      },
-      "130613": {
-        "nivel": "MA",
-        "poblacion": 7032,
-        "vivienda": 2091,
-        "escenario": "1136"
-      },
-      "130614": {
-        "nivel": "MA",
-        "poblacion": 21388,
-        "vivienda": 6349,
-        "escenario": "1136"
-      },
-      "130901": {
-        "nivel": "MA",
-        "poblacion": 66902,
-        "vivienda": 15399,
-        "escenario": "1136"
-      },
-      "130906": {
-        "nivel": "MA",
-        "poblacion": 12922,
-        "vivienda": 3424,
-        "escenario": "1136"
-      },
-      "131001": {
-        "nivel": "MA",
-        "poblacion": 18311,
-        "vivienda": 5052,
-        "escenario": "1136"
-      },
-      "131002": {
-        "nivel": "MA",
-        "poblacion": 4810,
-        "vivienda": 1300,
-        "escenario": "1136"
-      },
-      "131003": {
-        "nivel": "MA",
-        "poblacion": 5319,
-        "vivienda": 1395,
-        "escenario": "1136"
-      },
-      "131004": {
-        "nivel": "MA",
-        "poblacion": 1734,
-        "vivienda": 496,
-        "escenario": "1136"
-      },
-      "131005": {
-        "nivel": "MA",
-        "poblacion": 2339,
-        "vivienda": 716,
-        "escenario": "1136"
-      },
-      "131006": {
-        "nivel": "MA",
-        "poblacion": 12291,
-        "vivienda": 2978,
-        "escenario": "1136"
-      },
-      "131007": {
-        "nivel": "MA",
-        "poblacion": 2852,
-        "vivienda": 829,
-        "escenario": "1136"
-      },
-      "131101": {
-        "nivel": "A",
-        "poblacion": 13374,
-        "vivienda": 3945,
-        "escenario": "1136"
-      },
-      "131102": {
-        "nivel": "MA",
-        "poblacion": 4725,
-        "vivienda": 1446,
-        "escenario": "1136"
-      },
-      "131103": {
-        "nivel": "MA",
-        "poblacion": 2407,
-        "vivienda": 709,
-        "escenario": "1136"
-      },
-      "131104": {
-        "nivel": "MA",
-        "poblacion": 6386,
-        "vivienda": 1677,
-        "escenario": "1136"
-      },
-      "131202": {
-        "nivel": "A",
-        "poblacion": 32842,
-        "vivienda": 8050,
-        "escenario": "1136"
-      },
-      "140110": {
-        "nivel": "A",
-        "poblacion": 8201,
-        "vivienda": 2589,
-        "escenario": "1136"
-      },
-      "140202": {
-        "nivel": "MA",
-        "poblacion": 11366,
-        "vivienda": 2733,
-        "escenario": "1136"
-      },
-      "140203": {
-        "nivel": "MA",
-        "poblacion": 13858,
-        "vivienda": 3436,
-        "escenario": "1136"
-      },
-      "140308": {
-        "nivel": "M",
-        "poblacion": 46484,
-        "vivienda": 11513,
-        "escenario": "1136"
-      },
-      "140310": {
-        "nivel": "MA",
-        "poblacion": 12595,
-        "vivienda": 3509,
-        "escenario": "1136"
-      },
-      "180102": {
-        "nivel": "A",
-        "poblacion": 2366,
-        "vivienda": 934,
-        "escenario": "1136"
-      },
-      "180105": {
-        "nivel": "MA",
-        "poblacion": 1736,
-        "vivienda": 769,
-        "escenario": "1136"
-      },
-      "180202": {
-        "nivel": "A",
-        "poblacion": 708,
-        "vivienda": 342,
-        "escenario": "1136"
-      },
-      "180204": {
-        "nivel": "A",
-        "poblacion": 2901,
-        "vivienda": 1354,
-        "escenario": "1136"
-      },
-      "180206": {
-        "nivel": "A",
-        "poblacion": 570,
-        "vivienda": 235,
-        "escenario": "1136"
-      },
-      "180210": {
-        "nivel": "A",
-        "poblacion": 1741,
-        "vivienda": 722,
-        "escenario": "1136"
-      },
-      "180211": {
-        "nivel": "A",
-        "poblacion": 864,
-        "vivienda": 397,
-        "escenario": "1136"
-      },
-      "200105": {
-        "nivel": "M",
-        "poblacion": 75870,
-        "vivienda": 18280,
-        "escenario": "1136"
-      },
-      "200111": {
-        "nivel": "MA",
-        "poblacion": 26947,
-        "vivienda": 7353,
-        "escenario": "1136"
-      },
-      "200114": {
-        "nivel": "A",
-        "poblacion": 107495,
-        "vivienda": 27755,
-        "escenario": "1136"
-      },
-      "200201": {
-        "nivel": "MA",
-        "poblacion": 30852,
-        "vivienda": 7996,
-        "escenario": "1136"
-      },
-      "200202": {
-        "nivel": "MA",
-        "poblacion": 19896,
-        "vivienda": 5053,
-        "escenario": "1136"
-      },
-      "200203": {
-        "nivel": "MA",
-        "poblacion": 2405,
-        "vivienda": 665,
-        "escenario": "1136"
-      },
-      "200204": {
-        "nivel": "MA",
-        "poblacion": 5734,
-        "vivienda": 1307,
-        "escenario": "1136"
-      },
-      "200205": {
-        "nivel": "MA",
-        "poblacion": 6179,
-        "vivienda": 1673,
-        "escenario": "1136"
-      },
-      "200206": {
-        "nivel": "MA",
-        "poblacion": 21257,
-        "vivienda": 5189,
-        "escenario": "1136"
-      },
-      "200207": {
-        "nivel": "MA",
-        "poblacion": 9621,
-        "vivienda": 2474,
-        "escenario": "1136"
-      },
-      "200208": {
-        "nivel": "MA",
-        "poblacion": 10510,
-        "vivienda": 2551,
-        "escenario": "1136"
-      },
-      "200209": {
-        "nivel": "MA",
-        "poblacion": 1654,
-        "vivienda": 480,
-        "escenario": "1136"
-      },
-      "200210": {
-        "nivel": "A",
-        "poblacion": 11179,
-        "vivienda": 3074,
-        "escenario": "1136"
-      },
-      "200301": {
-        "nivel": "MA",
-        "poblacion": 27599,
-        "vivienda": 7804,
-        "escenario": "1136"
-      },
-      "200302": {
-        "nivel": "MA",
-        "poblacion": 7317,
-        "vivienda": 2189,
-        "escenario": "1136"
-      },
-      "200303": {
-        "nivel": "MA",
-        "poblacion": 11186,
-        "vivienda": 3164,
-        "escenario": "1136"
-      },
-      "200304": {
-        "nivel": "MA",
-        "poblacion": 35548,
-        "vivienda": 9665,
-        "escenario": "1136"
-      },
-      "200305": {
-        "nivel": "MA",
-        "poblacion": 3871,
-        "vivienda": 1253,
-        "escenario": "1136"
-      },
-      "200306": {
-        "nivel": "MA",
-        "poblacion": 8678,
-        "vivienda": 2446,
-        "escenario": "1136"
-      },
-      "200307": {
-        "nivel": "MA",
-        "poblacion": 7140,
-        "vivienda": 1948,
-        "escenario": "1136"
-      },
-      "200308": {
-        "nivel": "MA",
-        "poblacion": 10162,
-        "vivienda": 2800,
-        "escenario": "1136"
-      },
-      "200401": {
-        "nivel": "M",
-        "poblacion": 82521,
-        "vivienda": 21683,
-        "escenario": "1136"
-      },
-      "200402": {
-        "nivel": "MA",
-        "poblacion": 9410,
-        "vivienda": 2764,
-        "escenario": "1136"
-      },
-      "200403": {
-        "nivel": "MA",
-        "poblacion": 7789,
-        "vivienda": 2274,
-        "escenario": "1136"
-      },
-      "200404": {
-        "nivel": "MA",
-        "poblacion": 13997,
-        "vivienda": 3793,
-        "escenario": "1136"
-      },
-      "200405": {
-        "nivel": "A",
-        "poblacion": 15239,
-        "vivienda": 4394,
-        "escenario": "1136"
-      },
-      "200406": {
-        "nivel": "A",
-        "poblacion": 8527,
-        "vivienda": 2552,
-        "escenario": "1136"
-      },
-      "200407": {
-        "nivel": "MA",
-        "poblacion": 6433,
-        "vivienda": 2043,
-        "escenario": "1136"
-      },
-      "200408": {
-        "nivel": "A",
-        "poblacion": 3650,
-        "vivienda": 1075,
-        "escenario": "1136"
-      },
-      "200409": {
-        "nivel": "MA",
-        "poblacion": 5960,
-        "vivienda": 1943,
-        "escenario": "1136"
-      },
-      "200410": {
-        "nivel": "MA",
-        "poblacion": 8501,
-        "vivienda": 2423,
-        "escenario": "1136"
-      },
-      "200502": {
-        "nivel": "A",
-        "poblacion": 2413,
-        "vivienda": 673,
-        "escenario": "1136"
-      },
-      "200503": {
-        "nivel": "M",
-        "poblacion": 1136,
-        "vivienda": 332,
-        "escenario": "1136"
-      },
-      "200504": {
-        "nivel": "A",
-        "poblacion": 14869,
-        "vivienda": 3704,
-        "escenario": "1136"
-      },
-      "200505": {
-        "nivel": "A",
-        "poblacion": 12950,
-        "vivienda": 3343,
-        "escenario": "1136"
-      },
-      "200506": {
-        "nivel": "A",
-        "poblacion": 4923,
-        "vivienda": 1440,
-        "escenario": "1136"
-      },
-      "200507": {
-        "nivel": "A",
-        "poblacion": 5622,
-        "vivienda": 1547,
-        "escenario": "1136"
-      },
-      "200603": {
-        "nivel": "A",
-        "poblacion": 20423,
-        "vivienda": 5457,
-        "escenario": "1136"
-      },
-      "200604": {
-        "nivel": "A",
-        "poblacion": 12119,
-        "vivienda": 3567,
-        "escenario": "1136"
-      },
-      "200605": {
-        "nivel": "A",
-        "poblacion": 29569,
-        "vivienda": 8110,
-        "escenario": "1136"
-      },
-      "200606": {
-        "nivel": "A",
-        "poblacion": 9036,
-        "vivienda": 2305,
-        "escenario": "1136"
-      },
-      "200607": {
-        "nivel": "A",
-        "poblacion": 26395,
-        "vivienda": 7230,
-        "escenario": "1136"
-      },
-      "200608": {
-        "nivel": "M",
-        "poblacion": 7047,
-        "vivienda": 1883,
-        "escenario": "1136"
-      },
-      "200701": {
-        "nivel": "A",
-        "poblacion": 98309,
-        "vivienda": 24206,
-        "escenario": "1136"
-      },
-      "200702": {
-        "nivel": "A",
-        "poblacion": 8316,
-        "vivienda": 2318,
-        "escenario": "1136"
-      },
-      "200703": {
-        "nivel": "M",
-        "poblacion": 12486,
-        "vivienda": 3301,
-        "escenario": "1136"
-      },
-      "200704": {
-        "nivel": "A",
-        "poblacion": 1312,
-        "vivienda": 355,
-        "escenario": "1136"
-      },
-      "200705": {
-        "nivel": "A",
-        "poblacion": 10699,
-        "vivienda": 2909,
-        "escenario": "1136"
-      },
-      "200706": {
-        "nivel": "A",
-        "poblacion": 13028,
-        "vivienda": 3498,
-        "escenario": "1136"
-      },
-      "210102": {
-        "nivel": "M",
-        "poblacion": 22961,
-        "vivienda": 10104,
-        "escenario": "1136"
-      },
-      "210111": {
-        "nivel": "A",
-        "poblacion": 5679,
-        "vivienda": 2485,
-        "escenario": "1136"
-      },
-      "210113": {
-        "nivel": "A",
-        "poblacion": 2413,
-        "vivienda": 997,
-        "escenario": "1136"
-      },
-      "210504": {
-        "nivel": "A",
-        "poblacion": 3529,
-        "vivienda": 1817,
-        "escenario": "1136"
-      },
-      "230201": {
-        "nivel": "A",
-        "poblacion": 2354,
-        "vivienda": 914,
-        "escenario": "1136"
-      },
-      "240101": {
-        "nivel": "A",
-        "poblacion": 102306,
-        "vivienda": 26748,
-        "escenario": "1136"
-      },
-      "240102": {
-        "nivel": "A",
-        "poblacion": 23337,
-        "vivienda": 6409,
-        "escenario": "1136"
-      },
-      "240103": {
-        "nivel": "A",
-        "poblacion": 9507,
-        "vivienda": 2628,
-        "escenario": "1136"
-      },
-      "240104": {
-        "nivel": "A",
-        "poblacion": 6728,
-        "vivienda": 1942,
-        "escenario": "1136"
-      },
-      "240105": {
-        "nivel": "A",
-        "poblacion": 8512,
-        "vivienda": 2503,
-        "escenario": "1136"
-      },
-      "240106": {
-        "nivel": "A",
-        "poblacion": 4572,
-        "vivienda": 1361,
-        "escenario": "1136"
-      },
-      "240201": {
-        "nivel": "A",
-        "poblacion": 12371,
-        "vivienda": 3300,
-        "escenario": "1136"
-      },
-      "240202": {
-        "nivel": "A",
-        "poblacion": 2350,
-        "vivienda": 739,
-        "escenario": "1136"
-      },
-      "240203": {
-        "nivel": "A",
-        "poblacion": 6336,
-        "vivienda": 1584,
-        "escenario": "1136"
-      },
-      "240301": {
-        "nivel": "A",
-        "poblacion": 21776,
-        "vivienda": 6065,
-        "escenario": "1136"
-      },
-      "240302": {
-        "nivel": "A",
-        "poblacion": 17366,
-        "vivienda": 4947,
-        "escenario": "1136"
-      },
-      "240303": {
-        "nivel": "M",
-        "poblacion": 3428,
-        "vivienda": 905,
-        "escenario": "1136"
-      },
-      "240304": {
-        "nivel": "A",
-        "poblacion": 6274,
-        "vivienda": 1771,
-        "escenario": "1136"
-      },
       "050407": {
         "nivel": "MA",
         "poblacion": 10797,
@@ -3101,10 +1649,4012 @@
         "poblacion": 2860,
         "vivienda": 683,
         "escenario": "1137"
+      },
+      "020101": {
+        "nivel": "A",
+        "poblacion": 60896,
+        "vivienda": 14093,
+        "escenario": "1138"
+      },
+      "020102": {
+        "nivel": "MA",
+        "poblacion": 1639,
+        "vivienda": 534,
+        "escenario": "1138"
+      },
+      "020103": {
+        "nivel": "A",
+        "poblacion": 294,
+        "vivienda": 101,
+        "escenario": "1138"
+      },
+      "020105": {
+        "nivel": "A",
+        "poblacion": 76088,
+        "vivienda": 19637,
+        "escenario": "1138"
+      },
+      "020106": {
+        "nivel": "MA",
+        "poblacion": 4781,
+        "vivienda": 1340,
+        "escenario": "1138"
+      },
+      "020107": {
+        "nivel": "MA",
+        "poblacion": 1066,
+        "vivienda": 325,
+        "escenario": "1138"
+      },
+      "020108": {
+        "nivel": "A",
+        "poblacion": 2351,
+        "vivienda": 704,
+        "escenario": "1138"
+      },
+      "020110": {
+        "nivel": "MA",
+        "poblacion": 4606,
+        "vivienda": 1370,
+        "escenario": "1138"
+      },
+      "020111": {
+        "nivel": "MA",
+        "poblacion": 3321,
+        "vivienda": 1000,
+        "escenario": "1138"
+      },
+      "020201": {
+        "nivel": "A",
+        "poblacion": 2017,
+        "vivienda": 529,
+        "escenario": "1138"
+      },
+      "020202": {
+        "nivel": "A",
+        "poblacion": 1639,
+        "vivienda": 530,
+        "escenario": "1138"
+      },
+      "020203": {
+        "nivel": "A",
+        "poblacion": 364,
+        "vivienda": 121,
+        "escenario": "1138"
+      },
+      "020204": {
+        "nivel": "MA",
+        "poblacion": 1582,
+        "vivienda": 511,
+        "escenario": "1138"
+      },
+      "020205": {
+        "nivel": "A",
+        "poblacion": 714,
+        "vivienda": 250,
+        "escenario": "1138"
+      },
+      "020503": {
+        "nivel": "A",
+        "poblacion": 994,
+        "vivienda": 351,
+        "escenario": "1138"
+      },
+      "020505": {
+        "nivel": "MA",
+        "poblacion": 1677,
+        "vivienda": 542,
+        "escenario": "1138"
+      },
+      "020506": {
+        "nivel": "A",
+        "poblacion": 312,
+        "vivienda": 109,
+        "escenario": "1138"
+      },
+      "020510": {
+        "nivel": "MA",
+        "poblacion": 1253,
+        "vivienda": 421,
+        "escenario": "1138"
+      },
+      "020514": {
+        "nivel": "M",
+        "poblacion": 495,
+        "vivienda": 146,
+        "escenario": "1138"
+      },
+      "020515": {
+        "nivel": "MA",
+        "poblacion": 658,
+        "vivienda": 249,
+        "escenario": "1138"
+      },
+      "020601": {
+        "nivel": "A",
+        "poblacion": 15122,
+        "vivienda": 4183,
+        "escenario": "1138"
+      },
+      "020604": {
+        "nivel": "MA",
+        "poblacion": 2365,
+        "vivienda": 728,
+        "escenario": "1138"
+      },
+      "020605": {
+        "nivel": "MA",
+        "poblacion": 1469,
+        "vivienda": 465,
+        "escenario": "1138"
+      },
+      "020611": {
+        "nivel": "MA",
+        "poblacion": 2992,
+        "vivienda": 827,
+        "escenario": "1138"
+      },
+      "020804": {
+        "nivel": "A",
+        "poblacion": 8305,
+        "vivienda": 2338,
+        "escenario": "1138"
+      },
+      "021102": {
+        "nivel": "A",
+        "poblacion": 740,
+        "vivienda": 296,
+        "escenario": "1138"
+      },
+      "021104": {
+        "nivel": "MA",
+        "poblacion": 861,
+        "vivienda": 295,
+        "escenario": "1138"
+      },
+      "021105": {
+        "nivel": "A",
+        "poblacion": 745,
+        "vivienda": 273,
+        "escenario": "1138"
+      },
+      "021201": {
+        "nivel": "A",
+        "poblacion": 24128,
+        "vivienda": 6449,
+        "escenario": "1138"
+      },
+      "021203": {
+        "nivel": "MA",
+        "poblacion": 1344,
+        "vivienda": 364,
+        "escenario": "1138"
+      },
+      "021204": {
+        "nivel": "A",
+        "poblacion": 1614,
+        "vivienda": 635,
+        "escenario": "1138"
+      },
+      "021205": {
+        "nivel": "MA",
+        "poblacion": 1849,
+        "vivienda": 553,
+        "escenario": "1138"
+      },
+      "021206": {
+        "nivel": "MA",
+        "poblacion": 7804,
+        "vivienda": 2047,
+        "escenario": "1138"
+      },
+      "021207": {
+        "nivel": "MA",
+        "poblacion": 6371,
+        "vivienda": 1808,
+        "escenario": "1138"
+      },
+      "021209": {
+        "nivel": "MA",
+        "poblacion": 1055,
+        "vivienda": 359,
+        "escenario": "1138"
+      },
+      "021401": {
+        "nivel": "A",
+        "poblacion": 1203,
+        "vivienda": 415,
+        "escenario": "1138"
+      },
+      "021402": {
+        "nivel": "A",
+        "poblacion": 656,
+        "vivienda": 221,
+        "escenario": "1138"
+      },
+      "021403": {
+        "nivel": "A",
+        "poblacion": 300,
+        "vivienda": 113,
+        "escenario": "1138"
+      },
+      "021404": {
+        "nivel": "A",
+        "poblacion": 472,
+        "vivienda": 202,
+        "escenario": "1138"
+      },
+      "021406": {
+        "nivel": "A",
+        "poblacion": 1219,
+        "vivienda": 431,
+        "escenario": "1138"
+      },
+      "021407": {
+        "nivel": "A",
+        "poblacion": 279,
+        "vivienda": 113,
+        "escenario": "1138"
+      },
+      "021408": {
+        "nivel": "A",
+        "poblacion": 438,
+        "vivienda": 187,
+        "escenario": "1138"
+      },
+      "021410": {
+        "nivel": "MA",
+        "poblacion": 429,
+        "vivienda": 142,
+        "escenario": "1138"
+      },
+      "021701": {
+        "nivel": "A",
+        "poblacion": 4406,
+        "vivienda": 1299,
+        "escenario": "1138"
+      },
+      "021702": {
+        "nivel": "M",
+        "poblacion": 3907,
+        "vivienda": 950,
+        "escenario": "1138"
+      },
+      "021703": {
+        "nivel": "A",
+        "poblacion": 409,
+        "vivienda": 118,
+        "escenario": "1138"
+      },
+      "021706": {
+        "nivel": "A",
+        "poblacion": 1608,
+        "vivienda": 427,
+        "escenario": "1138"
+      },
+      "021707": {
+        "nivel": "MA",
+        "poblacion": 923,
+        "vivienda": 349,
+        "escenario": "1138"
+      },
+      "021709": {
+        "nivel": "MA",
+        "poblacion": 421,
+        "vivienda": 141,
+        "escenario": "1138"
+      },
+      "021710": {
+        "nivel": "M",
+        "poblacion": 2462,
+        "vivienda": 728,
+        "escenario": "1138"
+      },
+      "021802": {
+        "nivel": "A",
+        "poblacion": 4420,
+        "vivienda": 1401,
+        "escenario": "1138"
+      },
+      "021804": {
+        "nivel": "MA",
+        "poblacion": 3125,
+        "vivienda": 975,
+        "escenario": "1138"
+      },
+      "022002": {
+        "nivel": "MA",
+        "poblacion": 1674,
+        "vivienda": 470,
+        "escenario": "1138"
+      },
+      "022004": {
+        "nivel": "A",
+        "poblacion": 1343,
+        "vivienda": 372,
+        "escenario": "1138"
+      },
+      "022005": {
+        "nivel": "MA",
+        "poblacion": 11629,
+        "vivienda": 3167,
+        "escenario": "1138"
+      },
+      "022007": {
+        "nivel": "MA",
+        "poblacion": 1840,
+        "vivienda": 493,
+        "escenario": "1138"
+      },
+      "030102": {
+        "nivel": "A",
+        "poblacion": 1339,
+        "vivienda": 463,
+        "escenario": "1138"
+      },
+      "030103": {
+        "nivel": "MA",
+        "poblacion": 1866,
+        "vivienda": 804,
+        "escenario": "1138"
+      },
+      "030106": {
+        "nivel": "A",
+        "poblacion": 3002,
+        "vivienda": 1224,
+        "escenario": "1138"
+      },
+      "030107": {
+        "nivel": "MA",
+        "poblacion": 2774,
+        "vivienda": 1023,
+        "escenario": "1138"
+      },
+      "030201": {
+        "nivel": "A",
+        "poblacion": 42268,
+        "vivienda": 11068,
+        "escenario": "1138"
+      },
+      "030203": {
+        "nivel": "A",
+        "poblacion": 1186,
+        "vivienda": 429,
+        "escenario": "1138"
+      },
+      "030205": {
+        "nivel": "A",
+        "poblacion": 3753,
+        "vivienda": 1266,
+        "escenario": "1138"
+      },
+      "030206": {
+        "nivel": "MA",
+        "poblacion": 750,
+        "vivienda": 256,
+        "escenario": "1138"
+      },
+      "030210": {
+        "nivel": "MA",
+        "poblacion": 2199,
+        "vivienda": 714,
+        "escenario": "1138"
+      },
+      "030211": {
+        "nivel": "A",
+        "poblacion": 863,
+        "vivienda": 301,
+        "escenario": "1138"
+      },
+      "030212": {
+        "nivel": "MA",
+        "poblacion": 2910,
+        "vivienda": 1019,
+        "escenario": "1138"
+      },
+      "030214": {
+        "nivel": "MA",
+        "poblacion": 1613,
+        "vivienda": 502,
+        "escenario": "1138"
+      },
+      "030215": {
+        "nivel": "A",
+        "poblacion": 8152,
+        "vivienda": 2425,
+        "escenario": "1138"
+      },
+      "030217": {
+        "nivel": "MA",
+        "poblacion": 1864,
+        "vivienda": 651,
+        "escenario": "1138"
+      },
+      "030218": {
+        "nivel": "A",
+        "poblacion": 3642,
+        "vivienda": 1191,
+        "escenario": "1138"
+      },
+      "030301": {
+        "nivel": "MA",
+        "poblacion": 2776,
+        "vivienda": 994,
+        "escenario": "1138"
+      },
+      "030302": {
+        "nivel": "A",
+        "poblacion": 552,
+        "vivienda": 275,
+        "escenario": "1138"
+      },
+      "030303": {
+        "nivel": "MA",
+        "poblacion": 1841,
+        "vivienda": 492,
+        "escenario": "1138"
+      },
+      "030304": {
+        "nivel": "MA",
+        "poblacion": 1711,
+        "vivienda": 662,
+        "escenario": "1138"
+      },
+      "030305": {
+        "nivel": "MA",
+        "poblacion": 2268,
+        "vivienda": 740,
+        "escenario": "1138"
+      },
+      "030306": {
+        "nivel": "A",
+        "poblacion": 1054,
+        "vivienda": 385,
+        "escenario": "1138"
+      },
+      "030307": {
+        "nivel": "MA",
+        "poblacion": 1108,
+        "vivienda": 423,
+        "escenario": "1138"
+      },
+      "030401": {
+        "nivel": "A",
+        "poblacion": 4928,
+        "vivienda": 1399,
+        "escenario": "1138"
+      },
+      "030402": {
+        "nivel": "A",
+        "poblacion": 580,
+        "vivienda": 236,
+        "escenario": "1138"
+      },
+      "030403": {
+        "nivel": "A",
+        "poblacion": 929,
+        "vivienda": 357,
+        "escenario": "1138"
+      },
+      "030404": {
+        "nivel": "MA",
+        "poblacion": 1893,
+        "vivienda": 721,
+        "escenario": "1138"
+      },
+      "030405": {
+        "nivel": "A",
+        "poblacion": 693,
+        "vivienda": 260,
+        "escenario": "1138"
+      },
+      "030406": {
+        "nivel": "MA",
+        "poblacion": 2570,
+        "vivienda": 818,
+        "escenario": "1138"
+      },
+      "030407": {
+        "nivel": "A",
+        "poblacion": 462,
+        "vivienda": 195,
+        "escenario": "1138"
+      },
+      "030408": {
+        "nivel": "MA",
+        "poblacion": 735,
+        "vivienda": 300,
+        "escenario": "1138"
+      },
+      "030409": {
+        "nivel": "MA",
+        "poblacion": 1529,
+        "vivienda": 519,
+        "escenario": "1138"
+      },
+      "030410": {
+        "nivel": "MA",
+        "poblacion": 1022,
+        "vivienda": 416,
+        "escenario": "1138"
+      },
+      "030411": {
+        "nivel": "A",
+        "poblacion": 769,
+        "vivienda": 261,
+        "escenario": "1138"
+      },
+      "030412": {
+        "nivel": "MA",
+        "poblacion": 1107,
+        "vivienda": 409,
+        "escenario": "1138"
+      },
+      "030413": {
+        "nivel": "A",
+        "poblacion": 711,
+        "vivienda": 272,
+        "escenario": "1138"
+      },
+      "030414": {
+        "nivel": "MA",
+        "poblacion": 1848,
+        "vivienda": 727,
+        "escenario": "1138"
+      },
+      "030415": {
+        "nivel": "MA",
+        "poblacion": 2272,
+        "vivienda": 832,
+        "escenario": "1138"
+      },
+      "030416": {
+        "nivel": "A",
+        "poblacion": 1278,
+        "vivienda": 514,
+        "escenario": "1138"
+      },
+      "030417": {
+        "nivel": "A",
+        "poblacion": 981,
+        "vivienda": 357,
+        "escenario": "1138"
+      },
+      "030501": {
+        "nivel": "MA",
+        "poblacion": 10381,
+        "vivienda": 2953,
+        "escenario": "1138"
+      },
+      "030502": {
+        "nivel": "A",
+        "poblacion": 3886,
+        "vivienda": 1223,
+        "escenario": "1138"
+      },
+      "030503": {
+        "nivel": "MA",
+        "poblacion": 6586,
+        "vivienda": 2111,
+        "escenario": "1138"
+      },
+      "030504": {
+        "nivel": "MA",
+        "poblacion": 9430,
+        "vivienda": 3161,
+        "escenario": "1138"
+      },
+      "030505": {
+        "nivel": "MA",
+        "poblacion": 5848,
+        "vivienda": 1796,
+        "escenario": "1138"
+      },
+      "030506": {
+        "nivel": "MA",
+        "poblacion": 14525,
+        "vivienda": 3267,
+        "escenario": "1138"
+      },
+      "030601": {
+        "nivel": "A",
+        "poblacion": 5293,
+        "vivienda": 1528,
+        "escenario": "1138"
+      },
+      "030602": {
+        "nivel": "A",
+        "poblacion": 10388,
+        "vivienda": 3010,
+        "escenario": "1138"
+      },
+      "030603": {
+        "nivel": "MA",
+        "poblacion": 1728,
+        "vivienda": 578,
+        "escenario": "1138"
+      },
+      "030604": {
+        "nivel": "A",
+        "poblacion": 6634,
+        "vivienda": 2004,
+        "escenario": "1138"
+      },
+      "030607": {
+        "nivel": "MA",
+        "poblacion": 2650,
+        "vivienda": 831,
+        "escenario": "1138"
+      },
+      "030701": {
+        "nivel": "A",
+        "poblacion": 5023,
+        "vivienda": 1429,
+        "escenario": "1138"
+      },
+      "030702": {
+        "nivel": "MA",
+        "poblacion": 1936,
+        "vivienda": 706,
+        "escenario": "1138"
+      },
+      "030703": {
+        "nivel": "A",
+        "poblacion": 2782,
+        "vivienda": 975,
+        "escenario": "1138"
+      },
+      "030704": {
+        "nivel": "A",
+        "poblacion": 1368,
+        "vivienda": 448,
+        "escenario": "1138"
+      },
+      "030705": {
+        "nivel": "A",
+        "poblacion": 858,
+        "vivienda": 333,
+        "escenario": "1138"
+      },
+      "030706": {
+        "nivel": "A",
+        "poblacion": 935,
+        "vivienda": 307,
+        "escenario": "1138"
+      },
+      "030707": {
+        "nivel": "MA",
+        "poblacion": 798,
+        "vivienda": 274,
+        "escenario": "1138"
+      },
+      "030708": {
+        "nivel": "A",
+        "poblacion": 2945,
+        "vivienda": 877,
+        "escenario": "1138"
+      },
+      "030709": {
+        "nivel": "A",
+        "poblacion": 272,
+        "vivienda": 125,
+        "escenario": "1138"
+      },
+      "030710": {
+        "nivel": "A",
+        "poblacion": 560,
+        "vivienda": 234,
+        "escenario": "1138"
+      },
+      "030711": {
+        "nivel": "MA",
+        "poblacion": 628,
+        "vivienda": 261,
+        "escenario": "1138"
+      },
+      "030712": {
+        "nivel": "M",
+        "poblacion": 1233,
+        "vivienda": 409,
+        "escenario": "1138"
+      },
+      "030713": {
+        "nivel": "MA",
+        "poblacion": 675,
+        "vivienda": 243,
+        "escenario": "1138"
+      },
+      "030714": {
+        "nivel": "MA",
+        "poblacion": 1229,
+        "vivienda": 388,
+        "escenario": "1138"
+      },
+      "040119": {
+        "nivel": "MA",
+        "poblacion": 1377,
+        "vivienda": 521,
+        "escenario": "1138"
+      },
+      "040128": {
+        "nivel": "M",
+        "poblacion": 33346,
+        "vivienda": 12484,
+        "escenario": "1138"
+      },
+      "040402": {
+        "nivel": "MA",
+        "poblacion": 1038,
+        "vivienda": 333,
+        "escenario": "1138"
+      },
+      "040403": {
+        "nivel": "A",
+        "poblacion": 242,
+        "vivienda": 112,
+        "escenario": "1138"
+      },
+      "040404": {
+        "nivel": "MA",
+        "poblacion": 1646,
+        "vivienda": 492,
+        "escenario": "1138"
+      },
+      "040405": {
+        "nivel": "A",
+        "poblacion": 947,
+        "vivienda": 269,
+        "escenario": "1138"
+      },
+      "040406": {
+        "nivel": "MA",
+        "poblacion": 702,
+        "vivienda": 297,
+        "escenario": "1138"
+      },
+      "040409": {
+        "nivel": "A",
+        "poblacion": 8177,
+        "vivienda": 1978,
+        "escenario": "1138"
+      },
+      "040501": {
+        "nivel": "A",
+        "poblacion": 5770,
+        "vivienda": 1615,
+        "escenario": "1138"
+      },
+      "040502": {
+        "nivel": "A",
+        "poblacion": 841,
+        "vivienda": 352,
+        "escenario": "1138"
+      },
+      "040503": {
+        "nivel": "A",
+        "poblacion": 2096,
+        "vivienda": 728,
+        "escenario": "1138"
+      },
+      "040504": {
+        "nivel": "A",
+        "poblacion": 1458,
+        "vivienda": 614,
+        "escenario": "1138"
+      },
+      "040505": {
+        "nivel": "MA",
+        "poblacion": 3697,
+        "vivienda": 777,
+        "escenario": "1138"
+      },
+      "040506": {
+        "nivel": "A",
+        "poblacion": 1089,
+        "vivienda": 366,
+        "escenario": "1138"
+      },
+      "040507": {
+        "nivel": "A",
+        "poblacion": 670,
+        "vivienda": 298,
+        "escenario": "1138"
+      },
+      "040509": {
+        "nivel": "A",
+        "poblacion": 555,
+        "vivienda": 223,
+        "escenario": "1138"
+      },
+      "040510": {
+        "nivel": "A",
+        "poblacion": 904,
+        "vivienda": 327,
+        "escenario": "1138"
+      },
+      "040512": {
+        "nivel": "A",
+        "poblacion": 701,
+        "vivienda": 296,
+        "escenario": "1138"
+      },
+      "040513": {
+        "nivel": "MA",
+        "poblacion": 648,
+        "vivienda": 265,
+        "escenario": "1138"
+      },
+      "040514": {
+        "nivel": "MA",
+        "poblacion": 886,
+        "vivienda": 328,
+        "escenario": "1138"
+      },
+      "040515": {
+        "nivel": "MA",
+        "poblacion": 669,
+        "vivienda": 247,
+        "escenario": "1138"
+      },
+      "040516": {
+        "nivel": "MA",
+        "poblacion": 772,
+        "vivienda": 200,
+        "escenario": "1138"
+      },
+      "040517": {
+        "nivel": "MA",
+        "poblacion": 1441,
+        "vivienda": 607,
+        "escenario": "1138"
+      },
+      "040518": {
+        "nivel": "A",
+        "poblacion": 621,
+        "vivienda": 253,
+        "escenario": "1138"
+      },
+      "040519": {
+        "nivel": "A",
+        "poblacion": 2117,
+        "vivienda": 690,
+        "escenario": "1138"
+      },
+      "040603": {
+        "nivel": "MA",
+        "poblacion": 3212,
+        "vivienda": 731,
+        "escenario": "1138"
+      },
+      "040607": {
+        "nivel": "A",
+        "poblacion": 478,
+        "vivienda": 211,
+        "escenario": "1138"
+      },
+      "040801": {
+        "nivel": "A",
+        "poblacion": 2925,
+        "vivienda": 935,
+        "escenario": "1138"
+      },
+      "040802": {
+        "nivel": "MA",
+        "poblacion": 1849,
+        "vivienda": 571,
+        "escenario": "1138"
+      },
+      "040803": {
+        "nivel": "MA",
+        "poblacion": 577,
+        "vivienda": 180,
+        "escenario": "1138"
+      },
+      "040804": {
+        "nivel": "MA",
+        "poblacion": 1913,
+        "vivienda": 615,
+        "escenario": "1138"
+      },
+      "040805": {
+        "nivel": "MA",
+        "poblacion": 1122,
+        "vivienda": 400,
+        "escenario": "1138"
+      },
+      "040806": {
+        "nivel": "MA",
+        "poblacion": 2342,
+        "vivienda": 759,
+        "escenario": "1138"
+      },
+      "040807": {
+        "nivel": "MA",
+        "poblacion": 265,
+        "vivienda": 115,
+        "escenario": "1138"
+      },
+      "040808": {
+        "nivel": "MA",
+        "poblacion": 319,
+        "vivienda": 112,
+        "escenario": "1138"
+      },
+      "040809": {
+        "nivel": "MA",
+        "poblacion": 301,
+        "vivienda": 100,
+        "escenario": "1138"
+      },
+      "040810": {
+        "nivel": "A",
+        "poblacion": 658,
+        "vivienda": 218,
+        "escenario": "1138"
+      },
+      "040811": {
+        "nivel": "MA",
+        "poblacion": 556,
+        "vivienda": 237,
+        "escenario": "1138"
+      },
+      "050101": {
+        "nivel": "A",
+        "poblacion": 99427,
+        "vivienda": 23260,
+        "escenario": "1138"
+      },
+      "050102": {
+        "nivel": "MA",
+        "poblacion": 7403,
+        "vivienda": 2226,
+        "escenario": "1138"
+      },
+      "050103": {
+        "nivel": "MA",
+        "poblacion": 4383,
+        "vivienda": 1324,
+        "escenario": "1138"
+      },
+      "050104": {
+        "nivel": "A",
+        "poblacion": 28252,
+        "vivienda": 6807,
+        "escenario": "1138"
+      },
+      "050105": {
+        "nivel": "MA",
+        "poblacion": 5698,
+        "vivienda": 1898,
+        "escenario": "1138"
+      },
+      "050106": {
+        "nivel": "MA",
+        "poblacion": 5373,
+        "vivienda": 1754,
+        "escenario": "1138"
+      },
+      "050107": {
+        "nivel": "MA",
+        "poblacion": 3114,
+        "vivienda": 825,
+        "escenario": "1138"
+      },
+      "050108": {
+        "nivel": "MA",
+        "poblacion": 5083,
+        "vivienda": 1517,
+        "escenario": "1138"
+      },
+      "050109": {
+        "nivel": "MA",
+        "poblacion": 1403,
+        "vivienda": 526,
+        "escenario": "1138"
+      },
+      "050110": {
+        "nivel": "M",
+        "poblacion": 49034,
+        "vivienda": 11007,
+        "escenario": "1138"
+      },
+      "050111": {
+        "nivel": "MA",
+        "poblacion": 1427,
+        "vivienda": 672,
+        "escenario": "1138"
+      },
+      "050112": {
+        "nivel": "MA",
+        "poblacion": 5952,
+        "vivienda": 1763,
+        "escenario": "1138"
+      },
+      "050113": {
+        "nivel": "MA",
+        "poblacion": 5047,
+        "vivienda": 1357,
+        "escenario": "1138"
+      },
+      "050114": {
+        "nivel": "MA",
+        "poblacion": 13634,
+        "vivienda": 4117,
+        "escenario": "1138"
+      },
+      "050115": {
+        "nivel": "A",
+        "poblacion": 18492,
+        "vivienda": 4428,
+        "escenario": "1138"
+      },
+      "050116": {
+        "nivel": "M",
+        "poblacion": 28472,
+        "vivienda": 6290,
+        "escenario": "1138"
+      },
+      "050201": {
+        "nivel": "A",
+        "poblacion": 5479,
+        "vivienda": 1833,
+        "escenario": "1138"
+      },
+      "050202": {
+        "nivel": "MA",
+        "poblacion": 8321,
+        "vivienda": 2733,
+        "escenario": "1138"
+      },
+      "050203": {
+        "nivel": "MA",
+        "poblacion": 7463,
+        "vivienda": 2509,
+        "escenario": "1138"
+      },
+      "050204": {
+        "nivel": "MA",
+        "poblacion": 2067,
+        "vivienda": 708,
+        "escenario": "1138"
+      },
+      "050205": {
+        "nivel": "MA",
+        "poblacion": 4104,
+        "vivienda": 1294,
+        "escenario": "1138"
+      },
+      "050206": {
+        "nivel": "MA",
+        "poblacion": 3009,
+        "vivienda": 1200,
+        "escenario": "1138"
+      },
+      "050301": {
+        "nivel": "MA",
+        "poblacion": 3202,
+        "vivienda": 1002,
+        "escenario": "1138"
+      },
+      "050302": {
+        "nivel": "MA",
+        "poblacion": 1826,
+        "vivienda": 684,
+        "escenario": "1138"
+      },
+      "050303": {
+        "nivel": "MA",
+        "poblacion": 1313,
+        "vivienda": 500,
+        "escenario": "1138"
+      },
+      "050304": {
+        "nivel": "MA",
+        "poblacion": 2068,
+        "vivienda": 718,
+        "escenario": "1138"
+      },
+      "050401": {
+        "nivel": "A",
+        "poblacion": 39517,
+        "vivienda": 9967,
+        "escenario": "1138"
+      },
+      "050403": {
+        "nivel": "MA",
+        "poblacion": 4162,
+        "vivienda": 1289,
+        "escenario": "1138"
+      },
+      "050404": {
+        "nivel": "MA",
+        "poblacion": 2667,
+        "vivienda": 883,
+        "escenario": "1138"
+      },
+      "050405": {
+        "nivel": "MA",
+        "poblacion": 5490,
+        "vivienda": 1762,
+        "escenario": "1138"
+      },
+      "050601": {
+        "nivel": "MA",
+        "poblacion": 13919,
+        "vivienda": 3852,
+        "escenario": "1138"
+      },
+      "050602": {
+        "nivel": "MA",
+        "poblacion": 2903,
+        "vivienda": 1597,
+        "escenario": "1138"
+      },
+      "050603": {
+        "nivel": "MA",
+        "poblacion": 2189,
+        "vivienda": 727,
+        "escenario": "1138"
+      },
+      "050604": {
+        "nivel": "MA",
+        "poblacion": 1681,
+        "vivienda": 599,
+        "escenario": "1138"
+      },
+      "050605": {
+        "nivel": "MA",
+        "poblacion": 2163,
+        "vivienda": 633,
+        "escenario": "1138"
+      },
+      "050606": {
+        "nivel": "MA",
+        "poblacion": 2554,
+        "vivienda": 982,
+        "escenario": "1138"
+      },
+      "050607": {
+        "nivel": "A",
+        "poblacion": 1560,
+        "vivienda": 580,
+        "escenario": "1138"
+      },
+      "050608": {
+        "nivel": "MA",
+        "poblacion": 1577,
+        "vivienda": 575,
+        "escenario": "1138"
+      },
+      "050609": {
+        "nivel": "M",
+        "poblacion": 1094,
+        "vivienda": 460,
+        "escenario": "1138"
+      },
+      "050610": {
+        "nivel": "A",
+        "poblacion": 893,
+        "vivienda": 323,
+        "escenario": "1138"
+      },
+      "050611": {
+        "nivel": "MA",
+        "poblacion": 2726,
+        "vivienda": 875,
+        "escenario": "1138"
+      },
+      "050612": {
+        "nivel": "A",
+        "poblacion": 2291,
+        "vivienda": 850,
+        "escenario": "1138"
+      },
+      "050613": {
+        "nivel": "A",
+        "poblacion": 1866,
+        "vivienda": 641,
+        "escenario": "1138"
+      },
+      "050614": {
+        "nivel": "M",
+        "poblacion": 791,
+        "vivienda": 186,
+        "escenario": "1138"
+      },
+      "050615": {
+        "nivel": "MA",
+        "poblacion": 1718,
+        "vivienda": 471,
+        "escenario": "1138"
+      },
+      "050616": {
+        "nivel": "MA",
+        "poblacion": 967,
+        "vivienda": 424,
+        "escenario": "1138"
+      },
+      "050617": {
+        "nivel": "MA",
+        "poblacion": 2653,
+        "vivienda": 809,
+        "escenario": "1138"
+      },
+      "050618": {
+        "nivel": "MA",
+        "poblacion": 927,
+        "vivienda": 356,
+        "escenario": "1138"
+      },
+      "050619": {
+        "nivel": "M",
+        "poblacion": 4778,
+        "vivienda": 1591,
+        "escenario": "1138"
+      },
+      "050620": {
+        "nivel": "MA",
+        "poblacion": 796,
+        "vivienda": 385,
+        "escenario": "1138"
+      },
+      "050621": {
+        "nivel": "M",
+        "poblacion": 1282,
+        "vivienda": 409,
+        "escenario": "1138"
+      },
+      "050701": {
+        "nivel": "MA",
+        "poblacion": 13124,
+        "vivienda": 3456,
+        "escenario": "1138"
+      },
+      "050702": {
+        "nivel": "MA",
+        "poblacion": 2186,
+        "vivienda": 724,
+        "escenario": "1138"
+      },
+      "050703": {
+        "nivel": "MA",
+        "poblacion": 1722,
+        "vivienda": 239,
+        "escenario": "1138"
+      },
+      "050704": {
+        "nivel": "A",
+        "poblacion": 630,
+        "vivienda": 249,
+        "escenario": "1138"
+      },
+      "050706": {
+        "nivel": "MA",
+        "poblacion": 2062,
+        "vivienda": 732,
+        "escenario": "1138"
+      },
+      "050707": {
+        "nivel": "MA",
+        "poblacion": 516,
+        "vivienda": 190,
+        "escenario": "1138"
+      },
+      "050708": {
+        "nivel": "MA",
+        "poblacion": 1148,
+        "vivienda": 445,
+        "escenario": "1138"
+      },
+      "050801": {
+        "nivel": "A",
+        "poblacion": 3231,
+        "vivienda": 1010,
+        "escenario": "1138"
+      },
+      "050802": {
+        "nivel": "MA",
+        "poblacion": 468,
+        "vivienda": 154,
+        "escenario": "1138"
+      },
+      "050803": {
+        "nivel": "MA",
+        "poblacion": 445,
+        "vivienda": 169,
+        "escenario": "1138"
+      },
+      "050804": {
+        "nivel": "A",
+        "poblacion": 1953,
+        "vivienda": 671,
+        "escenario": "1138"
+      },
+      "050805": {
+        "nivel": "A",
+        "poblacion": 613,
+        "vivienda": 229,
+        "escenario": "1138"
+      },
+      "050806": {
+        "nivel": "MA",
+        "poblacion": 1453,
+        "vivienda": 303,
+        "escenario": "1138"
+      },
+      "050807": {
+        "nivel": "MA",
+        "poblacion": 419,
+        "vivienda": 160,
+        "escenario": "1138"
+      },
+      "050808": {
+        "nivel": "MA",
+        "poblacion": 292,
+        "vivienda": 127,
+        "escenario": "1138"
+      },
+      "050809": {
+        "nivel": "MA",
+        "poblacion": 221,
+        "vivienda": 83,
+        "escenario": "1138"
+      },
+      "050810": {
+        "nivel": "MA",
+        "poblacion": 514,
+        "vivienda": 202,
+        "escenario": "1138"
+      },
+      "050901": {
+        "nivel": "A",
+        "poblacion": 2570,
+        "vivienda": 807,
+        "escenario": "1138"
+      },
+      "050902": {
+        "nivel": "A",
+        "poblacion": 329,
+        "vivienda": 136,
+        "escenario": "1138"
+      },
+      "050903": {
+        "nivel": "A",
+        "poblacion": 478,
+        "vivienda": 176,
+        "escenario": "1138"
+      },
+      "050904": {
+        "nivel": "MA",
+        "poblacion": 496,
+        "vivienda": 188,
+        "escenario": "1138"
+      },
+      "050905": {
+        "nivel": "MA",
+        "poblacion": 374,
+        "vivienda": 152,
+        "escenario": "1138"
+      },
+      "050906": {
+        "nivel": "MA",
+        "poblacion": 1240,
+        "vivienda": 412,
+        "escenario": "1138"
+      },
+      "050907": {
+        "nivel": "MA",
+        "poblacion": 553,
+        "vivienda": 237,
+        "escenario": "1138"
+      },
+      "050908": {
+        "nivel": "MA",
+        "poblacion": 808,
+        "vivienda": 276,
+        "escenario": "1138"
+      },
+      "050909": {
+        "nivel": "MA",
+        "poblacion": 978,
+        "vivienda": 379,
+        "escenario": "1138"
+      },
+      "050910": {
+        "nivel": "MA",
+        "poblacion": 594,
+        "vivienda": 243,
+        "escenario": "1138"
+      },
+      "050911": {
+        "nivel": "MA",
+        "poblacion": 1025,
+        "vivienda": 343,
+        "escenario": "1138"
+      },
+      "051001": {
+        "nivel": "MA",
+        "poblacion": 1887,
+        "vivienda": 635,
+        "escenario": "1138"
+      },
+      "051002": {
+        "nivel": "MA",
+        "poblacion": 1526,
+        "vivienda": 608,
+        "escenario": "1138"
+      },
+      "051003": {
+        "nivel": "A",
+        "poblacion": 630,
+        "vivienda": 318,
+        "escenario": "1138"
+      },
+      "051004": {
+        "nivel": "A",
+        "poblacion": 460,
+        "vivienda": 229,
+        "escenario": "1138"
+      },
+      "051005": {
+        "nivel": "A",
+        "poblacion": 3977,
+        "vivienda": 1245,
+        "escenario": "1138"
+      },
+      "051006": {
+        "nivel": "MA",
+        "poblacion": 1138,
+        "vivienda": 519,
+        "escenario": "1138"
+      },
+      "051007": {
+        "nivel": "MA",
+        "poblacion": 1011,
+        "vivienda": 377,
+        "escenario": "1138"
+      },
+      "051008": {
+        "nivel": "A",
+        "poblacion": 1089,
+        "vivienda": 365,
+        "escenario": "1138"
+      },
+      "051009": {
+        "nivel": "A",
+        "poblacion": 1294,
+        "vivienda": 478,
+        "escenario": "1138"
+      },
+      "051010": {
+        "nivel": "MA",
+        "poblacion": 2092,
+        "vivienda": 820,
+        "escenario": "1138"
+      },
+      "051011": {
+        "nivel": "MA",
+        "poblacion": 2616,
+        "vivienda": 772,
+        "escenario": "1138"
+      },
+      "051012": {
+        "nivel": "MA",
+        "poblacion": 2389,
+        "vivienda": 846,
+        "escenario": "1138"
+      },
+      "051101": {
+        "nivel": "MA",
+        "poblacion": 6370,
+        "vivienda": 2169,
+        "escenario": "1138"
+      },
+      "051102": {
+        "nivel": "MA",
+        "poblacion": 886,
+        "vivienda": 397,
+        "escenario": "1138"
+      },
+      "051103": {
+        "nivel": "MA",
+        "poblacion": 819,
+        "vivienda": 347,
+        "escenario": "1138"
+      },
+      "051104": {
+        "nivel": "MA",
+        "poblacion": 1577,
+        "vivienda": 573,
+        "escenario": "1138"
+      },
+      "051105": {
+        "nivel": "MA",
+        "poblacion": 1340,
+        "vivienda": 604,
+        "escenario": "1138"
+      },
+      "051106": {
+        "nivel": "MA",
+        "poblacion": 1105,
+        "vivienda": 421,
+        "escenario": "1138"
+      },
+      "051107": {
+        "nivel": "MA",
+        "poblacion": 1038,
+        "vivienda": 386,
+        "escenario": "1138"
+      },
+      "051108": {
+        "nivel": "MA",
+        "poblacion": 3726,
+        "vivienda": 1232,
+        "escenario": "1138"
+      },
+      "060101": {
+        "nivel": "A",
+        "poblacion": 218741,
+        "vivienda": 51111,
+        "escenario": "1138"
+      },
+      "060102": {
+        "nivel": "MA",
+        "poblacion": 7939,
+        "vivienda": 2377,
+        "escenario": "1138"
+      },
+      "060103": {
+        "nivel": "MA",
+        "poblacion": 3660,
+        "vivienda": 1023,
+        "escenario": "1138"
+      },
+      "060105": {
+        "nivel": "MA",
+        "poblacion": 19175,
+        "vivienda": 5947,
+        "escenario": "1138"
+      },
+      "060106": {
+        "nivel": "MA",
+        "poblacion": 15020,
+        "vivienda": 4067,
+        "escenario": "1138"
+      },
+      "060107": {
+        "nivel": "MA",
+        "poblacion": 5639,
+        "vivienda": 1637,
+        "escenario": "1138"
+      },
+      "060108": {
+        "nivel": "A",
+        "poblacion": 46149,
+        "vivienda": 11922,
+        "escenario": "1138"
+      },
+      "060109": {
+        "nivel": "MA",
+        "poblacion": 8271,
+        "vivienda": 2393,
+        "escenario": "1138"
+      },
+      "060111": {
+        "nivel": "A",
+        "poblacion": 9267,
+        "vivienda": 2731,
+        "escenario": "1138"
+      },
+      "060112": {
+        "nivel": "MA",
+        "poblacion": 4343,
+        "vivienda": 1273,
+        "escenario": "1138"
+      },
+      "060304": {
+        "nivel": "MA",
+        "poblacion": 10657,
+        "vivienda": 3269,
+        "escenario": "1138"
+      },
+      "060401": {
+        "nivel": "A",
+        "poblacion": 47279,
+        "vivienda": 13424,
+        "escenario": "1138"
+      },
+      "060404": {
+        "nivel": "MA",
+        "poblacion": 3641,
+        "vivienda": 1158,
+        "escenario": "1138"
+      },
+      "060407": {
+        "nivel": "MA",
+        "poblacion": 5546,
+        "vivienda": 1735,
+        "escenario": "1138"
+      },
+      "060408": {
+        "nivel": "MA",
+        "poblacion": 5643,
+        "vivienda": 1730,
+        "escenario": "1138"
+      },
+      "060409": {
+        "nivel": "MA",
+        "poblacion": 7972,
+        "vivienda": 2468,
+        "escenario": "1138"
+      },
+      "060410": {
+        "nivel": "MA",
+        "poblacion": 11093,
+        "vivienda": 3544,
+        "escenario": "1138"
+      },
+      "060411": {
+        "nivel": "MA",
+        "poblacion": 7075,
+        "vivienda": 2264,
+        "escenario": "1138"
+      },
+      "060412": {
+        "nivel": "MA",
+        "poblacion": 3203,
+        "vivienda": 900,
+        "escenario": "1138"
+      },
+      "060415": {
+        "nivel": "MA",
+        "poblacion": 8023,
+        "vivienda": 2300,
+        "escenario": "1138"
+      },
+      "060416": {
+        "nivel": "MA",
+        "poblacion": 958,
+        "vivienda": 316,
+        "escenario": "1138"
+      },
+      "060417": {
+        "nivel": "MA",
+        "poblacion": 15704,
+        "vivienda": 4612,
+        "escenario": "1138"
+      },
+      "060418": {
+        "nivel": "MA",
+        "poblacion": 859,
+        "vivienda": 312,
+        "escenario": "1138"
+      },
+      "060419": {
+        "nivel": "MA",
+        "poblacion": 9134,
+        "vivienda": 2993,
+        "escenario": "1138"
+      },
+      "060501": {
+        "nivel": "MA",
+        "poblacion": 7461,
+        "vivienda": 2181,
+        "escenario": "1138"
+      },
+      "060502": {
+        "nivel": "MA",
+        "poblacion": 2635,
+        "vivienda": 798,
+        "escenario": "1138"
+      },
+      "060601": {
+        "nivel": "MA",
+        "poblacion": 50905,
+        "vivienda": 15430,
+        "escenario": "1138"
+      },
+      "060602": {
+        "nivel": "MA",
+        "poblacion": 9361,
+        "vivienda": 2725,
+        "escenario": "1138"
+      },
+      "060607": {
+        "nivel": "MA",
+        "poblacion": 12987,
+        "vivienda": 3749,
+        "escenario": "1138"
+      },
+      "060608": {
+        "nivel": "MA",
+        "poblacion": 4172,
+        "vivienda": 1196,
+        "escenario": "1138"
+      },
+      "060611": {
+        "nivel": "MA",
+        "poblacion": 2622,
+        "vivienda": 755,
+        "escenario": "1138"
+      },
+      "060612": {
+        "nivel": "MA",
+        "poblacion": 4701,
+        "vivienda": 1355,
+        "escenario": "1138"
+      },
+      "060614": {
+        "nivel": "MA",
+        "poblacion": 9054,
+        "vivienda": 2618,
+        "escenario": "1138"
+      },
+      "060701": {
+        "nivel": "MA",
+        "poblacion": 59913,
+        "vivienda": 19982,
+        "escenario": "1138"
+      },
+      "060702": {
+        "nivel": "A",
+        "poblacion": 2920,
+        "vivienda": 848,
+        "escenario": "1138"
+      },
+      "060703": {
+        "nivel": "MA",
+        "poblacion": 15111,
+        "vivienda": 4223,
+        "escenario": "1138"
+      },
+      "060803": {
+        "nivel": "A",
+        "poblacion": 9810,
+        "vivienda": 2769,
+        "escenario": "1138"
+      },
+      "060804": {
+        "nivel": "MA",
+        "poblacion": 10238,
+        "vivienda": 3028,
+        "escenario": "1138"
+      },
+      "060807": {
+        "nivel": "MA",
+        "poblacion": 8344,
+        "vivienda": 2424,
+        "escenario": "1138"
+      },
+      "060808": {
+        "nivel": "A",
+        "poblacion": 6834,
+        "vivienda": 1970,
+        "escenario": "1138"
+      },
+      "060809": {
+        "nivel": "MA",
+        "poblacion": 7033,
+        "vivienda": 1805,
+        "escenario": "1138"
+      },
+      "060810": {
+        "nivel": "MA",
+        "poblacion": 4693,
+        "vivienda": 1425,
+        "escenario": "1138"
+      },
+      "060905": {
+        "nivel": "MA",
+        "poblacion": 9098,
+        "vivienda": 2417,
+        "escenario": "1138"
+      },
+      "060907": {
+        "nivel": "MA",
+        "poblacion": 17651,
+        "vivienda": 4877,
+        "escenario": "1138"
+      },
+      "061101": {
+        "nivel": "MA",
+        "poblacion": 13432,
+        "vivienda": 4394,
+        "escenario": "1138"
+      },
+      "061102": {
+        "nivel": "A",
+        "poblacion": 1319,
+        "vivienda": 462,
+        "escenario": "1138"
+      },
+      "061103": {
+        "nivel": "MA",
+        "poblacion": 4094,
+        "vivienda": 1306,
+        "escenario": "1138"
+      },
+      "061104": {
+        "nivel": "MA",
+        "poblacion": 2747,
+        "vivienda": 857,
+        "escenario": "1138"
+      },
+      "061105": {
+        "nivel": "MA",
+        "poblacion": 1627,
+        "vivienda": 543,
+        "escenario": "1138"
+      },
+      "061106": {
+        "nivel": "A",
+        "poblacion": 2165,
+        "vivienda": 766,
+        "escenario": "1138"
+      },
+      "061107": {
+        "nivel": "MA",
+        "poblacion": 4481,
+        "vivienda": 1470,
+        "escenario": "1138"
+      },
+      "061108": {
+        "nivel": "MA",
+        "poblacion": 1290,
+        "vivienda": 461,
+        "escenario": "1138"
+      },
+      "061109": {
+        "nivel": "MA",
+        "poblacion": 3293,
+        "vivienda": 1094,
+        "escenario": "1138"
+      },
+      "061110": {
+        "nivel": "MA",
+        "poblacion": 2229,
+        "vivienda": 760,
+        "escenario": "1138"
+      },
+      "061111": {
+        "nivel": "A",
+        "poblacion": 3652,
+        "vivienda": 1183,
+        "escenario": "1138"
+      },
+      "061112": {
+        "nivel": "MA",
+        "poblacion": 2688,
+        "vivienda": 854,
+        "escenario": "1138"
+      },
+      "061113": {
+        "nivel": "A",
+        "poblacion": 3026,
+        "vivienda": 954,
+        "escenario": "1138"
+      },
+      "061201": {
+        "nivel": "MA",
+        "poblacion": 12463,
+        "vivienda": 3842,
+        "escenario": "1138"
+      },
+      "061202": {
+        "nivel": "MA",
+        "poblacion": 4294,
+        "vivienda": 1306,
+        "escenario": "1138"
+      },
+      "061203": {
+        "nivel": "MA",
+        "poblacion": 958,
+        "vivienda": 327,
+        "escenario": "1138"
+      },
+      "061204": {
+        "nivel": "MA",
+        "poblacion": 3387,
+        "vivienda": 933,
+        "escenario": "1138"
+      },
+      "061301": {
+        "nivel": "A",
+        "poblacion": 9226,
+        "vivienda": 2902,
+        "escenario": "1138"
+      },
+      "061302": {
+        "nivel": "MA",
+        "poblacion": 1337,
+        "vivienda": 438,
+        "escenario": "1138"
+      },
+      "061303": {
+        "nivel": "MA",
+        "poblacion": 8958,
+        "vivienda": 2408,
+        "escenario": "1138"
+      },
+      "061304": {
+        "nivel": "MA",
+        "poblacion": 3355,
+        "vivienda": 1001,
+        "escenario": "1138"
+      },
+      "061305": {
+        "nivel": "MA",
+        "poblacion": 2321,
+        "vivienda": 796,
+        "escenario": "1138"
+      },
+      "061306": {
+        "nivel": "MA",
+        "poblacion": 2097,
+        "vivienda": 656,
+        "escenario": "1138"
+      },
+      "061307": {
+        "nivel": "MA",
+        "poblacion": 3896,
+        "vivienda": 1281,
+        "escenario": "1138"
+      },
+      "061308": {
+        "nivel": "MA",
+        "poblacion": 1446,
+        "vivienda": 494,
+        "escenario": "1138"
+      },
+      "061309": {
+        "nivel": "A",
+        "poblacion": 425,
+        "vivienda": 109,
+        "escenario": "1138"
+      },
+      "061310": {
+        "nivel": "MA",
+        "poblacion": 1259,
+        "vivienda": 372,
+        "escenario": "1138"
+      },
+      "061311": {
+        "nivel": "MA",
+        "poblacion": 2844,
+        "vivienda": 808,
+        "escenario": "1138"
+      },
+      "080201": {
+        "nivel": "A",
+        "poblacion": 4532,
+        "vivienda": 1207,
+        "escenario": "1138"
+      },
+      "080202": {
+        "nivel": "A",
+        "poblacion": 2650,
+        "vivienda": 788,
+        "escenario": "1138"
+      },
+      "080203": {
+        "nivel": "MA",
+        "poblacion": 2242,
+        "vivienda": 700,
+        "escenario": "1138"
+      },
+      "080204": {
+        "nivel": "A",
+        "poblacion": 1096,
+        "vivienda": 431,
+        "escenario": "1138"
+      },
+      "080205": {
+        "nivel": "MA",
+        "poblacion": 7206,
+        "vivienda": 2045,
+        "escenario": "1138"
+      },
+      "080206": {
+        "nivel": "MA",
+        "poblacion": 1938,
+        "vivienda": 755,
+        "escenario": "1138"
+      },
+      "080207": {
+        "nivel": "MA",
+        "poblacion": 3276,
+        "vivienda": 979,
+        "escenario": "1138"
+      },
+      "080501": {
+        "nivel": "A",
+        "poblacion": 8659,
+        "vivienda": 2712,
+        "escenario": "1138"
+      },
+      "080502": {
+        "nivel": "MA",
+        "poblacion": 4985,
+        "vivienda": 1722,
+        "escenario": "1138"
+      },
+      "080503": {
+        "nivel": "MA",
+        "poblacion": 4747,
+        "vivienda": 1539,
+        "escenario": "1138"
+      },
+      "080504": {
+        "nivel": "A",
+        "poblacion": 1984,
+        "vivienda": 668,
+        "escenario": "1138"
+      },
+      "080505": {
+        "nivel": "A",
+        "poblacion": 5171,
+        "vivienda": 1672,
+        "escenario": "1138"
+      },
+      "080506": {
+        "nivel": "M",
+        "poblacion": 1838,
+        "vivienda": 541,
+        "escenario": "1138"
+      },
+      "080507": {
+        "nivel": "A",
+        "poblacion": 2577,
+        "vivienda": 879,
+        "escenario": "1138"
+      },
+      "080508": {
+        "nivel": "MA",
+        "poblacion": 2523,
+        "vivienda": 786,
+        "escenario": "1138"
+      },
+      "080602": {
+        "nivel": "M",
+        "poblacion": 4720,
+        "vivienda": 1474,
+        "escenario": "1138"
+      },
+      "080701": {
+        "nivel": "MA",
+        "poblacion": 21728,
+        "vivienda": 6990,
+        "escenario": "1138"
+      },
+      "080702": {
+        "nivel": "MA",
+        "poblacion": 3866,
+        "vivienda": 1240,
+        "escenario": "1138"
+      },
+      "080703": {
+        "nivel": "MA",
+        "poblacion": 6244,
+        "vivienda": 2024,
+        "escenario": "1138"
+      },
+      "080704": {
+        "nivel": "MA",
+        "poblacion": 6897,
+        "vivienda": 2295,
+        "escenario": "1138"
+      },
+      "080705": {
+        "nivel": "MA",
+        "poblacion": 10378,
+        "vivienda": 3176,
+        "escenario": "1138"
+      },
+      "080706": {
+        "nivel": "MA",
+        "poblacion": 4368,
+        "vivienda": 1342,
+        "escenario": "1138"
+      },
+      "080707": {
+        "nivel": "MA",
+        "poblacion": 3786,
+        "vivienda": 1092,
+        "escenario": "1138"
+      },
+      "080708": {
+        "nivel": "MA",
+        "poblacion": 9143,
+        "vivienda": 2491,
+        "escenario": "1138"
+      },
+      "080801": {
+        "nivel": "A",
+        "poblacion": 34861,
+        "vivienda": 9442,
+        "escenario": "1138"
+      },
+      "080802": {
+        "nivel": "A",
+        "poblacion": 870,
+        "vivienda": 333,
+        "escenario": "1138"
+      },
+      "080803": {
+        "nivel": "MA",
+        "poblacion": 9627,
+        "vivienda": 3610,
+        "escenario": "1138"
+      },
+      "080804": {
+        "nivel": "A",
+        "poblacion": 1019,
+        "vivienda": 478,
+        "escenario": "1138"
+      },
+      "080805": {
+        "nivel": "A",
+        "poblacion": 4823,
+        "vivienda": 1654,
+        "escenario": "1138"
+      },
+      "080806": {
+        "nivel": "A",
+        "poblacion": 2805,
+        "vivienda": 1016,
+        "escenario": "1138"
+      },
+      "080807": {
+        "nivel": "MA",
+        "poblacion": 1643,
+        "vivienda": 647,
+        "escenario": "1138"
+      },
+      "080808": {
+        "nivel": "A",
+        "poblacion": 1934,
+        "vivienda": 729,
+        "escenario": "1138"
+      },
+      "081001": {
+        "nivel": "MA",
+        "poblacion": 3205,
+        "vivienda": 954,
+        "escenario": "1138"
+      },
+      "081002": {
+        "nivel": "MA",
+        "poblacion": 3028,
+        "vivienda": 983,
+        "escenario": "1138"
+      },
+      "081003": {
+        "nivel": "MA",
+        "poblacion": 3079,
+        "vivienda": 996,
+        "escenario": "1138"
+      },
+      "081004": {
+        "nivel": "A",
+        "poblacion": 963,
+        "vivienda": 391,
+        "escenario": "1138"
+      },
+      "081005": {
+        "nivel": "A",
+        "poblacion": 4867,
+        "vivienda": 1447,
+        "escenario": "1138"
+      },
+      "081006": {
+        "nivel": "MA",
+        "poblacion": 5443,
+        "vivienda": 1565,
+        "escenario": "1138"
+      },
+      "081007": {
+        "nivel": "MA",
+        "poblacion": 2032,
+        "vivienda": 648,
+        "escenario": "1138"
+      },
+      "081008": {
+        "nivel": "A",
+        "poblacion": 1026,
+        "vivienda": 429,
+        "escenario": "1138"
+      },
+      "081206": {
+        "nivel": "A",
+        "poblacion": 4221,
+        "vivienda": 1247,
+        "escenario": "1138"
+      },
+      "081207": {
+        "nivel": "A",
+        "poblacion": 4505,
+        "vivienda": 1217,
+        "escenario": "1138"
+      },
+      "081212": {
+        "nivel": "A",
+        "poblacion": 10336,
+        "vivienda": 2813,
+        "escenario": "1138"
+      },
+      "090101": {
+        "nivel": "A",
+        "poblacion": 39776,
+        "vivienda": 11699,
+        "escenario": "1138"
+      },
+      "090103": {
+        "nivel": "MA",
+        "poblacion": 17800,
+        "vivienda": 5362,
+        "escenario": "1138"
+      },
+      "090106": {
+        "nivel": "MA",
+        "poblacion": 1875,
+        "vivienda": 491,
+        "escenario": "1138"
+      },
+      "090114": {
+        "nivel": "MA",
+        "poblacion": 2005,
+        "vivienda": 736,
+        "escenario": "1138"
+      },
+      "090117": {
+        "nivel": "MA",
+        "poblacion": 19237,
+        "vivienda": 4433,
+        "escenario": "1138"
+      },
+      "090118": {
+        "nivel": "A",
+        "poblacion": 15566,
+        "vivienda": 3385,
+        "escenario": "1138"
+      },
+      "090201": {
+        "nivel": "A",
+        "poblacion": 8980,
+        "vivienda": 2608,
+        "escenario": "1138"
+      },
+      "090202": {
+        "nivel": "MA",
+        "poblacion": 3223,
+        "vivienda": 929,
+        "escenario": "1138"
+      },
+      "090203": {
+        "nivel": "MA",
+        "poblacion": 4540,
+        "vivienda": 1318,
+        "escenario": "1138"
+      },
+      "090204": {
+        "nivel": "MA",
+        "poblacion": 1842,
+        "vivienda": 670,
+        "escenario": "1138"
+      },
+      "090205": {
+        "nivel": "MA",
+        "poblacion": 1529,
+        "vivienda": 558,
+        "escenario": "1138"
+      },
+      "090206": {
+        "nivel": "MA",
+        "poblacion": 10415,
+        "vivienda": 2707,
+        "escenario": "1138"
+      },
+      "090207": {
+        "nivel": "MA",
+        "poblacion": 2829,
+        "vivienda": 920,
+        "escenario": "1138"
+      },
+      "090208": {
+        "nivel": "MA",
+        "poblacion": 4850,
+        "vivienda": 1514,
+        "escenario": "1138"
+      },
+      "090301": {
+        "nivel": "MA",
+        "poblacion": 22991,
+        "vivienda": 6174,
+        "escenario": "1138"
+      },
+      "090302": {
+        "nivel": "MA",
+        "poblacion": 7115,
+        "vivienda": 1812,
+        "escenario": "1138"
+      },
+      "090303": {
+        "nivel": "MA",
+        "poblacion": 625,
+        "vivienda": 207,
+        "escenario": "1138"
+      },
+      "090304": {
+        "nivel": "MA",
+        "poblacion": 2956,
+        "vivienda": 755,
+        "escenario": "1138"
+      },
+      "090305": {
+        "nivel": "MA",
+        "poblacion": 943,
+        "vivienda": 348,
+        "escenario": "1138"
+      },
+      "090306": {
+        "nivel": "MA",
+        "poblacion": 3544,
+        "vivienda": 1320,
+        "escenario": "1138"
+      },
+      "090307": {
+        "nivel": "MA",
+        "poblacion": 1337,
+        "vivienda": 396,
+        "escenario": "1138"
+      },
+      "090308": {
+        "nivel": "MA",
+        "poblacion": 1111,
+        "vivienda": 387,
+        "escenario": "1138"
+      },
+      "090309": {
+        "nivel": "A",
+        "poblacion": 1736,
+        "vivienda": 567,
+        "escenario": "1138"
+      },
+      "090310": {
+        "nivel": "MA",
+        "poblacion": 2323,
+        "vivienda": 605,
+        "escenario": "1138"
+      },
+      "090311": {
+        "nivel": "A",
+        "poblacion": 1436,
+        "vivienda": 458,
+        "escenario": "1138"
+      },
+      "090312": {
+        "nivel": "MA",
+        "poblacion": 3090,
+        "vivienda": 944,
+        "escenario": "1138"
+      },
+      "090401": {
+        "nivel": "MA",
+        "poblacion": 2929,
+        "vivienda": 980,
+        "escenario": "1138"
+      },
+      "090402": {
+        "nivel": "MA",
+        "poblacion": 977,
+        "vivienda": 406,
+        "escenario": "1138"
+      },
+      "090403": {
+        "nivel": "MA",
+        "poblacion": 1468,
+        "vivienda": 496,
+        "escenario": "1138"
+      },
+      "090404": {
+        "nivel": "A",
+        "poblacion": 903,
+        "vivienda": 357,
+        "escenario": "1138"
+      },
+      "090405": {
+        "nivel": "MA",
+        "poblacion": 888,
+        "vivienda": 330,
+        "escenario": "1138"
+      },
+      "090406": {
+        "nivel": "MA",
+        "poblacion": 703,
+        "vivienda": 243,
+        "escenario": "1138"
+      },
+      "090407": {
+        "nivel": "MA",
+        "poblacion": 919,
+        "vivienda": 360,
+        "escenario": "1138"
+      },
+      "090409": {
+        "nivel": "MA",
+        "poblacion": 1142,
+        "vivienda": 442,
+        "escenario": "1138"
+      },
+      "090411": {
+        "nivel": "MA",
+        "poblacion": 863,
+        "vivienda": 347,
+        "escenario": "1138"
+      },
+      "090412": {
+        "nivel": "A",
+        "poblacion": 648,
+        "vivienda": 222,
+        "escenario": "1138"
+      },
+      "090413": {
+        "nivel": "A",
+        "poblacion": 1481,
+        "vivienda": 516,
+        "escenario": "1138"
+      },
+      "090501": {
+        "nivel": "A",
+        "poblacion": 5088,
+        "vivienda": 1427,
+        "escenario": "1138"
+      },
+      "090502": {
+        "nivel": "MA",
+        "poblacion": 5368,
+        "vivienda": 1547,
+        "escenario": "1138"
+      },
+      "090504": {
+        "nivel": "MA",
+        "poblacion": 2429,
+        "vivienda": 724,
+        "escenario": "1138"
+      },
+      "090505": {
+        "nivel": "A",
+        "poblacion": 1078,
+        "vivienda": 371,
+        "escenario": "1138"
+      },
+      "090506": {
+        "nivel": "MA",
+        "poblacion": 3372,
+        "vivienda": 1009,
+        "escenario": "1138"
+      },
+      "090508": {
+        "nivel": "A",
+        "poblacion": 745,
+        "vivienda": 234,
+        "escenario": "1138"
+      },
+      "090601": {
+        "nivel": "A",
+        "poblacion": 2146,
+        "vivienda": 794,
+        "escenario": "1138"
+      },
+      "090602": {
+        "nivel": "A",
+        "poblacion": 745,
+        "vivienda": 320,
+        "escenario": "1138"
+      },
+      "090603": {
+        "nivel": "M",
+        "poblacion": 1005,
+        "vivienda": 407,
+        "escenario": "1138"
+      },
+      "090604": {
+        "nivel": "A",
+        "poblacion": 448,
+        "vivienda": 155,
+        "escenario": "1138"
+      },
+      "090605": {
+        "nivel": "A",
+        "poblacion": 845,
+        "vivienda": 307,
+        "escenario": "1138"
+      },
+      "090606": {
+        "nivel": "A",
+        "poblacion": 812,
+        "vivienda": 234,
+        "escenario": "1138"
+      },
+      "090607": {
+        "nivel": "MA",
+        "poblacion": 2758,
+        "vivienda": 936,
+        "escenario": "1138"
+      },
+      "090608": {
+        "nivel": "MA",
+        "poblacion": 1032,
+        "vivienda": 422,
+        "escenario": "1138"
+      },
+      "090609": {
+        "nivel": "MA",
+        "poblacion": 686,
+        "vivienda": 293,
+        "escenario": "1138"
+      },
+      "090610": {
+        "nivel": "MA",
+        "poblacion": 1358,
+        "vivienda": 464,
+        "escenario": "1138"
+      },
+      "090611": {
+        "nivel": "MA",
+        "poblacion": 920,
+        "vivienda": 296,
+        "escenario": "1138"
+      },
+      "090613": {
+        "nivel": "MA",
+        "poblacion": 1671,
+        "vivienda": 683,
+        "escenario": "1138"
+      },
+      "090614": {
+        "nivel": "MA",
+        "poblacion": 376,
+        "vivienda": 169,
+        "escenario": "1138"
+      },
+      "090615": {
+        "nivel": "MA",
+        "poblacion": 724,
+        "vivienda": 317,
+        "escenario": "1138"
+      },
+      "090616": {
+        "nivel": "A",
+        "poblacion": 667,
+        "vivienda": 263,
+        "escenario": "1138"
+      },
+      "110209": {
+        "nivel": "A",
+        "poblacion": 992,
+        "vivienda": 390,
+        "escenario": "1138"
+      },
+      "140102": {
+        "nivel": "M",
+        "poblacion": 18364,
+        "vivienda": 5205,
+        "escenario": "1138"
+      },
+      "140110": {
+        "nivel": "A",
+        "poblacion": 8201,
+        "vivienda": 2589,
+        "escenario": "1138"
+      },
+      "140202": {
+        "nivel": "MA",
+        "poblacion": 11366,
+        "vivienda": 2733,
+        "escenario": "1138"
+      },
+      "140203": {
+        "nivel": "MA",
+        "poblacion": 13858,
+        "vivienda": 3436,
+        "escenario": "1138"
+      },
+      "140205": {
+        "nivel": "M",
+        "poblacion": 19651,
+        "vivienda": 5328,
+        "escenario": "1138"
+      },
+      "140302": {
+        "nivel": "A",
+        "poblacion": 1407,
+        "vivienda": 396,
+        "escenario": "1138"
+      },
+      "140307": {
+        "nivel": "M",
+        "poblacion": 29836,
+        "vivienda": 7416,
+        "escenario": "1138"
+      },
+      "140308": {
+        "nivel": "M",
+        "poblacion": 46484,
+        "vivienda": 11513,
+        "escenario": "1138"
+      },
+      "140310": {
+        "nivel": "MA",
+        "poblacion": 12595,
+        "vivienda": 3509,
+        "escenario": "1138"
+      },
+      "150303": {
+        "nivel": "MA",
+        "poblacion": 1672,
+        "vivienda": 521,
+        "escenario": "1138"
+      },
+      "150304": {
+        "nivel": "MA",
+        "poblacion": 984,
+        "vivienda": 386,
+        "escenario": "1138"
+      },
+      "150305": {
+        "nivel": "A",
+        "poblacion": 963,
+        "vivienda": 360,
+        "escenario": "1138"
+      },
+      "150401": {
+        "nivel": "A",
+        "poblacion": 2385,
+        "vivienda": 682,
+        "escenario": "1138"
+      },
+      "150402": {
+        "nivel": "A",
+        "poblacion": 596,
+        "vivienda": 273,
+        "escenario": "1138"
+      },
+      "150403": {
+        "nivel": "A",
+        "poblacion": 686,
+        "vivienda": 305,
+        "escenario": "1138"
+      },
+      "150404": {
+        "nivel": "A",
+        "poblacion": 760,
+        "vivienda": 299,
+        "escenario": "1138"
+      },
+      "150405": {
+        "nivel": "MA",
+        "poblacion": 856,
+        "vivienda": 448,
+        "escenario": "1138"
+      },
+      "150406": {
+        "nivel": "A",
+        "poblacion": 555,
+        "vivienda": 231,
+        "escenario": "1138"
+      },
+      "150407": {
+        "nivel": "M",
+        "poblacion": 5710,
+        "vivienda": 1592,
+        "escenario": "1138"
+      },
+      "150602": {
+        "nivel": "A",
+        "poblacion": 687,
+        "vivienda": 276,
+        "escenario": "1138"
+      },
+      "150603": {
+        "nivel": "A",
+        "poblacion": 902,
+        "vivienda": 346,
+        "escenario": "1138"
+      },
+      "150606": {
+        "nivel": "MA",
+        "poblacion": 2037,
+        "vivienda": 673,
+        "escenario": "1138"
+      },
+      "150607": {
+        "nivel": "A",
+        "poblacion": 336,
+        "vivienda": 147,
+        "escenario": "1138"
+      },
+      "150608": {
+        "nivel": "A",
+        "poblacion": 1028,
+        "vivienda": 422,
+        "escenario": "1138"
+      },
+      "150609": {
+        "nivel": "A",
+        "poblacion": 648,
+        "vivienda": 176,
+        "escenario": "1138"
+      },
+      "150610": {
+        "nivel": "A",
+        "poblacion": 830,
+        "vivienda": 157,
+        "escenario": "1138"
+      },
+      "150611": {
+        "nivel": "A",
+        "poblacion": 720,
+        "vivienda": 305,
+        "escenario": "1138"
+      },
+      "150612": {
+        "nivel": "A",
+        "poblacion": 411,
+        "vivienda": 183,
+        "escenario": "1138"
+      },
+      "150701": {
+        "nivel": "A",
+        "poblacion": 4058,
+        "vivienda": 1232,
+        "escenario": "1138"
+      },
+      "150702": {
+        "nivel": "A",
+        "poblacion": 1225,
+        "vivienda": 380,
+        "escenario": "1138"
+      },
+      "150703": {
+        "nivel": "M",
+        "poblacion": 798,
+        "vivienda": 246,
+        "escenario": "1138"
+      },
+      "150704": {
+        "nivel": "A",
+        "poblacion": 331,
+        "vivienda": 158,
+        "escenario": "1138"
+      },
+      "150705": {
+        "nivel": "A",
+        "poblacion": 3826,
+        "vivienda": 767,
+        "escenario": "1138"
+      },
+      "150706": {
+        "nivel": "MA",
+        "poblacion": 449,
+        "vivienda": 164,
+        "escenario": "1138"
+      },
+      "150707": {
+        "nivel": "A",
+        "poblacion": 609,
+        "vivienda": 169,
+        "escenario": "1138"
+      },
+      "150708": {
+        "nivel": "A",
+        "poblacion": 875,
+        "vivienda": 284,
+        "escenario": "1138"
+      },
+      "150709": {
+        "nivel": "A",
+        "poblacion": 1302,
+        "vivienda": 448,
+        "escenario": "1138"
+      },
+      "150710": {
+        "nivel": "A",
+        "poblacion": 616,
+        "vivienda": 262,
+        "escenario": "1138"
+      },
+      "150711": {
+        "nivel": "MA",
+        "poblacion": 889,
+        "vivienda": 258,
+        "escenario": "1138"
+      },
+      "150712": {
+        "nivel": "A",
+        "poblacion": 666,
+        "vivienda": 198,
+        "escenario": "1138"
+      },
+      "150713": {
+        "nivel": "A",
+        "poblacion": 1357,
+        "vivienda": 460,
+        "escenario": "1138"
+      },
+      "150714": {
+        "nivel": "M",
+        "poblacion": 6542,
+        "vivienda": 1575,
+        "escenario": "1138"
+      },
+      "150715": {
+        "nivel": "MA",
+        "poblacion": 1320,
+        "vivienda": 442,
+        "escenario": "1138"
+      },
+      "150716": {
+        "nivel": "M",
+        "poblacion": 912,
+        "vivienda": 500,
+        "escenario": "1138"
+      },
+      "150717": {
+        "nivel": "A",
+        "poblacion": 1139,
+        "vivienda": 403,
+        "escenario": "1138"
+      },
+      "150718": {
+        "nivel": "MA",
+        "poblacion": 1202,
+        "vivienda": 424,
+        "escenario": "1138"
+      },
+      "150719": {
+        "nivel": "A",
+        "poblacion": 699,
+        "vivienda": 139,
+        "escenario": "1138"
+      },
+      "150720": {
+        "nivel": "A",
+        "poblacion": 374,
+        "vivienda": 129,
+        "escenario": "1138"
+      },
+      "150721": {
+        "nivel": "A",
+        "poblacion": 1223,
+        "vivienda": 468,
+        "escenario": "1138"
+      },
+      "150722": {
+        "nivel": "A",
+        "poblacion": 4245,
+        "vivienda": 1132,
+        "escenario": "1138"
+      },
+      "150723": {
+        "nivel": "A",
+        "poblacion": 1335,
+        "vivienda": 439,
+        "escenario": "1138"
+      },
+      "150724": {
+        "nivel": "A",
+        "poblacion": 928,
+        "vivienda": 317,
+        "escenario": "1138"
+      },
+      "150725": {
+        "nivel": "A",
+        "poblacion": 210,
+        "vivienda": 93,
+        "escenario": "1138"
+      },
+      "150726": {
+        "nivel": "A",
+        "poblacion": 630,
+        "vivienda": 261,
+        "escenario": "1138"
+      },
+      "150727": {
+        "nivel": "A",
+        "poblacion": 2486,
+        "vivienda": 583,
+        "escenario": "1138"
+      },
+      "150728": {
+        "nivel": "M",
+        "poblacion": 12636,
+        "vivienda": 2824,
+        "escenario": "1138"
+      },
+      "150729": {
+        "nivel": "A",
+        "poblacion": 320,
+        "vivienda": 144,
+        "escenario": "1138"
+      },
+      "150730": {
+        "nivel": "MA",
+        "poblacion": 411,
+        "vivienda": 179,
+        "escenario": "1138"
+      },
+      "150731": {
+        "nivel": "M",
+        "poblacion": 3125,
+        "vivienda": 886,
+        "escenario": "1138"
+      },
+      "150732": {
+        "nivel": "A",
+        "poblacion": 1407,
+        "vivienda": 450,
+        "escenario": "1138"
+      },
+      "150802": {
+        "nivel": "MA",
+        "poblacion": 2208,
+        "vivienda": 736,
+        "escenario": "1138"
+      },
+      "150804": {
+        "nivel": "MA",
+        "poblacion": 929,
+        "vivienda": 434,
+        "escenario": "1138"
+      },
+      "150807": {
+        "nivel": "A",
+        "poblacion": 1867,
+        "vivienda": 624,
+        "escenario": "1138"
+      },
+      "150808": {
+        "nivel": "A",
+        "poblacion": 1516,
+        "vivienda": 597,
+        "escenario": "1138"
+      },
+      "150809": {
+        "nivel": "A",
+        "poblacion": 775,
+        "vivienda": 288,
+        "escenario": "1138"
+      },
+      "150901": {
+        "nivel": "A",
+        "poblacion": 12150,
+        "vivienda": 2950,
+        "escenario": "1138"
+      },
+      "150902": {
+        "nivel": "A",
+        "poblacion": 546,
+        "vivienda": 235,
+        "escenario": "1138"
+      },
+      "150903": {
+        "nivel": "A",
+        "poblacion": 576,
+        "vivienda": 193,
+        "escenario": "1138"
+      },
+      "150904": {
+        "nivel": "A",
+        "poblacion": 1086,
+        "vivienda": 341,
+        "escenario": "1138"
+      },
+      "150905": {
+        "nivel": "A",
+        "poblacion": 855,
+        "vivienda": 310,
+        "escenario": "1138"
+      },
+      "150906": {
+        "nivel": "A",
+        "poblacion": 2526,
+        "vivienda": 579,
+        "escenario": "1138"
+      },
+      "151001": {
+        "nivel": "A",
+        "poblacion": 1481,
+        "vivienda": 464,
+        "escenario": "1138"
+      },
+      "151002": {
+        "nivel": "A",
+        "poblacion": 1534,
+        "vivienda": 97,
+        "escenario": "1138"
+      },
+      "151003": {
+        "nivel": "A",
+        "poblacion": 1145,
+        "vivienda": 392,
+        "escenario": "1138"
+      },
+      "151004": {
+        "nivel": "A",
+        "poblacion": 565,
+        "vivienda": 197,
+        "escenario": "1138"
+      },
+      "151006": {
+        "nivel": "A",
+        "poblacion": 507,
+        "vivienda": 196,
+        "escenario": "1138"
+      },
+      "151007": {
+        "nivel": "MA",
+        "poblacion": 162,
+        "vivienda": 75,
+        "escenario": "1138"
+      },
+      "151008": {
+        "nivel": "A",
+        "poblacion": 1062,
+        "vivienda": 353,
+        "escenario": "1138"
+      },
+      "151010": {
+        "nivel": "A",
+        "poblacion": 216,
+        "vivienda": 85,
+        "escenario": "1138"
+      },
+      "151011": {
+        "nivel": "A",
+        "poblacion": 1109,
+        "vivienda": 454,
+        "escenario": "1138"
+      },
+      "151012": {
+        "nivel": "MA",
+        "poblacion": 331,
+        "vivienda": 123,
+        "escenario": "1138"
+      },
+      "151013": {
+        "nivel": "A",
+        "poblacion": 149,
+        "vivienda": 81,
+        "escenario": "1138"
+      },
+      "151014": {
+        "nivel": "A",
+        "poblacion": 596,
+        "vivienda": 123,
+        "escenario": "1138"
+      },
+      "151016": {
+        "nivel": "MA",
+        "poblacion": 941,
+        "vivienda": 242,
+        "escenario": "1138"
+      },
+      "151017": {
+        "nivel": "A",
+        "poblacion": 432,
+        "vivienda": 183,
+        "escenario": "1138"
+      },
+      "151018": {
+        "nivel": "A",
+        "poblacion": 546,
+        "vivienda": 214,
+        "escenario": "1138"
+      },
+      "151019": {
+        "nivel": "MA",
+        "poblacion": 447,
+        "vivienda": 164,
+        "escenario": "1138"
+      },
+      "151020": {
+        "nivel": "A",
+        "poblacion": 570,
+        "vivienda": 201,
+        "escenario": "1138"
+      },
+      "151021": {
+        "nivel": "A",
+        "poblacion": 229,
+        "vivienda": 89,
+        "escenario": "1138"
+      },
+      "151022": {
+        "nivel": "M",
+        "poblacion": 593,
+        "vivienda": 232,
+        "escenario": "1138"
+      },
+      "151023": {
+        "nivel": "A",
+        "poblacion": 498,
+        "vivienda": 165,
+        "escenario": "1138"
+      },
+      "151024": {
+        "nivel": "A",
+        "poblacion": 609,
+        "vivienda": 276,
+        "escenario": "1138"
+      },
+      "151025": {
+        "nivel": "A",
+        "poblacion": 428,
+        "vivienda": 192,
+        "escenario": "1138"
+      },
+      "151026": {
+        "nivel": "A",
+        "poblacion": 166,
+        "vivienda": 81,
+        "escenario": "1138"
+      },
+      "151027": {
+        "nivel": "A",
+        "poblacion": 275,
+        "vivienda": 114,
+        "escenario": "1138"
+      },
+      "151028": {
+        "nivel": "A",
+        "poblacion": 507,
+        "vivienda": 146,
+        "escenario": "1138"
+      },
+      "151030": {
+        "nivel": "A",
+        "poblacion": 520,
+        "vivienda": 172,
+        "escenario": "1138"
+      },
+      "151031": {
+        "nivel": "MA",
+        "poblacion": 533,
+        "vivienda": 180,
+        "escenario": "1138"
+      },
+      "151032": {
+        "nivel": "MA",
+        "poblacion": 1624,
+        "vivienda": 479,
+        "escenario": "1138"
+      },
+      "151033": {
+        "nivel": "A",
+        "poblacion": 311,
+        "vivienda": 105,
+        "escenario": "1138"
+      },
+      "180102": {
+        "nivel": "A",
+        "poblacion": 2366,
+        "vivienda": 934,
+        "escenario": "1138"
+      },
+      "180105": {
+        "nivel": "MA",
+        "poblacion": 1736,
+        "vivienda": 769,
+        "escenario": "1138"
+      },
+      "180202": {
+        "nivel": "A",
+        "poblacion": 708,
+        "vivienda": 342,
+        "escenario": "1138"
+      },
+      "180204": {
+        "nivel": "A",
+        "poblacion": 2901,
+        "vivienda": 1354,
+        "escenario": "1138"
+      },
+      "180206": {
+        "nivel": "A",
+        "poblacion": 570,
+        "vivienda": 235,
+        "escenario": "1138"
+      },
+      "180207": {
+        "nivel": "A",
+        "poblacion": 455,
+        "vivienda": 229,
+        "escenario": "1138"
+      },
+      "180210": {
+        "nivel": "A",
+        "poblacion": 1741,
+        "vivienda": 722,
+        "escenario": "1138"
+      },
+      "180211": {
+        "nivel": "A",
+        "poblacion": 864,
+        "vivienda": 397,
+        "escenario": "1138"
+      },
+      "200111": {
+        "nivel": "A",
+        "poblacion": 26947,
+        "vivienda": 7353,
+        "escenario": "1138"
+      },
+      "200114": {
+        "nivel": "M",
+        "poblacion": 107495,
+        "vivienda": 27755,
+        "escenario": "1138"
+      },
+      "200201": {
+        "nivel": "MA",
+        "poblacion": 30852,
+        "vivienda": 7996,
+        "escenario": "1138"
+      },
+      "200202": {
+        "nivel": "MA",
+        "poblacion": 19896,
+        "vivienda": 5053,
+        "escenario": "1138"
+      },
+      "200203": {
+        "nivel": "MA",
+        "poblacion": 2405,
+        "vivienda": 665,
+        "escenario": "1138"
+      },
+      "200204": {
+        "nivel": "MA",
+        "poblacion": 5734,
+        "vivienda": 1307,
+        "escenario": "1138"
+      },
+      "200205": {
+        "nivel": "MA",
+        "poblacion": 6179,
+        "vivienda": 1673,
+        "escenario": "1138"
+      },
+      "200206": {
+        "nivel": "MA",
+        "poblacion": 21257,
+        "vivienda": 5189,
+        "escenario": "1138"
+      },
+      "200207": {
+        "nivel": "A",
+        "poblacion": 9621,
+        "vivienda": 2474,
+        "escenario": "1138"
+      },
+      "200208": {
+        "nivel": "MA",
+        "poblacion": 10510,
+        "vivienda": 2551,
+        "escenario": "1138"
+      },
+      "200209": {
+        "nivel": "A",
+        "poblacion": 1654,
+        "vivienda": 480,
+        "escenario": "1138"
+      },
+      "200210": {
+        "nivel": "A",
+        "poblacion": 11179,
+        "vivienda": 3074,
+        "escenario": "1138"
+      },
+      "200301": {
+        "nivel": "MA",
+        "poblacion": 27599,
+        "vivienda": 7804,
+        "escenario": "1138"
+      },
+      "200302": {
+        "nivel": "MA",
+        "poblacion": 7317,
+        "vivienda": 2189,
+        "escenario": "1138"
+      },
+      "200303": {
+        "nivel": "MA",
+        "poblacion": 11186,
+        "vivienda": 3164,
+        "escenario": "1138"
+      },
+      "200304": {
+        "nivel": "MA",
+        "poblacion": 35548,
+        "vivienda": 9665,
+        "escenario": "1138"
+      },
+      "200305": {
+        "nivel": "MA",
+        "poblacion": 3871,
+        "vivienda": 1253,
+        "escenario": "1138"
+      },
+      "200306": {
+        "nivel": "MA",
+        "poblacion": 8678,
+        "vivienda": 2446,
+        "escenario": "1138"
+      },
+      "200307": {
+        "nivel": "MA",
+        "poblacion": 7140,
+        "vivienda": 1948,
+        "escenario": "1138"
+      },
+      "200308": {
+        "nivel": "MA",
+        "poblacion": 10162,
+        "vivienda": 2800,
+        "escenario": "1138"
+      },
+      "200401": {
+        "nivel": "M",
+        "poblacion": 82521,
+        "vivienda": 21683,
+        "escenario": "1138"
+      },
+      "200402": {
+        "nivel": "A",
+        "poblacion": 9410,
+        "vivienda": 2764,
+        "escenario": "1138"
+      },
+      "200403": {
+        "nivel": "MA",
+        "poblacion": 7789,
+        "vivienda": 2274,
+        "escenario": "1138"
+      },
+      "200404": {
+        "nivel": "A",
+        "poblacion": 13997,
+        "vivienda": 3793,
+        "escenario": "1138"
+      },
+      "200405": {
+        "nivel": "A",
+        "poblacion": 15239,
+        "vivienda": 4394,
+        "escenario": "1138"
+      },
+      "200406": {
+        "nivel": "A",
+        "poblacion": 8527,
+        "vivienda": 2552,
+        "escenario": "1138"
+      },
+      "200407": {
+        "nivel": "MA",
+        "poblacion": 6433,
+        "vivienda": 2043,
+        "escenario": "1138"
+      },
+      "200408": {
+        "nivel": "A",
+        "poblacion": 3650,
+        "vivienda": 1075,
+        "escenario": "1138"
+      },
+      "200409": {
+        "nivel": "A",
+        "poblacion": 5960,
+        "vivienda": 1943,
+        "escenario": "1138"
+      },
+      "200410": {
+        "nivel": "MA",
+        "poblacion": 8501,
+        "vivienda": 2423,
+        "escenario": "1138"
+      },
+      "200603": {
+        "nivel": "A",
+        "poblacion": 20423,
+        "vivienda": 5457,
+        "escenario": "1138"
+      },
+      "200604": {
+        "nivel": "A",
+        "poblacion": 12119,
+        "vivienda": 3567,
+        "escenario": "1138"
+      },
+      "200605": {
+        "nivel": "M",
+        "poblacion": 29569,
+        "vivienda": 8110,
+        "escenario": "1138"
+      },
+      "200607": {
+        "nivel": "A",
+        "poblacion": 26395,
+        "vivienda": 7230,
+        "escenario": "1138"
+      },
+      "200701": {
+        "nivel": "A",
+        "poblacion": 98309,
+        "vivienda": 24206,
+        "escenario": "1138"
+      },
+      "200702": {
+        "nivel": "A",
+        "poblacion": 8316,
+        "vivienda": 2318,
+        "escenario": "1138"
+      },
+      "200703": {
+        "nivel": "M",
+        "poblacion": 12486,
+        "vivienda": 3301,
+        "escenario": "1138"
+      },
+      "200704": {
+        "nivel": "A",
+        "poblacion": 1312,
+        "vivienda": 355,
+        "escenario": "1138"
+      },
+      "200705": {
+        "nivel": "M",
+        "poblacion": 10699,
+        "vivienda": 2909,
+        "escenario": "1138"
+      },
+      "200706": {
+        "nivel": "M",
+        "poblacion": 13028,
+        "vivienda": 3498,
+        "escenario": "1138"
+      },
+      "210101": {
+        "nivel": "A",
+        "poblacion": 135288,
+        "vivienda": 36644,
+        "escenario": "1138"
+      },
+      "210102": {
+        "nivel": "A",
+        "poblacion": 22961,
+        "vivienda": 10104,
+        "escenario": "1138"
+      },
+      "210104": {
+        "nivel": "A",
+        "poblacion": 4555,
+        "vivienda": 1641,
+        "escenario": "1138"
+      },
+      "210106": {
+        "nivel": "M",
+        "poblacion": 7019,
+        "vivienda": 2784,
+        "escenario": "1138"
+      },
+      "210109": {
+        "nivel": "A",
+        "poblacion": 5144,
+        "vivienda": 1866,
+        "escenario": "1138"
+      },
+      "210110": {
+        "nivel": "MA",
+        "poblacion": 4224,
+        "vivienda": 1565,
+        "escenario": "1138"
+      },
+      "210111": {
+        "nivel": "MA",
+        "poblacion": 5679,
+        "vivienda": 2485,
+        "escenario": "1138"
+      },
+      "210112": {
+        "nivel": "M",
+        "poblacion": 7121,
+        "vivienda": 3127,
+        "escenario": "1138"
+      },
+      "210113": {
+        "nivel": "MA",
+        "poblacion": 2413,
+        "vivienda": 997,
+        "escenario": "1138"
+      },
+      "210114": {
+        "nivel": "MA",
+        "poblacion": 1594,
+        "vivienda": 725,
+        "escenario": "1138"
+      },
+      "210115": {
+        "nivel": "A",
+        "poblacion": 2761,
+        "vivienda": 1083,
+        "escenario": "1138"
+      },
+      "210201": {
+        "nivel": "A",
+        "poblacion": 30070,
+        "vivienda": 8522,
+        "escenario": "1138"
+      },
+      "210202": {
+        "nivel": "A",
+        "poblacion": 2826,
+        "vivienda": 1126,
+        "escenario": "1138"
+      },
+      "210203": {
+        "nivel": "A",
+        "poblacion": 7020,
+        "vivienda": 2448,
+        "escenario": "1138"
+      },
+      "210204": {
+        "nivel": "A",
+        "poblacion": 14484,
+        "vivienda": 5005,
+        "escenario": "1138"
+      },
+      "210205": {
+        "nivel": "M",
+        "poblacion": 2931,
+        "vivienda": 1120,
+        "escenario": "1138"
+      },
+      "210206": {
+        "nivel": "A",
+        "poblacion": 6475,
+        "vivienda": 2603,
+        "escenario": "1138"
+      },
+      "210207": {
+        "nivel": "A",
+        "poblacion": 4462,
+        "vivienda": 1482,
+        "escenario": "1138"
+      },
+      "210208": {
+        "nivel": "A",
+        "poblacion": 6445,
+        "vivienda": 2006,
+        "escenario": "1138"
+      },
+      "210209": {
+        "nivel": "A",
+        "poblacion": 3939,
+        "vivienda": 1607,
+        "escenario": "1138"
+      },
+      "210210": {
+        "nivel": "A",
+        "poblacion": 9645,
+        "vivienda": 3375,
+        "escenario": "1138"
+      },
+      "210211": {
+        "nivel": "A",
+        "poblacion": 7298,
+        "vivienda": 2354,
+        "escenario": "1138"
+      },
+      "210212": {
+        "nivel": "MA",
+        "poblacion": 4818,
+        "vivienda": 1769,
+        "escenario": "1138"
+      },
+      "210213": {
+        "nivel": "MA",
+        "poblacion": 2841,
+        "vivienda": 1033,
+        "escenario": "1138"
+      },
+      "210214": {
+        "nivel": "A",
+        "poblacion": 4407,
+        "vivienda": 1867,
+        "escenario": "1138"
+      },
+      "210215": {
+        "nivel": "A",
+        "poblacion": 2731,
+        "vivienda": 942,
+        "escenario": "1138"
+      },
+      "210401": {
+        "nivel": "M",
+        "poblacion": 19773,
+        "vivienda": 7975,
+        "escenario": "1138"
+      },
+      "210403": {
+        "nivel": "A",
+        "poblacion": 9237,
+        "vivienda": 3310,
+        "escenario": "1138"
+      },
+      "210404": {
+        "nivel": "A",
+        "poblacion": 7346,
+        "vivienda": 3785,
+        "escenario": "1138"
+      },
+      "210405": {
+        "nivel": "A",
+        "poblacion": 8223,
+        "vivienda": 2767,
+        "escenario": "1138"
+      },
+      "210501": {
+        "nivel": "A",
+        "poblacion": 46018,
+        "vivienda": 17098,
+        "escenario": "1138"
+      },
+      "210502": {
+        "nivel": "A",
+        "poblacion": 1130,
+        "vivienda": 578,
+        "escenario": "1138"
+      },
+      "210504": {
+        "nivel": "A",
+        "poblacion": 3529,
+        "vivienda": 1817,
+        "escenario": "1138"
+      },
+      "210505": {
+        "nivel": "A",
+        "poblacion": 2529,
+        "vivienda": 1210,
+        "escenario": "1138"
+      },
+      "210601": {
+        "nivel": "A",
+        "poblacion": 18742,
+        "vivienda": 7167,
+        "escenario": "1138"
+      },
+      "210602": {
+        "nivel": "A",
+        "poblacion": 3764,
+        "vivienda": 1397,
+        "escenario": "1138"
+      },
+      "210603": {
+        "nivel": "A",
+        "poblacion": 3083,
+        "vivienda": 1213,
+        "escenario": "1138"
+      },
+      "210604": {
+        "nivel": "MA",
+        "poblacion": 2642,
+        "vivienda": 1121,
+        "escenario": "1138"
+      },
+      "210606": {
+        "nivel": "A",
+        "poblacion": 4079,
+        "vivienda": 1690,
+        "escenario": "1138"
+      },
+      "210607": {
+        "nivel": "A",
+        "poblacion": 13193,
+        "vivienda": 4753,
+        "escenario": "1138"
+      },
+      "210608": {
+        "nivel": "A",
+        "poblacion": 7211,
+        "vivienda": 3720,
+        "escenario": "1138"
+      },
+      "210701": {
+        "nivel": "M",
+        "poblacion": 11206,
+        "vivienda": 4201,
+        "escenario": "1138"
+      },
+      "210702": {
+        "nivel": "A",
+        "poblacion": 5352,
+        "vivienda": 2129,
+        "escenario": "1138"
+      },
+      "210704": {
+        "nivel": "A",
+        "poblacion": 2360,
+        "vivienda": 895,
+        "escenario": "1138"
+      },
+      "210705": {
+        "nivel": "MA",
+        "poblacion": 2237,
+        "vivienda": 748,
+        "escenario": "1138"
+      },
+      "210706": {
+        "nivel": "MA",
+        "poblacion": 1817,
+        "vivienda": 749,
+        "escenario": "1138"
+      },
+      "210707": {
+        "nivel": "A",
+        "poblacion": 2732,
+        "vivienda": 1256,
+        "escenario": "1138"
+      },
+      "210708": {
+        "nivel": "A",
+        "poblacion": 5306,
+        "vivienda": 2099,
+        "escenario": "1138"
+      },
+      "210709": {
+        "nivel": "A",
+        "poblacion": 7028,
+        "vivienda": 2179,
+        "escenario": "1138"
+      },
+      "210710": {
+        "nivel": "A",
+        "poblacion": 1233,
+        "vivienda": 516,
+        "escenario": "1138"
+      },
+      "210801": {
+        "nivel": "A",
+        "poblacion": 24452,
+        "vivienda": 6493,
+        "escenario": "1138"
+      },
+      "210802": {
+        "nivel": "A",
+        "poblacion": 5359,
+        "vivienda": 1330,
+        "escenario": "1138"
+      },
+      "210803": {
+        "nivel": "A",
+        "poblacion": 1986,
+        "vivienda": 717,
+        "escenario": "1138"
+      },
+      "210804": {
+        "nivel": "MA",
+        "poblacion": 2532,
+        "vivienda": 888,
+        "escenario": "1138"
+      },
+      "210805": {
+        "nivel": "MA",
+        "poblacion": 6947,
+        "vivienda": 2329,
+        "escenario": "1138"
+      },
+      "210806": {
+        "nivel": "A",
+        "poblacion": 8450,
+        "vivienda": 2694,
+        "escenario": "1138"
+      },
+      "210807": {
+        "nivel": "A",
+        "poblacion": 7651,
+        "vivienda": 2843,
+        "escenario": "1138"
+      },
+      "210808": {
+        "nivel": "MA",
+        "poblacion": 6197,
+        "vivienda": 2339,
+        "escenario": "1138"
+      },
+      "210809": {
+        "nivel": "A",
+        "poblacion": 3564,
+        "vivienda": 1225,
+        "escenario": "1138"
+      },
+      "210901": {
+        "nivel": "A",
+        "poblacion": 11518,
+        "vivienda": 5311,
+        "escenario": "1138"
+      },
+      "210903": {
+        "nivel": "MA",
+        "poblacion": 2613,
+        "vivienda": 1015,
+        "escenario": "1138"
+      },
+      "211001": {
+        "nivel": "MA",
+        "poblacion": 14753,
+        "vivienda": 3972,
+        "escenario": "1138"
+      },
+      "211002": {
+        "nivel": "A",
+        "poblacion": 12615,
+        "vivienda": 4970,
+        "escenario": "1138"
+      },
+      "211003": {
+        "nivel": "A",
+        "poblacion": 1909,
+        "vivienda": 839,
+        "escenario": "1138"
+      },
+      "211004": {
+        "nivel": "MA",
+        "poblacion": 5187,
+        "vivienda": 1894,
+        "escenario": "1138"
+      },
+      "211101": {
+        "nivel": "M",
+        "poblacion": 228726,
+        "vivienda": 56995,
+        "escenario": "1138"
+      },
+      "211102": {
+        "nivel": "A",
+        "poblacion": 4843,
+        "vivienda": 1910,
+        "escenario": "1138"
+      },
+      "211103": {
+        "nivel": "A",
+        "poblacion": 4567,
+        "vivienda": 1653,
+        "escenario": "1138"
+      },
+      "211104": {
+        "nivel": "M",
+        "poblacion": 6818,
+        "vivienda": 2476,
+        "escenario": "1138"
+      },
+      "211202": {
+        "nivel": "MA",
+        "poblacion": 5024,
+        "vivienda": 1793,
+        "escenario": "1138"
+      },
+      "230107": {
+        "nivel": "A",
+        "poblacion": 1980,
+        "vivienda": 425,
+        "escenario": "1138"
+      },
+      "230201": {
+        "nivel": "A",
+        "poblacion": 2354,
+        "vivienda": 914,
+        "escenario": "1138"
+      },
+      "230401": {
+        "nivel": "A",
+        "poblacion": 3642,
+        "vivienda": 1057,
+        "escenario": "1138"
+      },
+      "230406": {
+        "nivel": "MA",
+        "poblacion": 518,
+        "vivienda": 256,
+        "escenario": "1138"
+      },
+      "230408": {
+        "nivel": "A",
+        "poblacion": 581,
+        "vivienda": 283,
+        "escenario": "1138"
+      },
+      "240101": {
+        "nivel": "A",
+        "poblacion": 102306,
+        "vivienda": 26748,
+        "escenario": "1138"
+      },
+      "240102": {
+        "nivel": "A",
+        "poblacion": 23337,
+        "vivienda": 6409,
+        "escenario": "1138"
+      },
+      "240103": {
+        "nivel": "A",
+        "poblacion": 9507,
+        "vivienda": 2628,
+        "escenario": "1138"
+      },
+      "240104": {
+        "nivel": "A",
+        "poblacion": 6728,
+        "vivienda": 1942,
+        "escenario": "1138"
+      },
+      "240105": {
+        "nivel": "A",
+        "poblacion": 8512,
+        "vivienda": 2503,
+        "escenario": "1138"
+      },
+      "240106": {
+        "nivel": "A",
+        "poblacion": 4572,
+        "vivienda": 1361,
+        "escenario": "1138"
+      },
+      "240201": {
+        "nivel": "A",
+        "poblacion": 12371,
+        "vivienda": 3300,
+        "escenario": "1138"
+      },
+      "240202": {
+        "nivel": "A",
+        "poblacion": 2350,
+        "vivienda": 739,
+        "escenario": "1138"
+      },
+      "240203": {
+        "nivel": "A",
+        "poblacion": 6336,
+        "vivienda": 1584,
+        "escenario": "1138"
+      },
+      "240301": {
+        "nivel": "A",
+        "poblacion": 21776,
+        "vivienda": 6065,
+        "escenario": "1138"
+      },
+      "240302": {
+        "nivel": "A",
+        "poblacion": 17366,
+        "vivienda": 4947,
+        "escenario": "1138"
+      },
+      "240303": {
+        "nivel": "M",
+        "poblacion": 3428,
+        "vivienda": 905,
+        "escenario": "1138"
+      },
+      "240304": {
+        "nivel": "A",
+        "poblacion": 6274,
+        "vivienda": 1771,
+        "escenario": "1138"
       }
     },
     "url": "https://sigrid.cenepred.gob.pe/sigridv3/escenario-aviso",
-    "leido": "2026-11-09T04:25:19Z"
+    "leido": "2026-11-09T05:24:15Z"
   },
   "quebradas": {
     "fecha": "2026-11-08",
@@ -4260,7 +6810,7 @@
     },
     "sin_cruce": 12,
     "url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico",
-    "leido": "2026-11-09T04:25:26Z"
+    "leido": "2026-11-09T05:24:22Z"
   },
   "hidro": {
     "avisos": [
@@ -4290,7 +6840,7 @@
       }
     ],
     "url": "https://www.senamhi.gob.pe/?p=aviso-hidrologico",
-    "leido": "2026-11-09T04:25:27Z"
+    "leido": "2026-11-09T05:24:23Z"
   },
   "ana_rios": {
     "estaciones": [
@@ -4303,76 +6853,76 @@
         "alerta": 86.92,
         "emergencia": 85.81,
         "tendencia": "Ascendente",
-        "hora": "22:00",
+        "hora": "23:00",
         "estado": "alerta",
         "estiaje": true,
         "lat": -3.48276,
         "lon": -73.073484,
-        "reporte": "655-2026"
+        "reporte": "656-2026"
       },
       {
         "rio": "Tumbes",
         "estacion": "El Tigre",
         "lugar": "San Jacinto, Tumbes",
-        "valor": 218.75,
+        "valor": 213.25,
         "unidad": "m³/s",
         "alerta": 700.0,
         "emergencia": 1000.0,
         "tendencia": "Ascendente",
-        "hora": "22:00",
+        "hora": "23:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -3.7688,
         "lon": -80.4568,
-        "reporte": "655-2026"
+        "reporte": "656-2026"
       },
       {
         "rio": "Tumbes",
         "estacion": "Cabo Inga",
         "lugar": "San Jacinto, Tumbes",
-        "valor": 292.26,
+        "valor": 249.86,
         "unidad": "m³/s",
         "alerta": 700.0,
         "emergencia": 1000.0,
         "tendencia": "Ascendente",
-        "hora": "10:00",
+        "hora": "14:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -3.9787,
         "lon": -80.3991,
-        "reporte": "655-2026"
+        "reporte": "656-2026"
       },
       {
         "rio": "Alamor",
         "estacion": "Alamor",
         "lugar": "Lancones, Piura",
-        "valor": 25.18,
+        "valor": 24.38,
         "unidad": "m³/s",
         "alerta": 310.0,
         "emergencia": 423.0,
         "tendencia": "Descendente",
-        "hora": "22:00",
+        "hora": "23:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -4.47749,
         "lon": -80.39788,
-        "reporte": "655-2026"
+        "reporte": "656-2026"
       },
       {
         "rio": "Chira",
         "estacion": "La Ardilla",
         "lugar": "Lancones, Piura",
-        "valor": 101.77,
+        "valor": 100.49,
         "unidad": "m³/s",
         "alerta": 1083.0,
         "emergencia": 1798.0,
         "tendencia": "Descendente",
-        "hora": "22:00",
+        "hora": "23:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -4.4899,
         "lon": -80.3906,
-        "reporte": "655-2026"
+        "reporte": "656-2026"
       },
       {
         "rio": "Chipillico",
@@ -4383,12 +6933,12 @@
         "alerta": 280.0,
         "emergencia": 430.0,
         "tendencia": "Descendente",
-        "hora": "22:00",
+        "hora": "23:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -4.7285,
         "lon": -80.06956,
-        "reporte": "655-2026"
+        "reporte": "656-2026"
       },
       {
         "rio": "Macará",
@@ -4399,12 +6949,12 @@
         "alerta": 500.0,
         "emergencia": 580.0,
         "tendencia": "Descendente",
-        "hora": "22:00",
+        "hora": "23:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -4.3927,
         "lon": -79.9644,
-        "reporte": "655-2026"
+        "reporte": "656-2026"
       },
       {
         "rio": "Chira",
@@ -4420,7 +6970,7 @@
         "estiaje": false,
         "lat": -4.299054,
         "lon": -80.16699,
-        "reporte": "655-2026"
+        "reporte": "656-2026"
       },
       {
         "rio": "Bigote.",
@@ -4431,12 +6981,12 @@
         "alerta": 300.0,
         "emergencia": 350.0,
         "tendencia": "Descendente",
-        "hora": "21:00",
+        "hora": "23:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -5.2899,
         "lon": -79.6992,
-        "reporte": "655-2026"
+        "reporte": "656-2026"
       },
       {
         "rio": "Charanal",
@@ -4447,12 +6997,12 @@
         "alerta": 150.0,
         "emergencia": 200.0,
         "tendencia": "Descendente",
-        "hora": "22:00",
+        "hora": "23:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -5.07954,
         "lon": -80.0162,
-        "reporte": "655-2026"
+        "reporte": "656-2026"
       },
       {
         "rio": "Piura",
@@ -4463,12 +7013,12 @@
         "alerta": 830.0,
         "emergencia": 1100.0,
         "tendencia": "Ascendente",
-        "hora": "22:00",
+        "hora": "23:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -5.112894,
         "lon": -80.17297,
-        "reporte": "655-2026"
+        "reporte": "656-2026"
       },
       {
         "rio": "La Leche",
@@ -4484,23 +7034,23 @@
         "estiaje": false,
         "lat": -6.37353,
         "lon": -79.46673,
-        "reporte": "655-2026"
+        "reporte": "656-2026"
       },
       {
         "rio": "Cañad",
         "estacion": "Cañad",
         "lugar": "Catache, Cajamarca",
-        "valor": 8.36,
+        "valor": 8.16,
         "unidad": "m³/s",
         "alerta": 78.58,
         "emergencia": 122.99,
         "tendencia": "Ascendente",
-        "hora": "22:00",
+        "hora": "23:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -6.649,
         "lon": -78.9973,
-        "reporte": "655-2026"
+        "reporte": "656-2026"
       },
       {
         "rio": "Chancay Lambayeque",
@@ -4516,23 +7066,23 @@
         "estiaje": false,
         "lat": -6.625398,
         "lon": -79.305331,
-        "reporte": "655-2026"
+        "reporte": "656-2026"
       },
       {
         "rio": "Chancay Lambayeque",
         "estacion": "Cirato",
         "lugar": "Catache, Cajamarca",
-        "valor": 46.14,
+        "valor": 45.66,
         "unidad": "m³/s",
         "alerta": 250.0,
         "emergencia": 285.0,
-        "tendencia": "Ascendente",
-        "hora": "22:00",
+        "tendencia": "Descendente",
+        "hora": "23:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -6.65583,
         "lon": -79.07384,
-        "reporte": "655-2026"
+        "reporte": "656-2026"
       },
       {
         "rio": "Zaña",
@@ -4548,7 +7098,7 @@
         "estiaje": false,
         "lat": -6.803592,
         "lon": -79.289322,
-        "reporte": "655-2026"
+        "reporte": "656-2026"
       },
       {
         "rio": "Jequetepeque",
@@ -4564,7 +7114,7 @@
         "estiaje": false,
         "lat": -7.25592,
         "lon": -79.09909,
-        "reporte": "655-2026"
+        "reporte": "656-2026"
       },
       {
         "rio": "Chicama",
@@ -4575,12 +7125,12 @@
         "alerta": 180.0,
         "emergencia": 250.0,
         "tendencia": "Descendente",
-        "hora": "22:00",
+        "hora": "23:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -7.5742,
         "lon": -78.7069,
-        "reporte": "655-2026"
+        "reporte": "656-2026"
       },
       {
         "rio": "Ochape",
@@ -4591,12 +7141,12 @@
         "alerta": 30.0,
         "emergencia": 40.0,
         "tendencia": "Descendente",
-        "hora": "20:00",
+        "hora": "23:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -7.5492,
         "lon": -78.8105,
-        "reporte": "655-2026"
+        "reporte": "656-2026"
       },
       {
         "rio": "Chicama",
@@ -4612,23 +7162,23 @@
         "estiaje": false,
         "lat": -7.66069,
         "lon": -78.96109,
-        "reporte": "655-2026"
+        "reporte": "656-2026"
       },
       {
         "rio": "Santa",
         "estacion": "Condorcerro",
         "lugar": "Chao, La Libertad",
-        "valor": 93.6,
+        "valor": 92.35,
         "unidad": "m³/s",
         "alerta": 505.0,
         "emergencia": 635.0,
         "tendencia": "Ascendente",
-        "hora": "22:00",
+        "hora": "23:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -8.6579,
         "lon": -78.2617,
-        "reporte": "655-2026"
+        "reporte": "656-2026"
       },
       {
         "rio": "Santa",
@@ -4644,7 +7194,7 @@
         "estiaje": false,
         "lat": -9.60776,
         "lon": -77.50963,
-        "reporte": "655-2026"
+        "reporte": "656-2026"
       },
       {
         "rio": "Checras",
@@ -4660,23 +7210,23 @@
         "estiaje": false,
         "lat": -10.9216,
         "lon": -76.7367,
-        "reporte": "655-2026"
+        "reporte": "656-2026"
       },
       {
         "rio": "Huaura",
         "estacion": "Sayán",
         "lugar": "Sayán, Lima",
-        "valor": 6.4,
+        "valor": 6.72,
         "unidad": "m³/s",
         "alerta": 64.0,
         "emergencia": 75.0,
         "tendencia": "Ascendente",
-        "hora": "22:00",
+        "hora": "23:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -11.1347,
         "lon": -77.1982,
-        "reporte": "655-2026"
+        "reporte": "656-2026"
       },
       {
         "rio": "Chancay Huaral",
@@ -4692,7 +7242,7 @@
         "estiaje": false,
         "lat": -11.3836,
         "lon": -77.0503,
-        "reporte": "655-2026"
+        "reporte": "656-2026"
       },
       {
         "rio": "Chancay Huaral",
@@ -4708,7 +7258,7 @@
         "estiaje": false,
         "lat": -11.2989,
         "lon": -76.8518,
-        "reporte": "655-2026"
+        "reporte": "656-2026"
       },
       {
         "rio": "Chillón",
@@ -4719,12 +7269,12 @@
         "alerta": 10.0,
         "emergencia": 14.3,
         "tendencia": "Descendente",
-        "hora": "22:00",
+        "hora": "23:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -11.39315,
         "lon": -76.50244,
-        "reporte": "655-2026"
+        "reporte": "656-2026"
       },
       {
         "rio": "Rímac",
@@ -4740,7 +7290,7 @@
         "estiaje": false,
         "lat": -12.01283,
         "lon": -76.89542,
-        "reporte": "655-2026"
+        "reporte": "656-2026"
       },
       {
         "rio": "Chillón",
@@ -4751,12 +7301,12 @@
         "alerta": 20.72,
         "emergencia": 27.45,
         "tendencia": "Descendente",
-        "hora": "22:00",
+        "hora": "23:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -11.45293,
         "lon": -76.62217,
-        "reporte": "655-2026"
+        "reporte": "656-2026"
       },
       {
         "rio": "Rímac",
@@ -4772,7 +7322,7 @@
         "estiaje": false,
         "lat": -11.92986,
         "lon": -76.68964,
-        "reporte": "655-2026"
+        "reporte": "656-2026"
       },
       {
         "rio": "Rímac",
@@ -4788,7 +7338,7 @@
         "estiaje": false,
         "lat": -11.7601,
         "lon": -76.3011,
-        "reporte": "655-2026"
+        "reporte": "656-2026"
       },
       {
         "rio": "Lurín",
@@ -4799,12 +7349,12 @@
         "alerta": 55.0,
         "emergencia": 70.0,
         "tendencia": "Ascendente",
-        "hora": "21:00",
+        "hora": "23:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -12.0333,
         "lon": -76.6333,
-        "reporte": "655-2026"
+        "reporte": "656-2026"
       },
       {
         "rio": "Mala",
@@ -4820,7 +7370,7 @@
         "estiaje": false,
         "lat": -12.52183,
         "lon": -76.49658,
-        "reporte": "655-2026"
+        "reporte": "656-2026"
       },
       {
         "rio": "Cañete",
@@ -4831,12 +7381,12 @@
         "alerta": 175.0,
         "emergencia": 250.0,
         "tendencia": "Descendente",
-        "hora": "22:00",
+        "hora": "23:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -13.0283,
         "lon": -76.19453,
-        "reporte": "655-2026"
+        "reporte": "656-2026"
       },
       {
         "rio": "Pisco",
@@ -4847,28 +7397,28 @@
         "alerta": 140.0,
         "emergencia": 250.0,
         "tendencia": "Descendente",
-        "hora": "22:00",
+        "hora": "23:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -13.6401,
         "lon": -75.7196,
-        "reporte": "655-2026"
+        "reporte": "656-2026"
       },
       {
         "rio": "Río Santiago",
         "estacion": "Challaca",
         "lugar": "Santiago De Chocorvos, Huancavelica",
-        "valor": 13.21,
+        "valor": 13.04,
         "unidad": "m³/s",
         "alerta": 150.0,
         "emergencia": 280.0,
         "tendencia": "Descendente",
-        "hora": "22:00",
+        "hora": "23:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -13.7905,
         "lon": -75.3821,
-        "reporte": "655-2026"
+        "reporte": "656-2026"
       },
       {
         "rio": "Ica",
@@ -4884,7 +7434,7 @@
         "estiaje": false,
         "lat": -13.9248,
         "lon": -75.6787,
-        "reporte": "655-2026"
+        "reporte": "656-2026"
       },
       {
         "rio": "Palpa",
@@ -4900,7 +7450,23 @@
         "estiaje": false,
         "lat": -14.239975,
         "lon": -74.92134,
-        "reporte": "655-2026"
+        "reporte": "656-2026"
+      },
+      {
+        "rio": "El Ingenio",
+        "estacion": "Huallpoca",
+        "lugar": "El Ingenio, Ica",
+        "valor": 0.59,
+        "unidad": "m³/s",
+        "alerta": 50.0,
+        "emergencia": 70.0,
+        "tendencia": "Descendente",
+        "hora": "18:00",
+        "estado": "normal",
+        "estiaje": false,
+        "lat": -14.6287,
+        "lon": -74.955,
+        "reporte": "656-2026"
       },
       {
         "rio": "Cotahuasi",
@@ -4916,7 +7482,7 @@
         "estiaje": false,
         "lat": -15.218517,
         "lon": -72.93611,
-        "reporte": "655-2026"
+        "reporte": "656-2026"
       },
       {
         "rio": "Majes",
@@ -4932,7 +7498,7 @@
         "estiaje": false,
         "lat": -16.008324,
         "lon": -72.48351,
-        "reporte": "655-2026"
+        "reporte": "656-2026"
       },
       {
         "rio": "Camaná",
@@ -4948,7 +7514,7 @@
         "estiaje": false,
         "lat": -16.541933,
         "lon": -72.69957,
-        "reporte": "655-2026"
+        "reporte": "656-2026"
       },
       {
         "rio": "Llapa",
@@ -4959,12 +7525,12 @@
         "alerta": null,
         "emergencia": null,
         "tendencia": "Descendente",
-        "hora": "22:00",
+        "hora": "23:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -15.494169,
         "lon": -71.46369,
-        "reporte": "655-2026"
+        "reporte": "656-2026"
       },
       {
         "rio": "Chili",
@@ -4980,7 +7546,7 @@
         "estiaje": false,
         "lat": -16.42679,
         "lon": -71.67503,
-        "reporte": "655-2026"
+        "reporte": "656-2026"
       },
       {
         "rio": "Socabaya",
@@ -4996,7 +7562,7 @@
         "estiaje": false,
         "lat": -16.45992,
         "lon": -71.57431,
-        "reporte": "655-2026"
+        "reporte": "656-2026"
       },
       {
         "rio": "Sumbay",
@@ -5012,7 +7578,7 @@
         "estiaje": false,
         "lat": -15.84122,
         "lon": -71.11446,
-        "reporte": "655-2026"
+        "reporte": "656-2026"
       },
       {
         "rio": "Vítor",
@@ -5023,12 +7589,12 @@
         "alerta": 3.25,
         "emergencia": 3.6,
         "tendencia": "Descendente",
-        "hora": "21:00",
+        "hora": "23:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -16.590141,
         "lon": -72.00923,
-        "reporte": "655-2026"
+        "reporte": "656-2026"
       },
       {
         "rio": "Tambo",
@@ -5044,23 +7610,23 @@
         "estiaje": false,
         "lat": -16.990456,
         "lon": -71.63873,
-        "reporte": "655-2026"
+        "reporte": "656-2026"
       },
       {
         "rio": "Locumba",
         "estacion": "Puente Viejo",
         "lugar": "Locumba, Tacna",
-        "valor": 3.0,
+        "valor": 2.99,
         "unidad": "m³/s",
         "alerta": 36.0,
         "emergencia": 48.0,
         "tendencia": "Descendente",
-        "hora": "22:00",
+        "hora": "23:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -17.61756,
         "lon": -70.76097,
-        "reporte": "655-2026"
+        "reporte": "656-2026"
       },
       {
         "rio": "Locumba",
@@ -5076,7 +7642,7 @@
         "estiaje": false,
         "lat": -17.47659,
         "lon": -70.54263,
-        "reporte": "655-2026"
+        "reporte": "656-2026"
       },
       {
         "rio": "Callazas",
@@ -5092,7 +7658,7 @@
         "estiaje": false,
         "lat": -17.1141,
         "lon": -70.2883,
-        "reporte": "655-2026"
+        "reporte": "656-2026"
       },
       {
         "rio": "Sama",
@@ -5103,12 +7669,12 @@
         "alerta": 20.0,
         "emergencia": 40.0,
         "tendencia": "Ascendente",
-        "hora": "22:00",
+        "hora": "23:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -17.4749,
         "lon": -70.1721,
-        "reporte": "655-2026"
+        "reporte": "656-2026"
       },
       {
         "rio": "Sama",
@@ -5124,39 +7690,39 @@
         "estiaje": false,
         "lat": -17.63312,
         "lon": -70.45456,
-        "reporte": "655-2026"
+        "reporte": "656-2026"
       },
       {
         "rio": "Caplina",
         "estacion": "Caplina",
         "lugar": "Pachia, Tacna",
-        "valor": 0.58,
+        "valor": 0.59,
         "unidad": "m³/s",
         "alerta": 6.0,
         "emergencia": 10.0,
         "tendencia": "Ascendente",
-        "hora": "22:00",
+        "hora": "23:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -17.6907,
         "lon": -69.9166,
-        "reporte": "655-2026"
+        "reporte": "656-2026"
       },
       {
         "rio": "Caplina",
         "estacion": "Challata",
         "lugar": "Pachia, Tacna",
-        "valor": 0.64,
+        "valor": 0.67,
         "unidad": "m³/s",
         "alerta": 15.0,
         "emergencia": 30.0,
         "tendencia": "Descendente",
-        "hora": "22:00",
+        "hora": "23:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -17.8151,
         "lon": -70.0989,
-        "reporte": "655-2026"
+        "reporte": "656-2026"
       },
       {
         "rio": "Uchusuma",
@@ -5167,12 +7733,12 @@
         "alerta": 2.5,
         "emergencia": 3.0,
         "tendencia": "Ascendente",
-        "hora": "22:00",
+        "hora": "23:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -17.9684,
         "lon": -70.1522,
-        "reporte": "655-2026"
+        "reporte": "656-2026"
       },
       {
         "rio": "Canopampa",
@@ -5183,44 +7749,44 @@
         "alerta": 3.0,
         "emergencia": 5.0,
         "tendencia": "Descendente",
-        "hora": "22:00",
+        "hora": "23:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -17.23804,
         "lon": -70.00854,
-        "reporte": "655-2026"
+        "reporte": "656-2026"
       },
       {
         "rio": "Huancabamba",
         "estacion": "Sauzal",
         "lugar": "San Felipe, Cajamarca",
-        "valor": 2.69,
+        "valor": 2.68,
         "unidad": "m",
         "alerta": 3.7,
         "emergencia": 4.0,
         "tendencia": "Ascendente",
-        "hora": "22:00",
+        "hora": "23:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -5.77168,
         "lon": -79.39769,
-        "reporte": "655-2026"
+        "reporte": "656-2026"
       },
       {
         "rio": "Marañón",
         "estacion": "Corral Quemado",
         "lugar": "Bellavista, Cajamarca",
-        "valor": 8.65,
+        "valor": 8.64,
         "unidad": "m",
         "alerta": 12.0,
         "emergencia": 12.8,
         "tendencia": "Descendente",
-        "hora": "22:00",
+        "hora": "23:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -5.7511,
         "lon": -78.6906,
-        "reporte": "655-2026"
+        "reporte": "656-2026"
       },
       {
         "rio": "Chunchuca",
@@ -5236,7 +7802,7 @@
         "estiaje": false,
         "lat": -5.8837,
         "lon": -78.9625,
-        "reporte": "655-2026"
+        "reporte": "656-2026"
       },
       {
         "rio": "Chinchipe",
@@ -5252,7 +7818,7 @@
         "estiaje": false,
         "lat": -5.45077,
         "lon": -78.69579,
-        "reporte": "655-2026"
+        "reporte": "656-2026"
       },
       {
         "rio": "Chotano",
@@ -5268,7 +7834,7 @@
         "estiaje": false,
         "lat": -6.55972,
         "lon": -78.74111,
-        "reporte": "655-2026"
+        "reporte": "656-2026"
       },
       {
         "rio": "Llaucano",
@@ -5284,7 +7850,7 @@
         "estiaje": false,
         "lat": -6.6866,
         "lon": -78.5182,
-        "reporte": "655-2026"
+        "reporte": "656-2026"
       },
       {
         "rio": "Chotano",
@@ -5295,12 +7861,12 @@
         "alerta": 24.1,
         "emergencia": 28.59,
         "tendencia": "Ascendente",
-        "hora": "22:00",
+        "hora": "23:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -6.54049,
         "lon": -78.78432,
-        "reporte": "655-2026"
+        "reporte": "656-2026"
       },
       {
         "rio": "Utcubamba",
@@ -5316,23 +7882,23 @@
         "estiaje": false,
         "lat": -5.7557,
         "lon": -78.4316,
-        "reporte": "655-2026"
+        "reporte": "656-2026"
       },
       {
         "rio": "Marañón",
         "estacion": "Balsas",
         "lugar": "Utco, Cajamarca",
-        "valor": 172.74,
+        "valor": 174.7,
         "unidad": "m³/s",
         "alerta": 1400.0,
         "emergencia": 1700.0,
         "tendencia": "Ascendente",
-        "hora": "22:00",
+        "hora": "23:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -6.8448,
         "lon": -78.0301,
-        "reporte": "655-2026"
+        "reporte": "656-2026"
       },
       {
         "rio": "Cajamarca",
@@ -5348,7 +7914,7 @@
         "estiaje": false,
         "lat": -7.2294,
         "lon": -78.4131,
-        "reporte": "655-2026"
+        "reporte": "656-2026"
       },
       {
         "rio": "Mashcon",
@@ -5364,7 +7930,7 @@
         "estiaje": false,
         "lat": -7.165,
         "lon": -78.4783,
-        "reporte": "655-2026"
+        "reporte": "656-2026"
       },
       {
         "rio": "Namora",
@@ -5380,7 +7946,7 @@
         "estiaje": false,
         "lat": -7.2426,
         "lon": -78.2947,
-        "reporte": "655-2026"
+        "reporte": "656-2026"
       },
       {
         "rio": "Crisnejas",
@@ -5396,23 +7962,23 @@
         "estiaje": false,
         "lat": -7.4639,
         "lon": -78.1131,
-        "reporte": "655-2026"
+        "reporte": "656-2026"
       },
       {
         "rio": "Cunas",
         "estacion": "Cunas",
         "lugar": "Chambara, Junin",
-        "valor": 1.52,
+        "valor": 1.61,
         "unidad": "m³/s",
         "alerta": null,
         "emergencia": null,
         "tendencia": "Descendente",
-        "hora": "22:00",
+        "hora": "23:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -12.027251,
         "lon": -75.476239,
-        "reporte": "655-2026"
+        "reporte": "656-2026"
       },
       {
         "rio": "Shullcas",
@@ -5423,12 +7989,12 @@
         "alerta": null,
         "emergencia": null,
         "tendencia": "Descendente",
-        "hora": "22:00",
+        "hora": "23:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -11.995485,
         "lon": -75.116203,
-        "reporte": "655-2026"
+        "reporte": "656-2026"
       },
       {
         "rio": "Santa Ana",
@@ -5444,7 +8010,7 @@
         "estiaje": false,
         "lat": -11.357646,
         "lon": -76.186558,
-        "reporte": "655-2026"
+        "reporte": "656-2026"
       },
       {
         "rio": "Yauli",
@@ -5460,7 +8026,7 @@
         "estiaje": false,
         "lat": -11.631925,
         "lon": -76.051003,
-        "reporte": "655-2026"
+        "reporte": "656-2026"
       },
       {
         "rio": "Apurimac",
@@ -5476,7 +8042,7 @@
         "estiaje": false,
         "lat": -13.56213,
         "lon": -72.57525,
-        "reporte": "655-2026"
+        "reporte": "656-2026"
       },
       {
         "rio": "Pachachaca",
@@ -5487,44 +8053,44 @@
         "alerta": 4.0,
         "emergencia": 4.5,
         "tendencia": "Ascendente",
-        "hora": "22:00",
+        "hora": "23:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -13.9917,
         "lon": -73.1748,
-        "reporte": "655-2026"
+        "reporte": "656-2026"
       },
       {
         "rio": "Vilcanota",
         "estacion": "Intihuatana Km105",
         "lugar": "Machupicchu, Cusco",
-        "valor": 43.69,
+        "valor": 41.58,
         "unidad": "m³/s",
         "alerta": 517.33,
         "emergencia": 802.75,
         "tendencia": "Descendente",
-        "hora": "20:00",
+        "hora": "23:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -13.18517,
         "lon": -72.52319,
-        "reporte": "655-2026"
+        "reporte": "656-2026"
       },
       {
         "rio": "Vilcanota",
         "estacion": "Pisac",
         "lugar": "Pisac, Cusco",
-        "valor": 26.57,
+        "valor": 27.35,
         "unidad": "m³/s",
         "alerta": 320.0,
         "emergencia": 400.0,
         "tendencia": "Descendente",
-        "hora": "22:00",
+        "hora": "23:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -13.42264,
         "lon": -71.85388,
-        "reporte": "655-2026"
+        "reporte": "656-2026"
       },
       {
         "rio": "Mapacho",
@@ -5540,7 +8106,7 @@
         "estiaje": false,
         "lat": -13.3177,
         "lon": -71.5974,
-        "reporte": "655-2026"
+        "reporte": "656-2026"
       },
       {
         "rio": "Vilcanota",
@@ -5551,12 +8117,12 @@
         "alerta": 5.5,
         "emergencia": 6.5,
         "tendencia": "Descendente",
-        "hora": "22:00",
+        "hora": "23:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -13.2235,
         "lon": -72.3405,
-        "reporte": "655-2026"
+        "reporte": "656-2026"
       },
       {
         "rio": "Salcca",
@@ -5567,28 +8133,28 @@
         "alerta": 1.74,
         "emergencia": 2.31,
         "tendencia": "Ascendente",
-        "hora": "21:00",
+        "hora": "23:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -14.16991,
         "lon": -71.23186,
-        "reporte": "655-2026"
+        "reporte": "656-2026"
       },
       {
         "rio": "Tigre",
         "estacion": "Intuto",
         "lugar": "Tigre, Loreto",
-        "valor": 7.36,
+        "valor": 7.34,
         "unidad": "m",
         "alerta": 20.0,
         "emergencia": 25.0,
         "tendencia": "Descendente",
-        "hora": "22:00",
+        "hora": "23:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -3.489877,
         "lon": -74.777843,
-        "reporte": "655-2026"
+        "reporte": "656-2026"
       },
       {
         "rio": "Marañón",
@@ -5604,7 +8170,7 @@
         "estiaje": true,
         "lat": -4.513,
         "lon": -73.907,
-        "reporte": "655-2026"
+        "reporte": "656-2026"
       },
       {
         "rio": "Cumbaza",
@@ -5620,7 +8186,7 @@
         "estiaje": false,
         "lat": -6.4667,
         "lon": -76.3833,
-        "reporte": "655-2026"
+        "reporte": "656-2026"
       },
       {
         "rio": "Mayo",
@@ -5636,23 +8202,23 @@
         "estiaje": false,
         "lat": -6.41291,
         "lon": -76.60001,
-        "reporte": "655-2026"
+        "reporte": "656-2026"
       },
       {
         "rio": "Huayabamba",
         "estacion": "Huayabamba",
         "lugar": "Juanjui, San Martin",
-        "valor": 433.24,
+        "valor": 428.37,
         "unidad": "m³/s",
         "alerta": 3329.6,
         "emergencia": 4019.8,
         "tendencia": "Descendente",
-        "hora": "22:00",
+        "hora": "23:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -7.2689,
         "lon": -76.73698,
-        "reporte": "655-2026"
+        "reporte": "656-2026"
       },
       {
         "rio": "Huallaga",
@@ -5668,7 +8234,7 @@
         "estiaje": false,
         "lat": -6.9489,
         "lon": -76.325,
-        "reporte": "655-2026"
+        "reporte": "656-2026"
       },
       {
         "rio": "Huallaga",
@@ -5679,60 +8245,60 @@
         "alerta": 2587.0,
         "emergencia": 3259.0,
         "tendencia": "Descendente",
-        "hora": "22:00",
+        "hora": "23:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -8.18475,
         "lon": -76.50789,
-        "reporte": "655-2026"
+        "reporte": "656-2026"
       },
       {
         "rio": "Huallaga",
         "estacion": "Tingo María",
         "lugar": "Rupa-Rupa, Huanuco",
-        "valor": 337.21,
+        "valor": 341.93,
         "unidad": "m³/s",
         "alerta": 1010.0,
         "emergencia": 1178.0,
         "tendencia": "Ascendente",
-        "hora": "22:00",
+        "hora": "23:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -9.29601,
         "lon": -76.00207,
-        "reporte": "655-2026"
+        "reporte": "656-2026"
       },
       {
         "rio": "Monzón",
         "estacion": "Pte. Bella",
         "lugar": "Rupa-Rupa, Huanuco",
-        "valor": 197.39,
+        "valor": 208.44,
         "unidad": "m³/s",
         "alerta": 610.6,
         "emergencia": 759.2,
         "tendencia": "Ascendente",
-        "hora": "22:00",
+        "hora": "23:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -9.32,
         "lon": -76.0278,
-        "reporte": "655-2026"
+        "reporte": "656-2026"
       },
       {
         "rio": "Huallaga",
         "estacion": "Puente Pérez",
         "lugar": "Mariano Damaso Beraun, Huanuco",
-        "valor": 146.65,
+        "valor": 110.52,
         "unidad": "m³/s",
         "alerta": 846.0,
         "emergencia": 1086.0,
         "tendencia": "Ascendente",
-        "hora": "22:00",
+        "hora": "23:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -9.34694,
         "lon": -75.9825,
-        "reporte": "655-2026"
+        "reporte": "656-2026"
       },
       {
         "rio": "Huallaga",
@@ -5743,12 +8309,12 @@
         "alerta": 270.0,
         "emergencia": 305.0,
         "tendencia": "Descendente",
-        "hora": "22:00",
+        "hora": "23:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -9.85056,
         "lon": -76.1519,
-        "reporte": "655-2026"
+        "reporte": "656-2026"
       },
       {
         "rio": "Higueras",
@@ -5764,7 +8330,7 @@
         "estiaje": false,
         "lat": -9.9222,
         "lon": -76.3094,
-        "reporte": "655-2026"
+        "reporte": "656-2026"
       },
       {
         "rio": "Huallaga",
@@ -5780,7 +8346,7 @@
         "estiaje": false,
         "lat": -10.3399,
         "lon": -76.1824,
-        "reporte": "655-2026"
+        "reporte": "656-2026"
       },
       {
         "rio": "Perené",
@@ -5796,7 +8362,7 @@
         "estiaje": false,
         "lat": -10.86167,
         "lon": -75.00632,
-        "reporte": "655-2026"
+        "reporte": "656-2026"
       },
       {
         "rio": "Tulumayo",
@@ -5812,7 +8378,7 @@
         "estiaje": false,
         "lat": -11.209123,
         "lon": -75.33481,
-        "reporte": "655-2026"
+        "reporte": "656-2026"
       },
       {
         "rio": "Ucayali",
@@ -5828,23 +8394,23 @@
         "estiaje": true,
         "lat": -10.608,
         "lon": -73.871,
-        "reporte": "655-2026"
+        "reporte": "656-2026"
       },
       {
         "rio": "Madre De Dios",
         "estacion": "Amaru Mayu",
         "lugar": "Las Piedras, Madre De Dios",
-        "valor": 3366.99,
+        "valor": 3354.99,
         "unidad": "m³/s",
         "alerta": 17000.0,
         "emergencia": 21000.0,
         "tendencia": "Descendente",
-        "hora": "20:15",
+        "hora": "21:15",
         "estado": "normal",
         "estiaje": false,
         "lat": -12.60033,
         "lon": -69.12456,
-        "reporte": "655-2026"
+        "reporte": "656-2026"
       },
       {
         "rio": "Inambari",
@@ -5860,7 +8426,7 @@
         "estiaje": false,
         "lat": -13.18638,
         "lon": -70.38401,
-        "reporte": "655-2026"
+        "reporte": "656-2026"
       },
       {
         "rio": "Azángaro",
@@ -5876,7 +8442,7 @@
         "estiaje": false,
         "lat": -14.92139,
         "lon": -70.18861,
-        "reporte": "655-2026"
+        "reporte": "656-2026"
       },
       {
         "rio": "Ayaviri",
@@ -5892,23 +8458,23 @@
         "estiaje": false,
         "lat": -14.89249,
         "lon": -70.58544,
-        "reporte": "655-2026"
+        "reporte": "656-2026"
       },
       {
         "rio": "Ramis",
         "estacion": "Puente Ramis",
         "lugar": "Huancane, Puno",
-        "valor": 6.14,
+        "valor": 5.27,
         "unidad": "m³/s",
         "alerta": 320.0,
         "emergencia": 465.0,
         "tendencia": "Ascendente",
-        "hora": "22:00",
+        "hora": "23:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -15.2543,
         "lon": -69.8719,
-        "reporte": "655-2026"
+        "reporte": "656-2026"
       },
       {
         "rio": "Huancané",
@@ -5924,7 +8490,7 @@
         "estiaje": false,
         "lat": -15.215851,
         "lon": -69.792534,
-        "reporte": "655-2026"
+        "reporte": "656-2026"
       },
       {
         "rio": "Suches",
@@ -5935,12 +8501,12 @@
         "alerta": 1.65,
         "emergencia": 1.8,
         "tendencia": "Ascendente",
-        "hora": "22:00",
+        "hora": "23:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -15.14308,
         "lon": -69.21467,
-        "reporte": "655-2026"
+        "reporte": "656-2026"
       },
       {
         "rio": "Cabanillas",
@@ -5956,7 +8522,7 @@
         "estiaje": false,
         "lat": -15.684359,
         "lon": -70.5999,
-        "reporte": "655-2026"
+        "reporte": "656-2026"
       },
       {
         "rio": "Cabanillas",
@@ -5972,7 +8538,7 @@
         "estiaje": false,
         "lat": -15.4721,
         "lon": -70.2244,
-        "reporte": "655-2026"
+        "reporte": "656-2026"
       },
       {
         "rio": "Coata",
@@ -5988,7 +8554,7 @@
         "estiaje": false,
         "lat": -15.4513,
         "lon": -70.1919,
-        "reporte": "655-2026"
+        "reporte": "656-2026"
       },
       {
         "rio": "Lampa",
@@ -6004,7 +8570,7 @@
         "estiaje": false,
         "lat": -15.4439,
         "lon": -70.209,
-        "reporte": "655-2026"
+        "reporte": "656-2026"
       },
       {
         "rio": "Callaccame",
@@ -6020,7 +8586,7 @@
         "estiaje": false,
         "lat": -16.571,
         "lon": -69.3226,
-        "reporte": "655-2026"
+        "reporte": "656-2026"
       },
       {
         "rio": "Zapatilla",
@@ -6036,7 +8602,7 @@
         "estiaje": false,
         "lat": -16.1384,
         "lon": -69.5786,
-        "reporte": "655-2026"
+        "reporte": "656-2026"
       },
       {
         "rio": "Ilave",
@@ -6052,7 +8618,7 @@
         "estiaje": false,
         "lat": -16.0883,
         "lon": -69.6312,
-        "reporte": "655-2026"
+        "reporte": "656-2026"
       },
       {
         "rio": "Titicaca",
@@ -6063,12 +8629,12 @@
         "alerta": 3809.0,
         "emergencia": 3810.25,
         "tendencia": "Descendente",
-        "hora": "22:00",
+        "hora": "23:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -15.83647,
         "lon": -70.016,
-        "reporte": "655-2026"
+        "reporte": "656-2026"
       },
       {
         "rio": "Mauri",
@@ -6079,18 +8645,18 @@
         "alerta": 5.0,
         "emergencia": 7.0,
         "tendencia": "Ascendente",
-        "hora": "22:00",
+        "hora": "23:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -17.1997,
         "lon": -69.9392,
-        "reporte": "655-2026"
+        "reporte": "656-2026"
       }
     ],
     "en_alerta": 1,
     "en_emergencia": 0,
     "url": "https://snirh.ana.gob.pe/onrh/",
-    "leido": "2026-11-09T04:24:21Z"
+    "leido": "2026-11-09T05:24:27Z"
   },
   "ana_embalses": {
     "embalses": [
@@ -6327,7 +8893,7 @@
       }
     ],
     "url": "https://snirh.ana.gob.pe/onrh/",
-    "leido": "2026-11-09T04:24:22Z"
+    "leido": "2026-11-09T05:24:28Z"
   },
   "ana_pc": {
     "total": 536,
@@ -6338,7 +8904,7 @@
     },
     "avance_medio": 37.0,
     "url": "https://snirh.ana.gob.pe/",
-    "leido": "2026-11-09T04:24:22Z"
+    "leido": "2026-11-09T05:24:29Z"
   },
   "emergencia": {
     "decretos": {
@@ -11304,7 +13870,7 @@
       "ONRH/DEE_DS_140_2026_PCM"
     ],
     "url": "https://www.gob.pe/busquedas?contenido[]=normas&term=estado+de+emergencia",
-    "leido": "2026-11-09T04:24:24Z"
+    "leido": "2026-11-09T05:24:30Z"
   },
   "preparacion": {
     "conteo": {
@@ -18460,7 +21026,7 @@
       }
     },
     "url": "https://visor.geoperu.gob.pe/",
-    "leido": "2026-11-09T04:25:28Z"
+    "leido": "2026-11-09T05:24:31Z"
   },
   "agua": {
     "total": 66,
@@ -19334,7 +21900,7 @@
       }
     },
     "url": "https://www.sunass.gob.pe/",
-    "leido": "2026-11-09T04:25:29Z"
+    "leido": "2026-11-09T05:24:32Z"
   },
   "incendios": {
     "total": 34,
@@ -19647,14 +22213,14 @@
       }
     ],
     "url": "https://geo.serfor.gob.pe/visor/",
-    "leido": "2026-11-09T04:25:30Z"
+    "leido": "2026-11-09T05:24:32Z"
   },
   "phisis": {
     "estaciones": [
       {
         "estacion": "Sauzal",
         "cuenca": "Cuenca Chamaya",
-        "fecha": "2026-11-09T03:00:00Z",
+        "fecha": "2026-11-09T04:00:00Z",
         "nivel": "normal",
         "variable": "nivel",
         "lugar": "San Felipe, Cajamarca",
@@ -19664,7 +22230,7 @@
       {
         "estacion": "Cabo Inga",
         "cuenca": "Cuenca Tumbes",
-        "fecha": "2026-11-08T15:00:00Z",
+        "fecha": "2026-11-08T19:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "San Jacinto, Tumbes",
@@ -19674,7 +22240,7 @@
       {
         "estacion": "El Tigre",
         "cuenca": "Cuenca Tumbes",
-        "fecha": "2026-11-09T03:00:00Z",
+        "fecha": "2026-11-09T04:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "San Jacinto, Tumbes",
@@ -19684,7 +22250,7 @@
       {
         "estacion": "Puente Ñacara",
         "cuenca": "Cuenca Piura",
-        "fecha": "2026-11-09T03:00:00Z",
+        "fecha": "2026-11-09T04:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "Chulucanas, Piura",
@@ -19694,7 +22260,7 @@
       {
         "estacion": "Salitral",
         "cuenca": "Cuenca Piura",
-        "fecha": "2026-11-09T03:00:00Z",
+        "fecha": "2026-11-09T04:00:00Z",
         "nivel": "normal",
         "variable": "nivel",
         "lugar": "Salitral, Piura",
@@ -19704,7 +22270,7 @@
       {
         "estacion": "Hacienda Barrios",
         "cuenca": "Cuenca Piura",
-        "fecha": "2026-11-09T03:00:00Z",
+        "fecha": "2026-11-09T04:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "San Juan De Bigote, Piura",
@@ -19714,7 +22280,7 @@
       {
         "estacion": "San Pedro",
         "cuenca": "Cuenca Piura",
-        "fecha": "2026-11-09T03:00:00Z",
+        "fecha": "2026-11-09T04:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "Morropon, Piura",
@@ -19724,7 +22290,7 @@
       {
         "estacion": "La Ardilla",
         "cuenca": "Cuenca Chira",
-        "fecha": "2026-11-09T03:00:00Z",
+        "fecha": "2026-11-09T04:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "Lancones, Piura",
@@ -19734,7 +22300,7 @@
       {
         "estacion": "Pte. Int. Macara",
         "cuenca": "Cuenca Chira",
-        "fecha": "2026-11-09T03:00:00Z",
+        "fecha": "2026-11-09T04:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "Suyo, Piura",
@@ -19744,7 +22310,7 @@
       {
         "estacion": "Alamor",
         "cuenca": "Cuenca Chira",
-        "fecha": "2026-11-09T03:00:00Z",
+        "fecha": "2026-11-09T04:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "Lancones, Piura",
@@ -19754,7 +22320,7 @@
       {
         "estacion": "Bocatoma Chipillico",
         "cuenca": "Cuenca Chira",
-        "fecha": "2026-11-09T04:00:00Z",
+        "fecha": "2026-11-09T05:00:00Z",
         "nivel": "normal",
         "variable": "nivel",
         "lugar": "Las Lomas, Piura",
@@ -19764,7 +22330,7 @@
       {
         "estacion": "Lagartera",
         "cuenca": "Cuenca Chira",
-        "fecha": "2026-11-09T03:00:00Z",
+        "fecha": "2026-11-09T04:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "Las Lomas, Piura",
@@ -19774,7 +22340,7 @@
       {
         "estacion": "El Ciruelo",
         "cuenca": "Cuenca Chira",
-        "fecha": "2026-11-09T04:00:00Z",
+        "fecha": "2026-11-09T05:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "Suyo, Piura",
@@ -19784,7 +22350,7 @@
       {
         "estacion": "Puchaca",
         "cuenca": "Cuenca Motupe",
-        "fecha": "2026-11-09T04:00:00Z",
+        "fecha": "2026-11-09T05:00:00Z",
         "nivel": "normal",
         "variable": "nivel",
         "lugar": "Incahuasi, Lambayeque",
@@ -19844,7 +22410,7 @@
       {
         "estacion": "Cirato",
         "cuenca": "Cuenca Chancay-Lambayeque",
-        "fecha": "2026-11-09T03:00:00Z",
+        "fecha": "2026-11-09T04:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "Catache, Cajamarca",
@@ -19854,7 +22420,7 @@
       {
         "estacion": "Huallape",
         "cuenca": "Cuenca Chinchipe",
-        "fecha": "2026-11-09T03:00:00Z",
+        "fecha": "2026-11-09T04:00:00Z",
         "nivel": "normal",
         "variable": "nivel",
         "lugar": "Santa Rosa, Cajamarca",
@@ -19864,7 +22430,7 @@
       {
         "estacion": "Corral Quemado",
         "cuenca": "Intercuenca Alto Marañón III",
-        "fecha": "2026-11-09T03:00:00Z",
+        "fecha": "2026-11-09T04:00:00Z",
         "nivel": "normal",
         "variable": "nivel",
         "lugar": "Cumba, Amazonas",
@@ -19874,7 +22440,7 @@
       {
         "estacion": "Cañad",
         "cuenca": "Cuenca Chancay-Lambayeque",
-        "fecha": "2026-11-09T03:00:00Z",
+        "fecha": "2026-11-09T04:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "Catache, Cajamarca",
@@ -19884,7 +22450,7 @@
       {
         "estacion": "Túnel Chotano",
         "cuenca": "Cuenca Chamaya",
-        "fecha": "2026-11-09T03:00:00Z",
+        "fecha": "2026-11-09T04:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "Cochabamba, Cajamarca",
@@ -19894,7 +22460,7 @@
       {
         "estacion": "Salinar",
         "cuenca": "Cuenca Chicama",
-        "fecha": "2026-11-09T03:00:00Z",
+        "fecha": "2026-11-09T04:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "Ascope, La Libertad",
@@ -19944,7 +22510,7 @@
       {
         "estacion": "Balsas",
         "cuenca": "Intercuenca Alto Marañón IV",
-        "fecha": "2026-11-09T03:00:00Z",
+        "fecha": "2026-11-09T04:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "Utco, Cajamarca",
@@ -19954,7 +22520,7 @@
       {
         "estacion": "Yónan Gore",
         "cuenca": "Cuenca Jequetepeque",
-        "fecha": "2026-11-09T04:00:00Z",
+        "fecha": "2026-11-09T05:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "Yonan, Cajamarca",
@@ -19964,7 +22530,7 @@
       {
         "estacion": "Pte. Chilete",
         "cuenca": "Cuenca Jequetepeque",
-        "fecha": "2026-11-09T04:00:00Z",
+        "fecha": "2026-11-09T05:00:00Z",
         "nivel": "normal",
         "variable": "nivel",
         "lugar": "Chilete, Cajamarca",
@@ -19974,7 +22540,7 @@
       {
         "estacion": "Puente Palmira",
         "cuenca": "Cuenca Chicama",
-        "fecha": "2026-11-09T01:00:00Z",
+        "fecha": "2026-11-09T04:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "Cascas, La Libertad",
@@ -19984,7 +22550,7 @@
       {
         "estacion": "El Tambo",
         "cuenca": "Cuenca Chicama",
-        "fecha": "2026-11-09T03:00:00Z",
+        "fecha": "2026-11-09T04:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "Marmot, La Libertad",
@@ -20034,7 +22600,7 @@
       {
         "estacion": "Condorcerro",
         "cuenca": "Cuenca Santa",
-        "fecha": "2026-11-09T03:00:00Z",
+        "fecha": "2026-11-09T04:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "Chao, La Libertad",
@@ -20044,7 +22610,7 @@
       {
         "estacion": "San Mateo",
         "cuenca": "Cuenca Rímac",
-        "fecha": "2026-11-09T03:00:00Z",
+        "fecha": "2026-11-09T04:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "San Mateo, Lima",
@@ -20054,7 +22620,7 @@
       {
         "estacion": "Puente Huachipa",
         "cuenca": "Cuenca Rímac",
-        "fecha": "2026-11-09T04:00:00Z",
+        "fecha": "2026-11-09T05:00:00Z",
         "nivel": "normal",
         "variable": "nivel",
         "lugar": "Lurigancho, Lima",
@@ -20064,7 +22630,7 @@
       {
         "estacion": "Antapucro",
         "cuenca": "Cuenca Lurín",
-        "fecha": "2026-11-09T03:00:00Z",
+        "fecha": "2026-11-09T04:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "Antioquia, Lima",
@@ -20094,7 +22660,7 @@
       {
         "estacion": "Socsi",
         "cuenca": "Cuenca Cañete",
-        "fecha": "2026-11-09T03:00:00Z",
+        "fecha": "2026-11-09T04:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "Lunahuana, Lima",
@@ -20104,7 +22670,7 @@
       {
         "estacion": "Sayán",
         "cuenca": "Cuenca Huaura",
-        "fecha": "2026-11-09T03:00:00Z",
+        "fecha": "2026-11-09T04:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "Sayan, Lima",
@@ -20114,7 +22680,7 @@
       {
         "estacion": "Chosica",
         "cuenca": "Cuenca Rímac",
-        "fecha": "2026-11-09T04:00:00Z",
+        "fecha": "2026-11-09T05:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "Lurigancho, Lima",
@@ -20124,7 +22690,7 @@
       {
         "estacion": "Pariacancha",
         "cuenca": "Cuenca Chillón",
-        "fecha": "2026-11-09T03:00:00Z",
+        "fecha": "2026-11-09T04:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "Huaros, Lima",
@@ -20144,7 +22710,7 @@
       {
         "estacion": "Puente Callantama",
         "cuenca": "Cuenca Chancay - Huaral",
-        "fecha": "2026-11-09T03:00:00Z",
+        "fecha": "2026-11-09T04:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "Lampian, Lima",
@@ -20154,7 +22720,7 @@
       {
         "estacion": "Obrajillo",
         "cuenca": "Cuenca Chillón",
-        "fecha": "2026-11-09T03:00:00Z",
+        "fecha": "2026-11-09T04:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "San Buenaventura, Lima",
@@ -20174,7 +22740,7 @@
       {
         "estacion": "Letrayoc",
         "cuenca": "Cuenca Pisco",
-        "fecha": "2026-11-09T03:00:00Z",
+        "fecha": "2026-11-09T04:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "Huancano, Ica",
@@ -20194,7 +22760,7 @@
       {
         "estacion": "Los Molinos",
         "cuenca": "Cuenca Ica",
-        "fecha": "2026-11-09T04:00:00Z",
+        "fecha": "2026-11-09T05:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "San Jose De Los Molinos, Ica",
@@ -20214,7 +22780,7 @@
       {
         "estacion": "Huallpoca",
         "cuenca": "Cuenca Grande",
-        "fecha": "2026-11-07T23:00:00Z",
+        "fecha": "2026-11-08T23:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "El Ingenio, Ica",
@@ -20224,7 +22790,7 @@
       {
         "estacion": "Challaca",
         "cuenca": "Cuenca Ica",
-        "fecha": "2026-11-09T03:00:00Z",
+        "fecha": "2026-11-09T04:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "Santiago De Chocorvos, Huancavelica",
@@ -20234,7 +22800,7 @@
       {
         "estacion": "Cuyau",
         "cuenca": "Cuenca Ocoña",
-        "fecha": "2026-11-09T04:00:00Z",
+        "fecha": "2026-11-09T05:00:00Z",
         "nivel": "normal",
         "variable": "nivel",
         "lugar": "Cotahuasi, Arequipa",
@@ -20284,7 +22850,7 @@
       {
         "estacion": "Charcani",
         "cuenca": "Cuenca Quilca - Vitor - Chili",
-        "fecha": "2026-11-09T03:00:00Z",
+        "fecha": "2026-11-09T04:00:00Z",
         "nivel": "normal",
         "variable": "nivel",
         "lugar": "Cayma, Arequipa",
@@ -20294,7 +22860,7 @@
       {
         "estacion": "Puente Del Diablo",
         "cuenca": "Cuenca Quilca - Vitor - Chili",
-        "fecha": "2026-11-09T03:00:00Z",
+        "fecha": "2026-11-09T04:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "Uchumayo, Arequipa",
@@ -20304,7 +22870,7 @@
       {
         "estacion": "Sibayo",
         "cuenca": "Cuenca Camaná",
-        "fecha": "2026-11-09T03:00:00Z",
+        "fecha": "2026-11-09T04:00:00Z",
         "nivel": "normal",
         "variable": "nivel",
         "lugar": "Callalli, Arequipa",
@@ -20324,7 +22890,7 @@
       {
         "estacion": "Tingo Grande",
         "cuenca": "Cuenca Quilca - Vitor - Chili",
-        "fecha": "2026-11-09T03:00:00Z",
+        "fecha": "2026-11-09T04:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "Jacobo Hunter, Arequipa",
@@ -20334,7 +22900,7 @@
       {
         "estacion": "Boyadero",
         "cuenca": "Cuenca Quilca - Vitor - Chili",
-        "fecha": "2026-11-09T03:00:00Z",
+        "fecha": "2026-11-09T04:00:00Z",
         "nivel": "normal",
         "variable": "nivel",
         "lugar": "Vitor, Arequipa",
@@ -20344,7 +22910,7 @@
       {
         "estacion": "Ancoaque",
         "cuenca": "Cuenca Mauri",
-        "fecha": "2026-11-09T03:00:00Z",
+        "fecha": "2026-11-09T04:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "Susapaya, Tacna",
@@ -20394,7 +22960,7 @@
       {
         "estacion": "Ticapampa",
         "cuenca": "Cuenca Locumba",
-        "fecha": "2026-11-09T03:00:00Z",
+        "fecha": "2026-11-09T05:00:00Z",
         "nivel": "normal",
         "variable": "A",
         "lugar": "Ilabaya, Tacna",
@@ -20424,7 +22990,7 @@
       {
         "estacion": "Cerro Blanco",
         "cuenca": "Intercuenca 13155",
-        "fecha": "2026-11-09T03:00:00Z",
+        "fecha": "2026-11-09T04:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "Calana, Tacna",
@@ -20434,7 +23000,7 @@
       {
         "estacion": "Caplina",
         "cuenca": "Cuenca Caplina",
-        "fecha": "2026-11-09T03:00:00Z",
+        "fecha": "2026-11-09T04:00:00Z",
         "nivel": "normal",
         "variable": "A",
         "lugar": "Palca, Tacna",
@@ -20444,7 +23010,7 @@
       {
         "estacion": "Puente Talapalca",
         "cuenca": "Cuenca Sama",
-        "fecha": "2026-11-09T03:00:00Z",
+        "fecha": "2026-11-09T04:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "Heroes Albarracin, Tacna",
@@ -20454,7 +23020,7 @@
       {
         "estacion": "Coranchay",
         "cuenca": "Cuenca Locumba",
-        "fecha": "2026-11-09T03:00:00Z",
+        "fecha": "2026-11-09T04:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "Cairani, Tacna",
@@ -20464,7 +23030,7 @@
       {
         "estacion": "Túnel Kovire",
         "cuenca": "Cuenca Sama",
-        "fecha": "2026-11-09T03:00:00Z",
+        "fecha": "2026-11-09T04:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "Susapaya, Tacna",
@@ -20474,7 +23040,7 @@
       {
         "estacion": "Puente Viejo",
         "cuenca": "Cuenca Locumba",
-        "fecha": "2026-11-09T03:00:00Z",
+        "fecha": "2026-11-09T04:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "Locumba, Tacna",
@@ -20484,7 +23050,7 @@
       {
         "estacion": "Challata",
         "cuenca": "Cuenca Caplina",
-        "fecha": "2026-11-09T03:00:00Z",
+        "fecha": "2026-11-09T04:00:00Z",
         "nivel": "normal",
         "variable": "A",
         "lugar": "Pachia, Tacna",
@@ -20624,7 +23190,7 @@
       {
         "estacion": "Shanao",
         "cuenca": "Cuenca Mayo",
-        "fecha": "2026-11-09T04:00:00Z",
+        "fecha": "2026-11-09T05:00:00Z",
         "nivel": "normal",
         "variable": "A",
         "lugar": "Shanao, San Martin",
@@ -20634,7 +23200,7 @@
       {
         "estacion": "Huayabamba",
         "cuenca": "Cuenca Huayabamba",
-        "fecha": "2026-11-09T03:00:00Z",
+        "fecha": "2026-11-09T04:00:00Z",
         "nivel": "normal",
         "variable": "A",
         "lugar": "Juanjui, San Martin",
@@ -20764,7 +23330,7 @@
       {
         "estacion": "Tingo María",
         "cuenca": "Intercuenca Alto Huallaga",
-        "fecha": "2026-11-09T03:00:00Z",
+        "fecha": "2026-11-09T04:00:00Z",
         "nivel": "normal",
         "variable": "A",
         "lugar": "Rupa-Rupa, Huanuco",
@@ -20774,7 +23340,7 @@
       {
         "estacion": "Taruca",
         "cuenca": "Intercuenca Alto Huallaga",
-        "fecha": "2026-11-09T03:00:00Z",
+        "fecha": "2026-11-09T04:00:00Z",
         "nivel": "normal",
         "variable": "A",
         "lugar": "Santa Maria Del Valle, Huanuco",
@@ -20784,7 +23350,7 @@
       {
         "estacion": "Puente Pérez",
         "cuenca": "Intercuenca Alto Huallaga",
-        "fecha": "2026-11-09T03:00:00Z",
+        "fecha": "2026-11-09T04:00:00Z",
         "nivel": "normal",
         "variable": "A",
         "lugar": "Mariano Damaso Beraun, Huanuco",
@@ -20794,7 +23360,7 @@
       {
         "estacion": "Pte. Bella",
         "cuenca": "Intercuenca Alto Huallaga",
-        "fecha": "2026-11-09T03:00:00Z",
+        "fecha": "2026-11-09T04:00:00Z",
         "nivel": "normal",
         "variable": "A",
         "lugar": "Rupa-Rupa, Huanuco",
@@ -20804,7 +23370,7 @@
       {
         "estacion": "Puente Tocache",
         "cuenca": "Intercuenca Alto Huallaga",
-        "fecha": "2026-11-09T03:00:00Z",
+        "fecha": "2026-11-09T04:00:00Z",
         "nivel": "normal",
         "variable": "A",
         "lugar": "Tocache, San Martin",
@@ -20844,7 +23410,7 @@
       {
         "estacion": "Salcca",
         "cuenca": "Cuenca Urubamba",
-        "fecha": "2026-11-09T02:00:00Z",
+        "fecha": "2026-11-09T04:00:00Z",
         "nivel": "normal",
         "variable": "nivel",
         "lugar": "San Pablo, Cusco",
@@ -20864,7 +23430,7 @@
       {
         "estacion": "Puente Pampas",
         "cuenca": "Cuenca Pampas",
-        "fecha": "2026-11-09T03:00:00Z",
+        "fecha": "2026-11-09T04:00:00Z",
         "nivel": "normal",
         "variable": "nivel",
         "lugar": "Ocros, Ayacucho",
@@ -20874,7 +23440,7 @@
       {
         "estacion": "Intihuatana Km105",
         "cuenca": "Cuenca Urubamba",
-        "fecha": "2026-11-09T01:00:00Z",
+        "fecha": "2026-11-09T04:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "Machupicchu, Cusco",
@@ -20884,7 +23450,7 @@
       {
         "estacion": "Pisac",
         "cuenca": "Cuenca Urubamba",
-        "fecha": "2026-11-09T03:00:00Z",
+        "fecha": "2026-11-09T04:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "Pisac, Cusco",
@@ -20894,7 +23460,7 @@
       {
         "estacion": "Chilca",
         "cuenca": "Cuenca Urubamba",
-        "fecha": "2026-11-09T03:00:00Z",
+        "fecha": "2026-11-09T04:00:00Z",
         "nivel": "normal",
         "variable": "nivel",
         "lugar": "Ollantaytambo, Cusco",
@@ -20904,7 +23470,7 @@
       {
         "estacion": "Santa Rosa Chapimarca",
         "cuenca": "Intercuenca Alto Apurímac",
-        "fecha": "2026-11-09T03:00:00Z",
+        "fecha": "2026-11-09T04:00:00Z",
         "nivel": "normal",
         "variable": "nivel",
         "lugar": "Colcabamba, Apurimac",
@@ -20924,7 +23490,7 @@
       {
         "estacion": "Huancasaya",
         "cuenca": "Cuenca Suches",
-        "fecha": "2026-11-09T03:00:00Z",
+        "fecha": "2026-11-09T04:00:00Z",
         "nivel": "normal",
         "variable": "nivel",
         "lugar": "Cojata, Puno",
@@ -21004,7 +23570,7 @@
       {
         "estacion": "Pte. Azángaro",
         "cuenca": "Cuenca Azángaro",
-        "fecha": "2026-11-09T04:00:00Z",
+        "fecha": "2026-11-09T05:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "Azangaro, Puno",
@@ -21034,7 +23600,7 @@
       {
         "estacion": "Puente Desaguadero",
         "cuenca": "Lago Titicaca",
-        "fecha": "2026-11-09T04:00:00Z",
+        "fecha": "2026-11-09T05:00:00Z",
         "nivel": "normal",
         "variable": "nivel",
         "lugar": "Desaguadero, Puno",
@@ -21044,7 +23610,7 @@
       {
         "estacion": "Puente Ramis",
         "cuenca": "Intercuenca Ramis",
-        "fecha": "2026-11-09T03:00:00Z",
+        "fecha": "2026-11-09T04:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "Huancane, Puno",
@@ -21054,7 +23620,7 @@
       {
         "estacion": "Muelle Enafer",
         "cuenca": "Intercuenca 0173",
-        "fecha": "2026-11-09T03:00:00Z",
+        "fecha": "2026-11-09T04:00:00Z",
         "nivel": "normal",
         "variable": "nivel",
         "lugar": "Puno, Puno",
@@ -21064,7 +23630,7 @@
       {
         "estacion": "Pte. Carretera Ilave",
         "cuenca": "Cuenca Ilave",
-        "fecha": "2026-11-09T03:00:00Z",
+        "fecha": "2026-11-09T04:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "Ilave, Puno",
@@ -21074,7 +23640,7 @@
     ],
     "sobre_umbral": 2,
     "url": "https://www.senamhi.gob.pe/mapas/mapa-monitoreohidro/",
-    "leido": "2026-11-09T04:24:25Z"
+    "leido": "2026-11-09T05:24:33Z"
   },
   "prono": {
     "url": "https://www.senamhi.gob.pe/?p=pronostico-climatico",
@@ -21672,7 +24238,7 @@
         ]
       ]
     },
-    "leido": "2026-11-09T04:24:26Z"
+    "leido": "2026-11-09T05:24:33Z"
   },
   "igp": {
     "e": [
@@ -21877,7 +24443,7 @@
       "clasificacion": 99.88
     },
     "url": "http://met.igp.gob.pe/variabclim/",
-    "leido": "2026-11-09T04:25:32Z"
+    "leido": "2026-11-09T05:24:34Z"
   },
   "dhn": {
     "generado": "2026-11-06T16:10:08Z",
@@ -22389,7 +24955,7 @@
         }
       ]
     },
-    "leido": "2026-11-09T04:25:33Z"
+    "leido": "2026-11-09T05:24:34Z"
   },
   "inaigem": {
     "estaciones": [
@@ -22427,7 +24993,7 @@
       }
     ],
     "url": "https://www.inaigem.gob.pe/",
-    "leido": "2026-11-09T04:25:33Z"
+    "leido": "2026-11-09T05:24:34Z"
   },
   "enfen_docs": {
     "docs": [
@@ -22493,6 +25059,6 @@
       }
     ],
     "url": "https://enfen.imarpe.gob.pe/",
-    "leido": "2026-11-09T04:24:27Z"
+    "leido": "2026-11-09T05:24:35Z"
   }
 }
