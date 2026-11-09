@@ -1,6 +1,6 @@
 {
   "_": "Generado por pipeline/fuentes/peru_oficial.py. Datos oficiales tal como se publican.",
-  "actualizado": "2026-11-09T05:27:42Z",
+  "actualizado": "2026-11-09T08:01:33Z",
   "fallas": [],
   "fenomeno": {
     "fecha": "30 de octubre del 2026",
@@ -279,19 +279,19 @@
       {
         "fecha": "2026-11-05 18:00",
         "peligro": "Huaico (flujo de detritos)",
-        "distrito": "030408",
-        "lugar": "Justo Apu Sahuaraura, Aymaraes, Apurimac",
-        "hechos": "A consecuencias de las lluvias intensas, se produjo un huaico que ocasionó daños materiales (infraestructura de transporte) en la comunidad de Viscachayoc, distrito de Justo Apu Sahuaraura, provincia de Aymaraes.",
-        "pdf": "https://coen.indeci.gob.pe/api/v2/mer/files/view?key=mer/2026/10/1793995843633.pdf",
+        "distrito": "240202",
+        "lugar": "Casitas, Contralmirante Villar, Tumbes",
+        "hechos": "A consecuencias de las lluvias intensas, se activaron las quebradas Bocapan, Corralito y Paneles que produjo huaico, causando daños materiales (infraestructura de transporte) dejando aislado a los centros poblados Tacna Libre, Bellavista, Cherrelique, La Choza, Cienego Sur, Cienego Norte, Chicana y El Cardo, distrito de Casitas, provincia de Contralmirante Villar.",
+        "pdf": "https://coen.indeci.gob.pe/api/v2/mer/files/view?key=mer/2026/10/1794133702259.pdf",
         "sinpad": null
       },
       {
         "fecha": "2026-11-05 18:00",
         "peligro": "Huaico (flujo de detritos)",
-        "distrito": "240202",
-        "lugar": "Casitas, Contralmirante Villar, Tumbes",
-        "hechos": "A consecuencias de las lluvias intensas, se activaron las quebradas Bocapan, Corralito y Paneles que produjo huaico, causando daños materiales (infraestructura de transporte) dejando aislado a los centros poblados Tacna Libre, Bellavista, Cherrelique, La Choza, Cienego Sur, Cienego Norte, Chicana y El Cardo, distrito de Casitas, provincia de Contralmirante Villar.",
-        "pdf": "https://coen.indeci.gob.pe/api/v2/mer/files/view?key=mer/2026/10/1794133702259.pdf",
+        "distrito": "030408",
+        "lugar": "Justo Apu Sahuaraura, Aymaraes, Apurimac",
+        "hechos": "A consecuencias de las lluvias intensas, se produjo un huaico que ocasionó daños materiales (infraestructura de transporte) en la comunidad de Viscachayoc, distrito de Justo Apu Sahuaraura, provincia de Aymaraes.",
+        "pdf": "https://coen.indeci.gob.pe/api/v2/mer/files/view?key=mer/2026/10/1793995843633.pdf",
         "sinpad": null
       },
       {
@@ -404,20 +404,25 @@
       },
       {
         "fecha": "2026-11-04 19:00",
-        "peligro": "Lluvias intensas",
-        "distrito": "240105",
-        "lugar": "San Jacinto, Tumbes, Tumbes",
-        "hechos": "4/11/2026 19:00 horas Como consecuencia de las lluvias intensas, se registró el desborde de la quebrada El Tablazo que produjo daños materiales (viviendas), en el sector El Tablazo, caserío Casa Blanqueada, distrito de San Jacinto, provincia de Tumbes. 4/11/2026 19:00 horas Como consecuencia de las lluvias intensas, se registró el desborde de la quebrada Higuerón, que produjo daños materiales (viv",
-        "pdf": "https://coen.indeci.gob.pe/api/v2/mer/files/view?key=mer/2026/10/1794019381894.pdf",
+        "peligro": "Incendios forestales",
+        "distrito": "030605",
+        "lugar": "Ocobamba, Chincheros, Apurimac",
+        "hechos": "Se registra un incendio forestal que ocasiona daños materiales (cobertura natural) en las comunidades Túpac Amaru y Tres Cruces, distrito Ocobamba, provincia de Chincheros.",
+        "pdf": "https://coen.indeci.gob.pe/api/v2/mer/files/view?key=mer/2026/10/1794158249647.pdf",
         "sinpad": null
       }
     ],
     "sin_cruce": 1,
     "url": "https://coen.indeci.gob.pe/mer/",
-    "leido": "2026-11-09T05:27:44Z"
+    "leido": "2026-11-09T08:01:35Z"
   },
   "indeci_rss": {
     "reportes": [
+      {
+        "titulo": "REPORTE COMPLEMENTARIO N.º 15671 – 8/11/2026 / COEN – INDECI / 22:15 HORAS (Reporte N.° 2) HELADA EN EL DISTRITO DE COMBAPATA – CUSCO",
+        "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-o-13293-2-10-2026-coen-indeci-0114-horas-reporte-n-1-helada-en-el-distrito-de-combapata-cusco/",
+        "fecha": "2026-11-09T06:39"
+      },
       {
         "titulo": "REPORTE COMPLEMENTARIO N.º 15679 – 8/11/2026 / COEN-INDECI / 23:40 HORAS (Reporte N.° 4) HELADA EN EL DISTRITO DE CUENCA – HUANCAVELICA",
         "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-o-13381-3-10-2026-coen-indeci-0545-horas-reporte-n-1-helada-en-el-distrito-de-cuenca-huancavelica/",
@@ -482,15 +487,10 @@
         "titulo": "REPORTE COMPLEMENTARIO N.° 15667 – 8/11/2026 / COEN-INDECI / 19:20 HORAS (Reporte N° 3) INCENDIO URBANO EN EL DISTRITO DE ALTO INAMBARI – PUNO",
         "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-15062-27-10-2026-coen-indeci-1650-horas-reporte-n-1-incendio-urbano-en-el-distrito-de-alto-inambari-puno/",
         "fecha": "2026-11-09T00:26"
-      },
-      {
-        "titulo": "REPORTE COMPLEMENTARIO N.° 15666 – 8/11/2026 / COEN-INDECI / 19:20 HORAS (Reporte N.º 3) INCENDIO FORESTAL EN EL DISTRITO DE AJOYANI – PUNO",
-        "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-03715-8-10-2026-coen-indeci-0715-horas-reporte-n-o-1-incendio-forestal-en-el-distrito-de-ajoyani-puno/",
-        "fecha": "2026-11-09T00:20"
       }
     ],
     "url": "https://portal.indeci.gob.pe/emergencias/",
-    "leido": "2026-11-09T05:27:45Z"
+    "leido": "2026-11-09T08:01:36Z"
   },
   "escenario": {
     "vigente": true,
@@ -5654,7 +5654,7 @@
       }
     },
     "url": "https://sigrid.cenepred.gob.pe/sigridv3/escenario-aviso",
-    "leido": "2026-11-09T05:27:50Z"
+    "leido": "2026-11-09T08:01:41Z"
   },
   "quebradas": {
     "fecha": "2026-11-08",
@@ -6810,7 +6810,7 @@
     },
     "sin_cruce": 12,
     "url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico",
-    "leido": "2026-11-09T05:27:57Z"
+    "leido": "2026-11-09T08:01:46Z"
   },
   "hidro": {
     "avisos": [
@@ -6840,7 +6840,7 @@
       }
     ],
     "url": "https://www.senamhi.gob.pe/?p=aviso-hidrologico",
-    "leido": "2026-11-09T05:27:58Z"
+    "leido": "2026-11-09T08:01:47Z"
   },
   "ana_rios": {
     "estaciones": [
@@ -21026,7 +21026,7 @@
       }
     },
     "url": "https://visor.geoperu.gob.pe/",
-    "leido": "2026-11-09T05:27:59Z"
+    "leido": "2026-11-09T08:01:48Z"
   },
   "agua": {
     "total": 66,
@@ -21900,7 +21900,7 @@
       }
     },
     "url": "https://www.sunass.gob.pe/",
-    "leido": "2026-11-09T05:28:00Z"
+    "leido": "2026-11-09T08:01:50Z"
   },
   "incendios": {
     "total": 34,
@@ -22213,7 +22213,7 @@
       }
     ],
     "url": "https://geo.serfor.gob.pe/visor/",
-    "leido": "2026-11-09T05:28:01Z"
+    "leido": "2026-11-09T08:01:51Z"
   },
   "phisis": {
     "estaciones": [
@@ -24443,7 +24443,7 @@
       "clasificacion": 99.88
     },
     "url": "http://met.igp.gob.pe/variabclim/",
-    "leido": "2026-11-09T05:28:03Z"
+    "leido": "2026-11-09T08:01:54Z"
   },
   "dhn": {
     "generado": "2026-11-06T16:10:08Z",
@@ -24955,7 +24955,7 @@
         }
       ]
     },
-    "leido": "2026-11-09T05:28:04Z"
+    "leido": "2026-11-09T08:01:55Z"
   },
   "inaigem": {
     "estaciones": [
@@ -24993,7 +24993,7 @@
       }
     ],
     "url": "https://www.inaigem.gob.pe/",
-    "leido": "2026-11-09T05:28:04Z"
+    "leido": "2026-11-09T08:01:55Z"
   },
   "enfen_docs": {
     "docs": [
