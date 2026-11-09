@@ -1,6 +1,6 @@
 {
   "_": "Generado por pipeline/fuentes/peru_oficial.py. Datos oficiales tal como se publican.",
-  "actualizado": "2026-11-09T03:30:59Z",
+  "actualizado": "2026-11-09T03:35:12Z",
   "fallas": [],
   "fenomeno": {
     "fecha": "30 de octubre del 2026",
@@ -414,10 +414,15 @@
     ],
     "sin_cruce": 1,
     "url": "https://coen.indeci.gob.pe/mer/",
-    "leido": "2026-11-09T03:31:01Z"
+    "leido": "2026-11-09T03:35:14Z"
   },
   "indeci_rss": {
     "reportes": [
+      {
+        "titulo": "REPORTE COMPLEMENTARIO N.º 15670 – 8/11/2026/ COEN – INDECI / 22:00 HORAS (Reporte N° 1) INCENDIO FORESTAL EN EL DISTRITO DE JACAS GRANDE – HUÁNUCO",
+        "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-o-15670-8-11-2026-coen-indeci-2200-horas-reporte-n-1-incendio-forestal-en-el-distrito-de-jacas-grande-huanuco/",
+        "fecha": "2026-11-09T03:32"
+      },
       {
         "titulo": "REPORTE PRELIMINAR N.° 1122 – 8/11/2026 / COEN – INDECI / 22:15 HORAS HUAICO EN EL DISTRITO DE HUAYNACOTAS – AREQUIPA",
         "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-preliminar-n-1122-8-11-2026-coen-indeci-2215-horas-huaico-en-el-distrito-de-huaynacotas-arequipa/",
@@ -482,15 +487,10 @@
         "titulo": "REPORTE COMPLEMENTARIO N.º 15659 – 8/11/2026 / COEN – INDECI / 16:30 HORAS (Reporte N.º 2) INCENDIO FORESTAL EN EL DISTRITO DE LIVITACA – CUSCO",
         "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-o-12739-23-9-2026-coen-indeci-0130-horas-reporte-n-o-1-incendio-forestal-en-el-distrito-de-livitaca-cusco/",
         "fecha": "2026-11-08T21:52"
-      },
-      {
-        "titulo": "REPORTE COMPLEMENTARIO N.° 15658 – 8/11/2026 / COEN-INDECI / 16:00 HORAS (Reporte N.º 1) INCENDIO URBANO EN EL DISTRITO DE LURIGANCHO CHOSICA – LIMA METROPOLITANA",
-        "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-15658-8-11-2026-coen-indeci-1600-horas-reporte-n-o-1-incendio-urbano-en-el-distrito-de-lurigancho-chosica-lima-metropolitana/",
-        "fecha": "2026-11-08T21:41"
       }
     ],
     "url": "https://portal.indeci.gob.pe/emergencias/",
-    "leido": "2026-11-09T03:31:02Z"
+    "leido": "2026-11-09T03:35:15Z"
   },
   "escenario": {
     "vigente": true,
@@ -3104,7 +3104,7 @@
       }
     },
     "url": "https://sigrid.cenepred.gob.pe/sigridv3/escenario-aviso",
-    "leido": "2026-11-09T03:31:04Z"
+    "leido": "2026-11-09T03:35:18Z"
   },
   "quebradas": {
     "fecha": "2026-11-08",
@@ -4260,7 +4260,7 @@
     },
     "sin_cruce": 12,
     "url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico",
-    "leido": "2026-11-09T03:31:11Z"
+    "leido": "2026-11-09T03:35:27Z"
   },
   "hidro": {
     "avisos": [
@@ -4290,7 +4290,7 @@
       }
     ],
     "url": "https://www.senamhi.gob.pe/?p=aviso-hidrologico",
-    "leido": "2026-11-09T03:31:12Z"
+    "leido": "2026-11-09T03:35:28Z"
   },
   "ana_rios": {
     "estaciones": [
@@ -18460,7 +18460,7 @@
       }
     },
     "url": "https://visor.geoperu.gob.pe/",
-    "leido": "2026-11-09T03:31:21Z"
+    "leido": "2026-11-09T03:35:29Z"
   },
   "agua": {
     "total": 66,
@@ -19334,7 +19334,7 @@
       }
     },
     "url": "https://www.sunass.gob.pe/",
-    "leido": "2026-11-09T03:31:21Z"
+    "leido": "2026-11-09T03:35:30Z"
   },
   "incendios": {
     "total": 34,
@@ -19647,7 +19647,7 @@
       }
     ],
     "url": "https://geo.serfor.gob.pe/visor/",
-    "leido": "2026-11-09T03:31:21Z"
+    "leido": "2026-11-09T03:35:31Z"
   },
   "phisis": {
     "estaciones": [
@@ -21877,7 +21877,7 @@
       "clasificacion": 99.88
     },
     "url": "http://met.igp.gob.pe/variabclim/",
-    "leido": "2026-11-09T03:31:22Z"
+    "leido": "2026-11-09T03:35:33Z"
   },
   "dhn": {
     "generado": "2026-11-06T16:10:08Z",
@@ -22389,7 +22389,7 @@
         }
       ]
     },
-    "leido": "2026-11-09T03:31:22Z"
+    "leido": "2026-11-09T03:35:34Z"
   },
   "inaigem": {
     "estaciones": [
@@ -22427,7 +22427,7 @@
       }
     ],
     "url": "https://www.inaigem.gob.pe/",
-    "leido": "2026-11-09T03:31:23Z"
+    "leido": "2026-11-09T03:35:34Z"
   },
   "enfen_docs": {
     "docs": [
