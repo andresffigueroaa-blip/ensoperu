@@ -100,20 +100,21 @@ function pintarPortada(){
   // Indicadores
   const u = D.atm;                  // última fila no vacía de cada columna
   const ultimo = k => { if (!u) return null; for (let i = u.fechas.length - 1; i >= 0; i--) if (u.cols[k]?.[i] !== null && u.cols[k]?.[i] !== undefined) return { valor: u.cols[k][i], fecha: u.fechas[i] }; return null; };
+  const OISST = "https://psl.noaa.gov/data/gridded/data.noaa.oisst.v2.highres.html", CPCI = "https://www.cpc.ncep.noaa.gov/data/indices/";
   const kp = [
-    ["Mar, Niño 1+2", I.n12?.valor, " °C", I.n12?.fecha, "Frente a la costa norte. Media de 7 días"],
-    ["Mar, Niño 3.4", I.n34?.valor, " °C", I.n34?.fecha, "Pacífico central. Media de 7 días"],
-    ["ICEN", I.icen?.valor, "", I.icen?.fecha, I.icen?.magnitud || "Índice oficial de la costa"],
-    ["RONI", I.roni?.valor, "", I.roni?.fecha, "Pacífico central, índice oficial de NOAA"],
-    ["Calor 0-300 m", ultimo("calor")?.valor, " °C", ultimo("calor")?.fecha, "Reserva de calor bajo el mar"],
-    ["SOI", ultimo("soi")?.valor, "", ultimo("soi")?.fecha, "Negativo: la atmósfera acompaña a El Niño"],
+    ["Mar, Niño 1+2: anomalía", I.n12?.valor, " °C", I.n12?.fecha, "Frente a la costa norte. Media de 7 días" + cpcSemanal("n12"), "Cálculo ENSO Perú con NOAA OISST v2.1, normal 1991-2020", OISST],
+    ["Mar, Niño 3.4: anomalía", I.n34?.valor, " °C", I.n34?.fecha, "Pacífico central. Media de 7 días" + cpcSemanal("n34"), "Cálculo ENSO Perú con NOAA OISST v2.1, normal 1991-2020", OISST],
+    ["ICEN", I.icen?.valor, "", I.icen?.fecha, I.icen?.magnitud || "Índice oficial de la costa", "IGP para el ENFEN", "https://www.igp.gob.pe/servicios/obs-enso/descarga-de-datos/icen"],
+    ["RONI", I.roni?.valor, "", I.roni?.fecha ? I.roni.fecha.slice(0, 7) : null, "Pacífico central, índice oficial de NOAA desde febrero de 2026; trimestre que termina en ese mes", "NOAA CPC", "https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/enso/roni/"],
+    ["Calor 0-300 m", ultimo("calor")?.valor, " °C", ultimo("calor")?.fecha, "Reserva de calor bajo el mar, 180° a 100° O", "NOAA CPC (GODAS)", CPCI],
+    ["SOI", ultimo("soi")?.valor, "", ultimo("soi")?.fecha, "Negativo: la atmósfera acompaña a El Niño", "NOAA CPC", CPCI],
   ];
-  $("#kpis").innerHTML = kp.map(([n, v, un, f, d]) => `<div><dt>${esc(n)}</dt>
+  $("#kpis").innerHTML = kp.map(([n, v, un, f, d, fu, url]) => `<div><dt>${esc(n)}</dt>
     <dd ${v === null || v === undefined ? 'class="pend"' : ""}>${v === null || v === undefined ? "sin dato" : sg(v) + un}</dd>
-    <small>${esc(d)}${f ? " · " + fecha(f) : ""}</small></div>`).join("");
+    <small>${esc(d)}${f ? " · " + fecha(f) : ""} · <a href="${url}" target="_blank" rel="noopener">${esc(fu)}</a></small></div>`).join("");
 
   // Lectura del día
-  $("#lectura").innerHTML = (P?.lectura || []).map(t => `<li>${esc(t)}</li>`).join("");
+  $("#lectura").innerHTML = (P?.lectura || []).map(t => `<li>${conCita(t)}</li>`).join("");
   pintarMisLugares();
 
   // Avisos del SENAMHI
@@ -147,7 +148,7 @@ function pintarPortada(){
   $("#tabla-regiones").innerHTML = `<tr><th>Región</th><th>Aviso</th><th>Mar</th><th>Lluvia, 16 días</th><th>Focos, 7 días</th><th>Tendencia de lluvia, próximo mes</th><th>Ríos en crecida</th></tr>`
     + filas.map(([id, r]) => `<tr onclick="abrirLugar('${id}')" tabindex="0" onkeydown="if(event.key==='Enter')abrirLugar('${id}')">
       <td><b>${esc(r.nombre)}</b></td>
-      <td>${r.aviso ? `<span class="chip ${NIVEL_AVISO[r.aviso]}">${esc(r.aviso[0] + r.aviso.slice(1).toLowerCase())}${r.aviso_tipo ? ` · ${esc(r.aviso_tipo)}` : ""}</span>${r.aviso_desde ? `<small class="sub-td">desde el ${fecha(r.aviso_desde)}</small>` : ""}` : '<span class="chip sin">–</span>'}</td>
+      <td>${r.aviso ? `<span class="chip ${NIVEL_AVISO[r.aviso]}">${esc(r.aviso[0] + r.aviso.slice(1).toLowerCase())}${r.aviso_tipo ? ` · ${esc(r.aviso_tipo)}` : ""}</span>${r.aviso_numero ? `<small class="sub-td"><a href="${esc(r.aviso_url)}" target="_blank" rel="noopener">aviso N° ${r.aviso_numero}</a></small>` : ""}${r.aviso_desde ? `<small class="sub-td">desde el ${fecha(r.aviso_desde)}</small>` : ""}` : '<span class="chip sin">–</span>'}</td>
       <td>${r.mar === null || r.mar === undefined ? "–" : `${sg(r.mar)} °C ${chipNivel(r.n_mar)}`}</td>
       <td>${r.lluvia16 === null || r.lluvia16 === undefined ? "–" : `${Math.round(r.lluvia16)} mm ${chipNivel(r.n_lluvia)}`}</td>
       <td>${r.focos} ${chipNivel(r.n_focos)}</td>
@@ -156,7 +157,7 @@ function pintarPortada(){
 
   // Rankings
   const rr = P?.rios_altos || [];
-  $("#rios-sub").textContent = "Máximo en 15 días frente a su historia 1984-2023. GloFAS, un modelo global: orienta, no mide.";
+  $("#rios-sub").textContent = "Máximo en 15 días frente a su percentil 90 y 99 de 1984-2023 (cálculo ENSO Perú con GloFAS). Un modelo global: orienta, no mide.";
   $("#rank-rios").innerHTML = (rr.length > 8 ? `<p class="f-nota">${rr.length} ríos; se muestran 8. <button class="enlace" onclick="ir('rios')">Ver todos en Ríos</button></p>` : "") + rr.slice(0, 8).map(r => `<div class="rank-f" onclick="abrirLugar('${r.region}')"><span>${dibujo("rio")} <b>${esc(r.nombre)}</b> <small>${esc(r.lugar)}</small></span><span>${entero(Math.round(r.pico))} m³/s ${chipNivel(r.nivel)}</span></div>`).join("")
     || `<p class="f-txt">Sin crecidas inusuales pronosticadas en los ríos vigilados.</p>`;
   $("#rank-lluvia").innerHTML = (P?.top_lluvia || []).slice(0, 8).map(r => `<div class="rank-f" onclick="abrirLugar('${r.id}')"><span><b>${esc(r.nombre)}</b> <small>${esc(r.region)}</small></span><span>${Math.round(r.total)} mm</span></div>`).join("");
@@ -168,9 +169,9 @@ function pintarPortada(){
     const R = O.escenario?.resumen || {};
     $("#portada-estado").innerHTML = [
       tarjetaKpi("Emergencias, 7 días", entero(O.coen?.total), "INDECI", "ir('vivo')"),
-      tarjetaKpi("Distritos en riesgo muy alto por lluvia", O.escenario?.vigente ? entero(R.MA?.distritos || 0) : "Sin escenario", O.escenario?.vigente ? `${entero(R.MA?.poblacion || 0)} personas · CENEPRED` : "Sin aviso vigente · CENEPRED", "abrirCapa('esc')"),
-      tarjetaKpi("Ríos en crecida sobre umbral", entero((D.rios?.conteo?.alerta || 0) + (D.rios?.conteo?.emergencia || 0)), `${entero(D.rios?.conteo?.nivel_bajo || 0)} con nivel bajo · ANA y SENAMHI`, "ir('rios')"),
-      tarjetaKpi("Distritos en estado de emergencia", entero(Object.keys(O.emergencia?.distritos || {}).length), "PCM", "abrirCapa('dee')"),
+      tarjetaKpi("Distritos en riesgo muy alto por lluvia", escVigente(O.escenario) ? entero(R.MA?.distritos || 0) : "Sin escenario", escVigente(O.escenario) ? `${entero(R.MA?.poblacion || 0)} habitantes en esos distritos · CENEPRED, suma de escenarios vigentes` : "Sin aviso vigente · CENEPRED", "abrirCapa('esc')"),
+      tarjetaKpi("Ríos en crecida sobre umbral", entero((D.rios?.conteo?.alerta || 0) + (D.rios?.conteo?.emergencia || 0)), `${entero(D.rios?.conteo?.nivel_bajo || 0)} con nivel bajo · cálculo ENSO Perú con lecturas de la ANA y el SENAMHI`, "ir('rios')"),
+      tarjetaKpi("Distritos en estado de emergencia", entero(Object.keys(O.emergencia?.distritos || {}).length), esc(decretosTxt(O.emergencia) || "PCM") + " · según capas publicadas por la ANA", "abrirCapa('dee')"),
     ].join("");
   }
 
@@ -262,7 +263,7 @@ async function pintarComparar(){
   llenarBuscador();
   const a = idDeTexto($("#comp-a").value), b = idDeTexto($("#comp-b").value);
   const res = $("#comp-res");
-  if (!a || !b){ res.innerHTML = `<p class="f-txt">Escribe y elige dos lugares de la lista. Por ejemplo, Piura y Puno muestran las dos caras de El Niño: exceso de lluvia en el norte, déficit en el altiplano.</p>`; return; }
+  if (!a || !b){ res.innerHTML = `<p class="f-txt">Escribe y elige dos lugares de la lista. Por ejemplo, Piura y Puno: en los Niños fuertes la lluvia suele aumentar en la costa norte y faltar en el altiplano (Lavado y Espinoza, 2014, Rev. Bras. Meteorol., doi:10.1590/S0102-77862014000200003).</p>`; return; }
   const [A, B] = await Promise.all([datosLugar(a), datosLugar(b)]);
   const fila = (n, fa, fb) => `<tr><th>${n}</th><td>${fa ?? "–"}</td><td>${fb ?? "–"}</td></tr>`;
   const ev = (X, id) => X.clima?.eventos?.find(e => e.id === id);
@@ -272,7 +273,7 @@ async function pintarComparar(){
     <tr><th></th><th>${esc(A.u.nombre)}<small>${esc(A.u.region_nombre || "Región")}</small></th><th>${esc(B.u.nombre)}<small>${esc(B.u.region_nombre || "Región")}</small></th></tr>
     ${fila("Mar frente a la costa", ...f(X => X.reg?.mar === null || X.reg?.mar === undefined ? null : `${sg(X.reg.mar)} °C ${chipNivel(X.reg.n_mar)}`))}
     ${fila("Lluvia, próximos 16 días", ...f(X => X.ll ? `${Math.round(X.ll.total)} mm` : null))}
-    ${fila("Días de lluvia fuerte, 16 días", ...f(X => X.ll ? X.ll.dias_fuertes : null))}
+    ${fila("Días con más de 20 mm en algún punto, 16 días (modelo)", ...f(X => X.ll ? X.ll.dias_fuertes : null))}
     ${fila("Lluvia, últimos 30 días (modelo)", ...f(X => X.ll?.ult30 !== undefined ? `${Math.round(X.ll.ult30)} mm` : null))}
     ${fila("Temperatura máxima, próximos 7 días", ...f(X => X.ll?.tmax7 !== undefined ? `${String(X.ll.tmax7).replace(".", ",")} °C` : null))}
     ${fila("Focos de calor, 7 días", ...f(X => X.inc?.focos ?? 0))}
@@ -293,7 +294,7 @@ window.pintarComparar = pintarComparar;
 /* ── Fuentes (Acerca de) ────────────────────────────────────────────────── */
 function pintarFuentes(){
   const filas = [
-    ["Alerta y comunicados", "ENFEN", "Oficial", "Cada ~15 días"], ["Avisos meteorológicos", "SENAMHI", "Oficial", "Diario"],
+    ["Alerta y comunicados", "ENFEN", "Oficial", "Según su calendario (el comunicado dice la fecha del próximo)"], ["Avisos meteorológicos", "SENAMHI", "Oficial", "Diario"],
     ["ICEN", "IGP / ENFEN", "Oficial", "Mensual"], ["Riesgo por inundación y movimientos en masa", "CENEPRED (SIGRID)", "Oficial", "Por campaña"],
     ["Temperatura del mar, 25 km", "NOAA OISST v2.1", "Observado", "Diario"], ["ONI, RONI, SOI, OLR, vientos, calor", "NOAA CPC", "Observado", "Mensual"],
     ["MEI, PDO", "NOAA PSL, NCEI", "Observado", "Mensual"], ["Focos de calor", "NASA FIRMS (VIIRS)", "Satélite", "Diario"],

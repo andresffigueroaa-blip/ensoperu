@@ -452,6 +452,9 @@ def ejecutar(estado: dict) -> dict:
     for clave, f in BLOQUES.items():
         if en_actions and clave in SOLO_DESDE_PERU and clave in previo:
             salida[clave] = previo[clave]          # se conserva la lectura del robot del Perú, con su hora
+            leido = previo[clave].get("leido")
+            if leido and (dt.datetime.now(dt.timezone.utc) - dt.datetime.fromisoformat(leido.replace("Z", "+00:00"))).total_seconds() > 36 * 3600:
+                salida[clave] = {**previo[clave], "atrasado": True}   # el robot del Perú no lo renueva hace más de 36 h
             continue
         try:
             salida[clave] = {**f(idx), "leido": ahora_utc()}

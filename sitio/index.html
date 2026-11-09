@@ -137,7 +137,7 @@
     <section class="bloque">
       <div class="thermo"></div>
       <h2>Las 25 regiones, hoy</h2>
-      <p class="sub">Haz clic en una región para abrir su ficha. Los niveles siguen reglas fijas y no son pronósticos. El aviso es el más alto que nombra su zona (costa norte, sierra sur...): el área exacta está en el aviso oficial.</p>
+      <p class="sub">Haz clic en una región para abrir su ficha. Los niveles de mar, lluvia y focos son un <b>criterio propio de ENSO Perú, no oficial</b> (pasa el cursor sobre cada uno para ver la regla); no son pronósticos ni niveles de riesgo del CENEPRED. La lluvia es la de modelos globales y no se mezcla con los avisos. El aviso es el más alto que nombra su zona (costa norte, sierra sur...): el área exacta está en el aviso oficial.</p>
       <div class="tabla-scroll"><table class="tabla tabla-reg" id="tabla-regiones"></table></div>
     </section>
 
@@ -311,14 +311,14 @@
 
     <section class="panel-g">
       <h2>Vientos en el Pacífico ecuatorial</h2>
-      <p class="sub">Anomalía del viento zonal a 850 hPa (m/s, CPC). Negativo: los alisios se debilitan, lo que favorece y sostiene a El Niño.</p>
+      <p class="sub">Índice de alisios a 850 hPa en el Pacífico central (m/s, <a href="https://www.cpc.ncep.noaa.gov/data/indices/Readme.index.shtml" target="_blank" rel="noopener">NOAA CPC</a>; positivo = alisios del este más fuertes). Negativo: los alisios se debilitan, lo que favorece y sostiene a El Niño.</p>
       <svg id="g-viento" viewBox="0 0 1200 300" preserveAspectRatio="none" aria-label="Vientos"></svg>
       <div class="leyenda" id="g-viento-ley"></div>
     </section>
 
     <section class="panel-g">
       <h2>La atmósfera responde: SOI y nubosidad</h2>
-      <p class="sub">SOI: presión entre Tahití y Darwin; negativo persistente es señal de El Niño. OLR: radiación saliente en el Pacífico central; negativo indica más nubes y lluvia. Ambos estandarizados (CPC).</p>
+      <p class="sub">SOI: presión entre Tahití y Darwin; negativo persistente es señal de El Niño. OLR: radiación saliente en el Pacífico central; negativo indica más nubes y lluvia. Ambos estandarizados (<a href="https://www.cpc.ncep.noaa.gov/data/indices/" target="_blank" rel="noopener">NOAA CPC</a>).</p>
       <svg id="g-atm" viewBox="0 0 1200 300" preserveAspectRatio="none" aria-label="SOI y OLR"></svg>
       <div class="leyenda" id="g-atm-ley"></div>
     </section>

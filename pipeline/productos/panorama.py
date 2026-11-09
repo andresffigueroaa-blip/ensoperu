@@ -33,9 +33,10 @@ ORDEN_N = {"bajo": 0, "medio": 1, "alto": 2, "muy alto": 3}
 def tipo_peligro(titulo: str) -> str:
     """El peligro de un aviso del SENAMHI, por su título."""
     t = titulo.lower()
-    for clave, pat in (("lluvia", r"precipitac|lluvia|nevada|granizo|tormenta"), ("calor", r"temperatura diurna|calor"),
-                       ("frío", r"temperatura nocturna|heladas|friaje|descenso de temperatura"), ("viento", r"viento"),
-                       ("oleaje", r"oleaje")):
+    # El orden importa: "descenso de temperatura diurna" es frío y "viento ... friaje" es viento
+    for clave, pat in (("lluvia", r"precipitac|lluvia|nevada|granizo|tormenta"), ("viento", r"viento"), ("oleaje", r"oleaje"),
+                       ("frío", r"descenso de temperatura|temperatura nocturna|heladas|friaje"),
+                       ("calor", r"incremento de temperatura|temperatura diurna|calor")):
         if re.search(pat, t):
             return clave
     return "otro"
@@ -106,12 +107,10 @@ def ejecutar(estado: dict) -> dict:
         de_lluvia = [a for a in suyos if tipo_peligro(a["titulo"]) == "lluvia"]
         vig_ll = [a for a in de_lluvia if a["inicio"] <= hoy().isoformat()] or de_lluvia
         top_ll = max(vig_ll, key=lambda a: RANGO_AVISO[a["nivel"]], default=None)
-        # Si el SENAMHI tiene aviso de lluvia, el nivel de lluvia no puede decir "bajo"
-        lluvia_aviso = max((RANGO_AVISO[a["nivel"]] for a in suyos if tipo_peligro(a["titulo"]) == "lluvia"), default=0)
+        # El nivel de lluvia es solo del modelo (criterio ENSO Perú); el aviso oficial va en su propia columna, sin mezclarse
         n_ll = _nivel(at["lluvia"], df)
-        if lluvia_aviso and (n_ll is None or ORDEN_N[n_ll] < lluvia_aviso):
-            n_ll = ["bajo", "medio", "alto", "muy alto"][lluvia_aviso]
         regiones[i] = {"nombre": rj.get("nombre", x["nombre"]), "zona": rj.get("z"), "aviso": aviso, "aviso_tipo": aviso_tipo, "aviso_desde": aviso_desde,
+                       "aviso_numero": top["numero"] if top else None, "aviso_url": top["enlace"] if top else None,
                        "aviso_lluvia": top_ll["nivel"] if top_ll else None,
                        "aviso_lluvia_desde": top_ll["inicio"] if top_ll and top_ll["inicio"] > hoy().isoformat() else None,
                        "mar": tsm, "n_mar": _nivel(at["mar"], tsm) if tsm is not None else None,
@@ -128,46 +127,64 @@ def ejecutar(estado: dict) -> dict:
     ind = estado_j.get("indices", {})
     def n(x, dec=1):
         return ("+" if x > 0 else "−" if x < 0 else "") + f"{abs(x):.{dec}f}".replace(".", ",")
+    # Cada frase lleva su fuente, la fecha del dato y el enlace: el boletín se imprime y se reenvía sin la web
     lectura = []
+    def frase(t, fuente, fecha, url):
+        lectura.append({"t": t, "fuente": fuente, "fecha": fecha or "", "url": url})
+    def dia(f, anio=False):
+        a, m_, d = f[:10].split("-")
+        return f"{int(d)} de {MESES[int(m_) - 1]}" + (f" de {a}" if anio else "")
     if enfen:
         tit = re.sub(r"\bel niño", "El Niño", enfen.get("titular", "").capitalize(), flags=re.I)
-        a, m_, d = enfen["fecha"].split("-")
-        cuando = f"{int(d)} de {MESES[int(m_) - 1]} de {a}"
-        lectura.append(f"El ENFEN mantiene la {enfen['alerta']} ({enfen['id']}, {cuando}). {tit}.")
+        frase(f"Estado vigente según el ENFEN: {enfen['alerta']} (comunicado oficial {enfen['id']}, {dia(enfen['fecha'], True)}). {tit}.",
+              f"ENFEN, comunicado oficial {enfen['id']}", enfen["fecha"], enfen.get("url"))
     if ind.get("n12", {}).get("valor") is not None:
-        lectura.append(f"Mar: {n(ind['n12']['valor'])} °C en Niño 1+2 y {n(ind['n34']['valor'])} °C en Niño 3.4 (media de 7 días).")
+        frase(f"Mar: anomalía de {n(ind['n12']['valor'])} °C en Niño 1+2 y {n(ind['n34']['valor'])} °C en Niño 3.4 "
+              f"(media de 7 días al {dia(ind['n12']['fecha'])}, frente a la normal 1991-2020).",
+              "Cálculo ENSO Perú con NOAA OISST v2.1", ind["n12"].get("fecha"), "https://psl.noaa.gov/data/gridded/data.noaa.oisst.v2.highres.html")
     if avisos:
-        lectura.append(f"SENAMHI tiene {len(avisos)} avisos vigentes o por empezar, {len(rojos)} en nivel rojo.")
+        av = leer_json(DATOS / "senamhi" / "avisos.json") or {}
+        frase(f"El SENAMHI tiene {len(avisos)} avisos meteorológicos vigentes o por empezar, {len(rojos)} en nivel rojo "
+              f"(de todo tipo: lluvia, temperatura, viento).", "SENAMHI, avisos meteorológicos", av.get("leido"), av.get("url"))
     if top_lluvia:
         p = prov(top_lluvia[0])
-        lectura.append(f"Lluvia próxima: la mayor en 16 días es {p['nombre']} ({p['region']}), con {ll[top_lluvia[0]]['total']:.0f} mm.")
+        frase(f"Lluvia pronosticada por modelos para los próximos 16 días: el mayor acumulado es {p['nombre']} ({p['region']}), "
+              f"con {ll[top_lluvia[0]]['total']:.0f} mm. Es un modelo, no un aviso del SENAMHI.",
+              lluvia.get("fuente", "Open-Meteo"), lluvia.get("emitido"), "https://open-meteo.com/en/docs")
+    mon = leer_json(DATOS / "rios" / "monitoreo.json") or {}
     if rios_altos:
-        crecidas_ana = (leer_json(DATOS / "rios" / "monitoreo.json") or {}).get("conteo", {})
-        medidas = (crecidas_ana.get("alerta", 0) + crecidas_ana.get("emergencia", 0))
-        lectura.append(f"Ríos: el modelo global GloFAS pronostica caudales por encima de lo habitual en {len(rios_altos)}, entre ellos "
-                       f"{', '.join(r['nombre'] for r in rios_altos[:4])}; es orientativo. "
-                       + (f"La ANA y el SENAMHI miden {medidas} ríos sobre su umbral de crecida." if medidas else "La ANA y el SENAMHI no miden ríos sobre su umbral de crecida."))
+        medidas = mon.get("conteo", {}).get("alerta", 0) + mon.get("conteo", {}).get("emergencia", 0)
+        pron = leer_json(DATOS / "rios" / "pronostico.json") or {}
+        frase(f"Ríos: el modelo global GloFAS pronostica caudales por encima de su percentil 90 anual (1984-2023) en {len(rios_altos)}, entre ellos "
+              f"{', '.join(r['nombre'] for r in rios_altos[:4])}; es orientativo. "
+              + (f"En la última lectura, {medidas} estaciones de la ANA y el SENAMHI están sobre su umbral de crecida."
+                 if medidas else "En la última lectura, ninguna estación de la ANA ni del SENAMHI está sobre su umbral de crecida."),
+              "GloFAS (Copernicus) vía Open-Meteo; lecturas de la ANA y el SENAMHI", mon.get("actualizado") or pron.get("emitido"),
+              "https://www.globalfloods.eu/")
     # Lo que reporta el Estado (peru_oficial)
     of = leer_json(DATOS / "peru" / "oficial.json") or {}
     esc_ = of.get("escenario") or {}
-    if esc_.get("vigente"):
+    vigentes = [e for e in esc_.get("escenarios", []) if e["fin_vigencia"][:10] >= hoy().isoformat()]
+    if esc_.get("vigente") and vigentes:
         ma = (esc_.get("resumen") or {}).get("MA") or {}
-        fines = sorted({e["fin_vigencia"][:10] for e in esc_["escenarios"]})
-        def dia(f):
-            a, m_, d = f.split("-")
-            return f"{int(d)} de {MESES[int(m_) - 1]}"
-        hasta = dia(fines[0]) if len(fines) == 1 else f"entre el {dia(fines[0])} y el {dia(fines[-1])}"
+        fines = sorted({e["fin_vigencia"][:10] for e in vigentes})
+        hasta = f"hasta el {dia(fines[0])}" if len(fines) == 1 else f"con vigencias hasta el {dia(fines[0])} y el {dia(fines[-1])}"
         if ma.get("distritos"):
             pob = f"{ma.get('poblacion', 0):,}".replace(",", " ")
-            lectura.append(f"CENEPRED: {ma['distritos']} distritos en riesgo muy alto por la lluvia hasta {"el " + hasta if len(fines) == 1 else hasta}, con {pob} personas.")
+            n_esc = "del escenario" if len(vigentes) == 1 else f"de los {len(vigentes)} escenarios vigentes"
+            frase(f"CENEPRED: {ma['distritos']} distritos en riesgo muy alto por lluvia, {hasta}; en ellos viven {pob} personas "
+                  f"(suma ENSO Perú {n_esc}, sin repetir distritos).", "CENEPRED, escenarios de riesgo ante el aviso de lluvias",
+                  esc_.get("leido"), esc_.get("url"))
     if (of.get("coen") or {}).get("total"):
         c = of["coen"]
         principal = next(iter(c.get("por_peligro", {})), "")
-        lectura.append(f"INDECI registró {c['total']} emergencias en 7 días; la más frecuente: {principal.lower()}.")
+        frase(f"El INDECI registró {c['total']} emergencias en 7 días; la más frecuente: {principal.lower()}. No todas se deben a El Niño.",
+              "INDECI, COEN, registro de emergencias", c.get("leido"), c.get("url"))
     if top_focos:
         p = prov(top_focos[0])
         total = sum(fo[i]["focos"] for i in provincias if i in fo)
-        lectura.append(f"Focos de calor: {total} en 7 días; el mayor número en {p['nombre']} ({p['region']}), {fo[top_focos[0]]['focos']}.")
+        frase(f"Focos de calor detectados por satélite: {total} en 7 días; el mayor número en {p['nombre']} ({p['region']}), {fo[top_focos[0]]['focos']}.",
+              inc.get("fuente", "NASA FIRMS"), inc.get("hasta"), "https://firms.modaps.eosdis.nasa.gov/")
 
     salida = {
         "_": "Generado por pipeline/productos/panorama.py. No editar a mano.",

@@ -14,16 +14,16 @@ mar:
   nombre: Mar cálido
   unidad: "°C"
   cortes: [1.0, 2.0, 3.0]
-  regla: "Anomalía de temperatura del mar frente al litoral (media de 7 días). Menos de +1 °C bajo, +1 a +2 medio, +2 a +3 alto, más de +3 muy alto."
+  regla: "Criterio propio de ENSO Perú, no oficial: anomalía de temperatura del mar a menos de 110 km del litoral (NOAA OISST, media de 7 días). Menos de +1 °C bajo, +1 a +2 medio, +2 a +3 alto, más de +3 muy alto."
 
 incendios:
   nombre: Incendios
   unidad: focos en 7 días
   cortes: [1, 10, 50]
-  regla: "Focos de calor detectados por satélite en los últimos 7 días. Ninguno bajo, 1 a 9 medio, 10 a 49 alto, 50 o más muy alto."
+  regla: "Criterio propio de ENSO Perú, no oficial: focos de calor detectados por satélite (NASA FIRMS) en los últimos 7 días. Ninguno bajo, 1 a 9 medio, 10 a 49 alto, 50 o más muy alto."
 
 lluvia:
   nombre: Lluvia próxima
   unidad: "días con más de 20 mm en 16 días"
   cortes: [1, 3, 6]
-  regla: "Días con lluvia fuerte (más de 20 mm) en el pronóstico de 16 días. Ninguno bajo, 1 a 2 medio, 3 a 5 alto, 6 o más muy alto. Provisional: se reemplazará por la comparación con la lluvia normal del lugar."
+  regla: "Criterio propio de ENSO Perú, no oficial: días con más de 20 mm en alguno de los 3 puntos de la unidad, en el pronóstico de 16 días de Open-Meteo. Ninguno bajo, 1 a 2 medio, 3 a 5 alto, 6 o más muy alto. No es la categoría de lluvia del SENAMHI, que usa percentiles por estación."

@@ -35,6 +35,29 @@ def _rss(q: str, idioma: str) -> str:
 # "El Niño" con mayúsculas: "el niño de 5 años" no es la noticia que se busca
 TOCA_TEMA = re.compile(r"\bEl Niño\b(?! de \d)|\bENFEN\b|[Ff]en[óo]meno El|[Ss]enamhi|SENAMHI|INDECI|[Hh]uaico|[Ii]nundaci[óo]n|[Dd]esborde"
                        r"|[Ii]ncendios? forestal|[Aa]nchoveta|[Ss]equ[íi]a|[Ll]luvias? (?:intensa|fuerte)|\bflood|\bdrought|\bwildfire")
+FUERTE = re.compile(r"\bEl Ni[ñn]o\b(?! de \d)|\bENFEN\b|[Ff]en[óo]meno El")
+# Contenido pagado, deportes, relleno de EE. UU., redes sociales y páginas institucionales fijas: no son noticia
+RUTA_FUERA = re.compile(r"/(publirreportaje|campanas|patrocinado|branded|deportes?|futbol|mag/usa)/", re.I)
+MEDIO_FUERA = re.compile(r"^(facebook|instagram|tiktok|youtube|x|twitter|welcome to the united nations|the old farmer)", re.I)
+# El ámbito sale del titular, no del canal: un medio peruano también publica notas de Ecuador o Florida
+EN_EL_PERU = re.compile(r"\bPer[úu]\b|peruan|\bENFEN\b|SENAMHI|Senamhi|INDECI|\bCOEN\b|\bLima\b|Callao|Tumbes|Piura|Lambayeque|La Libertad"
+                        r"|Cajamarca|Amazonas|Loreto|San Mart[íi]n|[ÁA]ncash|Hu[áa]nuco|Pasco|Jun[íi]n|Ucayali|Huancavelica|\bIca\b"
+                        r"|Ayacucho|Apur[íi]mac|Cusco|Madre de Dios|Arequipa|Moquegua|Tacna|Puno|Titicaca|Chosica|R[íi]mac")
+FUERA_DEL_PERU = re.compile(r"Ecuador|Chile|Colombia|Bolivia|Argentina|M[ée]xico|Estados Unidos|EE\. ?UU|Florida|California|Los [ÁA]ngeles"
+                            r"|Texas|Pakist[áa]n|Indonesia|Australia|\bIndia\b|Espa[ñn]a|Brasil|\bU\.?S\.?\b")
+
+
+def _ambito(titulo: str, ambito: str) -> str:
+    return "internacional" if FUERA_DEL_PERU.search(titulo) and not EN_EL_PERU.search(titulo) else ambito
+
+
+def _vale(titulo: str, enlace: str, medio: str, ambito: str) -> bool:
+    """Entra si toca el tema, no es contenido pagado ni de redes, y si es de fuera del Perú habla de El Niño."""
+    if not TOCA_TEMA.search(titulo) or RUTA_FUERA.search(enlace or "") or MEDIO_FUERA.match(medio or ""):
+        return False
+    return ambito == "nacional" or bool(FUERTE.search(titulo))
+
+
 TEMAS = [("incendios", r"incendio|wildfire"), ("mar", r"anchoveta|pesca|oleaje|\bmar\b"), ("agro", r"cultivo|agr[ií]col|agricultor|ganad|arroz|mango|lim[oó]n"),
          ("agua", r"embalse|represa|sequ[íi]a|titicaca|drought|caudal"), ("oficial", r"enfen|indeci|decreto|estado de emergencia"), ("lluvias", r".")]
 
@@ -70,7 +93,8 @@ def _canales(cfg: dict, vistas: dict) -> list[dict]:
         for it in items:
             titulo = html.unescape(it.findtext("title") or "").strip()
             enlace = (it.findtext("link") or "").strip()
-            if not titulo or not enlace.startswith("https://") or not TOCA_TEMA.search(titulo):
+            ambito = _ambito(titulo, c["ambito"])
+            if not titulo or not enlace.startswith("https://") or not _vale(titulo, enlace, c["medio"], ambito):
                 continue
             k = _norm(titulo)
             if k in vistas:
@@ -84,7 +108,7 @@ def _canales(cfg: dict, vistas: dict) -> list[dict]:
                 f, ts = hoy().isoformat(), ""
             img = _imagen(it)
             n = {"titulo": titulo, "medio": c["medio"], "fecha": f, "ts": ts, "enlace": enlace, "tema": _tema(titulo),
-                 "ambito": c["ambito"], "idioma": c.get("idioma", "es")}
+                 "ambito": ambito, "idioma": c.get("idioma", "es")}
             if img:
                 n["imagen"] = img.replace("http://", "https://", 1)
             vistas[k] = n
@@ -128,20 +152,23 @@ def ejecutar(estado: dict) -> dict:
             medio = (it.findtext("source") or "").strip()
             titulo = re.sub(rf"\s+-\s+{re.escape(medio)}$", "", titulo)
             k = _norm(titulo)
-            if not titulo or k in vistas or not TOCA_TEMA.search(titulo):
+            enlace, ambito = it.findtext("link"), _ambito(titulo, c["ambito"])
+            if not titulo or k in vistas or not _vale(titulo, enlace, medio, ambito):
                 continue
             vistas[k] = {}
             try:
                 f = email.utils.parsedate_to_datetime(it.findtext("pubDate")).date().isoformat()
             except (TypeError, ValueError):
                 f = hoy().isoformat()
-            nuevas.append({"titulo": titulo, "medio": medio, "fecha": f, "enlace": it.findtext("link"),
-                           "tema": c["tema"], "ambito": c["ambito"], "idioma": c.get("idioma", "es")})
+            nuevas.append({"titulo": titulo, "medio": medio, "fecha": f, "enlace": enlace,
+                           "tema": c["tema"], "ambito": ambito, "idioma": c.get("idioma", "es")})
     if fallas == len(cfg["consultas"]):
         raise ErrorFuente("Google Noticias no respondió a ninguna consulta")
     corte = (hoy() - dt.timedelta(days=DIAS_MAX)).isoformat()
-    # Las guardadas también pasan el filtro de tema (entraron antes de que existiera)
-    previas = [n for n in previas if TOCA_TEMA.search(n["titulo"])]
+    # Las guardadas también pasan los filtros (entraron antes de que existieran)
+    for n in previas:
+        n["ambito"] = _ambito(n["titulo"], n["ambito"])
+    previas = [n for n in previas if _vale(n["titulo"], n.get("enlace", ""), n.get("medio", ""), n["ambito"])]
     todas = sorted(nuevas + [n for n in previas if n["fecha"] >= corte], key=lambda n: (n["fecha"], n.get("ts", "")), reverse=True)[:MAX_GUARDADAS]
     todas = _sin_casi_duplicados(todas)
     escribir_json(SALIDA, {"_": "Generado por pipeline/fuentes/noticias.py. Titulares y enlaces; el contenido es de cada medio.",

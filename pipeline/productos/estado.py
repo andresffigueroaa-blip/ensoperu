@@ -62,7 +62,7 @@ def _magnitud_icen(v):
     if v is None:
         return None
     for corte, n in ((3.5, "Extraordinaria"), (2.1, "Fuerte"), (1.3, "Moderada"), (0.5, "Débil")):
-        if v > corte or (corte == 0.5 and v >= corte):
+        if v > corte:                     # NT ENFEN 01-2024, tabla 2: débil es "mayor que 0,5"
             return "Cálida " + n.lower()
     for corte, n in ((-1.3, "Fuerte"), (-1.1, "Moderada"), (-0.7, "Débil")):
         if v < corte:

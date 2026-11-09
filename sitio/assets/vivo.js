@@ -11,7 +11,7 @@ const NIVEL_ESC = { MA: ["Muy alto", "muyalto"], A: ["Alto", "alto"], M: ["Medio
 const PREP = { adecuado: ["Adecuada", "bajo"], parcial: ["Parcial", "medio"], critico: ["Crítica", "muyalto"], sin_informacion: ["Sin información", "sin"] };
 const SEMAFORO = { verde: "bajo", amarillo: "medio", naranja: "alto", rojo: "muyalto" };
 
-const fuenteDe = (b, nombre) => b ? `<p class="f-fuente">${esc(nombre)}${b.leido ? `, leído ${fechaHora(b.leido)}` : ""}${b.atrasado ? " · ⚠ la última lectura falló; se muestra la anterior" : ""}. ${b.url ? `<a href="${esc(b.url)}" target="_blank" rel="noopener">Ver la fuente</a>` : ""}</p>` : "";
+const fuenteDe = (b, nombre) => b ? `<p class="f-fuente">${esc(nombre)}${b.fecha ? `, dato del ${fecha(b.fecha)}` : ""}${b.leido ? `, consultado el ${fechaHora(b.leido)}` : ""}${b.atrasado ? " · ⚠ la última lectura falló; se muestra la anterior" : ""}. ${b.url ? `<a href="${esc(b.url)}" target="_blank" rel="noopener">Ver la fuente</a>` : ""}</p>` : "";
 function fechaHora(iso){
   try { return new Date(iso).toLocaleString("es-PE", { day: "numeric", month: "short", hour: "2-digit", minute: "2-digit", timeZone: "America/Lima" }); }
   catch (e) { return iso; }
@@ -37,17 +37,17 @@ function pintarVivo(){
 
   $("#vivo-kpis").innerHTML = [
     tarjetaKpi("Emergencias registradas, 7 días", entero(coen.total), "INDECI, COEN", "document.getElementById('vivo-coen').scrollIntoView()"),
-    tarjetaKpi("Distritos en riesgo muy alto por lluvia", esc0.vigente ? entero(R.MA?.distritos || 0) : "Sin escenario", esc0.vigente ? `${entero(R.MA?.poblacion || 0)} personas · CENEPRED` : "Sin aviso de lluvia vigente", "document.getElementById('vivo-esc').scrollIntoView()"),
+    tarjetaKpi("Distritos en riesgo muy alto por lluvia", escVigente(esc0) ? entero(R.MA?.distritos || 0) : "Sin escenario", escVigente(esc0) ? `${entero(R.MA?.poblacion || 0)} habitantes en esos distritos · CENEPRED, suma de escenarios vigentes` : "Sin aviso de lluvia vigente", "document.getElementById('vivo-esc').scrollIntoView()"),
     tarjetaKpi("Distritos con posible activación de quebradas", entero(quebr), "SENAMHI", "abrirCapa('queb')"),
-    tarjetaKpi("Ríos en crecida sobre umbral", entero(crecida), `${entero(cr.nivel_bajo || 0)} con nivel bajo (navegación) · ANA y SENAMHI`, "ir('rios')"),
-    tarjetaKpi("Distritos en estado de emergencia", entero(dee), Object.keys(O.emergencia?.decretos || {}).join(", ") || "PCM", "abrirCapa('dee')"),
-    tarjetaKpi("Cortes de agua en curso", entero(O.agua?.total), `${entero(O.agua?.conexiones)} conexiones · SUNASS`, "document.getElementById('vivo-agua').scrollIntoView()"),
+    tarjetaKpi("Ríos en crecida sobre umbral", entero(crecida), `${entero(cr.nivel_bajo || 0)} con nivel bajo (navegación) · cálculo ENSO Perú con lecturas de la ANA y el SENAMHI`, "ir('rios')"),
+    tarjetaKpi("Distritos en estado de emergencia", entero(dee), esc(decretosTxt(O.emergencia) || "PCM"), "abrirCapa('dee')"),
+    tarjetaKpi("Cortes de agua en curso", entero(O.agua?.total), `${entero(O.agua?.conexiones)} conexiones · SUNASS; un corte por empresa y distrito, sin los restablecidos (criterio ENSO Perú)`, "document.getElementById('vivo-agua').scrollIntoView()"),
     tarjetaKpi("Incendios forestales, 7 días", entero(O.incendios?.total), "SERFOR", null),
     tarjetaKpi("Lagunas glaciares en vigilancia", `${lagunas.length} de ${(O.inaigem?.estaciones || []).length}`, lagunas.length ? `En ${lagunas.map(l => l.semaforo).join(", ")} · INAIGEM` : "Todas en verde · INAIGEM", null),
   ].join("");
 
   // Escenario de riesgo
-  $("#vivo-esc").innerHTML = esc0.vigente ? `
+  $("#vivo-esc").innerHTML = escVigente(esc0) ? `
     <p class="f-txt">El CENEPRED cruza cada aviso de lluvia del SENAMHI con la exposición de cada distrito. Vigentes: ${(esc0.escenarios || []).map(e => `<b>${esc(e.ambito.toLowerCase())}</b> hasta el ${fecha(e.fin_vigencia.slice(0, 10))}`).join("; ")}.</p>
     <div class="tabla-scroll"><table class="tabla"><tr><th>Riesgo</th><th>Distritos</th><th>Población</th><th>Viviendas</th></tr>
       ${["MA", "A", "M"].map(k => `<tr><td>${chipNivel(NIVEL_ESC[k][0])}</td><td>${entero(R[k]?.distritos || 0)}</td><td>${entero(R[k]?.poblacion || 0)}</td><td>${entero(R[k]?.vivienda || 0)}</td></tr>`).join("")}</table></div>
@@ -87,7 +87,7 @@ function pintarVivo(){
   $("#vivo-prev").innerHTML = `
     <div class="cols-2">
       <div><h3>Obras en puntos críticos de ríos</h3>
-        <dl class="f-grid">${Object.entries(pc.por_estado || {}).map(([k, v]) => `<div><dt>${esc(k)}</dt><dd>${v}</dd></div>`).join("")}<div><dt>Avance medio en km</dt><dd>${String(pc.avance_medio ?? "–").replace(".", ",")} %</dd></div></dl>
+        <dl class="f-grid">${Object.entries(pc.por_estado || {}).map(([k, v]) => `<div><dt>${esc(k)}</dt><dd>${v}</dd></div>`).join("")}<div><dt>Avance en km, promedio simple (cálculo ENSO Perú)</dt><dd>${String(pc.avance_medio ?? "–").replace(".", ",")} %</dd></div></dl>
         <p><button class="enlace" onclick="abrirCapa('pc')">Ver los ${entero(pc.total)} puntos en el mapa</button></p>${fuenteDe(pc, "ANA, puntos críticos priorizados 2026")}</div>
       <div><h3>Preparación de los distritos priorizados</h3>
         <div class="pm-barra pm-alto">${Object.entries(PREP).map(([k, [n]]) => pr[k] ? `<i style="width:${pr[k] / totPr * 100}%;background:${{ adecuado: "#3E8E7E", parcial: "#F0C178", critico: "#B4101C", sin_informacion: "#9FB0AC" }[k]}" title="${n}: ${pr[k]}"><span>${pr[k]}</span></i>` : "").join("")}</div>
@@ -136,14 +136,14 @@ function pintarPronosticos(){
   // Lo que dice cada centro, en una tabla
   const mesN12 = (P.n12 || []).map((f, i) => ({ mes: P.meses[i], fuerte: (f[6] || 0) + (f[7] || 0), nino: f.slice(4).reduce((a, b) => a + (b || 0), 0) }));
   const filas = [
-    ["ENFEN (Perú)", "Comisión oficial", `${esc(e.alerta.estado)}. ${mesN12.length ? `Probabilidad de El Niño costero en ${nombreMes(mesN12[1]?.mes)}: ${mesN12[1]?.nino} %, fuerte o extraordinario ${mesN12[1]?.fuerte} %` : ""}`, e.alerta.fecha, e.alerta.url],
+    ["ENFEN (Perú)", "Comisión oficial", `${esc(e.alerta.estado)}. ${mesN12.length && P.vigente !== false ? `Probabilidad de condiciones cálidas en Niño 1+2 en ${nombreMes(mesN12[1]?.mes)}: ${mesN12[1]?.nino} %; fuerte o extraordinaria: ${mesN12[1]?.fuerte} % (suma ENSO Perú de las categorías de la tabla del comunicado ${esc(P.comunicado || "")})` : mesN12.length ? `⚠ La tabla de probabilidades es del comunicado ${esc(P.comunicado || "")}; ya hay uno más reciente.` : ""}`, e.alerta.fecha, e.alerta.url],
     ["SENAMHI (Perú)", "Pronóstico estacional", (pr.trimestral || []).filter(s => /Costa Norte|Sierra Sur Oriental|Altiplano/i.test(s.sector)).map(s => `${esc(s.sector)}: ${s.sobre >= s.bajo ? `${s.sobre} % de lluvia sobre lo normal` : `${s.bajo} % bajo lo normal`}`).join("; ") + ` (${esc((pr.trimestral || [])[0]?.periodo || "")})`, (pr.trimestral || [])[0]?.emision, pr.url],
-    ["IGP (Perú)", "Modelo experimental de inteligencia artificial, no es pronóstico oficial", igp.prob_fuerte ? `Probabilidad de El Niño fuerte en el Pacífico oriental en ${igp.prob_fuerte.anio}: ${igp.prob_fuerte.clasificacion >= 95 ? "cerca del 100 %" : `${Math.round(igp.prob_fuerte.clasificacion)} %`}` : "", null, igp.url],
-    ["Marina, DHN (Perú)", "Observación diaria", dhn.nino12 ? `Niño 1+2: ${sg(dhn.nino12.atsm_actual)} °C; Niño 3.4: ${sg(dhn.nino34?.atsm_actual)} °C` : "", dhn.nino12?.atsm_fecha, dhn.url],
+    ["IGP (Perú)", "Modelo experimental de inteligencia artificial, no es pronóstico oficial", igp.prob_fuerte ? `Probabilidad de El Niño fuerte en el Pacífico oriental en ${igp.prob_fuerte.anio}: ${igp.prob_fuerte.clasificacion >= 95 ? "cerca del 100 %" : `${Math.round(igp.prob_fuerte.clasificacion)} %`}. La página del IGP no indica fecha de emisión; consultada el ${fecha(igp.leido)}.` : "", null, igp.url],
+    ["Marina, DHN (Perú)", "Observación diaria", dhn.nino12 ? `Anomalía en Niño 1+2: ${sg(dhn.nino12.atsm_actual)} °C; Niño 3.4: ${sg(dhn.nino34?.atsm_actual)} °C. Producto Copernicus OSTIA con su propia climatología: no se compara cifra a cifra con NOAA OISST, que usa la portada.` : "", dhn.nino12?.atsm_fecha, dhn.url],
     ["NOAA CPC (EE. UU.)", "Oficial de EE. UU.", `${esc(cpc.estado_es || "")}. ${(cpc.probabilidades || []).slice(1, 4).map(p => `${p.trimestre}: ${p.nino} % El Niño`).join(", ")}`, cpc.emitido, cpc.url],
     ["JMA (Japón)", "Observación mensual", I.jma?.n12?.length ? `Niño 1+2 en ${nombreMes(I.jma.n12.at(-1).mes)}: ${sg(I.jma.n12.at(-1).valor)} °C` : "", I.jma?.n12?.at(-1)?.mes, I.jma?.url],
     ["CIIFEN (regional)", "Boletín", I.ciifen?.boletin_enso ? `<a href="${esc(I.ciifen.boletin_enso.url)}" target="_blank" rel="noopener">${esc(I.ciifen.boletin_enso.titulo.replace(/_/g, " "))}</a>` : "", I.ciifen?.boletin_enso?.fecha, I.ciifen?.url],
-    ["OMM (mundial)", "Actualización", I.wmo ? `<a href="${esc(I.wmo.pdf || I.wmo.url)}" target="_blank" rel="noopener">${esc(I.wmo.titulo)}</a>` : "", null, I.wmo?.url],
+    ["OMM (mundial)", "Actualización", I.wmo ? `<a href="${esc(I.wmo.pdf || I.wmo.url)}" target="_blank" rel="noopener">${esc(I.wmo.titulo)}</a>, la última publicada` : "", (String(I.wmo?.pdf || "").match(/\/(\d{4}-\d{2})\//) || [])[1], I.wmo?.url],
   ];
   $("#pron-tabla").innerHTML = `<tr><th>Centro</th><th>Tipo</th><th>Qué dice</th><th>Emitido</th></tr>` + filas.filter(f => f[2]).map(f =>
     `<tr><td><b>${f[4] ? `<a href="${esc(f[4])}" target="_blank" rel="noopener">${esc(f[0])}</a>` : esc(f[0])}</b></td><td>${esc(f[1])}</td><td>${f[2]}</td><td>${f[3] ? fecha(String(f[3]).slice(0, 10)) : "–"}</td></tr>`).join("");
@@ -188,7 +188,7 @@ function pintarPronosticos(){
   // Galería de gráficos de los centros
   $("#pron-galeria").innerHTML = (I.imagenes || []).map(im => `<figure class="pron-fig">
     <a href="${recurso("datos/pronosticos/img/" + im.archivo)}" target="_blank" rel="noopener"><img loading="lazy" src="${recurso("datos/pronosticos/img/" + im.archivo)}" alt="${esc(im.titulo)}"></a>
-    <figcaption><b>${esc(im.titulo)}</b><span>${esc(im.fuente)}${im.fecha ? ` · ${fecha(im.fecha)}` : ""}${im.atrasada ? " · ⚠ no se pudo renovar" : ""}</span></figcaption></figure>`).join("");
+    <figcaption><b>${esc(im.titulo)}</b><span>${esc(im.fuente)}${im.fecha ? ` · ${fecha(im.fecha)}` : ""}${im.atrasada ? " · ⚠ no se pudo renovar" : ""}${im.origen ? ` · <a href="${esc(im.origen)}" target="_blank" rel="noopener">original</a>` : ""}</span></figcaption></figure>`).join("");
   const docs = [I.ciifen?.boletin_enso, I.ciifen?.estacional, I.ciifen?.oceano].filter(Boolean);
   $("#pron-docs").innerHTML = docs.map(d => `<div class="bul"><time>${fecha(d.fecha)}</time><p><a href="${esc(d.url)}" target="_blank" rel="noopener">${esc(d.titulo.replace(/_/g, " "))}</a> <small>CIIFEN</small></p></div>`).join("")
     + (I.wmo ? `<div class="bul"><time></time><p><a href="${esc(I.wmo.pdf || I.wmo.url)}" target="_blank" rel="noopener">${esc(I.wmo.titulo)}</a> <small>OMM</small></p></div>` : "");

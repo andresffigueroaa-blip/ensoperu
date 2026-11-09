@@ -778,3 +778,10 @@ button:disabled{opacity:.4; cursor:not-allowed}
   .tabla-comp td{min-width:0}
   .tabla-comp th:first-child{width:34%}
 }
+
+/* Citas: cada frase con su fuente y la fecha del dato. Impresas, llevan la dirección del enlace */
+.cita{ color: var(--tinta-2, #56635F); font-size: .86em; }
+.cita a{ color: inherit; }
+@media print{
+  .cita a::after, .f-fuente a[href^="http"]::after{ content: " (" attr(href) ")"; word-break: break-all; font-size: .9em; }
+}

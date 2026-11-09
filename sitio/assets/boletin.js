@@ -82,7 +82,7 @@ async function pintarBoletin(){
     <header class="bol-cab">
       <div class="bol-marca"><span class="bol-logo"></span>ENSO Perú · Boletín</div>
       <h1>${regionBol === "PE" ? "Perú" : esc(nombre)}</h1>
-      <div class="bol-meta"><span>${fecha(D.panorama.fecha)}</span><span class="bol-estado">${esc(D.estado.alerta.estado)}</span><span>Datos revisados ${haceCuanto()}</span></div>
+      <div class="bol-meta"><span>${fecha(D.panorama.fecha)}</span><span class="bol-estado">${esc(D.estado.alerta.estado)}</span><span>Datos consultados hasta el ${fechaHoraAbs(D.panorama.generado)} (hora de Lima)</span></div>
       <nav class="bol-indice">${["La región hoy", "El país hoy", "Noticias", "Lo que viene"].map((n, i) => `<span><b>${i + 1}</b> ${regionBol === "PE" && i === 0 ? "El Perú hoy" : regionBol === "PE" && i === 1 ? "El Niño y el país" : n}</span>`).join("")}</nav>
     </header>
     ${partes.html}
@@ -137,14 +137,14 @@ function parteNacional(ctx, graficos, corta){
   }
   return `<p class="f-txt"><b>${esc(e.alerta.estado)}.</b> ${esc(oracion(e.alerta.titular || ""))}. ${corta ? "" : esc(e.alerta.resumen || "")}</p>
     <p class="f-fuente">${esc(e.alerta.fuente)}, ${fecha(e.alerta.fecha)}. Próximo comunicado: ${fecha(e.alerta.proximo)}.</p>
-    ${kpis([["Mar, Niño 1+2", `${sg(I.n12?.valor)} °C`, `media de 7 días, ${fecha(I.n12?.fecha)}`], ["Mar, Niño 3.4", `${sg(I.n34?.valor)} °C`, `${fecha(I.n34?.fecha)}`],
-      ["ICEN", sg(I.icen?.valor), `${I.icen?.magnitud || ""}, ${fecha(I.icen?.fecha)}`],
+    ${kpis([["Mar, Niño 1+2", `${sg(I.n12?.valor)} °C`, `anomalía, media de 7 días, ${fecha(I.n12?.fecha)} · NOAA OISST`], ["Mar, Niño 3.4", `${sg(I.n34?.valor)} °C`, `anomalía, ${fecha(I.n34?.fecha)} · NOAA OISST`],
+      ["ICEN", sg(I.icen?.valor), `${I.icen?.magnitud || ""}, ${fecha(I.icen?.fecha)} · IGP`],
       O.coen && ["Emergencias, 7 días", entero(O.coen.total), "INDECI"],
-      O.escenario?.vigente && ["Distritos en riesgo muy alto por lluvia", entero(R.MA?.distritos || 0), `${entero(R.MA?.poblacion || 0)} personas · CENEPRED`],
-      O.emergencia && ["Distritos en estado de emergencia", entero(Object.keys(O.emergencia.distritos || {}).length), "PCM"]])}
+      escVigente(O.escenario) && ["Distritos en riesgo muy alto por lluvia", entero(R.MA?.distritos || 0), `${entero(R.MA?.poblacion || 0)} habitantes en esos distritos · CENEPRED`],
+      O.emergencia && ["Distritos en estado de emergencia", entero(Object.keys(O.emergencia.distritos || {}).length), esc(decretosTxt(O.emergencia) || "PCM")]])}
     <h3>Temperatura del mar, últimos 4 meses</h3><div class="bol-graf">${svgVacio("bg-mar")}</div>
-    <p class="f-fuente">Anomalía diaria frente a 1991-2020. NOAA OISST. La línea roja marca +0,5 °C.</p>
-    ${corta ? "" : `<ul class="lectura">${(D.panorama.lectura || []).map(t => `<li>${esc(t)}</li>`).join("")}</ul>`}`;
+    <p class="f-fuente">Anomalía diaria frente a 1991-2020, cálculo ENSO Perú con NOAA OISST v2.1 (psl.noaa.gov). La línea roja marca +0,5 °C, umbral que oficialmente se aplica a medias de 3 meses.</p>
+    ${corta ? "" : `<ul class="lectura">${(D.panorama.lectura || []).map(t => `<li>${conCita(t)}</li>`).join("")}</ul>`}`;
 }
 
 // Lo que viene: SENAMHI por sector, ENFEN y NOAA
@@ -154,11 +154,11 @@ function parteProbabilidades(){
     <div class="pm-barra">${f.map((v, j) => v ? `<i style="width:${v}%;background:${COLOR_CAT[j]}"><span style="color:${TINTA_CAT[j]}">${v >= 12 ? v : ""}</span></i>` : "").join("")}</div></div>`).join("");
   return `<h3>ENFEN: magnitud esperada de El Niño costero, mes a mes</h3><div class="probs-m">${filas}</div>
     <div class="probs-ley">${(P.categorias_icen || []).map((c, j) => `<span><i style="background:${COLOR_CAT[j]}"></i>${esc(c)}</span>`).join("")}</div>
-    <p class="f-fuente">Probabilidades del comunicado ${esc(P.comunicado || "")} del ENFEN.</p>
+    <p class="f-fuente">Probabilidades del comunicado oficial ${esc(P.comunicado || "")} del ENFEN (enfen.imarpe.gob.pe), transcritas de su figura.${P.vigente === false ? " ⚠ Hay un comunicado más reciente: esta tabla está desactualizada." : ""}</p>
     ${cpc?.probabilidades ? `<h3>NOAA: probabilidad de El Niño en el Pacífico central, por trimestre</h3>
       <div class="probs-m">${cpc.probabilidades.slice(1, 7).map(p => `<div class="pm-fila"><span>${esc(p.trimestre)}</span><div class="pm-barra">${[["nina", "#1B6A87", "#fff"], ["neutral", "#C9D2CC", "#101A1D"], ["nino", "#D9452C", "#fff"]].map(([k, c, tc]) => p[k] ? `<i style="width:${p[k]}%;background:${c}"><span style="color:${tc}">${p[k] >= 10 ? p[k] : ""}</span></i>` : "").join("")}</div></div>`).join("")}</div>
       ${leyendaColores([["#1B6A87", "La Niña"], ["#C9D2CC", "Neutral"], ["#D9452C", "El Niño"]])}
-      <p class="f-fuente">NOAA CPC, ${esc(cpc.estado_es)}, emitido el ${fecha(cpc.emitido)}. Trimestres en inglés: NDJ es noviembre a enero.</p>` : ""}`;
+      <p class="f-fuente">NOAA CPC (cpc.ncep.noaa.gov), ${esc(cpc.estado_es)}, emitido el ${fecha(cpc.emitido)}. Trimestres en inglés: NDJ es noviembre a enero.</p>` : ""}`;
 }
 
 /* ── Boletín de una región ──────────────────────────────────────────────── */
@@ -167,24 +167,28 @@ function boletinRegional(rid, ctx){
   const clave = d.claveRegion[rid], rj = D.regiones.regiones[clave] || {}, nombre = rj.nombre || d.porId[rid].nombre;
   const nNombre = norm(nombre).replace(/^callao$/, "callao");
   const graficos = [], frases = [];
+  // Cada frase lleva su fuente: el boletín se imprime y se reenvía sin la web
+  const fr = (t, fuente, fecha, url) => frases.push({ t, fuente, fecha, url });
   const enRegion = lugar => norm(String(lugar || "").split(",").pop()).trim() === nNombre;
 
   // Avisos del SENAMHI que nombran su zona
   const avisos = (D.avisos?.avisos || []).filter(a => a.regiones?.includes(clave) || a.zonas?.includes(rj.z));
-  if (avisos.length) frases.push(`${avisos.length} ${avisos.length > 1 ? "avisos del SENAMHI tocan" : "aviso del SENAMHI toca"} la región, ${avisos.filter(a => a.nivel === "ROJO").length} en rojo.`);
+  if (avisos.length) fr(`${avisos.length} ${avisos.length > 1 ? "avisos del SENAMHI nombran" : "aviso del SENAMHI nombra"} la región o su zona (N° ${avisos.map(a => a.numero).join(", ")}), ${avisos.filter(a => a.nivel === "ROJO").length} en rojo.`,
+    "SENAMHI, avisos meteorológicos", D.avisos.leido, D.avisos.url);
 
   // Riesgo de hoy (CENEPRED), quebradas, emergencias, estado de emergencia
   const escD = Object.entries(O.escenario?.distritos || {}).filter(([u]) => u.startsWith(rid));
   const porNivel = k => escD.filter(([, v]) => v.nivel === k);
   const pobMA = porNivel("MA").reduce((a, [, v]) => a + (v.poblacion || 0), 0);
-  if (porNivel("MA").length) frases.push(`CENEPRED: ${porNivel("MA").length} distritos en riesgo muy alto${porNivel("A").length ? ` y ${porNivel("A").length} en alto` : ""} por la lluvia de estos días (${entero(pobMA)} personas en muy alto).`);
-  else if (porNivel("A").length) frases.push(`CENEPRED: ${porNivel("A").length} ${porNivel("A").length > 1 ? "distritos" : "distrito"} en riesgo alto por la lluvia de estos días.`);
+  const escF = ["CENEPRED, escenarios de riesgo vigentes", O.escenario?.leido, O.escenario?.url];
+  if (porNivel("MA").length) fr(`${porNivel("MA").length} distritos en riesgo muy alto${porNivel("A").length ? ` y ${porNivel("A").length} en alto` : ""} por la lluvia de estos días (${entero(pobMA)} habitantes en los de riesgo muy alto).`, ...escF);
+  else if (porNivel("A").length) fr(`${porNivel("A").length} ${porNivel("A").length > 1 ? "distritos" : "distrito"} en riesgo alto por la lluvia de estos días.`, ...escF);
   const queb = Object.entries(O.quebradas?.distritos || {}).filter(([u]) => u.startsWith(rid));
-  if (queb.length) frases.push(`SENAMHI: posible activación de quebradas en ${queb.length} distritos.`);
+  if (queb.length) fr(`Posible activación de quebradas en ${queb.length} ${queb.length > 1 ? "distritos" : "distrito"}.`, "SENAMHI e INDECI (GeoSINPAD), aviso de quebradas", O.quebradas?.fecha, O.quebradas?.url);
   const em = (ctx.emerg?.features || []).filter(f => f.properties.distrito?.startsWith(rid)).map(f => f.properties);
-  if (em.length) frases.push(`INDECI registró ${em.length} ${em.length > 1 ? "emergencias" : "emergencia"} en 7 días.`);
+  if (em.length) fr(`El INDECI registró ${em.length} ${em.length > 1 ? "emergencias" : "emergencia"} en 7 días; no todas se deben a El Niño.`, "INDECI, COEN", O.coen?.leido, O.coen?.url);
   const dee = Object.keys(O.emergencia?.distritos || {}).filter(u => u.startsWith(rid)).length;
-  if (dee) frases.push(`${dee} distritos están en estado de emergencia.`);
+  if (dee) fr(`${dee} distritos están en estado de emergencia (${decretosTxt(O.emergencia)}).`, "PCM, según capas publicadas por la ANA", O.emergencia?.leido, O.emergencia?.url);
 
   // Ríos: GloFAS, ANA y SENAMHI
   const riosG = (d.rios?.rios || []).filter(r => r.region === rid);
@@ -195,12 +199,13 @@ function boletinRegional(rid, ctx){
   const riosANA = Object.entries(H.fichas || {}).filter(([k, f]) => f.regiones.includes(rid) && estadoDe(k) !== "sin_datos")
     .sort((a, b) => (ORDEN_EST[estadoDe(b[0])] - ORDEN_EST[estadoDe(a[0])]) || b[1].personas - a[1].personas).slice(0, 8);
   const crec = sobre.filter(e => !e.estiaje), baja = sobre.length - crec.length;
-  if (crec.length) frases.push(`${crec.length} estaciones de ríos están sobre su umbral.`);
-  if (baja) frases.push(`${baja} estaciones de ríos tienen nivel bajo.`);
-  if (riosG.some(r => r.nivel !== "normal")) frases.push(`Crecida inusual pronosticada en ${riosG.filter(r => r.nivel !== "normal").map(r => r.nombre).join(", ")} (GloFAS).`);
-  if (rj.c && P.mar !== null && P.mar !== undefined) frases.push(`La anomalía del mar frente a la región es de ${sg(P.mar)} °C.`);
-  if (P.lluvia16) frases.push(`Los modelos esperan ${Math.round(P.lluvia16)} mm de lluvia en 16 días.`);
-  if (P.focos) frases.push(`${P.focos} ${P.focos > 1 ? "focos" : "foco"} de calor en 7 días.`);
+  if (crec.length) fr(`${crec.length} estaciones de ríos están sobre su umbral de crecida.`, "ANA y SENAMHI, última lectura", D.rios?.actualizado, "https://www.ana.gob.pe/");
+  if (baja) fr(`${baja} estaciones de ríos tienen nivel bajo.`, "ANA y SENAMHI, última lectura", D.rios?.actualizado, "https://www.ana.gob.pe/");
+  if (riosG.some(r => r.nivel !== "normal")) fr(`El modelo global GloFAS pronostica caudales sobre su percentil 90 anual en ${riosG.filter(r => r.nivel !== "normal").map(r => r.nombre).join(", ")}; es orientativo.`,
+    "GloFAS (Copernicus) vía Open-Meteo", d.rios?.emitido, "https://www.globalfloods.eu/");
+  if (rj.c && P.mar !== null && P.mar !== undefined) fr(`La anomalía del mar a menos de 110 km de su litoral es de ${sg(P.mar)} °C (media de 7 días).`, "Cálculo ENSO Perú con NOAA OISST v2.1", D.estado?.indices?.n12?.fecha, "https://psl.noaa.gov/data/gridded/data.noaa.oisst.v2.highres.html");
+  if (P.lluvia16) fr(`Los modelos pronostican ${Math.round(P.lluvia16)} mm de lluvia en 16 días; no es un aviso oficial.`, "Open-Meteo, modelos globales", d.lluvia?.emitido, "https://open-meteo.com/");
+  if (P.focos) fr(`${P.focos} ${P.focos > 1 ? "focos" : "foco"} de calor detectados por satélite en 7 días.`, "NASA FIRMS, VIIRS", null, "https://firms.modaps.eosdis.nasa.gov/");
 
   // Gráficos
   const provs = d.unidades.filter(u => u.nivel === "provincia" && u.region === rid)
@@ -229,16 +234,17 @@ function boletinRegional(rid, ctx){
   const riesgo = d.riesgo?.valores?.[rid];
 
   const parte1 = `
-    <ul class="lectura">${frases.map(t => `<li>${esc(t)}</li>`).join("") || "<li>Sin avisos ni emergencias registradas para la región.</li>"}</ul>
-    ${kpis([["Aviso del SENAMHI", P.aviso ? `<span class="chip ${NIVEL_AVISO[P.aviso]}">${esc(P.aviso[0] + P.aviso.slice(1).toLowerCase())}</span>` : "Ninguno", ""],
-      ["Riesgo muy alto por lluvia", O.escenario?.vigente ? `${porNivel("MA").length} distritos` : "Sin escenario", "CENEPRED"], ["Emergencias, 7 días", entero(em.length), "INDECI"],
+    <ul class="lectura">${frases.map(t => `<li>${conCita(t)}</li>`).join("") || "<li>Sin avisos ni emergencias registradas para la región.</li>"}</ul>
+    ${kpis([["Aviso del SENAMHI", P.aviso ? `<span class="chip ${NIVEL_AVISO[P.aviso]}">${esc(P.aviso[0] + P.aviso.slice(1).toLowerCase())}${P.aviso_tipo ? ` · ${esc(P.aviso_tipo)}` : ""}</span>` : "Ninguno",
+        P.aviso ? `Aviso N° ${P.aviso_numero || ""}: el de mayor nivel entre los que nombran su zona; el área exacta está en el aviso` : ""],
+      ["Riesgo muy alto por lluvia", escVigente(O.escenario) ? `${porNivel("MA").length} distritos` : "Sin escenario", "CENEPRED"], ["Emergencias, 7 días", entero(em.length), "INDECI"],
       ["Lluvia próxima, 16 días", P.lluvia16 ? `${Math.round(P.lluvia16)} mm` : "–", "Open-Meteo"], rj.c ? ["Mar frente a la costa", `${sg(P.mar)} °C`, "NOAA OISST"] : ["Tendencia de lluvia, próximo mes", P.estacional === null || P.estacional === undefined ? "–" : `${sg(P.estacional, 0)} mm`, "modelo europeo, frente a lo normal"],
       ["Focos de calor, 7 días", entero(P.focos), "NASA FIRMS"]])}
     ${avisos.length ? `<h3>Avisos del SENAMHI</h3>${avisos.map(a => `<div class="f-aviso"><span class="chip ${NIVEL_AVISO[a.nivel]}">${esc(a.nivel)}</span> ${esc(oracion(a.titulo))}<small>${fecha(a.inicio)} a ${fecha(a.fin)}</small></div>`).join("")}` : ""}
     <div class="cols-2">
-      <div><h3>Lluvia esperada en 16 días, por provincia</h3>${lluviaProv}<p class="f-fuente">Open-Meteo, modelos globales.</p></div>
-      <div><h3>Lluvia pronosticada día a día, ${ll ? `${fecha(d.lluvia.fechas[0])} a ${fecha(d.lluvia.fechas[d.lluvia.fechas.length - 1])}` : ""}</h3>${lluviaDia}<p class="f-fuente">La línea marca 20 mm. Avisos oficiales: SENAMHI.</p>
-        ${escD.length ? `<h3>Distritos en riesgo por la lluvia de estos días</h3>${barrasH([["MA", "Muy alto", "#B4101C"], ["A", "Alto", "#E18C3E"], ["M", "Medio", "#F0C178"]].map(([k, n, c]) => ({ n, v: porNivel(k).length, c })))}<p class="f-fuente">CENEPRED, escenario del aviso vigente.</p>` : ""}</div>
+      <div><h3>Lluvia esperada en 16 días, por provincia</h3>${lluviaProv}<p class="f-fuente">Open-Meteo, modelos globales, corrida del ${fechaHoraAbs(d.lluvia?.emitido)}. No es un aviso oficial.</p></div>
+      <div><h3>Lluvia pronosticada día a día, ${ll ? `${fecha(d.lluvia.fechas[0])} a ${fecha(d.lluvia.fechas[d.lluvia.fechas.length - 1])}` : ""}</h3>${lluviaDia}<p class="f-fuente">La línea marca 20 mm, referencia fija de ENSO Perú (no es un umbral del SENAMHI). Avisos oficiales: SENAMHI.</p>
+        ${escD.length ? `<h3>Distritos en riesgo por la lluvia de estos días</h3>${barrasH([["MA", "Muy alto", "#B4101C"], ["A", "Alto", "#E18C3E"], ["M", "Medio", "#F0C178"]].map(([k, n, c]) => ({ n, v: porNivel(k).length, c })))}<p class="f-fuente">CENEPRED, escenarios vigentes, consultado el ${fechaHoraAbs(O.escenario?.leido)}.</p>` : ""}</div>
     </div>
     ${rj.c ? `<h3>Mar frente a ${esc(nombre)}, últimos 4 meses</h3><div class="bol-graf">${svgVacio("bg-tsm")}</div><p class="f-fuente">Anomalía en la franja a menos de 110 km del litoral. NOAA OISST.</p>` : ""}
     <div class="cols-2">
@@ -248,10 +254,10 @@ function boletinRegional(rid, ctx){
         ${riosANA.length ? riosANA.map(([k, f]) => `<div class="rank-f"><span><b>${esc(f.nombre)}</b> <small>${esc(H.mon.rios[k]?.motivos?.[0] || "estaciones dentro de lo normal")}${f.personas ? `; ${entero(f.personas)} personas junto al cauce` : ""}</small></span><span class="chip ${ESTADO_RIO[estadoDe(k)][2]}">${ESTADO_RIO[estadoDe(k)][0]}</span></div>`).join("") : ""}
         ${!riosG.length && !sobre.length && !riosANA.length ? `<p class="f-nota">Sin ríos vigilados con crecida en la región.</p>` : ""}
         <p class="f-fuente">GloFAS (pronóstico), ANA y SENAMHI (observado). Seguimiento completo en la vista «Ríos».</p></div>
-      <div>${embalses.length ? `<h3>Embalses</h3>${barrasH(embalses.map(e => ({ n: e.nombre, v: e.porcentaje, txt: `${String(e.porcentaje).replace(".", ",")} %`, c: "#5FA8D3" })), 100)}<p class="f-fuente">ANA, volumen útil almacenado.</p>` : ""}
-        ${fc ? `<h3>Focos de calor por día, último mes</h3>${focosDia}<p class="f-fuente">NASA FIRMS.</p>` : ""}</div>
+      <div>${embalses.length ? `<h3>Embalses</h3>${barrasH(embalses.map(e => ({ n: e.nombre, v: e.porcentaje, txt: `${String(e.porcentaje).replace(".", ",")} %`, c: "#5FA8D3" })), 100)}<p class="f-fuente">ANA, volumen útil almacenado al ${fecha(embalses[0]?.fecha)}.</p>` : ""}
+        ${fc ? `<h3>Focos de calor por día, último mes</h3>${focosDia}<p class="f-fuente">NASA FIRMS, satélite VIIRS. Sin el día en curso.</p>` : ""}</div>
     </div>
-    ${em.length ? `<h3>Emergencias recientes</h3>${em.slice(0, 4).map(x => `<div class="bul"><time>${fecha(x.fecha.slice(0, 10))}</time><p><b>${esc(x.peligro)}</b> en ${esc(x.lugar)}. ${esc(x.hechos.slice(0, 120))}${x.hechos.length > 120 ? "…" : ""}</p></div>`).join("")}${em.length > 4 ? `<p class="f-fuente">Y ${em.length - 4} más en los últimos 7 días. INDECI, COEN.</p>` : ""}` : ""}
+    ${em.length ? `<h3>Emergencias recientes</h3>${em.slice(0, 4).map(x => `<div class="bul"><time>${fecha(x.fecha.slice(0, 10))}</time><p><b>${esc(x.peligro)}</b> en ${esc(x.lugar)}. ${esc(x.hechos.slice(0, 120))}${x.hechos.length > 120 ? "…" : ""}</p></div>`).join("")}${em.length > 4 ? `<p class="f-fuente">Y ${em.length - 4} más en los últimos 7 días. INDECI, COEN, consultado el ${fechaHoraAbs(O.coen?.leido)}.</p>` : ""}` : ""}
     ${riesgo ? `<p class="f-txt">Riesgo estructural ante El Niño (CENEPRED): ${riesgo.inu?.niveles ? `${(riesgo.inu.niveles["Muy alto"] || 0) + (riesgo.inu.niveles.Alto || 0)} de ${riesgo.distritos} distritos en riesgo alto o muy alto por inundación` : ""}; ${entero(riesgo.inu?.viv)} viviendas expuestas.</p>` : ""}
     <div class="cols-2">
       ${lluvia12 ? `<div><h3>Lluvia de los últimos 12 meses frente a lo normal</h3>${lluvia12}<p class="f-fuente">NASA POWER, normal 1991-2020. Unos 50 km de resolución.</p></div>` : ""}
@@ -291,17 +297,17 @@ function boletinNacional(ctx){
   const parte1 = `
     ${A.length ? `<h3>Avisos del SENAMHI</h3>${tabla(["Nivel", "Aviso", "Vigencia"], A.map(a => `<tr><td><span class="chip ${NIVEL_AVISO[a.nivel]}">${esc(a.nivel)}</span></td><td>${esc(oracion(a.titulo))}</td><td>${fecha(a.inicio)} a ${fecha(a.fin)}</td></tr>`))}` : ""}
     <div class="cols-2">
-      <div><h3>Emergencias en 7 días, por tipo</h3>${barrasH(Object.entries(O.coen?.por_peligro || {}).slice(0, 7).map(([n, v]) => ({ n, v })))}<p class="f-fuente">INDECI, COEN.</p></div>
-      <div><h3>Emergencias en 7 días, por región</h3>${barrasH(porRegion)}<p class="f-fuente">INDECI, COEN.</p></div>
+      <div><h3>Emergencias en 7 días, por tipo</h3>${barrasH(Object.entries(O.coen?.por_peligro || {}).slice(0, 7).map(([n, v]) => ({ n, v })))}<p class="f-fuente">INDECI, COEN (coen.indeci.gob.pe), consultado el ${fechaHoraAbs(O.coen?.leido)}.</p></div>
+      <div><h3>Emergencias en 7 días, por región</h3>${barrasH(porRegion)}<p class="f-fuente">INDECI, COEN (coen.indeci.gob.pe), consultado el ${fechaHoraAbs(O.coen?.leido)}.</p></div>
     </div>
     <div class="cols-2">
-      <div><h3>Distritos en riesgo por la lluvia de estos días</h3>${O.escenario?.vigente
+      <div><h3>Distritos en riesgo por la lluvia de estos días</h3>${escVigente(O.escenario)
         ? barrasH([["MA", "Muy alto", "#B4101C"], ["A", "Alto", "#E18C3E"], ["M", "Medio", "#F0C178"]].map(([k, n, c]) => ({ n, v: R[k]?.distritos || 0, c, txt: entero(R[k]?.distritos || 0) })))
           + `<p class="f-nota">Personas en esos distritos: ${["MA", "A", "M"].map(k => `${{ MA: "muy alto", A: "alto", M: "medio" }[k]} ${entero(R[k]?.poblacion || 0)}`).join("; ")}.</p>`
-        : `<p class="f-nota">Sin escenario de riesgo vigente.</p>`}<p class="f-fuente">CENEPRED.</p></div>
-      <div><h3>Focos de calor por día, último mes</h3>${totalFocos.length ? columnas(totalFocos, fc.fechas.slice(-30).map(f => `${+f.slice(8, 10)}/${+f.slice(5, 7)}`), { u: "focos por día", cada: 5, color: () => "#E18C3E" }) : ""}<p class="f-fuente">NASA FIRMS, todo el Perú.</p></div>
+        : `<p class="f-nota">Sin escenario de riesgo vigente.</p>`}<p class="f-fuente">CENEPRED (sigrid.cenepred.gob.pe), consultado el ${fechaHoraAbs(O.escenario?.leido)}.</p></div>
+      <div><h3>Focos de calor por día, último mes</h3>${totalFocos.length ? columnas(totalFocos, fc.fechas.slice(-30).map(f => `${+f.slice(8, 10)}/${+f.slice(5, 7)}`), { u: "focos por día", cada: 5, color: () => "#E18C3E" }) : ""}<p class="f-fuente">NASA FIRMS (firms.modaps.eosdis.nasa.gov), satélite VIIRS, todo el Perú. Sin el día en curso.</p></div>
     </div>
-    ${P.rios_altos?.length ? `<h3>Ríos con crecida pronosticada</h3>${tabla(["Río", "Lugar", "Pico en 15 días", "Nivel"], P.rios_altos.map(r => `<tr><td>${esc(r.nombre)}</td><td>${esc(r.lugar)}</td><td>${entero(Math.round(r.pico))} m³/s, ${fecha(r.fecha_pico)}</td><td>${chipNivel(r.nivel)}</td></tr>`))}<p class="f-fuente">GloFAS (Copernicus), modelo global: orienta, no mide.</p>` : ""}
+    ${P.rios_altos?.length ? `<h3>Ríos con crecida pronosticada</h3>${tabla(["Río", "Lugar", "Pico en 15 días", "Nivel"], P.rios_altos.map(r => `<tr><td>${esc(r.nombre)}</td><td>${esc(r.lugar)}</td><td>${entero(Math.round(r.pico))} m³/s, ${fecha(r.fecha_pico)}</td><td>${chipNivel(r.nivel)}</td></tr>`))}<p class="f-fuente">GloFAS (Copernicus, vía Open-Meteo), modelo global: orienta, no mide. Nivel según su percentil 90 y 99 anual de 1984-2023, cálculo ENSO Perú.</p>` : ""}
     <div class="cols-2">
       <div><h3>Más lluvia próxima</h3>${barrasH(P.top_lluvia.slice(0, 8).map(r => ({ n: `${r.nombre} (${r.region})`, v: r.total, txt: `${Math.round(r.total)} mm` })))}</div>
       <div><h3>Más focos de calor</h3>${barrasH(P.top_focos.slice(0, 8).map(r => ({ n: `${r.nombre} (${r.region})`, v: r.focos, c: "#E18C3E" })))}</div>
@@ -317,6 +323,6 @@ async function boletinArchivado(fec){
   const P = await traerOpcional(`datos/boletines/${fec}.json`);
   if (!P){ $("#boletin").innerHTML = "<p>Sin boletín para esa fecha.</p>"; return; }
   $("#boletin").innerHTML = `<header class="bol-cab"><div class="thermo"></div><h1>Boletín ENSO Perú</h1><p>${fecha(P.fecha)} · archivado</p></header>
-    ${seccion(1, "Lo más importante", `<ul class="lectura">${P.lectura.map(t => `<li>${esc(t)}</li>`).join("")}</ul>`)}
+    ${seccion(1, "Lo más importante", `<ul class="lectura">${P.lectura.map(t => `<li>${conCita(t)}</li>`).join("")}</ul>`)}
     ${P.top_lluvia ? seccion(2, "Más lluvia esperada", barrasH(P.top_lluvia.slice(0, 8).map(r => ({ n: `${r.nombre} (${r.region})`, v: r.total, txt: `${Math.round(r.total)} mm` })))) : ""}`;
 }

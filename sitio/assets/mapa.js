@@ -40,8 +40,8 @@ const NIVELES = [["region", "Regiones"], ["provincia", "Provincias"], ["distrito
 
 // Temas: una combinación de capa, nivel, lugares y encuadre para cada pregunta
 const TEMAS = {
-  lluvias:   { n: "Norte: lluvias e inundaciones", capa: "lluvia", nivel: "provincia", lugares: { presa: true, embalse: true }, rios: true, caja: [[-81.5, -9.2], [-74, -3]], texto: "Lluvia a 16 días, ríos, presas y embalses de la costa y sierra norte, donde el ENFEN espera lluvias sobre lo normal." },
-  incendios: { n: "Sur: sequía e incendios", capa: "estacional", nivel: "region", lugares: { laguna: true }, focos: true, rios: false, caja: [[-76, -17.5], [-68.5, -11]], texto: "Tendencia de la lluvia del mes elegido frente a lo normal, por región (marrón: menos lluvia; azul: más), y focos de calor. El ENFEN y el SENAMHI esperan lluvias bajo lo normal en el sur andino y déficit en el Titicaca. El mes se cambia en el panel, bajo «Capa»." },
+  lluvias:   { n: "Norte: lluvias e inundaciones", capa: "lluvia", nivel: "provincia", lugares: { presa: true, embalse: true }, rios: true, caja: [[-81.5, -9.2], [-74, -3]], texto: "Lluvia a 16 días, ríos, presas y embalses de la costa y sierra norte.", enfen: 0 },
+  incendios: { n: "Sur: sequía e incendios", capa: "estacional", nivel: "region", lugares: { laguna: true }, focos: true, rios: false, caja: [[-76, -17.5], [-68.5, -11]], enfen: 1, texto: "Tendencia de la lluvia del mes elegido frente a lo normal, por región (marrón: menos lluvia; azul: más), y focos de calor. El mes se cambia en el panel, bajo «Capa»." },
   mar:       { n: "Mar y pesca", capa: "tsm", nivel: "region", lugares: {}, caja: [[-86, -19], [-69, -1]], texto: "El mar frente a la costa y su anomalía." },
   riosana:   { n: "Ríos: seguimiento", capa: "ninguna", nivel: "provincia", lugares: { embalse: true }, riosAna: true, cuencas: true, pcs: true, rios: false, caja: [[-82, -18.6], [-68.4, 0.1]], texto: "Los ríos de la ANA, coloreados por su estado: azul normal, ámbar vigilancia, rojo crecida, morado nivel bajo; gris, sin estación (no sabemos). Con las cuencas y las obras de prevención (puntos: verde ejecutada, amarillo en ejecución). Toca un río para ver su seguimiento." },
   hoy:       { n: "Hoy: riesgo y emergencias", capa: "esc", nivel: "distrito", lugares: {}, emergencias: true, caja: [[-82, -18.6], [-68.4, 0.1]], texto: "Distritos en riesgo por el aviso de lluvia vigente (CENEPRED) y emergencias registradas en 7 días (INDECI). Toca un punto para ver el reporte." },
@@ -395,7 +395,10 @@ function setTema(k){
   M.emergencias = !!t.emergencias; M.pcs = !!t.pcs;
   M.riosAna = t.riosAna !== false && k !== "pacifico"; M.cuencas = !!t.cuencas; aplicarRiosANA();
   M.mapa.fitBounds(t.caja, { padding: 30, duration: 1200 });
-  $("#mapa-aviso").textContent = t.texto;
+  // Lo que espera el ENFEN se cita textual del comunicado vigente: la oración 1 habla del norte, las siguientes del sur
+  const ll = (D.estado?.temas?.lluvias || "").split(/(?<=\.)\s+(?=[A-ZÁÉÍÓÚ])/);
+  const cita = t.enfen === undefined || !ll[0] ? "" : ` ${D.estado.alerta.fuente} (${fecha(D.estado.alerta.fecha)}): «${(t.enfen === 0 ? ll.slice(0, 1) : ll.slice(1)).join(" ")}»`;
+  $("#mapa-aviso").textContent = t.texto + cita;
   aplicarLugares(); return aplicarCapa();
 }
 Object.assign(window, { setCapaMapa, setNivel, setMesEst, toggleLugar, toggleIncendios, toggleRios, setTema });
@@ -599,7 +602,7 @@ async function pintarFicha(u, lugar){
       <dl class="f-grid">
         ${rj?.c ? `<div><dt>Mar frente a la costa</dt><dd>${tsm === null ? "sin dato" : sg(tsm) + " °C"}</dd>${chipAtencion(naMar)}</div>` : ""}
         <div><dt>Focos de calor, 7 días</dt><dd>${inc}</dd>${chipAtencion(naInc)}</div>
-        <div><dt>Días de lluvia fuerte, próximos 16</dt><dd>${ll ? ll.dias_fuertes : "sin dato"}</dd>${chipAtencion(naLl)}</div>
+        <div><dt>Días con más de 20 mm en algún punto, próximos 16 (modelo)</dt><dd>${ll ? ll.dias_fuertes : "sin dato"}</dd>${chipAtencion(naLl)}</div>
         ${ll?.ult30 !== undefined ? `<div><dt>Lluvia, últimos 30 días</dt><dd>${Math.round(ll.ult30)} mm</dd><small>Estimación de modelos</small></div>` : ""}
         ${ll?.tmax7 !== undefined ? `<div><dt>Temperatura máxima, 7 días</dt><dd>${String(ll.tmax7).replace(".", ",")} °C</dd><small>Mínima ${String(ll.tmin7).replace(".", ",")} °C</small></div>` : ""}
         ${ola ? `<div><dt>Ola máxima, 7 días</dt><dd>${String(ola.max).replace(".", ",")} m</dd><small><a href="https://www.dhn.mil.pe/portal/" target="_blank" rel="noopener">Avisos oficiales: DHN</a></small></div>` : ""}
@@ -611,7 +614,7 @@ async function pintarFicha(u, lugar){
       <h3>${dibujo("lluvia")} Lo que viene</h3>
       ${ll ? `<p class="f-txt"><b>${Math.round(ll.total)} mm</b> en 16 días según los modelos; el día más lluvioso, ${Math.round(ll.max_dia)} mm.</p>
         ${barras(ll.serie, d.lluvia.fechas.map(fecha), { min: 25, linea: 20, u: "mm", color: v => v >= 20 ? "#1C5CAB" : "#86B6EF" })}
-        <p class="f-fuente">Open-Meteo, modelos globales. La línea marca 20 mm. Avisos oficiales: SENAMHI.</p>` : ""}
+        <p class="f-fuente">Open-Meteo, modelos globales, promedio de 3 puntos de la unidad; los días sobre 20 mm se cuentan en cualquiera de los puntos. La línea de 20 mm es una referencia fija de ENSO Perú, no la categoría de lluvia del SENAMHI (que usa percentiles por estación). Avisos oficiales: SENAMHI.</p>` : ""}
       ${ev ? `<h4>Tendencia de los próximos meses en la región</h4>
         ${barras(ev.anom, E.meses.map(m => `${nombreMes(m)} ${m.slice(2, 4)}`), { min: 20, u: "mm", signo: true, color: v => v >= 0 ? "#2A78D6" : "#D9452C" })}
         <p class="f-fuente">ECMWF SEAS5: lluvia sobre o bajo lo normal. Vale para toda la región, no para un punto.</p>` : ""}

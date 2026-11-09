@@ -275,6 +275,22 @@ a mostrar algo que el ENFEN no dice.
 - **Wikipedia solo si OpenStreetMap enlaza el artículo.** Buscar por nombre traería homónimos ("Laguna Negra") y diría algo falso del lugar.
 - **Noticias con imagen.** Canales RSS de los medios, filtrados por tema. Las imágenes se muestran desde el servidor del medio, con enlace a la nota; sin imagen, un dibujo por tema.
 
+## 2026-11-09 · Auditoría de trazabilidad: cada cifra con su documento
+
+Regla: toda cifra o afirmación visible lleva fuente, fecha del dato y enlace; lo que calcula la página se rotula «cálculo ENSO Perú» con su regla; lo propio no se presenta como oficial. Tres auditores independientes cotejaron contra las fuentes en vivo (ENFEN, IGP, DHN, SENAMHI, ANA, CENEPRED, CPC, JMA, PSL coinciden; las 144 celdas de probabilidad del ENFEN coinciden con sus figuras).
+
+- **«Lo más importante hoy» y el boletín**: cada frase es `{t, fuente, fecha, url}` (panorama.py) y se pinta con su cita; impresa, muestra la dirección del enlace. El boletín dice la fecha y hora absolutas de los datos, no «hace 2 horas».
+- **Avisos**: «descenso de temperatura» era calor y «viento… friaje» era frío (orden del patrón); la «selva centro» caía en Amazonas y Loreto. La tabla muestra el número y el enlace del aviso.
+- **Nivel de lluvia**: ya no se sube con el aviso del SENAMHI (mezclaba criterio propio con dato oficial). Los niveles se rotulan «criterio propio de ENSO Perú, no oficial»; los días sobre 20 mm se cuentan en cualquiera de los 3 puntos y no son la categoría del SENAMHI.
+- **Mar**: la portada dice que es cálculo con NOAA OISST y muestra al lado el valor oficial semanal del CPC; nuestra serie de Niño 3.4 queda +0,1 a +0,2 °C sobre el CPC (climatología diaria de PSL frente a la semanal del CPC) y la verificación ahora publica ese sesgo con signo. La DHN usa OSTIA, otra climatología: se aclara.
+- **Rótulos**: CENEPRED «habitantes en esos distritos, suma de escenarios»; estado de emergencia con su decreto y peligro (hoy es déficit hídrico, no lluvias); SUNASS con su regla de conteo; ríos como cálculo con lecturas de ANA y SENAMHI; GloFAS con percentil anual; IGP sin fecha de emisión dice cuándo se consultó; OMM con su mes; galería con enlace al original; ficha de lugar «según modelos»; Wikipedia con licencia CC BY-SA y «no es fuente oficial».
+- **Escenario del CENEPRED vencido**: la página lo descarta aunque el robot se detenga; en Actions, un bloque «solo desde el Perú» de más de 36 h queda marcado como atrasado.
+- **Textos a mano con su artículo**: recarga y descarga (Meinen y McPhaden 2000), norte húmedo y sur seco solo en Niños fuertes (Lavado y Espinoza 2014), glaciares (Rabatel et al. 2013); temas Norte y Sur del mapa citan textual el comunicado vigente del ENFEN; índice de alisios (no «viento zonal»); ICEN débil «mayor que 0,5» (NT 01-2024). Estudios: autor y año del IGP 2017, URL del informe ENFEN 2017, sin «20 cordilleras» no verificado; antecedentes con la cita propia de los US$ 3500 millones (CAF).
+- **Noticias**: fuera publirreportajes y contenido de marca, deportes, relleno de EE. UU., posts de Facebook, la página fija de la ONU y el almanaque; el ámbito sale del titular (Ecuador o Florida ya no son «nacional»); de fuera del Perú solo entran las que nombran El Niño.
+- La tabla de plantillas (sin fuentes) ya no se descarga en la página: solo la usa el borrador de la IA.
+
+Pendiente: fecha propia del reporte de la ANA (`RPT_PERIODO`), mes de inicialización de SEAS5, RONI con 2 decimales, MEI rotulado bimestral, GloFAS frente al percentil del mes, «Quiénes somos» (lo decide el equipo).
+
 ## 2026-11-06 · Auditoría independiente (datos, comunicación de riesgo, interfaz)
 
 Tres revisores sin acceso a mis supuestos. La parte visual (tercer informe), corregida:

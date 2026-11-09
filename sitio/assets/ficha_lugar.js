@@ -15,9 +15,9 @@ const CATE_ESTACION = {
 const ESTADO_ESTACION = { REAL: "Transmite en tiempo real", AUTOMATICA: "Automática", DIFERIDO: "Datos en diferido" };
 const QUE_ES = {
   presa: "Muro que retiene agua. Con lluvias fuertes importa su capacidad y si llega a rebosar; con sequía, cuánta agua guarda.",
-  embalse: "Agua guardada para riego, consumo o energía. En El Niño puede llenarse rápido en el norte y quedar corto en el sur.",
+  embalse: "Agua guardada para riego, consumo o energía. En los Niños fuertes la lluvia suele aumentar en el norte y faltar en el sur (Lavado y Espinoza, 2014); su estado actual lo da la ANA.",
   laguna: "Cuerpo de agua natural. Las de origen glaciar pueden crecer con el deshielo.",
-  glaciar: "Hielo de montaña, reserva de agua para la estación seca. El calor de El Niño acelera su pérdida.",
+  glaciar: "Hielo de montaña, reserva de agua para la estación seca. En los años El Niño los glaciares tropicales pierden más masa (Rabatel et al., 2013, The Cryosphere 7: 81-102).",
   laguna_glaciar: "Laguna formada por el retroceso de un glaciar. Vigiladas porque algunas pueden desbordarse de golpe (aluviones).",
   cumbre: "Punto alto de la cordillera. La altura de la isoterma de 0 °C dice si allí cae nieve o lluvia.",
   estacion: "Punto de medición del SENAMHI. Sus datos son observaciones reales, a diferencia de los modelos de esta ficha.",
@@ -176,15 +176,15 @@ async function fichaClima(p, c, turno){
     const extra = alta
       ? `<div><dt>Isoterma de 0 °C, media de 7 días</dt><dd>${entero(medio)} m</dd><small>${medio === null ? "" : medio > altitud ? `Sobre la cumbre o el hielo (${entero(altitud)} m): allí tiende a llover o derretir, no a nevar` : `Bajo este punto (${entero(altitud)} m): allí puede nevar`}</small></div>`
       : `<div><dt>Humedad del suelo, 0 a 7 cm</dt><dd>${num(medio, 2)}</dd><small>m³/m³, media de 7 días</small></div>`;
-    caja().innerHTML = `<h3>${dibujo("lluvia")} Tiempo en este punto</h3>
+    caja().innerHTML = `<h3>${dibujo("lluvia")} Tiempo en este punto, según modelos</h3>
       <dl class="f-grid">
         <div><dt>Temperatura ahora</dt><dd>${num(x.current.temperature_2m, 1)} °C</dd><small>Humedad ${num(x.current.relative_humidity_2m)} %, viento ${num(x.current.wind_speed_10m)} km/h</small></div>
-        <div><dt>Lluvia, próximos 16 días</dt><dd>${entero(suma(fut))} mm</dd><small>Últimos 7 días: ${entero(suma(pas))} mm</small></div>
+        <div><dt>Lluvia, próximos 16 días</dt><dd>${entero(suma(fut))} mm</dd><small>Últimos 7 días, estimado por el modelo (no es un pluviómetro): ${entero(suma(pas))} mm</small></div>
         <div><dt>Máxima y mínima de hoy</dt><dd class="dd-txt">${num(x.daily.temperature_2m_max[hoy], 1)} / ${num(x.daily.temperature_2m_min[hoy], 1)} °C</dd></div>
         ${extra}
       </dl>
       ${barras(x.daily.precipitation_sum, x.daily.time.map(fecha), { min: 10, linea: 20, u: "mm", color: (v, i) => i < hoy ? "#B7C2BD" : v >= 20 ? "#1C5CAB" : "#86B6EF" })}
-      <p class="f-fuente">Gris: últimos 7 días; azul: pronóstico. La línea marca 20 mm. Open-Meteo, modelos globales, a ${entero(x.elevation)} m en su grilla: en montaña puede diferir del lugar exacto. Avisos oficiales: SENAMHI.</p>`;
+      <p class="f-fuente">Gris: últimos 7 días; azul: pronóstico. La línea marca 20 mm, referencia fija de ENSO Perú (no es un umbral del SENAMHI). <a href="https://open-meteo.com/" target="_blank" rel="noopener">Open-Meteo</a>, modelos globales, consultado en vivo a ${entero(x.elevation)} m en su grilla: en montaña puede diferir del lugar exacto. Avisos oficiales: SENAMHI.</p>`;
   } catch (e) {
     if (turno === turnoFicha && caja()) caja().innerHTML = `<h3>${dibujo("lluvia")} Tiempo en este punto</h3><p class="f-nota">Open-Meteo no respondió ahora. Vuelve a abrir la ficha en un momento.</p>`;
   }
@@ -241,7 +241,7 @@ async function fichaWiki(p, titulo, turno){
     $("#fl-wiki").innerHTML = `<section class="f-sec f-wiki">
       ${foto ? `<img src="${esc(foto)}" alt="" loading="lazy" referrerpolicy="no-referrer">` : ""}
       ${lengua === "es" ? `<p class="f-txt">${esc(x.extract || "")}</p>` : ""}
-      <p class="f-fuente"><a href="${esc(x.content_urls?.desktop?.page || "#")}" target="_blank" rel="noopener">${lengua === "es" ? "Wikipedia" : "Artículo en Wikipedia, en otro idioma"}</a>, enciclopedia colaborativa.</p></section>`;
+      <p class="f-fuente"><a href="${esc(x.content_urls?.desktop?.page || "#")}" target="_blank" rel="noopener">${lengua === "es" ? "Wikipedia" : "Artículo en Wikipedia, en otro idioma"}</a>, enciclopedia colaborativa: no es fuente oficial. Texto e imagen bajo licencia <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.es" target="_blank" rel="noopener">CC BY-SA 4.0</a>; autores y versión en el artículo.</p></section>`;
   } catch (e) {
     if (turno === turnoFicha && $("#fl-wiki")) $("#fl-wiki").innerHTML = buscar;
   }

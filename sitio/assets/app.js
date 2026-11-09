@@ -38,6 +38,22 @@ const esc = s => String(s ?? "").replace(/[&<>"']/g, c =>
 
 const MESES_CORTOS = ["ene", "feb", "mar", "abr", "may", "jun", "jul", "ago", "sep", "oct", "nov", "dic"];
 // "2026-09-29" → "29 sep 2026". Se arma a mano para no depender del huso horario.
+// Fecha y hora de Lima con el año: lo que se imprime tiene que decir de cuándo es
+function fechaHoraAbs(iso){
+  try { return new Date(iso).toLocaleString("es-PE", { day: "numeric", month: "short", year: "numeric", hour: "2-digit", minute: "2-digit", timeZone: "America/Lima" }); }
+  catch (e) { return iso; }
+}
+// Una frase con su cita: fuente enlazada y fecha del dato. Acepta texto suelto (boletines archivados antes de las citas)
+const conCita = x => typeof x === "string" ? esc(x)
+  : `${esc(x.t)} <small class="cita">(${x.url ? `<a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.fuente)}</a>` : esc(x.fuente)}${x.fecha ? (x.fecha.length > 10 ? `, consultado el ${fechaHoraAbs(x.fecha)}` : `, dato del ${fecha(x.fecha)}`) : ""})</small>`;
+// Un escenario del CENEPRED cuenta solo mientras dure: si el robot se detiene, no se muestra uno vencido como vigente
+const escVigente = es => { const hoy = new Date().toLocaleDateString("en-CA", { timeZone: "America/Lima" });
+  return !!es?.vigente && (es.escenarios || []).some(x => String(x.fin_vigencia || "").slice(0, 10) >= hoy); };
+// De qué es cada estado de emergencia, no solo cuántos distritos
+const decretosTxt = em => Object.entries(em?.decretos || {}).map(([ds, d]) => `${ds}, ${String(d.peligro || "").toLowerCase()}, hasta el ${fecha(d.fin)}`).join("; ");
+// Valor oficial semanal del CPC para comparar con nuestra media de 7 días
+const cpcSemanal = k => { const s = D.verif?.semanas?.slice(-1)[0]; return s ? ` · CPC oficial: ${sg(s["cpc_" + k])} °C, semana del ${fecha(s.semana)}` : ""; };
+
 function fecha(iso){
   if (!iso) return "";
   const [a, m, d] = String(iso).slice(0, 10).split("-").map(Number);
@@ -306,7 +322,7 @@ async function pintarMonitoreo(){
     const r = recortar(A.fechas, A.cols, periodoAnios ? Math.max(periodoAnios, 3) : 0);
     const u = k => r.cols[k];
     grafLineas($("#g-calor"), r.fechas, [{ n: "Calor 0-300 m, 180° a 100°W", v: u("calor"), c: COLORES[1], destacar: true }], { minRango: [-1, 1] });
-    $("#g-calor-sub").textContent = `Anomalía de temperatura media en los primeros 300 m del Pacífico ecuatorial (CPC, GODAS). Es la reserva que alimenta a El Niño: cuando baja, el evento empieza a agotarse. Último mes: ${fecha(r.fechas[r.fechas.length - 1])}.`;
+    $("#g-calor-sub").textContent = `Anomalía de temperatura media en los primeros 300 m del Pacífico ecuatorial (CPC, GODAS). Es la reserva que alimenta a El Niño: cuando baja, el evento empieza a agotarse (teoría de recarga y descarga; Meinen y McPhaden, 2000, J. Climate 13: 3551, doi:10.1175/1520-0442(2000)013<3551:OOWWVC>2.0.CO;2). Último mes: ${fecha(r.fechas[r.fechas.length - 1])}.`;
     const sv = [["viento_o", "Oeste, 135°E a 180°"], ["viento_c", "Centro, 175°W a 140°W"], ["viento_e", "Este, 135°W a 120°W"]].map(([k, n], i) => ({ n, v: u(k), c: COLORES[i] }));
     grafLineas($("#g-viento"), r.fechas, sv, {}); leyenda($("#g-viento-ley"), sv);
     const sa = [["soi", "SOI"], ["olr", "OLR"]].map(([k, n], i) => ({ n, v: u(k), c: COLORES[i] }));
@@ -323,13 +339,14 @@ async function pintarMonitoreo(){
     const nf = fo.fechas.filter(f => f < hoyUTC).length;
     const total = fo.fechas.slice(0, nf).map((_, i) => Object.values(fo.cols).reduce((a, s) => a + (s[i] || 0), 0));
     grafLineas($("#g-focos"), fo.fechas.slice(0, nf), [{ n: "Focos en el Perú", v: total, c: COLORES[1], destacar: true }], { entero: true });
-    $("#g-focos-sub").textContent = `Total nacional por día, NASA FIRMS (VIIRS), desde ${fecha(fo.fechas[0])}: la serie se va acumulando. Sin el día en curso, que aún está incompleto. El 2 de noviembre cambió el satélite de referencia (S-NPP dejó de transmitir; ahora NOAA-20).`;
+    $("#g-focos-sub").textContent = `Total nacional por día, NASA FIRMS (VIIRS), desde ${fecha(fo.fechas[0])}: la serie se va acumulando. Sin el día en curso, que aún está incompleto. El 2 de noviembre cambió el satélite de referencia: NOAA dejó de distribuir los datos de S-NPP (aviso de NESDIS); ahora se usa NOAA-20.`;
   }
 
   // 3 quater. Verificación contra el CPC
   const ve = await traerOpcional("datos/indices/verificacion.json");
   if (ve){
-    $("#verif-sub").textContent = `Cada corrida compara nuestra serie diaria con el archivo semanal oficial del CPC: diferencia media de ${String(ve.diferencia_media.n12).replace(".", ",")} °C en Niño 1+2 y ${String(ve.diferencia_media.n34).replace(".", ",")} °C en Niño 3.4 en las últimas semanas. Si pasara de 0,5 °C el sistema falla y avisa.`;
+    const sesgo = k => { const xs = ve.semanas.map(s => s["nuestro_" + k] - s["cpc_" + k]); return xs.reduce((a, b) => a + b, 0) / xs.length; };
+    $("#verif-sub").textContent = `Cada corrida compara nuestra serie diaria con el archivo semanal oficial del CPC (${ve.semanas.length} semanas). En promedio, nuestro valor queda ${sg(sesgo("n12"), 2)} °C frente al CPC en Niño 1+2 y ${sg(sesgo("n34"), 2)} °C en Niño 3.4 (positivo: el nuestro es más alto). La diferencia viene de la climatología diaria de NOAA PSL frente a la semanal del CPC. Ante cualquier diferencia, el valor oficial es el del CPC. Si la diferencia media pasara de 0,5 °C el sistema falla y avisa.`;
     $("#tabla-verif").innerHTML = `<tr><th>Semana</th><th>CPC, Niño 1+2</th><th>Nuestro</th><th>CPC, Niño 3.4</th><th>Nuestro</th></tr>`
       + ve.semanas.map(s => `<tr><td>${fecha(s.semana)}</td><td>${sg(s.cpc_n12)}</td><td>${sg(s.nuestro_n12, 2)}</td><td>${sg(s.cpc_n34)}</td><td>${sg(s.nuestro_n34, 2)}</td></tr>`).join("");
   }
@@ -568,12 +585,12 @@ const recurso = ruta => window.__DATOS__?.[ruta] ?? ruta;
 
 async function iniciar(){
   try{
-    const [estado, config, regiones, serie, plantillas, meta, campo, indices, panorama, avisos, noticias, atm, oficial, inter, rios] = await Promise.all([
+    const [estado, config, regiones, serie, plantillas, meta, campo, indices, panorama, avisos, noticias, atm, oficial, inter, rios, verif] = await Promise.all([
       traer("datos/estado.json"),
       traer("datos/config.json"),
       traer("datos/regiones.json"),
       traerOpcional("datos/series/tsm.json"),
-      traer("datos/analisis/_plantillas.json"),
+      null,                                          // plantillas: solo para el borrador de la IA, no se muestran
       traerOpcional("datos/_meta.json"),
       traerOpcional("datos/campos/tsm_anom.json"),
       traerOpcional("datos/series/indices.json"),
@@ -584,8 +601,9 @@ async function iniciar(){
       traerOpcional("datos/peru/oficial.json"),
       traerOpcional("datos/pronosticos/internacional.json"),
       traerOpcional("datos/rios/monitoreo.json"),
+      traerOpcional("datos/indices/verificacion.json"),
     ]);
-    D = { estado, config, regiones, serie, plantillas, meta, campo, indices, panorama, avisos, noticias, atm, oficial, inter, rios };
+    D = { estado, config, regiones, serie, plantillas, meta, campo, indices, panorama, avisos, noticias, atm, oficial, inter, rios, verif };
   }catch(err){
     document.body.innerHTML =
       `<div style="padding:60px 24px;max-width:600px;margin:0 auto;font-family:system-ui">

@@ -9,7 +9,7 @@
         2.0,
         3.0
       ],
-      "regla": "Anomalía de temperatura del mar frente al litoral (media de 7 días). Menos de +1 °C bajo, +1 a +2 medio, +2 a +3 alto, más de +3 muy alto."
+      "regla": "Criterio propio de ENSO Perú, no oficial: anomalía de temperatura del mar a menos de 110 km del litoral (NOAA OISST, media de 7 días). Menos de +1 °C bajo, +1 a +2 medio, +2 a +3 alto, más de +3 muy alto."
     },
     "incendios": {
       "nombre": "Incendios",
@@ -19,7 +19,7 @@
         10,
         50
       ],
-      "regla": "Focos de calor detectados por satélite en los últimos 7 días. Ninguno bajo, 1 a 9 medio, 10 a 49 alto, 50 o más muy alto."
+      "regla": "Criterio propio de ENSO Perú, no oficial: focos de calor detectados por satélite (NASA FIRMS) en los últimos 7 días. Ninguno bajo, 1 a 9 medio, 10 a 49 alto, 50 o más muy alto."
     },
     "lluvia": {
       "nombre": "Lluvia próxima",
@@ -29,7 +29,7 @@
         3,
         6
       ],
-      "regla": "Días con lluvia fuerte (más de 20 mm) en el pronóstico de 16 días. Ninguno bajo, 1 a 2 medio, 3 a 5 alto, 6 o más muy alto. Provisional: se reemplazará por la comparación con la lluvia normal del lugar."
+      "regla": "Criterio propio de ENSO Perú, no oficial: días con más de 20 mm en alguno de los 3 puntos de la unidad, en el pronóstico de 16 días de Open-Meteo. Ninguno bajo, 1 a 2 medio, 3 a 5 alto, 6 o más muy alto. No es la categoría de lluvia del SENAMHI, que usa percentiles por estación."
     }
   },
   "estudios": [
@@ -64,7 +64,7 @@
       "lugares": [
         "Peru"
       ],
-      "hallazgo": "Registra 2084 glaciares y 8466 lagunas de origen glaciar en 20 cordilleras, con una pérdida de 1348,75 km² de superficie glaciar en 58 años."
+      "hallazgo": "Registra 2084 glaciares y 8466 lagunas de origen glaciar, con una pérdida de 1348,75 km² de superficie glaciar en 58 años."
     },
     {
       "id": "enfen-nt-01-2024",
@@ -79,7 +79,7 @@
       "lugares": [
         "Peru"
       ],
-      "hallazgo": "Define el ICEN (media de 3 meses de la anomalía de TSM en Niño 1+2, ERSST v5, base 1991-2020); la condición cálida débil va de +0,5 a +1,3."
+      "hallazgo": "Define el ICEN: media de 3 meses de la anomalía de TSM en Niño 1+2 (ERSST v5), con climatologías móviles de 30 años (hoy 1991-2020). La condición cálida débil es mayor que +0,5 y hasta +1,3; El Niño Costero requiere al menos 3 meses consecutivos en condición cálida."
     },
     {
       "id": "enfen-ite-01-2017",
@@ -87,7 +87,7 @@
       "autores": "Comisión Multisectorial ENFEN",
       "anio": 2017,
       "fuente": "ENFEN",
-      "url": "https://www.dhn.mil.pe/archivos/oceanografia/enfen/nota_tecnica/01-2017.pdf",
+      "url": "https://enfen.imarpe.gob.pe/download/informe-tecnico-el-nino-costero-2017/",
       "temas": [
         "mar",
         "lluvias",
@@ -104,8 +104,8 @@
     {
       "id": "igp-nino-costero-2017",
       "titulo": "The 2017 Coastal El Niño (interpretación)",
-      "autores": "Instituto Geofísico del Perú",
-      "anio": 2017,
+      "autores": "Takahashi, K. (Instituto Geofísico del Perú)",
+      "anio": 2023,
       "fuente": "IGP, Ciencia Climática",
       "url": "https://cienciaclimatica.igp.gob.pe/entities/interpretation/c55441dc-b16c-4cae-ab50-4d9ff66af28f",
       "temas": [

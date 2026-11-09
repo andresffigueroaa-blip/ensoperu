@@ -57,7 +57,7 @@ def leer_tabla(h: str) -> list[dict]:
 ZONAS = {  # palabra en el texto -> zonas de catalogo/regiones.yaml
     "costa norte": ["Costa norte"], "costa centro": ["Costa centro"], "costa sur": ["Costa sur"],
     "sierra norte": ["Sierra norte"], "sierra centro": ["Sierra centro"], "sierra sur": ["Sierra sur"],
-    "selva norte": ["Selva norte"], "selva centro": ["Selva norte", "Selva sur"], "selva sur": ["Selva sur"],
+    "selva norte": ["Selva norte"], "selva centro": [], "selva sur": ["Selva sur"],
     "costa": ["Costa norte", "Costa centro", "Costa sur"],
     "sierra": ["Sierra norte", "Sierra centro", "Sierra sur"],
     "selva": ["Selva norte", "Selva sur"],
@@ -79,6 +79,9 @@ def zonas_de(titulo: str, cuerpo: str) -> tuple[list[str], list[str]]:
         if partes:
             zonas -= set(ZONAS[gen]) - {v for z in partes for v in ZONAS[z]}
     regiones = [n for n in leer_catalogo("regiones") if re.search(rf"\b{re.escape(n.lower())}\b", t)]
+    # La selva central no es una zona del catálogo: son Ucayali y la vertiente oriental de Huánuco, Pasco y Junín
+    if re.search(r"\bselva centr", t):
+        regiones = sorted(set(regiones) | {"Ucayali", "Huanuco", "Pasco", "Junin"})
     return sorted(zonas), regiones
 
 
