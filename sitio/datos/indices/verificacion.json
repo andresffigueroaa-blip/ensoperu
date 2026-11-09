@@ -1,19 +1,12 @@
 {
   "_": "Comparación semanal de nuestra serie OISST con el archivo oficial del CPC.",
   "fuente": "NOAA CPC, wksst9120.for",
-  "revisado": "2026-11-09T04:25:03Z",
+  "revisado": "2026-11-09T14:07:10Z",
   "diferencia_media": {
-    "n12": 0.06,
-    "n34": 0.09
+    "n12": 0.05,
+    "n34": 0.12
   },
   "semanas": [
-    {
-      "semana": "2026-09-09",
-      "cpc_n12": 4.6,
-      "nuestro_n12": 4.67,
-      "cpc_n34": 2.8,
-      "nuestro_n34": 2.86
-    },
     {
       "semana": "2026-09-16",
       "cpc_n12": 4.7,
@@ -46,7 +39,7 @@
       "semana": "2026-10-14",
       "cpc_n12": 5.2,
       "nuestro_n12": 5.22,
-      "cpc_n34": 3.3,
+      "cpc_n34": 3.2,
       "nuestro_n34": 3.35
     },
     {
@@ -62,6 +55,13 @@
       "nuestro_n12": 5.44,
       "cpc_n34": 3.4,
       "nuestro_n34": 3.6
+    },
+    {
+      "semana": "2026-11-04",
+      "cpc_n12": 5.6,
+      "nuestro_n12": 5.61,
+      "cpc_n34": 3.3,
+      "nuestro_n34": 3.51
     }
   ]
 }
