@@ -1,14 +1,17 @@
 {
   "_": "Generado por pipeline/fuentes/peru_oficial.py. Datos oficiales tal como se publican.",
-  "actualizado": "2026-11-09T14:09:50Z",
-  "fallas": [],
+  "actualizado": "2026-11-09T14:24:14Z",
+  "fallas": [
+    "prono",
+    "enfen_docs"
+  ],
   "fenomeno": {
     "fecha": "30 de octubre del 2026",
     "estado": "Alerta de El Niño Costero",
     "color": "#ff0031",
     "titular": "EL NIÑO COSTERO CONTINUARÍA HASTA FINES DE OTOÑO DE 2027",
     "url": "https://www.senamhi.gob.pe/?p=fenomeno-el-nino",
-    "leido": "2026-11-09T14:04:23Z"
+    "leido": "2026-11-09T14:24:15Z"
   },
   "coen": {
     "dias": 7,
@@ -279,19 +282,19 @@
       {
         "fecha": "2026-11-05 18:00",
         "peligro": "Huaico (flujo de detritos)",
-        "distrito": "240202",
-        "lugar": "Casitas, Contralmirante Villar, Tumbes",
-        "hechos": "A consecuencias de las lluvias intensas, se activaron las quebradas Bocapan, Corralito y Paneles que produjo huaico, causando daños materiales (infraestructura de transporte) dejando aislado a los centros poblados Tacna Libre, Bellavista, Cherrelique, La Choza, Cienego Sur, Cienego Norte, Chicana y El Cardo, distrito de Casitas, provincia de Contralmirante Villar.",
-        "pdf": "https://coen.indeci.gob.pe/api/v2/mer/files/view?key=mer/2026/10/1794133702259.pdf",
+        "distrito": "030408",
+        "lugar": "Justo Apu Sahuaraura, Aymaraes, Apurimac",
+        "hechos": "A consecuencias de las lluvias intensas, se produjo un huaico que ocasionó daños materiales (infraestructura de transporte) en la comunidad de Viscachayoc, distrito de Justo Apu Sahuaraura, provincia de Aymaraes.",
+        "pdf": "https://coen.indeci.gob.pe/api/v2/mer/files/view?key=mer/2026/10/1793995843633.pdf",
         "sinpad": null
       },
       {
         "fecha": "2026-11-05 18:00",
         "peligro": "Huaico (flujo de detritos)",
-        "distrito": "030408",
-        "lugar": "Justo Apu Sahuaraura, Aymaraes, Apurimac",
-        "hechos": "A consecuencias de las lluvias intensas, se produjo un huaico que ocasionó daños materiales (infraestructura de transporte) en la comunidad de Viscachayoc, distrito de Justo Apu Sahuaraura, provincia de Aymaraes.",
-        "pdf": "https://coen.indeci.gob.pe/api/v2/mer/files/view?key=mer/2026/10/1793995843633.pdf",
+        "distrito": "240202",
+        "lugar": "Casitas, Contralmirante Villar, Tumbes",
+        "hechos": "A consecuencias de las lluvias intensas, se activaron las quebradas Bocapan, Corralito y Paneles que produjo huaico, causando daños materiales (infraestructura de transporte) dejando aislado a los centros poblados Tacna Libre, Bellavista, Cherrelique, La Choza, Cienego Sur, Cienego Norte, Chicana y El Cardo, distrito de Casitas, provincia de Contralmirante Villar.",
+        "pdf": "https://coen.indeci.gob.pe/api/v2/mer/files/view?key=mer/2026/10/1794133702259.pdf",
         "sinpad": null
       },
       {
@@ -404,17 +407,17 @@
       },
       {
         "fecha": "2026-11-04 19:00",
-        "peligro": "Incendios forestales",
-        "distrito": "030605",
-        "lugar": "Ocobamba, Chincheros, Apurimac",
-        "hechos": "Se registra un incendio forestal que ocasiona daños materiales (cobertura natural) en las comunidades Túpac Amaru y Tres Cruces, distrito Ocobamba, provincia de Chincheros.",
-        "pdf": "https://coen.indeci.gob.pe/api/v2/mer/files/view?key=mer/2026/10/1794227917529.pdf",
+        "peligro": "Lluvias intensas",
+        "distrito": "240105",
+        "lugar": "San Jacinto, Tumbes, Tumbes",
+        "hechos": "4/11/2026 19:00 horas Como consecuencia de las lluvias intensas, se registró el desborde de la quebrada El Tablazo que produjo daños materiales (viviendas), en el sector El Tablazo, caserío Casa Blanqueada, distrito de San Jacinto, provincia de Tumbes. 4/11/2026 19:00 horas Como consecuencia de las lluvias intensas, se registró el desborde de la quebrada Higuerón, que produjo daños materiales (viv",
+        "pdf": "https://coen.indeci.gob.pe/api/v2/mer/files/view?key=mer/2026/10/1794019381894.pdf",
         "sinpad": null
       }
     ],
     "sin_cruce": 1,
     "url": "https://coen.indeci.gob.pe/mer/",
-    "leido": "2026-11-09T14:09:52Z"
+    "leido": "2026-11-09T14:24:16Z"
   },
   "indeci_rss": {
     "reportes": [
@@ -490,7 +493,7 @@
       }
     ],
     "url": "https://portal.indeci.gob.pe/emergencias/",
-    "leido": "2026-11-09T14:09:53Z"
+    "leido": "2026-11-09T14:24:17Z"
   },
   "escenario": {
     "vigente": true,
@@ -5654,7 +5657,7 @@
       }
     },
     "url": "https://sigrid.cenepred.gob.pe/sigridv3/escenario-aviso",
-    "leido": "2026-11-09T14:10:03Z"
+    "leido": "2026-11-09T14:24:19Z"
   },
   "quebradas": {
     "fecha": "2026-11-08",
@@ -6810,7 +6813,7 @@
     },
     "sin_cruce": 12,
     "url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico",
-    "leido": "2026-11-09T14:10:07Z"
+    "leido": "2026-11-09T14:24:23Z"
   },
   "hidro": {
     "avisos": [
@@ -6840,7 +6843,7 @@
       }
     ],
     "url": "https://www.senamhi.gob.pe/?p=aviso-hidrologico",
-    "leido": "2026-11-09T14:10:08Z"
+    "leido": "2026-11-09T14:24:24Z"
   },
   "ana_rios": {
     "estaciones": [
@@ -6848,12 +6851,12 @@
         "rio": "Napo",
         "estacion": "Bellavista",
         "lugar": "Mazan, Loreto",
-        "valor": 86.54,
+        "valor": 86.53,
         "unidad": "m.s.n.m",
         "alerta": 86.92,
         "emergencia": 85.81,
         "tendencia": "Descendente",
-        "hora": "07:00",
+        "hora": "08:00",
         "estado": "alerta",
         "estiaje": true,
         "lat": -3.48276,
@@ -6981,7 +6984,7 @@
         "alerta": 800.0,
         "emergencia": 1000.0,
         "tendencia": "Descendente",
-        "hora": "08:00",
+        "hora": "09:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -4.299054,
@@ -7296,12 +7299,12 @@
         "rio": "Rímac",
         "estacion": "Puente Huachipa",
         "lugar": "Lurigancho, Lima",
-        "valor": 1.2,
+        "valor": 1.24,
         "unidad": "m",
         "alerta": null,
         "emergencia": null,
         "tendencia": "Ascendente",
-        "hora": "08:00",
+        "hora": "09:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -12.01283,
@@ -7421,6 +7424,22 @@
         "reporte": "656-2026"
       },
       {
+        "rio": "Ica",
+        "estacion": "El Tambo Huamani",
+        "lugar": "San José De Los Molinos, Ica",
+        "valor": 13.93,
+        "unidad": "m³/s",
+        "alerta": 150.0,
+        "emergencia": 280.0,
+        "tendencia": "Ascendente",
+        "hora": "06:00",
+        "estado": "normal",
+        "estiaje": false,
+        "lat": -13.84386,
+        "lon": -75.58944,
+        "reporte": "656-2026"
+      },
+      {
         "rio": "Río Santiago",
         "estacion": "Challaca",
         "lugar": "Santiago De Chocorvos, Huancavelica",
@@ -7445,7 +7464,7 @@
         "alerta": 140.0,
         "emergencia": 250.0,
         "tendencia": "Ascendente",
-        "hora": "08:00",
+        "hora": "09:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -13.9248,
@@ -7466,6 +7485,22 @@
         "estiaje": false,
         "lat": -14.239975,
         "lon": -74.92134,
+        "reporte": "656-2026"
+      },
+      {
+        "rio": "El Ingenio",
+        "estacion": "Huallpoca",
+        "lugar": "El Ingenio, Ica",
+        "valor": 0.65,
+        "unidad": "m³/s",
+        "alerta": 50.0,
+        "emergencia": 70.0,
+        "tendencia": "Ascendente",
+        "hora": "06:00",
+        "estado": "normal",
+        "estiaje": false,
+        "lat": -14.6287,
+        "lon": -74.955,
         "reporte": "656-2026"
       },
       {
@@ -7504,12 +7539,12 @@
         "rio": "Cotahuasi",
         "estacion": "Cuyau",
         "lugar": "Cotahuasi, Arequipa",
-        "valor": 0.65,
+        "valor": 0.62,
         "unidad": "m",
         "alerta": null,
         "emergencia": null,
         "tendencia": "Descendente",
-        "hora": "08:00",
+        "hora": "09:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -15.218517,
@@ -7701,7 +7736,7 @@
         "alerta": 20.0,
         "emergencia": 40.0,
         "tendencia": "Ascendente",
-        "hora": "08:00",
+        "hora": "09:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -17.47659,
@@ -8240,12 +8275,12 @@
         "rio": "Tigre",
         "estacion": "Intuto",
         "lugar": "Tigre, Loreto",
-        "valor": 7.22,
+        "valor": 7.21,
         "unidad": "m",
         "alerta": 20.0,
         "emergencia": 25.0,
         "tendencia": "Descendente",
-        "hora": "07:00",
+        "hora": "08:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -3.489877,
@@ -8589,6 +8624,22 @@
         "reporte": "656-2026"
       },
       {
+        "rio": "San Alejandro",
+        "estacion": "San Alejandro",
+        "lugar": "Irazola, Ucayali",
+        "valor": 72.92,
+        "unidad": "m³/s",
+        "alerta": null,
+        "emergencia": null,
+        "tendencia": "Descendente",
+        "hora": "06:00",
+        "estado": "normal",
+        "estiaje": false,
+        "lat": -8.8309,
+        "lon": -75.2128,
+        "reporte": "656-2026"
+      },
+      {
         "rio": "Ucayali",
         "estacion": "Requena",
         "lugar": "Requena, Loreto",
@@ -8618,6 +8669,38 @@
         "estiaje": false,
         "lat": -7.3522,
         "lon": -75.0008,
+        "reporte": "656-2026"
+      },
+      {
+        "rio": "Aguaytia",
+        "estacion": "Pte. Aguaytía",
+        "lugar": "Padre Abad, Ucayali",
+        "valor": 181.68,
+        "unidad": "m³/s",
+        "alerta": 1458.0,
+        "emergencia": 2694.0,
+        "tendencia": "Ascendente",
+        "hora": "06:00",
+        "estado": "normal",
+        "estiaje": false,
+        "lat": -9.039,
+        "lon": -75.504,
+        "reporte": "656-2026"
+      },
+      {
+        "rio": "Pachitea",
+        "estacion": "Puerto Inca",
+        "lugar": "Puerto Inca, Huanuco",
+        "valor": 1419.86,
+        "unidad": "m³/s",
+        "alerta": 4708.0,
+        "emergencia": 5109.0,
+        "tendencia": "Descendente",
+        "hora": "06:00",
+        "estado": "normal",
+        "estiaje": false,
+        "lat": -9.384,
+        "lon": -74.968,
         "reporte": "656-2026"
       },
       {
@@ -8661,7 +8744,7 @@
         "alerta": 17000.0,
         "emergencia": 21000.0,
         "tendencia": "Descendente",
-        "hora": "06:00",
+        "hora": "06:15",
         "estado": "normal",
         "estiaje": false,
         "lat": -12.60033,
@@ -8912,17 +8995,17 @@
     "en_alerta": 2,
     "en_emergencia": 0,
     "url": "https://snirh.ana.gob.pe/onrh/",
-    "leido": "2026-11-09T14:05:04Z"
+    "leido": "2026-11-09T14:24:29Z"
   },
   "ana_embalses": {
     "embalses": [
       {
         "nombre": "Poechos",
         "lugar": "Querecotillo, Piura",
-        "fecha": "08-Nov",
+        "fecha": "09-Nov",
         "util": 426.3,
-        "almacenado": 245.6,
-        "porcentaje": 57.6,
+        "almacenado": 243.7,
+        "porcentaje": 57.2,
         "lat": -4.68,
         "lon": -80.52,
         "influencia": "Piura"
@@ -8952,10 +9035,10 @@
       {
         "nombre": "Gallito Ciego",
         "lugar": "Yonan, Cajamarca",
-        "fecha": "06-Nov",
+        "fecha": "09-Nov",
         "util": 366.6,
-        "almacenado": 213.1,
-        "porcentaje": 58.1,
+        "almacenado": 213.8,
+        "porcentaje": 58.3,
         "lat": -7.23,
         "lon": -79.21,
         "influencia": "La Libertad"
@@ -9117,10 +9200,10 @@
       {
         "nombre": "Lago Junín",
         "lugar": "Vicco, Pasco",
-        "fecha": "05-Nov",
+        "fecha": "08-Nov",
         "util": 314.7,
-        "almacenado": 64.0,
-        "porcentaje": 20.3,
+        "almacenado": 57.3,
+        "porcentaje": 18.2,
         "lat": -10.923821,
         "lon": -76.27906,
         "influencia": "Junin"
@@ -9149,7 +9232,7 @@
       }
     ],
     "url": "https://snirh.ana.gob.pe/onrh/",
-    "leido": "2026-11-09T14:05:05Z"
+    "leido": "2026-11-09T14:24:29Z"
   },
   "ana_pc": {
     "total": 536,
@@ -9160,7 +9243,7 @@
     },
     "avance_medio": 37.1,
     "url": "https://snirh.ana.gob.pe/",
-    "leido": "2026-11-09T14:05:07Z"
+    "leido": "2026-11-09T14:24:30Z"
   },
   "emergencia": {
     "decretos": {
@@ -14126,7 +14209,7 @@
       "ONRH/DEE_DS_140_2026_PCM"
     ],
     "url": "https://www.gob.pe/busquedas?contenido[]=normas&term=estado+de+emergencia",
-    "leido": "2026-11-09T14:05:09Z"
+    "leido": "2026-11-09T14:24:30Z"
   },
   "preparacion": {
     "conteo": {
@@ -21282,7 +21365,7 @@
       }
     },
     "url": "https://visor.geoperu.gob.pe/",
-    "leido": "2026-11-09T14:10:09Z"
+    "leido": "2026-11-09T14:24:32Z"
   },
   "agua": {
     "total": 68,
@@ -22164,7 +22247,7 @@
       }
     },
     "url": "https://www.sunass.gob.pe/",
-    "leido": "2026-11-09T14:10:11Z"
+    "leido": "2026-11-09T14:24:33Z"
   },
   "incendios": {
     "total": 35,
@@ -22486,7 +22569,7 @@
       }
     ],
     "url": "https://geo.serfor.gob.pe/visor/",
-    "leido": "2026-11-09T14:10:12Z"
+    "leido": "2026-11-09T14:24:33Z"
   },
   "phisis": {
     "estaciones": [
@@ -22613,7 +22696,7 @@
       {
         "estacion": "El Ciruelo",
         "cuenca": "Cuenca Chira",
-        "fecha": "2026-11-09T13:00:00Z",
+        "fecha": "2026-11-09T14:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "Suyo, Piura",
@@ -22893,7 +22976,7 @@
       {
         "estacion": "Puente Huachipa",
         "cuenca": "Cuenca Rímac",
-        "fecha": "2026-11-09T13:00:00Z",
+        "fecha": "2026-11-09T14:00:00Z",
         "nivel": "normal",
         "variable": "nivel",
         "lugar": "Lurigancho, Lima",
@@ -22973,7 +23056,7 @@
       {
         "estacion": "Autisha",
         "cuenca": "Cuenca Rímac",
-        "fecha": "2026-11-09T13:00:00Z",
+        "fecha": "2026-11-09T14:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "San Antonio, Lima",
@@ -23023,7 +23106,7 @@
       {
         "estacion": "El Tambo Huamani",
         "cuenca": "Cuenca Ica",
-        "fecha": "2026-11-06T11:00:00Z",
+        "fecha": "2026-11-09T11:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "San Jose De Los Molinos, Ica",
@@ -23033,7 +23116,7 @@
       {
         "estacion": "Los Molinos",
         "cuenca": "Cuenca Ica",
-        "fecha": "2026-11-09T13:00:00Z",
+        "fecha": "2026-11-09T14:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "San Jose De Los Molinos, Ica",
@@ -23053,7 +23136,7 @@
       {
         "estacion": "Huallpoca",
         "cuenca": "Cuenca Grande",
-        "fecha": "2026-11-08T23:00:00Z",
+        "fecha": "2026-11-09T11:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "El Ingenio, Ica",
@@ -23073,7 +23156,7 @@
       {
         "estacion": "Cuyau",
         "cuenca": "Cuenca Ocoña",
-        "fecha": "2026-11-09T13:00:00Z",
+        "fecha": "2026-11-09T14:00:00Z",
         "nivel": "normal",
         "variable": "nivel",
         "lugar": "Cotahuasi, Arequipa",
@@ -23233,7 +23316,7 @@
       {
         "estacion": "Ticapampa",
         "cuenca": "Cuenca Locumba",
-        "fecha": "2026-11-09T13:00:00Z",
+        "fecha": "2026-11-09T14:00:00Z",
         "nivel": "normal",
         "variable": "A",
         "lugar": "Ilabaya, Tacna",
@@ -23553,7 +23636,7 @@
       {
         "estacion": "Puerto Inca",
         "cuenca": "Cuenca Pachitea",
-        "fecha": "2026-11-07T23:00:00Z",
+        "fecha": "2026-11-09T11:00:00Z",
         "nivel": "normal",
         "variable": "A",
         "lugar": "Puerto Inca, Huanuco",
@@ -23563,7 +23646,7 @@
       {
         "estacion": "Pte. Aguaytía",
         "cuenca": "Cuenca Aguaytía",
-        "fecha": "2026-11-07T23:00:00Z",
+        "fecha": "2026-11-09T11:00:00Z",
         "nivel": "normal",
         "variable": "A",
         "lugar": "Padre Abad, Ucayali",
@@ -23583,7 +23666,7 @@
       {
         "estacion": "San Alejandro",
         "cuenca": "Cuenca Aguaytía",
-        "fecha": "2026-11-06T19:00:00Z",
+        "fecha": "2026-11-09T11:00:00Z",
         "nivel": "normal",
         "variable": "A",
         "lugar": "Irazola, Ucayali",
@@ -23843,7 +23926,7 @@
       {
         "estacion": "Pte. Azángaro",
         "cuenca": "Cuenca Azángaro",
-        "fecha": "2026-11-09T13:00:00Z",
+        "fecha": "2026-11-09T14:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "Azangaro, Puno",
@@ -23873,7 +23956,7 @@
       {
         "estacion": "Puente Desaguadero",
         "cuenca": "Lago Titicaca",
-        "fecha": "2026-11-09T13:00:00Z",
+        "fecha": "2026-11-09T14:00:00Z",
         "nivel": "normal",
         "variable": "nivel",
         "lugar": "Desaguadero, Puno",
@@ -23913,7 +23996,7 @@
     ],
     "sobre_umbral": 3,
     "url": "https://www.senamhi.gob.pe/mapas/mapa-monitoreohidro/",
-    "leido": "2026-11-09T14:05:37Z"
+    "leido": "2026-11-09T14:24:33Z"
   },
   "prono": {
     "url": "https://www.senamhi.gob.pe/?p=pronostico-climatico",
@@ -24511,7 +24594,8 @@
         ]
       ]
     },
-    "leido": "2026-11-09T14:06:17Z"
+    "leido": "2026-11-09T14:06:17Z",
+    "atrasado": false
   },
   "igp": {
     "e": [
@@ -24716,7 +24800,7 @@
       "clasificacion": 99.88
     },
     "url": "http://met.igp.gob.pe/variabclim/",
-    "leido": "2026-11-09T14:10:14Z"
+    "leido": "2026-11-09T14:24:55Z"
   },
   "dhn": {
     "generado": "2026-11-06T16:10:08Z",
@@ -25228,7 +25312,7 @@
         }
       ]
     },
-    "leido": "2026-11-09T14:10:15Z"
+    "leido": "2026-11-09T14:24:55Z"
   },
   "inaigem": {
     "estaciones": [
@@ -25266,7 +25350,7 @@
       }
     ],
     "url": "https://www.inaigem.gob.pe/",
-    "leido": "2026-11-09T14:10:15Z"
+    "leido": "2026-11-09T14:24:56Z"
   },
   "enfen_docs": {
     "docs": [
@@ -25332,6 +25416,7 @@
       }
     ],
     "url": "https://enfen.imarpe.gob.pe/",
-    "leido": "2026-11-09T14:06:19Z"
+    "leido": "2026-11-09T14:06:19Z",
+    "atrasado": false
   }
 }
