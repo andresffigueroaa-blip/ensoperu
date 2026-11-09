@@ -2,7 +2,7 @@
   "_": "Generado por pipeline/fuentes/senamhi.py. Avisos oficiales vigentes o por empezar.",
   "fuente": "SENAMHI, avisos meteorológicos",
   "url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico",
-  "leido": "2026-11-09T21:23:51Z",
+  "leido": "2026-11-09T22:10:27Z",
   "avisos": [
     {
       "numero": 462,
@@ -56,10 +56,14 @@
       "enlace": "https://www.senamhi.gob.pe/?p=aviso-meteorologico-vigente&a=2026&b=29358&c=00&d=SENA",
       "texto": "El SENAMHI informa que, desde el domingo 8 al lunes 9 de noviembre, se presentará el incremento de la velocidad del viento de moderada a fuerte intensidad en la selva, debido al décimo quinto friaje del año. Asimismo, se esperan ráfagas de viento con velocidades superiores a los 55 km/h. El domingo 8 de noviembre, se prevén vientos con velocidades cercanas a los 44 km/h en la selva sur. El lunes 9 de noviembre, se prevén vientos con velocidades cercanas a los 31 km/h en la selva centro y sur.",
       "zonas": [
-        "Selva norte",
         "Selva sur"
       ],
-      "regiones": []
+      "regiones": [
+        "Huanuco",
+        "Junin",
+        "Pasco",
+        "Ucayali"
+      ]
     },
     {
       "numero": 459,
@@ -72,10 +76,14 @@
       "enlace": "https://www.senamhi.gob.pe/?p=aviso-meteorologico-vigente&a=2026&b=29356&c=00&d=SENA",
       "texto": "El SENAMHI informa que, desde el domingo 8 al lunes 9 de noviembre, se prevé el descenso de la temperatura diurna, de moderada a fuerte intensidad, en la selva sur, asociado al décimo quinto friaje del año. Este evento estará acompañado de cobertura nubosa, lluvias y ráfagas de viento con velocidades cercanas a los 45 km/h. El domingo 8 de noviembre, se prevén temperaturas máximas alrededor de los 24°C en la selva sur. El lunes 9 de noviembre, se prevén temperaturas máximas alrededor de los 27°C en la selva sur y valores próximos 26°C en la selva central.",
       "zonas": [
-        "Selva norte",
         "Selva sur"
       ],
-      "regiones": []
+      "regiones": [
+        "Huanuco",
+        "Junin",
+        "Pasco",
+        "Ucayali"
+      ]
     },
     {
       "numero": 463,
@@ -91,7 +99,12 @@
         "Selva norte",
         "Selva sur"
       ],
-      "regiones": []
+      "regiones": [
+        "Huanuco",
+        "Junin",
+        "Pasco",
+        "Ucayali"
+      ]
     },
     {
       "numero": 457,
@@ -107,7 +120,12 @@
         "Selva norte",
         "Selva sur"
       ],
-      "regiones": []
+      "regiones": [
+        "Huanuco",
+        "Junin",
+        "Pasco",
+        "Ucayali"
+      ]
     },
     {
       "numero": 460,
@@ -122,7 +140,12 @@
       "zonas": [
         "Selva sur"
       ],
-      "regiones": []
+      "regiones": [
+        "Huanuco",
+        "Junin",
+        "Pasco",
+        "Ucayali"
+      ]
     }
   ]
 }
