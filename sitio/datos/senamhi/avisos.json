@@ -2,7 +2,7 @@
   "_": "Generado por pipeline/fuentes/senamhi.py. Avisos oficiales vigentes o por empezar.",
   "fuente": "SENAMHI, avisos meteorológicos",
   "url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico",
-  "leido": "2026-11-09T19:23:53Z",
+  "leido": "2026-11-09T20:24:13Z",
   "avisos": [
     {
       "numero": 462,
@@ -71,6 +71,22 @@
       "nivel": "NARANJA",
       "enlace": "https://www.senamhi.gob.pe/?p=aviso-meteorologico-vigente&a=2026&b=29356&c=00&d=SENA",
       "texto": "El SENAMHI informa que, desde el domingo 8 al lunes 9 de noviembre, se prevé el descenso de la temperatura diurna, de moderada a fuerte intensidad, en la selva sur, asociado al décimo quinto friaje del año. Este evento estará acompañado de cobertura nubosa, lluvias y ráfagas de viento con velocidades cercanas a los 45 km/h. El domingo 8 de noviembre, se prevén temperaturas máximas alrededor de los 24°C en la selva sur. El lunes 9 de noviembre, se prevén temperaturas máximas alrededor de los 27°C en la selva sur y valores próximos 26°C en la selva central.",
+      "zonas": [
+        "Selva norte",
+        "Selva sur"
+      ],
+      "regiones": []
+    },
+    {
+      "numero": 463,
+      "situacion": "emitido",
+      "titulo": "INCREMENTO DE TEMPERATURA DIURNA EN LA SELVA",
+      "emitido": "2026-11-09",
+      "inicio": "2026-11-10",
+      "fin": "2026-11-11",
+      "nivel": "NARANJA",
+      "enlace": "https://www.senamhi.gob.pe/?p=aviso-meteorologico-vigente&a=2026&b=29360&c=00&d=SENA",
+      "texto": "El SENAMHI informa que, del martes 10 al miércoles 11 de noviembre, se presentará el incremento de la temperatura diurna, de moderada a fuerte intensidad en la selva. Asimismo, se prevé escasa cobertura nubosa durante el día, lo que favorecerá el aumento de la radiación ultravioleta (UV). Además, se esperan ráfagas de viento con velocidades cercanas a los 45 km/h, principalmente durante las horas de la tarde. El martes 10 de noviembre se prevén temperaturas máximas entre 28 °C y 38 °C en la selva centro y valores entre 32 °C y 37 °C en la selva sur. El miércoles 11 de noviembre se prevén temperaturas máximas entre 31 °C y 37 °C en la selva norte, entre 28 °C y 37 °C en la selva centro y valores entre 32 °C y 36 °C en la selva sur.",
       "zonas": [
         "Selva norte",
         "Selva sur"
