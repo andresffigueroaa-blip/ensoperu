@@ -1,6 +1,6 @@
 {
   "_": "Generado por pipeline/fuentes/peru_oficial.py. Datos oficiales tal como se publican.",
-  "actualizado": "2026-11-09T18:24:00Z",
+  "actualizado": "2026-11-09T18:52:58Z",
   "fallas": [
     "coen"
   ],
@@ -417,10 +417,30 @@
     "sin_cruce": 1,
     "url": "https://coen.indeci.gob.pe/mer/",
     "leido": "2026-11-09T15:25:23Z",
-    "atrasado": false
+    "atrasado": true
   },
   "indeci_rss": {
     "reportes": [
+      {
+        "titulo": "REPORTE COMPLEMENTARIO N.º 15693 – 9/11/2026 / COEN – INDECI / 13:15 HORAS (Reporte N.° 1) HUAICO EN EL DISTRITO DE OROPESA – APURÍMAC",
+        "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-o-15693-9-11-2026-coen-indeci-1315-horas-reporte-n-1-huaico-en-el-distrito-de-oropesa-apurimac/",
+        "fecha": "2026-11-09T18:48"
+      },
+      {
+        "titulo": "REPORTE COMPLEMENTARIO N.º 15692 – 9/11/2026 / COEN – INDECI / 13:00 HORAS (Reporte N.º 1) INCENDIO URBANO EN EL DISTRITO DE NUEVO CHIMBOTE – ÁNCASH",
+        "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-o-15692-9-11-2026-coen-indeci-1300-horas-reporte-n-o-1-incendio-urbano-en-el-distrito-de-nuevo-chimbote-ancash/",
+        "fecha": "2026-11-09T18:45"
+      },
+      {
+        "titulo": "REPORTE COMPLEMENTARIO N.º 15691 – 9/11/2026/ COEN – INDECI / 12:35 HORAS (Reporte N.° 3) INCENDIO FORESTAL EN EL DISTRITO DE JACAS GRANDE – HUÁNUCO",
+        "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-o-15670-8-11-2026-coen-indeci-2200-horas-reporte-n-1-incendio-forestal-en-el-distrito-de-jacas-grande-huanuco/",
+        "fecha": "2026-11-09T18:41"
+      },
+      {
+        "titulo": "REPORTE COMPLEMENTARIO N.° 15690 – 9/11/2026 /COEN-INDECI / 12:30 HORAS (Reporte N.° 2) INCENDIO FORESTAL EN EL DISTRITO DE LURICOCHA – AYACUCHO",
+        "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-15534-5-11-2026-coen-indeci-1555-horas-reporte-n-1-incendio-forestal-en-el-distrito-de-luricocha-ayacucho/",
+        "fecha": "2026-11-09T18:31"
+      },
       {
         "titulo": "BOLETÍN INFORMATIVO SÍSMICO NACIONAL N° 773-2026-INDECI/COEN",
         "enlace": "https://portal.indeci.gob.pe/emergencias/boletin-informativo-sismico-nacional-n-773-2026-indeci-coen/",
@@ -467,33 +487,13 @@
         "fecha": "2026-11-09T12:55"
       },
       {
-        "titulo": "REPORTE COMPLEMENTARIO N.º 15683 – 9/11/2026/ COEN – INDECI / 07:00 HORAS (Reporte N° 2) INCENDIO FORESTAL EN EL DISTRITO DE JACAS GRANDE – HUÁNUCO",
-        "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-o-15670-8-11-2026-coen-indeci-2200-horas-reporte-n-1-incendio-forestal-en-el-distrito-de-jacas-grande-huanuco/",
-        "fecha": "2026-11-09T12:50"
-      },
-      {
         "titulo": "BOLETÍN INFORMATIVO DE AVISO HIDROLÓGICO N°1668-2026-INDECI/COEN",
         "enlace": "https://portal.indeci.gob.pe/emergencias/boletin-informativo-de-aviso-hidrologico-n1668-2026-indeci-coen/",
         "fecha": "2026-11-09T12:08"
-      },
-      {
-        "titulo": "REPORTE COMPLEMENTARIO N.° 15681 – 9/11/2026 /COEN – INDECI / 06:50 HORAS (Reporte N.º 2) INCENDIO FORESTAL EN EL DISTRITO DE HUANDO – HUANCAVELICA",
-        "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-15522-5-11-2026-coen-indeci-1050-horas-reporte-n-o-1-incendio-forestal-en-el-distrito-de-huando-huancavelica/",
-        "fecha": "2026-11-09T11:48"
-      },
-      {
-        "titulo": "REPORTE COMPLEMENTARIO N° 15680 – 9/11/2026/ COEN-INDECI / 06:30 HORAS (Reporte N° 6) INCENDIO FORESTAL EN EL DISTRITO DE ABANCAY – APURÍMAC",
-        "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-preliminar-n-1064-18-10-2026-coen-indeci-0300-horas-incendio-forestal-en-el-distrito-de-abancay-apurimac/",
-        "fecha": "2026-11-09T11:44"
-      },
-      {
-        "titulo": "BOLETÍN INFORMATIVO SÍSMICO NACIONAL N° 772-2026-INDECI/COEN",
-        "enlace": "https://portal.indeci.gob.pe/emergencias/boletin-informativo-sismico-nacional-n-772-2026-indeci-coen/",
-        "fecha": "2026-11-09T10:39"
       }
     ],
     "url": "https://portal.indeci.gob.pe/emergencias/",
-    "leido": "2026-11-09T18:24:02Z"
+    "leido": "2026-11-09T18:53:01Z"
   },
   "escenario": {
     "vigente": true,
@@ -5657,7 +5657,7 @@
       }
     },
     "url": "https://sigrid.cenepred.gob.pe/sigridv3/escenario-aviso",
-    "leido": "2026-11-09T18:24:04Z"
+    "leido": "2026-11-09T18:53:05Z"
   },
   "quebradas": {
     "fecha": "2026-11-09",
@@ -5845,7 +5845,7 @@
     },
     "sin_cruce": 0,
     "url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico",
-    "leido": "2026-11-09T18:24:05Z"
+    "leido": "2026-11-09T18:53:06Z"
   },
   "hidro": {
     "avisos": [
@@ -5887,7 +5887,7 @@
       }
     ],
     "url": "https://www.senamhi.gob.pe/?p=aviso-hidrologico",
-    "leido": "2026-11-09T18:24:06Z"
+    "leido": "2026-11-09T18:53:07Z"
   },
   "ana_rios": {
     "estaciones": [
@@ -20521,11 +20521,11 @@
       }
     },
     "url": "https://visor.geoperu.gob.pe/",
-    "leido": "2026-11-09T18:24:14Z"
+    "leido": "2026-11-09T18:53:08Z"
   },
   "agua": {
     "total": 74,
-    "conexiones": 294890,
+    "conexiones": 307652,
     "cortes": [
       {
         "eps": "SEDAPAL",
@@ -20576,6 +20576,16 @@
         "inicio": "2026-11-14",
         "restablece": "2026-11-14",
         "distrito": "080101"
+      },
+      {
+        "eps": "SEDAPAL",
+        "lugar": "Los Olivos, Lima",
+        "conexiones": 14579,
+        "tipo": "Imprevista",
+        "motivo": "Rotura de tubería de agua potable",
+        "inicio": "2026-11-09",
+        "restablece": "2026-11-10",
+        "distrito": "150117"
       },
       {
         "eps": "SEDAPAL",
@@ -20928,16 +20938,6 @@
         "distrito": "150135"
       },
       {
-        "eps": "SEDAPAL",
-        "lugar": "Los Olivos, Lima",
-        "conexiones": 1817,
-        "tipo": "Programada",
-        "motivo": "Limpieza y desinfección de reservorio/cisterna",
-        "inicio": "2026-11-11",
-        "restablece": "2026-11-12",
-        "distrito": "150117"
-      },
-      {
         "eps": "EPS MARAÑON S.A.",
         "lugar": "Jaen, Cajamarca",
         "conexiones": 1776,
@@ -21149,6 +21149,10 @@
         "cortes": 1,
         "conexiones": 16000
       },
+      "150117": {
+        "cortes": 1,
+        "conexiones": 14579
+      },
       "150143": {
         "cortes": 1,
         "conexiones": 13945
@@ -21289,10 +21293,6 @@
         "cortes": 1,
         "conexiones": 1850
       },
-      "150117": {
-        "cortes": 1,
-        "conexiones": 1817
-      },
       "060801": {
         "cortes": 1,
         "conexiones": 1776
@@ -21427,7 +21427,7 @@
       }
     },
     "url": "https://www.sunass.gob.pe/",
-    "leido": "2026-11-09T18:24:15Z"
+    "leido": "2026-11-09T18:53:09Z"
   },
   "incendios": {
     "total": 36,
@@ -21758,7 +21758,7 @@
       }
     ],
     "url": "https://geo.serfor.gob.pe/visor/",
-    "leido": "2026-11-09T18:24:15Z"
+    "leido": "2026-11-09T18:53:10Z"
   },
   "phisis": {
     "estaciones": [
@@ -23998,7 +23998,7 @@
       "clasificacion": 99.99
     },
     "url": "http://met.igp.gob.pe/variabclim/",
-    "leido": "2026-11-09T18:24:19Z"
+    "leido": "2026-11-09T18:53:12Z"
   },
   "dhn": {
     "generado": "2026-11-09T15:08:22Z",
@@ -24510,7 +24510,7 @@
         }
       ]
     },
-    "leido": "2026-11-09T18:24:19Z"
+    "leido": "2026-11-09T18:53:13Z"
   },
   "inaigem": {
     "estaciones": [
@@ -24548,7 +24548,7 @@
       }
     ],
     "url": "https://www.inaigem.gob.pe/",
-    "leido": "2026-11-09T18:24:20Z"
+    "leido": "2026-11-09T18:53:13Z"
   },
   "enfen_docs": {
     "docs": [
