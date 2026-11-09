@@ -1,13 +1,13 @@
 {
   "_": "Generado por pipeline/productos/panorama.py. No editar a mano.",
-  "generado": "2026-11-09T04:25:03Z",
+  "generado": "2026-11-09T04:26:01Z",
   "fecha": "2026-11-09",
   "lectura": [
     "El ENFEN mantiene la Alerta de El Niño Costero (N° 19-2026, 30 de octubre de 2026). El Niño costero continuaría hasta fines de otoño de 2027.",
     "Mar: +5,6 °C en Niño 1+2 y +3,5 °C en Niño 3.4 (media de 7 días).",
     "SENAMHI tiene 6 avisos vigentes o por empezar, 2 en nivel rojo.",
     "Lluvia próxima: la mayor en 16 días es Contralmirante Villar (Tumbes), con 246 mm.",
-    "Ríos: el modelo global GloFAS pronostica caudales por encima de lo habitual en 10, entre ellos Chira, Piura, La Leche, Zaña; es orientativo. La ANA y el SENAMHI no miden ríos sobre su umbral de crecida.",
+    "Ríos: el modelo global GloFAS pronostica caudales por encima de lo habitual en 9, entre ellos Chicama, Chira, Piura, La Leche; es orientativo. La ANA y el SENAMHI no miden ríos sobre su umbral de crecida.",
     "CENEPRED: 175 distritos en riesgo muy alto por la lluvia hasta entre el 8 de noviembre y el 9 de noviembre, con 1 487 675 personas.",
     "INDECI registró 86 emergencias en 7 días; la más frecuente: lluvias intensas.",
     "Focos de calor: 1052 en 7 días; el mayor número en Tambopata (Madre de Dios), 122."
@@ -283,7 +283,6 @@
       "estacional": 71,
       "rios_altos": [
         "La Leche",
-        "Chancay-Lambayeque",
         "Zaña"
       ]
     },
@@ -1772,11 +1771,23 @@
   ],
   "rios_altos": [
     {
+      "id": "chicama",
+      "nombre": "Chicama",
+      "lugar": "Salinar",
+      "region": "13",
+      "hoy": 113.02,
+      "pico": 263.24,
+      "fecha_pico": "2026-11-23",
+      "p90": 151.1,
+      "p99": 310.0,
+      "nivel": "elevado"
+    },
+    {
       "id": "chira",
       "nombre": "Chira",
       "lugar": "Ardilla",
       "region": "20",
-      "hoy": 811.83,
+      "hoy": 852.1,
       "pico": 1467.93,
       "fecha_pico": "2026-11-20",
       "p90": 932.2,
@@ -1788,7 +1799,7 @@
       "nombre": "Piura",
       "lugar": "Puente Sánchez Cerro",
       "region": "20",
-      "hoy": 195.34,
+      "hoy": 255.45,
       "pico": 347.34,
       "fecha_pico": "2026-11-21",
       "p90": 230.7,
@@ -1800,7 +1811,7 @@
       "nombre": "La Leche",
       "lugar": "Puchaca",
       "region": "14",
-      "hoy": 28.31,
+      "hoy": 32.11,
       "pico": 54.72,
       "fecha_pico": "2026-11-17",
       "p90": 39.7,
@@ -1812,7 +1823,7 @@
       "nombre": "Zaña",
       "lugar": "Batán",
       "region": "14",
-      "hoy": 53.45,
+      "hoy": 56.68,
       "pico": 58.29,
       "fecha_pico": "2026-11-17",
       "p90": 45.1,
@@ -1820,37 +1831,13 @@
       "nivel": "elevado"
     },
     {
-      "id": "chancay-lamb",
-      "nombre": "Chancay-Lambayeque",
-      "lugar": "Racarrumi",
-      "region": "14",
-      "hoy": 125.47,
-      "pico": 125.47,
-      "fecha_pico": "2026-11-08",
-      "p90": 103.0,
-      "p99": 217.3,
-      "nivel": "elevado"
-    },
-    {
-      "id": "chicama",
-      "nombre": "Chicama",
-      "lugar": "Salinar",
-      "region": "13",
-      "hoy": 174.39,
-      "pico": 174.39,
-      "fecha_pico": "2026-11-08",
-      "p90": 151.1,
-      "p99": 310.0,
-      "nivel": "elevado"
-    },
-    {
       "id": "pativilca",
       "nombre": "Pativilca",
       "lugar": "Yanapampa",
       "region": "15",
-      "hoy": 127.53,
-      "pico": 220.82,
-      "fecha_pico": "2026-11-22",
+      "hoy": 126.35,
+      "pico": 243.34,
+      "fecha_pico": "2026-11-23",
       "p90": 197.2,
       "p99": 363.9,
       "nivel": "elevado"
@@ -1860,7 +1847,7 @@
       "nombre": "Tumbes",
       "lugar": "El Tigre",
       "region": "24",
-      "hoy": 575.77,
+      "hoy": 544.76,
       "pico": 646.14,
       "fecha_pico": "2026-11-17",
       "p90": 591.9,
@@ -1868,27 +1855,27 @@
       "nivel": "elevado"
     },
     {
-      "id": "jequetepeque",
-      "nombre": "Jequetepeque",
-      "lugar": "Yonán",
-      "region": "13",
-      "hoy": 349.75,
-      "pico": 349.75,
-      "fecha_pico": "2026-11-08",
-      "p90": 320.4,
-      "p99": 603.0,
-      "nivel": "elevado"
-    },
-    {
       "id": "viru",
       "nombre": "Virú",
       "lugar": "Huacapongo",
       "region": "13",
-      "hoy": 31.81,
+      "hoy": 39.18,
       "pico": 43.77,
       "fecha_pico": "2026-11-18",
       "p90": 41.8,
       "p99": 74.5,
+      "nivel": "elevado"
+    },
+    {
+      "id": "jequetepeque",
+      "nombre": "Jequetepeque",
+      "lugar": "Yonán",
+      "region": "13",
+      "hoy": 324.84,
+      "pico": 324.84,
+      "fecha_pico": "2026-11-09",
+      "p90": 320.4,
+      "p99": 603.0,
       "nivel": "elevado"
     }
   ],
@@ -2007,7 +1994,7 @@
   "totales": {
     "avisos": 6,
     "rojos": 2,
-    "rios_altos": 10,
+    "rios_altos": 9,
     "focos": 1052,
     "distritos_riesgo_alto": 766
   }
