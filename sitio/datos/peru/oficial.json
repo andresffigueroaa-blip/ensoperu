@@ -1,6 +1,6 @@
 {
   "_": "Generado por pipeline/fuentes/peru_oficial.py. Datos oficiales tal como se publican.",
-  "actualizado": "2026-11-09T22:10:51Z",
+  "actualizado": "2026-11-09T22:23:58Z",
   "fallas": [
     "coen"
   ],
@@ -10,7 +10,7 @@
     "color": "#ff0031",
     "titular": "EL NIÑO COSTERO CONTINUARÍA HASTA FINES DE OTOÑO DE 2027",
     "url": "https://www.senamhi.gob.pe/?p=fenomeno-el-nino",
-    "leido": "2026-11-09T21:23:59Z"
+    "leido": "2026-11-09T22:23:58Z"
   },
   "coen": {
     "dias": 7,
@@ -422,6 +422,11 @@
   "indeci_rss": {
     "reportes": [
       {
+        "titulo": "BOLETÍN INFORMATIVO N°313 MONITOREO DE PELIGROS Y PERSPECTIVAS 09 DE NOVIEMBRE DE 2026 15:00 h",
+        "enlace": "https://portal.indeci.gob.pe/emergencias/boletin-informativo-n313-monitoreo-de-peligros-y-perspectivas-09-de-noviembre-de-2026-1500-h/",
+        "fecha": "2026-11-09T22:17"
+      },
+      {
         "titulo": "REPORTE PRELIMINAR N.º 1123 – 9/11/2026 / COEN – INDECI / 16:40 HORAS INCENDIO URBANO EN EL DISTRITO DE CAJA – HUANCAVELICA",
         "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-preliminar-n-o-1123-9-11-2026-coen-indeci-1640-horas-incendio-urbano-en-el-distrito-de-caja-huancavelica/",
         "fecha": "2026-11-09T21:58"
@@ -485,15 +490,10 @@
         "titulo": "REPORTE DE PELIGRO INMINENTE N.° 0109 – 9/11/2026 / COEN – INDECI / 14:35 HORAS (Reporte N.º 6) POR CONTAMINACIÓN AMBIENTAL DE AGUA EN EL DISTRITO DE INDEPENDENCIA – ÁNCASH",
         "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-de-peligro-inminente-n-0029-16-12-2025-coen-indeci-2300-horas-reporte-n-1-por-contaminacion-ambiental-de-agua-en-el-distrito-de-independencia-ancash/",
         "fecha": "2026-11-09T20:30"
-      },
-      {
-        "titulo": "REPORTE COMPLEMENTARIO N.º 15694 – 9/11/2026 / COEN – INDECI / 14:40 HORAS (Reporte N.º 3) INCENDIO FORESTAL EN EL DISTRITO DE VILCAS HUAMÁN – AYACUCHO",
-        "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-o-14395-17-10-2026-coen-indeci-1715-horas-reporte-n-o-1-incendio-forestal-en-el-distrito-de-vilcas-huaman-ayacucho/",
-        "fecha": "2026-11-09T20:00"
       }
     ],
     "url": "https://portal.indeci.gob.pe/emergencias/",
-    "leido": "2026-11-09T22:10:52Z"
+    "leido": "2026-11-09T22:23:59Z"
   },
   "escenario": {
     "vigente": true,
@@ -5657,7 +5657,7 @@
       }
     },
     "url": "https://sigrid.cenepred.gob.pe/sigridv3/escenario-aviso",
-    "leido": "2026-11-09T22:10:57Z"
+    "leido": "2026-11-09T22:24:01Z"
   },
   "quebradas": {
     "fecha": "2026-11-09",
@@ -5845,7 +5845,7 @@
     },
     "sin_cruce": 0,
     "url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico",
-    "leido": "2026-11-09T22:10:58Z"
+    "leido": "2026-11-09T22:24:02Z"
   },
   "hidro": {
     "avisos": [
@@ -5887,7 +5887,7 @@
       }
     ],
     "url": "https://www.senamhi.gob.pe/?p=aviso-hidrologico",
-    "leido": "2026-11-09T22:10:59Z"
+    "leido": "2026-11-09T22:24:03Z"
   },
   "ana_rios": {
     "estaciones": [
@@ -5895,12 +5895,12 @@
         "rio": "Napo",
         "estacion": "Bellavista",
         "lugar": "Mazan, Loreto",
-        "valor": 86.48,
+        "valor": 86.47,
         "unidad": "m.s.n.m",
         "alerta": 86.92,
         "emergencia": 85.81,
         "tendencia": "Descendente",
-        "hora": "15:00",
+        "hora": "16:00",
         "estado": "alerta",
         "estiaje": true,
         "lat": -3.48276,
@@ -5916,7 +5916,7 @@
         "alerta": 700.0,
         "emergencia": 1000.0,
         "tendencia": "Descendente",
-        "hora": "14:00",
+        "hora": "16:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -3.7688,
@@ -5943,12 +5943,12 @@
         "rio": "Alamor",
         "estacion": "Alamor",
         "lugar": "Lancones, Piura",
-        "valor": 20.28,
+        "valor": 19.93,
         "unidad": "m³/s",
         "alerta": 310.0,
         "emergencia": 423.0,
         "tendencia": "Descendente",
-        "hora": "15:00",
+        "hora": "16:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -4.47749,
@@ -5975,12 +5975,12 @@
         "rio": "Chipillico",
         "estacion": "Lagartera",
         "lugar": "Las Lomas, Piura",
-        "valor": 2.16,
+        "valor": 1.89,
         "unidad": "m³/s",
         "alerta": 280.0,
         "emergencia": 430.0,
         "tendencia": "Descendente",
-        "hora": "15:00",
+        "hora": "16:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -4.7285,
@@ -6007,12 +6007,12 @@
         "rio": "Chira",
         "estacion": "Pte. Simón Rodríguez",
         "lugar": "Amotape, Piura",
-        "valor": 61.41,
+        "valor": 60.44,
         "unidad": "m³/s",
         "alerta": 1000.0,
         "emergencia": 1300.0,
         "tendencia": "Ascendente",
-        "hora": "16:00",
+        "hora": "17:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -4.8801,
@@ -6023,12 +6023,12 @@
         "rio": "Macará",
         "estacion": "Pte. Int. Macara",
         "lugar": "Suyo, Piura",
-        "valor": 27.98,
+        "valor": 26.2,
         "unidad": "m³/s",
         "alerta": 500.0,
         "emergencia": 580.0,
         "tendencia": "Descendente",
-        "hora": "15:00",
+        "hora": "16:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -4.3927,
@@ -6039,12 +6039,12 @@
         "rio": "Chira",
         "estacion": "El Ciruelo",
         "lugar": "Suyo, Piura",
-        "valor": 39.54,
+        "valor": 37.03,
         "unidad": "m³/s",
         "alerta": 800.0,
         "emergencia": 1000.0,
         "tendencia": "Descendente",
-        "hora": "16:00",
+        "hora": "17:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -4.299054,
@@ -6060,7 +6060,7 @@
         "alerta": 300.0,
         "emergencia": 350.0,
         "tendencia": "Ascendente",
-        "hora": "15:00",
+        "hora": "16:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -5.2899,
@@ -6071,12 +6071,12 @@
         "rio": "Charanal",
         "estacion": "San Pedro",
         "lugar": "Chulucanas, Piura",
-        "valor": 3.37,
+        "valor": 3.23,
         "unidad": "m³/s",
         "alerta": 150.0,
         "emergencia": 200.0,
         "tendencia": "Descendente",
-        "hora": "15:00",
+        "hora": "16:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -5.07954,
@@ -6092,7 +6092,7 @@
         "alerta": 830.0,
         "emergencia": 1100.0,
         "tendencia": "Descendente",
-        "hora": "15:00",
+        "hora": "16:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -5.112894,
@@ -6135,12 +6135,12 @@
         "rio": "Cañad",
         "estacion": "Cañad",
         "lugar": "Catache, Cajamarca",
-        "valor": 6.83,
+        "valor": 6.65,
         "unidad": "m³/s",
         "alerta": 78.58,
         "emergencia": 122.99,
         "tendencia": "Descendente",
-        "hora": "15:00",
+        "hora": "16:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -6.649,
@@ -6167,12 +6167,12 @@
         "rio": "Chancay Lambayeque",
         "estacion": "Cirato",
         "lugar": "Catache, Cajamarca",
-        "valor": 40.48,
+        "valor": 39.56,
         "unidad": "m³/s",
         "alerta": 250.0,
         "emergencia": 285.0,
         "tendencia": "Descendente",
-        "hora": "14:00",
+        "hora": "16:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -6.65583,
@@ -6204,7 +6204,7 @@
         "alerta": 200.0,
         "emergencia": 300.0,
         "tendencia": "Descendente",
-        "hora": "16:00",
+        "hora": "17:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -7.25592,
@@ -6220,7 +6220,7 @@
         "alerta": 180.0,
         "emergencia": 250.0,
         "tendencia": "Descendente",
-        "hora": "15:00",
+        "hora": "16:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -7.5742,
@@ -6236,7 +6236,7 @@
         "alerta": 30.0,
         "emergencia": 40.0,
         "tendencia": "Descendente",
-        "hora": "15:00",
+        "hora": "16:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -7.5492,
@@ -6252,7 +6252,7 @@
         "alerta": 200.0,
         "emergencia": 340.0,
         "tendencia": "Descendente",
-        "hora": "15:00",
+        "hora": "16:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -7.66069,
@@ -6263,12 +6263,12 @@
         "rio": "Santa",
         "estacion": "Condorcerro",
         "lugar": "Chao, La Libertad",
-        "valor": 83.68,
+        "valor": 82.45,
         "unidad": "m³/s",
         "alerta": 505.0,
         "emergencia": 635.0,
         "tendencia": "Descendente",
-        "hora": "15:00",
+        "hora": "16:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -8.6579,
@@ -6316,7 +6316,7 @@
         "alerta": 17.3,
         "emergencia": 23.0,
         "tendencia": "Descendente",
-        "hora": "15:00",
+        "hora": "16:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -10.9216,
@@ -6332,7 +6332,7 @@
         "alerta": 64.0,
         "emergencia": 75.0,
         "tendencia": "Ascendente",
-        "hora": "14:00",
+        "hora": "16:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -11.1347,
@@ -6359,12 +6359,12 @@
         "rio": "Chillón",
         "estacion": "Pariacancha",
         "lugar": "Huaros, Lima",
-        "valor": 1.59,
+        "valor": 1.69,
         "unidad": "m³/s",
         "alerta": 10.0,
         "emergencia": 14.3,
         "tendencia": "Descendente",
-        "hora": "15:00",
+        "hora": "16:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -11.39315,
@@ -6375,12 +6375,12 @@
         "rio": "Rímac",
         "estacion": "Puente Huachipa",
         "lugar": "Lurigancho, Lima",
-        "valor": 1.15,
+        "valor": 1.18,
         "unidad": "m",
         "alerta": null,
         "emergencia": null,
         "tendencia": "Ascendente",
-        "hora": "16:00",
+        "hora": "17:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -12.01283,
@@ -6396,7 +6396,7 @@
         "alerta": 20.72,
         "emergencia": 27.45,
         "tendencia": "Descendente",
-        "hora": "15:00",
+        "hora": "16:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -11.45293,
@@ -6412,7 +6412,7 @@
         "alerta": 90.0,
         "emergencia": 120.0,
         "tendencia": "Descendente",
-        "hora": "16:00",
+        "hora": "17:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -11.92986,
@@ -6428,7 +6428,7 @@
         "alerta": 34.0,
         "emergencia": 41.0,
         "tendencia": "Descendente",
-        "hora": "15:00",
+        "hora": "16:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -11.7601,
@@ -6439,12 +6439,12 @@
         "rio": "Lurín",
         "estacion": "Antapucro",
         "lugar": "Antioquia, Lima",
-        "valor": 0.95,
+        "valor": 0.82,
         "unidad": "m³/s",
         "alerta": 55.0,
         "emergencia": 70.0,
         "tendencia": "Descendente",
-        "hora": "14:00",
+        "hora": "16:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -12.0333,
@@ -6471,12 +6471,12 @@
         "rio": "Cañete",
         "estacion": "Socsi",
         "lugar": "Lunahuana, Lima",
-        "valor": 13.33,
+        "valor": 13.63,
         "unidad": "m³/s",
         "alerta": 175.0,
         "emergencia": 250.0,
         "tendencia": "Descendente",
-        "hora": "15:00",
+        "hora": "16:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -13.0283,
@@ -6487,12 +6487,12 @@
         "rio": "Pisco",
         "estacion": "Letrayoc",
         "lugar": "Huancano, Ica",
-        "valor": 9.89,
+        "valor": 9.73,
         "unidad": "m³/s",
         "alerta": 140.0,
         "emergencia": 250.0,
         "tendencia": "Descendente",
-        "hora": "15:00",
+        "hora": "16:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -13.6401,
@@ -6519,12 +6519,12 @@
         "rio": "Río Santiago",
         "estacion": "Challaca",
         "lugar": "Santiago De Chocorvos, Huancavelica",
-        "valor": 14.66,
+        "valor": 14.48,
         "unidad": "m³/s",
         "alerta": 150.0,
         "emergencia": 280.0,
         "tendencia": "Ascendente",
-        "hora": "15:00",
+        "hora": "16:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -13.7905,
@@ -6535,12 +6535,12 @@
         "rio": "Ica",
         "estacion": "Los Molinos",
         "lugar": "San José De Los Molinos, Ica",
-        "valor": 10.97,
+        "valor": 11.48,
         "unidad": "m³/s",
         "alerta": 140.0,
         "emergencia": 250.0,
         "tendencia": "Ascendente",
-        "hora": "16:00",
+        "hora": "17:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -13.9248,
@@ -6615,12 +6615,12 @@
         "rio": "Cotahuasi",
         "estacion": "Cuyau",
         "lugar": "Cotahuasi, Arequipa",
-        "valor": 0.59,
+        "valor": 0.58,
         "unidad": "m",
         "alerta": null,
         "emergencia": null,
         "tendencia": "Descendente",
-        "hora": "16:00",
+        "hora": "17:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -15.218517,
@@ -6668,7 +6668,7 @@
         "alerta": null,
         "emergencia": null,
         "tendencia": "Ascendente",
-        "hora": "15:00",
+        "hora": "16:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -15.494169,
@@ -6700,7 +6700,7 @@
         "alerta": 55.0,
         "emergencia": 70.0,
         "tendencia": "Ascendente",
-        "hora": "15:00",
+        "hora": "16:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -16.45992,
@@ -6716,7 +6716,7 @@
         "alerta": 60.0,
         "emergencia": 85.0,
         "tendencia": "Ascendente",
-        "hora": "15:00",
+        "hora": "16:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -15.84122,
@@ -6732,7 +6732,7 @@
         "alerta": 3.25,
         "emergencia": 3.6,
         "tendencia": "Ascendente",
-        "hora": "15:00",
+        "hora": "16:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -16.590141,
@@ -6796,7 +6796,7 @@
         "alerta": 36.0,
         "emergencia": 48.0,
         "tendencia": "Ascendente",
-        "hora": "15:00",
+        "hora": "16:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -17.61756,
@@ -6807,12 +6807,12 @@
         "rio": "Locumba",
         "estacion": "TICAPAMPA",
         "lugar": "Ilabaya, Tacna",
-        "valor": 2.98,
+        "valor": 2.88,
         "unidad": "m³/s",
         "alerta": 20.0,
         "emergencia": 40.0,
         "tendencia": "Ascendente",
-        "hora": "16:00",
+        "hora": "17:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -17.47659,
@@ -6828,7 +6828,7 @@
         "alerta": 12.0,
         "emergencia": 20.0,
         "tendencia": "Ascendente",
-        "hora": "15:00",
+        "hora": "16:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -17.1141,
@@ -6839,12 +6839,12 @@
         "rio": "Sama",
         "estacion": "Puente Talapalca",
         "lugar": "Heroes Albarracin, Tacna",
-        "valor": 1.57,
+        "valor": 1.49,
         "unidad": "m³/s",
         "alerta": 20.0,
         "emergencia": 40.0,
         "tendencia": "Descendente",
-        "hora": "15:00",
+        "hora": "16:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -17.4749,
@@ -6892,7 +6892,7 @@
         "alerta": 6.0,
         "emergencia": 10.0,
         "tendencia": "Ascendente",
-        "hora": "15:00",
+        "hora": "16:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -17.6907,
@@ -6908,7 +6908,7 @@
         "alerta": 15.0,
         "emergencia": 30.0,
         "tendencia": "Ascendente",
-        "hora": "15:00",
+        "hora": "16:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -17.8151,
@@ -6940,7 +6940,7 @@
         "alerta": 2.5,
         "emergencia": 3.0,
         "tendencia": "Descendente",
-        "hora": "15:00",
+        "hora": "16:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -17.9684,
@@ -6956,7 +6956,7 @@
         "alerta": 3.0,
         "emergencia": 5.0,
         "tendencia": "Descendente",
-        "hora": "15:00",
+        "hora": "16:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -17.23804,
@@ -6967,12 +6967,12 @@
         "rio": "Huancabamba",
         "estacion": "Sauzal",
         "lugar": "San Felipe, Cajamarca",
-        "valor": 2.63,
+        "valor": 2.62,
         "unidad": "m",
         "alerta": 3.7,
         "emergencia": 4.0,
         "tendencia": "Descendente",
-        "hora": "14:00",
+        "hora": "16:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -5.77168,
@@ -6983,12 +6983,12 @@
         "rio": "Marañón",
         "estacion": "Corral Quemado",
         "lugar": "Bellavista, Cajamarca",
-        "valor": 8.61,
+        "valor": 8.62,
         "unidad": "m",
         "alerta": 12.0,
         "emergencia": 12.8,
         "tendencia": "Descendente",
-        "hora": "15:00",
+        "hora": "16:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -5.7511,
@@ -7020,7 +7020,7 @@
         "alerta": 7.7,
         "emergencia": 8.6,
         "tendencia": "Descendente",
-        "hora": "14:00",
+        "hora": "16:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -5.45077,
@@ -7068,7 +7068,7 @@
         "alerta": 24.1,
         "emergencia": 28.59,
         "tendencia": "Descendente",
-        "hora": "15:00",
+        "hora": "16:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -6.54049,
@@ -7095,12 +7095,12 @@
         "rio": "Marañón",
         "estacion": "Balsas",
         "lugar": "Utco, Cajamarca",
-        "valor": 162.92,
+        "valor": 164.88,
         "unidad": "m³/s",
         "alerta": 1400.0,
         "emergencia": 1700.0,
         "tendencia": "Descendente",
-        "hora": "14:00",
+        "hora": "16:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -6.8448,
@@ -7180,7 +7180,7 @@
         "alerta": null,
         "emergencia": null,
         "tendencia": "Descendente",
-        "hora": "15:00",
+        "hora": "16:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -12.027251,
@@ -7196,7 +7196,7 @@
         "alerta": null,
         "emergencia": null,
         "tendencia": "Ascendente",
-        "hora": "15:00",
+        "hora": "16:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -11.995485,
@@ -7212,7 +7212,7 @@
         "alerta": null,
         "emergencia": null,
         "tendencia": "Descendente",
-        "hora": "15:00",
+        "hora": "16:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -11.357646,
@@ -7223,12 +7223,12 @@
         "rio": "Yauli",
         "estacion": "Yauli",
         "lugar": "Yauli, Junin",
-        "valor": 0.52,
+        "valor": 0.5,
         "unidad": "m³/s",
         "alerta": null,
         "emergencia": null,
         "tendencia": "Ascendente",
-        "hora": "15:00",
+        "hora": "16:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -11.631925,
@@ -7255,12 +7255,12 @@
         "rio": "Pachachaca",
         "estacion": "Santa Rosa Chapimarca",
         "lugar": "Colcabamba, Apurimac",
-        "valor": 2.07,
+        "valor": 2.13,
         "unidad": "m",
         "alerta": 4.0,
         "emergencia": 4.5,
-        "tendencia": "Descendente",
-        "hora": "15:00",
+        "tendencia": "Ascendente",
+        "hora": "16:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -13.9917,
@@ -7287,12 +7287,12 @@
         "rio": "Vilcanota",
         "estacion": "Intihuatana Km105",
         "lugar": "Machupicchu, Cusco",
-        "valor": 40.53,
+        "valor": 39.48,
         "unidad": "m³/s",
         "alerta": 517.33,
         "emergencia": 802.75,
         "tendencia": "Ascendente",
-        "hora": "14:00",
+        "hora": "16:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -13.18517,
@@ -7308,7 +7308,7 @@
         "alerta": 320.0,
         "emergencia": 400.0,
         "tendencia": "Ascendente",
-        "hora": "14:00",
+        "hora": "16:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -13.42264,
@@ -7335,12 +7335,12 @@
         "rio": "Vilcanota",
         "estacion": "Chilca",
         "lugar": "Ollantaytambo, Cusco",
-        "valor": 2.71,
+        "valor": 2.72,
         "unidad": "m",
         "alerta": 5.5,
         "emergencia": 6.5,
         "tendencia": "Ascendente",
-        "hora": "14:00",
+        "hora": "16:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -13.2235,
@@ -7351,12 +7351,12 @@
         "rio": "Salcca",
         "estacion": "Salcca",
         "lugar": "San Pablo, Cusco",
-        "valor": 0.45,
+        "valor": 0.44,
         "unidad": "m",
         "alerta": 1.74,
         "emergencia": 2.31,
         "tendencia": "Ascendente",
-        "hora": "14:00",
+        "hora": "16:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -14.16991,
@@ -7367,12 +7367,12 @@
         "rio": "Tigre",
         "estacion": "Intuto",
         "lugar": "Tigre, Loreto",
-        "valor": 7.1,
+        "valor": 7.09,
         "unidad": "m",
         "alerta": 20.0,
         "emergencia": 25.0,
         "tendencia": "Descendente",
-        "hora": "15:00",
+        "hora": "16:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -3.489877,
@@ -7511,12 +7511,12 @@
         "rio": "Mayo",
         "estacion": "Shanao",
         "lugar": "Shanao, San Martin",
-        "valor": 383.16,
+        "valor": 386.08,
         "unidad": "m³/s",
         "alerta": 1954.41,
         "emergencia": 3481.47,
         "tendencia": "Descendente",
-        "hora": "16:00",
+        "hora": "17:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -6.41291,
@@ -7575,12 +7575,12 @@
         "rio": "Huayabamba",
         "estacion": "Huayabamba",
         "lugar": "Juanjui, San Martin",
-        "valor": 908.98,
+        "valor": 1111.02,
         "unidad": "m³/s",
         "alerta": 3329.6,
         "emergencia": 4019.8,
         "tendencia": "Ascendente",
-        "hora": "14:00",
+        "hora": "16:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -7.2689,
@@ -7607,12 +7607,12 @@
         "rio": "Huallaga",
         "estacion": "Puente Tocache",
         "lugar": "Tocache, San Martin",
-        "valor": 1109.19,
+        "valor": 1105.43,
         "unidad": "m³/s",
         "alerta": 2587.0,
         "emergencia": 3259.0,
         "tendencia": "Ascendente",
-        "hora": "15:00",
+        "hora": "16:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -8.18475,
@@ -7639,12 +7639,12 @@
         "rio": "Huallaga",
         "estacion": "Tingo María",
         "lugar": "Rupa-Rupa, Huanuco",
-        "valor": 495.85,
+        "valor": 482.35,
         "unidad": "m³/s",
         "alerta": 1010.0,
         "emergencia": 1178.0,
         "tendencia": "Ascendente",
-        "hora": "15:00",
+        "hora": "16:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -9.29601,
@@ -7655,12 +7655,12 @@
         "rio": "Monzón",
         "estacion": "Pte. Bella",
         "lugar": "Rupa-Rupa, Huanuco",
-        "valor": 299.0,
+        "valor": 288.46,
         "unidad": "m³/s",
         "alerta": 610.6,
         "emergencia": 759.2,
         "tendencia": "Ascendente",
-        "hora": "15:00",
+        "hora": "16:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -9.32,
@@ -7671,12 +7671,12 @@
         "rio": "Huallaga",
         "estacion": "Puente Pérez",
         "lugar": "Mariano Damaso Beraun, Huanuco",
-        "valor": 144.58,
+        "valor": 117.6,
         "unidad": "m³/s",
         "alerta": 846.0,
         "emergencia": 1086.0,
-        "tendencia": "Descendente",
-        "hora": "15:00",
+        "tendencia": "Ascendente",
+        "hora": "16:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -9.34694,
@@ -7708,7 +7708,7 @@
         "alerta": 270.0,
         "emergencia": 305.0,
         "tendencia": "Ascendente",
-        "hora": "15:00",
+        "hora": "16:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -9.85056,
@@ -7895,12 +7895,12 @@
         "rio": "Madre De Dios",
         "estacion": "Amaru Mayu",
         "lugar": "Las Piedras, Madre De Dios",
-        "valor": 3295.48,
+        "valor": 3331.08,
         "unidad": "m³/s",
         "alerta": 17000.0,
         "emergencia": 21000.0,
         "tendencia": "Descendente",
-        "hora": "13:15",
+        "hora": "14:15",
         "estado": "normal",
         "estiaje": false,
         "lat": -12.60033,
@@ -7959,12 +7959,12 @@
         "rio": "Ramis",
         "estacion": "Puente Ramis",
         "lugar": "Huancane, Puno",
-        "valor": 4.63,
+        "valor": 3.74,
         "unidad": "m³/s",
         "alerta": 320.0,
         "emergencia": 465.0,
         "tendencia": "Descendente",
-        "hora": "14:00",
+        "hora": "16:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -15.2543,
@@ -7996,7 +7996,7 @@
         "alerta": 1.65,
         "emergencia": 1.8,
         "tendencia": "Ascendente",
-        "hora": "14:00",
+        "hora": "16:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -15.14308,
@@ -8084,6 +8084,22 @@
         "reporte": "656-2026"
       },
       {
+        "rio": "Desaguadero",
+        "estacion": "Puente Desaguadero",
+        "lugar": "Desaguadero, Puno",
+        "valor": 8.32,
+        "unidad": "m",
+        "alerta": 9.5,
+        "emergencia": 10.0,
+        "tendencia": "Ascendente",
+        "hora": "17:00",
+        "estado": "normal",
+        "estiaje": false,
+        "lat": -16.56327,
+        "lon": -69.03738,
+        "reporte": "656-2026"
+      },
+      {
         "rio": "Zapatilla",
         "estacion": "Puente Zapatilla",
         "lugar": "Ilave, Puno",
@@ -8108,7 +8124,7 @@
         "alerta": 520.0,
         "emergencia": 620.0,
         "tendencia": "Ascendente",
-        "hora": "15:00",
+        "hora": "16:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -16.0883,
@@ -8119,12 +8135,12 @@
         "rio": "Titicaca",
         "estacion": "Muelle Enafer",
         "lugar": "Puno, Puno",
-        "valor": 3808.34,
+        "valor": 3808.36,
         "unidad": "m.s.n.m",
         "alerta": 3809.0,
         "emergencia": 3810.25,
         "tendencia": "Ascendente",
-        "hora": "14:00",
+        "hora": "16:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -15.83647,
@@ -8151,12 +8167,12 @@
         "rio": "Mauri",
         "estacion": "Ancoaque",
         "lugar": "Susapaya, Tacna",
-        "valor": 0.12,
+        "valor": 0.1,
         "unidad": "m³/s",
         "alerta": 5.0,
         "emergencia": 7.0,
         "tendencia": "Descendente",
-        "hora": "15:00",
+        "hora": "16:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -17.1997,
@@ -8167,7 +8183,7 @@
     "en_alerta": 2,
     "en_emergencia": 0,
     "url": "https://snirh.ana.gob.pe/onrh/",
-    "leido": "2026-11-09T21:24:09Z"
+    "leido": "2026-11-09T22:24:08Z"
   },
   "ana_embalses": {
     "embalses": [
@@ -8225,6 +8241,17 @@
         "lat": -10.409167,
         "lon": -76.843889,
         "influencia": "Lima"
+      },
+      {
+        "nombre": "Condoroma",
+        "lugar": "Callalli, Arequipa",
+        "fecha": "09-Nov",
+        "util": 259.0,
+        "almacenado": 122.7,
+        "porcentaje": 47.4,
+        "lat": -15.4,
+        "lon": -71.29,
+        "influencia": "Arequipa"
       },
       {
         "nombre": "Bamputañe",
@@ -8404,18 +8431,18 @@
       }
     ],
     "url": "https://snirh.ana.gob.pe/onrh/",
-    "leido": "2026-11-09T21:24:09Z"
+    "leido": "2026-11-09T22:24:09Z"
   },
   "ana_pc": {
     "total": 536,
     "por_estado": {
-      "En Ejecución": 245,
-      "Ejecutado": 131,
-      "Por Ejecutar": 160
+      "En Ejecución": 248,
+      "Por Ejecutar": 160,
+      "Ejecutado": 128
     },
-    "avance_medio": 36.9,
+    "avance_medio": 36.7,
     "url": "https://snirh.ana.gob.pe/",
-    "leido": "2026-11-09T21:24:09Z"
+    "leido": "2026-11-09T22:24:10Z"
   },
   "emergencia": {
     "decretos": {
@@ -13381,7 +13408,7 @@
       "ONRH/DEE_DS_140_2026_PCM"
     ],
     "url": "https://www.gob.pe/busquedas?contenido[]=normas&term=estado+de+emergencia",
-    "leido": "2026-11-09T21:24:10Z"
+    "leido": "2026-11-09T22:24:10Z"
   },
   "preparacion": {
     "conteo": {
@@ -20537,11 +20564,11 @@
       }
     },
     "url": "https://visor.geoperu.gob.pe/",
-    "leido": "2026-11-09T22:11:00Z"
+    "leido": "2026-11-09T22:24:12Z"
   },
   "agua": {
     "total": 76,
-    "conexiones": 372129,
+    "conexiones": 371568,
     "cortes": [
       {
         "eps": "SEDAPAL",
@@ -21044,16 +21071,6 @@
         "distrito": "040104"
       },
       {
-        "eps": "UE AGUA TUMBES",
-        "lugar": "Tumbes, Tumbes",
-        "conexiones": 1010,
-        "tipo": "Imprevista",
-        "motivo": "Otros",
-        "inicio": "2026-11-09",
-        "restablece": "2026-11-12",
-        "distrito": "240101"
-      },
-      {
         "eps": "SEDALIB S.A.",
         "lugar": "Moche, La Libertad",
         "conexiones": 950,
@@ -21142,6 +21159,16 @@
         "inicio": "2026-11-08",
         "restablece": "2026-11-09",
         "distrito": "240203"
+      },
+      {
+        "eps": "EPS EMAPA CAÑETE S.A",
+        "lugar": "Quilmana, Lima",
+        "conexiones": 480,
+        "tipo": "Imprevista",
+        "motivo": "Otros",
+        "inicio": "2026-11-02",
+        "restablece": "2026-11-10",
+        "distrito": "150512"
       }
     ],
     "distritos": {
@@ -21345,10 +21372,6 @@
         "cortes": 1,
         "conexiones": 1077
       },
-      "240101": {
-        "cortes": 1,
-        "conexiones": 1010
-      },
       "130107": {
         "cortes": 1,
         "conexiones": 950
@@ -21388,6 +21411,10 @@
       "150512": {
         "cortes": 1,
         "conexiones": 480
+      },
+      "240101": {
+        "cortes": 1,
+        "conexiones": 449
       },
       "040706": {
         "cortes": 1,
@@ -21451,7 +21478,7 @@
       }
     },
     "url": "https://www.sunass.gob.pe/",
-    "leido": "2026-11-09T22:11:02Z"
+    "leido": "2026-11-09T22:24:12Z"
   },
   "incendios": {
     "total": 12,
@@ -21566,14 +21593,14 @@
       }
     ],
     "url": "https://geo.serfor.gob.pe/visor/",
-    "leido": "2026-11-09T22:11:03Z"
+    "leido": "2026-11-09T22:24:13Z"
   },
   "phisis": {
     "estaciones": [
       {
         "estacion": "Sauzal",
         "cuenca": "Cuenca Chamaya",
-        "fecha": "2026-11-09T19:00:00Z",
+        "fecha": "2026-11-09T21:00:00Z",
         "nivel": "normal",
         "variable": "nivel",
         "lugar": "San Felipe, Cajamarca",
@@ -21593,7 +21620,7 @@
       {
         "estacion": "Puente Eguiguren",
         "cuenca": "Cuenca Piura",
-        "fecha": "2026-11-09T21:00:00Z",
+        "fecha": "2026-11-09T22:00:00Z",
         "nivel": "normal",
         "variable": "nivel",
         "lugar": "Piura, Piura",
@@ -21603,7 +21630,7 @@
       {
         "estacion": "El Tigre",
         "cuenca": "Cuenca Tumbes",
-        "fecha": "2026-11-09T19:00:00Z",
+        "fecha": "2026-11-09T21:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "San Jacinto, Tumbes",
@@ -21613,7 +21640,7 @@
       {
         "estacion": "Puente Ñacara",
         "cuenca": "Cuenca Piura",
-        "fecha": "2026-11-09T20:00:00Z",
+        "fecha": "2026-11-09T21:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "Chulucanas, Piura",
@@ -21623,7 +21650,7 @@
       {
         "estacion": "Salitral",
         "cuenca": "Cuenca Piura",
-        "fecha": "2026-11-09T20:00:00Z",
+        "fecha": "2026-11-09T21:00:00Z",
         "nivel": "normal",
         "variable": "nivel",
         "lugar": "Salitral, Piura",
@@ -21633,7 +21660,7 @@
       {
         "estacion": "Hacienda Barrios",
         "cuenca": "Cuenca Piura",
-        "fecha": "2026-11-09T20:00:00Z",
+        "fecha": "2026-11-09T21:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "San Juan De Bigote, Piura",
@@ -21643,7 +21670,7 @@
       {
         "estacion": "San Pedro",
         "cuenca": "Cuenca Piura",
-        "fecha": "2026-11-09T20:00:00Z",
+        "fecha": "2026-11-09T21:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "Morropon, Piura",
@@ -21653,7 +21680,7 @@
       {
         "estacion": "Pte. Simón Rodríguez",
         "cuenca": "Cuenca Chira",
-        "fecha": "2026-11-09T21:00:00Z",
+        "fecha": "2026-11-09T22:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "Amotape, Piura",
@@ -21663,7 +21690,7 @@
       {
         "estacion": "Pte. Int. Macara",
         "cuenca": "Cuenca Chira",
-        "fecha": "2026-11-09T20:00:00Z",
+        "fecha": "2026-11-09T21:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "Suyo, Piura",
@@ -21673,7 +21700,7 @@
       {
         "estacion": "Alamor",
         "cuenca": "Cuenca Chira",
-        "fecha": "2026-11-09T20:00:00Z",
+        "fecha": "2026-11-09T21:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "Lancones, Piura",
@@ -21683,7 +21710,7 @@
       {
         "estacion": "Bocatoma Chipillico",
         "cuenca": "Cuenca Chira",
-        "fecha": "2026-11-09T21:00:00Z",
+        "fecha": "2026-11-09T22:00:00Z",
         "nivel": "normal",
         "variable": "nivel",
         "lugar": "Las Lomas, Piura",
@@ -21703,7 +21730,7 @@
       {
         "estacion": "El Ciruelo",
         "cuenca": "Cuenca Chira",
-        "fecha": "2026-11-09T21:00:00Z",
+        "fecha": "2026-11-09T22:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "Suyo, Piura",
@@ -21713,7 +21740,7 @@
       {
         "estacion": "Puchaca",
         "cuenca": "Cuenca Motupe",
-        "fecha": "2026-11-09T21:00:00Z",
+        "fecha": "2026-11-09T22:00:00Z",
         "nivel": "normal",
         "variable": "nivel",
         "lugar": "Incahuasi, Lambayeque",
@@ -21773,7 +21800,7 @@
       {
         "estacion": "Cirato",
         "cuenca": "Cuenca Chancay-Lambayeque",
-        "fecha": "2026-11-09T19:00:00Z",
+        "fecha": "2026-11-09T21:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "Catache, Cajamarca",
@@ -21783,7 +21810,7 @@
       {
         "estacion": "Huallape",
         "cuenca": "Cuenca Chinchipe",
-        "fecha": "2026-11-09T19:00:00Z",
+        "fecha": "2026-11-09T21:00:00Z",
         "nivel": "normal",
         "variable": "nivel",
         "lugar": "Santa Rosa, Cajamarca",
@@ -21793,7 +21820,7 @@
       {
         "estacion": "Corral Quemado",
         "cuenca": "Intercuenca Alto Marañón III",
-        "fecha": "2026-11-09T20:00:00Z",
+        "fecha": "2026-11-09T21:00:00Z",
         "nivel": "normal",
         "variable": "nivel",
         "lugar": "Cumba, Amazonas",
@@ -21803,7 +21830,7 @@
       {
         "estacion": "Cañad",
         "cuenca": "Cuenca Chancay-Lambayeque",
-        "fecha": "2026-11-09T20:00:00Z",
+        "fecha": "2026-11-09T21:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "Catache, Cajamarca",
@@ -21813,7 +21840,7 @@
       {
         "estacion": "Túnel Chotano",
         "cuenca": "Cuenca Chamaya",
-        "fecha": "2026-11-09T20:00:00Z",
+        "fecha": "2026-11-09T21:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "Cochabamba, Cajamarca",
@@ -21823,7 +21850,7 @@
       {
         "estacion": "Salinar",
         "cuenca": "Cuenca Chicama",
-        "fecha": "2026-11-09T20:00:00Z",
+        "fecha": "2026-11-09T21:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "Ascope, La Libertad",
@@ -21873,7 +21900,7 @@
       {
         "estacion": "Balsas",
         "cuenca": "Intercuenca Alto Marañón IV",
-        "fecha": "2026-11-09T19:00:00Z",
+        "fecha": "2026-11-09T21:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "Utco, Cajamarca",
@@ -21883,7 +21910,7 @@
       {
         "estacion": "Yónan Gore",
         "cuenca": "Cuenca Jequetepeque",
-        "fecha": "2026-11-09T21:00:00Z",
+        "fecha": "2026-11-09T22:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "Yonan, Cajamarca",
@@ -21893,7 +21920,7 @@
       {
         "estacion": "Pte. Chilete",
         "cuenca": "Cuenca Jequetepeque",
-        "fecha": "2026-11-09T21:00:00Z",
+        "fecha": "2026-11-09T22:00:00Z",
         "nivel": "normal",
         "variable": "nivel",
         "lugar": "Chilete, Cajamarca",
@@ -21903,7 +21930,7 @@
       {
         "estacion": "Puente Palmira",
         "cuenca": "Cuenca Chicama",
-        "fecha": "2026-11-09T20:00:00Z",
+        "fecha": "2026-11-09T21:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "Cascas, La Libertad",
@@ -21913,7 +21940,7 @@
       {
         "estacion": "El Tambo",
         "cuenca": "Cuenca Chicama",
-        "fecha": "2026-11-09T20:00:00Z",
+        "fecha": "2026-11-09T21:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "Marmot, La Libertad",
@@ -21923,7 +21950,7 @@
       {
         "estacion": "Picoy",
         "cuenca": "Cuenca Huaura",
-        "fecha": "2026-11-09T20:00:00Z",
+        "fecha": "2026-11-09T21:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "Pachangara, Lima",
@@ -21963,7 +21990,7 @@
       {
         "estacion": "Condorcerro",
         "cuenca": "Cuenca Santa",
-        "fecha": "2026-11-09T20:00:00Z",
+        "fecha": "2026-11-09T21:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "Chao, La Libertad",
@@ -21973,7 +22000,7 @@
       {
         "estacion": "San Mateo",
         "cuenca": "Cuenca Rímac",
-        "fecha": "2026-11-09T20:00:00Z",
+        "fecha": "2026-11-09T21:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "San Mateo, Lima",
@@ -21983,7 +22010,7 @@
       {
         "estacion": "Puente Huachipa",
         "cuenca": "Cuenca Rímac",
-        "fecha": "2026-11-09T21:00:00Z",
+        "fecha": "2026-11-09T22:00:00Z",
         "nivel": "normal",
         "variable": "nivel",
         "lugar": "Lurigancho, Lima",
@@ -21993,7 +22020,7 @@
       {
         "estacion": "Antapucro",
         "cuenca": "Cuenca Lurín",
-        "fecha": "2026-11-09T19:00:00Z",
+        "fecha": "2026-11-09T21:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "Antioquia, Lima",
@@ -22023,7 +22050,7 @@
       {
         "estacion": "Socsi",
         "cuenca": "Cuenca Cañete",
-        "fecha": "2026-11-09T20:00:00Z",
+        "fecha": "2026-11-09T21:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "Lunahuana, Lima",
@@ -22033,7 +22060,7 @@
       {
         "estacion": "Sayán",
         "cuenca": "Cuenca Huaura",
-        "fecha": "2026-11-09T19:00:00Z",
+        "fecha": "2026-11-09T21:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "Sayan, Lima",
@@ -22043,7 +22070,7 @@
       {
         "estacion": "Chosica",
         "cuenca": "Cuenca Rímac",
-        "fecha": "2026-11-09T21:00:00Z",
+        "fecha": "2026-11-09T22:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "Lurigancho, Lima",
@@ -22053,7 +22080,7 @@
       {
         "estacion": "Pariacancha",
         "cuenca": "Cuenca Chillón",
-        "fecha": "2026-11-09T20:00:00Z",
+        "fecha": "2026-11-09T21:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "Huaros, Lima",
@@ -22063,7 +22090,7 @@
       {
         "estacion": "Autisha",
         "cuenca": "Cuenca Rímac",
-        "fecha": "2026-11-09T21:00:00Z",
+        "fecha": "2026-11-09T22:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "San Antonio, Lima",
@@ -22073,7 +22100,7 @@
       {
         "estacion": "Puente Callantama",
         "cuenca": "Cuenca Chancay - Huaral",
-        "fecha": "2026-11-09T20:00:00Z",
+        "fecha": "2026-11-09T21:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "Lampian, Lima",
@@ -22083,7 +22110,7 @@
       {
         "estacion": "Obrajillo",
         "cuenca": "Cuenca Chillón",
-        "fecha": "2026-11-09T20:00:00Z",
+        "fecha": "2026-11-09T21:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "San Buenaventura, Lima",
@@ -22103,7 +22130,7 @@
       {
         "estacion": "Letrayoc",
         "cuenca": "Cuenca Pisco",
-        "fecha": "2026-11-09T20:00:00Z",
+        "fecha": "2026-11-09T21:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "Huancano, Ica",
@@ -22123,7 +22150,7 @@
       {
         "estacion": "Los Molinos",
         "cuenca": "Cuenca Ica",
-        "fecha": "2026-11-09T21:00:00Z",
+        "fecha": "2026-11-09T22:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "San Jose De Los Molinos, Ica",
@@ -22153,7 +22180,7 @@
       {
         "estacion": "Challaca",
         "cuenca": "Cuenca Ica",
-        "fecha": "2026-11-09T20:00:00Z",
+        "fecha": "2026-11-09T21:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "Santiago De Chocorvos, Huancavelica",
@@ -22163,7 +22190,7 @@
       {
         "estacion": "Cuyau",
         "cuenca": "Cuenca Ocoña",
-        "fecha": "2026-11-09T21:00:00Z",
+        "fecha": "2026-11-09T22:00:00Z",
         "nivel": "normal",
         "variable": "nivel",
         "lugar": "Cotahuasi, Arequipa",
@@ -22213,7 +22240,7 @@
       {
         "estacion": "Charcani",
         "cuenca": "Cuenca Quilca - Vitor - Chili",
-        "fecha": "2026-11-09T20:00:00Z",
+        "fecha": "2026-11-09T21:00:00Z",
         "nivel": "normal",
         "variable": "nivel",
         "lugar": "Cayma, Arequipa",
@@ -22223,7 +22250,7 @@
       {
         "estacion": "Puente Del Diablo",
         "cuenca": "Cuenca Quilca - Vitor - Chili",
-        "fecha": "2026-11-09T20:00:00Z",
+        "fecha": "2026-11-09T21:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "Uchumayo, Arequipa",
@@ -22233,7 +22260,7 @@
       {
         "estacion": "Sibayo",
         "cuenca": "Cuenca Camaná",
-        "fecha": "2026-11-09T20:00:00Z",
+        "fecha": "2026-11-09T21:00:00Z",
         "nivel": "normal",
         "variable": "nivel",
         "lugar": "Callalli, Arequipa",
@@ -22243,7 +22270,7 @@
       {
         "estacion": "Sumbay",
         "cuenca": "Cuenca Quilca - Vitor - Chili",
-        "fecha": "2026-11-09T20:00:00Z",
+        "fecha": "2026-11-09T21:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "San Antonio De Chuca, Arequipa",
@@ -22253,7 +22280,7 @@
       {
         "estacion": "Tingo Grande",
         "cuenca": "Cuenca Quilca - Vitor - Chili",
-        "fecha": "2026-11-09T20:00:00Z",
+        "fecha": "2026-11-09T21:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "Jacobo Hunter, Arequipa",
@@ -22263,7 +22290,7 @@
       {
         "estacion": "Boyadero",
         "cuenca": "Cuenca Quilca - Vitor - Chili",
-        "fecha": "2026-11-09T20:00:00Z",
+        "fecha": "2026-11-09T21:00:00Z",
         "nivel": "normal",
         "variable": "nivel",
         "lugar": "Vitor, Arequipa",
@@ -22273,7 +22300,7 @@
       {
         "estacion": "Ancoaque",
         "cuenca": "Cuenca Mauri",
-        "fecha": "2026-11-09T20:00:00Z",
+        "fecha": "2026-11-09T21:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "Susapaya, Tacna",
@@ -22323,7 +22350,7 @@
       {
         "estacion": "Ticapampa",
         "cuenca": "Cuenca Locumba",
-        "fecha": "2026-11-09T21:00:00Z",
+        "fecha": "2026-11-09T22:00:00Z",
         "nivel": "normal",
         "variable": "A",
         "lugar": "Ilabaya, Tacna",
@@ -22353,7 +22380,7 @@
       {
         "estacion": "Cerro Blanco",
         "cuenca": "Intercuenca 13155",
-        "fecha": "2026-11-09T20:00:00Z",
+        "fecha": "2026-11-09T21:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "Calana, Tacna",
@@ -22363,7 +22390,7 @@
       {
         "estacion": "Caplina",
         "cuenca": "Cuenca Caplina",
-        "fecha": "2026-11-09T20:00:00Z",
+        "fecha": "2026-11-09T21:00:00Z",
         "nivel": "normal",
         "variable": "A",
         "lugar": "Palca, Tacna",
@@ -22373,7 +22400,7 @@
       {
         "estacion": "Puente Talapalca",
         "cuenca": "Cuenca Sama",
-        "fecha": "2026-11-09T20:00:00Z",
+        "fecha": "2026-11-09T21:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "Heroes Albarracin, Tacna",
@@ -22383,7 +22410,7 @@
       {
         "estacion": "Coranchay",
         "cuenca": "Cuenca Locumba",
-        "fecha": "2026-11-09T20:00:00Z",
+        "fecha": "2026-11-09T21:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "Cairani, Tacna",
@@ -22393,7 +22420,7 @@
       {
         "estacion": "Túnel Kovire",
         "cuenca": "Cuenca Sama",
-        "fecha": "2026-11-09T20:00:00Z",
+        "fecha": "2026-11-09T21:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "Susapaya, Tacna",
@@ -22403,7 +22430,7 @@
       {
         "estacion": "Puente Viejo",
         "cuenca": "Cuenca Locumba",
-        "fecha": "2026-11-09T20:00:00Z",
+        "fecha": "2026-11-09T21:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "Locumba, Tacna",
@@ -22413,7 +22440,7 @@
       {
         "estacion": "Challata",
         "cuenca": "Cuenca Caplina",
-        "fecha": "2026-11-09T20:00:00Z",
+        "fecha": "2026-11-09T21:00:00Z",
         "nivel": "normal",
         "variable": "A",
         "lugar": "Pachia, Tacna",
@@ -22553,7 +22580,7 @@
       {
         "estacion": "Shanao",
         "cuenca": "Cuenca Mayo",
-        "fecha": "2026-11-09T21:00:00Z",
+        "fecha": "2026-11-09T22:00:00Z",
         "nivel": "normal",
         "variable": "A",
         "lugar": "Shanao, San Martin",
@@ -22563,7 +22590,7 @@
       {
         "estacion": "Huayabamba",
         "cuenca": "Cuenca Huayabamba",
-        "fecha": "2026-11-09T20:00:00Z",
+        "fecha": "2026-11-09T21:00:00Z",
         "nivel": "normal",
         "variable": "A",
         "lugar": "Juanjui, San Martin",
@@ -22693,7 +22720,7 @@
       {
         "estacion": "Tingo María",
         "cuenca": "Intercuenca Alto Huallaga",
-        "fecha": "2026-11-09T20:00:00Z",
+        "fecha": "2026-11-09T21:00:00Z",
         "nivel": "normal",
         "variable": "A",
         "lugar": "Rupa-Rupa, Huanuco",
@@ -22703,7 +22730,7 @@
       {
         "estacion": "Taruca",
         "cuenca": "Intercuenca Alto Huallaga",
-        "fecha": "2026-11-09T20:00:00Z",
+        "fecha": "2026-11-09T21:00:00Z",
         "nivel": "normal",
         "variable": "A",
         "lugar": "Santa Maria Del Valle, Huanuco",
@@ -22713,7 +22740,7 @@
       {
         "estacion": "Puente Pérez",
         "cuenca": "Intercuenca Alto Huallaga",
-        "fecha": "2026-11-09T20:00:00Z",
+        "fecha": "2026-11-09T21:00:00Z",
         "nivel": "normal",
         "variable": "A",
         "lugar": "Mariano Damaso Beraun, Huanuco",
@@ -22723,7 +22750,7 @@
       {
         "estacion": "Pte. Bella",
         "cuenca": "Intercuenca Alto Huallaga",
-        "fecha": "2026-11-09T20:00:00Z",
+        "fecha": "2026-11-09T21:00:00Z",
         "nivel": "normal",
         "variable": "A",
         "lugar": "Rupa-Rupa, Huanuco",
@@ -22733,7 +22760,7 @@
       {
         "estacion": "Puente Tocache",
         "cuenca": "Intercuenca Alto Huallaga",
-        "fecha": "2026-11-09T20:00:00Z",
+        "fecha": "2026-11-09T21:00:00Z",
         "nivel": "normal",
         "variable": "A",
         "lugar": "Tocache, San Martin",
@@ -22773,7 +22800,7 @@
       {
         "estacion": "Salcca",
         "cuenca": "Cuenca Urubamba",
-        "fecha": "2026-11-09T19:00:00Z",
+        "fecha": "2026-11-09T21:00:00Z",
         "nivel": "normal",
         "variable": "nivel",
         "lugar": "San Pablo, Cusco",
@@ -22793,7 +22820,7 @@
       {
         "estacion": "Puente Pampas",
         "cuenca": "Cuenca Pampas",
-        "fecha": "2026-11-09T20:00:00Z",
+        "fecha": "2026-11-09T21:00:00Z",
         "nivel": "normal",
         "variable": "nivel",
         "lugar": "Ocros, Ayacucho",
@@ -22803,7 +22830,7 @@
       {
         "estacion": "Intihuatana Km105",
         "cuenca": "Cuenca Urubamba",
-        "fecha": "2026-11-09T19:00:00Z",
+        "fecha": "2026-11-09T21:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "Machupicchu, Cusco",
@@ -22813,7 +22840,7 @@
       {
         "estacion": "Pisac",
         "cuenca": "Cuenca Urubamba",
-        "fecha": "2026-11-09T19:00:00Z",
+        "fecha": "2026-11-09T21:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "Pisac, Cusco",
@@ -22823,7 +22850,7 @@
       {
         "estacion": "Chilca",
         "cuenca": "Cuenca Urubamba",
-        "fecha": "2026-11-09T19:00:00Z",
+        "fecha": "2026-11-09T21:00:00Z",
         "nivel": "normal",
         "variable": "nivel",
         "lugar": "Ollantaytambo, Cusco",
@@ -22833,7 +22860,7 @@
       {
         "estacion": "Santa Rosa Chapimarca",
         "cuenca": "Intercuenca Alto Apurímac",
-        "fecha": "2026-11-09T20:00:00Z",
+        "fecha": "2026-11-09T21:00:00Z",
         "nivel": "normal",
         "variable": "nivel",
         "lugar": "Colcabamba, Apurimac",
@@ -22853,7 +22880,7 @@
       {
         "estacion": "Huancasaya",
         "cuenca": "Cuenca Suches",
-        "fecha": "2026-11-09T19:00:00Z",
+        "fecha": "2026-11-09T21:00:00Z",
         "nivel": "normal",
         "variable": "nivel",
         "lugar": "Cojata, Puno",
@@ -22933,7 +22960,7 @@
       {
         "estacion": "Pte. Azángaro",
         "cuenca": "Cuenca Azángaro",
-        "fecha": "2026-11-09T21:00:00Z",
+        "fecha": "2026-11-09T22:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "Azangaro, Puno",
@@ -22963,7 +22990,7 @@
       {
         "estacion": "Puente Desaguadero",
         "cuenca": "Lago Titicaca",
-        "fecha": "2026-11-09T21:00:00Z",
+        "fecha": "2026-11-09T22:00:00Z",
         "nivel": "normal",
         "variable": "nivel",
         "lugar": "Desaguadero, Puno",
@@ -22973,7 +23000,7 @@
       {
         "estacion": "Puente Ramis",
         "cuenca": "Intercuenca Ramis",
-        "fecha": "2026-11-09T19:00:00Z",
+        "fecha": "2026-11-09T21:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "Huancane, Puno",
@@ -22983,7 +23010,7 @@
       {
         "estacion": "Muelle Enafer",
         "cuenca": "Intercuenca 0173",
-        "fecha": "2026-11-09T19:00:00Z",
+        "fecha": "2026-11-09T21:00:00Z",
         "nivel": "normal",
         "variable": "nivel",
         "lugar": "Puno, Puno",
@@ -22993,7 +23020,7 @@
       {
         "estacion": "Pte. Carretera Ilave",
         "cuenca": "Cuenca Ilave",
-        "fecha": "2026-11-09T20:00:00Z",
+        "fecha": "2026-11-09T21:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "Ilave, Puno",
@@ -23003,7 +23030,7 @@
     ],
     "sobre_umbral": 3,
     "url": "https://www.senamhi.gob.pe/mapas/mapa-monitoreohidro/",
-    "leido": "2026-11-09T21:24:32Z"
+    "leido": "2026-11-09T22:24:13Z"
   },
   "prono": {
     "url": "https://www.senamhi.gob.pe/?p=pronostico-climatico",
@@ -23601,7 +23628,7 @@
         ]
       ]
     },
-    "leido": "2026-11-09T21:24:32Z"
+    "leido": "2026-11-09T22:24:15Z"
   },
   "igp": {
     "e": [
@@ -23806,7 +23833,7 @@
       "clasificacion": 99.99
     },
     "url": "http://met.igp.gob.pe/variabclim/",
-    "leido": "2026-11-09T22:11:05Z"
+    "leido": "2026-11-09T22:24:15Z"
   },
   "dhn": {
     "generado": "2026-11-09T15:08:22Z",
@@ -24318,7 +24345,7 @@
         }
       ]
     },
-    "leido": "2026-11-09T22:11:05Z"
+    "leido": "2026-11-09T22:24:15Z"
   },
   "inaigem": {
     "estaciones": [
@@ -24356,7 +24383,7 @@
       }
     ],
     "url": "https://www.inaigem.gob.pe/",
-    "leido": "2026-11-09T22:11:06Z"
+    "leido": "2026-11-09T22:24:16Z"
   },
   "enfen_docs": {
     "docs": [
@@ -24422,6 +24449,6 @@
       }
     ],
     "url": "https://enfen.imarpe.gob.pe/",
-    "leido": "2026-11-09T21:24:34Z"
+    "leido": "2026-11-09T22:24:17Z"
   }
 }
