@@ -1,6 +1,6 @@
 {
   "_": "Generado por pipeline/productos/panorama.py. No editar a mano.",
-  "generado": "2026-11-09T22:10:44Z",
+  "generado": "2026-11-09T22:11:08Z",
   "fecha": "2026-11-09",
   "lectura": [
     {
@@ -30,13 +30,13 @@
     {
       "t": "Ríos: el modelo global GloFAS pronostica caudales por encima de su percentil 90 anual (1984-2023) en 11, entre ellos La Leche, Piura, Chicama, Zaña; es orientativo. En la última lectura, ninguna estación de la ANA ni del SENAMHI está sobre su umbral de crecida.",
       "fuente": "GloFAS (Copernicus) vía Open-Meteo; lecturas de la ANA y el SENAMHI",
-      "fecha": "2026-11-09T21:25:37Z",
+      "fecha": "2026-11-09T22:11:08Z",
       "url": "https://www.globalfloods.eu/"
     },
     {
       "t": "CENEPRED: 359 distritos en riesgo muy alto por lluvia, con vigencias hasta el 9 de noviembre y el 11 de noviembre; en ellos viven 1 808 862 personas (suma ENSO Perú de los 2 escenarios vigentes, sin repetir distritos).",
       "fuente": "CENEPRED, escenarios de riesgo ante el aviso de lluvias",
-      "fecha": "2026-11-09T21:25:26Z",
+      "fecha": "2026-11-09T22:10:57Z",
       "url": "https://sigrid.cenepred.gob.pe/sigridv3/escenario-aviso"
     },
     {
@@ -46,9 +46,9 @@
       "url": "https://coen.indeci.gob.pe/mer/"
     },
     {
-      "t": "Focos de calor detectados por satélite: 995 en 7 días; el mayor número en Tambopata (Madre de Dios), 120.",
+      "t": "Focos de calor detectados por satélite: 1007 en 7 días; el mayor número en Tambopata (Madre de Dios), 120.",
       "fuente": "NASA FIRMS, VIIRS NOAA-20",
-      "fecha": "2026-11-08",
+      "fecha": "2026-11-09",
       "url": "https://firms.modaps.eosdis.nasa.gov/"
     }
   ],
@@ -128,7 +128,7 @@
       "aviso_lluvia_desde": null,
       "mar": 3.97,
       "n_mar": "muy alto",
-      "focos": 4,
+      "focos": 5,
       "n_focos": "medio",
       "dias_fuertes": 1,
       "n_lluvia": "medio",
@@ -298,7 +298,7 @@
       "aviso_lluvia_desde": null,
       "mar": null,
       "n_mar": null,
-      "focos": 113,
+      "focos": 114,
       "n_focos": "muy alto",
       "dias_fuertes": 2,
       "n_lluvia": "medio",
@@ -391,7 +391,7 @@
       "aviso_lluvia_desde": null,
       "mar": null,
       "n_mar": null,
-      "focos": 103,
+      "focos": 106,
       "n_focos": "muy alto",
       "dias_fuertes": 2,
       "n_lluvia": "medio",
@@ -433,7 +433,7 @@
       "aviso_lluvia_desde": null,
       "mar": 3.3,
       "n_mar": "muy alto",
-      "focos": 1,
+      "focos": 2,
       "n_focos": "medio",
       "dias_fuertes": 0,
       "n_lluvia": "bajo",
@@ -475,8 +475,8 @@
       "aviso_lluvia_desde": null,
       "mar": 6.91,
       "n_mar": "muy alto",
-      "focos": 8,
-      "n_focos": "medio",
+      "focos": 12,
+      "n_focos": "alto",
       "dias_fuertes": 4,
       "n_lluvia": "alto",
       "lluvia16": 148.8,
@@ -499,7 +499,7 @@
       "aviso_lluvia_desde": null,
       "mar": null,
       "n_mar": null,
-      "focos": 25,
+      "focos": 27,
       "n_focos": "alto",
       "dias_fuertes": 1,
       "n_lluvia": "medio",
@@ -2111,7 +2111,7 @@
     "avisos": 7,
     "rojos": 2,
     "rios_altos": 11,
-    "focos": 995,
+    "focos": 1007,
     "distritos_riesgo_alto": 766
   }
 }
