@@ -1,6 +1,6 @@
 {
   "_": "Generado por pipeline/productos/panorama.py. No editar a mano.",
-  "generado": "2026-11-10T13:54:24Z",
+  "generado": "2026-11-10T13:54:51Z",
   "fecha": "2026-11-10",
   "lectura": [
     {
@@ -30,13 +30,13 @@
     {
       "t": "Ríos: el modelo global GloFAS pronostica caudales por encima de su percentil 90 anual (1984-2023) en 11, entre ellos La Leche, Piura, Chicama, Zaña; es orientativo. En la última lectura, ninguna estación de la ANA ni del SENAMHI está sobre su umbral de crecida.",
       "fuente": "GloFAS (Copernicus) vía Open-Meteo; lecturas de la ANA y el SENAMHI",
-      "fecha": "2026-11-10T13:54:23Z",
+      "fecha": "2026-11-10T13:54:51Z",
       "url": "https://www.globalfloods.eu/"
     },
     {
       "t": "CENEPRED: 326 distritos en riesgo muy alto por lluvia, hasta el 11 de noviembre; en ellos viven 1 488 096 personas (suma ENSO Perú del escenario, sin repetir distritos).",
       "fuente": "CENEPRED, escenarios de riesgo ante el aviso de lluvias",
-      "fecha": "2026-11-10T13:52:45Z",
+      "fecha": "2026-11-10T13:54:40Z",
       "url": "https://sigrid.cenepred.gob.pe/sigridv3/escenario-aviso"
     },
     {
@@ -46,9 +46,9 @@
       "url": "https://coen.indeci.gob.pe/mer/"
     },
     {
-      "t": "Focos de calor detectados por satélite: 889 en 7 días; el mayor número en Tambopata (Madre de Dios), 120.",
+      "t": "Focos de calor detectados por satélite: 891 en 7 días; el mayor número en Tambopata (Madre de Dios), 120.",
       "fuente": "NASA FIRMS, VIIRS NOAA-20",
-      "fecha": "2026-11-09",
+      "fecha": "2026-11-10",
       "url": "https://firms.modaps.eosdis.nasa.gov/"
     }
   ],
@@ -475,7 +475,7 @@
       "aviso_lluvia_desde": null,
       "mar": 6.91,
       "n_mar": "muy alto",
-      "focos": 12,
+      "focos": 14,
       "n_focos": "alto",
       "dias_fuertes": 8,
       "n_lluvia": "muy alto",
@@ -2111,7 +2111,7 @@
     "avisos": 3,
     "rojos": 2,
     "rios_altos": 11,
-    "focos": 889,
+    "focos": 891,
     "distritos_riesgo_alto": 766
   }
 }
