@@ -1,6 +1,6 @@
 {
   "_": "Generado por pipeline/fuentes/internacional.py. Cada bloque con su centro, fecha y enlace.",
-  "actualizado": "2026-11-10T02:26:05Z",
+  "actualizado": "2026-11-10T09:58:24Z",
   "fallas": [],
   "cpc": {
     "emitido": "2026-10-08",
@@ -321,10 +321,6 @@
     "url": "https://ds.data.jma.go.jp/tcc/tcc/products/elnino/outlook.html",
     "n12": [
       {
-        "mes": "2024-10",
-        "valor": -0.5
-      },
-      {
         "mes": "2024-11",
         "valor": 0.1
       },
@@ -415,13 +411,13 @@
       {
         "mes": "2026-09",
         "valor": 5.0
+      },
+      {
+        "mes": "2026-10",
+        "valor": 5.7
       }
     ],
     "n3": [
-      {
-        "mes": "2024-10",
-        "valor": -0.4
-      },
       {
         "mes": "2024-11",
         "valor": -0.2
@@ -513,6 +509,10 @@
       {
         "mes": "2026-09",
         "valor": 4.0
+      },
+      {
+        "mes": "2026-10",
+        "valor": 4.4
       }
     ],
     "proxima": null

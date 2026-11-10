@@ -1,6 +1,6 @@
 {
   "_": "Generado por pipeline/fuentes/peru_oficial.py. Datos oficiales tal como se publican.",
-  "actualizado": "2026-11-10T02:25:53Z",
+  "actualizado": "2026-11-10T09:58:13Z",
   "fallas": [
     "coen",
     "indeci_rss"
@@ -501,13 +501,6 @@
     "vigente": true,
     "escenarios": [
       {
-        "id": "1137",
-        "inicio_vigencia": "2026-11-08 00:00:37",
-        "fin_vigencia": "2026-11-09 23:59:37",
-        "ambito": "SELVA",
-        "distritos": 194
-      },
-      {
         "id": "1138",
         "inicio_vigencia": "2026-11-09 00:00:44",
         "fin_vigencia": "2026-11-11 23:59:44",
@@ -517,1144 +510,22 @@
     ],
     "resumen": {
       "MA": {
-        "distritos": 359,
-        "poblacion": 1808862,
-        "vivienda": 538463
+        "distritos": 326,
+        "poblacion": 1488096,
+        "vivienda": 452251
       },
       "A": {
-        "distritos": 413,
-        "poblacion": 3450775,
-        "vivienda": 967104
+        "distritos": 302,
+        "poblacion": 2228749,
+        "vivienda": 641090
       },
       "M": {
-        "distritos": 82,
-        "poblacion": 1653754,
-        "vivienda": 420753
+        "distritos": 39,
+        "poblacion": 821928,
+        "vivienda": 221238
       }
     },
     "distritos": {
-      "050407": {
-        "nivel": "MA",
-        "poblacion": 10797,
-        "vivienda": 3199,
-        "escenario": "1137"
-      },
-      "050408": {
-        "nivel": "MA",
-        "poblacion": 10058,
-        "vivienda": 2894,
-        "escenario": "1137"
-      },
-      "050409": {
-        "nivel": "MA",
-        "poblacion": 3520,
-        "vivienda": 1041,
-        "escenario": "1137"
-      },
-      "050411": {
-        "nivel": "MA",
-        "poblacion": 2523,
-        "vivienda": 708,
-        "escenario": "1137"
-      },
-      "050502": {
-        "nivel": "A",
-        "poblacion": 7969,
-        "vivienda": 2266,
-        "escenario": "1137"
-      },
-      "050503": {
-        "nivel": "MA",
-        "poblacion": 9298,
-        "vivienda": 2535,
-        "escenario": "1137"
-      },
-      "050507": {
-        "nivel": "MA",
-        "poblacion": 11279,
-        "vivienda": 3322,
-        "escenario": "1137"
-      },
-      "050509": {
-        "nivel": "MA",
-        "poblacion": 9410,
-        "vivienda": 2749,
-        "escenario": "1137"
-      },
-      "050510": {
-        "nivel": "MA",
-        "poblacion": 4039,
-        "vivienda": 1129,
-        "escenario": "1137"
-      },
-      "080902": {
-        "nivel": "A",
-        "poblacion": 23214,
-        "vivienda": 7134,
-        "escenario": "1137"
-      },
-      "080906": {
-        "nivel": "A",
-        "poblacion": 13311,
-        "vivienda": 4801,
-        "escenario": "1137"
-      },
-      "080907": {
-        "nivel": "A",
-        "poblacion": 15962,
-        "vivienda": 4237,
-        "escenario": "1137"
-      },
-      "080910": {
-        "nivel": "A",
-        "poblacion": 22691,
-        "vivienda": 5764,
-        "escenario": "1137"
-      },
-      "080913": {
-        "nivel": "A",
-        "poblacion": 1974,
-        "vivienda": 530,
-        "escenario": "1137"
-      },
-      "080914": {
-        "nivel": "M",
-        "poblacion": 6969,
-        "vivienda": 1168,
-        "escenario": "1137"
-      },
-      "081203": {
-        "nivel": "M",
-        "poblacion": 2219,
-        "vivienda": 521,
-        "escenario": "1137"
-      },
-      "100103": {
-        "nivel": "MA",
-        "poblacion": 13135,
-        "vivienda": 3978,
-        "escenario": "1137"
-      },
-      "100113": {
-        "nivel": "A",
-        "poblacion": 8350,
-        "vivienda": 2254,
-        "escenario": "1137"
-      },
-      "100507": {
-        "nivel": "A",
-        "poblacion": 12368,
-        "vivienda": 3790,
-        "escenario": "1137"
-      },
-      "100601": {
-        "nivel": "M",
-        "poblacion": 53066,
-        "vivienda": 11990,
-        "escenario": "1137"
-      },
-      "100602": {
-        "nivel": "A",
-        "poblacion": 6142,
-        "vivienda": 1844,
-        "escenario": "1137"
-      },
-      "100603": {
-        "nivel": "A",
-        "poblacion": 3475,
-        "vivienda": 1010,
-        "escenario": "1137"
-      },
-      "100604": {
-        "nivel": "A",
-        "poblacion": 22149,
-        "vivienda": 6056,
-        "escenario": "1137"
-      },
-      "100605": {
-        "nivel": "A",
-        "poblacion": 8951,
-        "vivienda": 2334,
-        "escenario": "1137"
-      },
-      "100606": {
-        "nivel": "A",
-        "poblacion": 10048,
-        "vivienda": 2945,
-        "escenario": "1137"
-      },
-      "100607": {
-        "nivel": "A",
-        "poblacion": 3724,
-        "vivienda": 1119,
-        "escenario": "1137"
-      },
-      "100608": {
-        "nivel": "A",
-        "poblacion": 13568,
-        "vivienda": 3516,
-        "escenario": "1137"
-      },
-      "100609": {
-        "nivel": "A",
-        "poblacion": 4143,
-        "vivienda": 1249,
-        "escenario": "1137"
-      },
-      "100610": {
-        "nivel": "A",
-        "poblacion": 2527,
-        "vivienda": 854,
-        "escenario": "1137"
-      },
-      "100702": {
-        "nivel": "A",
-        "poblacion": 5372,
-        "vivienda": 1506,
-        "escenario": "1137"
-      },
-      "100704": {
-        "nivel": "A",
-        "poblacion": 2790,
-        "vivienda": 816,
-        "escenario": "1137"
-      },
-      "100705": {
-        "nivel": "A",
-        "poblacion": 2199,
-        "vivienda": 621,
-        "escenario": "1137"
-      },
-      "100802": {
-        "nivel": "A",
-        "poblacion": 10103,
-        "vivienda": 2826,
-        "escenario": "1137"
-      },
-      "100901": {
-        "nivel": "A",
-        "poblacion": 9407,
-        "vivienda": 2509,
-        "escenario": "1137"
-      },
-      "100902": {
-        "nivel": "A",
-        "poblacion": 7101,
-        "vivienda": 1961,
-        "escenario": "1137"
-      },
-      "100903": {
-        "nivel": "M",
-        "poblacion": 4814,
-        "vivienda": 1298,
-        "escenario": "1137"
-      },
-      "100904": {
-        "nivel": "M",
-        "poblacion": 5447,
-        "vivienda": 1397,
-        "escenario": "1137"
-      },
-      "100905": {
-        "nivel": "A",
-        "poblacion": 5769,
-        "vivienda": 1566,
-        "escenario": "1137"
-      },
-      "120301": {
-        "nivel": "A",
-        "poblacion": 27790,
-        "vivienda": 7464,
-        "escenario": "1137"
-      },
-      "120302": {
-        "nivel": "A",
-        "poblacion": 52874,
-        "vivienda": 14482,
-        "escenario": "1137"
-      },
-      "120303": {
-        "nivel": "A",
-        "poblacion": 39054,
-        "vivienda": 10702,
-        "escenario": "1137"
-      },
-      "120304": {
-        "nivel": "A",
-        "poblacion": 4157,
-        "vivienda": 1387,
-        "escenario": "1137"
-      },
-      "120305": {
-        "nivel": "A",
-        "poblacion": 25800,
-        "vivienda": 7165,
-        "escenario": "1137"
-      },
-      "120306": {
-        "nivel": "M",
-        "poblacion": 1814,
-        "vivienda": 545,
-        "escenario": "1137"
-      },
-      "120419": {
-        "nivel": "M",
-        "poblacion": 1662,
-        "vivienda": 478,
-        "escenario": "1137"
-      },
-      "120504": {
-        "nivel": "MA",
-        "poblacion": 4283,
-        "vivienda": 1544,
-        "escenario": "1137"
-      },
-      "120601": {
-        "nivel": "A",
-        "poblacion": 37075,
-        "vivienda": 10174,
-        "escenario": "1137"
-      },
-      "120602": {
-        "nivel": "A",
-        "poblacion": 5778,
-        "vivienda": 1419,
-        "escenario": "1137"
-      },
-      "120603": {
-        "nivel": "M",
-        "poblacion": 6544,
-        "vivienda": 1924,
-        "escenario": "1137"
-      },
-      "120605": {
-        "nivel": "A",
-        "poblacion": 3690,
-        "vivienda": 1204,
-        "escenario": "1137"
-      },
-      "120607": {
-        "nivel": "A",
-        "poblacion": 30651,
-        "vivienda": 5913,
-        "escenario": "1137"
-      },
-      "120608": {
-        "nivel": "A",
-        "poblacion": 26036,
-        "vivienda": 6863,
-        "escenario": "1137"
-      },
-      "120609": {
-        "nivel": "A",
-        "poblacion": 4252,
-        "vivienda": 1486,
-        "escenario": "1137"
-      },
-      "120699": {
-        "nivel": "MA",
-        "poblacion": 54240,
-        "vivienda": 13786,
-        "escenario": "1137"
-      },
-      "160201": {
-        "nivel": "M",
-        "poblacion": 83554,
-        "vivienda": 19412,
-        "escenario": "1137"
-      },
-      "160202": {
-        "nivel": "MA",
-        "poblacion": 13707,
-        "vivienda": 2921,
-        "escenario": "1137"
-      },
-      "160206": {
-        "nivel": "M",
-        "poblacion": 12033,
-        "vivienda": 2572,
-        "escenario": "1137"
-      },
-      "160210": {
-        "nivel": "M",
-        "poblacion": 3967,
-        "vivienda": 858,
-        "escenario": "1137"
-      },
-      "160211": {
-        "nivel": "M",
-        "poblacion": 5564,
-        "vivienda": 1383,
-        "escenario": "1137"
-      },
-      "160302": {
-        "nivel": "M",
-        "poblacion": 6085,
-        "vivienda": 1234,
-        "escenario": "1137"
-      },
-      "160502": {
-        "nivel": "M",
-        "poblacion": 1515,
-        "vivienda": 305,
-        "escenario": "1137"
-      },
-      "160504": {
-        "nivel": "A",
-        "poblacion": 6089,
-        "vivienda": 1243,
-        "escenario": "1137"
-      },
-      "160505": {
-        "nivel": "A",
-        "poblacion": 7304,
-        "vivienda": 1487,
-        "escenario": "1137"
-      },
-      "160506": {
-        "nivel": "M",
-        "poblacion": 4372,
-        "vivienda": 934,
-        "escenario": "1137"
-      },
-      "160508": {
-        "nivel": "A",
-        "poblacion": 569,
-        "vivienda": 139,
-        "escenario": "1137"
-      },
-      "160509": {
-        "nivel": "M",
-        "poblacion": 881,
-        "vivienda": 188,
-        "escenario": "1137"
-      },
-      "160601": {
-        "nivel": "A",
-        "poblacion": 23883,
-        "vivienda": 5093,
-        "escenario": "1137"
-      },
-      "160602": {
-        "nivel": "A",
-        "poblacion": 1738,
-        "vivienda": 387,
-        "escenario": "1137"
-      },
-      "160603": {
-        "nivel": "A",
-        "poblacion": 3697,
-        "vivienda": 904,
-        "escenario": "1137"
-      },
-      "160604": {
-        "nivel": "A",
-        "poblacion": 5388,
-        "vivienda": 1322,
-        "escenario": "1137"
-      },
-      "160605": {
-        "nivel": "A",
-        "poblacion": 13464,
-        "vivienda": 2937,
-        "escenario": "1137"
-      },
-      "160606": {
-        "nivel": "A",
-        "poblacion": 6467,
-        "vivienda": 1313,
-        "escenario": "1137"
-      },
-      "160702": {
-        "nivel": "M",
-        "poblacion": 6336,
-        "vivienda": 1281,
-        "escenario": "1137"
-      },
-      "170102": {
-        "nivel": "M",
-        "poblacion": 11570,
-        "vivienda": 3417,
-        "escenario": "1137"
-      },
-      "170201": {
-        "nivel": "M",
-        "poblacion": 2356,
-        "vivienda": 763,
-        "escenario": "1137"
-      },
-      "170202": {
-        "nivel": "M",
-        "poblacion": 1402,
-        "vivienda": 340,
-        "escenario": "1137"
-      },
-      "170203": {
-        "nivel": "M",
-        "poblacion": 6217,
-        "vivienda": 1737,
-        "escenario": "1137"
-      },
-      "170204": {
-        "nivel": "M",
-        "poblacion": 8574,
-        "vivienda": 2652,
-        "escenario": "1137"
-      },
-      "190301": {
-        "nivel": "A",
-        "poblacion": 15677,
-        "vivienda": 4401,
-        "escenario": "1137"
-      },
-      "190302": {
-        "nivel": "A",
-        "poblacion": 5334,
-        "vivienda": 1383,
-        "escenario": "1137"
-      },
-      "190303": {
-        "nivel": "A",
-        "poblacion": 6661,
-        "vivienda": 1888,
-        "escenario": "1137"
-      },
-      "190304": {
-        "nivel": "MA",
-        "poblacion": 7130,
-        "vivienda": 1971,
-        "escenario": "1137"
-      },
-      "190305": {
-        "nivel": "MA",
-        "poblacion": 4511,
-        "vivienda": 1273,
-        "escenario": "1137"
-      },
-      "190306": {
-        "nivel": "MA",
-        "poblacion": 17249,
-        "vivienda": 4322,
-        "escenario": "1137"
-      },
-      "190307": {
-        "nivel": "A",
-        "poblacion": 17274,
-        "vivienda": 4335,
-        "escenario": "1137"
-      },
-      "190308": {
-        "nivel": "A",
-        "poblacion": 13634,
-        "vivienda": 3642,
-        "escenario": "1137"
-      },
-      "210303": {
-        "nivel": "MA",
-        "poblacion": 9299,
-        "vivienda": 3708,
-        "escenario": "1137"
-      },
-      "210304": {
-        "nivel": "MA",
-        "poblacion": 6433,
-        "vivienda": 2507,
-        "escenario": "1137"
-      },
-      "210309": {
-        "nivel": "A",
-        "poblacion": 6832,
-        "vivienda": 1817,
-        "escenario": "1137"
-      },
-      "211203": {
-        "nivel": "A",
-        "poblacion": 2970,
-        "vivienda": 1228,
-        "escenario": "1137"
-      },
-      "211207": {
-        "nivel": "A",
-        "poblacion": 3733,
-        "vivienda": 1584,
-        "escenario": "1137"
-      },
-      "211209": {
-        "nivel": "A",
-        "poblacion": 6604,
-        "vivienda": 2752,
-        "escenario": "1137"
-      },
-      "211210": {
-        "nivel": "A",
-        "poblacion": 9124,
-        "vivienda": 3569,
-        "escenario": "1137"
-      },
-      "220101": {
-        "nivel": "A",
-        "poblacion": 76325,
-        "vivienda": 19896,
-        "escenario": "1137"
-      },
-      "220102": {
-        "nivel": "A",
-        "poblacion": 4609,
-        "vivienda": 1247,
-        "escenario": "1137"
-      },
-      "220103": {
-        "nivel": "A",
-        "poblacion": 1675,
-        "vivienda": 509,
-        "escenario": "1137"
-      },
-      "220104": {
-        "nivel": "A",
-        "poblacion": 15377,
-        "vivienda": 4105,
-        "escenario": "1137"
-      },
-      "220105": {
-        "nivel": "A",
-        "poblacion": 21514,
-        "vivienda": 5739,
-        "escenario": "1137"
-      },
-      "220106": {
-        "nivel": "A",
-        "poblacion": 2865,
-        "vivienda": 781,
-        "escenario": "1137"
-      },
-      "220201": {
-        "nivel": "A",
-        "poblacion": 16894,
-        "vivienda": 4551,
-        "escenario": "1137"
-      },
-      "220202": {
-        "nivel": "MA",
-        "poblacion": 7639,
-        "vivienda": 1902,
-        "escenario": "1137"
-      },
-      "220203": {
-        "nivel": "A",
-        "poblacion": 13116,
-        "vivienda": 3425,
-        "escenario": "1137"
-      },
-      "220204": {
-        "nivel": "A",
-        "poblacion": 2711,
-        "vivienda": 705,
-        "escenario": "1137"
-      },
-      "220205": {
-        "nivel": "MA",
-        "poblacion": 8640,
-        "vivienda": 2394,
-        "escenario": "1137"
-      },
-      "220206": {
-        "nivel": "A",
-        "poblacion": 6033,
-        "vivienda": 1574,
-        "escenario": "1137"
-      },
-      "220301": {
-        "nivel": "MA",
-        "poblacion": 14639,
-        "vivienda": 3564,
-        "escenario": "1137"
-      },
-      "220302": {
-        "nivel": "A",
-        "poblacion": 2330,
-        "vivienda": 726,
-        "escenario": "1137"
-      },
-      "220303": {
-        "nivel": "MA",
-        "poblacion": 10447,
-        "vivienda": 2466,
-        "escenario": "1137"
-      },
-      "220304": {
-        "nivel": "MA",
-        "poblacion": 6332,
-        "vivienda": 1645,
-        "escenario": "1137"
-      },
-      "220305": {
-        "nivel": "A",
-        "poblacion": 3004,
-        "vivienda": 770,
-        "escenario": "1137"
-      },
-      "220401": {
-        "nivel": "A",
-        "poblacion": 13422,
-        "vivienda": 3683,
-        "escenario": "1137"
-      },
-      "220402": {
-        "nivel": "MA",
-        "poblacion": 4471,
-        "vivienda": 1257,
-        "escenario": "1137"
-      },
-      "220403": {
-        "nivel": "A",
-        "poblacion": 2106,
-        "vivienda": 657,
-        "escenario": "1137"
-      },
-      "220404": {
-        "nivel": "A",
-        "poblacion": 4268,
-        "vivienda": 1155,
-        "escenario": "1137"
-      },
-      "220405": {
-        "nivel": "A",
-        "poblacion": 2450,
-        "vivienda": 724,
-        "escenario": "1137"
-      },
-      "220406": {
-        "nivel": "A",
-        "poblacion": 789,
-        "vivienda": 259,
-        "escenario": "1137"
-      },
-      "220501": {
-        "nivel": "M",
-        "poblacion": 14497,
-        "vivienda": 3959,
-        "escenario": "1137"
-      },
-      "220502": {
-        "nivel": "MA",
-        "poblacion": 13462,
-        "vivienda": 3527,
-        "escenario": "1137"
-      },
-      "220503": {
-        "nivel": "MA",
-        "poblacion": 6429,
-        "vivienda": 1648,
-        "escenario": "1137"
-      },
-      "220504": {
-        "nivel": "A",
-        "poblacion": 9546,
-        "vivienda": 2347,
-        "escenario": "1137"
-      },
-      "220505": {
-        "nivel": "A",
-        "poblacion": 3301,
-        "vivienda": 1015,
-        "escenario": "1137"
-      },
-      "220506": {
-        "nivel": "MA",
-        "poblacion": 8086,
-        "vivienda": 2073,
-        "escenario": "1137"
-      },
-      "220507": {
-        "nivel": "A",
-        "poblacion": 3456,
-        "vivienda": 971,
-        "escenario": "1137"
-      },
-      "220508": {
-        "nivel": "MA",
-        "poblacion": 1635,
-        "vivienda": 415,
-        "escenario": "1137"
-      },
-      "220509": {
-        "nivel": "M",
-        "poblacion": 1975,
-        "vivienda": 518,
-        "escenario": "1137"
-      },
-      "220510": {
-        "nivel": "MA",
-        "poblacion": 13879,
-        "vivienda": 3639,
-        "escenario": "1137"
-      },
-      "220511": {
-        "nivel": "A",
-        "poblacion": 5255,
-        "vivienda": 1378,
-        "escenario": "1137"
-      },
-      "220601": {
-        "nivel": "A",
-        "poblacion": 32444,
-        "vivienda": 8110,
-        "escenario": "1137"
-      },
-      "220602": {
-        "nivel": "A",
-        "poblacion": 12705,
-        "vivienda": 3155,
-        "escenario": "1137"
-      },
-      "220603": {
-        "nivel": "A",
-        "poblacion": 8385,
-        "vivienda": 2093,
-        "escenario": "1137"
-      },
-      "220604": {
-        "nivel": "A",
-        "poblacion": 5747,
-        "vivienda": 1550,
-        "escenario": "1137"
-      },
-      "220605": {
-        "nivel": "A",
-        "poblacion": 5345,
-        "vivienda": 1439,
-        "escenario": "1137"
-      },
-      "220701": {
-        "nivel": "A",
-        "poblacion": 10203,
-        "vivienda": 2446,
-        "escenario": "1137"
-      },
-      "220702": {
-        "nivel": "A",
-        "poblacion": 2924,
-        "vivienda": 815,
-        "escenario": "1137"
-      },
-      "220703": {
-        "nivel": "A",
-        "poblacion": 2126,
-        "vivienda": 560,
-        "escenario": "1137"
-      },
-      "220704": {
-        "nivel": "A",
-        "poblacion": 865,
-        "vivienda": 267,
-        "escenario": "1137"
-      },
-      "220705": {
-        "nivel": "A",
-        "poblacion": 2971,
-        "vivienda": 851,
-        "escenario": "1137"
-      },
-      "220706": {
-        "nivel": "A",
-        "poblacion": 1192,
-        "vivienda": 332,
-        "escenario": "1137"
-      },
-      "220707": {
-        "nivel": "A",
-        "poblacion": 3945,
-        "vivienda": 1023,
-        "escenario": "1137"
-      },
-      "220708": {
-        "nivel": "MA",
-        "poblacion": 8554,
-        "vivienda": 2092,
-        "escenario": "1137"
-      },
-      "220709": {
-        "nivel": "A",
-        "poblacion": 3876,
-        "vivienda": 1084,
-        "escenario": "1137"
-      },
-      "220710": {
-        "nivel": "A",
-        "poblacion": 3889,
-        "vivienda": 1067,
-        "escenario": "1137"
-      },
-      "220801": {
-        "nivel": "A",
-        "poblacion": 25521,
-        "vivienda": 6919,
-        "escenario": "1137"
-      },
-      "220802": {
-        "nivel": "A",
-        "poblacion": 7479,
-        "vivienda": 1871,
-        "escenario": "1137"
-      },
-      "220803": {
-        "nivel": "M",
-        "poblacion": 17661,
-        "vivienda": 3899,
-        "escenario": "1137"
-      },
-      "220804": {
-        "nivel": "A",
-        "poblacion": 43476,
-        "vivienda": 11512,
-        "escenario": "1137"
-      },
-      "220805": {
-        "nivel": "A",
-        "poblacion": 16797,
-        "vivienda": 4462,
-        "escenario": "1137"
-      },
-      "220806": {
-        "nivel": "A",
-        "poblacion": 1919,
-        "vivienda": 538,
-        "escenario": "1137"
-      },
-      "220807": {
-        "nivel": "A",
-        "poblacion": 3413,
-        "vivienda": 922,
-        "escenario": "1137"
-      },
-      "220808": {
-        "nivel": "A",
-        "poblacion": 2446,
-        "vivienda": 726,
-        "escenario": "1137"
-      },
-      "220809": {
-        "nivel": "A",
-        "poblacion": 3832,
-        "vivienda": 1078,
-        "escenario": "1137"
-      },
-      "220901": {
-        "nivel": "M",
-        "poblacion": 76122,
-        "vivienda": 18998,
-        "escenario": "1137"
-      },
-      "220902": {
-        "nivel": "A",
-        "poblacion": 841,
-        "vivienda": 235,
-        "escenario": "1137"
-      },
-      "220903": {
-        "nivel": "M",
-        "poblacion": 3604,
-        "vivienda": 954,
-        "escenario": "1137"
-      },
-      "220904": {
-        "nivel": "MA",
-        "poblacion": 9497,
-        "vivienda": 2121,
-        "escenario": "1137"
-      },
-      "220905": {
-        "nivel": "M",
-        "poblacion": 2249,
-        "vivienda": 509,
-        "escenario": "1137"
-      },
-      "220906": {
-        "nivel": "A",
-        "poblacion": 2399,
-        "vivienda": 604,
-        "escenario": "1137"
-      },
-      "220907": {
-        "nivel": "MA",
-        "poblacion": 4975,
-        "vivienda": 1216,
-        "escenario": "1137"
-      },
-      "220908": {
-        "nivel": "MA",
-        "poblacion": 3907,
-        "vivienda": 1055,
-        "escenario": "1137"
-      },
-      "220909": {
-        "nivel": "A",
-        "poblacion": 43481,
-        "vivienda": 10780,
-        "escenario": "1137"
-      },
-      "220910": {
-        "nivel": "M",
-        "poblacion": 33067,
-        "vivienda": 9007,
-        "escenario": "1137"
-      },
-      "220911": {
-        "nivel": "M",
-        "poblacion": 2073,
-        "vivienda": 538,
-        "escenario": "1137"
-      },
-      "220912": {
-        "nivel": "A",
-        "poblacion": 1674,
-        "vivienda": 478,
-        "escenario": "1137"
-      },
-      "220913": {
-        "nivel": "MA",
-        "poblacion": 7263,
-        "vivienda": 1611,
-        "escenario": "1137"
-      },
-      "220914": {
-        "nivel": "A",
-        "poblacion": 1943,
-        "vivienda": 549,
-        "escenario": "1137"
-      },
-      "221001": {
-        "nivel": "A",
-        "poblacion": 26166,
-        "vivienda": 6794,
-        "escenario": "1137"
-      },
-      "221002": {
-        "nivel": "A",
-        "poblacion": 11456,
-        "vivienda": 3146,
-        "escenario": "1137"
-      },
-      "221003": {
-        "nivel": "A",
-        "poblacion": 10308,
-        "vivienda": 2786,
-        "escenario": "1137"
-      },
-      "221004": {
-        "nivel": "A",
-        "poblacion": 1315,
-        "vivienda": 335,
-        "escenario": "1137"
-      },
-      "221005": {
-        "nivel": "A",
-        "poblacion": 20149,
-        "vivienda": 5039,
-        "escenario": "1137"
-      },
-      "250101": {
-        "nivel": "M",
-        "poblacion": 149999,
-        "vivienda": 35704,
-        "escenario": "1137"
-      },
-      "250102": {
-        "nivel": "M",
-        "poblacion": 16059,
-        "vivienda": 4358,
-        "escenario": "1137"
-      },
-      "250103": {
-        "nivel": "A",
-        "poblacion": 10328,
-        "vivienda": 2324,
-        "escenario": "1137"
-      },
-      "250104": {
-        "nivel": "M",
-        "poblacion": 11147,
-        "vivienda": 2612,
-        "escenario": "1137"
-      },
-      "250105": {
-        "nivel": "M",
-        "poblacion": 103941,
-        "vivienda": 24535,
-        "escenario": "1137"
-      },
-      "250106": {
-        "nivel": "M",
-        "poblacion": 5169,
-        "vivienda": 1285,
-        "escenario": "1137"
-      },
-      "250107": {
-        "nivel": "M",
-        "poblacion": 87525,
-        "vivienda": 19140,
-        "escenario": "1137"
-      },
-      "250201": {
-        "nivel": "M",
-        "poblacion": 32430,
-        "vivienda": 7904,
-        "escenario": "1137"
-      },
-      "250202": {
-        "nivel": "M",
-        "poblacion": 6655,
-        "vivienda": 1710,
-        "escenario": "1137"
-      },
-      "250203": {
-        "nivel": "M",
-        "poblacion": 8264,
-        "vivienda": 2028,
-        "escenario": "1137"
-      },
-      "250204": {
-        "nivel": "M",
-        "poblacion": 1975,
-        "vivienda": 487,
-        "escenario": "1137"
-      },
-      "250301": {
-        "nivel": "A",
-        "poblacion": 29440,
-        "vivienda": 7542,
-        "escenario": "1137"
-      },
-      "250302": {
-        "nivel": "A",
-        "poblacion": 10214,
-        "vivienda": 2491,
-        "escenario": "1137"
-      },
-      "250303": {
-        "nivel": "M",
-        "poblacion": 7722,
-        "vivienda": 1840,
-        "escenario": "1137"
-      },
-      "250304": {
-        "nivel": "M",
-        "poblacion": 7594,
-        "vivienda": 1882,
-        "escenario": "1137"
-      },
-      "250305": {
-        "nivel": "M",
-        "poblacion": 5137,
-        "vivienda": 1251,
-        "escenario": "1137"
-      },
-      "250401": {
-        "nivel": "A",
-        "poblacion": 2860,
-        "vivienda": 683,
-        "escenario": "1137"
-      },
       "020101": {
         "nivel": "A",
         "poblacion": 60896,
@@ -5659,7 +4530,7 @@
       }
     },
     "url": "https://sigrid.cenepred.gob.pe/sigridv3/escenario-aviso",
-    "leido": "2026-11-10T02:25:58Z"
+    "leido": "2026-11-10T09:58:16Z"
   },
   "quebradas": {
     "fecha": "2026-11-09",
@@ -5847,7 +4718,7 @@
     },
     "sin_cruce": 0,
     "url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico",
-    "leido": "2026-11-10T02:25:59Z"
+    "leido": "2026-11-10T09:58:18Z"
   },
   "hidro": {
     "avisos": [
@@ -5889,7 +4760,7 @@
       }
     ],
     "url": "https://www.senamhi.gob.pe/?p=aviso-hidrologico",
-    "leido": "2026-11-10T02:26:00Z"
+    "leido": "2026-11-10T09:58:18Z"
   },
   "ana_rios": {
     "estaciones": [
@@ -20555,7 +19426,7 @@
       }
     },
     "url": "https://visor.geoperu.gob.pe/",
-    "leido": "2026-11-10T02:26:00Z"
+    "leido": "2026-11-10T09:58:19Z"
   },
   "agua": {
     "total": 67,
@@ -21433,10 +20304,10 @@
       }
     },
     "url": "https://www.sunass.gob.pe/",
-    "leido": "2026-11-10T02:26:02Z"
+    "leido": "2026-11-10T09:58:20Z"
   },
   "incendios": {
-    "total": 14,
+    "total": 15,
     "lista": [
       {
         "fecha": "2026-11-09",
@@ -21503,6 +20374,15 @@
       },
       {
         "fecha": "2026-11-08",
+        "hora": "13:40",
+        "lugar": "Campoverde, Ucayali",
+        "distrito": "250102",
+        "cobertura": "Cobertura Forestal",
+        "lat": -8.43536,
+        "lon": -74.93782
+      },
+      {
+        "fecha": "2026-11-08",
         "hora": "01:01",
         "lugar": "Bolivar, La Libertad",
         "distrito": "130301",
@@ -21566,7 +20446,7 @@
       }
     ],
     "url": "https://geo.serfor.gob.pe/visor/",
-    "leido": "2026-11-10T02:26:03Z"
+    "leido": "2026-11-10T09:58:21Z"
   },
   "phisis": {
     "estaciones": [
@@ -23806,7 +22686,7 @@
       "clasificacion": 99.99
     },
     "url": "http://met.igp.gob.pe/variabclim/",
-    "leido": "2026-11-10T02:26:04Z"
+    "leido": "2026-11-10T09:58:23Z"
   },
   "dhn": {
     "generado": "2026-11-09T15:08:22Z",
@@ -24318,7 +23198,7 @@
         }
       ]
     },
-    "leido": "2026-11-10T02:26:05Z"
+    "leido": "2026-11-10T09:58:24Z"
   },
   "inaigem": {
     "estaciones": [
@@ -24356,7 +23236,7 @@
       }
     ],
     "url": "https://www.inaigem.gob.pe/",
-    "leido": "2026-11-10T02:26:05Z"
+    "leido": "2026-11-10T09:58:24Z"
   },
   "enfen_docs": {
     "docs": [
