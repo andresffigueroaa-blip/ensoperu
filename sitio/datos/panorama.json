@@ -1,6 +1,6 @@
 {
   "_": "Generado por pipeline/productos/panorama.py. No editar a mano.",
-  "generado": "2026-11-10T02:09:45Z",
+  "generado": "2026-11-10T02:10:08Z",
   "fecha": "2026-11-10",
   "lectura": [
     {
@@ -30,13 +30,13 @@
     {
       "t": "Ríos: el modelo global GloFAS pronostica caudales por encima de su percentil 90 anual (1984-2023) en 11, entre ellos La Leche, Piura, Chicama, Zaña; es orientativo. En la última lectura, ninguna estación de la ANA ni del SENAMHI está sobre su umbral de crecida.",
       "fuente": "GloFAS (Copernicus) vía Open-Meteo; lecturas de la ANA y el SENAMHI",
-      "fecha": "2026-11-10T02:09:44Z",
+      "fecha": "2026-11-10T02:10:08Z",
       "url": "https://www.globalfloods.eu/"
     },
     {
       "t": "CENEPRED: 359 distritos en riesgo muy alto por lluvia, hasta el 11 de noviembre; en ellos viven 1 808 862 personas (suma ENSO Perú del escenario, sin repetir distritos).",
       "fuente": "CENEPRED, escenarios de riesgo ante el aviso de lluvias",
-      "fecha": "2026-11-10T02:08:06Z",
+      "fecha": "2026-11-10T02:09:57Z",
       "url": "https://sigrid.cenepred.gob.pe/sigridv3/escenario-aviso"
     },
     {
@@ -92,7 +92,7 @@
       "n_lluvia": "medio",
       "lluvia16": 112.5,
       "spi3": -0.86,
-      "estacional": 52,
+      "estacional": 53,
       "rios_altos": []
     },
     "03": {
@@ -113,7 +113,7 @@
       "n_lluvia": "medio",
       "lluvia16": 102.8,
       "spi3": 0.95,
-      "estacional": -31,
+      "estacional": -33,
       "rios_altos": []
     },
     "04": {
@@ -176,7 +176,7 @@
       "n_lluvia": "bajo",
       "lluvia16": 71.2,
       "spi3": -1.26,
-      "estacional": 144,
+      "estacional": 151,
       "rios_altos": []
     },
     "07": {
@@ -197,7 +197,7 @@
       "n_lluvia": "bajo",
       "lluvia16": 7.3,
       "spi3": null,
-      "estacional": 13,
+      "estacional": 18,
       "rios_altos": []
     },
     "08": {
@@ -239,7 +239,7 @@
       "n_lluvia": "bajo",
       "lluvia16": 79.6,
       "spi3": null,
-      "estacional": 34,
+      "estacional": 35,
       "rios_altos": []
     },
     "10": {
@@ -260,7 +260,7 @@
       "n_lluvia": "medio",
       "lluvia16": 90.0,
       "spi3": -0.38,
-      "estacional": 24,
+      "estacional": 26,
       "rios_altos": []
     },
     "11": {
@@ -281,7 +281,7 @@
       "n_lluvia": "bajo",
       "lluvia16": 3.1,
       "spi3": null,
-      "estacional": 13,
+      "estacional": 19,
       "rios_altos": [
         "Pisco"
       ]
@@ -304,7 +304,7 @@
       "n_lluvia": "medio",
       "lluvia16": 90.1,
       "spi3": null,
-      "estacional": 26,
+      "estacional": 30,
       "rios_altos": []
     },
     "13": {
@@ -325,7 +325,7 @@
       "n_lluvia": "medio",
       "lluvia16": 86.5,
       "spi3": null,
-      "estacional": 50,
+      "estacional": 52,
       "rios_altos": [
         "Jequetepeque",
         "Chicama",
@@ -351,7 +351,7 @@
       "n_lluvia": "bajo",
       "lluvia16": 21.4,
       "spi3": null,
-      "estacional": 71,
+      "estacional": 96,
       "rios_altos": [
         "La Leche",
         "Chancay-Lambayeque",
@@ -376,7 +376,7 @@
       "n_lluvia": "medio",
       "lluvia16": 77.9,
       "spi3": null,
-      "estacional": 87,
+      "estacional": 105,
       "rios_altos": []
     },
     "16": {
@@ -397,7 +397,7 @@
       "n_lluvia": "medio",
       "lluvia16": 147.6,
       "spi3": 0.09,
-      "estacional": 26,
+      "estacional": 38,
       "rios_altos": []
     },
     "17": {
@@ -418,7 +418,7 @@
       "n_lluvia": "bajo",
       "lluvia16": 70.4,
       "spi3": 0.11,
-      "estacional": -42,
+      "estacional": -31,
       "rios_altos": []
     },
     "18": {
@@ -439,7 +439,7 @@
       "n_lluvia": "bajo",
       "lluvia16": 45.8,
       "spi3": null,
-      "estacional": -24,
+      "estacional": -28,
       "rios_altos": []
     },
     "19": {
@@ -460,7 +460,7 @@
       "n_lluvia": "medio",
       "lluvia16": 125.3,
       "spi3": -0.28,
-      "estacional": 28,
+      "estacional": 30,
       "rios_altos": []
     },
     "20": {
@@ -481,7 +481,7 @@
       "n_lluvia": "alto",
       "lluvia16": 148.8,
       "spi3": null,
-      "estacional": 116,
+      "estacional": 152,
       "rios_altos": [
         "Chira",
         "Piura"
@@ -505,7 +505,7 @@
       "n_lluvia": "medio",
       "lluvia16": 113.0,
       "spi3": null,
-      "estacional": -49,
+      "estacional": -59,
       "rios_altos": []
     },
     "22": {
@@ -526,7 +526,7 @@
       "n_lluvia": "medio",
       "lluvia16": 125.8,
       "spi3": -0.36,
-      "estacional": 5,
+      "estacional": 14,
       "rios_altos": []
     },
     "23": {
@@ -547,7 +547,7 @@
       "n_lluvia": "bajo",
       "lluvia16": 14.1,
       "spi3": null,
-      "estacional": -8,
+      "estacional": -12,
       "rios_altos": []
     },
     "24": {
@@ -568,7 +568,7 @@
       "n_lluvia": "muy alto",
       "lluvia16": 264.2,
       "spi3": null,
-      "estacional": 256,
+      "estacional": 303,
       "rios_altos": [
         "Tumbes"
       ]
@@ -591,7 +591,7 @@
       "n_lluvia": "medio",
       "lluvia16": 97.3,
       "spi3": -1.43,
-      "estacional": 0,
+      "estacional": 16,
       "rios_altos": []
     }
   },
