@@ -1,9 +1,10 @@
 {
   "_": "Generado por pipeline/fuentes/peru_oficial.py. Datos oficiales tal como se publican.",
-  "actualizado": "2026-11-10T13:54:32Z",
+  "actualizado": "2026-11-10T13:57:41Z",
   "fallas": [
     "coen",
-    "indeci_rss"
+    "indeci_rss",
+    "enfen_docs"
   ],
   "fenomeno": {
     "fecha": "30 de octubre del 2026",
@@ -11,7 +12,7 @@
     "color": "#ff0031",
     "titular": "EL NIÑO COSTERO CONTINUARÍA HASTA FINES DE OTOÑO DE 2027",
     "url": "https://www.senamhi.gob.pe/?p=fenomeno-el-nino",
-    "leido": "2026-11-10T13:52:43Z"
+    "leido": "2026-11-10T13:57:41Z"
   },
   "coen": {
     "dias": 7,
@@ -4530,7 +4531,7 @@
       }
     },
     "url": "https://sigrid.cenepred.gob.pe/sigridv3/escenario-aviso",
-    "leido": "2026-11-10T13:54:40Z"
+    "leido": "2026-11-10T13:57:42Z"
   },
   "quebradas": {
     "fecha": "2026-11-09",
@@ -4718,7 +4719,7 @@
     },
     "sin_cruce": 0,
     "url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico",
-    "leido": "2026-11-10T13:54:41Z"
+    "leido": "2026-11-10T13:57:43Z"
   },
   "hidro": {
     "avisos": [
@@ -4760,7 +4761,7 @@
       }
     ],
     "url": "https://www.senamhi.gob.pe/?p=aviso-hidrologico",
-    "leido": "2026-11-10T13:54:42Z"
+    "leido": "2026-11-10T13:57:44Z"
   },
   "ana_rios": {
     "estaciones": [
@@ -6416,12 +6417,12 @@
         "rio": "Huallaga",
         "estacion": "Puente Tocache",
         "lugar": "Tocache, San Martin",
-        "valor": 1199.3,
+        "valor": 1203.06,
         "unidad": "m³/s",
         "alerta": 2587.0,
         "emergencia": 3259.0,
         "tendencia": "Ascendente",
-        "hora": "07:00",
+        "hora": "08:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -8.18475,
@@ -6912,7 +6913,7 @@
     "en_alerta": 1,
     "en_emergencia": 1,
     "url": "https://snirh.ana.gob.pe/onrh/",
-    "leido": "2026-11-10T13:52:52Z"
+    "leido": "2026-11-10T13:57:49Z"
   },
   "ana_embalses": {
     "embalses": [
@@ -6941,10 +6942,10 @@
       {
         "nombre": "Tinajones",
         "lugar": "Chongoyape, Lambayeque",
-        "fecha": "09-Nov",
+        "fecha": "10-Nov",
         "util": 331.6,
-        "almacenado": 93.8,
-        "porcentaje": 28.3,
+        "almacenado": 95.2,
+        "porcentaje": 28.7,
         "lat": -6.65,
         "lon": -79.44,
         "influencia": "Lambayeque"
@@ -7139,17 +7140,17 @@
       {
         "nombre": "Paucarani",
         "lugar": "Palca, Tacna",
-        "fecha": "01-Nov",
+        "fecha": "09-Nov",
         "util": 10.5,
-        "almacenado": 3.6,
-        "porcentaje": 34.3,
+        "almacenado": 3.5,
+        "porcentaje": 33.3,
         "lat": -17.5316,
         "lon": -69.7728,
         "influencia": "Tacna"
       }
     ],
     "url": "https://snirh.ana.gob.pe/onrh/",
-    "leido": "2026-11-10T13:52:53Z"
+    "leido": "2026-11-10T13:57:49Z"
   },
   "ana_pc": {
     "total": 536,
@@ -7160,7 +7161,7 @@
     },
     "avance_medio": 36.7,
     "url": "https://snirh.ana.gob.pe/",
-    "leido": "2026-11-10T13:52:53Z"
+    "leido": "2026-11-10T13:57:50Z"
   },
   "emergencia": {
     "decretos": {
@@ -12126,7 +12127,7 @@
       "ONRH/DEE_DS_140_2026_PCM"
     ],
     "url": "https://www.gob.pe/busquedas?contenido[]=normas&term=estado+de+emergencia",
-    "leido": "2026-11-10T13:52:54Z"
+    "leido": "2026-11-10T13:57:50Z"
   },
   "preparacion": {
     "conteo": {
@@ -19282,7 +19283,7 @@
       }
     },
     "url": "https://visor.geoperu.gob.pe/",
-    "leido": "2026-11-10T13:54:43Z"
+    "leido": "2026-11-10T13:57:52Z"
   },
   "agua": {
     "total": 70,
@@ -20172,7 +20173,7 @@
       }
     },
     "url": "https://www.sunass.gob.pe/",
-    "leido": "2026-11-10T13:54:44Z"
+    "leido": "2026-11-10T13:57:52Z"
   },
   "incendios": {
     "total": 11,
@@ -20278,7 +20279,7 @@
       }
     ],
     "url": "https://geo.serfor.gob.pe/visor/",
-    "leido": "2026-11-10T13:54:45Z"
+    "leido": "2026-11-10T13:57:52Z"
   },
   "phisis": {
     "estaciones": [
@@ -21055,7 +21056,7 @@
       {
         "estacion": "La Tranca",
         "cuenca": "Cuenca Sama",
-        "fecha": "2026-11-09T17:00:00Z",
+        "fecha": "2026-11-10T13:00:00Z",
         "nivel": "normal",
         "variable": "A",
         "lugar": "Inclan, Tacna",
@@ -21445,7 +21446,7 @@
       {
         "estacion": "Puente Tocache",
         "cuenca": "Intercuenca Alto Huallaga",
-        "fecha": "2026-11-10T12:00:00Z",
+        "fecha": "2026-11-10T13:00:00Z",
         "nivel": "normal",
         "variable": "A",
         "lugar": "Tocache, San Martin",
@@ -21715,7 +21716,7 @@
     ],
     "sobre_umbral": 3,
     "url": "https://www.senamhi.gob.pe/mapas/mapa-monitoreohidro/",
-    "leido": "2026-11-10T13:52:57Z"
+    "leido": "2026-11-10T13:57:53Z"
   },
   "prono": {
     "url": "https://www.senamhi.gob.pe/?p=pronostico-climatico",
@@ -22313,7 +22314,7 @@
         ]
       ]
     },
-    "leido": "2026-11-10T13:52:57Z"
+    "leido": "2026-11-10T13:57:53Z"
   },
   "igp": {
     "e": [
@@ -22518,7 +22519,7 @@
       "clasificacion": 99.99
     },
     "url": "http://met.igp.gob.pe/variabclim/",
-    "leido": "2026-11-10T13:54:47Z"
+    "leido": "2026-11-10T13:57:53Z"
   },
   "dhn": {
     "generado": "2026-11-10T13:43:19Z",
@@ -23030,7 +23031,7 @@
         }
       ]
     },
-    "leido": "2026-11-10T13:54:48Z"
+    "leido": "2026-11-10T13:57:53Z"
   },
   "inaigem": {
     "estaciones": [
@@ -23068,7 +23069,7 @@
       }
     ],
     "url": "https://www.inaigem.gob.pe/",
-    "leido": "2026-11-10T13:54:48Z"
+    "leido": "2026-11-10T13:57:54Z"
   },
   "enfen_docs": {
     "docs": [
@@ -23134,6 +23135,7 @@
       }
     ],
     "url": "https://enfen.imarpe.gob.pe/",
-    "leido": "2026-11-10T13:52:59Z"
+    "leido": "2026-11-10T13:52:59Z",
+    "atrasado": false
   }
 }
