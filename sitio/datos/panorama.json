@@ -1,7 +1,7 @@
 {
   "_": "Generado por pipeline/productos/panorama.py. No editar a mano.",
-  "generado": "2026-11-09T22:25:21Z",
-  "fecha": "2026-11-09",
+  "generado": "2026-11-10T02:09:45Z",
+  "fecha": "2026-11-10",
   "lectura": [
     {
       "t": "Estado vigente según el ENFEN: Alerta de El Niño Costero (comunicado oficial N° 19-2026, 30 de octubre de 2026). El Niño costero continuaría hasta fines de otoño de 2027.",
@@ -16,9 +16,9 @@
       "url": "https://psl.noaa.gov/data/gridded/data.noaa.oisst.v2.highres.html"
     },
     {
-      "t": "El SENAMHI tiene 7 avisos meteorológicos vigentes o por empezar, 2 en nivel rojo (de todo tipo: lluvia, temperatura, viento).",
+      "t": "El SENAMHI tiene 3 avisos meteorológicos vigentes o por empezar, 2 en nivel rojo (de todo tipo: lluvia, temperatura, viento).",
       "fuente": "SENAMHI, avisos meteorológicos",
-      "fecha": "2026-11-09T22:23:51Z",
+      "fecha": "2026-11-10T02:07:54Z",
       "url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico"
     },
     {
@@ -30,13 +30,13 @@
     {
       "t": "Ríos: el modelo global GloFAS pronostica caudales por encima de su percentil 90 anual (1984-2023) en 11, entre ellos La Leche, Piura, Chicama, Zaña; es orientativo. En la última lectura, ninguna estación de la ANA ni del SENAMHI está sobre su umbral de crecida.",
       "fuente": "GloFAS (Copernicus) vía Open-Meteo; lecturas de la ANA y el SENAMHI",
-      "fecha": "2026-11-09T22:25:21Z",
+      "fecha": "2026-11-10T02:09:44Z",
       "url": "https://www.globalfloods.eu/"
     },
     {
-      "t": "CENEPRED: 359 distritos en riesgo muy alto por lluvia, con vigencias hasta el 9 de noviembre y el 11 de noviembre; en ellos viven 1 808 862 personas (suma ENSO Perú de los 2 escenarios vigentes, sin repetir distritos).",
+      "t": "CENEPRED: 359 distritos en riesgo muy alto por lluvia, hasta el 11 de noviembre; en ellos viven 1 808 862 personas (suma ENSO Perú del escenario, sin repetir distritos).",
       "fuente": "CENEPRED, escenarios de riesgo ante el aviso de lluvias",
-      "fecha": "2026-11-09T22:25:09Z",
+      "fecha": "2026-11-10T02:08:06Z",
       "url": "https://sigrid.cenepred.gob.pe/sigridv3/escenario-aviso"
     },
     {
@@ -56,12 +56,12 @@
     "01": {
       "nombre": "Amazonas",
       "zona": "Selva norte",
-      "aviso": "AMARILLO",
-      "aviso_tipo": "lluvia",
+      "aviso": "NARANJA",
+      "aviso_tipo": "calor",
       "aviso_desde": null,
-      "aviso_numero": 457,
-      "aviso_url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico-vigente&a=2026&b=29354&c=00&d=SENA",
-      "aviso_lluvia": "AMARILLO",
+      "aviso_numero": 463,
+      "aviso_url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico-vigente&a=2026&b=29360&c=00&d=SENA",
+      "aviso_lluvia": null,
       "aviso_lluvia_desde": null,
       "mar": null,
       "n_mar": null,
@@ -382,12 +382,12 @@
     "16": {
       "nombre": "Loreto",
       "zona": "Selva norte",
-      "aviso": "AMARILLO",
-      "aviso_tipo": "lluvia",
+      "aviso": "NARANJA",
+      "aviso_tipo": "calor",
       "aviso_desde": null,
-      "aviso_numero": 457,
-      "aviso_url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico-vigente&a=2026&b=29354&c=00&d=SENA",
-      "aviso_lluvia": "AMARILLO",
+      "aviso_numero": 463,
+      "aviso_url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico-vigente&a=2026&b=29360&c=00&d=SENA",
+      "aviso_lluvia": null,
       "aviso_lluvia_desde": null,
       "mar": null,
       "n_mar": null,
@@ -404,11 +404,11 @@
       "nombre": "Madre de Dios",
       "zona": "Selva sur",
       "aviso": "NARANJA",
-      "aviso_tipo": "viento",
+      "aviso_tipo": "calor",
       "aviso_desde": null,
-      "aviso_numero": 461,
-      "aviso_url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico-vigente&a=2026&b=29358&c=00&d=SENA",
-      "aviso_lluvia": "AMARILLO",
+      "aviso_numero": 463,
+      "aviso_url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico-vigente&a=2026&b=29360&c=00&d=SENA",
+      "aviso_lluvia": null,
       "aviso_lluvia_desde": null,
       "mar": null,
       "n_mar": null,
@@ -511,12 +511,12 @@
     "22": {
       "nombre": "San Martín",
       "zona": "Selva norte",
-      "aviso": "AMARILLO",
-      "aviso_tipo": "lluvia",
+      "aviso": "NARANJA",
+      "aviso_tipo": "calor",
       "aviso_desde": null,
-      "aviso_numero": 457,
-      "aviso_url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico-vigente&a=2026&b=29354&c=00&d=SENA",
-      "aviso_lluvia": "AMARILLO",
+      "aviso_numero": 463,
+      "aviso_url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico-vigente&a=2026&b=29360&c=00&d=SENA",
+      "aviso_lluvia": null,
       "aviso_lluvia_desde": null,
       "mar": null,
       "n_mar": null,
@@ -577,11 +577,11 @@
       "nombre": "Ucayali",
       "zona": "Selva sur",
       "aviso": "NARANJA",
-      "aviso_tipo": "viento",
+      "aviso_tipo": "calor",
       "aviso_desde": null,
-      "aviso_numero": 461,
-      "aviso_url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico-vigente&a=2026&b=29358&c=00&d=SENA",
-      "aviso_lluvia": "AMARILLO",
+      "aviso_numero": 463,
+      "aviso_url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico-vigente&a=2026&b=29360&c=00&d=SENA",
+      "aviso_lluvia": null,
       "aviso_lluvia_desde": null,
       "mar": null,
       "n_mar": null,
@@ -2108,7 +2108,7 @@
     }
   ],
   "totales": {
-    "avisos": 7,
+    "avisos": 3,
     "rojos": 2,
     "rios_altos": 11,
     "focos": 1007,
