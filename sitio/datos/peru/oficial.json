@@ -1,6 +1,6 @@
 {
   "_": "Generado por pipeline/fuentes/peru_oficial.py. Datos oficiales tal como se publican.",
-  "actualizado": "2026-11-10T16:27:44Z",
+  "actualizado": "2026-11-10T17:23:59Z",
   "fallas": [
     "coen",
     "indeci_rss"
@@ -11,7 +11,7 @@
     "color": "#ff0031",
     "titular": "EL NIÑO COSTERO CONTINUARÍA HASTA FINES DE OTOÑO DE 2027",
     "url": "https://www.senamhi.gob.pe/?p=fenomeno-el-nino",
-    "leido": "2026-11-10T16:24:03Z"
+    "leido": "2026-11-10T17:24:00Z"
   },
   "coen": {
     "dias": 7,
@@ -4530,168 +4530,1160 @@
       }
     },
     "url": "https://sigrid.cenepred.gob.pe/sigridv3/escenario-aviso",
-    "leido": "2026-11-10T16:27:47Z"
+    "leido": "2026-11-10T17:24:01Z"
   },
   "quebradas": {
-    "fecha": "2026-11-09",
+    "fecha": "2026-11-10",
     "distritos": {
-      "010302": {
+      "090301": {
+        "nivel": 4,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud extrema en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "030503": {
         "nivel": 2,
         "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
       },
-      "010303": {
-        "nivel": 2,
-        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
-      },
-      "010304": {
-        "nivel": 2,
-        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
-      },
-      "010307": {
+      "030504": {
         "nivel": 3,
         "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
       },
-      "010301": {
+      "080705": {
+        "nivel": 4,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud extrema en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "030104": {
         "nivel": 3,
         "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
       },
-      "010310": {
-        "nivel": 3,
-        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
-      },
-      "010403": {
+      "101007": {
         "nivel": 2,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "020606": {
+        "nivel": 2,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "030702": {
+        "nivel": 2,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "080608": {
+        "nivel": 3,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "120405": {
+        "nivel": 4,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud extrema en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "120805": {
+        "nivel": 2,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "150604": {
+        "nivel": 2,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "010612": {
+        "nivel": 3,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "030106": {
+        "nivel": 3,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "120406": {
+        "nivel": 3,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "220602": {
+        "nivel": 2,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "010114": {
+        "nivel": 2,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "030602": {
+        "nivel": 2,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "020107": {
+        "nivel": 2,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "010105": {
+        "nivel": 2,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "020608": {
+        "nivel": 2,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "020101": {
+        "nivel": 2,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "090402": {
+        "nivel": 3,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "030105": {
+        "nivel": 2,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "110209": {
+        "nivel": 3,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "020204": {
+        "nivel": 2,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "021105": {
+        "nivel": 2,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "090408": {
+        "nivel": 3,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "020105": {
+        "nivel": 2,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "010107": {
+        "nivel": 2,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "010102": {
+        "nivel": 2,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "010116": {
+        "nivel": 2,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "010607": {
+        "nivel": 2,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "010117": {
+        "nivel": 2,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "010602": {
+        "nivel": 2,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "010609": {
+        "nivel": 2,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "010601": {
+        "nivel": 2,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "120501": {
+        "nivel": 3,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "020203": {
+        "nivel": 2,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "020201": {
+        "nivel": 2,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "020205": {
+        "nivel": 2,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "020202": {
+        "nivel": 2,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "020108": {
+        "nivel": 2,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "021008": {
+        "nivel": 2,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "030101": {
+        "nivel": 3,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "020401": {
+        "nivel": 2,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "021001": {
+        "nivel": 2,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "021702": {
+        "nivel": 2,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "021703": {
+        "nivel": 2,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "021701": {
+        "nivel": 2,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "021710": {
+        "nivel": 2,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "030103": {
+        "nivel": 3,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "030108": {
+        "nivel": 3,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "030109": {
+        "nivel": 3,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "030301": {
+        "nivel": 3,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "030303": {
+        "nivel": 3,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "030506": {
+        "nivel": 3,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "030305": {
+        "nivel": 3,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "030304": {
+        "nivel": 3,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "030604": {
+        "nivel": 2,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "030605": {
+        "nivel": 2,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "030606": {
+        "nivel": 2,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "030608": {
+        "nivel": 2,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "030502": {
+        "nivel": 2,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "030705": {
+        "nivel": 3,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "030714": {
+        "nivel": 3,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "030505": {
+        "nivel": 2,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "030701": {
+        "nivel": 3,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "030703": {
+        "nivel": 2,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "030706": {
+        "nivel": 3,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "030708": {
+        "nivel": 2,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "030713": {
+        "nivel": 3,
         "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
       },
       "040504": {
         "nivel": 2,
         "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
       },
-      "100901": {
+      "040514": {
         "nivel": 2,
-        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
-      },
-      "100904": {
-        "nivel": 2,
-        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
-      },
-      "120807": {
-        "nivel": 2,
-        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
-      },
-      "160701": {
-        "nivel": 2,
-        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
-      },
-      "160704": {
-        "nivel": 2,
-        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
-      },
-      "221005": {
-        "nivel": 2,
-        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
-      },
-      "240105": {
-        "nivel": 3,
-        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
-      },
-      "250301": {
-        "nivel": 2,
-        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
-      },
-      "010305": {
-        "nivel": 3,
-        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
-      },
-      "010306": {
-        "nivel": 3,
-        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
-      },
-      "010309": {
-        "nivel": 3,
-        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
-      },
-      "010312": {
-        "nivel": 3,
-        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
-      },
-      "010402": {
-        "nivel": 2,
-        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
-      },
-      "010518": {
-        "nivel": 2,
-        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
-      },
-      "010520": {
-        "nivel": 2,
-        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
-      },
-      "010705": {
-        "nivel": 2,
-        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
-      },
-      "040501": {
-        "nivel": 3,
-        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
-      },
-      "040506": {
-        "nivel": 3,
-        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
-      },
-      "040510": {
-        "nivel": 3,
-        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
-      },
-      "040518": {
-        "nivel": 3,
         "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
       },
       "040519": {
         "nivel": 2,
         "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
       },
-      "050611": {
+      "040804": {
         "nivel": 3,
         "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
       },
-      "050615": {
+      "040806": {
+        "nivel": 3,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "050202": {
+        "nivel": 4,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud extrema en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "080502": {
+        "nivel": 3,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "050205": {
+        "nivel": 4,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud extrema en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "050203": {
+        "nivel": 3,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "050301": {
+        "nivel": 4,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud extrema en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "050114": {
+        "nivel": 4,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud extrema en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "050206": {
+        "nivel": 3,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "050304": {
+        "nivel": 4,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud extrema en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "050602": {
+        "nivel": 3,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "050603": {
+        "nivel": 3,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "050604": {
+        "nivel": 3,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "050609": {
         "nivel": 2,
         "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
       },
-      "080705": {
+      "050606": {
         "nivel": 3,
         "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
       },
-      "080708": {
+      "050611": {
+        "nivel": 4,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud extrema en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "050615": {
         "nivel": 3,
         "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "080605": {
+        "nivel": 3,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "050613": {
+        "nivel": 3,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "050601": {
+        "nivel": 4,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud extrema en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "050616": {
+        "nivel": 3,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "050621": {
+        "nivel": 2,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "050905": {
+        "nivel": 3,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "050906": {
+        "nivel": 3,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "050911": {
+        "nivel": 3,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "051011": {
+        "nivel": 3,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "051012": {
+        "nivel": 4,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud extrema en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "080201": {
+        "nivel": 3,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "080202": {
+        "nivel": 4,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud extrema en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "080204": {
+        "nivel": 4,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud extrema en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "080203": {
+        "nivel": 4,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud extrema en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "080205": {
+        "nivel": 4,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud extrema en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "080207": {
+        "nivel": 4,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud extrema en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "080304": {
+        "nivel": 2,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "080306": {
+        "nivel": 2,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "080503": {
+        "nivel": 2,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "080504": {
+        "nivel": 3,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "080506": {
+        "nivel": 4,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud extrema en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "080505": {
+        "nivel": 2,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "080507": {
+        "nivel": 3,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "150901": {
+        "nivel": 2,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "080508": {
+        "nivel": 4,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud extrema en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "080501": {
+        "nivel": 4,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud extrema en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "080602": {
+        "nivel": 4,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud extrema en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "080603": {
+        "nivel": 3,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "080604": {
+        "nivel": 2,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "080606": {
+        "nivel": 3,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "080607": {
+        "nivel": 3,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "080601": {
+        "nivel": 3,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "080703": {
+        "nivel": 4,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud extrema en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "080702": {
+        "nivel": 2,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "080704": {
+        "nivel": 4,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud extrema en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "080706": {
+        "nivel": 4,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud extrema en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "080707": {
+        "nivel": 3,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "080701": {
+        "nivel": 4,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud extrema en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
       },
       "080803": {
+        "nivel": 4,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud extrema en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "080708": {
+        "nivel": 4,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud extrema en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "080806": {
         "nivel": 3,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "081002": {
+        "nivel": 3,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "081003": {
+        "nivel": 2,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "081006": {
+        "nivel": 4,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud extrema en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "081008": {
+        "nivel": 3,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "081206": {
+        "nivel": 4,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud extrema en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "081212": {
+        "nivel": 3,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "090601": {
+        "nivel": 3,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "090311": {
+        "nivel": 2,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "090403": {
+        "nivel": 3,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "090607": {
+        "nivel": 4,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud extrema en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "090401": {
+        "nivel": 3,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "120806": {
+        "nivel": 2,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "090405": {
+        "nivel": 3,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "120214": {
+        "nivel": 3,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "090407": {
+        "nivel": 2,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "090411": {
+        "nivel": 3,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "090410": {
+        "nivel": 2,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "090412": {
+        "nivel": 2,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "090602": {
+        "nivel": 2,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "090118": {
+        "nivel": 3,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "090116": {
+        "nivel": 2,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "090605": {
+        "nivel": 2,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "220502": {
+        "nivel": 2,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "090613": {
+        "nivel": 4,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud extrema en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "090608": {
+        "nivel": 4,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud extrema en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "090611": {
+        "nivel": 2,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "090610": {
+        "nivel": 3,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "090615": {
+        "nivel": 4,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud extrema en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "090612": {
+        "nivel": 2,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "120909": {
+        "nivel": 3,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "090616": {
+        "nivel": 4,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud extrema en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "101001": {
+        "nivel": 2,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "110203": {
+        "nivel": 3,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "110208": {
+        "nivel": 3,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "110114": {
+        "nivel": 2,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "120907": {
+        "nivel": 2,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "120206": {
+        "nivel": 3,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "120202": {
+        "nivel": 2,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "120203": {
+        "nivel": 3,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "120204": {
+        "nivel": 2,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "120101": {
+        "nivel": 3,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "120108": {
+        "nivel": 2,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "120105": {
+        "nivel": 2,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "120114": {
+        "nivel": 3,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "120124": {
+        "nivel": 3,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "120402": {
+        "nivel": 2,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "150611": {
+        "nivel": 2,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "120411": {
+        "nivel": 2,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "120414": {
+        "nivel": 3,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "150809": {
+        "nivel": 3,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "151030": {
+        "nivel": 3,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "120415": {
+        "nivel": 2,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "120423": {
+        "nivel": 2,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "120425": {
+        "nivel": 2,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "220104": {
+        "nivel": 2,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "120426": {
+        "nivel": 2,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "120431": {
+        "nivel": 3,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "160202": {
+        "nivel": 3,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "150705": {
+        "nivel": 4,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud extrema en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "120432": {
+        "nivel": 2,
         "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
       },
       "120503": {
+        "nivel": 3,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "120803": {
+        "nivel": 3,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "120802": {
+        "nivel": 3,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "190201": {
         "nivel": 2,
         "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
       },
-      "160703": {
+      "120701": {
         "nivel": 2,
         "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
       },
-      "160601": {
+      "120703": {
         "nivel": 2,
         "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "120809": {
+        "nivel": 4,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud extrema en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "120801": {
+        "nivel": 3,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "120804": {
+        "nivel": 4,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud extrema en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "120807": {
+        "nivel": 4,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud extrema en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
       },
       "190104": {
+        "nivel": 4,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud extrema en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "220603": {
         "nivel": 2,
         "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
       },
-      "200303": {
+      "120808": {
         "nivel": 2,
         "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
       },
-      "220202": {
+      "120810": {
+        "nivel": 3,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "150301": {
+        "nivel": 2,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "220303": {
+        "nivel": 3,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "150503": {
+        "nivel": 3,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "150401": {
+        "nivel": 4,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud extrema en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "150505": {
+        "nivel": 3,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "150402": {
+        "nivel": 3,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "150403": {
+        "nivel": 3,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "150404": {
+        "nivel": 4,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud extrema en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "150405": {
+        "nivel": 4,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud extrema en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "150602": {
+        "nivel": 4,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud extrema en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "150406": {
+        "nivel": 3,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "150407": {
+        "nivel": 3,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "150608": {
+        "nivel": 3,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "150610": {
+        "nivel": 4,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud extrema en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "150704": {
+        "nivel": 4,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud extrema en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "150706": {
+        "nivel": 2,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "150708": {
+        "nivel": 4,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud extrema en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "150711": {
+        "nivel": 3,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "150720": {
+        "nivel": 3,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "150709": {
+        "nivel": 3,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "150718": {
+        "nivel": 3,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "150713": {
+        "nivel": 3,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "150701": {
+        "nivel": 3,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "150726": {
+        "nivel": 3,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "150719": {
+        "nivel": 4,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud extrema en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "220601": {
+        "nivel": 3,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "150721": {
+        "nivel": 4,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud extrema en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "151014": {
+        "nivel": 3,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "240202": {
+        "nivel": 2,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "220305": {
+        "nivel": 2,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "150722": {
+        "nivel": 3,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "150729": {
+        "nivel": 3,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "150731": {
+        "nivel": 3,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "151002": {
+        "nivel": 4,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud extrema en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "151004": {
+        "nivel": 3,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "151005": {
+        "nivel": 3,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "151003": {
+        "nivel": 2,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "151007": {
+        "nivel": 4,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud extrema en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "151013": {
+        "nivel": 2,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "151021": {
+        "nivel": 4,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud extrema en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "151016": {
+        "nivel": 4,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud extrema en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "151018": {
+        "nivel": 4,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud extrema en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "151028": {
+        "nivel": 3,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "151020": {
+        "nivel": 3,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "151025": {
+        "nivel": 3,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "151022": {
+        "nivel": 2,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "151027": {
+        "nivel": 2,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "151033": {
+        "nivel": 4,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud extrema en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "220205": {
+        "nivel": 3,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "160701": {
+        "nivel": 2,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "190109": {
+        "nivel": 3,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "190112": {
+        "nivel": 3,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "220302": {
+        "nivel": 3,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "210705": {
+        "nivel": 3,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "210709": {
+        "nivel": 2,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "210710": {
+        "nivel": 3,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "210801": {
+        "nivel": 3,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "210806": {
+        "nivel": 2,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "210803": {
+        "nivel": 3,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "210808": {
+        "nivel": 2,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "210804": {
+        "nivel": 3,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "210805": {
+        "nivel": 3,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "210809": {
+        "nivel": 3,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "211103": {
+        "nivel": 2,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "220301": {
+        "nivel": 3,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "220201": {
+        "nivel": 3,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "220304": {
+        "nivel": 3,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "220402": {
+        "nivel": 3,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "220604": {
+        "nivel": 3,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "220403": {
+        "nivel": 3,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "220404": {
+        "nivel": 3,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "220405": {
+        "nivel": 3,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "220401": {
+        "nivel": 3,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "220506": {
+        "nivel": 3,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "220510": {
+        "nivel": 2,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "220511": {
+        "nivel": 2,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "220102": {
+        "nivel": 2,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "220103": {
+        "nivel": 2,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "220101": {
+        "nivel": 3,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "220804": {
+        "nivel": 3,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "220105": {
         "nivel": 2,
         "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
       },
@@ -4699,26 +5691,50 @@
         "nivel": 2,
         "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
       },
-      "221002": {
+      "220803": {
+        "nivel": 3,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "220106": {
         "nivel": 2,
         "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
       },
-      "240202": {
-        "nivel": 3,
+      "220802": {
+        "nivel": 2,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "220801": {
+        "nivel": 2,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "220806": {
+        "nivel": 2,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "220807": {
+        "nivel": 2,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "220808": {
+        "nivel": 2,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "220809": {
+        "nivel": 2,
+        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
+      },
+      "221003": {
+        "nivel": 2,
         "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
       },
       "240201": {
-        "nivel": 3,
-        "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
-      },
-      "240103": {
-        "nivel": 3,
+        "nivel": 2,
         "texto": "Ante el pronóstico de lluvias es probable la activación de quebradas de magnitud moderada en las zonas identificadas o alrededor de las mismas, con posible afectación de la población bajo la influencia de las quebradas."
       }
     },
-    "sin_cruce": 0,
+    "sin_cruce": 8,
     "url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico",
-    "leido": "2026-11-10T16:27:48Z"
+    "leido": "2026-11-10T17:24:05Z"
   },
   "hidro": {
     "avisos": [
@@ -4748,19 +5764,19 @@
       },
       {
         "estacion": "Santa María De Nanay",
-        "titulo": "Descenso del nivel del río nanay - estación santa maría de nanay",
-        "nivel": "NARANJA",
-        "fecha": "02-NOV-26",
+        "titulo": "Situación actual del nivel del río nanay - estación santa maría de nanay",
+        "nivel": "ROJO",
+        "fecha": "10-NOV-26",
         "cuenca": "Cuenca Nanay",
         "lugar": "Alto Nanay, Loreto",
         "lat": -3.8891,
         "lon": -73.6961,
-        "recomendacion": "Se recomienda estar atento en todo momento del desarrollo de actividades como evitar la navegabilidad de embarcaciones de gran calado ya que puede generar daños y el encallamiento de naves fluviales.",
-        "numero": 1668
+        "recomendacion": "Se recomienda ser extremadamente precavido ante la ocurrencia de estas condiciones en el río y cumplir las instrucciones proporcionadas por las autoridades competentes.",
+        "numero": 1676
       }
     ],
     "url": "https://www.senamhi.gob.pe/?p=aviso-hidrologico",
-    "leido": "2026-11-10T16:27:49Z"
+    "leido": "2026-11-10T17:24:05Z"
   },
   "ana_rios": {
     "estaciones": [
@@ -4773,7 +5789,7 @@
         "alerta": 86.92,
         "emergencia": 85.81,
         "tendencia": "Descendente",
-        "hora": "10:00",
+        "hora": "11:00",
         "estado": "alerta",
         "estiaje": true,
         "lat": -3.48276,
@@ -4789,7 +5805,7 @@
         "alerta": 700.0,
         "emergencia": 1000.0,
         "tendencia": "Descendente",
-        "hora": "10:00",
+        "hora": "11:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -3.7688,
@@ -4816,12 +5832,12 @@
         "rio": "Alamor",
         "estacion": "Alamor",
         "lugar": "Lancones, Piura",
-        "valor": 18.57,
+        "valor": 18.25,
         "unidad": "m³/s",
         "alerta": 310.0,
         "emergencia": 423.0,
         "tendencia": "Descendente",
-        "hora": "10:00",
+        "hora": "11:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -4.47749,
@@ -4837,7 +5853,7 @@
         "alerta": 280.0,
         "emergencia": 430.0,
         "tendencia": "Descendente",
-        "hora": "10:00",
+        "hora": "11:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -4.7285,
@@ -4864,12 +5880,12 @@
         "rio": "Chira",
         "estacion": "Pte. Simón Rodríguez",
         "lugar": "Amotape, Piura",
-        "valor": 56.67,
+        "valor": 57.59,
         "unidad": "m³/s",
         "alerta": 1000.0,
         "emergencia": 1300.0,
         "tendencia": "Descendente",
-        "hora": "11:00",
+        "hora": "12:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -4.8801,
@@ -4880,12 +5896,12 @@
         "rio": "Macará",
         "estacion": "Pte. Int. Macara",
         "lugar": "Suyo, Piura",
-        "valor": 22.78,
+        "valor": 21.95,
         "unidad": "m³/s",
         "alerta": 500.0,
         "emergencia": 580.0,
         "tendencia": "Descendente",
-        "hora": "10:00",
+        "hora": "11:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -4.3927,
@@ -4896,12 +5912,12 @@
         "rio": "Chira",
         "estacion": "El Ciruelo",
         "lugar": "Suyo, Piura",
-        "valor": 35.39,
+        "valor": 36.2,
         "unidad": "m³/s",
         "alerta": 800.0,
         "emergencia": 1000.0,
         "tendencia": "Descendente",
-        "hora": "11:00",
+        "hora": "12:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -4.299054,
@@ -4917,7 +5933,7 @@
         "alerta": 300.0,
         "emergencia": 350.0,
         "tendencia": "Descendente",
-        "hora": "10:00",
+        "hora": "11:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -5.2899,
@@ -4933,7 +5949,7 @@
         "alerta": 150.0,
         "emergencia": 200.0,
         "tendencia": "Descendente",
-        "hora": "10:00",
+        "hora": "11:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -5.07954,
@@ -4949,7 +5965,7 @@
         "alerta": 830.0,
         "emergencia": 1100.0,
         "tendencia": "Descendente",
-        "hora": "10:00",
+        "hora": "11:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -5.112894,
@@ -4997,7 +6013,7 @@
         "alerta": 78.58,
         "emergencia": 122.99,
         "tendencia": "Descendente",
-        "hora": "10:00",
+        "hora": "11:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -6.649,
@@ -5029,7 +6045,7 @@
         "alerta": 250.0,
         "emergencia": 285.0,
         "tendencia": "Descendente",
-        "hora": "10:00",
+        "hora": "11:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -6.65583,
@@ -5056,12 +6072,12 @@
         "rio": "Jequetepeque",
         "estacion": "Yónan Gore",
         "lugar": "Yonan, Cajamarca",
-        "valor": 6.4,
+        "valor": 6.22,
         "unidad": "m³/s",
         "alerta": 200.0,
         "emergencia": 300.0,
         "tendencia": "Descendente",
-        "hora": "11:00",
+        "hora": "12:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -7.25592,
@@ -5077,7 +6093,7 @@
         "alerta": 180.0,
         "emergencia": 250.0,
         "tendencia": "Descendente",
-        "hora": "10:00",
+        "hora": "11:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -7.5742,
@@ -5088,12 +6104,12 @@
         "rio": "Ochape",
         "estacion": "Puente Palmira",
         "lugar": "Cascas, La Libertad",
-        "valor": 0.14,
+        "valor": 0.17,
         "unidad": "m³/s",
         "alerta": 30.0,
         "emergencia": 40.0,
         "tendencia": "Descendente",
-        "hora": "10:00",
+        "hora": "11:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -7.5492,
@@ -5109,7 +6125,7 @@
         "alerta": 200.0,
         "emergencia": 340.0,
         "tendencia": "Descendente",
-        "hora": "10:00",
+        "hora": "11:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -7.66069,
@@ -5125,7 +6141,7 @@
         "alerta": 505.0,
         "emergencia": 635.0,
         "tendencia": "Descendente",
-        "hora": "10:00",
+        "hora": "11:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -8.6579,
@@ -5173,7 +6189,7 @@
         "alerta": 17.3,
         "emergencia": 23.0,
         "tendencia": "Descendente",
-        "hora": "10:00",
+        "hora": "11:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -10.9216,
@@ -5189,7 +6205,7 @@
         "alerta": 64.0,
         "emergencia": 75.0,
         "tendencia": "Ascendente",
-        "hora": "10:00",
+        "hora": "11:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -11.1347,
@@ -5221,7 +6237,7 @@
         "alerta": 10.0,
         "emergencia": 14.3,
         "tendencia": "Ascendente",
-        "hora": "10:00",
+        "hora": "11:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -11.39315,
@@ -5232,12 +6248,12 @@
         "rio": "Rímac",
         "estacion": "Puente Huachipa",
         "lugar": "Lurigancho, Lima",
-        "valor": 1.18,
+        "valor": 1.17,
         "unidad": "m",
         "alerta": null,
         "emergencia": null,
         "tendencia": "Ascendente",
-        "hora": "11:00",
+        "hora": "12:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -12.01283,
@@ -5253,7 +6269,7 @@
         "alerta": 20.72,
         "emergencia": 27.45,
         "tendencia": "Ascendente",
-        "hora": "10:00",
+        "hora": "11:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -11.45293,
@@ -5264,12 +6280,12 @@
         "rio": "Rímac",
         "estacion": "Chosica",
         "lugar": "Lurigancho, Lima",
-        "valor": 24.02,
+        "valor": 22.23,
         "unidad": "m³/s",
         "alerta": 90.0,
         "emergencia": 120.0,
         "tendencia": "Ascendente",
-        "hora": "11:00",
+        "hora": "12:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -11.92986,
@@ -5280,12 +6296,12 @@
         "rio": "Rímac",
         "estacion": "San Mateo",
         "lugar": "San Mateo, Lima",
-        "valor": 7.01,
+        "valor": 6.41,
         "unidad": "m³/s",
         "alerta": 34.0,
         "emergencia": 41.0,
         "tendencia": "Descendente",
-        "hora": "10:00",
+        "hora": "11:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -11.7601,
@@ -5296,12 +6312,12 @@
         "rio": "Lurín",
         "estacion": "Antapucro",
         "lugar": "Antioquia, Lima",
-        "valor": 1.29,
+        "valor": 1.16,
         "unidad": "m³/s",
         "alerta": 55.0,
         "emergencia": 70.0,
         "tendencia": "Ascendente",
-        "hora": "10:00",
+        "hora": "11:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -12.0333,
@@ -5328,12 +6344,12 @@
         "rio": "Cañete",
         "estacion": "Socsi",
         "lugar": "Lunahuana, Lima",
-        "valor": 11.64,
+        "valor": 12.36,
         "unidad": "m³/s",
         "alerta": 175.0,
         "emergencia": 250.0,
         "tendencia": "Descendente",
-        "hora": "10:00",
+        "hora": "11:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -13.0283,
@@ -5344,12 +6360,12 @@
         "rio": "Pisco",
         "estacion": "Letrayoc",
         "lugar": "Huancano, Ica",
-        "valor": 10.55,
+        "valor": 10.38,
         "unidad": "m³/s",
         "alerta": 140.0,
         "emergencia": 250.0,
         "tendencia": "Ascendente",
-        "hora": "10:00",
+        "hora": "11:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -13.6401,
@@ -5397,7 +6413,7 @@
         "alerta": 150.0,
         "emergencia": 280.0,
         "tendencia": "Descendente",
-        "hora": "10:00",
+        "hora": "11:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -13.7905,
@@ -5413,7 +6429,7 @@
         "alerta": 140.0,
         "emergencia": 250.0,
         "tendencia": "Ascendente",
-        "hora": "11:00",
+        "hora": "12:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -13.9248,
@@ -5488,12 +6504,12 @@
         "rio": "Cotahuasi",
         "estacion": "Cuyau",
         "lugar": "Cotahuasi, Arequipa",
-        "valor": 0.63,
+        "valor": 0.6,
         "unidad": "m",
         "alerta": null,
         "emergencia": null,
         "tendencia": "Descendente",
-        "hora": "11:00",
+        "hora": "12:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -15.218517,
@@ -5541,7 +6557,7 @@
         "alerta": null,
         "emergencia": null,
         "tendencia": "Descendente",
-        "hora": "10:00",
+        "hora": "11:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -15.494169,
@@ -5568,12 +6584,12 @@
         "rio": "Socabaya",
         "estacion": "Tingo Grande",
         "lugar": "Jacobo Hunter, Arequipa",
-        "valor": 0.15,
+        "valor": 0.13,
         "unidad": "m³/s",
         "alerta": 55.0,
         "emergencia": 70.0,
         "tendencia": "Ascendente",
-        "hora": "10:00",
+        "hora": "11:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -16.45992,
@@ -5589,7 +6605,7 @@
         "alerta": 60.0,
         "emergencia": 85.0,
         "tendencia": "Ascendente",
-        "hora": "10:00",
+        "hora": "11:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -15.84122,
@@ -5605,7 +6621,7 @@
         "alerta": 3.25,
         "emergencia": 3.6,
         "tendencia": "Ascendente",
-        "hora": "10:00",
+        "hora": "11:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -16.590141,
@@ -5664,12 +6680,12 @@
         "rio": "Locumba",
         "estacion": "Puente Viejo",
         "lugar": "Locumba, Tacna",
-        "valor": 3.06,
+        "valor": 3.05,
         "unidad": "m³/s",
         "alerta": 36.0,
         "emergencia": 48.0,
         "tendencia": "Ascendente",
-        "hora": "10:00",
+        "hora": "11:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -17.61756,
@@ -5680,12 +6696,12 @@
         "rio": "Locumba",
         "estacion": "TICAPAMPA",
         "lugar": "Ilabaya, Tacna",
-        "valor": 2.85,
+        "valor": 2.78,
         "unidad": "m³/s",
         "alerta": 20.0,
         "emergencia": 40.0,
         "tendencia": "Ascendente",
-        "hora": "11:00",
+        "hora": "12:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -17.47659,
@@ -5696,12 +6712,12 @@
         "rio": "Callazas",
         "estacion": "Coranchay",
         "lugar": "Cairani, Tacna",
-        "valor": 2.29,
+        "valor": 2.17,
         "unidad": "m³/s",
         "alerta": 12.0,
         "emergencia": 20.0,
         "tendencia": "Ascendente",
-        "hora": "10:00",
+        "hora": "11:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -17.1141,
@@ -5717,7 +6733,7 @@
         "alerta": 20.0,
         "emergencia": 40.0,
         "tendencia": "Ascendente",
-        "hora": "10:00",
+        "hora": "11:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -17.4749,
@@ -5760,12 +6776,12 @@
         "rio": "Caplina",
         "estacion": "Caplina",
         "lugar": "Pachia, Tacna",
-        "valor": 0.59,
+        "valor": 0.58,
         "unidad": "m³/s",
         "alerta": 6.0,
         "emergencia": 10.0,
         "tendencia": "Ascendente",
-        "hora": "10:00",
+        "hora": "11:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -17.6907,
@@ -5781,7 +6797,7 @@
         "alerta": 15.0,
         "emergencia": 30.0,
         "tendencia": "Descendente",
-        "hora": "10:00",
+        "hora": "11:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -17.8151,
@@ -5813,7 +6829,7 @@
         "alerta": 2.5,
         "emergencia": 3.0,
         "tendencia": "Descendente",
-        "hora": "10:00",
+        "hora": "11:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -17.9684,
@@ -5829,7 +6845,7 @@
         "alerta": 3.0,
         "emergencia": 5.0,
         "tendencia": "Descendente",
-        "hora": "10:00",
+        "hora": "11:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -17.23804,
@@ -5845,7 +6861,7 @@
         "alerta": 3.7,
         "emergencia": 4.0,
         "tendencia": "Ascendente",
-        "hora": "10:00",
+        "hora": "11:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -5.77168,
@@ -5856,12 +6872,12 @@
         "rio": "Marañón",
         "estacion": "Corral Quemado",
         "lugar": "Bellavista, Cajamarca",
-        "valor": 8.61,
+        "valor": 8.62,
         "unidad": "m",
         "alerta": 12.0,
         "emergencia": 12.8,
         "tendencia": "Descendente",
-        "hora": "10:00",
+        "hora": "11:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -5.7511,
@@ -5888,12 +6904,12 @@
         "rio": "Chinchipe",
         "estacion": "Huallape",
         "lugar": "Santa Rosa, Cajamarca",
-        "valor": 5.96,
+        "valor": 5.93,
         "unidad": "m",
         "alerta": 7.7,
         "emergencia": 8.6,
         "tendencia": "Ascendente",
-        "hora": "10:00",
+        "hora": "11:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -5.45077,
@@ -5936,12 +6952,12 @@
         "rio": "Chotano",
         "estacion": "Túnel Chotano",
         "lugar": "Cutervo, Cajamarca",
-        "valor": 2.96,
+        "valor": 3.05,
         "unidad": "m³/s",
         "alerta": 24.1,
         "emergencia": 28.59,
         "tendencia": "Descendente",
-        "hora": "10:00",
+        "hora": "11:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -6.54049,
@@ -5968,12 +6984,12 @@
         "rio": "Marañón",
         "estacion": "Balsas",
         "lugar": "Utco, Cajamarca",
-        "valor": 181.58,
+        "valor": 179.62,
         "unidad": "m³/s",
         "alerta": 1400.0,
         "emergencia": 1700.0,
         "tendencia": "Ascendente",
-        "hora": "10:00",
+        "hora": "11:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -6.8448,
@@ -6069,7 +7085,7 @@
         "alerta": null,
         "emergencia": null,
         "tendencia": "Descendente",
-        "hora": "10:00",
+        "hora": "11:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -12.027251,
@@ -6084,8 +7100,8 @@
         "unidad": "m³/s",
         "alerta": null,
         "emergencia": null,
-        "tendencia": "Ascendente",
-        "hora": "10:00",
+        "tendencia": "Descendente",
+        "hora": "11:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -11.995485,
@@ -6096,12 +7112,12 @@
         "rio": "Santa Ana",
         "estacion": "Santa Ana",
         "lugar": "Marcapomacocha, Junin",
-        "valor": 0.17,
+        "valor": 0.16,
         "unidad": "m³/s",
         "alerta": null,
         "emergencia": null,
         "tendencia": "Ascendente",
-        "hora": "10:00",
+        "hora": "11:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -11.357646,
@@ -6117,7 +7133,7 @@
         "alerta": null,
         "emergencia": null,
         "tendencia": "Ascendente",
-        "hora": "10:00",
+        "hora": "11:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -11.631925,
@@ -6144,12 +7160,12 @@
         "rio": "Pachachaca",
         "estacion": "Santa Rosa Chapimarca",
         "lugar": "Colcabamba, Apurimac",
-        "valor": 2.13,
+        "valor": 2.14,
         "unidad": "m",
         "alerta": 4.0,
         "emergencia": 4.5,
         "tendencia": "Ascendente",
-        "hora": "10:00",
+        "hora": "11:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -13.9917,
@@ -6181,7 +7197,7 @@
         "alerta": 517.33,
         "emergencia": 802.75,
         "tendencia": "Ascendente",
-        "hora": "10:00",
+        "hora": "11:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -13.18517,
@@ -6197,7 +7213,7 @@
         "alerta": 320.0,
         "emergencia": 400.0,
         "tendencia": "Descendente",
-        "hora": "10:00",
+        "hora": "11:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -13.42264,
@@ -6229,7 +7245,7 @@
         "alerta": 5.5,
         "emergencia": 6.5,
         "tendencia": "Ascendente",
-        "hora": "10:00",
+        "hora": "11:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -13.2235,
@@ -6240,12 +7256,12 @@
         "rio": "Salcca",
         "estacion": "Salcca",
         "lugar": "San Pablo, Cusco",
-        "valor": 0.48,
+        "valor": 0.47,
         "unidad": "m",
         "alerta": 1.74,
         "emergencia": 2.31,
         "tendencia": "Ascendente",
-        "hora": "10:00",
+        "hora": "11:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -14.16991,
@@ -6256,12 +7272,12 @@
         "rio": "Tigre",
         "estacion": "Intuto",
         "lugar": "Tigre, Loreto",
-        "valor": 6.85,
+        "valor": 6.84,
         "unidad": "m",
         "alerta": 20.0,
         "emergencia": 25.0,
         "tendencia": "Descendente",
-        "hora": "10:00",
+        "hora": "11:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -3.489877,
@@ -6400,12 +7416,12 @@
         "rio": "Mayo",
         "estacion": "Shanao",
         "lugar": "Shanao, San Martin",
-        "valor": 312.58,
+        "valor": 321.37,
         "unidad": "m³/s",
         "alerta": 1954.41,
         "emergencia": 3481.47,
         "tendencia": "Descendente",
-        "hora": "11:00",
+        "hora": "12:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -6.41291,
@@ -6448,12 +7464,12 @@
         "rio": "Huayabamba",
         "estacion": "Huayabamba",
         "lugar": "Juanjui, San Martin",
-        "valor": 998.19,
+        "valor": 944.04,
         "unidad": "m³/s",
         "alerta": 3329.6,
         "emergencia": 4019.8,
         "tendencia": "Ascendente",
-        "hora": "10:00",
+        "hora": "11:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -7.2689,
@@ -6485,7 +7501,7 @@
         "alerta": 2587.0,
         "emergencia": 3259.0,
         "tendencia": "Ascendente",
-        "hora": "10:00",
+        "hora": "11:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -8.18475,
@@ -6512,12 +7528,12 @@
         "rio": "Huallaga",
         "estacion": "Tingo María",
         "lugar": "Rupa-Rupa, Huanuco",
-        "valor": 366.68,
+        "valor": 314.77,
         "unidad": "m³/s",
         "alerta": 1010.0,
         "emergencia": 1178.0,
         "tendencia": "Ascendente",
-        "hora": "10:00",
+        "hora": "11:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -9.29601,
@@ -6528,12 +7544,12 @@
         "rio": "Monzón",
         "estacion": "Pte. Bella",
         "lugar": "Rupa-Rupa, Huanuco",
-        "valor": 186.73,
+        "valor": 184.13,
         "unidad": "m³/s",
         "alerta": 610.6,
         "emergencia": 759.2,
         "tendencia": "Descendente",
-        "hora": "10:00",
+        "hora": "11:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -9.32,
@@ -6544,12 +7560,12 @@
         "rio": "Huallaga",
         "estacion": "Puente Pérez",
         "lugar": "Mariano Damaso Beraun, Huanuco",
-        "valor": 116.18,
+        "valor": 106.27,
         "unidad": "m³/s",
         "alerta": 846.0,
         "emergencia": 1086.0,
         "tendencia": "Ascendente",
-        "hora": "10:00",
+        "hora": "11:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -9.34694,
@@ -6581,7 +7597,7 @@
         "alerta": 270.0,
         "emergencia": 305.0,
         "tendencia": "Ascendente",
-        "hora": "10:00",
+        "hora": "11:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -9.85056,
@@ -6768,12 +7784,12 @@
         "rio": "Madre De Dios",
         "estacion": "Amaru Mayu",
         "lugar": "Las Piedras, Madre De Dios",
-        "valor": 3464.19,
+        "valor": 3439.69,
         "unidad": "m³/s",
         "alerta": 17000.0,
         "emergencia": 21000.0,
         "tendencia": "Ascendente",
-        "hora": "08:15",
+        "hora": "09:15",
         "estado": "normal",
         "estiaje": false,
         "lat": -12.60033,
@@ -6832,12 +7848,12 @@
         "rio": "Ramis",
         "estacion": "Puente Ramis",
         "lugar": "Huancane, Puno",
-        "valor": 3.36,
+        "valor": 3.74,
         "unidad": "m³/s",
         "alerta": 320.0,
         "emergencia": 465.0,
         "tendencia": "Descendente",
-        "hora": "10:00",
+        "hora": "11:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -15.2543,
@@ -6864,12 +7880,12 @@
         "rio": "Suches",
         "estacion": "HUANCASAYA",
         "lugar": "Cojata, Puno",
-        "valor": 0.52,
+        "valor": 0.53,
         "unidad": "m",
         "alerta": 1.65,
         "emergencia": 1.8,
         "tendencia": "Ascendente",
-        "hora": "10:00",
+        "hora": "11:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -15.14308,
@@ -6965,7 +7981,7 @@
         "alerta": 9.5,
         "emergencia": 10.0,
         "tendencia": "Descendente",
-        "hora": "11:00",
+        "hora": "12:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -16.56327,
@@ -6997,7 +8013,7 @@
         "alerta": 520.0,
         "emergencia": 620.0,
         "tendencia": "Ascendente",
-        "hora": "10:00",
+        "hora": "11:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -16.0883,
@@ -7008,12 +8024,12 @@
         "rio": "Titicaca",
         "estacion": "Muelle Enafer",
         "lugar": "Puno, Puno",
-        "valor": 3808.33,
+        "valor": 3808.32,
         "unidad": "m.s.n.m",
         "alerta": 3809.0,
         "emergencia": 3810.25,
         "tendencia": "Descendente",
-        "hora": "10:00",
+        "hora": "11:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -15.83647,
@@ -7056,7 +8072,7 @@
     "en_alerta": 1,
     "en_emergencia": 1,
     "url": "https://snirh.ana.gob.pe/onrh/",
-    "leido": "2026-11-10T16:24:12Z"
+    "leido": "2026-11-10T17:24:10Z"
   },
   "ana_embalses": {
     "embalses": [
@@ -7283,7 +8299,7 @@
       {
         "nombre": "Paucarani",
         "lugar": "Palca, Tacna",
-        "fecha": "09-Nov",
+        "fecha": "10-Nov",
         "util": 10.5,
         "almacenado": 3.5,
         "porcentaje": 33.3,
@@ -7304,18 +8320,18 @@
       }
     ],
     "url": "https://snirh.ana.gob.pe/onrh/",
-    "leido": "2026-11-10T16:24:13Z"
+    "leido": "2026-11-10T17:24:11Z"
   },
   "ana_pc": {
     "total": 536,
     "por_estado": {
-      "En Ejecución": 245,
-      "Por Ejecutar": 157,
+      "En Ejecución": 246,
+      "Por Ejecutar": 156,
       "Ejecutado": 134
     },
     "avance_medio": 38.0,
     "url": "https://snirh.ana.gob.pe/",
-    "leido": "2026-11-10T16:24:13Z"
+    "leido": "2026-11-10T17:24:11Z"
   },
   "emergencia": {
     "decretos": {
@@ -12281,7 +13297,7 @@
       "ONRH/DEE_DS_140_2026_PCM"
     ],
     "url": "https://www.gob.pe/busquedas?contenido[]=normas&term=estado+de+emergencia",
-    "leido": "2026-11-10T16:24:14Z"
+    "leido": "2026-11-10T17:24:12Z"
   },
   "preparacion": {
     "conteo": {
@@ -19437,7 +20453,7 @@
       }
     },
     "url": "https://visor.geoperu.gob.pe/",
-    "leido": "2026-11-10T16:27:50Z"
+    "leido": "2026-11-10T17:24:14Z"
   },
   "agua": {
     "total": 70,
@@ -20327,7 +21343,7 @@
       }
     },
     "url": "https://www.sunass.gob.pe/",
-    "leido": "2026-11-10T16:27:51Z"
+    "leido": "2026-11-10T17:24:14Z"
   },
   "incendios": {
     "total": 5,
@@ -20379,160 +21395,10 @@
       }
     ],
     "url": "https://geo.serfor.gob.pe/visor/",
-    "leido": "2026-11-10T16:27:52Z"
+    "leido": "2026-11-10T17:24:14Z"
   },
   "phisis": {
     "estaciones": [
-      {
-        "estacion": "Sauzal",
-        "cuenca": "Cuenca Chamaya",
-        "fecha": "2026-11-10T15:00:00Z",
-        "nivel": "normal",
-        "variable": "nivel",
-        "lugar": "San Felipe, Cajamarca",
-        "lat": -5.77168,
-        "lon": -79.39769
-      },
-      {
-        "estacion": "Cabo Inga",
-        "cuenca": "Cuenca Tumbes",
-        "fecha": "2026-11-10T15:00:00Z",
-        "nivel": "normal",
-        "variable": "caudal",
-        "lugar": "San Jacinto, Tumbes",
-        "lat": -3.9786,
-        "lon": -80.39925
-      },
-      {
-        "estacion": "Puente Eguiguren",
-        "cuenca": "Cuenca Piura",
-        "fecha": "2026-11-10T16:00:00Z",
-        "nivel": "normal",
-        "variable": "nivel",
-        "lugar": "Piura, Piura",
-        "lat": -5.18792,
-        "lon": -80.625
-      },
-      {
-        "estacion": "El Tigre",
-        "cuenca": "Cuenca Tumbes",
-        "fecha": "2026-11-10T15:00:00Z",
-        "nivel": "normal",
-        "variable": "caudal",
-        "lugar": "San Jacinto, Tumbes",
-        "lat": -3.7688,
-        "lon": -80.4568
-      },
-      {
-        "estacion": "Puente Ñacara",
-        "cuenca": "Cuenca Piura",
-        "fecha": "2026-11-10T15:00:00Z",
-        "nivel": "normal",
-        "variable": "caudal",
-        "lugar": "Chulucanas, Piura",
-        "lat": -5.112894,
-        "lon": -80.172974
-      },
-      {
-        "estacion": "Salitral",
-        "cuenca": "Cuenca Piura",
-        "fecha": "2026-11-10T15:00:00Z",
-        "nivel": "normal",
-        "variable": "nivel",
-        "lugar": "Salitral, Piura",
-        "lat": -5.346,
-        "lon": -79.8376
-      },
-      {
-        "estacion": "Hacienda Barrios",
-        "cuenca": "Cuenca Piura",
-        "fecha": "2026-11-10T15:00:00Z",
-        "nivel": "normal",
-        "variable": "caudal",
-        "lugar": "San Juan De Bigote, Piura",
-        "lat": -5.2899,
-        "lon": -79.6992
-      },
-      {
-        "estacion": "San Pedro",
-        "cuenca": "Cuenca Piura",
-        "fecha": "2026-11-10T15:00:00Z",
-        "nivel": "normal",
-        "variable": "caudal",
-        "lugar": "Morropon, Piura",
-        "lat": -5.07954,
-        "lon": -80.0162
-      },
-      {
-        "estacion": "Pte. Simón Rodríguez",
-        "cuenca": "Cuenca Chira",
-        "fecha": "2026-11-10T16:00:00Z",
-        "nivel": "normal",
-        "variable": "caudal",
-        "lugar": "Amotape, Piura",
-        "lat": -4.8801,
-        "lon": -81.0216
-      },
-      {
-        "estacion": "Pte. Int. Macara",
-        "cuenca": "Cuenca Chira",
-        "fecha": "2026-11-10T15:00:00Z",
-        "nivel": "normal",
-        "variable": "caudal",
-        "lugar": "Suyo, Piura",
-        "lat": -4.3927,
-        "lon": -79.9644
-      },
-      {
-        "estacion": "Alamor",
-        "cuenca": "Cuenca Chira",
-        "fecha": "2026-11-10T15:00:00Z",
-        "nivel": "normal",
-        "variable": "caudal",
-        "lugar": "Lancones, Piura",
-        "lat": -4.47749,
-        "lon": -80.39788
-      },
-      {
-        "estacion": "Bocatoma Chipillico",
-        "cuenca": "Cuenca Chira",
-        "fecha": "2026-11-10T16:00:00Z",
-        "nivel": "normal",
-        "variable": "nivel",
-        "lugar": "Las Lomas, Piura",
-        "lat": -4.7136,
-        "lon": -80.1172
-      },
-      {
-        "estacion": "Lagartera",
-        "cuenca": "Cuenca Chira",
-        "fecha": "2026-11-10T15:00:00Z",
-        "nivel": "normal",
-        "variable": "caudal",
-        "lugar": "Las Lomas, Piura",
-        "lat": -4.7285,
-        "lon": -80.06956
-      },
-      {
-        "estacion": "El Ciruelo",
-        "cuenca": "Cuenca Chira",
-        "fecha": "2026-11-10T16:00:00Z",
-        "nivel": "normal",
-        "variable": "caudal",
-        "lugar": "Suyo, Piura",
-        "lat": -4.299054,
-        "lon": -80.166993
-      },
-      {
-        "estacion": "Puchaca",
-        "cuenca": "Cuenca Motupe",
-        "fecha": "2026-11-10T16:00:00Z",
-        "nivel": "normal",
-        "variable": "nivel",
-        "lugar": "Incahuasi, Lambayeque",
-        "lat": -6.37353,
-        "lon": -79.46673
-      },
       {
         "estacion": "Cacao",
         "cuenca": "Cuenca Chamaya",
@@ -20586,7 +21452,7 @@
       {
         "estacion": "Cirato",
         "cuenca": "Cuenca Chancay-Lambayeque",
-        "fecha": "2026-11-10T15:00:00Z",
+        "fecha": "2026-11-10T16:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "Catache, Cajamarca",
@@ -20596,7 +21462,7 @@
       {
         "estacion": "Huallape",
         "cuenca": "Cuenca Chinchipe",
-        "fecha": "2026-11-10T15:00:00Z",
+        "fecha": "2026-11-10T16:00:00Z",
         "nivel": "normal",
         "variable": "nivel",
         "lugar": "Santa Rosa, Cajamarca",
@@ -20606,7 +21472,7 @@
       {
         "estacion": "Corral Quemado",
         "cuenca": "Intercuenca Alto Marañón III",
-        "fecha": "2026-11-10T15:00:00Z",
+        "fecha": "2026-11-10T16:00:00Z",
         "nivel": "normal",
         "variable": "nivel",
         "lugar": "Cumba, Amazonas",
@@ -20616,7 +21482,7 @@
       {
         "estacion": "Cañad",
         "cuenca": "Cuenca Chancay-Lambayeque",
-        "fecha": "2026-11-10T15:00:00Z",
+        "fecha": "2026-11-10T16:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "Catache, Cajamarca",
@@ -20626,7 +21492,7 @@
       {
         "estacion": "Túnel Chotano",
         "cuenca": "Cuenca Chamaya",
-        "fecha": "2026-11-10T15:00:00Z",
+        "fecha": "2026-11-10T16:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "Cochabamba, Cajamarca",
@@ -20636,7 +21502,7 @@
       {
         "estacion": "Salinar",
         "cuenca": "Cuenca Chicama",
-        "fecha": "2026-11-10T15:00:00Z",
+        "fecha": "2026-11-10T16:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "Ascope, La Libertad",
@@ -20686,7 +21552,7 @@
       {
         "estacion": "Balsas",
         "cuenca": "Intercuenca Alto Marañón IV",
-        "fecha": "2026-11-10T15:00:00Z",
+        "fecha": "2026-11-10T16:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "Utco, Cajamarca",
@@ -20696,7 +21562,7 @@
       {
         "estacion": "Yónan Gore",
         "cuenca": "Cuenca Jequetepeque",
-        "fecha": "2026-11-10T16:00:00Z",
+        "fecha": "2026-11-10T17:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "Yonan, Cajamarca",
@@ -20706,7 +21572,7 @@
       {
         "estacion": "Pte. Chilete",
         "cuenca": "Cuenca Jequetepeque",
-        "fecha": "2026-11-10T16:00:00Z",
+        "fecha": "2026-11-10T17:00:00Z",
         "nivel": "normal",
         "variable": "nivel",
         "lugar": "Chilete, Cajamarca",
@@ -20716,7 +21582,7 @@
       {
         "estacion": "Puente Palmira",
         "cuenca": "Cuenca Chicama",
-        "fecha": "2026-11-10T15:00:00Z",
+        "fecha": "2026-11-10T16:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "Cascas, La Libertad",
@@ -20726,7 +21592,7 @@
       {
         "estacion": "El Tambo",
         "cuenca": "Cuenca Chicama",
-        "fecha": "2026-11-10T15:00:00Z",
+        "fecha": "2026-11-10T16:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "Marmot, La Libertad",
@@ -20736,7 +21602,7 @@
       {
         "estacion": "Picoy",
         "cuenca": "Cuenca Huaura",
-        "fecha": "2026-11-10T15:00:00Z",
+        "fecha": "2026-11-10T16:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "Pachangara, Lima",
@@ -20766,7 +21632,7 @@
       {
         "estacion": "Condorcerro",
         "cuenca": "Cuenca Santa",
-        "fecha": "2026-11-10T15:00:00Z",
+        "fecha": "2026-11-10T16:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "Chao, La Libertad",
@@ -20776,7 +21642,7 @@
       {
         "estacion": "San Mateo",
         "cuenca": "Cuenca Rímac",
-        "fecha": "2026-11-10T15:00:00Z",
+        "fecha": "2026-11-10T16:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "San Mateo, Lima",
@@ -20786,7 +21652,7 @@
       {
         "estacion": "Puente Huachipa",
         "cuenca": "Cuenca Rímac",
-        "fecha": "2026-11-10T16:00:00Z",
+        "fecha": "2026-11-10T17:00:00Z",
         "nivel": "normal",
         "variable": "nivel",
         "lugar": "Lurigancho, Lima",
@@ -20796,7 +21662,7 @@
       {
         "estacion": "Antapucro",
         "cuenca": "Cuenca Lurín",
-        "fecha": "2026-11-10T15:00:00Z",
+        "fecha": "2026-11-10T16:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "Antioquia, Lima",
@@ -20826,7 +21692,7 @@
       {
         "estacion": "Socsi",
         "cuenca": "Cuenca Cañete",
-        "fecha": "2026-11-10T15:00:00Z",
+        "fecha": "2026-11-10T16:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "Lunahuana, Lima",
@@ -20836,7 +21702,7 @@
       {
         "estacion": "Sayán",
         "cuenca": "Cuenca Huaura",
-        "fecha": "2026-11-10T15:00:00Z",
+        "fecha": "2026-11-10T16:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "Sayan, Lima",
@@ -20846,7 +21712,7 @@
       {
         "estacion": "Chosica",
         "cuenca": "Cuenca Rímac",
-        "fecha": "2026-11-10T16:00:00Z",
+        "fecha": "2026-11-10T17:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "Lurigancho, Lima",
@@ -20856,7 +21722,7 @@
       {
         "estacion": "Pariacancha",
         "cuenca": "Cuenca Chillón",
-        "fecha": "2026-11-10T15:00:00Z",
+        "fecha": "2026-11-10T16:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "Huaros, Lima",
@@ -20866,7 +21732,7 @@
       {
         "estacion": "Autisha",
         "cuenca": "Cuenca Rímac",
-        "fecha": "2026-11-10T16:00:00Z",
+        "fecha": "2026-11-10T17:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "San Antonio, Lima",
@@ -20876,7 +21742,7 @@
       {
         "estacion": "Obrajillo",
         "cuenca": "Cuenca Chillón",
-        "fecha": "2026-11-10T15:00:00Z",
+        "fecha": "2026-11-10T16:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "San Buenaventura, Lima",
@@ -20896,7 +21762,7 @@
       {
         "estacion": "Letrayoc",
         "cuenca": "Cuenca Pisco",
-        "fecha": "2026-11-10T15:00:00Z",
+        "fecha": "2026-11-10T16:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "Huancano, Ica",
@@ -20916,7 +21782,7 @@
       {
         "estacion": "Los Molinos",
         "cuenca": "Cuenca Ica",
-        "fecha": "2026-11-10T16:00:00Z",
+        "fecha": "2026-11-10T17:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "San Jose De Los Molinos, Ica",
@@ -20946,7 +21812,7 @@
       {
         "estacion": "Challaca",
         "cuenca": "Cuenca Ica",
-        "fecha": "2026-11-10T15:00:00Z",
+        "fecha": "2026-11-10T16:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "Santiago De Chocorvos, Huancavelica",
@@ -20956,7 +21822,7 @@
       {
         "estacion": "Cuyau",
         "cuenca": "Cuenca Ocoña",
-        "fecha": "2026-11-10T16:00:00Z",
+        "fecha": "2026-11-10T17:00:00Z",
         "nivel": "normal",
         "variable": "nivel",
         "lugar": "Cotahuasi, Arequipa",
@@ -21006,7 +21872,7 @@
       {
         "estacion": "Charcani",
         "cuenca": "Cuenca Quilca - Vitor - Chili",
-        "fecha": "2026-11-10T15:00:00Z",
+        "fecha": "2026-11-10T16:00:00Z",
         "nivel": "normal",
         "variable": "nivel",
         "lugar": "Cayma, Arequipa",
@@ -21016,7 +21882,7 @@
       {
         "estacion": "Puente Del Diablo",
         "cuenca": "Cuenca Quilca - Vitor - Chili",
-        "fecha": "2026-11-10T15:00:00Z",
+        "fecha": "2026-11-10T16:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "Uchumayo, Arequipa",
@@ -21026,7 +21892,7 @@
       {
         "estacion": "Sibayo",
         "cuenca": "Cuenca Camaná",
-        "fecha": "2026-11-10T15:00:00Z",
+        "fecha": "2026-11-10T16:00:00Z",
         "nivel": "normal",
         "variable": "nivel",
         "lugar": "Callalli, Arequipa",
@@ -21036,7 +21902,7 @@
       {
         "estacion": "Sumbay",
         "cuenca": "Cuenca Quilca - Vitor - Chili",
-        "fecha": "2026-11-10T15:00:00Z",
+        "fecha": "2026-11-10T16:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "San Antonio De Chuca, Arequipa",
@@ -21046,7 +21912,7 @@
       {
         "estacion": "Tingo Grande",
         "cuenca": "Cuenca Quilca - Vitor - Chili",
-        "fecha": "2026-11-10T15:00:00Z",
+        "fecha": "2026-11-10T16:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "Jacobo Hunter, Arequipa",
@@ -21056,7 +21922,7 @@
       {
         "estacion": "Boyadero",
         "cuenca": "Cuenca Quilca - Vitor - Chili",
-        "fecha": "2026-11-10T15:00:00Z",
+        "fecha": "2026-11-10T16:00:00Z",
         "nivel": "normal",
         "variable": "nivel",
         "lugar": "Vitor, Arequipa",
@@ -21066,7 +21932,7 @@
       {
         "estacion": "Ancoaque",
         "cuenca": "Cuenca Mauri",
-        "fecha": "2026-11-10T15:00:00Z",
+        "fecha": "2026-11-10T16:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "Susapaya, Tacna",
@@ -21116,7 +21982,7 @@
       {
         "estacion": "Ticapampa",
         "cuenca": "Cuenca Locumba",
-        "fecha": "2026-11-10T16:00:00Z",
+        "fecha": "2026-11-10T17:00:00Z",
         "nivel": "normal",
         "variable": "A",
         "lugar": "Ilabaya, Tacna",
@@ -21146,7 +22012,7 @@
       {
         "estacion": "Cerro Blanco",
         "cuenca": "Intercuenca 13155",
-        "fecha": "2026-11-10T15:00:00Z",
+        "fecha": "2026-11-10T16:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "Calana, Tacna",
@@ -21156,7 +22022,7 @@
       {
         "estacion": "Caplina",
         "cuenca": "Cuenca Caplina",
-        "fecha": "2026-11-10T15:00:00Z",
+        "fecha": "2026-11-10T16:00:00Z",
         "nivel": "normal",
         "variable": "A",
         "lugar": "Palca, Tacna",
@@ -21166,7 +22032,7 @@
       {
         "estacion": "Puente Talapalca",
         "cuenca": "Cuenca Sama",
-        "fecha": "2026-11-10T15:00:00Z",
+        "fecha": "2026-11-10T16:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "Heroes Albarracin, Tacna",
@@ -21176,7 +22042,7 @@
       {
         "estacion": "Coranchay",
         "cuenca": "Cuenca Locumba",
-        "fecha": "2026-11-10T15:00:00Z",
+        "fecha": "2026-11-10T16:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "Cairani, Tacna",
@@ -21186,7 +22052,7 @@
       {
         "estacion": "Túnel Kovire",
         "cuenca": "Cuenca Sama",
-        "fecha": "2026-11-10T15:00:00Z",
+        "fecha": "2026-11-10T16:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "Susapaya, Tacna",
@@ -21196,7 +22062,7 @@
       {
         "estacion": "Puente Viejo",
         "cuenca": "Cuenca Locumba",
-        "fecha": "2026-11-10T15:00:00Z",
+        "fecha": "2026-11-10T16:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "Locumba, Tacna",
@@ -21206,7 +22072,7 @@
       {
         "estacion": "Challata",
         "cuenca": "Cuenca Caplina",
-        "fecha": "2026-11-10T15:00:00Z",
+        "fecha": "2026-11-10T16:00:00Z",
         "nivel": "normal",
         "variable": "A",
         "lugar": "Pachia, Tacna",
@@ -21346,7 +22212,7 @@
       {
         "estacion": "Shanao",
         "cuenca": "Cuenca Mayo",
-        "fecha": "2026-11-10T16:00:00Z",
+        "fecha": "2026-11-10T17:00:00Z",
         "nivel": "normal",
         "variable": "A",
         "lugar": "Shanao, San Martin",
@@ -21356,7 +22222,7 @@
       {
         "estacion": "Huayabamba",
         "cuenca": "Cuenca Huayabamba",
-        "fecha": "2026-11-10T15:00:00Z",
+        "fecha": "2026-11-10T16:00:00Z",
         "nivel": "normal",
         "variable": "A",
         "lugar": "Juanjui, San Martin",
@@ -21486,7 +22352,7 @@
       {
         "estacion": "Tingo María",
         "cuenca": "Intercuenca Alto Huallaga",
-        "fecha": "2026-11-10T15:00:00Z",
+        "fecha": "2026-11-10T16:00:00Z",
         "nivel": "normal",
         "variable": "A",
         "lugar": "Rupa-Rupa, Huanuco",
@@ -21496,7 +22362,7 @@
       {
         "estacion": "Taruca",
         "cuenca": "Intercuenca Alto Huallaga",
-        "fecha": "2026-11-10T15:00:00Z",
+        "fecha": "2026-11-10T16:00:00Z",
         "nivel": "normal",
         "variable": "A",
         "lugar": "Santa Maria Del Valle, Huanuco",
@@ -21506,7 +22372,7 @@
       {
         "estacion": "Puente Pérez",
         "cuenca": "Intercuenca Alto Huallaga",
-        "fecha": "2026-11-10T15:00:00Z",
+        "fecha": "2026-11-10T16:00:00Z",
         "nivel": "normal",
         "variable": "A",
         "lugar": "Mariano Damaso Beraun, Huanuco",
@@ -21516,7 +22382,7 @@
       {
         "estacion": "Pte. Bella",
         "cuenca": "Intercuenca Alto Huallaga",
-        "fecha": "2026-11-10T15:00:00Z",
+        "fecha": "2026-11-10T16:00:00Z",
         "nivel": "normal",
         "variable": "A",
         "lugar": "Rupa-Rupa, Huanuco",
@@ -21526,7 +22392,7 @@
       {
         "estacion": "Puente Tocache",
         "cuenca": "Intercuenca Alto Huallaga",
-        "fecha": "2026-11-10T15:00:00Z",
+        "fecha": "2026-11-10T16:00:00Z",
         "nivel": "normal",
         "variable": "A",
         "lugar": "Tocache, San Martin",
@@ -21566,7 +22432,7 @@
       {
         "estacion": "Salcca",
         "cuenca": "Cuenca Urubamba",
-        "fecha": "2026-11-10T15:00:00Z",
+        "fecha": "2026-11-10T16:00:00Z",
         "nivel": "normal",
         "variable": "nivel",
         "lugar": "San Pablo, Cusco",
@@ -21586,7 +22452,7 @@
       {
         "estacion": "Puente Pampas",
         "cuenca": "Cuenca Pampas",
-        "fecha": "2026-11-10T15:00:00Z",
+        "fecha": "2026-11-10T16:00:00Z",
         "nivel": "normal",
         "variable": "nivel",
         "lugar": "Ocros, Ayacucho",
@@ -21596,7 +22462,7 @@
       {
         "estacion": "Intihuatana Km105",
         "cuenca": "Cuenca Urubamba",
-        "fecha": "2026-11-10T15:00:00Z",
+        "fecha": "2026-11-10T16:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "Machupicchu, Cusco",
@@ -21606,7 +22472,7 @@
       {
         "estacion": "Pisac",
         "cuenca": "Cuenca Urubamba",
-        "fecha": "2026-11-10T15:00:00Z",
+        "fecha": "2026-11-10T16:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "Pisac, Cusco",
@@ -21616,7 +22482,7 @@
       {
         "estacion": "Chilca",
         "cuenca": "Cuenca Urubamba",
-        "fecha": "2026-11-10T15:00:00Z",
+        "fecha": "2026-11-10T16:00:00Z",
         "nivel": "normal",
         "variable": "nivel",
         "lugar": "Ollantaytambo, Cusco",
@@ -21626,7 +22492,7 @@
       {
         "estacion": "Santa Rosa Chapimarca",
         "cuenca": "Intercuenca Alto Apurímac",
-        "fecha": "2026-11-10T15:00:00Z",
+        "fecha": "2026-11-10T16:00:00Z",
         "nivel": "normal",
         "variable": "nivel",
         "lugar": "Colcabamba, Apurimac",
@@ -21646,7 +22512,7 @@
       {
         "estacion": "Huancasaya",
         "cuenca": "Cuenca Suches",
-        "fecha": "2026-11-10T15:00:00Z",
+        "fecha": "2026-11-10T16:00:00Z",
         "nivel": "normal",
         "variable": "nivel",
         "lugar": "Cojata, Puno",
@@ -21726,7 +22592,7 @@
       {
         "estacion": "Pte. Azángaro",
         "cuenca": "Cuenca Azángaro",
-        "fecha": "2026-11-10T16:00:00Z",
+        "fecha": "2026-11-10T17:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "Azangaro, Puno",
@@ -21756,7 +22622,7 @@
       {
         "estacion": "Puente Desaguadero",
         "cuenca": "Lago Titicaca",
-        "fecha": "2026-11-10T16:00:00Z",
+        "fecha": "2026-11-10T17:00:00Z",
         "nivel": "normal",
         "variable": "nivel",
         "lugar": "Desaguadero, Puno",
@@ -21766,7 +22632,7 @@
       {
         "estacion": "Puente Ramis",
         "cuenca": "Intercuenca Ramis",
-        "fecha": "2026-11-10T15:00:00Z",
+        "fecha": "2026-11-10T16:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "Huancane, Puno",
@@ -21776,7 +22642,7 @@
       {
         "estacion": "Muelle Enafer",
         "cuenca": "Intercuenca 0173",
-        "fecha": "2026-11-10T15:00:00Z",
+        "fecha": "2026-11-10T16:00:00Z",
         "nivel": "normal",
         "variable": "nivel",
         "lugar": "Puno, Puno",
@@ -21786,17 +22652,167 @@
       {
         "estacion": "Pte. Carretera Ilave",
         "cuenca": "Cuenca Ilave",
-        "fecha": "2026-11-10T15:00:00Z",
+        "fecha": "2026-11-10T16:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "Ilave, Puno",
         "lat": -16.0883,
         "lon": -69.6312
+      },
+      {
+        "estacion": "Sauzal",
+        "cuenca": "Cuenca Chamaya",
+        "fecha": "2026-11-10T16:00:00Z",
+        "nivel": "normal",
+        "variable": "nivel",
+        "lugar": "San Felipe, Cajamarca",
+        "lat": -5.77168,
+        "lon": -79.39769
+      },
+      {
+        "estacion": "Cabo Inga",
+        "cuenca": "Cuenca Tumbes",
+        "fecha": "2026-11-10T15:00:00Z",
+        "nivel": "normal",
+        "variable": "caudal",
+        "lugar": "San Jacinto, Tumbes",
+        "lat": -3.9786,
+        "lon": -80.39925
+      },
+      {
+        "estacion": "Puente Eguiguren",
+        "cuenca": "Cuenca Piura",
+        "fecha": "2026-11-10T17:00:00Z",
+        "nivel": "normal",
+        "variable": "nivel",
+        "lugar": "Piura, Piura",
+        "lat": -5.18792,
+        "lon": -80.625
+      },
+      {
+        "estacion": "El Tigre",
+        "cuenca": "Cuenca Tumbes",
+        "fecha": "2026-11-10T16:00:00Z",
+        "nivel": "normal",
+        "variable": "caudal",
+        "lugar": "San Jacinto, Tumbes",
+        "lat": -3.7688,
+        "lon": -80.4568
+      },
+      {
+        "estacion": "Puente Ñacara",
+        "cuenca": "Cuenca Piura",
+        "fecha": "2026-11-10T16:00:00Z",
+        "nivel": "normal",
+        "variable": "caudal",
+        "lugar": "Chulucanas, Piura",
+        "lat": -5.112894,
+        "lon": -80.172974
+      },
+      {
+        "estacion": "Salitral",
+        "cuenca": "Cuenca Piura",
+        "fecha": "2026-11-10T16:00:00Z",
+        "nivel": "normal",
+        "variable": "nivel",
+        "lugar": "Salitral, Piura",
+        "lat": -5.346,
+        "lon": -79.8376
+      },
+      {
+        "estacion": "Hacienda Barrios",
+        "cuenca": "Cuenca Piura",
+        "fecha": "2026-11-10T16:00:00Z",
+        "nivel": "normal",
+        "variable": "caudal",
+        "lugar": "San Juan De Bigote, Piura",
+        "lat": -5.2899,
+        "lon": -79.6992
+      },
+      {
+        "estacion": "San Pedro",
+        "cuenca": "Cuenca Piura",
+        "fecha": "2026-11-10T16:00:00Z",
+        "nivel": "normal",
+        "variable": "caudal",
+        "lugar": "Morropon, Piura",
+        "lat": -5.07954,
+        "lon": -80.0162
+      },
+      {
+        "estacion": "Pte. Simón Rodríguez",
+        "cuenca": "Cuenca Chira",
+        "fecha": "2026-11-10T17:00:00Z",
+        "nivel": "normal",
+        "variable": "caudal",
+        "lugar": "Amotape, Piura",
+        "lat": -4.8801,
+        "lon": -81.0216
+      },
+      {
+        "estacion": "Pte. Int. Macara",
+        "cuenca": "Cuenca Chira",
+        "fecha": "2026-11-10T16:00:00Z",
+        "nivel": "normal",
+        "variable": "caudal",
+        "lugar": "Suyo, Piura",
+        "lat": -4.3927,
+        "lon": -79.9644
+      },
+      {
+        "estacion": "Alamor",
+        "cuenca": "Cuenca Chira",
+        "fecha": "2026-11-10T16:00:00Z",
+        "nivel": "normal",
+        "variable": "caudal",
+        "lugar": "Lancones, Piura",
+        "lat": -4.47749,
+        "lon": -80.39788
+      },
+      {
+        "estacion": "Bocatoma Chipillico",
+        "cuenca": "Cuenca Chira",
+        "fecha": "2026-11-10T17:00:00Z",
+        "nivel": "normal",
+        "variable": "nivel",
+        "lugar": "Las Lomas, Piura",
+        "lat": -4.7136,
+        "lon": -80.1172
+      },
+      {
+        "estacion": "Lagartera",
+        "cuenca": "Cuenca Chira",
+        "fecha": "2026-11-10T16:00:00Z",
+        "nivel": "normal",
+        "variable": "caudal",
+        "lugar": "Las Lomas, Piura",
+        "lat": -4.7285,
+        "lon": -80.06956
+      },
+      {
+        "estacion": "El Ciruelo",
+        "cuenca": "Cuenca Chira",
+        "fecha": "2026-11-10T17:00:00Z",
+        "nivel": "normal",
+        "variable": "caudal",
+        "lugar": "Suyo, Piura",
+        "lat": -4.299054,
+        "lon": -80.166993
+      },
+      {
+        "estacion": "Puchaca",
+        "cuenca": "Cuenca Motupe",
+        "fecha": "2026-11-10T17:00:00Z",
+        "nivel": "normal",
+        "variable": "nivel",
+        "lugar": "Incahuasi, Lambayeque",
+        "lat": -6.37353,
+        "lon": -79.46673
       }
     ],
     "sobre_umbral": 3,
     "url": "https://www.senamhi.gob.pe/mapas/mapa-monitoreohidro/",
-    "leido": "2026-11-10T16:24:16Z"
+    "leido": "2026-11-10T17:24:15Z"
   },
   "prono": {
     "url": "https://www.senamhi.gob.pe/?p=pronostico-climatico",
@@ -22394,7 +23410,7 @@
         ]
       ]
     },
-    "leido": "2026-11-10T16:24:17Z"
+    "leido": "2026-11-10T17:24:15Z"
   },
   "igp": {
     "e": [
@@ -22599,7 +23615,7 @@
       "clasificacion": 99.99
     },
     "url": "http://met.igp.gob.pe/variabclim/",
-    "leido": "2026-11-10T16:27:54Z"
+    "leido": "2026-11-10T17:24:15Z"
   },
   "dhn": {
     "generado": "2026-11-10T13:43:19Z",
@@ -23111,7 +24127,7 @@
         }
       ]
     },
-    "leido": "2026-11-10T16:27:55Z"
+    "leido": "2026-11-10T17:24:16Z"
   },
   "inaigem": {
     "estaciones": [
@@ -23149,7 +24165,7 @@
       }
     ],
     "url": "https://www.inaigem.gob.pe/",
-    "leido": "2026-11-10T16:27:55Z"
+    "leido": "2026-11-10T17:24:16Z"
   },
   "enfen_docs": {
     "docs": [
@@ -23215,6 +24231,6 @@
       }
     ],
     "url": "https://enfen.imarpe.gob.pe/",
-    "leido": "2026-11-10T16:24:19Z"
+    "leido": "2026-11-10T17:24:17Z"
   }
 }
