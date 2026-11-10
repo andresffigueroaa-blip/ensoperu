@@ -1,6 +1,6 @@
 {
   "_": "Generado por pipeline/fuentes/peru_oficial.py. Datos oficiales tal como se publican.",
-  "actualizado": "2026-11-10T20:24:00Z",
+  "actualizado": "2026-11-10T20:25:04Z",
   "fallas": [
     "coen"
   ],
@@ -422,6 +422,11 @@
   "indeci_rss": {
     "reportes": [
       {
+        "titulo": "REPORTE COPLEMENTARIO N.° 15748 – 10/11/2026 / COEN – INDECI / 14:53 HORAS (Reporte N° 03) HELADA EN EL DISTRITO DE CUSIPATA – CUSCO",
+        "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-coplementario-n-12715-22-9-2026-coen-indeci-2115-horas-reporte-n-01-helada-en-el-distrito-de-cusipata-cusco/",
+        "fecha": "2026-11-10T20:00"
+      },
+      {
         "titulo": "REPORTE COMPLEMENTARIO N.º 15747 – 10/11/2026 / COEN – INDECI / 14:10 HORAS (Reporte N.° 1) INCENDIO URBANO EN EL DISTRITO DE CAJA – HUANCAVELICA",
         "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-preliminar-n-o-1123-9-11-2026-coen-indeci-1640-horas-incendio-urbano-en-el-distrito-de-caja-huancavelica/",
         "fecha": "2026-11-10T19:25"
@@ -485,15 +490,10 @@
         "titulo": "REPORTE COMPLEMENTARIO N.° 15738 – 10/11/2026 / COEN – INDECI / 11:12 HORAS (Reporte N.° 4) DÉFICIT HÍDRICO EN EL DISTRITO DE HUACHOCOLPA – HUANCAVELICA",
         "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-14693-21-10-2026-coen-indeci-2127-horas-reporte-n-1-deficit-hidrico-en-el-distrito-de-huachocolpa-huancavelica/",
         "fecha": "2026-11-10T16:20"
-      },
-      {
-        "titulo": "REPORTE COMPLEMENTARIO N.º 15737 – 10/11/2026 / COEN – INDECI / 10:31 HORAS (Reporte N.º 1) INCENDIO FORESTAL EN EL DISTRITO DE TIRAPATA – PUNO",
-        "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-o-15737-10-11-2026-coen-indeci-1031-horas-reporte-n-o-1-incendio-forestal-en-el-distrito-de-tirapata-puno/",
-        "fecha": "2026-11-10T15:41"
       }
     ],
     "url": "https://portal.indeci.gob.pe/emergencias/",
-    "leido": "2026-11-10T20:24:01Z"
+    "leido": "2026-11-10T20:25:06Z"
   },
   "escenario": {
     "vigente": true,
@@ -4528,7 +4528,7 @@
       }
     },
     "url": "https://sigrid.cenepred.gob.pe/sigridv3/escenario-aviso",
-    "leido": "2026-11-10T20:24:02Z"
+    "leido": "2026-11-10T20:25:10Z"
   },
   "quebradas": {
     "fecha": "2026-11-10",
@@ -5732,7 +5732,7 @@
     },
     "sin_cruce": 8,
     "url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico",
-    "leido": "2026-11-10T20:24:06Z"
+    "leido": "2026-11-10T20:25:13Z"
   },
   "hidro": {
     "avisos": [
@@ -5774,7 +5774,7 @@
       }
     ],
     "url": "https://www.senamhi.gob.pe/?p=aviso-hidrologico",
-    "leido": "2026-11-10T20:24:07Z"
+    "leido": "2026-11-10T20:25:14Z"
   },
   "ana_rios": {
     "estaciones": [
@@ -20467,7 +20467,7 @@
       }
     },
     "url": "https://visor.geoperu.gob.pe/",
-    "leido": "2026-11-10T20:24:15Z"
+    "leido": "2026-11-10T20:25:15Z"
   },
   "agua": {
     "total": 72,
@@ -21365,7 +21365,7 @@
       }
     },
     "url": "https://www.sunass.gob.pe/",
-    "leido": "2026-11-10T20:24:15Z"
+    "leido": "2026-11-10T20:25:16Z"
   },
   "incendios": {
     "total": 4,
@@ -21408,7 +21408,7 @@
       }
     ],
     "url": "https://geo.serfor.gob.pe/visor/",
-    "leido": "2026-11-10T20:24:16Z"
+    "leido": "2026-11-10T20:25:17Z"
   },
   "phisis": {
     "estaciones": [
@@ -23628,7 +23628,7 @@
       "clasificacion": 99.99
     },
     "url": "http://met.igp.gob.pe/variabclim/",
-    "leido": "2026-11-10T20:24:17Z"
+    "leido": "2026-11-10T20:25:19Z"
   },
   "dhn": {
     "generado": "2026-11-10T13:43:19Z",
@@ -24140,7 +24140,7 @@
         }
       ]
     },
-    "leido": "2026-11-10T20:24:17Z"
+    "leido": "2026-11-10T20:25:22Z"
   },
   "inaigem": {
     "estaciones": [
@@ -24178,7 +24178,7 @@
       }
     ],
     "url": "https://www.inaigem.gob.pe/",
-    "leido": "2026-11-10T20:24:18Z"
+    "leido": "2026-11-10T20:25:22Z"
   },
   "enfen_docs": {
     "docs": [
