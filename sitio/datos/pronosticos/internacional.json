@@ -1,6 +1,6 @@
 {
   "_": "Generado por pipeline/fuentes/internacional.py. Cada bloque con su centro, fecha y enlace.",
-  "actualizado": "2026-11-11T04:28:35Z",
+  "actualizado": "2026-11-11T15:19:54Z",
   "fallas": [],
   "cpc": {
     "emitido": "2026-10-08",
@@ -892,10 +892,10 @@
       "id": "seas5",
       "titulo": "Pluma del modelo ECMWF SEAS5, regiones Niño",
       "fuente": "ECMWF",
-      "origen": "https://charts.ecmwf.int/content/20261108162923-d580815f423d90b075160b32d60e6307c503c566.png",
-      "huella": "a7720bbf81d5",
+      "origen": "https://charts.ecmwf.int/content/20261111093100-b56848bef366e7fc123019b90a341ffb256bf438.png",
+      "huella": "dbe4ecb19002",
       "archivo": "seas5.png",
-      "fecha": "2026-11-08"
+      "fecha": "2026-11-11"
     },
     {
       "id": "iri",
@@ -920,9 +920,9 @@
       "titulo": "Pronóstico de la MJO, ECMWF corregido",
       "fuente": "NOAA CPC",
       "origen": "https://www.cpc.ncep.noaa.gov/products/precip/mjo/img/ECMF_BC.png",
-      "huella": "26b2e461f56f",
+      "huella": "018e88e20123",
       "archivo": "mjo.png",
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
     },
     {
       "id": "gth",
@@ -938,9 +938,9 @@
       "titulo": "Lluvia pronosticada a 10 días, Sudamérica",
       "fuente": "CIIFEN (CHIRPS-GEFS)",
       "origen": "https://ciifen.org/wp-content/uploads/imagenes_clima/pronostico/pron_precipitacion/chirps_forecast_10days.png",
-      "huella": "bf7d0a8198a3",
+      "huella": "eef939e073fb",
       "archivo": "chirps10.png",
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
     }
   ]
 }
