@@ -1,6 +1,6 @@
 {
   "_": "Generado por pipeline/productos/panorama.py. No editar a mano.",
-  "generado": "2026-11-11T01:44:08Z",
+  "generado": "2026-11-11T01:46:12Z",
   "fecha": "2026-11-11",
   "lectura": [
     {
@@ -30,13 +30,13 @@
     {
       "t": "Ríos: el modelo global GloFAS pronostica caudales por encima de su percentil 90 anual (1984-2023) en 11, entre ellos Tumbes, Chira, La Leche, Chicama; es orientativo. En la última lectura, ninguna estación de la ANA ni del SENAMHI está sobre su umbral de crecida.",
       "fuente": "GloFAS (Copernicus) vía Open-Meteo; lecturas de la ANA y el SENAMHI",
-      "fecha": "2026-11-11T01:44:08Z",
+      "fecha": "2026-11-11T01:46:12Z",
       "url": "https://www.globalfloods.eu/"
     },
     {
       "t": "CENEPRED: 326 distritos en riesgo muy alto por lluvia, hasta el 11 de noviembre; en ellos viven 1 488 096 personas (suma ENSO Perú del escenario, sin repetir distritos).",
       "fuente": "CENEPRED, escenarios de riesgo ante el aviso de lluvias",
-      "fecha": "2026-11-11T01:41:36Z",
+      "fecha": "2026-11-11T01:45:55Z",
       "url": "https://sigrid.cenepred.gob.pe/sigridv3/escenario-aviso"
     },
     {
@@ -46,7 +46,7 @@
       "url": "https://coen.indeci.gob.pe/mer/"
     },
     {
-      "t": "Focos de calor detectados por satélite: 957 en 7 días; el mayor número en Tambopata (Madre de Dios), 121.",
+      "t": "Focos de calor detectados por satélite: 963 en 7 días; el mayor número en Tambopata (Madre de Dios), 121.",
       "fuente": "NASA FIRMS, VIIRS NOAA-20",
       "fecha": "2026-11-10",
       "url": "https://firms.modaps.eosdis.nasa.gov/"
@@ -86,7 +86,7 @@
       "aviso_lluvia_desde": null,
       "mar": 6.05,
       "n_mar": "muy alto",
-      "focos": 4,
+      "focos": 6,
       "n_focos": "medio",
       "dias_fuertes": 1,
       "n_lluvia": "medio",
@@ -317,8 +317,8 @@
       "aviso_lluvia_desde": null,
       "mar": 6.34,
       "n_mar": "muy alto",
-      "focos": 7,
-      "n_focos": "medio",
+      "focos": 10,
+      "n_focos": "alto",
       "dias_fuertes": 0,
       "n_lluvia": "bajo",
       "lluvia16": 74.5,
@@ -475,7 +475,7 @@
       "aviso_lluvia_desde": null,
       "mar": 6.83,
       "n_mar": "muy alto",
-      "focos": 14,
+      "focos": 15,
       "n_focos": "alto",
       "dias_fuertes": 4,
       "n_lluvia": "alto",
@@ -2111,7 +2111,7 @@
     "avisos": 4,
     "rojos": 3,
     "rios_altos": 11,
-    "focos": 957,
+    "focos": 963,
     "distritos_riesgo_alto": 766
   }
 }
