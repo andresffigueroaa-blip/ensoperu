@@ -1,6 +1,6 @@
 {
   "_": "Generado por pipeline/fuentes/peru_oficial.py. Datos oficiales tal como se publican.",
-  "actualizado": "2026-11-11T21:26:56Z",
+  "actualizado": "2026-11-11T21:30:31Z",
   "fallas": [
     "coen"
   ],
@@ -422,6 +422,11 @@
   "indeci_rss": {
     "reportes": [
       {
+        "titulo": "REPORTE COMPLEMENTARIO N.° 15811 – 11/11/2026 / COEN-INDECI / 16:20 HORAS (Reporte N.º 2) VIENTOS FUERTES EN EL DISTRITO DE COLPAS – HUÁNUCO",
+        "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-14769-22-10-2026-coen-indeci-1710-horas-reporte-n-o-1-vientos-fuertes-en-el-distrito-de-colpas-huanuco/",
+        "fecha": "2026-11-11T21:25"
+      },
+      {
         "titulo": "REPORTE PRELIMINAR N.° 1126 – 11/11/2026 / COEN – INDECI / 16:05 HORAS INCENDIO FORESTAL EN EL DISTRITO DE SAN ANTONIO – MOQUEGUA",
         "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-preliminar-n-1126-11-11-2026-coen-indeci-1605-horas-incendio-forestal-en-el-distrito-de-san-antonio-moquegua/",
         "fecha": "2026-11-11T21:23"
@@ -485,15 +490,10 @@
         "titulo": "REPORTE COMPLEMENTARIO N.º 15800 – 11/11/2026 / COEN – INDECI / 14:20 HORAS (Reporte N.º 3) INCENDIO FORESTAL EN EL DISTRITO DE POMATA – PUNO",
         "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-o-14353-16-10-2026-coen-indeci-2245-horas-reporte-n-o-1-incendio-forestal-en-el-distrito-de-pomata-puno/",
         "fecha": "2026-11-11T19:57"
-      },
-      {
-        "titulo": "REPORTE COMPLEMENTARIO N.° 15799 – 11/11/2026 /COEN – INDECI / 14:15 HORAS (Reporte N.º 3) INCENDIO FORESTAL EN EL DISTRITO DE ORURILLO – PUNO",
-        "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-14669-21-10-2026-coen-indeci-1215-horas-reporte-n-o-1-incendio-forestal-en-el-distrito-de-orurillo-puno/",
-        "fecha": "2026-11-11T19:53"
       }
     ],
     "url": "https://portal.indeci.gob.pe/emergencias/",
-    "leido": "2026-11-11T21:26:59Z"
+    "leido": "2026-11-11T21:30:33Z"
   },
   "escenario": {
     "vigente": true,
@@ -4528,7 +4528,7 @@
       }
     },
     "url": "https://sigrid.cenepred.gob.pe/sigridv3/escenario-aviso",
-    "leido": "2026-11-11T21:27:00Z"
+    "leido": "2026-11-11T21:30:36Z"
   },
   "quebradas": {
     "fecha": "2026-11-11",
@@ -4980,7 +4980,7 @@
     },
     "sin_cruce": 1,
     "url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico",
-    "leido": "2026-11-11T21:27:01Z"
+    "leido": "2026-11-11T21:30:37Z"
   },
   "hidro": {
     "avisos": [
@@ -5022,7 +5022,7 @@
       }
     ],
     "url": "https://www.senamhi.gob.pe/?p=aviso-hidrologico",
-    "leido": "2026-11-11T21:27:02Z"
+    "leido": "2026-11-11T21:30:38Z"
   },
   "ana_rios": {
     "estaciones": [
@@ -19630,7 +19630,7 @@
       }
     },
     "url": "https://visor.geoperu.gob.pe/",
-    "leido": "2026-11-11T21:27:11Z"
+    "leido": "2026-11-11T21:30:39Z"
   },
   "agua": {
     "total": 76,
@@ -20544,7 +20544,7 @@
       }
     },
     "url": "https://www.sunass.gob.pe/",
-    "leido": "2026-11-11T21:27:12Z"
+    "leido": "2026-11-11T21:30:41Z"
   },
   "incendios": {
     "total": 12,
@@ -20659,7 +20659,7 @@
       }
     ],
     "url": "https://geo.serfor.gob.pe/visor/",
-    "leido": "2026-11-11T21:27:12Z"
+    "leido": "2026-11-11T21:30:42Z"
   },
   "phisis": {
     "estaciones": [
@@ -22839,7 +22839,7 @@
       "clasificacion": 99.99
     },
     "url": "http://met.igp.gob.pe/variabclim/",
-    "leido": "2026-11-11T21:27:14Z"
+    "leido": "2026-11-11T21:30:44Z"
   },
   "dhn": {
     "generado": "2026-11-11T13:49:27Z",
@@ -23351,7 +23351,7 @@
         }
       ]
     },
-    "leido": "2026-11-11T21:27:14Z"
+    "leido": "2026-11-11T21:30:45Z"
   },
   "inaigem": {
     "estaciones": [
@@ -23389,7 +23389,7 @@
       }
     ],
     "url": "https://www.inaigem.gob.pe/",
-    "leido": "2026-11-11T21:27:15Z"
+    "leido": "2026-11-11T21:30:46Z"
   },
   "enfen_docs": {
     "docs": [
