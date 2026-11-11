@@ -1,6 +1,6 @@
 {
   "_": "Generado por pipeline/fuentes/peru_oficial.py. Datos oficiales tal como se publican.",
-  "actualizado": "2026-11-11T01:45:51Z",
+  "actualizado": "2026-11-11T02:24:06Z",
   "fallas": [
     "coen"
   ],
@@ -10,7 +10,7 @@
     "color": "#ff0031",
     "titular": "EL NIÑO COSTERO CONTINUARÍA HASTA FINES DE OTOÑO DE 2027",
     "url": "https://www.senamhi.gob.pe/?p=fenomeno-el-nino",
-    "leido": "2026-11-11T01:41:31Z"
+    "leido": "2026-11-11T02:24:06Z"
   },
   "coen": {
     "dias": 7,
@@ -493,7 +493,7 @@
       }
     ],
     "url": "https://portal.indeci.gob.pe/emergencias/",
-    "leido": "2026-11-11T01:45:52Z"
+    "leido": "2026-11-11T02:24:07Z"
   },
   "escenario": {
     "vigente": true,
@@ -4528,7 +4528,7 @@
       }
     },
     "url": "https://sigrid.cenepred.gob.pe/sigridv3/escenario-aviso",
-    "leido": "2026-11-11T01:45:55Z"
+    "leido": "2026-11-11T02:24:09Z"
   },
   "quebradas": {
     "fecha": "2026-11-10",
@@ -5732,7 +5732,7 @@
     },
     "sin_cruce": 8,
     "url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico",
-    "leido": "2026-11-11T01:45:58Z"
+    "leido": "2026-11-11T02:24:13Z"
   },
   "hidro": {
     "avisos": [
@@ -5774,7 +5774,7 @@
       }
     ],
     "url": "https://www.senamhi.gob.pe/?p=aviso-hidrologico",
-    "leido": "2026-11-11T01:45:58Z"
+    "leido": "2026-11-11T02:24:14Z"
   },
   "ana_rios": {
     "estaciones": [
@@ -5910,12 +5910,12 @@
         "rio": "Chira",
         "estacion": "El Ciruelo",
         "lugar": "Suyo, Piura",
-        "valor": 29.88,
+        "valor": 30.64,
         "unidad": "m³/s",
         "alerta": 800.0,
         "emergencia": 1000.0,
         "tendencia": "Descendente",
-        "hora": "20:00",
+        "hora": "21:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -4.299054,
@@ -6075,7 +6075,7 @@
         "alerta": 200.0,
         "emergencia": 300.0,
         "tendencia": "Descendente",
-        "hora": "20:00",
+        "hora": "21:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -7.25592,
@@ -6246,12 +6246,12 @@
         "rio": "Rímac",
         "estacion": "Puente Huachipa",
         "lugar": "Lurigancho, Lima",
-        "valor": 23.39,
+        "valor": 1.18,
         "unidad": "m",
         "alerta": null,
         "emergencia": null,
         "tendencia": "Ascendente",
-        "hora": "20:00",
+        "hora": "21:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -12.01283,
@@ -6278,12 +6278,12 @@
         "rio": "Rímac",
         "estacion": "Chosica",
         "lugar": "Lurigancho, Lima",
-        "valor": 22.52,
+        "valor": 23.72,
         "unidad": "m³/s",
         "alerta": 90.0,
         "emergencia": 120.0,
         "tendencia": "Ascendente",
-        "hora": "20:00",
+        "hora": "21:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -11.92986,
@@ -6406,12 +6406,12 @@
         "rio": "Río Santiago",
         "estacion": "Challaca",
         "lugar": "Santiago De Chocorvos, Huancavelica",
-        "valor": 20.11,
+        "valor": 21.21,
         "unidad": "m³/s",
         "alerta": 150.0,
         "emergencia": 280.0,
         "tendencia": "Descendente",
-        "hora": "19:00",
+        "hora": "20:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -13.7905,
@@ -6427,7 +6427,7 @@
         "alerta": 140.0,
         "emergencia": 250.0,
         "tendencia": "Ascendente",
-        "hora": "20:00",
+        "hora": "21:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -13.9248,
@@ -7083,7 +7083,7 @@
         "alerta": null,
         "emergencia": null,
         "tendencia": "Descendente",
-        "hora": "19:00",
+        "hora": "20:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -12.027251,
@@ -7414,12 +7414,12 @@
         "rio": "Mayo",
         "estacion": "Shanao",
         "lugar": "Shanao, San Martin",
-        "valor": 363.25,
+        "valor": 366.3,
         "unidad": "m³/s",
         "alerta": 1954.41,
         "emergencia": 3481.47,
         "tendencia": "Descendente",
-        "hora": "20:00",
+        "hora": "21:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -6.41291,
@@ -7510,12 +7510,12 @@
         "rio": "Huallaga",
         "estacion": "Puente Tocache",
         "lugar": "Tocache, San Martin",
-        "valor": 1146.74,
+        "valor": 1135.47,
         "unidad": "m³/s",
         "alerta": 2587.0,
         "emergencia": 3259.0,
         "tendencia": "Ascendente",
-        "hora": "19:00",
+        "hora": "20:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -8.18475,
@@ -7803,7 +7803,7 @@
         "alerta": 17000.0,
         "emergencia": 21000.0,
         "tendencia": "Ascendente",
-        "hora": "17:30",
+        "hora": "18:15",
         "estado": "normal",
         "estiaje": false,
         "lat": -12.60033,
@@ -7990,12 +7990,12 @@
         "rio": "Desaguadero",
         "estacion": "Puente Desaguadero",
         "lugar": "Desaguadero, Puno",
-        "valor": 8.28,
+        "valor": 8.25,
         "unidad": "m",
         "alerta": 9.5,
         "emergencia": 10.0,
         "tendencia": "Descendente",
-        "hora": "19:00",
+        "hora": "21:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -16.56327,
@@ -8086,7 +8086,7 @@
     "en_alerta": 1,
     "en_emergencia": 1,
     "url": "https://snirh.ana.gob.pe/onrh/",
-    "leido": "2026-11-11T01:42:10Z"
+    "leido": "2026-11-11T02:24:44Z"
   },
   "ana_embalses": {
     "embalses": [
@@ -8334,7 +8334,7 @@
       }
     ],
     "url": "https://snirh.ana.gob.pe/onrh/",
-    "leido": "2026-11-11T01:42:16Z"
+    "leido": "2026-11-11T02:25:22Z"
   },
   "ana_pc": {
     "total": 536,
@@ -8343,9 +8343,9 @@
       "Por Ejecutar": 149,
       "Ejecutado": 139
     },
-    "avance_medio": 39.0,
+    "avance_medio": 39.1,
     "url": "https://snirh.ana.gob.pe/",
-    "leido": "2026-11-11T01:42:18Z"
+    "leido": "2026-11-11T02:25:24Z"
   },
   "emergencia": {
     "decretos": {
@@ -13311,7 +13311,7 @@
       "ONRH/DEE_DS_140_2026_PCM"
     ],
     "url": "https://www.gob.pe/busquedas?contenido[]=normas&term=estado+de+emergencia",
-    "leido": "2026-11-11T01:42:45Z"
+    "leido": "2026-11-11T02:25:36Z"
   },
   "preparacion": {
     "conteo": {
@@ -20467,7 +20467,7 @@
       }
     },
     "url": "https://visor.geoperu.gob.pe/",
-    "leido": "2026-11-11T01:46:00Z"
+    "leido": "2026-11-11T02:25:38Z"
   },
   "agua": {
     "total": 64,
@@ -21333,7 +21333,7 @@
       }
     },
     "url": "https://www.sunass.gob.pe/",
-    "leido": "2026-11-11T01:46:01Z"
+    "leido": "2026-11-11T02:25:39Z"
   },
   "incendios": {
     "total": 8,
@@ -21412,7 +21412,7 @@
       }
     ],
     "url": "https://geo.serfor.gob.pe/visor/",
-    "leido": "2026-11-11T01:46:02Z"
+    "leido": "2026-11-11T02:25:39Z"
   },
   "phisis": {
     "estaciones": [
@@ -21439,7 +21439,7 @@
       {
         "estacion": "Puente Eguiguren",
         "cuenca": "Cuenca Piura",
-        "fecha": "2026-11-11T01:00:00Z",
+        "fecha": "2026-11-11T02:00:00Z",
         "nivel": "normal",
         "variable": "nivel",
         "lugar": "Piura, Piura",
@@ -21499,7 +21499,7 @@
       {
         "estacion": "Pte. Simón Rodríguez",
         "cuenca": "Cuenca Chira",
-        "fecha": "2026-11-11T01:00:00Z",
+        "fecha": "2026-11-11T02:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "Amotape, Piura",
@@ -21539,7 +21539,7 @@
       {
         "estacion": "Lagartera",
         "cuenca": "Cuenca Chira",
-        "fecha": "2026-11-11T01:00:00Z",
+        "fecha": "2026-11-11T02:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "Las Lomas, Piura",
@@ -21549,7 +21549,7 @@
       {
         "estacion": "El Ciruelo",
         "cuenca": "Cuenca Chira",
-        "fecha": "2026-11-11T01:00:00Z",
+        "fecha": "2026-11-11T02:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "Suyo, Piura",
@@ -21559,7 +21559,7 @@
       {
         "estacion": "Puchaca",
         "cuenca": "Cuenca Motupe",
-        "fecha": "2026-11-11T00:00:00Z",
+        "fecha": "2026-11-11T02:00:00Z",
         "nivel": "normal",
         "variable": "nivel",
         "lugar": "Incahuasi, Lambayeque",
@@ -21729,7 +21729,7 @@
       {
         "estacion": "Yónan Gore",
         "cuenca": "Cuenca Jequetepeque",
-        "fecha": "2026-11-11T01:00:00Z",
+        "fecha": "2026-11-11T02:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "Yonan, Cajamarca",
@@ -21739,7 +21739,7 @@
       {
         "estacion": "Pte. Chilete",
         "cuenca": "Cuenca Jequetepeque",
-        "fecha": "2026-11-11T01:00:00Z",
+        "fecha": "2026-11-11T02:00:00Z",
         "nivel": "normal",
         "variable": "nivel",
         "lugar": "Chilete, Cajamarca",
@@ -21819,7 +21819,7 @@
       {
         "estacion": "Puente Huachipa",
         "cuenca": "Cuenca Rímac",
-        "fecha": "2026-11-11T01:00:00Z",
+        "fecha": "2026-11-11T02:00:00Z",
         "nivel": "normal",
         "variable": "nivel",
         "lugar": "Lurigancho, Lima",
@@ -21879,7 +21879,7 @@
       {
         "estacion": "Chosica",
         "cuenca": "Cuenca Rímac",
-        "fecha": "2026-11-11T01:00:00Z",
+        "fecha": "2026-11-11T02:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "Lurigancho, Lima",
@@ -21899,7 +21899,7 @@
       {
         "estacion": "Autisha",
         "cuenca": "Cuenca Rímac",
-        "fecha": "2026-11-11T01:00:00Z",
+        "fecha": "2026-11-11T02:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "San Antonio, Lima",
@@ -21949,7 +21949,7 @@
       {
         "estacion": "Los Molinos",
         "cuenca": "Cuenca Ica",
-        "fecha": "2026-11-11T01:00:00Z",
+        "fecha": "2026-11-11T02:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "San Jose De Los Molinos, Ica",
@@ -22139,7 +22139,7 @@
       {
         "estacion": "Ticapampa",
         "cuenca": "Cuenca Locumba",
-        "fecha": "2026-11-11T01:00:00Z",
+        "fecha": "2026-11-11T02:00:00Z",
         "nivel": "normal",
         "variable": "A",
         "lugar": "Ilabaya, Tacna",
@@ -22339,7 +22339,7 @@
       {
         "estacion": "Shanao",
         "cuenca": "Cuenca Mayo",
-        "fecha": "2026-11-11T01:00:00Z",
+        "fecha": "2026-11-11T02:00:00Z",
         "nivel": "normal",
         "variable": "A",
         "lugar": "Shanao, San Martin",
@@ -22519,7 +22519,7 @@
       {
         "estacion": "Puente Tocache",
         "cuenca": "Intercuenca Alto Huallaga",
-        "fecha": "2026-11-11T00:00:00Z",
+        "fecha": "2026-11-11T01:00:00Z",
         "nivel": "normal",
         "variable": "A",
         "lugar": "Tocache, San Martin",
@@ -22719,7 +22719,7 @@
       {
         "estacion": "Pte. Azángaro",
         "cuenca": "Cuenca Azángaro",
-        "fecha": "2026-11-11T00:00:00Z",
+        "fecha": "2026-11-11T02:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "Azangaro, Puno",
@@ -22749,7 +22749,7 @@
       {
         "estacion": "Puente Desaguadero",
         "cuenca": "Lago Titicaca",
-        "fecha": "2026-11-11T00:00:00Z",
+        "fecha": "2026-11-11T02:00:00Z",
         "nivel": "normal",
         "variable": "nivel",
         "lugar": "Desaguadero, Puno",
@@ -22789,7 +22789,7 @@
     ],
     "sobre_umbral": 3,
     "url": "https://www.senamhi.gob.pe/mapas/mapa-monitoreohidro/",
-    "leido": "2026-11-11T01:42:47Z"
+    "leido": "2026-11-11T02:25:39Z"
   },
   "prono": {
     "url": "https://www.senamhi.gob.pe/?p=pronostico-climatico",
@@ -23387,7 +23387,7 @@
         ]
       ]
     },
-    "leido": "2026-11-11T01:42:47Z"
+    "leido": "2026-11-11T02:25:40Z"
   },
   "igp": {
     "e": [
@@ -23592,7 +23592,7 @@
       "clasificacion": 99.99
     },
     "url": "http://met.igp.gob.pe/variabclim/",
-    "leido": "2026-11-11T01:46:04Z"
+    "leido": "2026-11-11T02:25:40Z"
   },
   "dhn": {
     "generado": "2026-11-10T13:43:19Z",
@@ -24104,7 +24104,7 @@
         }
       ]
     },
-    "leido": "2026-11-11T01:46:09Z"
+    "leido": "2026-11-11T02:25:40Z"
   },
   "inaigem": {
     "estaciones": [
@@ -24142,7 +24142,7 @@
       }
     ],
     "url": "https://www.inaigem.gob.pe/",
-    "leido": "2026-11-11T01:46:09Z"
+    "leido": "2026-11-11T02:25:41Z"
   },
   "enfen_docs": {
     "docs": [
@@ -24208,6 +24208,6 @@
       }
     ],
     "url": "https://enfen.imarpe.gob.pe/",
-    "leido": "2026-11-11T01:42:49Z"
+    "leido": "2026-11-11T02:25:42Z"
   }
 }
