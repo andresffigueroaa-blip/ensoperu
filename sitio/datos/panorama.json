@@ -1,6 +1,6 @@
 {
   "_": "Generado por pipeline/productos/panorama.py. No editar a mano.",
-  "generado": "2026-11-11T04:27:19Z",
+  "generado": "2026-11-11T04:29:07Z",
   "fecha": "2026-11-11",
   "lectura": [
     {
@@ -28,15 +28,15 @@
       "url": "https://open-meteo.com/en/docs"
     },
     {
-      "t": "Ríos: el modelo global GloFAS pronostica caudales por encima de su percentil 90 anual (1984-2023) en 11, entre ellos Tumbes, Chira, La Leche, Chicama; es orientativo. En la última lectura, ninguna estación de la ANA ni del SENAMHI está sobre su umbral de crecida.",
+      "t": "Ríos: el modelo global GloFAS pronostica caudales por encima de su percentil 90 anual (1984-2023) en 11, entre ellos Tumbes, La Leche, Chira, Zaña; es orientativo. En la última lectura, ninguna estación de la ANA ni del SENAMHI está sobre su umbral de crecida.",
       "fuente": "GloFAS (Copernicus) vía Open-Meteo; lecturas de la ANA y el SENAMHI",
-      "fecha": "2026-11-11T04:27:14Z",
+      "fecha": "2026-11-11T04:29:07Z",
       "url": "https://www.globalfloods.eu/"
     },
     {
       "t": "CENEPRED: 326 distritos en riesgo muy alto por lluvia, hasta el 11 de noviembre; en ellos viven 1 488 096 personas (suma ENSO Perú del escenario, sin repetir distritos).",
       "fuente": "CENEPRED, escenarios de riesgo ante el aviso de lluvias",
-      "fecha": "2026-11-11T04:25:24Z",
+      "fecha": "2026-11-11T04:28:18Z",
       "url": "https://sigrid.cenepred.gob.pe/sigridv3/escenario-aviso"
     },
     {
@@ -1867,7 +1867,7 @@
       "nombre": "Tumbes",
       "lugar": "El Tigre",
       "region": "24",
-      "hoy": 346.54,
+      "hoy": 283.45,
       "pico": 1471.31,
       "fecha_pico": "2026-11-24",
       "p90": 591.9,
@@ -1875,11 +1875,23 @@
       "nivel": "muy alto"
     },
     {
+      "id": "la-leche",
+      "nombre": "La Leche",
+      "lugar": "Puchaca",
+      "region": "14",
+      "hoy": 25.98,
+      "pico": 93.41,
+      "fecha_pico": "2026-11-25",
+      "p90": 39.7,
+      "p99": 172.9,
+      "nivel": "elevado"
+    },
+    {
       "id": "chira",
       "nombre": "Chira",
       "lugar": "Ardilla",
       "region": "20",
-      "hoy": 641.69,
+      "hoy": 355.45,
       "pico": 2156.74,
       "fecha_pico": "2026-11-24",
       "p90": 932.2,
@@ -1887,15 +1899,15 @@
       "nivel": "elevado"
     },
     {
-      "id": "la-leche",
-      "nombre": "La Leche",
-      "lugar": "Puchaca",
+      "id": "zana",
+      "nombre": "Zaña",
+      "lugar": "Batán",
       "region": "14",
-      "hoy": 28.44,
-      "pico": 78.07,
-      "fecha_pico": "2026-11-24",
-      "p90": 39.7,
-      "p99": 172.9,
+      "hoy": 40.3,
+      "pico": 82.18,
+      "fecha_pico": "2026-11-25",
+      "p90": 45.1,
+      "p99": 111.9,
       "nivel": "elevado"
     },
     {
@@ -1903,7 +1915,7 @@
       "nombre": "Chicama",
       "lugar": "Salinar",
       "region": "13",
-      "hoy": 86.7,
+      "hoy": 81.99,
       "pico": 259.62,
       "fecha_pico": "2026-11-24",
       "p90": 151.1,
@@ -1911,39 +1923,15 @@
       "nivel": "elevado"
     },
     {
-      "id": "zana",
-      "nombre": "Zaña",
-      "lugar": "Batán",
-      "region": "14",
-      "hoy": 45.67,
-      "pico": 64.77,
-      "fecha_pico": "2026-11-24",
-      "p90": 45.1,
-      "p99": 111.9,
-      "nivel": "elevado"
-    },
-    {
       "id": "piura",
       "nombre": "Piura",
       "lugar": "Puente Sánchez Cerro",
       "region": "20",
-      "hoy": 284.1,
-      "pico": 309.46,
-      "fecha_pico": "2026-11-24",
+      "hoy": 249.03,
+      "pico": 364.59,
+      "fecha_pico": "2026-11-25",
       "p90": 230.7,
       "p99": 1204.6,
-      "nivel": "elevado"
-    },
-    {
-      "id": "viru",
-      "nombre": "Virú",
-      "lugar": "Huacapongo",
-      "region": "13",
-      "hoy": 32.11,
-      "pico": 54.21,
-      "fecha_pico": "2026-11-24",
-      "p90": 41.8,
-      "p99": 74.5,
       "nivel": "elevado"
     },
     {
@@ -1951,11 +1939,35 @@
       "nombre": "Chancay-Lambayeque",
       "lugar": "Racarrumi",
       "region": "14",
-      "hoy": 69.31,
-      "pico": 117.3,
-      "fecha_pico": "2026-11-24",
+      "hoy": 61.52,
+      "pico": 140.91,
+      "fecha_pico": "2026-11-25",
       "p90": 103.0,
       "p99": 217.3,
+      "nivel": "elevado"
+    },
+    {
+      "id": "viru",
+      "nombre": "Virú",
+      "lugar": "Huacapongo",
+      "region": "13",
+      "hoy": 33.91,
+      "pico": 57.08,
+      "fecha_pico": "2026-11-25",
+      "p90": 41.8,
+      "p99": 74.5,
+      "nivel": "elevado"
+    },
+    {
+      "id": "moche",
+      "nombre": "Moche",
+      "lugar": "Quirihuac",
+      "region": "13",
+      "hoy": 40.78,
+      "pico": 64.92,
+      "fecha_pico": "2026-11-25",
+      "p90": 58.0,
+      "p99": 109.1,
       "nivel": "elevado"
     },
     {
@@ -1963,7 +1975,7 @@
       "nombre": "Pativilca",
       "lugar": "Yanapampa",
       "region": "15",
-      "hoy": 130.83,
+      "hoy": 128.42,
       "pico": 213.78,
       "fecha_pico": "2026-11-21",
       "p90": 197.2,
@@ -1975,23 +1987,11 @@
       "nombre": "Jequetepeque",
       "lugar": "Yonán",
       "region": "13",
-      "hoy": 209.86,
+      "hoy": 180.97,
       "pico": 345.74,
       "fecha_pico": "2026-11-17",
       "p90": 320.4,
       "p99": 603.0,
-      "nivel": "elevado"
-    },
-    {
-      "id": "moche",
-      "nombre": "Moche",
-      "lugar": "Quirihuac",
-      "region": "13",
-      "hoy": 42.75,
-      "pico": 62.53,
-      "fecha_pico": "2026-11-24",
-      "p90": 58.0,
-      "p99": 109.1,
       "nivel": "elevado"
     }
   ],
