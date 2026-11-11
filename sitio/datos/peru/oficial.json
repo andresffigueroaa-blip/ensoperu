@@ -1,6 +1,6 @@
 {
   "_": "Generado por pipeline/fuentes/peru_oficial.py. Datos oficiales tal como se publican.",
-  "actualizado": "2026-11-11T02:24:06Z",
+  "actualizado": "2026-11-11T02:27:38Z",
   "fallas": [
     "coen"
   ],
@@ -422,6 +422,11 @@
   "indeci_rss": {
     "reportes": [
       {
+        "titulo": "REPORTE COMPLEMENTARIO N.° 15769 – 10/11/2026 / COEN – INDECI / 21:12 HORAS (Reporte N.° 3) INCENDIO FORESTAL EN EL DISTRITO DE PAMPACOLCA – AREQUIPA",
+        "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-13899-10-10-2026-coen-indeci-2150-horas-reporte-n-1-incendio-forestal-en-el-distrito-de-pampacolca-arequipa/",
+        "fecha": "2026-11-11T02:20"
+      },
+      {
         "titulo": "REPORTE COMPLEMENTARIO N.° 15768 – 10/11/2026 /COEN – INDECI / 19:38 HORAS (Reporte N.º 1) VIENTOS FUERTES EN EL DISTRITO DE JUAN GUERRA – SAN MARTÍN",
         "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-15768-10-11-2026-coen-indeci-1938-horas-reporte-n-o-1-vientos-fuertes-en-el-distrito-de-juan-guerra-san-martin/",
         "fecha": "2026-11-11T00:48"
@@ -485,15 +490,10 @@
         "titulo": "REPORTE COMPLEMENTARIO N.º 15757 – 10/11/2026 / COEN – INDECI / 16:55 HORAS (Reporte N.°1) LLUVIAS INTENSAS EN EL DISTRITO DE LIRCAY – HUANCAVELICA",
         "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-preliminar-n-o-1124-9-11-2026-coen-indeci-2245-horas-lluvias-intensas-en-el-distrito-de-lircay-huancavelica/",
         "fecha": "2026-11-10T22:08"
-      },
-      {
-        "titulo": "REPORTE COMPLEMENTARIO N.° 15756 – 10/11/2026 / COEN – INDECI / 16:47 HORAS (Reporte N° 2) LLUVIAS INTENSAS EN EL DISTRITO DE HUARAZ – ÁNCASH",
-        "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-15756-10-11-2026-coen-indeci-1647-horas-reporte-n-2-lluvias-intensas-en-el-distrito-de-huaraz-ancash/",
-        "fecha": "2026-11-10T22:05"
       }
     ],
     "url": "https://portal.indeci.gob.pe/emergencias/",
-    "leido": "2026-11-11T02:24:07Z"
+    "leido": "2026-11-11T02:27:41Z"
   },
   "escenario": {
     "vigente": true,
@@ -4528,7 +4528,7 @@
       }
     },
     "url": "https://sigrid.cenepred.gob.pe/sigridv3/escenario-aviso",
-    "leido": "2026-11-11T02:24:09Z"
+    "leido": "2026-11-11T02:27:44Z"
   },
   "quebradas": {
     "fecha": "2026-11-10",
@@ -5732,7 +5732,7 @@
     },
     "sin_cruce": 8,
     "url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico",
-    "leido": "2026-11-11T02:24:13Z"
+    "leido": "2026-11-11T02:27:48Z"
   },
   "hidro": {
     "avisos": [
@@ -5774,7 +5774,7 @@
       }
     ],
     "url": "https://www.senamhi.gob.pe/?p=aviso-hidrologico",
-    "leido": "2026-11-11T02:24:14Z"
+    "leido": "2026-11-11T02:27:49Z"
   },
   "ana_rios": {
     "estaciones": [
@@ -20467,7 +20467,7 @@
       }
     },
     "url": "https://visor.geoperu.gob.pe/",
-    "leido": "2026-11-11T02:25:38Z"
+    "leido": "2026-11-11T02:27:50Z"
   },
   "agua": {
     "total": 64,
@@ -21333,7 +21333,7 @@
       }
     },
     "url": "https://www.sunass.gob.pe/",
-    "leido": "2026-11-11T02:25:39Z"
+    "leido": "2026-11-11T02:27:52Z"
   },
   "incendios": {
     "total": 8,
@@ -21412,7 +21412,7 @@
       }
     ],
     "url": "https://geo.serfor.gob.pe/visor/",
-    "leido": "2026-11-11T02:25:39Z"
+    "leido": "2026-11-11T02:27:54Z"
   },
   "phisis": {
     "estaciones": [
@@ -23592,7 +23592,7 @@
       "clasificacion": 99.99
     },
     "url": "http://met.igp.gob.pe/variabclim/",
-    "leido": "2026-11-11T02:25:40Z"
+    "leido": "2026-11-11T02:27:56Z"
   },
   "dhn": {
     "generado": "2026-11-10T13:43:19Z",
@@ -24104,7 +24104,7 @@
         }
       ]
     },
-    "leido": "2026-11-11T02:25:40Z"
+    "leido": "2026-11-11T02:27:57Z"
   },
   "inaigem": {
     "estaciones": [
@@ -24142,7 +24142,7 @@
       }
     ],
     "url": "https://www.inaigem.gob.pe/",
-    "leido": "2026-11-11T02:25:41Z"
+    "leido": "2026-11-11T02:27:57Z"
   },
   "enfen_docs": {
     "docs": [
