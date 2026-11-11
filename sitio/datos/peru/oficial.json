@@ -1,6 +1,6 @@
 {
   "_": "Generado por pipeline/fuentes/peru_oficial.py. Datos oficiales tal como se publican.",
-  "actualizado": "2026-11-11T03:24:08Z",
+  "actualizado": "2026-11-11T03:26:47Z",
   "fallas": [
     "coen"
   ],
@@ -422,6 +422,11 @@
   "indeci_rss": {
     "reportes": [
       {
+        "titulo": "REPORTE COMPLEMENTARIO N.° 15773 – 10/11/2026 / COEN-INDECI / 21:57 HORAS (Reporte N.°1) LLUVIAS INTENSAS EN EL DISTRITO DE CASITAS – TUMBES",
+        "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-preliminar-n-1115-4-11-2026-coen-indeci-2330-horas-lluvias-intensas-en-el-distrito-de-casitas-tumbes/",
+        "fecha": "2026-11-11T03:10"
+      },
+      {
         "titulo": "REPORTE COMPLEMENTARIO N.° 15772 – 10/11/2026 / COEN-INDECI / 21:30 HORAS (Reporte N° 1) DÉFICIT HÍDRICO EN EL DISTRITO DE SIMON BOLIVAR – PASCO",
         "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-15772-10-11-2026-coen-indeci-2130-horas-reporte-n-1-deficit-hidrico-en-el-distrito-de-simon-bolivar-pasco/",
         "fecha": "2026-11-11T03:07"
@@ -485,15 +490,10 @@
         "titulo": "REPORTE COMPLEMENTARIO N.º 15761 – 10/11/2026 / COEN – INDECI / 18:00 HORAS (Reporte N.° 1) COLPASO DE ESTRUCTURA POR AGENTE CLIMÁTICO EN EL DISTRITO DE TINTAY – APURÍMAC",
         "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-o-15761-10-11-2026-coen-indeci-1800-horas-reporte-n-1-colpaso-de-estructura-por-agente-climatico-en-el-distrito-de-tintay-apurimac/",
         "fecha": "2026-11-10T23:15"
-      },
-      {
-        "titulo": "REPORTE COMPLEMENTARIO N.º 15760 – 10/11/2026 / COEN – INDECI / 17:17 HORAS (Reporte N.º 1) INCENDIO FORESTAL EN EL DISTRITO DE COMBAPATA – CUSCO",
-        "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-o-15760-10-11-2026-coen-indeci-1717-horas-reporte-n-o-1-incendio-forestal-en-el-distrito-de-combapata-cusco/",
-        "fecha": "2026-11-10T22:35"
       }
     ],
     "url": "https://portal.indeci.gob.pe/emergencias/",
-    "leido": "2026-11-11T03:24:10Z"
+    "leido": "2026-11-11T03:26:50Z"
   },
   "escenario": {
     "vigente": true,
@@ -4528,7 +4528,7 @@
       }
     },
     "url": "https://sigrid.cenepred.gob.pe/sigridv3/escenario-aviso",
-    "leido": "2026-11-11T03:24:11Z"
+    "leido": "2026-11-11T03:26:53Z"
   },
   "quebradas": {
     "fecha": "2026-11-10",
@@ -5732,7 +5732,7 @@
     },
     "sin_cruce": 8,
     "url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico",
-    "leido": "2026-11-11T03:24:15Z"
+    "leido": "2026-11-11T03:26:56Z"
   },
   "hidro": {
     "avisos": [
@@ -5774,7 +5774,7 @@
       }
     ],
     "url": "https://www.senamhi.gob.pe/?p=aviso-hidrologico",
-    "leido": "2026-11-11T03:24:16Z"
+    "leido": "2026-11-11T03:26:57Z"
   },
   "ana_rios": {
     "estaciones": [
@@ -20467,7 +20467,7 @@
       }
     },
     "url": "https://visor.geoperu.gob.pe/",
-    "leido": "2026-11-11T03:25:14Z"
+    "leido": "2026-11-11T03:26:58Z"
   },
   "agua": {
     "total": 64,
@@ -21333,7 +21333,7 @@
       }
     },
     "url": "https://www.sunass.gob.pe/",
-    "leido": "2026-11-11T03:25:14Z"
+    "leido": "2026-11-11T03:27:03Z"
   },
   "incendios": {
     "total": 9,
@@ -21421,7 +21421,7 @@
       }
     ],
     "url": "https://geo.serfor.gob.pe/visor/",
-    "leido": "2026-11-11T03:25:15Z"
+    "leido": "2026-11-11T03:27:07Z"
   },
   "phisis": {
     "estaciones": [
@@ -23601,7 +23601,7 @@
       "clasificacion": 99.99
     },
     "url": "http://met.igp.gob.pe/variabclim/",
-    "leido": "2026-11-11T03:25:15Z"
+    "leido": "2026-11-11T03:27:08Z"
   },
   "dhn": {
     "generado": "2026-11-10T13:43:19Z",
@@ -24113,7 +24113,7 @@
         }
       ]
     },
-    "leido": "2026-11-11T03:25:16Z"
+    "leido": "2026-11-11T03:27:10Z"
   },
   "inaigem": {
     "estaciones": [
@@ -24151,7 +24151,7 @@
       }
     ],
     "url": "https://www.inaigem.gob.pe/",
-    "leido": "2026-11-11T03:25:16Z"
+    "leido": "2026-11-11T03:27:10Z"
   },
   "enfen_docs": {
     "docs": [
