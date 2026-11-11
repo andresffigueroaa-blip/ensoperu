@@ -1,6 +1,6 @@
 {
   "_": "Generado por pipeline/productos/panorama.py. No editar a mano.",
-  "generado": "2026-11-11T23:24:54Z",
+  "generado": "2026-11-11T23:25:15Z",
   "fecha": "2026-11-11",
   "lectura": [
     {
@@ -30,13 +30,13 @@
     {
       "t": "Ríos: el modelo global GloFAS pronostica caudales por encima de su percentil 90 anual (1984-2023) en 11, entre ellos Tumbes, Chira, Chicama, Piura; es orientativo. En la última lectura, ninguna estación de la ANA ni del SENAMHI está sobre su umbral de crecida.",
       "fuente": "GloFAS (Copernicus) vía Open-Meteo; lecturas de la ANA y el SENAMHI",
-      "fecha": "2026-11-11T23:24:54Z",
+      "fecha": "2026-11-11T23:25:15Z",
       "url": "https://www.globalfloods.eu/"
     },
     {
       "t": "CENEPRED: 326 distritos en riesgo muy alto por lluvia, hasta el 11 de noviembre; en ellos viven 1 488 096 personas (suma ENSO Perú del escenario, sin repetir distritos).",
       "fuente": "CENEPRED, escenarios de riesgo ante el aviso de lluvias",
-      "fecha": "2026-11-11T23:24:01Z",
+      "fecha": "2026-11-11T23:25:04Z",
       "url": "https://sigrid.cenepred.gob.pe/sigridv3/escenario-aviso"
     },
     {
@@ -46,7 +46,7 @@
       "url": "https://coen.indeci.gob.pe/mer/"
     },
     {
-      "t": "Focos de calor detectados por satélite: 854 en 7 días; el mayor número en Tambopata (Madre de Dios), 104.",
+      "t": "Focos de calor detectados por satélite: 926 en 7 días; el mayor número en Atalaya (Ucayali), 104.",
       "fuente": "NASA FIRMS, VIIRS NOAA-20",
       "fecha": "2026-11-11",
       "url": "https://firms.modaps.eosdis.nasa.gov/"
@@ -86,8 +86,8 @@
       "aviso_lluvia_desde": null,
       "mar": 5.98,
       "n_mar": "muy alto",
-      "focos": 6,
-      "n_focos": "medio",
+      "focos": 11,
+      "n_focos": "alto",
       "dias_fuertes": 0,
       "n_lluvia": "bajo",
       "lluvia16": 82.1,
@@ -170,7 +170,7 @@
       "aviso_lluvia_desde": null,
       "mar": null,
       "n_mar": null,
-      "focos": 21,
+      "focos": 28,
       "n_focos": "alto",
       "dias_fuertes": 2,
       "n_lluvia": "medio",
@@ -212,7 +212,7 @@
       "aviso_lluvia_desde": null,
       "mar": null,
       "n_mar": null,
-      "focos": 41,
+      "focos": 43,
       "n_focos": "alto",
       "dias_fuertes": 0,
       "n_lluvia": "bajo",
@@ -254,7 +254,7 @@
       "aviso_lluvia_desde": null,
       "mar": null,
       "n_mar": null,
-      "focos": 40,
+      "focos": 49,
       "n_focos": "alto",
       "dias_fuertes": 1,
       "n_lluvia": "medio",
@@ -275,8 +275,8 @@
       "aviso_lluvia_desde": null,
       "mar": 5.38,
       "n_mar": "muy alto",
-      "focos": 8,
-      "n_focos": "medio",
+      "focos": 10,
+      "n_focos": "alto",
       "dias_fuertes": 0,
       "n_lluvia": "bajo",
       "lluvia16": 3.0,
@@ -296,7 +296,7 @@
       "aviso_lluvia_desde": null,
       "mar": null,
       "n_mar": null,
-      "focos": 88,
+      "focos": 94,
       "n_focos": "muy alto",
       "dias_fuertes": 1,
       "n_lluvia": "medio",
@@ -317,7 +317,7 @@
       "aviso_lluvia_desde": null,
       "mar": 6.29,
       "n_mar": "muy alto",
-      "focos": 11,
+      "focos": 15,
       "n_focos": "alto",
       "dias_fuertes": 1,
       "n_lluvia": "medio",
@@ -391,7 +391,7 @@
       "aviso_lluvia_desde": null,
       "mar": null,
       "n_mar": null,
-      "focos": 93,
+      "focos": 94,
       "n_focos": "muy alto",
       "dias_fuertes": 1,
       "n_lluvia": "medio",
@@ -454,7 +454,7 @@
       "aviso_lluvia_desde": null,
       "mar": null,
       "n_mar": null,
-      "focos": 29,
+      "focos": 35,
       "n_focos": "alto",
       "dias_fuertes": 2,
       "n_lluvia": "medio",
@@ -475,7 +475,7 @@
       "aviso_lluvia_desde": null,
       "mar": 6.79,
       "n_mar": "muy alto",
-      "focos": 15,
+      "focos": 20,
       "n_focos": "alto",
       "dias_fuertes": 4,
       "n_lluvia": "alto",
@@ -520,7 +520,7 @@
       "aviso_lluvia_desde": null,
       "mar": null,
       "n_mar": null,
-      "focos": 38,
+      "focos": 40,
       "n_focos": "alto",
       "dias_fuertes": 1,
       "n_lluvia": "medio",
@@ -585,7 +585,7 @@
       "aviso_lluvia_desde": null,
       "mar": null,
       "n_mar": null,
-      "focos": 216,
+      "focos": 239,
       "n_focos": "muy alto",
       "dias_fuertes": 1,
       "n_lluvia": "medio",
@@ -1791,6 +1791,13 @@
   ],
   "top_focos": [
     {
+      "id": "2502",
+      "nombre": "Atalaya",
+      "region": "Ucayali",
+      "focos": 104,
+      "frp": 1248.0
+    },
+    {
       "id": "1701",
       "nombre": "Tambopata",
       "region": "Madre de Dios",
@@ -1798,18 +1805,11 @@
       "frp": 1530.2
     },
     {
-      "id": "2502",
-      "nombre": "Atalaya",
-      "region": "Ucayali",
-      "focos": 96,
-      "frp": 1111.3
-    },
-    {
       "id": "2501",
       "nombre": "Coronel Portillo",
       "region": "Ucayali",
-      "focos": 88,
-      "frp": 1574.2
+      "focos": 101,
+      "frp": 1825.4
     },
     {
       "id": "1206",
@@ -1836,15 +1836,15 @@
       "id": "2503",
       "nombre": "Padre Abad",
       "region": "Ucayali",
-      "focos": 32,
-      "frp": 330.6
+      "focos": 34,
+      "frp": 348.0
     },
     {
       "id": "1903",
       "nombre": "Oxapampa",
       "region": "Pasco",
-      "focos": 27,
-      "frp": 126.8
+      "focos": 33,
+      "frp": 167.9
     },
     {
       "id": "1203",
@@ -1854,11 +1854,11 @@
       "frp": 143.3
     },
     {
-      "id": "1703",
-      "nombre": "Tahuamanu",
-      "region": "Madre de Dios",
+      "id": "0809",
+      "nombre": "La Convencion",
+      "region": "Cusco",
       "focos": 24,
-      "frp": 156.0
+      "frp": 205.5
     }
   ],
   "rios_altos": [
@@ -2111,7 +2111,7 @@
     "avisos": 6,
     "rojos": 4,
     "rios_altos": 11,
-    "focos": 854,
+    "focos": 926,
     "distritos_riesgo_alto": 766
   }
 }
