@@ -1,6 +1,6 @@
 {
   "_": "Generado por pipeline/fuentes/peru_oficial.py. Datos oficiales tal como se publican.",
-  "actualizado": "2026-11-11T21:30:31Z",
+  "actualizado": "2026-11-11T22:04:04Z",
   "fallas": [
     "coen"
   ],
@@ -493,7 +493,7 @@
       }
     ],
     "url": "https://portal.indeci.gob.pe/emergencias/",
-    "leido": "2026-11-11T21:30:33Z"
+    "leido": "2026-11-11T22:04:05Z"
   },
   "escenario": {
     "vigente": true,
@@ -4528,7 +4528,7 @@
       }
     },
     "url": "https://sigrid.cenepred.gob.pe/sigridv3/escenario-aviso",
-    "leido": "2026-11-11T21:30:36Z"
+    "leido": "2026-11-11T22:04:09Z"
   },
   "quebradas": {
     "fecha": "2026-11-11",
@@ -4980,7 +4980,7 @@
     },
     "sin_cruce": 1,
     "url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico",
-    "leido": "2026-11-11T21:30:37Z"
+    "leido": "2026-11-11T22:04:10Z"
   },
   "hidro": {
     "avisos": [
@@ -5022,7 +5022,7 @@
       }
     ],
     "url": "https://www.senamhi.gob.pe/?p=aviso-hidrologico",
-    "leido": "2026-11-11T21:30:38Z"
+    "leido": "2026-11-11T22:04:11Z"
   },
   "ana_rios": {
     "estaciones": [
@@ -19630,11 +19630,11 @@
       }
     },
     "url": "https://visor.geoperu.gob.pe/",
-    "leido": "2026-11-11T21:30:39Z"
+    "leido": "2026-11-11T22:04:12Z"
   },
   "agua": {
-    "total": 76,
-    "conexiones": 423588,
+    "total": 78,
+    "conexiones": 421396,
     "cortes": [
       {
         "eps": "SEDAPAL",
@@ -19785,16 +19785,6 @@
         "inicio": "2026-11-18",
         "restablece": "2026-11-18",
         "distrito": "150143"
-      },
-      {
-        "eps": "SEDALIB S.A.",
-        "lugar": "Trujillo, La Libertad",
-        "conexiones": 5300,
-        "tipo": "Programada",
-        "motivo": "Limpieza y desinfección de reservorio/cisterna",
-        "inicio": "2026-11-22",
-        "restablece": "2026-11-23",
-        "distrito": "130101"
       },
       {
         "eps": "SEDAPAL",
@@ -20147,6 +20137,16 @@
         "distrito": "180101"
       },
       {
+        "eps": "SEDALIB S.A.",
+        "lugar": "Trujillo, La Libertad",
+        "conexiones": 1288,
+        "tipo": "Programada",
+        "motivo": "Limpieza y desinfección de reservorio/cisterna",
+        "inicio": "2026-11-11",
+        "restablece": "2026-11-12",
+        "distrito": "130101"
+      },
+      {
         "eps": "SEDAPAL",
         "lugar": "Pueblo Libre, Lima",
         "conexiones": 1245,
@@ -20155,6 +20155,16 @@
         "inicio": "2026-11-10",
         "restablece": "2026-11-11",
         "distrito": "150121"
+      },
+      {
+        "eps": "EPSEL S.A.",
+        "lugar": "Oyotun, Lambayeque",
+        "conexiones": 1200,
+        "tipo": "Imprevista",
+        "motivo": "Rotura de línea de impulsión",
+        "inicio": "2026-11-12",
+        "restablece": "2026-11-12",
+        "distrito": "140110"
       },
       {
         "eps": "SEDAPAR  S.A.",
@@ -20225,16 +20235,6 @@
         "inicio": "2026-11-08",
         "restablece": "2026-11-16",
         "distrito": "150501"
-      },
-      {
-        "eps": "SEDALIB S.A.",
-        "lugar": "Huanchaco, La Libertad",
-        "conexiones": 814,
-        "tipo": "Programada",
-        "motivo": "Limpieza y desinfección de reservorio/cisterna",
-        "inicio": "2026-11-16",
-        "restablece": "2026-11-16",
-        "distrito": "130104"
       }
     ],
     "distritos": {
@@ -20297,10 +20297,6 @@
       "150143": {
         "cortes": 1,
         "conexiones": 5320
-      },
-      "130101": {
-        "cortes": 1,
-        "conexiones": 5300
       },
       "150118": {
         "cortes": 1,
@@ -20442,9 +20438,17 @@
         "cortes": 1,
         "conexiones": 1325
       },
+      "130101": {
+        "cortes": 1,
+        "conexiones": 1288
+      },
       "150121": {
         "cortes": 1,
         "conexiones": 1245
+      },
+      "140110": {
+        "cortes": 1,
+        "conexiones": 1200
       },
       "040122": {
         "cortes": 1,
@@ -20489,6 +20493,10 @@
       "110201": {
         "cortes": 1,
         "conexiones": 652
+      },
+      "240103": {
+        "cortes": 1,
+        "conexiones": 620
       },
       "040703": {
         "cortes": 1,
@@ -20544,7 +20552,7 @@
       }
     },
     "url": "https://www.sunass.gob.pe/",
-    "leido": "2026-11-11T21:30:41Z"
+    "leido": "2026-11-11T22:04:14Z"
   },
   "incendios": {
     "total": 12,
@@ -20659,7 +20667,7 @@
       }
     ],
     "url": "https://geo.serfor.gob.pe/visor/",
-    "leido": "2026-11-11T21:30:42Z"
+    "leido": "2026-11-11T22:04:14Z"
   },
   "phisis": {
     "estaciones": [
@@ -22839,7 +22847,7 @@
       "clasificacion": 99.99
     },
     "url": "http://met.igp.gob.pe/variabclim/",
-    "leido": "2026-11-11T21:30:44Z"
+    "leido": "2026-11-11T22:04:16Z"
   },
   "dhn": {
     "generado": "2026-11-11T13:49:27Z",
@@ -23351,7 +23359,7 @@
         }
       ]
     },
-    "leido": "2026-11-11T21:30:45Z"
+    "leido": "2026-11-11T22:04:17Z"
   },
   "inaigem": {
     "estaciones": [
@@ -23389,7 +23397,7 @@
       }
     ],
     "url": "https://www.inaigem.gob.pe/",
-    "leido": "2026-11-11T21:30:46Z"
+    "leido": "2026-11-11T22:04:18Z"
   },
   "enfen_docs": {
     "docs": [
