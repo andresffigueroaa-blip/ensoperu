@@ -1,6 +1,6 @@
 {
   "_": "Generado por pipeline/productos/panorama.py. No editar a mano.",
-  "generado": "2026-11-12T07:25:45Z",
+  "generado": "2026-11-12T11:25:04Z",
   "fecha": "2026-11-12",
   "lectura": [
     {
@@ -30,7 +30,7 @@
     {
       "t": "Ríos: el modelo global GloFAS pronostica caudales por encima de su percentil 90 anual (1984-2023) en 11, entre ellos Tumbes, Chira, Chicama, Piura; es orientativo. En la última lectura, ninguna estación de la ANA ni del SENAMHI está sobre su umbral de crecida.",
       "fuente": "GloFAS (Copernicus) vía Open-Meteo; lecturas de la ANA y el SENAMHI",
-      "fecha": "2026-11-12T07:25:44Z",
+      "fecha": "2026-11-12T11:25:04Z",
       "url": "https://www.globalfloods.eu/"
     },
     {
@@ -40,9 +40,9 @@
       "url": "https://coen.indeci.gob.pe/mer/"
     },
     {
-      "t": "Focos de calor detectados por satélite: 650 en 7 días; el mayor número en Atalaya (Ucayali), 88.",
+      "t": "Focos de calor detectados por satélite: 660 en 7 días; el mayor número en Atalaya (Ucayali), 90.",
       "fuente": "NASA FIRMS, VIIRS NOAA-20",
-      "fecha": "2026-11-11",
+      "fecha": "2026-11-12",
       "url": "https://firms.modaps.eosdis.nasa.gov/"
     }
   ],
@@ -80,7 +80,7 @@
       "aviso_lluvia_desde": null,
       "mar": 5.98,
       "n_mar": "muy alto",
-      "focos": 10,
+      "focos": 12,
       "n_focos": "alto",
       "dias_fuertes": 0,
       "n_lluvia": "bajo",
@@ -164,7 +164,7 @@
       "aviso_lluvia_desde": null,
       "mar": null,
       "n_mar": null,
-      "focos": 25,
+      "focos": 26,
       "n_focos": "alto",
       "dias_fuertes": 1,
       "n_lluvia": "medio",
@@ -206,7 +206,7 @@
       "aviso_lluvia_desde": null,
       "mar": null,
       "n_mar": null,
-      "focos": 30,
+      "focos": 31,
       "n_focos": "alto",
       "dias_fuertes": 0,
       "n_lluvia": "bajo",
@@ -248,7 +248,7 @@
       "aviso_lluvia_desde": null,
       "mar": null,
       "n_mar": null,
-      "focos": 43,
+      "focos": 44,
       "n_focos": "alto",
       "dias_fuertes": 2,
       "n_lluvia": "medio",
@@ -311,7 +311,7 @@
       "aviso_lluvia_desde": null,
       "mar": 6.29,
       "n_mar": "muy alto",
-      "focos": 15,
+      "focos": 17,
       "n_focos": "alto",
       "dias_fuertes": 1,
       "n_lluvia": "medio",
@@ -514,7 +514,7 @@
       "aviso_lluvia_desde": null,
       "mar": null,
       "n_mar": null,
-      "focos": 30,
+      "focos": 31,
       "n_focos": "alto",
       "dias_fuertes": 1,
       "n_lluvia": "medio",
@@ -579,7 +579,7 @@
       "aviso_lluvia_desde": null,
       "mar": null,
       "n_mar": null,
-      "focos": 190,
+      "focos": 192,
       "n_focos": "muy alto",
       "dias_fuertes": 0,
       "n_lluvia": "bajo",
@@ -1788,8 +1788,8 @@
       "id": "2502",
       "nombre": "Atalaya",
       "region": "Ucayali",
-      "focos": 88,
-      "frp": 1093.2
+      "focos": 90,
+      "frp": 1094.6
     },
     {
       "id": "2501",
@@ -1834,18 +1834,18 @@
       "frp": 108.5
     },
     {
+      "id": "0809",
+      "nombre": "La Convencion",
+      "region": "Cusco",
+      "focos": 21,
+      "frp": 171.2
+    },
+    {
       "id": "1006",
       "nombre": "Leoncio Prado",
       "region": "Huanuco",
       "focos": 21,
       "frp": 128.0
-    },
-    {
-      "id": "0809",
-      "nombre": "La Convencion",
-      "region": "Cusco",
-      "focos": 20,
-      "frp": 170.3
     },
     {
       "id": "1602",
@@ -2105,7 +2105,7 @@
     "avisos": 4,
     "rojos": 3,
     "rios_altos": 11,
-    "focos": 650,
+    "focos": 660,
     "distritos_riesgo_alto": 766
   }
 }
