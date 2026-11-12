@@ -1,6 +1,6 @@
 {
   "_": "Generado por pipeline/fuentes/peru_oficial.py. Datos oficiales tal como se publican.",
-  "actualizado": "2026-11-12T19:25:08Z",
+  "actualizado": "2026-11-12T19:58:38Z",
   "fallas": [
     "coen"
   ],
@@ -493,7 +493,7 @@
       }
     ],
     "url": "https://portal.indeci.gob.pe/emergencias/",
-    "leido": "2026-11-12T19:25:10Z"
+    "leido": "2026-11-12T19:58:39Z"
   },
   "escenario": {
     "vigente": true,
@@ -3178,7 +3178,7 @@
       }
     },
     "url": "https://sigrid.cenepred.gob.pe/sigridv3/escenario-aviso",
-    "leido": "2026-11-12T19:25:12Z"
+    "leido": "2026-11-12T19:58:42Z"
   },
   "quebradas": {
     "fecha": "2026-11-12",
@@ -3686,7 +3686,7 @@
     },
     "sin_cruce": 0,
     "url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico",
-    "leido": "2026-11-12T19:25:14Z"
+    "leido": "2026-11-12T19:58:44Z"
   },
   "hidro": {
     "avisos": [
@@ -3716,7 +3716,7 @@
       }
     ],
     "url": "https://www.senamhi.gob.pe/?p=aviso-hidrologico",
-    "leido": "2026-11-12T19:25:15Z"
+    "leido": "2026-11-12T19:58:45Z"
   },
   "ana_rios": {
     "estaciones": [
@@ -18308,7 +18308,7 @@
       }
     },
     "url": "https://visor.geoperu.gob.pe/",
-    "leido": "2026-11-12T19:25:16Z"
+    "leido": "2026-11-12T19:58:46Z"
   },
   "agua": {
     "total": 78,
@@ -19230,11 +19230,20 @@
       }
     },
     "url": "https://www.sunass.gob.pe/",
-    "leido": "2026-11-12T19:25:17Z"
+    "leido": "2026-11-12T19:58:47Z"
   },
   "incendios": {
-    "total": 26,
+    "total": 27,
     "lista": [
+      {
+        "fecha": "2026-11-12",
+        "hora": "14:00",
+        "lugar": "Andahuaylas, Apurimac",
+        "distrito": "030201",
+        "cobertura": " ",
+        "lat": -13.66555,
+        "lon": -73.37496
+      },
       {
         "fecha": "2026-11-12",
         "hora": "00:00",
@@ -19471,7 +19480,7 @@
       }
     ],
     "url": "https://geo.serfor.gob.pe/visor/",
-    "leido": "2026-11-12T19:25:18Z"
+    "leido": "2026-11-12T19:58:53Z"
   },
   "phisis": {
     "estaciones": [
@@ -21671,7 +21680,7 @@
       "clasificacion": 99.99
     },
     "url": "http://met.igp.gob.pe/variabclim/",
-    "leido": "2026-11-12T19:25:20Z"
+    "leido": "2026-11-12T19:58:55Z"
   },
   "dhn": {
     "generado": "2026-11-12T13:56:30Z",
@@ -22183,7 +22192,7 @@
         }
       ]
     },
-    "leido": "2026-11-12T19:25:21Z"
+    "leido": "2026-11-12T19:58:57Z"
   },
   "inaigem": {
     "estaciones": [
@@ -22221,7 +22230,7 @@
       }
     ],
     "url": "https://www.inaigem.gob.pe/",
-    "leido": "2026-11-12T19:25:22Z"
+    "leido": "2026-11-12T19:58:57Z"
   },
   "enfen_docs": {
     "docs": [
