@@ -2,8 +2,8 @@
   "fuentes": {
     "catalogo": {
       "estado": "ok",
-      "corrida": "2026-11-12T03:04:52Z",
-      "actualizado": "2026-11-12T03:04:52Z",
+      "corrida": "2026-11-12T05:29:41Z",
+      "actualizado": "2026-11-12T05:29:41Z",
       "regiones": 25,
       "capas_demo": [
         "lluvia",
@@ -23,8 +23,8 @@
     },
     "oisst": {
       "estado": "sin_cambios",
-      "corrida": "2026-11-12T03:04:26Z",
-      "actualizado": "2026-11-12T03:04:26Z",
+      "corrida": "2026-11-12T05:25:59Z",
+      "actualizado": "2026-11-12T05:25:59Z",
       "ultimo_dato": "2026-11-10",
       "archivos": {
         "2026": "Wed, 11 Nov 2026 17:36:55 GMT",
@@ -46,43 +46,43 @@
     },
     "serie_tsm": {
       "estado": "ok",
-      "corrida": "2026-11-12T03:04:52Z",
-      "actualizado": "2026-11-12T03:04:52Z",
+      "corrida": "2026-11-12T05:29:41Z",
+      "actualizado": "2026-11-12T05:29:41Z",
       "ultimo_dato": "2026-11-10",
       "analogos_sin_datos": []
     },
     "estado": {
       "estado": "ok",
-      "corrida": "2026-11-12T05:25:56Z",
-      "actualizado": "2026-11-12T05:25:56Z",
+      "corrida": "2026-11-12T05:29:41Z",
+      "actualizado": "2026-11-12T05:29:41Z",
       "comunicado": "N° 19-2026",
       "ultimo_dato": "2026-10-30",
       "aviso": null
     },
     "cpc": {
       "estado": "sin_cambios",
-      "corrida": "2026-11-11T21:27:47Z",
-      "actualizado": "2026-11-11T21:27:47Z",
+      "corrida": "2026-11-12T05:26:00Z",
+      "actualizado": "2026-11-12T05:26:00Z",
       "ultimo_dato": "2026-09",
       "fuente": "NOAA CPC (ONI y RONI, trimestres móviles)"
     },
     "igp": {
       "estado": "sin_cambios",
-      "corrida": "2026-11-11T21:27:48Z",
-      "actualizado": "2026-11-11T21:27:48Z",
+      "corrida": "2026-11-12T05:26:01Z",
+      "actualizado": "2026-11-12T05:26:01Z",
       "ultimo_dato": "2026-09",
       "fuente": "IGP / ENFEN (ICEN, Nota Técnica 2024)"
     },
     "mapa_tsm": {
       "estado": "sin_cambios",
-      "corrida": "2026-11-12T03:04:52Z",
-      "actualizado": "2026-11-12T03:04:52Z",
+      "corrida": "2026-11-12T05:29:41Z",
+      "actualizado": "2026-11-12T05:29:41Z",
       "ultimo_dato": "2026-11-10"
     },
     "ia": {
       "estado": "sin_cambios",
-      "corrida": "2026-11-12T03:04:56Z",
-      "actualizado": "2026-11-12T03:04:56Z",
+      "corrida": "2026-11-12T05:29:44Z",
+      "actualizado": "2026-11-12T05:29:44Z",
       "modelo": "simulado:openai/gpt-4o-mini",
       "generados": 2,
       "rechazados": 0,
@@ -92,24 +92,24 @@
     },
     "serie_indices": {
       "estado": "ok",
-      "corrida": "2026-11-12T03:04:52Z",
-      "actualizado": "2026-11-12T03:04:52Z",
+      "corrida": "2026-11-12T05:29:41Z",
+      "actualizado": "2026-11-12T05:29:41Z",
       "ultimo_dato": "2026-09",
       "meses": 921
     },
     "openmeteo": {
-      "estado": "sin_cambios",
-      "corrida": "2026-11-12T03:04:27Z",
-      "actualizado": "2026-11-12T03:04:27Z",
-      "ultimo_dato": "2026-11-11",
+      "estado": "ok",
+      "corrida": "2026-11-12T05:28:38Z",
+      "actualizado": "2026-11-12T05:28:38Z",
+      "ultimo_dato": "2026-11-12",
       "unidades": 220,
-      "emitido": "2026-11-11T21:30:22Z",
+      "emitido": "2026-11-12T05:28:38Z",
       "fuente": "Open-Meteo (modelos globales)"
     },
     "firms": {
       "estado": "ok",
-      "corrida": "2026-11-12T03:04:27Z",
-      "actualizado": "2026-11-12T03:04:27Z",
+      "corrida": "2026-11-12T05:26:06Z",
+      "actualizado": "2026-11-12T05:26:06Z",
       "ultimo_dato": "2026-11-11",
       "focos_7d": 926,
       "fuente": "NASA FIRMS, VIIRS NOAA-20"
@@ -133,22 +133,22 @@
     },
     "oleaje": {
       "estado": "ok",
-      "corrida": "2026-11-11T21:30:23Z",
-      "actualizado": "2026-11-11T21:30:23Z",
-      "ultimo_dato": "2026-11-11",
+      "corrida": "2026-11-12T05:28:40Z",
+      "actualizado": "2026-11-12T05:28:40Z",
+      "ultimo_dato": "2026-11-12",
       "fuente": "Open-Meteo Marine"
     },
     "noticias": {
       "estado": "ok",
-      "corrida": "2026-11-12T05:25:41Z",
-      "actualizado": "2026-11-12T05:25:41Z",
+      "corrida": "2026-11-12T05:28:49Z",
+      "actualizado": "2026-11-12T05:28:49Z",
       "ultimo_dato": "2026-11-12",
       "fuente": "Google Noticias (RSS), titulares"
     },
     "oceano_atm": {
       "estado": "ok",
-      "corrida": "2026-11-11T21:27:52Z",
-      "actualizado": "2026-11-11T21:27:52Z",
+      "corrida": "2026-11-12T05:26:05Z",
+      "actualizado": "2026-11-12T05:26:05Z",
       "ultimo_dato": "2026-10",
       "dif_cpc": {
         "n12": 0.06,
@@ -158,9 +158,9 @@
     },
     "rios": {
       "estado": "ok",
-      "corrida": "2026-11-11T21:30:22Z",
-      "actualizado": "2026-11-11T21:30:22Z",
-      "ultimo_dato": "2026-11-11",
+      "corrida": "2026-11-12T05:28:39Z",
+      "actualizado": "2026-11-12T05:28:39Z",
+      "ultimo_dato": "2026-11-12",
       "niveles": {
         "normal": 19,
         "elevado": 10,
@@ -178,38 +178,38 @@
     },
     "clima": {
       "estado": "sin_cambios",
-      "corrida": "2026-11-12T03:04:27Z",
-      "actualizado": "2026-11-12T03:04:27Z",
+      "corrida": "2026-11-12T05:28:40Z",
+      "actualizado": "2026-11-12T05:28:40Z",
       "ultimo_dato": "2026-09",
       "fuente": "NASA POWER",
       "mes": "2026-11"
     },
     "panorama": {
       "estado": "ok",
-      "corrida": "2026-11-12T05:25:56Z",
-      "actualizado": "2026-11-12T05:25:56Z",
+      "corrida": "2026-11-12T05:29:44Z",
+      "actualizado": "2026-11-12T05:29:44Z",
       "ultimo_dato": "2026-11-12"
     },
     "peru_oficial": {
       "estado": "ok",
-      "corrida": "2026-11-12T05:25:21Z",
-      "actualizado": "2026-11-12T05:25:21Z",
+      "corrida": "2026-11-12T05:29:03Z",
+      "actualizado": "2026-11-12T05:29:03Z",
       "ultimo_dato": "2026-11-12",
       "aviso": "fallaron: coen, escenario"
     },
     "internacional": {
       "estado": "ok",
-      "corrida": "2026-11-11T21:31:10Z",
-      "actualizado": "2026-11-11T21:31:10Z",
+      "corrida": "2026-11-12T05:29:41Z",
+      "actualizado": "2026-11-12T05:29:41Z",
       "ultimo_dato": "2026-10-08",
       "aviso": null
     },
     "rios_monitoreo": {
       "estado": "ok",
-      "corrida": "2026-11-12T05:25:56Z",
-      "actualizado": "2026-11-12T05:25:56Z",
+      "corrida": "2026-11-12T05:29:44Z",
+      "actualizado": "2026-11-12T05:29:44Z",
       "ultimo_dato": "2026-11-12"
     }
   },
-  "generado": "2026-11-12T05:25:56Z"
+  "generado": "2026-11-12T05:29:44Z"
 }
