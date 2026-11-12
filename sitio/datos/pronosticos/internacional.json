@@ -1,21 +1,15 @@
 {
   "_": "Generado por pipeline/fuentes/internacional.py. Cada bloque con su centro, fecha y enlace.",
-  "actualizado": "2026-11-12T11:24:27Z",
+  "actualizado": "2026-11-12T18:31:04Z",
   "fallas": [],
   "cpc": {
-    "emitido": "2026-10-08",
+    "emitido": "2026-11-12",
     "estado": "El Niño Advisory",
-    "sinopsis": "El Niño continues to strengthen, with a strong-to-very strong El Niño likely through January-March 2027 (remaining greater than an 83% chance).",
-    "proxima": "2026-11-12",
+    "sinopsis": "El Niño continues to strengthen, with a strong-to-very strong El Niño likely through January-March 2027 (remaining greater than a 79% chance).",
+    "proxima": "2026-12-10",
     "url": "https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/enso_advisory/ensodisc.shtml",
     "estado_es": "Advertencia de El Niño",
     "probabilidades": [
-      {
-        "trimestre": "SON",
-        "nina": 0.0,
-        "neutral": 0.0,
-        "nino": 100.0
-      },
       {
         "trimestre": "OND",
         "nina": 0.0,
@@ -49,129 +43,135 @@
       {
         "trimestre": "MAM",
         "nina": 0.0,
-        "neutral": 15.0,
-        "nino": 85.0
+        "neutral": 20.0,
+        "nino": 80.0
       },
       {
         "trimestre": "AMJ",
         "nina": 1.0,
-        "neutral": 54.0,
-        "nino": 45.0
+        "neutral": 61.0,
+        "nino": 38.0
       },
       {
         "trimestre": "MJJ",
         "nina": 13.0,
-        "neutral": 70.0,
-        "nino": 17.0
+        "neutral": 75.0,
+        "nino": 12.0
+      },
+      {
+        "trimestre": "JJA",
+        "nina": 33.0,
+        "neutral": 61.0,
+        "nino": 6.0
       }
     ],
     "percentiles": [
       {
-        "trimestre": "SON",
-        "p": [
-          2.18,
-          2.29,
-          2.35,
-          2.47,
-          2.59,
-          2.65,
-          2.76
-        ]
-      },
-      {
         "trimestre": "OND",
         "p": [
-          2.25,
-          2.43,
-          2.54,
-          2.74,
-          2.94,
-          3.05,
-          3.23
+          2.19,
+          2.31,
+          2.38,
+          2.5,
+          2.63,
+          2.7,
+          2.82
         ]
       },
       {
         "trimestre": "NDJ",
         "p": [
           2.0,
-          2.24,
-          2.39,
-          2.65,
-          2.92,
-          3.06,
-          3.31
+          2.2,
+          2.31,
+          2.53,
+          2.75,
+          2.87,
+          3.07
         ]
       },
       {
         "trimestre": "DJF",
         "p": [
-          1.58,
-          1.87,
-          2.04,
-          2.36,
-          2.68,
-          2.85,
-          3.14
+          1.59,
+          1.85,
+          2.0,
+          2.28,
+          2.56,
+          2.71,
+          2.97
         ]
       },
       {
         "trimestre": "JFM",
         "p": [
-          1.13,
-          1.42,
-          1.59,
-          1.9,
-          2.22,
-          2.39,
-          2.67
+          1.08,
+          1.34,
+          1.5,
+          1.79,
+          2.08,
+          2.24,
+          2.5
         ]
       },
       {
         "trimestre": "FMA",
         "p": [
-          0.66,
-          0.91,
-          1.05,
-          1.33,
-          1.6,
-          1.75,
-          2.0
+          0.6,
+          0.83,
+          0.97,
+          1.23,
+          1.49,
+          1.62,
+          1.86
         ]
       },
       {
         "trimestre": "MAM",
         "p": [
-          0.23,
-          0.45,
-          0.58,
-          0.83,
-          1.08,
-          1.21,
-          1.43
+          0.18,
+          0.39,
+          0.51,
+          0.74,
+          0.98,
+          1.1,
+          1.31
         ]
       },
       {
         "trimestre": "AMJ",
         "p": [
-          -0.22,
-          0.01,
-          0.14,
-          0.4,
-          0.66,
-          0.79,
-          1.02
+          -0.24,
+          -0.02,
+          0.1,
+          0.34,
+          0.58,
+          0.71,
+          0.92
         ]
       },
       {
         "trimestre": "MJJ",
         "p": [
-          -0.68,
+          -0.65,
           -0.41,
-          -0.26,
-          0.03,
-          0.32,
-          0.48,
-          0.74
+          -0.27,
+          -0.01,
+          0.26,
+          0.4,
+          0.64
+        ]
+      },
+      {
+        "trimestre": "JJA",
+        "p": [
+          -1.01,
+          -0.73,
+          -0.56,
+          -0.25,
+          0.06,
+          0.23,
+          0.51
         ]
       }
     ],
@@ -188,20 +188,6 @@
         "Index ≥ 2.0°C"
       ],
       "filas": [
-        {
-          "trimestre": "SON",
-          "p": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            100.0
-          ]
-        },
         {
           "trimestre": "OND",
           "p": [
@@ -239,9 +225,9 @@
             0.0,
             0.0,
             0.0,
-            3.0,
-            16.0,
-            81.0
+            2.0,
+            19.0,
+            79.0
           ]
         },
         {
@@ -252,10 +238,10 @@
             0.0,
             0.0,
             0.0,
-            2.0,
-            15.0,
-            37.0,
-            46.0
+            3.0,
+            18.0,
+            44.0,
+            35.0
           ]
         },
         {
@@ -266,10 +252,10 @@
             0.0,
             0.0,
             2.0,
-            16.0,
-            44.0,
-            32.0,
-            6.0
+            21.0,
+            49.0,
+            25.0,
+            3.0
           ]
         },
         {
@@ -279,10 +265,10 @@
             0.0,
             0.0,
             0.0,
-            15.0,
-            48.0,
-            32.0,
-            5.0,
+            20.0,
+            53.0,
+            25.0,
+            2.0,
             0.0
           ]
         },
@@ -293,9 +279,9 @@
             0.0,
             0.0,
             1.0,
-            54.0,
-            38.0,
-            7.0,
+            61.0,
+            34.0,
+            4.0,
             0.0,
             0.0
           ]
@@ -307,9 +293,23 @@
             0.0,
             1.0,
             12.0,
-            70.0,
-            15.0,
-            2.0,
+            75.0,
+            11.0,
+            1.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "trimestre": "JJA",
+          "p": [
+            0.0,
+            0.0,
+            6.0,
+            27.0,
+            61.0,
+            6.0,
+            0.0,
             0.0,
             0.0
           ]
@@ -519,18 +519,12 @@
   },
   "mjo": {
     "ultimo": {
-      "fecha": "2026-11-07",
-      "pc1": 0.435,
-      "pc2": 0.184,
-      "amplitud": 0.47
+      "fecha": "2026-11-08",
+      "pc1": 0.46,
+      "pc2": 0.4,
+      "amplitud": 0.61
     },
     "serie": [
-      {
-        "fecha": "2026-09-24",
-        "pc1": 0.335,
-        "pc2": 0.41,
-        "amplitud": 0.53
-      },
       {
         "fecha": "2026-09-25",
         "pc1": 0.509,
@@ -773,27 +767,33 @@
       },
       {
         "fecha": "2026-11-04",
-        "pc1": 0.299,
-        "pc2": 0.217,
-        "amplitud": 0.37
+        "pc1": 0.345,
+        "pc2": 0.302,
+        "amplitud": 0.46
       },
       {
         "fecha": "2026-11-05",
-        "pc1": 0.343,
-        "pc2": 0.13,
-        "amplitud": 0.37
+        "pc1": 0.389,
+        "pc2": 0.236,
+        "amplitud": 0.45
       },
       {
         "fecha": "2026-11-06",
-        "pc1": 0.383,
-        "pc2": 0.176,
-        "amplitud": 0.42
+        "pc1": 0.43,
+        "pc2": 0.29,
+        "amplitud": 0.52
       },
       {
         "fecha": "2026-11-07",
-        "pc1": 0.435,
-        "pc2": 0.184,
-        "amplitud": 0.47
+        "pc1": 0.481,
+        "pc2": 0.316,
+        "amplitud": 0.58
+      },
+      {
+        "fecha": "2026-11-08",
+        "pc1": 0.46,
+        "pc2": 0.4,
+        "amplitud": 0.61
       }
     ],
     "activa": false,
@@ -920,9 +920,9 @@
       "titulo": "Pronóstico de la MJO, ECMWF corregido",
       "fuente": "NOAA CPC",
       "origen": "https://www.cpc.ncep.noaa.gov/products/precip/mjo/img/ECMF_BC.png",
-      "huella": "018e88e20123",
+      "huella": "939e5c8567a4",
       "archivo": "mjo.png",
-      "fecha": "2026-11-11"
+      "fecha": "2026-11-12"
     },
     {
       "id": "gth",
@@ -938,9 +938,9 @@
       "titulo": "Lluvia pronosticada a 10 días, Sudamérica",
       "fuente": "CIIFEN (CHIRPS-GEFS)",
       "origen": "https://ciifen.org/wp-content/uploads/imagenes_clima/pronostico/pron_precipitacion/chirps_forecast_10days.png",
-      "huella": "eef939e073fb",
+      "huella": "392c2802397b",
       "archivo": "chirps10.png",
-      "fecha": "2026-11-11"
+      "fecha": "2026-11-12"
     }
   ]
 }
