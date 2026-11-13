@@ -1,6 +1,6 @@
 {
   "_": "Generado por pipeline/fuentes/peru_oficial.py. Datos oficiales tal como se publican.",
-  "actualizado": "2026-11-13T18:24:08Z",
+  "actualizado": "2026-11-13T18:26:34Z",
   "fallas": [
     "coen"
   ],
@@ -422,6 +422,11 @@
   "indeci_rss": {
     "reportes": [
       {
+        "titulo": "REPORTE COMPLEMENTARIO N.º 15887 – 13/11/2026 / COEN – INDECI / 11:30 HORAS (Reporte N.º 2) INCENDIO URBANO EN EL DISTRITO DE VILLA MARÍA DEL TRIUNFO – LIMA",
+        "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-o-15514-5-11-2026-coen-indeci-0720-horas-reporte-n-o-1-incendio-urbano-en-el-distrito-de-villa-maria-del-triunfo-lima/",
+        "fecha": "2026-11-13T18:23"
+      },
+      {
         "titulo": "REPORTE PRELIMINAR N.° 1131 – 13/11/2026 / COEN-INDECI / 12:00 HORAS SISMO DE M 5.9 CON EPICENTRO EN EL MAR CON REFERENCIA A 102 KM AL O DEL DISTRITO DE SAN JUAN DE MARCONA – ICA",
         "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-preliminar-n-1131-13-11-2026-coen-indeci-1200-horas-sismo-de-m-5-9-con-epicentro-en-el-mar-con-referencia-a-102-km-al-o-del-distrito-de-san-juan-de-marcona-ica/",
         "fecha": "2026-11-13T17:20"
@@ -485,15 +490,10 @@
         "titulo": "REPORTE COMPLEMENTARIO N.º 15879 – 13/11/2026 / COEN – INDECI / 06:20 HORAS (Reporte N.° 5) LLUVIAS INTENSAS EN EL DISTRITO DE CANOAS DE PUNTA SAL – TUMBES",
         "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-o-15100-28-10-2026-coen-indeci-0535-horas-reporte-n-1-lluvias-intensas-en-el-distrito-de-canoas-de-punta-sal-tumbes/",
         "fecha": "2026-11-13T11:55"
-      },
-      {
-        "titulo": "REPORTE COMPLEMENTARIO N.º 15878 – 13/11/2026 / COEN – INDECI / 06:00 HORAS (Reporte N.° 3) LLUVIAS INTENSAS EN EL DISTRITO DE ZARUMILLA – TUMBES",
-        "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-o-15731-10-11-2026-coen-indeci-0505-horas-reporte-n-2-lluvias-intensas-en-el-distrito-de-zarumilla-tumbes/",
-        "fecha": "2026-11-13T11:52"
       }
     ],
     "url": "https://portal.indeci.gob.pe/emergencias/",
-    "leido": "2026-11-13T18:24:10Z"
+    "leido": "2026-11-13T18:26:35Z"
   },
   "escenario": {
     "vigente": true,
@@ -3178,7 +3178,7 @@
       }
     },
     "url": "https://sigrid.cenepred.gob.pe/sigridv3/escenario-aviso",
-    "leido": "2026-11-13T18:24:10Z"
+    "leido": "2026-11-13T18:26:37Z"
   },
   "quebradas": {
     "fecha": "2026-11-13",
@@ -4074,7 +4074,7 @@
     },
     "sin_cruce": 0,
     "url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico",
-    "leido": "2026-11-13T18:24:15Z"
+    "leido": "2026-11-13T18:26:41Z"
   },
   "hidro": {
     "avisos": [
@@ -4104,7 +4104,7 @@
       }
     ],
     "url": "https://www.senamhi.gob.pe/?p=aviso-hidrologico",
-    "leido": "2026-11-13T18:24:15Z"
+    "leido": "2026-11-13T18:26:42Z"
   },
   "ana_rios": {
     "estaciones": [
@@ -18621,7 +18621,7 @@
       }
     },
     "url": "https://visor.geoperu.gob.pe/",
-    "leido": "2026-11-13T18:24:25Z"
+    "leido": "2026-11-13T18:26:43Z"
   },
   "agua": {
     "total": 72,
@@ -19519,7 +19519,7 @@
       }
     },
     "url": "https://www.sunass.gob.pe/",
-    "leido": "2026-11-13T18:24:26Z"
+    "leido": "2026-11-13T18:26:44Z"
   },
   "incendios": {
     "total": 42,
@@ -19904,7 +19904,7 @@
       }
     ],
     "url": "https://geo.serfor.gob.pe/visor/",
-    "leido": "2026-11-13T18:24:26Z"
+    "leido": "2026-11-13T18:26:45Z"
   },
   "phisis": {
     "estaciones": [
@@ -22104,7 +22104,7 @@
       "clasificacion": 99.99
     },
     "url": "http://met.igp.gob.pe/variabclim/",
-    "leido": "2026-11-13T18:24:32Z"
+    "leido": "2026-11-13T18:26:47Z"
   },
   "dhn": {
     "generado": "2026-11-13T13:50:16Z",
@@ -22616,7 +22616,7 @@
         }
       ]
     },
-    "leido": "2026-11-13T18:24:32Z"
+    "leido": "2026-11-13T18:26:48Z"
   },
   "inaigem": {
     "estaciones": [
@@ -22654,7 +22654,7 @@
       }
     ],
     "url": "https://www.inaigem.gob.pe/",
-    "leido": "2026-11-13T18:24:33Z"
+    "leido": "2026-11-13T18:26:49Z"
   },
   "enfen_docs": {
     "docs": [
