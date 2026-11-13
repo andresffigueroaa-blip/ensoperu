@@ -1,6 +1,6 @@
 {
   "_": "Generado por pipeline/fuentes/peru_oficial.py. Datos oficiales tal como se publican.",
-  "actualizado": "2026-11-13T00:26:27Z",
+  "actualizado": "2026-11-13T01:10:47Z",
   "fallas": [
     "coen"
   ],
@@ -422,6 +422,16 @@
   "indeci_rss": {
     "reportes": [
       {
+        "titulo": "REPORTE COMPLEMENTARIO N.° 15855 – 12/11/2026 / COEN – INDECI / 19:00 HORAS (Reporte N.° 2) HELADA EN EL DISTRITO DE CARHUAMAYO – JUNÍN",
+        "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-15272-30-10-2026-coen-indeci-1830-horas-reporte-n-1-helada-en-el-distrito-de-carhuamayo-junin/",
+        "fecha": "2026-11-13T00:32"
+      },
+      {
+        "titulo": "INFORME DE EMERGENCIA N.º 2570 – 12/11/2026 / COEN – INDECI / 18:30 HORAS (Informe N.° 1) LLUVIAS INTENSAS EN EL DISTRITO DE PALCAZÚ – PASCO",
+        "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-o-15170-29-10-2026-coen-indeci-0015-horas-reporte-n-1-lluvias-intensas-en-el-distrito-de-palcazu-pasco/",
+        "fecha": "2026-11-13T00:27"
+      },
+      {
         "titulo": "INFORME DE EMERGENCIA N.º 2569 – 12/11/2026 / COEN – INDECI / 18:20 HORAS (Informe N.° 1) LLUVIAS INTENSAS EN EL DISTRITO DE PALCAZÚ – PASCO",
         "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-o-15028-27-10-2026-coen-indeci-0400-horas-reporte-n-1-lluvias-intensas-en-el-distrito-de-palcazu-pasco/",
         "fecha": "2026-11-13T00:23"
@@ -480,20 +490,10 @@
         "titulo": "REPORTE COMPLEMENTARIO N.° 15847 – 12/11/2026 / COEN – INDECI / 15:40 HORAS (Reporte N.º 2) HUAICO EN EL DISTRITO DE CELENDÍN – CAJAMARCA",
         "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-14022-12-10-2026-coen-indeci-2255-horas-reporte-n-o-1-huaico-en-el-distrito-de-celendin-cajamarca/",
         "fecha": "2026-11-12T21:29"
-      },
-      {
-        "titulo": "REPORTE PRELIMINAR N.° 1130 – 12/11/2026 / COEN – INDECI / 15:20 HORAS DÉFICIT HÍDRICO EN EL DISTRITO DE VIZCATÁN DEL ENE – JUNÍN",
-        "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-preliminar-n-1130-12-11-2026-coen-indeci-1520-horas-deficit-hidrico-en-el-distrito-de-vizcatan-del-ene-junin/",
-        "fecha": "2026-11-12T20:53"
-      },
-      {
-        "titulo": "REPORTE COMPLEMENTARIO N.º 15846 – 12/11/2026 / COEN – INDECI / 15:30 HORAS (Reporte N.° 1) INCENDIO FORESTAL EL DISTRITO DE SURCO – LIMA",
-        "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-preliminar-n-o-1127-11-11-2026-coen-indeci-2205-horas-incendio-forestal-el-distrito-de-surco-lima/",
-        "fecha": "2026-11-12T20:47"
       }
     ],
     "url": "https://portal.indeci.gob.pe/emergencias/",
-    "leido": "2026-11-13T00:26:29Z"
+    "leido": "2026-11-13T01:10:49Z"
   },
   "escenario": {
     "vigente": true,
@@ -3178,7 +3178,7 @@
       }
     },
     "url": "https://sigrid.cenepred.gob.pe/sigridv3/escenario-aviso",
-    "leido": "2026-11-13T00:26:31Z"
+    "leido": "2026-11-13T01:10:51Z"
   },
   "quebradas": {
     "fecha": "2026-11-12",
@@ -3686,7 +3686,7 @@
     },
     "sin_cruce": 0,
     "url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico",
-    "leido": "2026-11-13T00:26:33Z"
+    "leido": "2026-11-13T01:10:53Z"
   },
   "hidro": {
     "avisos": [
@@ -3716,7 +3716,7 @@
       }
     ],
     "url": "https://www.senamhi.gob.pe/?p=aviso-hidrologico",
-    "leido": "2026-11-13T00:26:33Z"
+    "leido": "2026-11-13T01:10:53Z"
   },
   "ana_rios": {
     "estaciones": [
@@ -18309,7 +18309,7 @@
       }
     },
     "url": "https://visor.geoperu.gob.pe/",
-    "leido": "2026-11-13T00:26:34Z"
+    "leido": "2026-11-13T01:10:54Z"
   },
   "agua": {
     "total": 58,
@@ -19131,11 +19131,20 @@
       }
     },
     "url": "https://www.sunass.gob.pe/",
-    "leido": "2026-11-13T00:26:37Z"
+    "leido": "2026-11-13T01:10:56Z"
   },
   "incendios": {
-    "total": 27,
+    "total": 28,
     "lista": [
+      {
+        "fecha": "2026-11-12",
+        "hora": "19:20",
+        "lugar": "Chuquibamba, Amazonas",
+        "distrito": "010106",
+        "cobertura": "Cobertura Forestal",
+        "lat": -6.9284,
+        "lon": -77.89411
+      },
       {
         "fecha": "2026-11-12",
         "hora": "14:00",
@@ -19381,7 +19390,7 @@
       }
     ],
     "url": "https://geo.serfor.gob.pe/visor/",
-    "leido": "2026-11-13T00:26:38Z"
+    "leido": "2026-11-13T01:10:57Z"
   },
   "phisis": {
     "estaciones": [
@@ -21581,7 +21590,7 @@
       "clasificacion": 99.99
     },
     "url": "http://met.igp.gob.pe/variabclim/",
-    "leido": "2026-11-13T00:26:39Z"
+    "leido": "2026-11-13T01:10:59Z"
   },
   "dhn": {
     "generado": "2026-11-12T13:56:30Z",
@@ -22093,7 +22102,7 @@
         }
       ]
     },
-    "leido": "2026-11-13T00:26:40Z"
+    "leido": "2026-11-13T01:11:00Z"
   },
   "inaigem": {
     "estaciones": [
@@ -22131,7 +22140,7 @@
       }
     ],
     "url": "https://www.inaigem.gob.pe/",
-    "leido": "2026-11-13T00:26:40Z"
+    "leido": "2026-11-13T01:11:00Z"
   },
   "enfen_docs": {
     "docs": [
