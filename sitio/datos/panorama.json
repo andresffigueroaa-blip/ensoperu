@@ -1,6 +1,6 @@
 {
   "_": "Generado por pipeline/productos/panorama.py. No editar a mano.",
-  "generado": "2026-11-13T00:26:09Z",
+  "generado": "2026-11-13T00:27:02Z",
   "fecha": "2026-11-13",
   "lectura": [
     {
@@ -28,15 +28,15 @@
       "url": "https://open-meteo.com/en/docs"
     },
     {
-      "t": "Ríos: el modelo global GloFAS pronostica caudales por encima de su percentil 90 anual (1984-2023) en 8, entre ellos Tumbes, Chira, Chicama, Zaña; es orientativo. En la última lectura, ninguna estación de la ANA ni del SENAMHI está sobre su umbral de crecida.",
+      "t": "Ríos: el modelo global GloFAS pronostica caudales por encima de su percentil 90 anual (1984-2023) en 8, entre ellos Tumbes, Chira, Chicama, Piura; es orientativo. En la última lectura, ninguna estación de la ANA ni del SENAMHI está sobre su umbral de crecida.",
       "fuente": "GloFAS (Copernicus) vía Open-Meteo; lecturas de la ANA y el SENAMHI",
-      "fecha": "2026-11-13T00:26:09Z",
+      "fecha": "2026-11-13T00:27:02Z",
       "url": "https://www.globalfloods.eu/"
     },
     {
       "t": "CENEPRED: 224 distritos en riesgo muy alto por lluvia, hasta el 14 de noviembre; en ellos viven 1 197 346 personas (suma ENSO Perú del escenario, sin repetir distritos).",
       "fuente": "CENEPRED, escenarios de riesgo ante el aviso de lluvias",
-      "fecha": "2026-11-13T00:23:59Z",
+      "fecha": "2026-11-13T00:26:31Z",
       "url": "https://sigrid.cenepred.gob.pe/sigridv3/escenario-aviso"
     },
     {
@@ -1864,7 +1864,7 @@
       "nombre": "Tumbes",
       "lugar": "El Tigre",
       "region": "24",
-      "hoy": 168.04,
+      "hoy": 114.35,
       "pico": 2088.3,
       "fecha_pico": "2026-11-17",
       "p90": 591.9,
@@ -1876,7 +1876,7 @@
       "nombre": "Chira",
       "lugar": "Ardilla",
       "region": "20",
-      "hoy": 198.53,
+      "hoy": 135.46,
       "pico": 2289.87,
       "fecha_pico": "2026-11-25",
       "p90": 932.2,
@@ -1888,7 +1888,7 @@
       "nombre": "Chicama",
       "lugar": "Salinar",
       "region": "13",
-      "hoy": 69.96,
+      "hoy": 66.61,
       "pico": 221.33,
       "fecha_pico": "2026-11-16",
       "p90": 151.1,
@@ -1896,11 +1896,23 @@
       "nivel": "elevado"
     },
     {
+      "id": "piura",
+      "nombre": "Piura",
+      "lugar": "Puente Sánchez Cerro",
+      "region": "20",
+      "hoy": 175.2,
+      "pico": 315.96,
+      "fecha_pico": "2026-11-27",
+      "p90": 230.7,
+      "p99": 1204.6,
+      "nivel": "elevado"
+    },
+    {
       "id": "zana",
       "nombre": "Zaña",
       "lugar": "Batán",
       "region": "14",
-      "hoy": 35.81,
+      "hoy": 32.11,
       "pico": 60.8,
       "fecha_pico": "2026-11-17",
       "p90": 45.1,
@@ -1908,15 +1920,15 @@
       "nivel": "elevado"
     },
     {
-      "id": "piura",
-      "nombre": "Piura",
-      "lugar": "Puente Sánchez Cerro",
-      "region": "20",
-      "hoy": 212.8,
-      "pico": 302.39,
-      "fecha_pico": "2026-11-26",
-      "p90": 230.7,
-      "p99": 1204.6,
+      "id": "lurin",
+      "nombre": "Lurín",
+      "lugar": "Antapucro",
+      "region": "15",
+      "hoy": 29.27,
+      "pico": 47.53,
+      "fecha_pico": "2026-11-27",
+      "p90": 40.3,
+      "p99": 64.9,
       "nivel": "elevado"
     },
     {
@@ -1924,7 +1936,7 @@
       "nombre": "Virú",
       "lugar": "Huacapongo",
       "region": "13",
-      "hoy": 32.42,
+      "hoy": 32.11,
       "pico": 45.67,
       "fecha_pico": "2026-11-26",
       "p90": 41.8,
@@ -1936,23 +1948,11 @@
       "nombre": "Pativilca",
       "lugar": "Yanapampa",
       "region": "15",
-      "hoy": 131.13,
+      "hoy": 141.89,
       "pico": 205.54,
       "fecha_pico": "2026-11-26",
       "p90": 197.2,
       "p99": 363.9,
-      "nivel": "elevado"
-    },
-    {
-      "id": "lurin",
-      "nombre": "Lurín",
-      "lugar": "Antapucro",
-      "region": "15",
-      "hoy": 28.38,
-      "pico": 40.5,
-      "fecha_pico": "2026-11-26",
-      "p90": 40.3,
-      "p99": 64.9,
       "nivel": "elevado"
     }
   ],

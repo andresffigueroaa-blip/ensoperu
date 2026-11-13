@@ -1,9 +1,8 @@
 {
   "_": "Generado por pipeline/fuentes/peru_oficial.py. Datos oficiales tal como se publican.",
-  "actualizado": "2026-11-13T00:23:56Z",
+  "actualizado": "2026-11-13T00:26:27Z",
   "fallas": [
-    "coen",
-    "ana_embalses"
+    "coen"
   ],
   "fenomeno": {
     "fecha": "30 de octubre del 2026",
@@ -423,6 +422,11 @@
   "indeci_rss": {
     "reportes": [
       {
+        "titulo": "INFORME DE EMERGENCIA N.º 2569 – 12/11/2026 / COEN – INDECI / 18:20 HORAS (Informe N.° 1) LLUVIAS INTENSAS EN EL DISTRITO DE PALCAZÚ – PASCO",
+        "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-o-15028-27-10-2026-coen-indeci-0400-horas-reporte-n-1-lluvias-intensas-en-el-distrito-de-palcazu-pasco/",
+        "fecha": "2026-11-13T00:23"
+      },
+      {
         "titulo": "INFORME DE EMERGENCIA N.° 2568 – 12/11/2026 / COEN – INDECI / 17:30 HORAS (Informe N.º 1) VIENTOS FUERTES EN EL DISTRITO DE ICHUÑA – MOQUEGUA",
         "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-12429-17-9-2026-coen-indeci-0705-horas-reporte-n-o-1-vientos-fuertes-en-el-distrito-de-ichuna-moquegua/",
         "fecha": "2026-11-13T00:18"
@@ -486,15 +490,10 @@
         "titulo": "REPORTE COMPLEMENTARIO N.º 15846 – 12/11/2026 / COEN – INDECI / 15:30 HORAS (Reporte N.° 1) INCENDIO FORESTAL EL DISTRITO DE SURCO – LIMA",
         "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-preliminar-n-o-1127-11-11-2026-coen-indeci-2205-horas-incendio-forestal-el-distrito-de-surco-lima/",
         "fecha": "2026-11-12T20:47"
-      },
-      {
-        "titulo": "REPORTE COMPLEMENTARIO N.° 15845 – 12/11/2026 / COEN-INDECI / 15:15 HORAS (Reporte N° 2) DÉFICIT HÍDRICO EN EL DISTRITO DE SIMON BOLIVAR – PASCO",
-        "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-15772-10-11-2026-coen-indeci-2130-horas-reporte-n-1-deficit-hidrico-en-el-distrito-de-simon-bolivar-pasco/",
-        "fecha": "2026-11-12T20:41"
       }
     ],
     "url": "https://portal.indeci.gob.pe/emergencias/",
-    "leido": "2026-11-13T00:23:59Z"
+    "leido": "2026-11-13T00:26:29Z"
   },
   "escenario": {
     "vigente": true,
@@ -3179,7 +3178,7 @@
       }
     },
     "url": "https://sigrid.cenepred.gob.pe/sigridv3/escenario-aviso",
-    "leido": "2026-11-13T00:23:59Z"
+    "leido": "2026-11-13T00:26:31Z"
   },
   "quebradas": {
     "fecha": "2026-11-12",
@@ -3687,7 +3686,7 @@
     },
     "sin_cruce": 0,
     "url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico",
-    "leido": "2026-11-13T00:24:01Z"
+    "leido": "2026-11-13T00:26:33Z"
   },
   "hidro": {
     "avisos": [
@@ -3717,7 +3716,7 @@
       }
     ],
     "url": "https://www.senamhi.gob.pe/?p=aviso-hidrologico",
-    "leido": "2026-11-13T00:24:01Z"
+    "leido": "2026-11-13T00:26:33Z"
   },
   "ana_rios": {
     "estaciones": [
@@ -18310,7 +18309,7 @@
       }
     },
     "url": "https://visor.geoperu.gob.pe/",
-    "leido": "2026-11-13T00:25:14Z"
+    "leido": "2026-11-13T00:26:34Z"
   },
   "agua": {
     "total": 58,
@@ -19132,7 +19131,7 @@
       }
     },
     "url": "https://www.sunass.gob.pe/",
-    "leido": "2026-11-13T00:25:15Z"
+    "leido": "2026-11-13T00:26:37Z"
   },
   "incendios": {
     "total": 27,
@@ -19382,7 +19381,7 @@
       }
     ],
     "url": "https://geo.serfor.gob.pe/visor/",
-    "leido": "2026-11-13T00:25:15Z"
+    "leido": "2026-11-13T00:26:38Z"
   },
   "phisis": {
     "estaciones": [
@@ -21582,7 +21581,7 @@
       "clasificacion": 99.99
     },
     "url": "http://met.igp.gob.pe/variabclim/",
-    "leido": "2026-11-13T00:25:16Z"
+    "leido": "2026-11-13T00:26:39Z"
   },
   "dhn": {
     "generado": "2026-11-12T13:56:30Z",
@@ -22094,7 +22093,7 @@
         }
       ]
     },
-    "leido": "2026-11-13T00:25:16Z"
+    "leido": "2026-11-13T00:26:40Z"
   },
   "inaigem": {
     "estaciones": [
@@ -22132,7 +22131,7 @@
       }
     ],
     "url": "https://www.inaigem.gob.pe/",
-    "leido": "2026-11-13T00:25:17Z"
+    "leido": "2026-11-13T00:26:40Z"
   },
   "enfen_docs": {
     "docs": [
