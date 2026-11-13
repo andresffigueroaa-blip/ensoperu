@@ -1,6 +1,6 @@
 {
   "_": "Generado por pipeline/fuentes/peru_oficial.py. Datos oficiales tal como se publican.",
-  "actualizado": "2026-11-13T14:24:12Z",
+  "actualizado": "2026-11-13T14:34:56Z",
   "fallas": [
     "coen"
   ],
@@ -493,7 +493,7 @@
       }
     ],
     "url": "https://portal.indeci.gob.pe/emergencias/",
-    "leido": "2026-11-13T14:24:15Z"
+    "leido": "2026-11-13T14:34:58Z"
   },
   "escenario": {
     "vigente": true,
@@ -3178,7 +3178,7 @@
       }
     },
     "url": "https://sigrid.cenepred.gob.pe/sigridv3/escenario-aviso",
-    "leido": "2026-11-13T14:24:19Z"
+    "leido": "2026-11-13T14:35:01Z"
   },
   "quebradas": {
     "fecha": "2026-11-12",
@@ -3686,7 +3686,7 @@
     },
     "sin_cruce": 0,
     "url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico",
-    "leido": "2026-11-13T14:24:21Z"
+    "leido": "2026-11-13T14:35:03Z"
   },
   "hidro": {
     "avisos": [
@@ -3716,7 +3716,7 @@
       }
     ],
     "url": "https://www.senamhi.gob.pe/?p=aviso-hidrologico",
-    "leido": "2026-11-13T14:24:22Z"
+    "leido": "2026-11-13T14:35:04Z"
   },
   "ana_rios": {
     "estaciones": [
@@ -18073,11 +18073,11 @@
       }
     },
     "url": "https://visor.geoperu.gob.pe/",
-    "leido": "2026-11-13T14:24:36Z"
+    "leido": "2026-11-13T14:35:05Z"
   },
   "agua": {
-    "total": 63,
-    "conexiones": 299506,
+    "total": 64,
+    "conexiones": 302113,
     "cortes": [
       {
         "eps": "SEDAPAL",
@@ -18380,6 +18380,16 @@
         "distrito": "100101"
       },
       {
+        "eps": "SEDAPAL",
+        "lugar": "San Juan De Miraflores, Lima",
+        "conexiones": 2454,
+        "tipo": "Imprevista",
+        "motivo": "Fuga en conexión",
+        "inicio": "2026-11-13",
+        "restablece": "2026-11-13",
+        "distrito": "150133"
+      },
+      {
         "eps": "EPS AGUAS DE LIMA NORTE S.A.",
         "lugar": "Vegueta, Lima",
         "conexiones": 2261,
@@ -18580,6 +18590,16 @@
         "distrito": "150501"
       },
       {
+        "eps": "EPS ILO S.A.",
+        "lugar": "Ilo, Moquegua",
+        "conexiones": 820,
+        "tipo": "Imprevista",
+        "motivo": "Fuga en conexión",
+        "inicio": "2026-11-13",
+        "restablece": "2026-11-13",
+        "distrito": "180301"
+      },
+      {
         "eps": "SEDALIB S.A.",
         "lugar": "Huanchaco, La Libertad",
         "conexiones": 814,
@@ -18598,16 +18618,6 @@
         "inicio": "2026-11-19",
         "restablece": "2026-11-20",
         "distrito": "020105"
-      },
-      {
-        "eps": "SEDAPAL",
-        "lugar": "San Juan De Miraflores, Lima",
-        "conexiones": 667,
-        "tipo": "Imprevista",
-        "motivo": "Mantenimiento de redes secundarias",
-        "inicio": "2026-11-12",
-        "restablece": "2026-11-13",
-        "distrito": "150133"
       },
       {
         "eps": "SEDALIB S.A.",
@@ -18668,16 +18678,6 @@
         "inicio": "2026-11-09",
         "restablece": "2026-11-13",
         "distrito": "240303"
-      },
-      {
-        "eps": "SEDAPAL",
-        "lugar": "Pachacamac, Lima",
-        "conexiones": 137,
-        "tipo": "Programada",
-        "motivo": "Limpieza y desinfección de reservorio/cisterna",
-        "inicio": "2026-11-16",
-        "restablece": "2026-11-17",
-        "distrito": "150123"
       }
     ],
     "distritos": {
@@ -18801,6 +18801,10 @@
         "cortes": 1,
         "conexiones": 2500
       },
+      "150133": {
+        "cortes": 1,
+        "conexiones": 2454
+      },
       "150812": {
         "cortes": 1,
         "conexiones": 2261
@@ -18881,6 +18885,10 @@
         "cortes": 1,
         "conexiones": 847
       },
+      "180301": {
+        "cortes": 1,
+        "conexiones": 820
+      },
       "130104": {
         "cortes": 1,
         "conexiones": 814
@@ -18888,10 +18896,6 @@
       "020105": {
         "cortes": 1,
         "conexiones": 793
-      },
-      "150133": {
-        "cortes": 1,
-        "conexiones": 667
       },
       "130105": {
         "cortes": 1,
@@ -18935,7 +18939,7 @@
       }
     },
     "url": "https://www.sunass.gob.pe/",
-    "leido": "2026-11-13T14:24:41Z"
+    "leido": "2026-11-13T14:35:07Z"
   },
   "incendios": {
     "total": 42,
@@ -19320,7 +19324,7 @@
       }
     ],
     "url": "https://geo.serfor.gob.pe/visor/",
-    "leido": "2026-11-13T14:24:43Z"
+    "leido": "2026-11-13T14:35:08Z"
   },
   "phisis": {
     "estaciones": [
@@ -21520,7 +21524,7 @@
       "clasificacion": 99.99
     },
     "url": "http://met.igp.gob.pe/variabclim/",
-    "leido": "2026-11-13T14:24:46Z"
+    "leido": "2026-11-13T14:35:10Z"
   },
   "dhn": {
     "generado": "2026-11-13T13:50:16Z",
@@ -22032,7 +22036,7 @@
         }
       ]
     },
-    "leido": "2026-11-13T14:24:47Z"
+    "leido": "2026-11-13T14:35:12Z"
   },
   "inaigem": {
     "estaciones": [
@@ -22070,7 +22074,7 @@
       }
     ],
     "url": "https://www.inaigem.gob.pe/",
-    "leido": "2026-11-13T14:24:48Z"
+    "leido": "2026-11-13T14:35:12Z"
   },
   "enfen_docs": {
     "docs": [
