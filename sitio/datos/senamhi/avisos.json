@@ -2,7 +2,7 @@
   "_": "Generado por pipeline/fuentes/senamhi.py. Avisos oficiales vigentes o por empezar.",
   "fuente": "SENAMHI, avisos meteorológicos",
   "url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico",
-  "leido": "2026-11-13T20:24:04Z",
+  "leido": "2026-11-13T21:23:56Z",
   "avisos": [
     {
       "numero": 464,
@@ -64,6 +64,27 @@
         "Junin",
         "Pasco",
         "Ucayali"
+      ]
+    },
+    {
+      "numero": 467,
+      "situacion": "emitido",
+      "titulo": "PRECIPITACIONES EN LA COSTA NORTE Y SIERRA",
+      "emitido": "2026-11-13",
+      "inicio": "2026-11-15",
+      "fin": "2026-11-17",
+      "nivel": "NARANJA",
+      "enlace": "https://www.senamhi.gob.pe/?p=aviso-meteorologico-vigente&a=2026&b=29367&c=00&d=SENA",
+      "texto": "El SENAMHI informa que, desde el domingo 15 hasta el martes 17 de noviembre, continuarán las precipitaciones (lluvias) de ligera a fuerte intensidad en la sierra. Se prevé la ocurrencia de granizo en zonas ubicadas por encima de los 2800 m s. n. m. en la sierra centro y sur. Estas precipitaciones estarán acompañadas de descargas eléctricas y ráfagas de viento con velocidades cercanas a los 40 km/h. Asimismo, en la costa norte se esperan lluvias de fuerte intensidad, principalmente en Tumbes y en la costa interior de Piura. El domingo 15 de noviembre, se prevén acumulados de lluvia entre 4 y 12 mm/día en la costa norte, entre 5 y 29 mm/día en la sierra norte, entre 6 y 13 mm/día en la sierra centro y valores cercanos a 13 mm/día en la sierra sur. El lunes 16 de noviembre, se prevén acumulados de lluvia entre 4 y 12 mm/día en la costa norte, entre 5 y 16 mm/día en la sierra norte y valores",
+      "zonas": [
+        "Costa norte",
+        "Sierra centro",
+        "Sierra norte",
+        "Sierra sur"
+      ],
+      "regiones": [
+        "Tumbes",
+        "Piura"
       ]
     }
   ]
