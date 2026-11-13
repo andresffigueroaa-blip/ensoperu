@@ -1,6 +1,6 @@
 {
   "_": "Generado por pipeline/productos/panorama.py. No editar a mano.",
-  "generado": "2026-11-13T09:24:59Z",
+  "generado": "2026-11-13T09:28:19Z",
   "fecha": "2026-11-13",
   "lectura": [
     {
@@ -30,13 +30,13 @@
     {
       "t": "Ríos: el modelo global GloFAS pronostica caudales por encima de su percentil 90 anual (1984-2023) en 8, entre ellos Tumbes, Chira, Chicama, Piura; es orientativo. En la última lectura, ninguna estación de la ANA ni del SENAMHI está sobre su umbral de crecida.",
       "fuente": "GloFAS (Copernicus) vía Open-Meteo; lecturas de la ANA y el SENAMHI",
-      "fecha": "2026-11-13T09:24:59Z",
+      "fecha": "2026-11-13T09:28:19Z",
       "url": "https://www.globalfloods.eu/"
     },
     {
       "t": "CENEPRED: 224 distritos en riesgo muy alto por lluvia, hasta el 14 de noviembre; en ellos viven 1 197 346 personas (suma ENSO Perú del escenario, sin repetir distritos).",
       "fuente": "CENEPRED, escenarios de riesgo ante el aviso de lluvias",
-      "fecha": "2026-11-13T09:23:55Z",
+      "fecha": "2026-11-13T09:28:06Z",
       "url": "https://sigrid.cenepred.gob.pe/sigridv3/escenario-aviso"
     },
     {
@@ -46,9 +46,9 @@
       "url": "https://coen.indeci.gob.pe/mer/"
     },
     {
-      "t": "Focos de calor detectados por satélite: 905 en 7 días; el mayor número en Coronel Portillo (Ucayali), 153.",
+      "t": "Focos de calor detectados por satélite: 933 en 7 días; el mayor número en Coronel Portillo (Ucayali), 175.",
       "fuente": "NASA FIRMS, VIIRS NOAA-20",
-      "fecha": "2026-11-12",
+      "fecha": "2026-11-13",
       "url": "https://firms.modaps.eosdis.nasa.gov/"
     }
   ],
@@ -296,7 +296,7 @@
       "aviso_lluvia_desde": null,
       "mar": null,
       "n_mar": null,
-      "focos": 78,
+      "focos": 80,
       "n_focos": "muy alto",
       "dias_fuertes": 2,
       "n_lluvia": "medio",
@@ -582,7 +582,7 @@
       "aviso_lluvia_desde": null,
       "mar": null,
       "n_mar": null,
-      "focos": 320,
+      "focos": 346,
       "n_focos": "muy alto",
       "dias_fuertes": 2,
       "n_lluvia": "medio",
@@ -1791,8 +1791,8 @@
       "id": "2501",
       "nombre": "Coronel Portillo",
       "region": "Ucayali",
-      "focos": 153,
-      "frp": 3672.4
+      "focos": 175,
+      "frp": 3707.6
     },
     {
       "id": "2502",
@@ -1819,8 +1819,8 @@
       "id": "2503",
       "nombre": "Padre Abad",
       "region": "Ucayali",
-      "focos": 46,
-      "frp": 448.6
+      "focos": 50,
+      "frp": 452.3
     },
     {
       "id": "1602",
@@ -2072,7 +2072,7 @@
     "avisos": 3,
     "rojos": 2,
     "rios_altos": 8,
-    "focos": 905,
+    "focos": 933,
     "distritos_riesgo_alto": 766
   }
 }
