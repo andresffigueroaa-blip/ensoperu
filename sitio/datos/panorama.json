@@ -1,6 +1,6 @@
 {
   "_": "Generado por pipeline/productos/panorama.py. No editar a mano.",
-  "generado": "2026-11-13T06:25:00Z",
+  "generado": "2026-11-13T06:33:12Z",
   "fecha": "2026-11-13",
   "lectura": [
     {
@@ -30,13 +30,13 @@
     {
       "t": "Ríos: el modelo global GloFAS pronostica caudales por encima de su percentil 90 anual (1984-2023) en 8, entre ellos Tumbes, Chira, Chicama, Piura; es orientativo. En la última lectura, ninguna estación de la ANA ni del SENAMHI está sobre su umbral de crecida.",
       "fuente": "GloFAS (Copernicus) vía Open-Meteo; lecturas de la ANA y el SENAMHI",
-      "fecha": "2026-11-13T06:24:59Z",
+      "fecha": "2026-11-13T06:33:12Z",
       "url": "https://www.globalfloods.eu/"
     },
     {
       "t": "CENEPRED: 224 distritos en riesgo muy alto por lluvia, hasta el 14 de noviembre; en ellos viven 1 197 346 personas (suma ENSO Perú del escenario, sin repetir distritos).",
       "fuente": "CENEPRED, escenarios de riesgo ante el aviso de lluvias",
-      "fecha": "2026-11-13T06:24:00Z",
+      "fecha": "2026-11-13T06:32:24Z",
       "url": "https://sigrid.cenepred.gob.pe/sigridv3/escenario-aviso"
     },
     {
@@ -46,7 +46,7 @@
       "url": "https://coen.indeci.gob.pe/mer/"
     },
     {
-      "t": "Focos de calor detectados por satélite: 922 en 7 días; el mayor número en Coronel Portillo (Ucayali), 153.",
+      "t": "Focos de calor detectados por satélite: 905 en 7 días; el mayor número en Coronel Portillo (Ucayali), 153.",
       "fuente": "NASA FIRMS, VIIRS NOAA-20",
       "fecha": "2026-11-12",
       "url": "https://firms.modaps.eosdis.nasa.gov/"
@@ -65,7 +65,7 @@
       "aviso_lluvia_desde": null,
       "mar": null,
       "n_mar": null,
-      "focos": 4,
+      "focos": 2,
       "n_focos": "medio",
       "dias_fuertes": 2,
       "n_lluvia": "medio",
@@ -170,7 +170,7 @@
       "aviso_lluvia_desde": null,
       "mar": null,
       "n_mar": null,
-      "focos": 28,
+      "focos": 20,
       "n_focos": "alto",
       "dias_fuertes": 2,
       "n_lluvia": "medio",
@@ -254,7 +254,7 @@
       "aviso_lluvia_desde": null,
       "mar": null,
       "n_mar": null,
-      "focos": 59,
+      "focos": 58,
       "n_focos": "muy alto",
       "dias_fuertes": 0,
       "n_lluvia": "bajo",
@@ -296,7 +296,7 @@
       "aviso_lluvia_desde": null,
       "mar": null,
       "n_mar": null,
-      "focos": 80,
+      "focos": 78,
       "n_focos": "muy alto",
       "dias_fuertes": 2,
       "n_lluvia": "medio",
@@ -317,7 +317,7 @@
       "aviso_lluvia_desde": null,
       "mar": 6.28,
       "n_mar": "muy alto",
-      "focos": 19,
+      "focos": 18,
       "n_focos": "alto",
       "dias_fuertes": 1,
       "n_lluvia": "medio",
@@ -582,7 +582,7 @@
       "aviso_lluvia_desde": null,
       "mar": null,
       "n_mar": null,
-      "focos": 323,
+      "focos": 320,
       "n_focos": "muy alto",
       "dias_fuertes": 2,
       "n_lluvia": "medio",
@@ -1798,8 +1798,8 @@
       "id": "2502",
       "nombre": "Atalaya",
       "region": "Ucayali",
-      "focos": 123,
-      "frp": 1923.1
+      "focos": 121,
+      "frp": 1920.8
     },
     {
       "id": "1701",
@@ -1819,8 +1819,8 @@
       "id": "2503",
       "nombre": "Padre Abad",
       "region": "Ucayali",
-      "focos": 47,
-      "frp": 449.8
+      "focos": 46,
+      "frp": 448.6
     },
     {
       "id": "1602",
@@ -2072,7 +2072,7 @@
     "avisos": 3,
     "rojos": 2,
     "rios_altos": 8,
-    "focos": 922,
+    "focos": 905,
     "distritos_riesgo_alto": 766
   }
 }
