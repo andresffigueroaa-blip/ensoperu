@@ -1,6 +1,6 @@
 {
   "_": "Generado por pipeline/fuentes/peru_oficial.py. Datos oficiales tal como se publican.",
-  "actualizado": "2026-11-13T02:23:59Z",
+  "actualizado": "2026-11-13T02:31:55Z",
   "fallas": [
     "coen"
   ],
@@ -422,6 +422,11 @@
   "indeci_rss": {
     "reportes": [
       {
+        "titulo": "BOLETÍN INFORMATIVO SÍSMICO NACIONAL Nº 783-2026 del 12 de noviembre de 2026",
+        "enlace": "https://portal.indeci.gob.pe/emergencias/boletin-informativo-sismico-nacional-no-783-2026-del-12-de-noviembre-de-2026/",
+        "fecha": "2026-11-13T02:23"
+      },
+      {
         "titulo": "REPORTE COMPLEMENTARIO N.° 15860 – 12/11/2026 / COEN – INDECI / 19:58 HORAS (Reporte N.º 3) INCENDIO FORESTAL EN EL DISTRITO DE CARUMAS – MOQUEGUA",
         "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-preliminar-n-0856-13-9-2026-coen-indeci-1720-horas-incendio-forestal-en-el-distrito-de-carumas-moquegua/",
         "fecha": "2026-11-13T01:50"
@@ -485,15 +490,10 @@
         "titulo": "REPORTE COMPLEMENTARIO N.° 15851 – 12/10/2026 / COEN-INDECI / 17:10 HORAS (Reporte N.º 1) INCENDIO URBANO EN EL DISTRITO DE PAUCAR – PASCO",
         "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-15851-12-10-2026-coen-indeci-1710-horas-reporte-n-o-1-incendio-urbano-en-el-distrito-de-paucar-pasco/",
         "fecha": "2026-11-12T22:27"
-      },
-      {
-        "titulo": "REPORTE COMPLEMENTARIO N.º 15850 – 12/11/2026 / COEN – INDECI / 17:00 HORAS (Reporte N.º 4) INCENDIO FORESTAL EN EL DISTRITO DE SAN CRISTÓBAL DE CALACOA – MOQUEGUA",
-        "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-preliminar-n-1021-11-10-2026-coen-indeci-1230-horas-incendio-forestal-en-el-distrito-de-san-cristobal-moquegua/",
-        "fecha": "2026-11-12T22:20"
       }
     ],
     "url": "https://portal.indeci.gob.pe/emergencias/",
-    "leido": "2026-11-13T02:24:02Z"
+    "leido": "2026-11-13T02:31:57Z"
   },
   "escenario": {
     "vigente": true,
@@ -3178,7 +3178,7 @@
       }
     },
     "url": "https://sigrid.cenepred.gob.pe/sigridv3/escenario-aviso",
-    "leido": "2026-11-13T02:24:03Z"
+    "leido": "2026-11-13T02:31:59Z"
   },
   "quebradas": {
     "fecha": "2026-11-12",
@@ -3686,7 +3686,7 @@
     },
     "sin_cruce": 0,
     "url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico",
-    "leido": "2026-11-13T02:24:06Z"
+    "leido": "2026-11-13T02:32:01Z"
   },
   "hidro": {
     "avisos": [
@@ -3716,7 +3716,7 @@
       }
     ],
     "url": "https://www.senamhi.gob.pe/?p=aviso-hidrologico",
-    "leido": "2026-11-13T02:24:07Z"
+    "leido": "2026-11-13T02:32:02Z"
   },
   "ana_rios": {
     "estaciones": [
@@ -18297,7 +18297,7 @@
       }
     },
     "url": "https://visor.geoperu.gob.pe/",
-    "leido": "2026-11-13T02:24:16Z"
+    "leido": "2026-11-13T02:32:03Z"
   },
   "agua": {
     "total": 58,
@@ -19119,7 +19119,7 @@
       }
     },
     "url": "https://www.sunass.gob.pe/",
-    "leido": "2026-11-13T02:24:16Z"
+    "leido": "2026-11-13T02:32:04Z"
   },
   "incendios": {
     "total": 56,
@@ -19630,7 +19630,7 @@
       }
     ],
     "url": "https://geo.serfor.gob.pe/visor/",
-    "leido": "2026-11-13T02:24:17Z"
+    "leido": "2026-11-13T02:32:05Z"
   },
   "phisis": {
     "estaciones": [
@@ -21830,7 +21830,7 @@
       "clasificacion": 99.99
     },
     "url": "http://met.igp.gob.pe/variabclim/",
-    "leido": "2026-11-13T02:24:18Z"
+    "leido": "2026-11-13T02:32:07Z"
   },
   "dhn": {
     "generado": "2026-11-12T13:56:30Z",
@@ -22342,7 +22342,7 @@
         }
       ]
     },
-    "leido": "2026-11-13T02:24:19Z"
+    "leido": "2026-11-13T02:32:08Z"
   },
   "inaigem": {
     "estaciones": [
@@ -22380,7 +22380,7 @@
       }
     ],
     "url": "https://www.inaigem.gob.pe/",
-    "leido": "2026-11-13T02:24:19Z"
+    "leido": "2026-11-13T02:32:08Z"
   },
   "enfen_docs": {
     "docs": [
