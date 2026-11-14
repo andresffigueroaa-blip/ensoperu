@@ -2,7 +2,7 @@
   "_": "Generado por pipeline/fuentes/senamhi.py. Avisos oficiales vigentes o por empezar.",
   "fuente": "SENAMHI, avisos meteorológicos",
   "url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico",
-  "leido": "2026-11-14T18:23:53Z",
+  "leido": "2026-11-14T19:23:50Z",
   "avisos": [
     {
       "numero": 464,
@@ -46,6 +46,27 @@
       "regiones": []
     },
     {
+      "numero": 469,
+      "situacion": "emitido",
+      "titulo": "INCREMENTO DE TEMPERATURA DIURNA EN LA SELVA",
+      "emitido": "2026-11-14",
+      "inicio": "2026-11-16",
+      "fin": "2026-11-18",
+      "nivel": "ROJO",
+      "enlace": "https://www.senamhi.gob.pe/?p=aviso-meteorologico-vigente&a=2026&b=29369&c=00&d=SENA",
+      "texto": "El SENAMHI informa que, del lunes 16 al miércoles 18 de noviembre, se presentará el incremento de la temperatura diurna, de moderada a extrema intensidad en la selva. Asimismo, se prevé escasa cobertura nubosa durante el día, lo que favorecerá el aumento de la radiación ultravioleta (UV). Además, se esperan ráfagas de viento con velocidades cercanas a los 55 km/h, principalmente durante las horas de la tarde. El lunes 16 de noviembre se prevén temperaturas máximas entre 30 °C y 38 °C en la selva norte, entre 28 °C y 37 °C en la selva centro y valores entre 32 °C y 36 °C en la selva sur. El martes 17 de noviembre se prevén temperaturas máximas entre 30 °C y 38 °C en la selva norte, entre 28 °C y 37 °C en la selva centro y valores entre 32 °C y 36 °C en la selva sur. El miércoles 18 de noviembre se prevén temperaturas máximas entre 30 °C y 38 °C en la selva norte, entre 28 °C y 37 °C en la",
+      "zonas": [
+        "Selva norte",
+        "Selva sur"
+      ],
+      "regiones": [
+        "Huanuco",
+        "Junin",
+        "Pasco",
+        "Ucayali"
+      ]
+    },
+    {
       "numero": 466,
       "situacion": "vigente",
       "titulo": "INCREMENTO DE TEMPERATURA DIURNA EN LA SELVA (EXTENSIÓN DEL AVISO 463)",
@@ -85,6 +106,46 @@
       "regiones": [
         "Tumbes",
         "Piura"
+      ]
+    },
+    {
+      "numero": 470,
+      "situacion": "emitido",
+      "titulo": "INCREMENTO DE VIENTO EN LA COSTA CENTRO Y SUR",
+      "emitido": "2026-11-14",
+      "inicio": "2026-11-16",
+      "fin": "2026-11-18",
+      "nivel": "NARANJA",
+      "enlace": "https://www.senamhi.gob.pe/?p=aviso-meteorologico-vigente&a=2026&b=29370&c=00&d=SENA",
+      "texto": "El SENAMHI informa que, del lunes 16 noviembre al 18 de noviembre del 2026, se presentará el incremento de la velocidad del viento, de moderada a fuerte intensidad, en la costa centro y sur. Estas condiciones favorecerán el levantamiento de polvo y arena, principalmente en el departamento de Ica, lo que podría generar una reducción significativa de la visibilidad horizontal. Asimismo, durante la noche, madrugada y primeras horas de la mañana, se espera la presencia de niebla, neblina y lloviznas dispersas en sectores cercanos al litoral, especialmente en zonas de la costa central y sur. Además, se esperan ráfagas de viento con velocidades superiores a los 40 km/h. El lunes 16 de noviembre se prevén vientos próximos a los 32 km/h en la costa central, principalmente en la ciudad Lima; alrededor de los 20 km/h en la costa sur, y valores de hasta 35 km/h en el litoral de Ica. El martes 17 de",
+      "zonas": [
+        "Costa centro",
+        "Costa sur"
+      ],
+      "regiones": [
+        "Lima",
+        "Ica"
+      ]
+    },
+    {
+      "numero": 468,
+      "situacion": "emitido",
+      "titulo": "INCREMENTO DE VIENTO EN LA SELVA",
+      "emitido": "2026-11-14",
+      "inicio": "2026-11-16",
+      "fin": "2026-11-18",
+      "nivel": "NARANJA",
+      "enlace": "https://www.senamhi.gob.pe/?p=aviso-meteorologico-vigente&a=2026&b=29368&c=00&d=SENA",
+      "texto": "El SENAMHI informa que, desde el lunes 16 hasta el miércoles 18 de noviembre, se registrará el incremento de la velocidad del viento de moderada a fuerte intensidad en la selva. Asimismo, se esperan ráfagas de viento con velocidades superiores a los 55 km/h. El lunes 16 de noviembre, se prevén vientos con velocidades superiores a los 45 km/h en la selva norte, de 48 km/h en la selva centro y de hasta 50 km/h en la selva sur. El martes 17 de noviembre, se prevén vientos con velocidades superiores a los 45 km/h en la selva norte, de 48 km/h en la selva centro y de hasta 50 km/h en la selva sur. El miércoles 18 de noviembre, se prevén vientos con velocidades superiores a los 38 km/h en la selva norte, y de 42 km/h en la selva centro y sur.",
+      "zonas": [
+        "Selva norte",
+        "Selva sur"
+      ],
+      "regiones": [
+        "Huanuco",
+        "Junin",
+        "Pasco",
+        "Ucayali"
       ]
     }
   ]
