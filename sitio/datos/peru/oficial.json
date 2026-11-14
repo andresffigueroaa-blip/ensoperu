@@ -1,6 +1,6 @@
 {
   "_": "Generado por pipeline/fuentes/peru_oficial.py. Datos oficiales tal como se publican.",
-  "actualizado": "2026-11-14T17:25:19Z",
+  "actualizado": "2026-11-14T18:10:37Z",
   "fallas": [
     "coen"
   ],
@@ -422,6 +422,11 @@
   "indeci_rss": {
     "reportes": [
       {
+        "titulo": "REPORTE COMPLEMENTARIO N.° 15926 – 14/11/2026 / COEN – INDECI / 11:44 HORAS (Reporte N.° 3) GRANIZADA EN EL DISTRITO DE YAULI – HUANCAVELICA",
+        "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-14487-19-10-2026-coen-indeci-0740-horas-reporte-n-1-granizadas-en-el-distrito-de-yauli-huancavelica/",
+        "fecha": "2026-11-14T18:08"
+      },
+      {
         "titulo": "REPORTE PRELIMINAR N.° 1134 – 14/11/2026 / COEN – INDECI / 11:05 HORAS HUAICO EN EL DISTRITO DE LUCRE – APURÍMAC",
         "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-preliminar-n-1134-14-11-2026-coen-indeci-1105-horas-huaico-en-el-distrito-de-lucre-apurimac/",
         "fecha": "2026-11-14T16:31"
@@ -485,15 +490,10 @@
         "titulo": "REPORTE COMPLEMENTARIO N.° 15915 – 13/11/2026 / COEN-INDECI / 23:30 HORAS (Reporte N.º 3) VIENTOS FUERTES EN EL DISTRITO DE PAUCARÁ – HUANCAVELICA",
         "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-15753-10-11-2026-coen-indeci-1625-horas-reporte-n-o-1-vientos-fuertes-en-el-distrito-de-paucara-huancavelica/",
         "fecha": "2026-11-14T07:56"
-      },
-      {
-        "titulo": "REPORTE COMPLEMENTARIO N.º 15914 – 13/11/2026 / COEN – INDECI / 23:25 HORAS (Reporte N.º 2) INCENDIO URBANO EN EL DISTRITO DE PUENTE PIEDRA – LIMA",
-        "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-o-15675-8-11-2026-coen-indeci-2300-horas-reporte-n-o-1-incendio-urbano-en-el-distrito-de-puente-piedra-lima/",
-        "fecha": "2026-11-14T07:53"
       }
     ],
     "url": "https://portal.indeci.gob.pe/emergencias/",
-    "leido": "2026-11-14T17:25:20Z"
+    "leido": "2026-11-14T18:10:40Z"
   },
   "escenario": {
     "vigente": true,
@@ -3178,7 +3178,7 @@
       }
     },
     "url": "https://sigrid.cenepred.gob.pe/sigridv3/escenario-aviso",
-    "leido": "2026-11-14T17:25:23Z"
+    "leido": "2026-11-14T18:10:42Z"
   },
   "quebradas": {
     "fecha": "2026-11-14",
@@ -4822,7 +4822,7 @@
     },
     "sin_cruce": 84,
     "url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico",
-    "leido": "2026-11-14T17:25:38Z"
+    "leido": "2026-11-14T18:11:09Z"
   },
   "hidro": {
     "avisos": [
@@ -4852,7 +4852,7 @@
       }
     ],
     "url": "https://www.senamhi.gob.pe/?p=aviso-hidrologico",
-    "leido": "2026-11-14T17:25:39Z"
+    "leido": "2026-11-14T18:11:09Z"
   },
   "ana_rios": {
     "estaciones": [
@@ -19193,12 +19193,22 @@
       }
     },
     "url": "https://visor.geoperu.gob.pe/",
-    "leido": "2026-11-14T17:25:40Z"
+    "leido": "2026-11-14T18:11:11Z"
   },
   "agua": {
     "total": 63,
-    "conexiones": 288929,
+    "conexiones": 371916,
     "cortes": [
+      {
+        "eps": "SEDAPAL",
+        "lugar": "Chorrillos, Lima",
+        "conexiones": 86427,
+        "tipo": "Imprevista",
+        "motivo": "Problemas en colectores",
+        "inicio": "2026-11-14",
+        "restablece": "2026-11-14",
+        "distrito": "150108"
+      },
       {
         "eps": "SEDAPAL",
         "lugar": "San Isidro, Lima",
@@ -19428,16 +19438,6 @@
         "inicio": "2026-11-10",
         "restablece": "2026-11-17",
         "distrito": "200115"
-      },
-      {
-        "eps": "SEDAPAL",
-        "lugar": "Chorrillos, Lima",
-        "conexiones": 3440,
-        "tipo": "Programada",
-        "motivo": "Mantenimiento de redes secundarias",
-        "inicio": "2026-11-17",
-        "restablece": "2026-11-18",
-        "distrito": "150108"
       },
       {
         "eps": "EPS SEDACUSCO S.A.",
@@ -19801,6 +19801,10 @@
       }
     ],
     "distritos": {
+      "150108": {
+        "cortes": 1,
+        "conexiones": 86427
+      },
       "150131": {
         "cortes": 1,
         "conexiones": 55034
@@ -19892,10 +19896,6 @@
       "200115": {
         "cortes": 1,
         "conexiones": 3572
-      },
-      "150108": {
-        "cortes": 1,
-        "conexiones": 3440
       },
       "080108": {
         "cortes": 1,
@@ -20055,7 +20055,7 @@
       }
     },
     "url": "https://www.sunass.gob.pe/",
-    "leido": "2026-11-14T17:25:41Z"
+    "leido": "2026-11-14T18:11:12Z"
   },
   "incendios": {
     "total": 43,
@@ -20449,7 +20449,7 @@
       }
     ],
     "url": "https://geo.serfor.gob.pe/visor/",
-    "leido": "2026-11-14T17:25:42Z"
+    "leido": "2026-11-14T18:11:13Z"
   },
   "phisis": {
     "estaciones": [
@@ -22639,7 +22639,7 @@
       "clasificacion": 99.99
     },
     "url": "http://met.igp.gob.pe/variabclim/",
-    "leido": "2026-11-14T17:25:44Z"
+    "leido": "2026-11-14T18:11:15Z"
   },
   "dhn": {
     "generado": "2026-11-14T13:54:13Z",
@@ -23151,7 +23151,7 @@
         }
       ]
     },
-    "leido": "2026-11-14T17:25:45Z"
+    "leido": "2026-11-14T18:11:15Z"
   },
   "inaigem": {
     "estaciones": [
@@ -23189,7 +23189,7 @@
       }
     ],
     "url": "https://www.inaigem.gob.pe/",
-    "leido": "2026-11-14T17:25:45Z"
+    "leido": "2026-11-14T18:11:16Z"
   },
   "enfen_docs": {
     "docs": [
