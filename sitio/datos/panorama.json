@@ -1,6 +1,6 @@
 {
   "_": "Generado por pipeline/productos/panorama.py. No editar a mano.",
-  "generado": "2026-11-14T17:25:00Z",
+  "generado": "2026-11-14T17:26:13Z",
   "fecha": "2026-11-14",
   "lectura": [
     {
@@ -28,15 +28,15 @@
       "url": "https://open-meteo.com/en/docs"
     },
     {
-      "t": "Ríos: el modelo global GloFAS pronostica caudales por encima de su percentil 90 anual (1984-2023) en 10, entre ellos Chira, Tumbes, Piura, Zaña; es orientativo. En la última lectura, ninguna estación de la ANA ni del SENAMHI está sobre su umbral de crecida.",
+      "t": "Ríos: el modelo global GloFAS pronostica caudales por encima de su percentil 90 anual (1984-2023) en 14, entre ellos Tumbes, Chira, Chicama, Piura; es orientativo. En la última lectura, ninguna estación de la ANA ni del SENAMHI está sobre su umbral de crecida.",
       "fuente": "GloFAS (Copernicus) vía Open-Meteo; lecturas de la ANA y el SENAMHI",
-      "fecha": "2026-11-14T17:24:59Z",
+      "fecha": "2026-11-14T17:26:13Z",
       "url": "https://www.globalfloods.eu/"
     },
     {
       "t": "CENEPRED: 224 distritos en riesgo muy alto por lluvia, hasta el 14 de noviembre; en ellos viven 1 197 346 personas (suma ENSO Perú del escenario, sin repetir distritos).",
       "fuente": "CENEPRED, escenarios de riesgo ante el aviso de lluvias",
-      "fecha": "2026-11-14T17:23:58Z",
+      "fecha": "2026-11-14T17:25:23Z",
       "url": "https://sigrid.cenepred.gob.pe/sigridv3/escenario-aviso"
     },
     {
@@ -282,9 +282,7 @@
       "lluvia16": 1.2,
       "spi3": null,
       "estacional": 19,
-      "rios_altos": [
-        "Pisco"
-      ]
+      "rios_altos": []
     },
     "12": {
       "nombre": "Junín",
@@ -327,7 +325,9 @@
       "spi3": null,
       "estacional": 52,
       "rios_altos": [
+        "Jequetepeque",
         "Chicama",
+        "Moche",
         "Virú"
       ]
     },
@@ -376,7 +376,9 @@
       "spi3": null,
       "estacional": 105,
       "rios_altos": [
-        "Pativilca"
+        "Pativilca",
+        "Chillón",
+        "Lurín"
       ]
     },
     "16": {
@@ -398,7 +400,9 @@
       "lluvia16": 103.8,
       "spi3": 0.09,
       "estacional": 38,
-      "rios_altos": []
+      "rios_altos": [
+        "Marañón"
+      ]
     },
     "17": {
       "nombre": "Madre de Dios",
@@ -1863,51 +1867,27 @@
   ],
   "rios_altos": [
     {
-      "id": "chira",
-      "nombre": "Chira",
-      "lugar": "Ardilla",
-      "region": "20",
-      "hoy": 189.55,
-      "pico": 2970.67,
-      "fecha_pico": "2026-11-24",
-      "p90": 932.2,
-      "p99": 2402.3,
-      "nivel": "muy alto"
-    },
-    {
       "id": "tumbes",
       "nombre": "Tumbes",
       "lugar": "El Tigre",
       "region": "24",
       "hoy": 143.21,
-      "pico": 1296.18,
-      "fecha_pico": "2026-11-24",
+      "pico": 1163.13,
+      "fecha_pico": "2026-11-23",
       "p90": 591.9,
       "p99": 1409.6,
       "nivel": "elevado"
     },
     {
-      "id": "piura",
-      "nombre": "Piura",
-      "lugar": "Puente Sánchez Cerro",
+      "id": "chira",
+      "nombre": "Chira",
+      "lugar": "Ardilla",
       "region": "20",
-      "hoy": 161.55,
-      "pico": 381.82,
-      "fecha_pico": "2026-11-26",
-      "p90": 230.7,
-      "p99": 1204.6,
-      "nivel": "elevado"
-    },
-    {
-      "id": "zana",
-      "nombre": "Zaña",
-      "lugar": "Batán",
-      "region": "14",
-      "hoy": 29.97,
-      "pico": 56.81,
-      "fecha_pico": "2026-11-17",
-      "p90": 45.1,
-      "p99": 111.9,
+      "hoy": 189.55,
+      "pico": 1818.7,
+      "fecha_pico": "2026-11-21",
+      "p90": 932.2,
+      "p99": 2402.3,
       "nivel": "elevado"
     },
     {
@@ -1916,10 +1896,22 @@
       "lugar": "Salinar",
       "region": "13",
       "hoy": 98.54,
-      "pico": 181.39,
+      "pico": 293.44,
       "fecha_pico": "2026-11-23",
       "p90": 151.1,
       "p99": 310.0,
+      "nivel": "elevado"
+    },
+    {
+      "id": "piura",
+      "nombre": "Piura",
+      "lugar": "Puente Sánchez Cerro",
+      "region": "20",
+      "hoy": 161.55,
+      "pico": 437.53,
+      "fecha_pico": "2026-11-22",
+      "p90": 230.7,
+      "p99": 1204.6,
       "nivel": "elevado"
     },
     {
@@ -1928,8 +1920,8 @@
       "lugar": "Puchaca",
       "region": "14",
       "hoy": 16.1,
-      "pico": 47.53,
-      "fecha_pico": "2026-11-27",
+      "pico": 71.11,
+      "fecha_pico": "2026-11-28",
       "p90": 39.7,
       "p99": 172.9,
       "nivel": "elevado"
@@ -1940,8 +1932,8 @@
       "lugar": "Huacapongo",
       "region": "13",
       "hoy": 32.5,
-      "pico": 49.47,
-      "fecha_pico": "2026-11-25",
+      "pico": 66.45,
+      "fecha_pico": "2026-11-24",
       "p90": 41.8,
       "p99": 74.5,
       "nivel": "elevado"
@@ -1952,10 +1944,34 @@
       "lugar": "Racarrumi",
       "region": "14",
       "hoy": 51.97,
-      "pico": 116.49,
-      "fecha_pico": "2026-11-17",
+      "pico": 133.9,
+      "fecha_pico": "2026-11-27",
       "p90": 103.0,
       "p99": 217.3,
+      "nivel": "elevado"
+    },
+    {
+      "id": "moche",
+      "nombre": "Moche",
+      "lugar": "Quirihuac",
+      "region": "13",
+      "hoy": 34.48,
+      "pico": 71.44,
+      "fecha_pico": "2026-11-24",
+      "p90": 58.0,
+      "p99": 109.1,
+      "nivel": "elevado"
+    },
+    {
+      "id": "jequetepeque",
+      "nombre": "Jequetepeque",
+      "lugar": "Yonán",
+      "region": "13",
+      "hoy": 124.89,
+      "pico": 388.94,
+      "fecha_pico": "2026-11-27",
+      "p90": 320.4,
+      "p99": 603.0,
       "nivel": "elevado"
     },
     {
@@ -1964,22 +1980,58 @@
       "lugar": "Yanapampa",
       "region": "15",
       "hoy": 153.17,
-      "pico": 210.84,
-      "fecha_pico": "2026-11-15",
+      "pico": 231.81,
+      "fecha_pico": "2026-11-25",
       "p90": 197.2,
       "p99": 363.9,
       "nivel": "elevado"
     },
     {
-      "id": "pisco",
-      "nombre": "Pisco",
-      "lugar": "Letrayoc",
-      "region": "11",
-      "hoy": 95.16,
-      "pico": 151.05,
-      "fecha_pico": "2026-11-15",
-      "p90": 146.6,
-      "p99": 266.9,
+      "id": "lurin",
+      "nombre": "Lurín",
+      "lugar": "Antapucro",
+      "region": "15",
+      "hoy": 31.28,
+      "pico": 44.92,
+      "fecha_pico": "2026-11-27",
+      "p90": 40.3,
+      "p99": 64.9,
+      "nivel": "elevado"
+    },
+    {
+      "id": "zana",
+      "nombre": "Zaña",
+      "lugar": "Batán",
+      "region": "14",
+      "hoy": 29.97,
+      "pico": 49.7,
+      "fecha_pico": "2026-11-17",
+      "p90": 45.1,
+      "p99": 111.9,
+      "nivel": "elevado"
+    },
+    {
+      "id": "chillon",
+      "nombre": "Chillón",
+      "lugar": "Obrajillo",
+      "region": "15",
+      "hoy": 42.25,
+      "pico": 65.68,
+      "fecha_pico": "2026-11-27",
+      "p90": 63.6,
+      "p99": 104.1,
+      "nivel": "elevado"
+    },
+    {
+      "id": "maranon",
+      "nombre": "Marañón",
+      "lugar": "Borja",
+      "region": "16",
+      "hoy": 3907.41,
+      "pico": 7997.35,
+      "fecha_pico": "2026-11-28",
+      "p90": 7978.9,
+      "p99": 10913.4,
       "nivel": "elevado"
     }
   ],
@@ -2098,7 +2150,7 @@
   "totales": {
     "avisos": 4,
     "rojos": 2,
-    "rios_altos": 10,
+    "rios_altos": 14,
     "focos": 1033,
     "distritos_riesgo_alto": 766
   }
