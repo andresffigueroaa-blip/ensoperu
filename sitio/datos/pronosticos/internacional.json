@@ -1,6 +1,6 @@
 {
   "_": "Generado por pipeline/fuentes/internacional.py. Cada bloque con su centro, fecha y enlace.",
-  "actualizado": "2026-11-15T11:01:17Z",
+  "actualizado": "2026-11-15T17:51:39Z",
   "fallas": [],
   "cpc": {
     "emitido": "2026-11-12",
@@ -519,18 +519,12 @@
   },
   "mjo": {
     "ultimo": {
-      "fecha": "2026-11-10",
-      "pc1": 0.505,
-      "pc2": 0.952,
-      "amplitud": 1.08
+      "fecha": "2026-11-11",
+      "pc1": 0.543,
+      "pc2": 1.187,
+      "amplitud": 1.31
     },
     "serie": [
-      {
-        "fecha": "2026-09-27",
-        "pc1": 0.892,
-        "pc2": -0.162,
-        "amplitud": 0.91
-      },
       {
         "fecha": "2026-09-28",
         "pc1": 0.996,
@@ -773,27 +767,33 @@
       },
       {
         "fecha": "2026-11-07",
-        "pc1": 0.511,
-        "pc2": 0.593,
-        "amplitud": 0.78
-      },
-      {
-        "fecha": "2026-11-08",
-        "pc1": 0.502,
-        "pc2": 0.695,
+        "pc1": 0.47,
+        "pc2": 0.718,
         "amplitud": 0.86
       },
       {
-        "fecha": "2026-11-09",
-        "pc1": 0.494,
-        "pc2": 0.799,
+        "fecha": "2026-11-08",
+        "pc1": 0.458,
+        "pc2": 0.823,
         "amplitud": 0.94
       },
       {
+        "fecha": "2026-11-09",
+        "pc1": 0.444,
+        "pc2": 0.931,
+        "amplitud": 1.03
+      },
+      {
         "fecha": "2026-11-10",
-        "pc1": 0.505,
-        "pc2": 0.952,
-        "amplitud": 1.08
+        "pc1": 0.445,
+        "pc2": 1.081,
+        "amplitud": 1.17
+      },
+      {
+        "fecha": "2026-11-11",
+        "pc1": 0.543,
+        "pc2": 1.187,
+        "amplitud": 1.31
       }
     ],
     "activa": true,
@@ -922,9 +922,9 @@
       "titulo": "Pronóstico de la MJO, ECMWF corregido",
       "fuente": "NOAA CPC",
       "origen": "https://www.cpc.ncep.noaa.gov/products/precip/mjo/img/ECMF_BC.png",
-      "huella": "16838d8c2f6b",
+      "huella": "a2ffbc599107",
       "archivo": "mjo.png",
-      "fecha": "2026-11-14"
+      "fecha": "2026-11-15"
     },
     {
       "id": "gth",
