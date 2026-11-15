@@ -1,6 +1,6 @@
 {
   "_": "Generado por pipeline/fuentes/peru_oficial.py. Datos oficiales tal como se publican.",
-  "actualizado": "2026-11-15T00:24:04Z",
+  "actualizado": "2026-11-15T00:27:12Z",
   "fallas": [
     "coen"
   ],
@@ -422,6 +422,11 @@
   "indeci_rss": {
     "reportes": [
       {
+        "titulo": "REPORTE PRELIMINAR N.° 1135 – 14/11/2026 / COEN-INDECI / 18:35 HORAS INCENDIO INDUSTRIAL EN EL DISTRITO DE CAMPO VERDE – UCAYALI",
+        "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-preliminar-n-1135-14-11-2026-coen-indeci-1835-horas-incendio-industrial-en-el-distrito-de-campo-verde-ucayali/",
+        "fecha": "2026-11-15T00:24"
+      },
+      {
         "titulo": "REPORTE COMPLEMENTARIO N.° 15938 – 14/11/2026 / COEN-INDECI / 18:15 HORAS (Reporte N° 3) INCENDIO URBANO EN EL DISTRITO DE POCOLLAY – TACNA",
         "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-15917-13-11-2026-coen-indeci-2345-horas-reporte-n-1-incendio-urbano-en-el-distrito-de-pocollay-tacna/",
         "fecha": "2026-11-14T23:42"
@@ -485,15 +490,10 @@
         "titulo": "REPORTE COMPLEMENTARIO N.º 15928 – 14/11/2026 / COEN – INDECI / 12:03 HORAS – (Reporte N.° 2) LLUVIAS INTENSAS EN EL DISTRITO DE CALQUIS – CAJAMARCA",
         "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-o-15823-11-11-2026-coen-indeci-2140-horas-reporte-n-1-lluvias-intensas-en-el-distrito-de-calquis-cajamarca/",
         "fecha": "2026-11-14T18:13"
-      },
-      {
-        "titulo": "REPORTE COMPLEMENTARIO N.° 15927 – 14/11/2026 / COEN-INDECI / 11:57 HORAS (Reporte N.° 2) NEVADA EN EL DISTRITO DE SANTA ANA – HUANCAVELICA",
-        "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-15725-9-11-2026-coen-indeci-2240-horas-reporte-n-1-nevada-en-el-distrito-de-santa-ana-huancavelica/",
-        "fecha": "2026-11-14T18:10"
       }
     ],
     "url": "https://portal.indeci.gob.pe/emergencias/",
-    "leido": "2026-11-15T00:24:06Z"
+    "leido": "2026-11-15T00:27:14Z"
   },
   "escenario": {
     "vigente": true,
@@ -3178,7 +3178,7 @@
       }
     },
     "url": "https://sigrid.cenepred.gob.pe/sigridv3/escenario-aviso",
-    "leido": "2026-11-15T00:24:06Z"
+    "leido": "2026-11-15T00:27:16Z"
   },
   "quebradas": {
     "fecha": "2026-11-14",
@@ -4822,7 +4822,7 @@
     },
     "sin_cruce": 84,
     "url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico",
-    "leido": "2026-11-15T00:24:22Z"
+    "leido": "2026-11-15T00:27:34Z"
   },
   "hidro": {
     "avisos": [
@@ -4852,7 +4852,7 @@
       }
     ],
     "url": "https://www.senamhi.gob.pe/?p=aviso-hidrologico",
-    "leido": "2026-11-15T00:24:23Z"
+    "leido": "2026-11-15T00:27:34Z"
   },
   "ana_rios": {
     "estaciones": [
@@ -19241,7 +19241,7 @@
       }
     },
     "url": "https://visor.geoperu.gob.pe/",
-    "leido": "2026-11-15T00:24:31Z"
+    "leido": "2026-11-15T00:27:35Z"
   },
   "agua": {
     "total": 51,
@@ -19965,7 +19965,7 @@
       }
     },
     "url": "https://www.sunass.gob.pe/",
-    "leido": "2026-11-15T00:24:32Z"
+    "leido": "2026-11-15T00:27:37Z"
   },
   "incendios": {
     "total": 47,
@@ -20395,7 +20395,7 @@
       }
     ],
     "url": "https://geo.serfor.gob.pe/visor/",
-    "leido": "2026-11-15T00:24:32Z"
+    "leido": "2026-11-15T00:27:38Z"
   },
   "phisis": {
     "estaciones": [
@@ -22575,7 +22575,7 @@
       "clasificacion": 99.99
     },
     "url": "http://met.igp.gob.pe/variabclim/",
-    "leido": "2026-11-15T00:24:33Z"
+    "leido": "2026-11-15T00:27:40Z"
   },
   "dhn": {
     "generado": "2026-11-14T13:54:13Z",
@@ -23087,7 +23087,7 @@
         }
       ]
     },
-    "leido": "2026-11-15T00:24:33Z"
+    "leido": "2026-11-15T00:27:41Z"
   },
   "inaigem": {
     "estaciones": [
@@ -23125,7 +23125,7 @@
       }
     ],
     "url": "https://www.inaigem.gob.pe/",
-    "leido": "2026-11-15T00:24:33Z"
+    "leido": "2026-11-15T00:27:41Z"
   },
   "enfen_docs": {
     "docs": [
