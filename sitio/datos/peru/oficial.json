@@ -1,6 +1,6 @@
 {
   "_": "Generado por pipeline/fuentes/peru_oficial.py. Datos oficiales tal como se publican.",
-  "actualizado": "2026-11-16T20:23:59Z",
+  "actualizado": "2026-11-16T20:25:55Z",
   "fallas": [
     "coen"
   ],
@@ -422,6 +422,11 @@
   "indeci_rss": {
     "reportes": [
       {
+        "titulo": "BOLETÍN INFORMATIVO DE AVISO DE CORTO PLAZO ANTE POSIBLE ACTIVACIÓN DE QUEBRADAS N° 221-2026-INDECI/COEN",
+        "enlace": "https://portal.indeci.gob.pe/emergencias/boletin-informativo-de-aviso-de-corto-plazo-ante-posible-activacion-de-quebradas-n-221-2026-indeci-coen/",
+        "fecha": "2026-11-16T20:24"
+      },
+      {
         "titulo": "BOLETÍN INFORMATIVO SÍSMICO NACIONAL N° 802-2026-INDECI/COEN",
         "enlace": "https://portal.indeci.gob.pe/emergencias/boletin-informativo-sismico-nacional-n-802-2026-indeci-coen/",
         "fecha": "2026-11-16T19:58"
@@ -485,15 +490,10 @@
         "titulo": "REPORTE COMPLEMENTARIO N.º 15981 – 16/11/2026/ COEN – INDECI / 11:35 HORAS (Reporte N.º 1) HUAICO EN EL DISTRITO DE TICLLOS – ÁNCASH",
         "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-o-15981-16-11-2026-coen-indeci-1135-horas-reporte-n-o-1-huaico-en-el-distrito-de-ticllos-ancash/",
         "fecha": "2026-11-16T18:52"
-      },
-      {
-        "titulo": "REPORTE PRELIMINAR N.° 1142 – 16/11/2026 / COEN-INDECI / 11:30 HORAS SISMO DE M 5.1 CON EPICENTRO EN EL DISTRITO CHANGUILLO – ICA",
-        "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-preliminar-n-1142-16-11-2026-coen-indeci-1130-horas-sismo-de-m-5-1-con-epicentro-en-el-distrito-changuillo-ica/",
-        "fecha": "2026-11-16T16:49"
       }
     ],
     "url": "https://portal.indeci.gob.pe/emergencias/",
-    "leido": "2026-11-16T20:24:02Z"
+    "leido": "2026-11-16T20:25:57Z"
   },
   "escenario": {
     "vigente": true,
@@ -1714,7 +1714,7 @@
       }
     },
     "url": "https://sigrid.cenepred.gob.pe/sigridv3/escenario-aviso",
-    "leido": "2026-11-16T20:24:02Z"
+    "leido": "2026-11-16T20:26:00Z"
   },
   "quebradas": {
     "fecha": "2026-11-16",
@@ -3910,7 +3910,7 @@
     },
     "sin_cruce": 1,
     "url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico",
-    "leido": "2026-11-16T20:24:10Z"
+    "leido": "2026-11-16T20:26:09Z"
   },
   "hidro": {
     "avisos": [
@@ -3940,7 +3940,7 @@
       }
     ],
     "url": "https://www.senamhi.gob.pe/?p=aviso-hidrologico",
-    "leido": "2026-11-16T20:24:11Z"
+    "leido": "2026-11-16T20:26:10Z"
   },
   "ana_rios": {
     "estaciones": [
@@ -18526,7 +18526,7 @@
       }
     },
     "url": "https://visor.geoperu.gob.pe/",
-    "leido": "2026-11-16T20:24:21Z"
+    "leido": "2026-11-16T20:26:11Z"
   },
   "agua": {
     "total": 70,
@@ -19416,7 +19416,7 @@
       }
     },
     "url": "https://www.sunass.gob.pe/",
-    "leido": "2026-11-16T20:24:22Z"
+    "leido": "2026-11-16T20:26:13Z"
   },
   "incendios": {
     "total": 30,
@@ -19693,7 +19693,7 @@
       }
     ],
     "url": "https://geo.serfor.gob.pe/visor/",
-    "leido": "2026-11-16T20:24:22Z"
+    "leido": "2026-11-16T20:26:14Z"
   },
   "phisis": {
     "estaciones": [
@@ -21873,7 +21873,7 @@
       "clasificacion": 99.99
     },
     "url": "http://met.igp.gob.pe/variabclim/",
-    "leido": "2026-11-16T20:24:48Z"
+    "leido": "2026-11-16T20:26:16Z"
   },
   "dhn": {
     "generado": "2026-11-16T14:18:59Z",
@@ -22385,7 +22385,7 @@
         }
       ]
     },
-    "leido": "2026-11-16T20:24:49Z"
+    "leido": "2026-11-16T20:26:17Z"
   },
   "inaigem": {
     "estaciones": [
@@ -22423,7 +22423,7 @@
       }
     ],
     "url": "https://www.inaigem.gob.pe/",
-    "leido": "2026-11-16T20:24:50Z"
+    "leido": "2026-11-16T20:26:18Z"
   },
   "enfen_docs": {
     "docs": [
