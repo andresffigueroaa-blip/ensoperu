@@ -1,6 +1,6 @@
 {
   "_": "Generado por pipeline/fuentes/peru_oficial.py. Datos oficiales tal como se publican.",
-  "actualizado": "2026-11-16T07:28:24Z",
+  "actualizado": "2026-11-16T11:28:52Z",
   "fallas": [
     "coen"
   ],
@@ -422,6 +422,26 @@
   "indeci_rss": {
     "reportes": [
       {
+        "titulo": "BOLETÍN INFORMATIVO SÍSMICO NACIONAL Nº 797-2026 del 16 de noviembre de 2026",
+        "enlace": "https://portal.indeci.gob.pe/emergencias/boletin-informativo-sismico-nacional-no-797-2026-del-16-de-noviembre-de-2026/",
+        "fecha": "2026-11-16T11:18"
+      },
+      {
+        "titulo": "REPORTE PRELIMINAR N.° 1141 – 16/11/2026 / COEN-INDECI / 02:00 HORAS LLUVIAS INTENSAS EN EL DISTRITO DE OLMOS – LAMBAYEQUE",
+        "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-preliminar-n-1141-16-11-2026-coen-indeci-0200-horas-lluvias-intensas-en-el-distrito-de-olmos-lambayeque/",
+        "fecha": "2026-11-16T10:07"
+      },
+      {
+        "titulo": "REPORTE COMPLEMENTARIO N.° 15975 – 16/11/2026 / COEN-INDECI / 00:50 HORAS (Reporte N.° 2) INCENDIO URBANO EN EL DISTRITO DE MI PERÚ – LIMA",
+        "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-15965-15-11-2026-coen-indeci-1555-horas-reporte-n-1-incendio-urbano-en-el-distrito-de-mi-peru-lima/",
+        "fecha": "2026-11-16T10:06"
+      },
+      {
+        "titulo": "INFORME DE EMERGENCIA N.° 2583 – 16/11/2026 / COEN-INDECI / 00:10 HORAS (Informe N.° 1) INCENDIO URBANO EN EL DISTRITO DE TUMAY HUARACA – APURÍMAC",
+        "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-13538-5-10-2026-coen-indeci-2131-horas-reporte-n-1-incendio-urbano-en-el-distrito-de-tumay-huaraca-apurimac/",
+        "fecha": "2026-11-16T10:05"
+      },
+      {
         "titulo": "REPORTE COMPLEMENTARIO N.º 15974 – 16/11/2026/ COEN – INDECI / 00:30 HORAS (Reporte N.º 5) INCENDIO FORESTAL EN EL DISTRITO DE CARHUAZ – ÁNCASH",
         "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-o-8355-21-6-2026-coen-indeci-2310-horas-reporte-n-o-1-incendio-forestal-en-el-distrito-de-carhuaz-ancash/",
         "fecha": "2026-11-16T05:50"
@@ -470,30 +490,10 @@
         "titulo": "REPORTE COMPLEMENTARIO N.° 15970 – 15/11/2026 / COEN-INDECI / 20:30 HORAS (Reporte N.° 5) LLUVIAS INTENSAS EN EL DISTRITO DE TUMBES- TUMBES",
         "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-14800-23-10-2026-coen-indeci-0610-horas-reporte-n-1-lluvias-intensas-en-el-distrito-de-tumbes-tumbes/",
         "fecha": "2026-11-16T01:43"
-      },
-      {
-        "titulo": "REPORTE COMPLEMENTARIO N.º 15969 – 15/11/2026 / COEN – INDECI / 19:15 HORAS (Reporte N.º 2) LLUVIAS INTENSAS EN EL DISTRITO DE INKAWASI – CUSCO",
-        "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-o-15689-9-11-2026-coen-indeci-1215-horas-reporte-n-o-1-lluvias-intensas-en-el-distrito-de-inkawasi-cusco/",
-        "fecha": "2026-11-16T01:39"
-      },
-      {
-        "titulo": "REPORTE PRELIMINAR N.° 1138 – 15/11/2026 / COEN-INDECI / 19:20 HORAS LLUVIAS INTENSAS EN EL DISTRITO DE SAN JUAN DE LA VIRGEN – TUMBES",
-        "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-preliminar-n-1138-15-11-2026-coen-indeci-1920-horas-lluvias-intensas-en-el-distrito-de-san-juan-de-la-virgen-tumbes/",
-        "fecha": "2026-11-16T01:30"
-      },
-      {
-        "titulo": "REPORTE PRELIMINAR N.° 1137 – 15/11/2026 / COEN – INDECI / 16:30 HORAS HUAICO EN EL DISTRITO DE TORATA – MOQUEGUA",
-        "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-preliminar-n-1137-15-11-2026-coen-indeci-1630-horas-huaico-en-el-distrito-de-torata-moquegua/",
-        "fecha": "2026-11-15T23:01"
-      },
-      {
-        "titulo": "REPORTE COMPLEMENTARIO N.º 15967 – 15/11/2026 / COEN – INDECI / 16:40 HORAS LLUVIAS INTENSAS EN EL DISTRITO DE CORRALES – TUMBES",
-        "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-o-15967-15-11-2026-coen-indeci-1640-horas-lluvias-intensas-en-el-distrito-de-corrales-tumbes/",
-        "fecha": "2026-11-15T23:00"
       }
     ],
     "url": "https://portal.indeci.gob.pe/emergencias/",
-    "leido": "2026-11-16T07:28:26Z"
+    "leido": "2026-11-16T11:28:54Z"
   },
   "escenario": {
     "vigente": true,
@@ -1714,7 +1714,7 @@
       }
     },
     "url": "https://sigrid.cenepred.gob.pe/sigridv3/escenario-aviso",
-    "leido": "2026-11-16T07:28:28Z"
+    "leido": "2026-11-16T11:28:56Z"
   },
   "quebradas": {
     "fecha": "2026-11-15",
@@ -4202,7 +4202,7 @@
     },
     "sin_cruce": 78,
     "url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico",
-    "leido": "2026-11-16T07:28:47Z"
+    "leido": "2026-11-16T11:29:18Z"
   },
   "hidro": {
     "avisos": [
@@ -4256,7 +4256,7 @@
       }
     ],
     "url": "https://www.senamhi.gob.pe/?p=aviso-hidrologico",
-    "leido": "2026-11-16T07:28:47Z"
+    "leido": "2026-11-16T11:29:19Z"
   },
   "ana_rios": {
     "estaciones": [
@@ -18378,7 +18378,7 @@
       }
     },
     "url": "https://visor.geoperu.gob.pe/",
-    "leido": "2026-11-16T07:28:48Z"
+    "leido": "2026-11-16T11:29:20Z"
   },
   "agua": {
     "total": 60,
@@ -19228,7 +19228,7 @@
       }
     },
     "url": "https://www.sunass.gob.pe/",
-    "leido": "2026-11-16T07:28:50Z"
+    "leido": "2026-11-16T11:29:22Z"
   },
   "incendios": {
     "total": 44,
@@ -19631,7 +19631,7 @@
       }
     ],
     "url": "https://geo.serfor.gob.pe/visor/",
-    "leido": "2026-11-16T07:28:51Z"
+    "leido": "2026-11-16T11:29:23Z"
   },
   "phisis": {
     "estaciones": [
@@ -21811,7 +21811,7 @@
       "clasificacion": 99.99
     },
     "url": "http://met.igp.gob.pe/variabclim/",
-    "leido": "2026-11-16T07:28:53Z"
+    "leido": "2026-11-16T11:29:25Z"
   },
   "dhn": {
     "generado": "2026-11-15T13:47:12Z",
@@ -22323,7 +22323,7 @@
         }
       ]
     },
-    "leido": "2026-11-16T07:28:54Z"
+    "leido": "2026-11-16T11:29:26Z"
   },
   "inaigem": {
     "estaciones": [
@@ -22361,7 +22361,7 @@
       }
     ],
     "url": "https://www.inaigem.gob.pe/",
-    "leido": "2026-11-16T07:28:54Z"
+    "leido": "2026-11-16T11:29:26Z"
   },
   "enfen_docs": {
     "docs": [
