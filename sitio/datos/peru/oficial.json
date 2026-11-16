@@ -1,6 +1,6 @@
 {
   "_": "Generado por pipeline/fuentes/peru_oficial.py. Datos oficiales tal como se publican.",
-  "actualizado": "2026-11-16T21:25:24Z",
+  "actualizado": "2026-11-16T22:09:36Z",
   "fallas": [
     "coen"
   ],
@@ -422,6 +422,21 @@
   "indeci_rss": {
     "reportes": [
       {
+        "titulo": "REPORTE COMPLEMENTARIO N.° 15992 – 16/11/2026 / COEN-INDECI / 16:00 HORAS (Reporte N° 01) VIENTOS FUERTES EN EL DISTRITO DE TINGO DE SAPOSOA – SAN MARTÍN",
+        "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-15992-16-11-2026-coen-indeci-1600-horas-reporte-n-01-vientos-fuertes-en-el-distrito-de-tingo-de-saposoa-san-martin/",
+        "fecha": "2026-11-16T21:46"
+      },
+      {
+        "titulo": "REPORTE COMPLEMENTARIO N.° 15993 – 16/11/2026 / COEN – INDECI / 16:10 HORAS (Reporte N.° 4) HELADA EN EL DISTRITO DE URCOS – CUSCO",
+        "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-coplementario-n-12719-22-9-2026-coen-indeci-2135-horas-reporte-n-01-helada-en-el-distrito-de-urcos-cusco/",
+        "fecha": "2026-11-16T21:40"
+      },
+      {
+        "titulo": "BOLETÍN INFORMATIVO SÍSMICO NACIONAL N° 803-2026-INDECI/COEN",
+        "enlace": "https://portal.indeci.gob.pe/emergencias/boletin-informativo-sismico-nacional-n-803-2026-indeci-coen/",
+        "fecha": "2026-11-16T21:36"
+      },
+      {
         "titulo": "REPORTE COMPLEMENTARIO N.° 15991 – 16/11/2026 / COEN-INDECI / 15:00 HORAS (Reporte N.° 1) DESLIZAMIENTO EN EL DISTRITO DE SAYAPULLO – LA LIBERTAD",
         "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-15991-16-11-2026-coen-indeci-1500-horas-reporte-n-1-deslizamiento-en-el-distrito-de-sayapullo-la-libertad/",
         "fecha": "2026-11-16T20:54"
@@ -475,25 +490,10 @@
         "titulo": "REPORTE COMPLEMENTARIO N.° 15986 – 16/11/2026 / COEN – INDECI / 13:00 HORAS (Reporte N.º 2) VIENTOS FUERTES EN EL DISTRITO DE RÍO NEGRO – JUNÍN",
         "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-15718-9-11-2026-coen-indeci-1935-horas-reporte-n-o-1-vientos-fuertes-en-el-distrito-de-rio-negro-junin/",
         "fecha": "2026-11-16T19:12"
-      },
-      {
-        "titulo": "BOLETÍN INFORMATIVO DE AVISO DE CORTO PLAZO ANTE LLUVIAS INTENSAS N°319-2026-INDECI/COEN",
-        "enlace": "https://portal.indeci.gob.pe/emergencias/boletin-informativo-de-aviso-de-corto-plazo-ante-lluvias-intensas-n319-2026-indeci-coen/",
-        "fecha": "2026-11-16T19:10"
-      },
-      {
-        "titulo": "REPORTE COMPLEMENTARIO N.° 15985 – 16/11/2026 / COEN-INDECI / 12:45 HORAS (Reporte N.º 2) INCENDIO URBANO EN EL DISTRITO DE PAUCAR – PASCO",
-        "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-15851-12-10-2026-coen-indeci-1710-horas-reporte-n-o-1-incendio-urbano-en-el-distrito-de-paucar-pasco/",
-        "fecha": "2026-11-16T19:09"
-      },
-      {
-        "titulo": "REPORTE COMPLEMENTARIO N.° 15983 – 16/11/2026 / COEN-INDECI / 12:10 HORAS (Reporte N.º 4) VIENTOS FUERTES EN EL DISTRITO DE PUERTO BERMÚDEZ – PASCO",
-        "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-14824-23-10-2026-coen-indeci-1740-horas-reporte-n-o-1-vientos-fuertes-en-el-distrito-de-puerto-bermudez-pasco/",
-        "fecha": "2026-11-16T19:07"
       }
     ],
     "url": "https://portal.indeci.gob.pe/emergencias/",
-    "leido": "2026-11-16T21:25:25Z"
+    "leido": "2026-11-16T22:09:38Z"
   },
   "escenario": {
     "vigente": true,
@@ -1714,7 +1714,7 @@
       }
     },
     "url": "https://sigrid.cenepred.gob.pe/sigridv3/escenario-aviso",
-    "leido": "2026-11-16T21:25:27Z"
+    "leido": "2026-11-16T22:09:40Z"
   },
   "quebradas": {
     "fecha": "2026-11-16",
@@ -3910,7 +3910,7 @@
     },
     "sin_cruce": 1,
     "url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico",
-    "leido": "2026-11-16T21:25:35Z"
+    "leido": "2026-11-16T22:09:50Z"
   },
   "hidro": {
     "avisos": [
@@ -3940,7 +3940,7 @@
       }
     ],
     "url": "https://www.senamhi.gob.pe/?p=aviso-hidrologico",
-    "leido": "2026-11-16T21:25:36Z"
+    "leido": "2026-11-16T22:09:50Z"
   },
   "ana_rios": {
     "estaciones": [
@@ -18542,11 +18542,11 @@
       }
     },
     "url": "https://visor.geoperu.gob.pe/",
-    "leido": "2026-11-16T21:25:38Z"
+    "leido": "2026-11-16T22:09:52Z"
   },
   "agua": {
-    "total": 74,
-    "conexiones": 510956,
+    "total": 75,
+    "conexiones": 511499,
     "cortes": [
       {
         "eps": "SEDAPAR  S.A.",
@@ -19402,6 +19402,10 @@
         "cortes": 1,
         "conexiones": 654
       },
+      "240101": {
+        "cortes": 1,
+        "conexiones": 543
+      },
       "130109": {
         "cortes": 1,
         "conexiones": 431
@@ -19448,7 +19452,7 @@
       }
     },
     "url": "https://www.sunass.gob.pe/",
-    "leido": "2026-11-16T21:25:39Z"
+    "leido": "2026-11-16T22:09:54Z"
   },
   "incendios": {
     "total": 30,
@@ -19725,7 +19729,7 @@
       }
     ],
     "url": "https://geo.serfor.gob.pe/visor/",
-    "leido": "2026-11-16T21:25:40Z"
+    "leido": "2026-11-16T22:09:55Z"
   },
   "phisis": {
     "estaciones": [
@@ -21905,7 +21909,7 @@
       "clasificacion": 99.99
     },
     "url": "http://met.igp.gob.pe/variabclim/",
-    "leido": "2026-11-16T21:25:41Z"
+    "leido": "2026-11-16T22:09:57Z"
   },
   "dhn": {
     "generado": "2026-11-16T14:18:59Z",
@@ -22417,7 +22421,7 @@
         }
       ]
     },
-    "leido": "2026-11-16T21:25:42Z"
+    "leido": "2026-11-16T22:09:59Z"
   },
   "inaigem": {
     "estaciones": [
@@ -22455,7 +22459,7 @@
       }
     ],
     "url": "https://www.inaigem.gob.pe/",
-    "leido": "2026-11-16T21:25:42Z"
+    "leido": "2026-11-16T22:09:59Z"
   },
   "enfen_docs": {
     "docs": [
