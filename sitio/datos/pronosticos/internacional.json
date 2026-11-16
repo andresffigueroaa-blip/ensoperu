@@ -1,6 +1,6 @@
 {
   "_": "Generado por pipeline/fuentes/internacional.py. Cada bloque con su centro, fecha y enlace.",
-  "actualizado": "2026-11-16T06:26:01Z",
+  "actualizado": "2026-11-16T19:02:27Z",
   "fallas": [],
   "cpc": {
     "emitido": "2026-11-12",
@@ -519,18 +519,12 @@
   },
   "mjo": {
     "ultimo": {
-      "fecha": "2026-11-11",
-      "pc1": 0.543,
-      "pc2": 1.187,
-      "amplitud": 1.31
+      "fecha": "2026-11-12",
+      "pc1": 0.555,
+      "pc2": 1.416,
+      "amplitud": 1.52
     },
     "serie": [
-      {
-        "fecha": "2026-09-28",
-        "pc1": 0.996,
-        "pc2": -0.405,
-        "amplitud": 1.08
-      },
       {
         "fecha": "2026-09-29",
         "pc1": 1.057,
@@ -773,27 +767,33 @@
       },
       {
         "fecha": "2026-11-08",
-        "pc1": 0.458,
-        "pc2": 0.823,
-        "amplitud": 0.94
+        "pc1": 0.368,
+        "pc2": 0.933,
+        "amplitud": 1.0
       },
       {
         "fecha": "2026-11-09",
-        "pc1": 0.444,
-        "pc2": 0.931,
-        "amplitud": 1.03
+        "pc1": 0.344,
+        "pc2": 1.042,
+        "amplitud": 1.1
       },
       {
         "fecha": "2026-11-10",
-        "pc1": 0.445,
-        "pc2": 1.081,
-        "amplitud": 1.17
+        "pc1": 0.329,
+        "pc2": 1.185,
+        "amplitud": 1.23
       },
       {
         "fecha": "2026-11-11",
-        "pc1": 0.543,
-        "pc2": 1.187,
-        "amplitud": 1.31
+        "pc1": 0.412,
+        "pc2": 1.294,
+        "amplitud": 1.36
+      },
+      {
+        "fecha": "2026-11-12",
+        "pc1": 0.555,
+        "pc2": 1.416,
+        "amplitud": 1.52
       }
     ],
     "activa": true,
@@ -894,10 +894,10 @@
       "id": "seas5",
       "titulo": "Pluma del modelo ECMWF SEAS5, regiones Niño",
       "fuente": "ECMWF",
-      "origen": "https://charts.ecmwf.int/content/20261113161822-3674d28ecb66f11cbdc722925db5c00fbdd932ae.png",
-      "huella": "12e06fbf6b10",
+      "origen": "https://charts.ecmwf.int/content/20261116130748-878274eca70f8e110964ad0dd63eb30d92a7adcf.png",
+      "huella": "39cb46875cb4",
       "archivo": "seas5.png",
-      "fecha": "2026-11-13"
+      "fecha": "2026-11-16"
     },
     {
       "id": "iri",
@@ -922,9 +922,9 @@
       "titulo": "Pronóstico de la MJO, ECMWF corregido",
       "fuente": "NOAA CPC",
       "origen": "https://www.cpc.ncep.noaa.gov/products/precip/mjo/img/ECMF_BC.png",
-      "huella": "a2ffbc599107",
+      "huella": "11a244e59b75",
       "archivo": "mjo.png",
-      "fecha": "2026-11-15"
+      "fecha": "2026-11-16"
     },
     {
       "id": "gth",
@@ -940,10 +940,9 @@
       "titulo": "Lluvia pronosticada a 10 días, Sudamérica",
       "fuente": "CIIFEN (CHIRPS-GEFS)",
       "origen": "https://ciifen.org/wp-content/uploads/imagenes_clima/pronostico/pron_precipitacion/chirps_forecast_10days.png",
-      "huella": "bcca7b6956fd",
+      "huella": "e332d701b733",
       "archivo": "chirps10.png",
-      "fecha": "2026-11-14",
-      "atrasada": true
+      "fecha": "2026-11-16"
     }
   ]
 }
