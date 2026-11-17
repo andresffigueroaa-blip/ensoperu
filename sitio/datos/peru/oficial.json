@@ -1,6 +1,6 @@
 {
   "_": "Generado por pipeline/fuentes/peru_oficial.py. Datos oficiales tal como se publican.",
-  "actualizado": "2026-11-17T04:25:33Z",
+  "actualizado": "2026-11-17T04:32:15Z",
   "fallas": [
     "coen"
   ],
@@ -422,6 +422,11 @@
   "indeci_rss": {
     "reportes": [
       {
+        "titulo": "REPORTE DE PELIGRO INMINENTE N.º 0116 – 16/11/2026/ COEN – INDECI / 23:00 HORAS (Reporte N.º 1) POR LLUVIAS INTENSAS EN EL DISTRITO DE YAUTÁN – ÁNCASH",
+        "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-de-peligro-inminente-n-o-0116-16-11-2026-coen-indeci-2300-horas-reporte-n-o-1-por-lluvias-intensas-en-el-distrito-de-yautan-ancash/",
+        "fecha": "2026-11-17T04:27"
+      },
+      {
         "titulo": "REPORTE DE PELIGRO INMINENTE N.º 0115 – 16/11/2026/ COEN – INDECI / 20:25 HORAS (Reporte N.º 1) POR LLUVIAS INTENSAS EN EL DISTRITO DE YAUTAN – ÁNCASH",
         "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-de-peligro-inminente-n-o-0115-16-11-2026-coen-indeci-2025-horas-reporte-n-o-1-por-lluvias-intensas-en-el-distrito-de-yautan-ancash/",
         "fecha": "2026-11-17T04:25"
@@ -485,15 +490,10 @@
         "titulo": "BOLETÍN INFORMATIVO DE AVISO METEOROLÓGICO N° 472-2026-INDECI/COEN",
         "enlace": "https://portal.indeci.gob.pe/emergencias/boletin-informativo-de-aviso-meteorologico-n-472-2026-indeci-coen/",
         "fecha": "2026-11-17T01:10"
-      },
-      {
-        "titulo": "REPORTE COMPLEMENTARIO N.° 16004 – 16/11/2026 / COEN-INDECI / 19:40 HORAS (Reporte N.º 1) TORMENTA ELÉCTRICA EN EL DISTRITO DE CHECCA- CUSCO",
-        "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-16004-16-11-2026-coen-indeci-1940-horas-reporte-n-o-1-tormenta-electrica-en-el-distrito-de-checca-cusco/",
-        "fecha": "2026-11-17T01:09"
       }
     ],
     "url": "https://portal.indeci.gob.pe/emergencias/",
-    "leido": "2026-11-17T04:25:36Z"
+    "leido": "2026-11-17T04:32:16Z"
   },
   "escenario": {
     "vigente": true,
@@ -1714,7 +1714,7 @@
       }
     },
     "url": "https://sigrid.cenepred.gob.pe/sigridv3/escenario-aviso",
-    "leido": "2026-11-17T04:25:39Z"
+    "leido": "2026-11-17T04:32:18Z"
   },
   "quebradas": {
     "fecha": "2026-11-16",
@@ -3910,7 +3910,7 @@
     },
     "sin_cruce": 1,
     "url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico",
-    "leido": "2026-11-17T04:25:54Z"
+    "leido": "2026-11-17T04:32:34Z"
   },
   "hidro": {
     "avisos": [
@@ -3940,7 +3940,7 @@
       }
     ],
     "url": "https://www.senamhi.gob.pe/?p=aviso-hidrologico",
-    "leido": "2026-11-17T04:25:55Z"
+    "leido": "2026-11-17T04:32:35Z"
   },
   "ana_rios": {
     "estaciones": [
@@ -18547,7 +18547,7 @@
       }
     },
     "url": "https://visor.geoperu.gob.pe/",
-    "leido": "2026-11-17T04:25:57Z"
+    "leido": "2026-11-17T04:32:36Z"
   },
   "agua": {
     "total": 68,
@@ -19429,7 +19429,7 @@
       }
     },
     "url": "https://www.sunass.gob.pe/",
-    "leido": "2026-11-17T04:25:58Z"
+    "leido": "2026-11-17T04:32:37Z"
   },
   "incendios": {
     "total": 62,
@@ -19994,7 +19994,7 @@
       }
     ],
     "url": "https://geo.serfor.gob.pe/visor/",
-    "leido": "2026-11-17T04:26:00Z"
+    "leido": "2026-11-17T04:32:38Z"
   },
   "phisis": {
     "estaciones": [
@@ -22174,7 +22174,7 @@
       "clasificacion": 99.99
     },
     "url": "http://met.igp.gob.pe/variabclim/",
-    "leido": "2026-11-17T04:26:02Z"
+    "leido": "2026-11-17T04:32:40Z"
   },
   "dhn": {
     "generado": "2026-11-16T14:18:59Z",
@@ -22686,7 +22686,7 @@
         }
       ]
     },
-    "leido": "2026-11-17T04:26:03Z"
+    "leido": "2026-11-17T04:32:41Z"
   },
   "inaigem": {
     "estaciones": [
@@ -22724,7 +22724,7 @@
       }
     ],
     "url": "https://www.inaigem.gob.pe/",
-    "leido": "2026-11-17T04:26:03Z"
+    "leido": "2026-11-17T04:32:42Z"
   },
   "enfen_docs": {
     "docs": [
