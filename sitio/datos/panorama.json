@@ -1,6 +1,6 @@
 {
   "_": "Generado por pipeline/productos/panorama.py. No editar a mano.",
-  "generado": "2026-11-17T22:26:18Z",
+  "generado": "2026-11-17T22:55:44Z",
   "fecha": "2026-11-17",
   "lectura": [
     {
@@ -30,13 +30,13 @@
     {
       "t": "Ríos: el modelo global GloFAS pronostica caudales por encima de su percentil 90 anual (1984-2023) en 9, entre ellos Tumbes, Chicama, La Leche, Piura; es orientativo. En la última lectura, ninguna estación de la ANA ni del SENAMHI está sobre su umbral de crecida.",
       "fuente": "GloFAS (Copernicus) vía Open-Meteo; lecturas de la ANA y el SENAMHI",
-      "fecha": "2026-11-17T22:26:17Z",
+      "fecha": "2026-11-17T22:55:44Z",
       "url": "https://www.globalfloods.eu/"
     },
     {
       "t": "CENEPRED: 123 distritos en riesgo muy alto por lluvia, hasta el 17 de noviembre; en ellos viven 980 274 personas (suma ENSO Perú del escenario, sin repetir distritos).",
       "fuente": "CENEPRED, escenarios de riesgo ante el aviso de lluvias",
-      "fecha": "2026-11-17T22:26:00Z",
+      "fecha": "2026-11-17T22:55:30Z",
       "url": "https://sigrid.cenepred.gob.pe/sigridv3/escenario-aviso"
     },
     {
@@ -46,7 +46,7 @@
       "url": "https://coen.indeci.gob.pe/mer/"
     },
     {
-      "t": "Focos de calor detectados por satélite: 1069 en 7 días; el mayor número en Coronel Portillo (Ucayali), 221.",
+      "t": "Focos de calor detectados por satélite: 1279 en 7 días; el mayor número en Coronel Portillo (Ucayali), 260.",
       "fuente": "NASA FIRMS, VIIRS NOAA-20",
       "fecha": "2026-11-17",
       "url": "https://firms.modaps.eosdis.nasa.gov/"
@@ -65,7 +65,7 @@
       "aviso_lluvia_desde": null,
       "mar": null,
       "n_mar": null,
-      "focos": 30,
+      "focos": 36,
       "n_focos": "alto",
       "dias_fuertes": 6,
       "n_lluvia": "muy alto",
@@ -86,7 +86,7 @@
       "aviso_lluvia_desde": "2026-11-18",
       "mar": 6.35,
       "n_mar": "muy alto",
-      "focos": 17,
+      "focos": 19,
       "n_focos": "alto",
       "dias_fuertes": 0,
       "n_lluvia": "bajo",
@@ -107,8 +107,8 @@
       "aviso_lluvia_desde": null,
       "mar": null,
       "n_mar": null,
-      "focos": 2,
-      "n_focos": "medio",
+      "focos": 17,
+      "n_focos": "alto",
       "dias_fuertes": 1,
       "n_lluvia": "medio",
       "lluvia16": 122.2,
@@ -128,7 +128,7 @@
       "aviso_lluvia_desde": "2026-11-18",
       "mar": 4.08,
       "n_mar": "muy alto",
-      "focos": 5,
+      "focos": 6,
       "n_focos": "medio",
       "dias_fuertes": 0,
       "n_lluvia": "bajo",
@@ -149,8 +149,8 @@
       "aviso_lluvia_desde": null,
       "mar": null,
       "n_mar": null,
-      "focos": 6,
-      "n_focos": "medio",
+      "focos": 17,
+      "n_focos": "alto",
       "dias_fuertes": 1,
       "n_lluvia": "medio",
       "lluvia16": 107.4,
@@ -170,7 +170,7 @@
       "aviso_lluvia_desde": null,
       "mar": null,
       "n_mar": null,
-      "focos": 59,
+      "focos": 66,
       "n_focos": "muy alto",
       "dias_fuertes": 1,
       "n_lluvia": "medio",
@@ -212,7 +212,7 @@
       "aviso_lluvia_desde": null,
       "mar": null,
       "n_mar": null,
-      "focos": 23,
+      "focos": 44,
       "n_focos": "alto",
       "dias_fuertes": 2,
       "n_lluvia": "medio",
@@ -233,7 +233,7 @@
       "aviso_lluvia_desde": null,
       "mar": null,
       "n_mar": null,
-      "focos": 13,
+      "focos": 20,
       "n_focos": "alto",
       "dias_fuertes": 2,
       "n_lluvia": "medio",
@@ -254,7 +254,7 @@
       "aviso_lluvia_desde": null,
       "mar": null,
       "n_mar": null,
-      "focos": 58,
+      "focos": 68,
       "n_focos": "muy alto",
       "dias_fuertes": 1,
       "n_lluvia": "medio",
@@ -275,7 +275,7 @@
       "aviso_lluvia_desde": "2026-11-18",
       "mar": 5.65,
       "n_mar": "muy alto",
-      "focos": 15,
+      "focos": 17,
       "n_focos": "alto",
       "dias_fuertes": 0,
       "n_lluvia": "bajo",
@@ -296,7 +296,7 @@
       "aviso_lluvia_desde": null,
       "mar": null,
       "n_mar": null,
-      "focos": 77,
+      "focos": 104,
       "n_focos": "muy alto",
       "dias_fuertes": 1,
       "n_lluvia": "medio",
@@ -317,7 +317,7 @@
       "aviso_lluvia_desde": null,
       "mar": 6.8,
       "n_mar": "muy alto",
-      "focos": 33,
+      "focos": 36,
       "n_focos": "alto",
       "dias_fuertes": 0,
       "n_lluvia": "bajo",
@@ -366,7 +366,7 @@
       "aviso_lluvia_desde": "2026-11-18",
       "mar": 6.08,
       "n_mar": "muy alto",
-      "focos": 3,
+      "focos": 4,
       "n_focos": "medio",
       "dias_fuertes": 3,
       "n_lluvia": "alto",
@@ -389,7 +389,7 @@
       "aviso_lluvia_desde": null,
       "mar": null,
       "n_mar": null,
-      "focos": 121,
+      "focos": 141,
       "n_focos": "muy alto",
       "dias_fuertes": 2,
       "n_lluvia": "medio",
@@ -410,7 +410,7 @@
       "aviso_lluvia_desde": null,
       "mar": null,
       "n_mar": null,
-      "focos": 72,
+      "focos": 73,
       "n_focos": "muy alto",
       "dias_fuertes": 3,
       "n_lluvia": "alto",
@@ -431,7 +431,7 @@
       "aviso_lluvia_desde": "2026-11-18",
       "mar": 3.33,
       "n_mar": "muy alto",
-      "focos": 7,
+      "focos": 8,
       "n_focos": "medio",
       "dias_fuertes": 0,
       "n_lluvia": "bajo",
@@ -452,7 +452,7 @@
       "aviso_lluvia_desde": null,
       "mar": null,
       "n_mar": null,
-      "focos": 17,
+      "focos": 18,
       "n_focos": "alto",
       "dias_fuertes": 2,
       "n_lluvia": "medio",
@@ -473,7 +473,7 @@
       "aviso_lluvia_desde": null,
       "mar": 7.16,
       "n_mar": "muy alto",
-      "focos": 19,
+      "focos": 20,
       "n_focos": "alto",
       "dias_fuertes": 3,
       "n_lluvia": "alto",
@@ -497,7 +497,7 @@
       "aviso_lluvia_desde": null,
       "mar": null,
       "n_mar": null,
-      "focos": 12,
+      "focos": 14,
       "n_focos": "alto",
       "dias_fuertes": 2,
       "n_lluvia": "medio",
@@ -518,7 +518,7 @@
       "aviso_lluvia_desde": null,
       "mar": null,
       "n_mar": null,
-      "focos": 108,
+      "focos": 132,
       "n_focos": "muy alto",
       "dias_fuertes": 2,
       "n_lluvia": "medio",
@@ -583,7 +583,7 @@
       "aviso_lluvia_desde": null,
       "mar": null,
       "n_mar": null,
-      "focos": 368,
+      "focos": 415,
       "n_focos": "muy alto",
       "dias_fuertes": 3,
       "n_lluvia": "alto",
@@ -1792,8 +1792,15 @@
       "id": "2501",
       "nombre": "Coronel Portillo",
       "region": "Ucayali",
-      "focos": 221,
-      "frp": 4373.6
+      "focos": 260,
+      "frp": 4839.3
+    },
+    {
+      "id": "2503",
+      "nombre": "Padre Abad",
+      "region": "Ucayali",
+      "focos": 78,
+      "frp": 865.3
     },
     {
       "id": "2502",
@@ -1803,46 +1810,46 @@
       "frp": 1606.1
     },
     {
-      "id": "2503",
-      "nombre": "Padre Abad",
-      "region": "Ucayali",
-      "focos": 70,
-      "frp": 772.9
-    },
-    {
       "id": "1206",
       "nombre": "Satipo",
       "region": "Junin",
-      "focos": 54,
-      "frp": 508.4
+      "focos": 75,
+      "frp": 901.8
     },
     {
       "id": "1701",
       "nombre": "Tambopata",
       "region": "Madre de Dios",
-      "focos": 49,
-      "frp": 717.3
+      "focos": 50,
+      "frp": 722.6
     },
     {
       "id": "1606",
       "nombre": "Ucayali",
       "region": "Loreto",
-      "focos": 39,
-      "frp": 355.1
+      "focos": 48,
+      "frp": 389.6
     },
     {
       "id": "1602",
       "nombre": "Alto Amazonas",
       "region": "Loreto",
-      "focos": 33,
-      "frp": 271.4
+      "focos": 36,
+      "frp": 294.8
     },
     {
       "id": "2205",
       "nombre": "Lamas",
       "region": "San Martin",
-      "focos": 32,
-      "frp": 335.7
+      "focos": 36,
+      "frp": 359.1
+    },
+    {
+      "id": "0608",
+      "nombre": "Jaen",
+      "region": "Cajamarca",
+      "focos": 30,
+      "frp": 301.3
     },
     {
       "id": "2209",
@@ -1850,13 +1857,6 @@
       "region": "San Martin",
       "focos": 29,
       "frp": 341.8
-    },
-    {
-      "id": "0608",
-      "nombre": "Jaen",
-      "region": "Cajamarca",
-      "focos": 27,
-      "frp": 268.0
     }
   ],
   "rios_altos": [
@@ -2085,7 +2085,7 @@
     "avisos": 9,
     "rojos": 2,
     "rios_altos": 9,
-    "focos": 1069,
+    "focos": 1279,
     "distritos_riesgo_alto": 766
   }
 }
