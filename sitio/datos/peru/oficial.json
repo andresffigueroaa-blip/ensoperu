@@ -1,6 +1,6 @@
 {
   "_": "Generado por pipeline/fuentes/peru_oficial.py. Datos oficiales tal como se publican.",
-  "actualizado": "2026-11-17T14:10:41Z",
+  "actualizado": "2026-11-17T14:29:29Z",
   "fallas": [
     "coen"
   ],
@@ -493,7 +493,7 @@
       }
     ],
     "url": "https://portal.indeci.gob.pe/emergencias/",
-    "leido": "2026-11-17T14:10:42Z"
+    "leido": "2026-11-17T14:29:31Z"
   },
   "escenario": {
     "vigente": true,
@@ -1714,7 +1714,7 @@
       }
     },
     "url": "https://sigrid.cenepred.gob.pe/sigridv3/escenario-aviso",
-    "leido": "2026-11-17T14:10:45Z"
+    "leido": "2026-11-17T14:29:33Z"
   },
   "quebradas": {
     "fecha": "2026-11-16",
@@ -3910,7 +3910,7 @@
     },
     "sin_cruce": 1,
     "url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico",
-    "leido": "2026-11-17T14:10:58Z"
+    "leido": "2026-11-17T14:29:51Z"
   },
   "hidro": {
     "avisos": [
@@ -3940,7 +3940,7 @@
       }
     ],
     "url": "https://www.senamhi.gob.pe/?p=aviso-hidrologico",
-    "leido": "2026-11-17T14:10:59Z"
+    "leido": "2026-11-17T14:29:51Z"
   },
   "ana_rios": {
     "estaciones": [
@@ -18275,11 +18275,11 @@
       }
     },
     "url": "https://visor.geoperu.gob.pe/",
-    "leido": "2026-11-17T14:11:00Z"
+    "leido": "2026-11-17T14:29:53Z"
   },
   "agua": {
-    "total": 72,
-    "conexiones": 443811,
+    "total": 73,
+    "conexiones": 459225,
     "cortes": [
       {
         "eps": "SEDAPAR  S.A.",
@@ -18330,6 +18330,16 @@
         "inicio": "2026-11-16",
         "restablece": "2026-11-17",
         "distrito": "150117"
+      },
+      {
+        "eps": "SEDAPAL",
+        "lugar": "Ate, Lima",
+        "conexiones": 12553,
+        "tipo": "Programada",
+        "motivo": "Otros",
+        "inicio": "2026-11-17",
+        "restablece": "2026-11-18",
+        "distrito": "150103"
       },
       {
         "eps": "EPS SEDACUSCO S.A.",
@@ -18440,6 +18450,16 @@
         "inicio": "2026-11-18",
         "restablece": "2026-11-18",
         "distrito": "150143"
+      },
+      {
+        "eps": "EPSSSC S.A.",
+        "lugar": "Satipo, Junin",
+        "conexiones": 5088,
+        "tipo": "Imprevista",
+        "motivo": "Otros",
+        "inicio": "2026-11-17",
+        "restablece": "2026-11-17",
+        "distrito": "120601"
       },
       {
         "eps": "EPS EMAQ S.R.L.",
@@ -18640,16 +18660,6 @@
         "inicio": "2026-11-17",
         "restablece": "2026-11-18",
         "distrito": "130102"
-      },
-      {
-        "eps": "SEDAPAL",
-        "lugar": "Ate, Lima",
-        "conexiones": 2227,
-        "tipo": "Imprevista",
-        "motivo": "Rotura de tubería de agua potable",
-        "inicio": "2026-11-17",
-        "restablece": "2026-11-17",
-        "distrito": "150103"
       },
       {
         "eps": "SEDAPAL",
@@ -18870,16 +18880,6 @@
         "inicio": "2026-11-16",
         "restablece": "2026-11-17",
         "distrito": "130105"
-      },
-      {
-        "eps": "UE AGUA TUMBES",
-        "lugar": "Tumbes, Tumbes",
-        "conexiones": 543,
-        "tipo": "Imprevista",
-        "motivo": "Otros",
-        "inicio": "2026-11-16",
-        "restablece": "2026-11-17",
-        "distrito": "240101"
       }
     ],
     "distritos": {
@@ -18902,6 +18902,10 @@
       "150117": {
         "cortes": 1,
         "conexiones": 24198
+      },
+      "150103": {
+        "cortes": 1,
+        "conexiones": 12553
       },
       "080105": {
         "cortes": 1,
@@ -18946,6 +18950,10 @@
       "150143": {
         "cortes": 1,
         "conexiones": 5320
+      },
+      "120601": {
+        "cortes": 1,
+        "conexiones": 5088
       },
       "080901": {
         "cortes": 1,
@@ -19026,10 +19034,6 @@
       "130102": {
         "cortes": 1,
         "conexiones": 2237
-      },
-      "150103": {
-        "cortes": 1,
-        "conexiones": 2227
       },
       "150119": {
         "cortes": 1,
@@ -19173,7 +19177,7 @@
       }
     },
     "url": "https://www.sunass.gob.pe/",
-    "leido": "2026-11-17T14:11:02Z"
+    "leido": "2026-11-17T14:29:54Z"
   },
   "incendios": {
     "total": 38,
@@ -19522,7 +19526,7 @@
       }
     ],
     "url": "https://geo.serfor.gob.pe/visor/",
-    "leido": "2026-11-17T14:11:03Z"
+    "leido": "2026-11-17T14:29:55Z"
   },
   "phisis": {
     "estaciones": [
@@ -21704,7 +21708,7 @@
       "clasificacion": 99.98
     },
     "url": "http://met.igp.gob.pe/variabclim/",
-    "leido": "2026-11-17T14:11:05Z"
+    "leido": "2026-11-17T14:29:58Z"
   },
   "dhn": {
     "generado": "2026-11-17T13:55:42Z",
@@ -22216,7 +22220,7 @@
         }
       ]
     },
-    "leido": "2026-11-17T14:11:06Z"
+    "leido": "2026-11-17T14:29:59Z"
   },
   "inaigem": {
     "estaciones": [
@@ -22254,7 +22258,7 @@
       }
     ],
     "url": "https://www.inaigem.gob.pe/",
-    "leido": "2026-11-17T14:11:07Z"
+    "leido": "2026-11-17T14:29:59Z"
   },
   "enfen_docs": {
     "docs": [
