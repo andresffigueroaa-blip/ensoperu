@@ -1,6 +1,6 @@
 {
   "_": "Generado por pipeline/fuentes/peru_oficial.py. Datos oficiales tal como se publican.",
-  "actualizado": "2026-11-17T02:26:38Z",
+  "actualizado": "2026-11-17T02:34:54Z",
   "fallas": [
     "coen"
   ],
@@ -422,6 +422,11 @@
   "indeci_rss": {
     "reportes": [
       {
+        "titulo": "BOLETÍN INFORMATIVO SÍSMICO NACIONAL N° 805-2026-INDECI/COEN",
+        "enlace": "https://portal.indeci.gob.pe/emergencias/boletin-informativo-sismico-nacional-n-805-2026-indeci-coen/",
+        "fecha": "2026-11-17T02:31"
+      },
+      {
         "titulo": "REPORTE COMPLEMENTARIO N.º 16005 – 16/11/2026/ COEN – INDECI / 20:00 HORAS (Reporte N.º 2) LLUVIAS INTENSAS EN EL DISTRITO DE CASCAS – LA LIBERTAD",
         "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-o-15995-16-11-2026-coen-indeci-1700-horas-reporte-n-o-1-lluvias-intensas-en-el-distrito-de-cascas-la-libertad/",
         "fecha": "2026-11-17T01:25"
@@ -485,15 +490,10 @@
         "titulo": "REPORTE COMPLEMENTARIO N.° 15997 – 16/11/2026 / COEN – INDECI / 18:00 HORAS (Reporte N.° 2) HUAICO EN EL DISTRITO DE JUSTO APU SAHUARAURA – APURÍMAC",
         "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-preliminar-n-1117-6-11-2026-coen-indeci-1508-horas-huaico-en-el-distrito-de-justo-apu-sahuaraura-apurimac/",
         "fecha": "2026-11-17T00:04"
-      },
-      {
-        "titulo": "REPORTE COMPLEMENTARIO N.° 15996 – 16/11/2026 / COEN – INDECI / 17:20 HORAS (Reporte N.º 3) INCENDIO FORESTAL EN EL DISTRITO DE PICHACANI – PUNO",
-        "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-13705-8-10-2026-coen-indeci-0545-horas-reporte-n-o-1-incendio-forestal-en-el-distrito-de-pichacani-puno/",
-        "fecha": "2026-11-16T23:02"
       }
     ],
     "url": "https://portal.indeci.gob.pe/emergencias/",
-    "leido": "2026-11-17T02:26:39Z"
+    "leido": "2026-11-17T02:34:55Z"
   },
   "escenario": {
     "vigente": true,
@@ -1714,7 +1714,7 @@
       }
     },
     "url": "https://sigrid.cenepred.gob.pe/sigridv3/escenario-aviso",
-    "leido": "2026-11-17T02:26:40Z"
+    "leido": "2026-11-17T02:34:58Z"
   },
   "quebradas": {
     "fecha": "2026-11-16",
@@ -3910,7 +3910,7 @@
     },
     "sin_cruce": 1,
     "url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico",
-    "leido": "2026-11-17T02:26:58Z"
+    "leido": "2026-11-17T02:35:13Z"
   },
   "hidro": {
     "avisos": [
@@ -3940,7 +3940,7 @@
       }
     ],
     "url": "https://www.senamhi.gob.pe/?p=aviso-hidrologico",
-    "leido": "2026-11-17T02:26:58Z"
+    "leido": "2026-11-17T02:35:14Z"
   },
   "ana_rios": {
     "estaciones": [
@@ -18531,7 +18531,7 @@
       }
     },
     "url": "https://visor.geoperu.gob.pe/",
-    "leido": "2026-11-17T02:27:10Z"
+    "leido": "2026-11-17T02:35:15Z"
   },
   "agua": {
     "total": 68,
@@ -19413,7 +19413,7 @@
       }
     },
     "url": "https://www.sunass.gob.pe/",
-    "leido": "2026-11-17T02:27:10Z"
+    "leido": "2026-11-17T02:35:17Z"
   },
   "incendios": {
     "total": 32,
@@ -19708,7 +19708,7 @@
       }
     ],
     "url": "https://geo.serfor.gob.pe/visor/",
-    "leido": "2026-11-17T02:27:11Z"
+    "leido": "2026-11-17T02:35:18Z"
   },
   "phisis": {
     "estaciones": [
@@ -21888,7 +21888,7 @@
       "clasificacion": 99.99
     },
     "url": "http://met.igp.gob.pe/variabclim/",
-    "leido": "2026-11-17T02:27:13Z"
+    "leido": "2026-11-17T02:35:20Z"
   },
   "dhn": {
     "generado": "2026-11-16T14:18:59Z",
@@ -22400,7 +22400,7 @@
         }
       ]
     },
-    "leido": "2026-11-17T02:27:14Z"
+    "leido": "2026-11-17T02:35:21Z"
   },
   "inaigem": {
     "estaciones": [
@@ -22438,7 +22438,7 @@
       }
     ],
     "url": "https://www.inaigem.gob.pe/",
-    "leido": "2026-11-17T02:27:15Z"
+    "leido": "2026-11-17T02:35:22Z"
   },
   "enfen_docs": {
     "docs": [
