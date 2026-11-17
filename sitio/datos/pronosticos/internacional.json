@@ -1,6 +1,6 @@
 {
   "_": "Generado por pipeline/fuentes/internacional.py. Cada bloque con su centro, fecha y enlace.",
-  "actualizado": "2026-11-17T14:11:07Z",
+  "actualizado": "2026-11-17T20:25:46Z",
   "fallas": [],
   "cpc": {
     "emitido": "2026-11-12",
@@ -519,18 +519,12 @@
   },
   "mjo": {
     "ultimo": {
-      "fecha": "2026-11-12",
-      "pc1": 0.555,
-      "pc2": 1.416,
-      "amplitud": 1.52
+      "fecha": "2026-11-13",
+      "pc1": 0.581,
+      "pc2": 1.553,
+      "amplitud": 1.66
     },
     "serie": [
-      {
-        "fecha": "2026-09-29",
-        "pc1": 1.057,
-        "pc2": -0.582,
-        "amplitud": 1.21
-      },
       {
         "fecha": "2026-09-30",
         "pc1": 1.031,
@@ -773,27 +767,33 @@
       },
       {
         "fecha": "2026-11-09",
-        "pc1": 0.344,
-        "pc2": 1.042,
-        "amplitud": 1.1
+        "pc1": 0.33,
+        "pc2": 1.12,
+        "amplitud": 1.17
       },
       {
         "fecha": "2026-11-10",
-        "pc1": 0.329,
-        "pc2": 1.185,
-        "amplitud": 1.23
+        "pc1": 0.315,
+        "pc2": 1.256,
+        "amplitud": 1.29
       },
       {
         "fecha": "2026-11-11",
-        "pc1": 0.412,
-        "pc2": 1.294,
-        "amplitud": 1.36
+        "pc1": 0.402,
+        "pc2": 1.356,
+        "amplitud": 1.41
       },
       {
         "fecha": "2026-11-12",
-        "pc1": 0.555,
-        "pc2": 1.416,
-        "amplitud": 1.52
+        "pc1": 0.539,
+        "pc2": 1.464,
+        "amplitud": 1.56
+      },
+      {
+        "fecha": "2026-11-13",
+        "pc1": 0.581,
+        "pc2": 1.553,
+        "amplitud": 1.66
       }
     ],
     "activa": true,
@@ -808,41 +808,22 @@
           {
             "tipo": "WET",
             "ciudades": [
-              "Tumbes"
-            ]
-          },
-          {
-            "tipo": "DRY",
-            "ciudades": [
-              "Cusco",
-              "Iquitos",
-              "Pucallpa",
-              "Puerto Maldonado"
-            ]
-          }
-        ],
-        "emitido": "2026-11-10",
-        "desde": "2026-11-18",
-        "hasta": "2026-11-24"
-      },
-      "W3": {
-        "zonas": [
-          {
-            "tipo": "WET",
-            "ciudades": [
               "Cajamarca",
               "Chiclayo",
-              "Huaraz",
               "Piura",
-              "Tarapoto",
-              "Trujillo",
               "Tumbes"
             ]
           }
         ],
-        "emitido": "2026-11-10",
+        "emitido": "2026-11-17",
         "desde": "2026-11-25",
         "hasta": "2026-12-01"
+      },
+      "W3": {
+        "zonas": [],
+        "emitido": "2026-11-17",
+        "desde": "2026-12-02",
+        "hasta": "2026-12-08"
       }
     }
   },
@@ -931,9 +912,9 @@
       "titulo": "Zonas de riesgo tropical, semanas 2 y 3",
       "fuente": "NOAA CPC",
       "origen": "https://www.cpc.ncep.noaa.gov/products/precip/CWlink/ghaz/gth_full.png",
-      "huella": "84e9a603536d",
+      "huella": "42d6312943e2",
       "archivo": "gth.png",
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-17"
     },
     {
       "id": "chirps10",
