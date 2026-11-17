@@ -1,6 +1,6 @@
 {
   "_": "Generado por pipeline/productos/panorama.py. No editar a mano.",
-  "generado": "2026-11-17T10:25:05Z",
+  "generado": "2026-11-17T10:25:48Z",
   "fecha": "2026-11-17",
   "lectura": [
     {
@@ -30,13 +30,13 @@
     {
       "t": "Ríos: el modelo global GloFAS pronostica caudales por encima de su percentil 90 anual (1984-2023) en 11, entre ellos Piura, Chira, La Leche, Chicama; es orientativo. En la última lectura, 1 estaciones de la ANA y el SENAMHI están sobre su umbral de crecida.",
       "fuente": "GloFAS (Copernicus) vía Open-Meteo; lecturas de la ANA y el SENAMHI",
-      "fecha": "2026-11-17T10:25:05Z",
+      "fecha": "2026-11-17T10:25:48Z",
       "url": "https://www.globalfloods.eu/"
     },
     {
       "t": "CENEPRED: 123 distritos en riesgo muy alto por lluvia, hasta el 17 de noviembre; en ellos viven 980 274 personas (suma ENSO Perú del escenario, sin repetir distritos).",
       "fuente": "CENEPRED, escenarios de riesgo ante el aviso de lluvias",
-      "fecha": "2026-11-17T10:24:03Z",
+      "fecha": "2026-11-17T10:25:27Z",
       "url": "https://sigrid.cenepred.gob.pe/sigridv3/escenario-aviso"
     },
     {
@@ -46,9 +46,9 @@
       "url": "https://coen.indeci.gob.pe/mer/"
     },
     {
-      "t": "Focos de calor detectados por satélite: 1037 en 7 días; el mayor número en Coronel Portillo (Ucayali), 213.",
+      "t": "Focos de calor detectados por satélite: 1060 en 7 días; el mayor número en Coronel Portillo (Ucayali), 221.",
       "fuente": "NASA FIRMS, VIIRS NOAA-20",
-      "fecha": "2026-11-16",
+      "fecha": "2026-11-17",
       "url": "https://firms.modaps.eosdis.nasa.gov/"
     }
   ],
@@ -254,7 +254,7 @@
       "aviso_lluvia_desde": null,
       "mar": null,
       "n_mar": null,
-      "focos": 57,
+      "focos": 58,
       "n_focos": "muy alto",
       "dias_fuertes": 3,
       "n_lluvia": "alto",
@@ -275,7 +275,7 @@
       "aviso_lluvia_desde": "2026-11-18",
       "mar": 5.65,
       "n_mar": "muy alto",
-      "focos": 13,
+      "focos": 15,
       "n_focos": "alto",
       "dias_fuertes": 0,
       "n_lluvia": "bajo",
@@ -296,7 +296,7 @@
       "aviso_lluvia_desde": null,
       "mar": null,
       "n_mar": null,
-      "focos": 73,
+      "focos": 77,
       "n_focos": "muy alto",
       "dias_fuertes": 3,
       "n_lluvia": "alto",
@@ -317,7 +317,7 @@
       "aviso_lluvia_desde": null,
       "mar": 6.8,
       "n_mar": "muy alto",
-      "focos": 32,
+      "focos": 33,
       "n_focos": "alto",
       "dias_fuertes": 0,
       "n_lluvia": "bajo",
@@ -391,7 +391,7 @@
       "aviso_lluvia_desde": null,
       "mar": null,
       "n_mar": null,
-      "focos": 109,
+      "focos": 115,
       "n_focos": "muy alto",
       "dias_fuertes": 1,
       "n_lluvia": "medio",
@@ -520,7 +520,7 @@
       "aviso_lluvia_desde": null,
       "mar": null,
       "n_mar": null,
-      "focos": 107,
+      "focos": 108,
       "n_focos": "muy alto",
       "dias_fuertes": 5,
       "n_lluvia": "alto",
@@ -585,7 +585,7 @@
       "aviso_lluvia_desde": null,
       "mar": null,
       "n_mar": null,
-      "focos": 360,
+      "focos": 368,
       "n_focos": "muy alto",
       "dias_fuertes": 4,
       "n_lluvia": "alto",
@@ -1794,8 +1794,8 @@
       "id": "2501",
       "nombre": "Coronel Portillo",
       "region": "Ucayali",
-      "focos": 213,
-      "frp": 4362.6
+      "focos": 221,
+      "frp": 4373.6
     },
     {
       "id": "2502",
@@ -1815,8 +1815,8 @@
       "id": "1206",
       "nombre": "Satipo",
       "region": "Junin",
-      "focos": 50,
-      "frp": 504.3
+      "focos": 54,
+      "frp": 508.4
     },
     {
       "id": "1701",
@@ -1829,8 +1829,15 @@
       "id": "1606",
       "nombre": "Ucayali",
       "region": "Loreto",
-      "focos": 37,
-      "frp": 347.7
+      "focos": 39,
+      "frp": 355.1
+    },
+    {
+      "id": "1602",
+      "nombre": "Alto Amazonas",
+      "region": "Loreto",
+      "focos": 33,
+      "frp": 271.4
     },
     {
       "id": "2205",
@@ -1840,18 +1847,11 @@
       "frp": 335.7
     },
     {
-      "id": "1602",
-      "nombre": "Alto Amazonas",
-      "region": "Loreto",
-      "focos": 30,
-      "frp": 269.1
-    },
-    {
       "id": "2209",
       "nombre": "San Martin",
       "region": "San Martin",
-      "focos": 28,
-      "frp": 339.7
+      "focos": 29,
+      "frp": 341.8
     },
     {
       "id": "0608",
@@ -2111,7 +2111,7 @@
     "avisos": 7,
     "rojos": 2,
     "rios_altos": 11,
-    "focos": 1037,
+    "focos": 1060,
     "distritos_riesgo_alto": 766
   }
 }
