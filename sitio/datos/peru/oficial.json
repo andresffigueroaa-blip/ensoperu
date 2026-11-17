@@ -1,8 +1,12 @@
 {
   "_": "Generado por pipeline/fuentes/peru_oficial.py. Datos oficiales tal como se publican.",
-  "actualizado": "2026-11-17T14:29:29Z",
+  "actualizado": "2026-11-17T14:24:15Z",
   "fallas": [
-    "coen"
+    "coen",
+    "ana_rios",
+    "ana_embalses",
+    "emergencia",
+    "phisis"
   ],
   "fenomeno": {
     "fecha": "13 de noviembre del 2026",
@@ -10,7 +14,7 @@
     "color": "#ff0031",
     "titular": "EL NIÑO COSTERO CONTINUARÍA HASTA INICIOS DE INVIERNO DEL 2027",
     "url": "https://www.senamhi.gob.pe/?p=fenomeno-el-nino",
-    "leido": "2026-11-17T14:05:26Z"
+    "leido": "2026-11-17T14:24:15Z"
   },
   "coen": {
     "dias": 7,
@@ -493,7 +497,7 @@
       }
     ],
     "url": "https://portal.indeci.gob.pe/emergencias/",
-    "leido": "2026-11-17T14:29:31Z"
+    "leido": "2026-11-17T14:24:16Z"
   },
   "escenario": {
     "vigente": true,
@@ -1714,7 +1718,7 @@
       }
     },
     "url": "https://sigrid.cenepred.gob.pe/sigridv3/escenario-aviso",
-    "leido": "2026-11-17T14:29:33Z"
+    "leido": "2026-11-17T14:24:17Z"
   },
   "quebradas": {
     "fecha": "2026-11-16",
@@ -3910,7 +3914,7 @@
     },
     "sin_cruce": 1,
     "url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico",
-    "leido": "2026-11-17T14:29:51Z"
+    "leido": "2026-11-17T14:24:34Z"
   },
   "hidro": {
     "avisos": [
@@ -3940,7 +3944,7 @@
       }
     ],
     "url": "https://www.senamhi.gob.pe/?p=aviso-hidrologico",
-    "leido": "2026-11-17T14:29:51Z"
+    "leido": "2026-11-17T14:24:37Z"
   },
   "ana_rios": {
     "estaciones": [
@@ -5916,7 +5920,8 @@
     "en_alerta": 3,
     "en_emergencia": 1,
     "url": "https://snirh.ana.gob.pe/onrh/",
-    "leido": "2026-11-17T14:06:05Z"
+    "leido": "2026-11-17T14:06:05Z",
+    "atrasado": false
   },
   "ana_embalses": {
     "embalses": [
@@ -6142,7 +6147,8 @@
       }
     ],
     "url": "https://snirh.ana.gob.pe/onrh/",
-    "leido": "2026-11-17T14:06:05Z"
+    "leido": "2026-11-17T14:06:05Z",
+    "atrasado": false
   },
   "ana_pc": {
     "total": 536,
@@ -6151,9 +6157,9 @@
       "Por Ejecutar": 136,
       "Ejecutado": 153
     },
-    "avance_medio": 42.4,
+    "avance_medio": 42.3,
     "url": "https://snirh.ana.gob.pe/",
-    "leido": "2026-11-17T14:06:07Z"
+    "leido": "2026-11-17T14:26:33Z"
   },
   "emergencia": {
     "decretos": {
@@ -11119,7 +11125,8 @@
       "ONRH/DEE_DS_140_2026_PCM"
     ],
     "url": "https://www.gob.pe/busquedas?contenido[]=normas&term=estado+de+emergencia",
-    "leido": "2026-11-17T14:06:08Z"
+    "leido": "2026-11-17T14:06:08Z",
+    "atrasado": false
   },
   "preparacion": {
     "conteo": {
@@ -18275,7 +18282,7 @@
       }
     },
     "url": "https://visor.geoperu.gob.pe/",
-    "leido": "2026-11-17T14:29:53Z"
+    "leido": "2026-11-17T14:28:05Z"
   },
   "agua": {
     "total": 73,
@@ -19177,7 +19184,7 @@
       }
     },
     "url": "https://www.sunass.gob.pe/",
-    "leido": "2026-11-17T14:29:54Z"
+    "leido": "2026-11-17T14:28:05Z"
   },
   "incendios": {
     "total": 38,
@@ -19526,7 +19533,7 @@
       }
     ],
     "url": "https://geo.serfor.gob.pe/visor/",
-    "leido": "2026-11-17T14:29:55Z"
+    "leido": "2026-11-17T14:28:06Z"
   },
   "phisis": {
     "estaciones": [
@@ -21502,8 +21509,7 @@
         ]
       ]
     },
-    "leido": "2026-11-17T12:24:21Z",
-    "atrasado": false
+    "leido": "2026-11-17T14:30:24Z"
   },
   "igp": {
     "e": [
@@ -21708,7 +21714,7 @@
       "clasificacion": 99.98
     },
     "url": "http://met.igp.gob.pe/variabclim/",
-    "leido": "2026-11-17T14:29:58Z"
+    "leido": "2026-11-17T14:30:24Z"
   },
   "dhn": {
     "generado": "2026-11-17T13:55:42Z",
@@ -22220,7 +22226,7 @@
         }
       ]
     },
-    "leido": "2026-11-17T14:29:59Z"
+    "leido": "2026-11-17T14:30:25Z"
   },
   "inaigem": {
     "estaciones": [
@@ -22258,7 +22264,7 @@
       }
     ],
     "url": "https://www.inaigem.gob.pe/",
-    "leido": "2026-11-17T14:29:59Z"
+    "leido": "2026-11-17T14:30:26Z"
   },
   "enfen_docs": {
     "docs": [
@@ -22324,6 +22330,6 @@
       }
     ],
     "url": "https://enfen.imarpe.gob.pe/",
-    "leido": "2026-11-17T14:09:14Z"
+    "leido": "2026-11-17T14:30:28Z"
   }
 }
