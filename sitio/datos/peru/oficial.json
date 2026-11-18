@@ -1,9 +1,8 @@
 {
   "_": "Generado por pipeline/fuentes/peru_oficial.py. Datos oficiales tal como se publican.",
-  "actualizado": "2026-11-18T20:25:21Z",
+  "actualizado": "2026-11-18T20:34:03Z",
   "fallas": [
-    "coen",
-    "prono"
+    "coen"
   ],
   "fenomeno": {
     "fecha": "13 de noviembre del 2026",
@@ -423,6 +422,11 @@
   "indeci_rss": {
     "reportes": [
       {
+        "titulo": "BOLETÍN INFORMATIVO MONITOREO DE PELIGROS Y PERSPECTIVAS N°322 del 18-11-2026",
+        "enlace": "https://portal.indeci.gob.pe/emergencias/boletin-informativo-monitoreo-de-peligros-y-perspectivas-n322-del-18-11-2026/",
+        "fecha": "2026-11-18T20:31"
+      },
+      {
         "titulo": "BOLETÍN INFORMATIVO DE AVISO DE CORTO PLAZO ANTE LLUVIAS INTENSAS N°321-2026 DEL 18-11-2026",
         "enlace": "https://portal.indeci.gob.pe/emergencias/boletin-informativo-de-aviso-de-corto-plazo-ante-lluvias-intensas-n321-2026-del-18-11-2026/",
         "fecha": "2026-11-18T18:48"
@@ -486,15 +490,10 @@
         "titulo": "REPORTE COMPLEMENTARIO N.º 16080 – 18/11/2026/ COEN – INDECI / 06:10 HORAS (Reporte N.º 2) HUAICO EN EL DISTRITO DE TAPACOCHA – ÁNCASH",
         "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-o-15958-15-11-2026-coen-indeci-1410-horas-reporte-n-o-1-huaico-en-el-distrito-de-tapacocha-ancash/",
         "fecha": "2026-11-18T12:29"
-      },
-      {
-        "titulo": "REPORTE COMPLEMENTARIO N.º 16079 – 18/11/2026 / COEN – INDECI / 06:05 HORAS (Reporte N.º 16) LLUVIAS INTENSAS EN EL DISTRITO DE BOQUERÓN – UCAYALI",
-        "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-o-15290-31-10-2026-coen-indeci-1340-horas-reporte-n-o-1-deslizamiento-en-el-distrito-de-boqueron-ucayali/",
-        "fecha": "2026-11-18T12:25"
       }
     ],
     "url": "https://portal.indeci.gob.pe/emergencias/",
-    "leido": "2026-11-18T20:25:23Z"
+    "leido": "2026-11-18T20:34:05Z"
   },
   "escenario": {
     "vigente": true,
@@ -1674,7 +1673,7 @@
       }
     },
     "url": "https://sigrid.cenepred.gob.pe/sigridv3/escenario-aviso",
-    "leido": "2026-11-18T20:25:29Z"
+    "leido": "2026-11-18T20:34:09Z"
   },
   "quebradas": {
     "fecha": "2026-11-18",
@@ -3158,7 +3157,7 @@
     },
     "sin_cruce": 0,
     "url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico",
-    "leido": "2026-11-18T20:25:43Z"
+    "leido": "2026-11-18T20:34:14Z"
   },
   "hidro": {
     "avisos": [
@@ -3176,7 +3175,7 @@
       }
     ],
     "url": "https://www.senamhi.gob.pe/?p=aviso-hidrologico",
-    "leido": "2026-11-18T20:25:44Z"
+    "leido": "2026-11-18T20:34:14Z"
   },
   "ana_rios": {
     "estaciones": [
@@ -17746,7 +17745,7 @@
       }
     },
     "url": "https://visor.geoperu.gob.pe/",
-    "leido": "2026-11-18T20:26:10Z"
+    "leido": "2026-11-18T20:34:15Z"
   },
   "agua": {
     "total": 82,
@@ -18684,10 +18683,10 @@
       }
     },
     "url": "https://www.sunass.gob.pe/",
-    "leido": "2026-11-18T20:26:12Z"
+    "leido": "2026-11-18T20:34:16Z"
   },
   "incendios": {
-    "total": 108,
+    "total": 109,
     "lista": [
       {
         "fecha": "2026-11-18",
@@ -18697,6 +18696,15 @@
         "cobertura": "Cobertura Forestal",
         "lat": -13.44778,
         "lon": -71.9281
+      },
+      {
+        "fecha": "2026-11-18",
+        "hora": "14:00",
+        "lugar": "Tarma, Junin",
+        "distrito": "120701",
+        "cobertura": "Cobertura Agrícola",
+        "lat": -11.40884,
+        "lon": -75.68664
       },
       {
         "fecha": "2026-11-18",
@@ -19399,19 +19407,10 @@
         "cobertura": "Cobertura Forestal",
         "lat": -10.05629,
         "lon": -76.2699
-      },
-      {
-        "fecha": "2026-11-17",
-        "hora": "14:10",
-        "lugar": "Pillco Marca, Huanuco",
-        "distrito": "100111",
-        "cobertura": "Cobertura Forestal",
-        "lat": -10.05523,
-        "lon": -76.26398
       }
     ],
     "url": "https://geo.serfor.gob.pe/visor/",
-    "leido": "2026-11-18T20:26:13Z"
+    "leido": "2026-11-18T20:34:18Z"
   },
   "phisis": {
     "estaciones": [
@@ -21602,7 +21601,7 @@
       "clasificacion": 99.98
     },
     "url": "http://met.igp.gob.pe/variabclim/",
-    "leido": "2026-11-18T20:26:35Z"
+    "leido": "2026-11-18T20:34:20Z"
   },
   "dhn": {
     "generado": "2026-11-18T13:57:57Z",
@@ -22114,7 +22113,7 @@
         }
       ]
     },
-    "leido": "2026-11-18T20:26:37Z"
+    "leido": "2026-11-18T20:34:21Z"
   },
   "inaigem": {
     "estaciones": [
@@ -22152,7 +22151,7 @@
       }
     ],
     "url": "https://www.inaigem.gob.pe/",
-    "leido": "2026-11-18T20:26:38Z"
+    "leido": "2026-11-18T20:34:21Z"
   },
   "enfen_docs": {
     "docs": [

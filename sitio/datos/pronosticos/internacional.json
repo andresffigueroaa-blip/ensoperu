@@ -1,6 +1,6 @@
 {
   "_": "Generado por pipeline/fuentes/internacional.py. Cada bloque con su centro, fecha y enlace.",
-  "actualizado": "2026-11-18T14:08:27Z",
+  "actualizado": "2026-11-18T20:34:21Z",
   "fallas": [],
   "cpc": {
     "emitido": "2026-11-12",
@@ -519,18 +519,12 @@
   },
   "mjo": {
     "ultimo": {
-      "fecha": "2026-11-13",
-      "pc1": 0.581,
-      "pc2": 1.553,
-      "amplitud": 1.66
+      "fecha": "2026-11-14",
+      "pc1": 0.726,
+      "pc2": 1.593,
+      "amplitud": 1.75
     },
     "serie": [
-      {
-        "fecha": "2026-09-30",
-        "pc1": 1.031,
-        "pc2": -0.703,
-        "amplitud": 1.25
-      },
       {
         "fecha": "2026-10-01",
         "pc1": 0.882,
@@ -773,27 +767,33 @@
       },
       {
         "fecha": "2026-11-10",
-        "pc1": 0.315,
-        "pc2": 1.256,
-        "amplitud": 1.29
+        "pc1": 0.383,
+        "pc2": 1.313,
+        "amplitud": 1.37
       },
       {
         "fecha": "2026-11-11",
-        "pc1": 0.402,
-        "pc2": 1.356,
-        "amplitud": 1.41
+        "pc1": 0.482,
+        "pc2": 1.4,
+        "amplitud": 1.48
       },
       {
         "fecha": "2026-11-12",
-        "pc1": 0.539,
-        "pc2": 1.464,
-        "amplitud": 1.56
+        "pc1": 0.626,
+        "pc2": 1.487,
+        "amplitud": 1.61
       },
       {
         "fecha": "2026-11-13",
-        "pc1": 0.581,
+        "pc1": 0.693,
         "pc2": 1.553,
-        "amplitud": 1.66
+        "amplitud": 1.7
+      },
+      {
+        "fecha": "2026-11-14",
+        "pc1": 0.726,
+        "pc2": 1.593,
+        "amplitud": 1.75
       }
     ],
     "activa": true,
@@ -904,9 +904,9 @@
       "titulo": "Pronóstico de la MJO, ECMWF corregido",
       "fuente": "NOAA CPC",
       "origen": "https://www.cpc.ncep.noaa.gov/products/precip/mjo/img/ECMF_BC.png",
-      "huella": "11a244e59b75",
+      "huella": "af2cbacd0afa",
       "archivo": "mjo.png",
-      "fecha": "2026-11-16"
+      "fecha": "2026-11-18"
     },
     {
       "id": "gth",
