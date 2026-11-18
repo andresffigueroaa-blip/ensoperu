@@ -1,6 +1,6 @@
 {
   "_": "Generado por pipeline/fuentes/peru_oficial.py. Datos oficiales tal como se publican.",
-  "actualizado": "2026-11-18T21:25:16Z",
+  "actualizado": "2026-11-18T22:00:05Z",
   "fallas": [
     "coen"
   ],
@@ -422,6 +422,21 @@
   "indeci_rss": {
     "reportes": [
       {
+        "titulo": "REPORTE PRELIMINAR N.° 1154 – 18/11/2026 / COEN – INDECI / 16:10 HORAS INCENDIO FORESTAL EN EL DISTRITO DE ACRAQUIA – HUANCAVELICA",
+        "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-preliminar-n-1154-18-11-2026-coen-indeci-1610-horas-incendio-forestal-en-el-distrito-de-acraquia-huancavelica/",
+        "fecha": "2026-11-18T21:22"
+      },
+      {
+        "titulo": "REPORTE COMPLEMENTARIO N.° 16097 – 18/11/2026 / COEN-INDECI / 16:03 HORAS (Reporte N.°1) DESLIZAMIENTO EN EL DISTRITO DE QUECHUALLA – AREQUIPA",
+        "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-preliminar-n-1144-17-11-2026-coen-indeci-1640-horas-deslizamiento-en-el-distrito-de-quechualla-arequipa/",
+        "fecha": "2026-11-18T21:13"
+      },
+      {
+        "titulo": "REPORTE COMPLEMENTARIO N.° 16096 – 18/11/2026 / COEN – INDECI / 16:00 HORAS (Reporte N.º 1) INCENDIO FORESTAL EN EL DISTRITO DE CHIARA – AYACUCHO",
+        "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-preliminar-n-1149-17-11-2026-coen-indeci-2255-horas-incendio-forestal-en-el-distrito-de-chiara-ayacucho/",
+        "fecha": "2026-11-18T21:10"
+      },
+      {
         "titulo": "REPORTE COMPLEMENTARIO N.° 16095 – 18/11/2026 / COEN-INDECI / 15:45 HORAS (Reporte N.º 2) VIENTOS FUERTES EN EL DISTRITO DE CALLAYUC – CAJAMARCA",
         "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-16062-17-11-2026-coen-indeci-1905-horas-reporte-n-o-1-vientos-fuertes-en-el-distrito-de-callayuc-cajamarca/",
         "fecha": "2026-11-18T20:54"
@@ -475,25 +490,10 @@
         "titulo": "BOLETÍN INFORMATIVO DE AVISO DE CORTO PLAZO ANTE POSIBLE ACTIVACIÓN DE QUEBRADAS N°223 18-11-2026",
         "enlace": "https://portal.indeci.gob.pe/emergencias/boletin-informativo-de-aviso-de-corto-plazo-ante-posible-activacion-de-quebradas-n223-18-11-2026/",
         "fecha": "2026-11-18T18:40"
-      },
-      {
-        "titulo": "REPORTE COMPLEMENTARIO N.º 16088 – 18/11/2026 / COEN – INDECI / 12:23 HORAS (Reporte N.º 1) INCENDIO FORESTAL EN EL DISTRITO DE LIVITACA – CUSCO",
-        "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-o-16088-18-11-2026-coen-indeci-1223-horas-reporte-n-o-1-incendio-forestal-en-el-distrito-de-livitaca-cusco/",
-        "fecha": "2026-11-18T17:30"
-      },
-      {
-        "titulo": "REPORTE COMPLEMENTARIO N.° 16087 – 18/11/2026 / COEN-INDECI / 12:14 HORAS (Reporte N.° 1) DERRUMBE EN EL DISTRITO DE CERRO QUILLO – ÁNCASH",
-        "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-16087-18-11-2026-coen-indeci-1214-horas-reporte-n-1-derrumbe-en-el-distrito-de-cerro-quillo-ancash/",
-        "fecha": "2026-11-18T17:25"
-      },
-      {
-        "titulo": "REPORTE PRELIMINAR N.° 1152 – 18/11/2026/COEN – INDECI / 12:08 HORAS INCENDIO FORESTAL EN EL DISTRITO DE CHALCOS – AYACUCHO",
-        "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-preliminar-n-1152-18-11-2026-coen-indeci-1208-horas-incendio-forestal-en-el-distrito-de-chalcos-ayacucho/",
-        "fecha": "2026-11-18T17:15"
       }
     ],
     "url": "https://portal.indeci.gob.pe/emergencias/",
-    "leido": "2026-11-18T21:25:18Z"
+    "leido": "2026-11-18T22:00:06Z"
   },
   "escenario": {
     "vigente": true,
@@ -1673,7 +1673,7 @@
       }
     },
     "url": "https://sigrid.cenepred.gob.pe/sigridv3/escenario-aviso",
-    "leido": "2026-11-18T21:25:21Z"
+    "leido": "2026-11-18T22:00:12Z"
   },
   "quebradas": {
     "fecha": "2026-11-18",
@@ -3157,7 +3157,7 @@
     },
     "sin_cruce": 0,
     "url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico",
-    "leido": "2026-11-18T21:25:28Z"
+    "leido": "2026-11-18T22:00:18Z"
   },
   "hidro": {
     "avisos": [
@@ -3175,7 +3175,7 @@
       }
     ],
     "url": "https://www.senamhi.gob.pe/?p=aviso-hidrologico",
-    "leido": "2026-11-18T21:25:28Z"
+    "leido": "2026-11-18T22:00:18Z"
   },
   "ana_rios": {
     "estaciones": [
@@ -17745,11 +17745,11 @@
       }
     },
     "url": "https://visor.geoperu.gob.pe/",
-    "leido": "2026-11-18T21:25:30Z"
+    "leido": "2026-11-18T22:00:19Z"
   },
   "agua": {
-    "total": 81,
-    "conexiones": 485037,
+    "total": 82,
+    "conexiones": 490337,
     "cortes": [
       {
         "eps": "SEDAPAR  S.A.",
@@ -17923,6 +17923,16 @@
       },
       {
         "eps": "SEDAPAL",
+        "lugar": "Puente Piedra, Lima",
+        "conexiones": 5967,
+        "tipo": "Imprevista",
+        "motivo": "Baja producción en planta",
+        "inicio": "2026-11-18",
+        "restablece": "2026-11-19",
+        "distrito": "150125"
+      },
+      {
+        "eps": "SEDAPAL",
         "lugar": "Villa Maria Del Triunfo, Lima",
         "conexiones": 5320,
         "tipo": "Programada",
@@ -18053,16 +18063,6 @@
       },
       {
         "eps": "SEDAPAL",
-        "lugar": "Puente Piedra, Lima",
-        "conexiones": 3462,
-        "tipo": "Programada",
-        "motivo": "Limpieza y desinfección de reservorio/cisterna",
-        "inicio": "2026-11-17",
-        "restablece": "2026-11-18",
-        "distrito": "150125"
-      },
-      {
-        "eps": "SEDAPAL",
         "lugar": "Punta Hermosa, Lima",
         "conexiones": 3141,
         "tipo": "Imprevista",
@@ -18080,6 +18080,16 @@
         "inicio": "2026-11-20",
         "restablece": "2026-11-21",
         "distrito": "040501"
+      },
+      {
+        "eps": "SEDAPAL",
+        "lugar": "San Borja, Lima",
+        "conexiones": 2795,
+        "tipo": "Programada",
+        "motivo": "Mantenimiento de redes secundarias",
+        "inicio": "2026-11-26",
+        "restablece": "2026-11-27",
+        "distrito": "150130"
       },
       {
         "eps": "EPS EMAPAT S.A._",
@@ -18340,16 +18350,6 @@
         "inicio": "2026-11-24",
         "restablece": "2026-11-24",
         "distrito": "040128"
-      },
-      {
-        "eps": "SEDAPAL",
-        "lugar": "Santa Rosa, Lima",
-        "conexiones": 878,
-        "tipo": "Programada",
-        "motivo": "Limpieza y desinfección de reservorio/cisterna",
-        "inicio": "2026-11-24",
-        "restablece": "2026-11-25",
-        "distrito": "150139"
       }
     ],
     "distritos": {
@@ -18421,6 +18421,10 @@
         "cortes": 1,
         "conexiones": 6130
       },
+      "150125": {
+        "cortes": 1,
+        "conexiones": 5967
+      },
       "150143": {
         "cortes": 1,
         "conexiones": 5320
@@ -18473,10 +18477,6 @@
         "cortes": 1,
         "conexiones": 3572
       },
-      "150125": {
-        "cortes": 1,
-        "conexiones": 3462
-      },
       "150126": {
         "cortes": 1,
         "conexiones": 3141
@@ -18484,6 +18484,10 @@
       "040501": {
         "cortes": 1,
         "conexiones": 2846
+      },
+      "150130": {
+        "cortes": 1,
+        "conexiones": 2795
       },
       "170103": {
         "cortes": 1,
@@ -18679,10 +18683,10 @@
       }
     },
     "url": "https://www.sunass.gob.pe/",
-    "leido": "2026-11-18T21:25:31Z"
+    "leido": "2026-11-18T22:00:21Z"
   },
   "incendios": {
-    "total": 110,
+    "total": 111,
     "lista": [
       {
         "fecha": "2026-11-18",
@@ -18692,6 +18696,15 @@
         "cobertura": "Cobertura Forestal",
         "lat": -13.4744,
         "lon": -71.92138
+      },
+      {
+        "fecha": "2026-11-18",
+        "hora": "16:00",
+        "lugar": "Acraquia, Huancavelica",
+        "distrito": "090703",
+        "cobertura": "Cobertura Forestal",
+        "lat": -12.4139,
+        "lon": -74.9256
       },
       {
         "fecha": "2026-11-18",
@@ -19394,19 +19407,10 @@
         "cobertura": "Cobertura Agrícola",
         "lat": -10.06057,
         "lon": -76.26797
-      },
-      {
-        "fecha": "2026-11-17",
-        "hora": "14:10",
-        "lugar": "Pillco Marca, Huanuco",
-        "distrito": "100111",
-        "cobertura": "Cobertura Forestal",
-        "lat": -10.05887,
-        "lon": -76.26894
       }
     ],
     "url": "https://geo.serfor.gob.pe/visor/",
-    "leido": "2026-11-18T21:25:32Z"
+    "leido": "2026-11-18T22:00:22Z"
   },
   "phisis": {
     "estaciones": [
@@ -21596,7 +21600,7 @@
       "clasificacion": 99.98
     },
     "url": "http://met.igp.gob.pe/variabclim/",
-    "leido": "2026-11-18T21:25:34Z"
+    "leido": "2026-11-18T22:00:25Z"
   },
   "dhn": {
     "generado": "2026-11-18T13:57:57Z",
@@ -22108,7 +22112,7 @@
         }
       ]
     },
-    "leido": "2026-11-18T21:25:35Z"
+    "leido": "2026-11-18T22:00:26Z"
   },
   "inaigem": {
     "estaciones": [
@@ -22146,7 +22150,7 @@
       }
     ],
     "url": "https://www.inaigem.gob.pe/",
-    "leido": "2026-11-18T21:25:36Z"
+    "leido": "2026-11-18T22:00:26Z"
   },
   "enfen_docs": {
     "docs": [
