@@ -1,9 +1,8 @@
 {
   "_": "Generado por pipeline/fuentes/peru_oficial.py. Datos oficiales tal como se publican.",
-  "actualizado": "2026-11-18T17:24:19Z",
+  "actualizado": "2026-11-18T17:27:53Z",
   "fallas": [
-    "coen",
-    "agua"
+    "coen"
   ],
   "fenomeno": {
     "fecha": "13 de noviembre del 2026",
@@ -494,7 +493,7 @@
       }
     ],
     "url": "https://portal.indeci.gob.pe/emergencias/",
-    "leido": "2026-11-18T17:24:21Z"
+    "leido": "2026-11-18T17:27:55Z"
   },
   "escenario": {
     "vigente": true,
@@ -1674,7 +1673,7 @@
       }
     },
     "url": "https://sigrid.cenepred.gob.pe/sigridv3/escenario-aviso",
-    "leido": "2026-11-18T17:24:22Z"
+    "leido": "2026-11-18T17:27:58Z"
   },
   "quebradas": {
     "fecha": "2026-11-18",
@@ -3158,7 +3157,7 @@
     },
     "sin_cruce": 0,
     "url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico",
-    "leido": "2026-11-18T17:24:32Z"
+    "leido": "2026-11-18T17:28:05Z"
   },
   "hidro": {
     "avisos": [
@@ -3176,7 +3175,7 @@
       }
     ],
     "url": "https://www.senamhi.gob.pe/?p=aviso-hidrologico",
-    "leido": "2026-11-18T17:24:33Z"
+    "leido": "2026-11-18T17:28:05Z"
   },
   "ana_rios": {
     "estaciones": [
@@ -17682,11 +17681,11 @@
       }
     },
     "url": "https://visor.geoperu.gob.pe/",
-    "leido": "2026-11-18T17:24:50Z"
+    "leido": "2026-11-18T17:28:07Z"
   },
   "agua": {
-    "total": 79,
-    "conexiones": 465050,
+    "total": 81,
+    "conexiones": 469056,
     "cortes": [
       {
         "eps": "SEDAPAR  S.A.",
@@ -17989,6 +17988,16 @@
         "distrito": "150125"
       },
       {
+        "eps": "SEDAPAL",
+        "lugar": "Punta Hermosa, Lima",
+        "conexiones": 3141,
+        "tipo": "Imprevista",
+        "motivo": "Fuga en conexión",
+        "inicio": "2026-11-18",
+        "restablece": "2026-11-18",
+        "distrito": "150126"
+      },
+      {
         "eps": "SEDAPAR  S.A.",
         "lugar": "Chivay, Arequipa",
         "conexiones": 2846,
@@ -18269,24 +18278,14 @@
         "distrito": "150139"
       },
       {
-        "eps": "EPS SEMAPACH S.A",
-        "lugar": "Alto Laran, Ica",
-        "conexiones": 800,
-        "tipo": "Programada",
-        "motivo": "Limpieza y desinfección de reservorio/cisterna",
-        "inicio": "2026-11-25",
-        "restablece": "2026-11-26",
-        "distrito": "110202"
-      },
-      {
-        "eps": "EPS CHAVIN S.A.",
-        "lugar": "Independencia, Ancash",
-        "conexiones": 793,
-        "tipo": "Programada",
-        "motivo": "Otros",
-        "inicio": "2026-11-19",
-        "restablece": "2026-11-20",
-        "distrito": "020105"
+        "eps": "SEDAPAL",
+        "lugar": "Punta Negra, Lima",
+        "conexiones": 865,
+        "tipo": "Imprevista",
+        "motivo": "Rotura de tubería de agua potable",
+        "inicio": "2026-11-18",
+        "restablece": "2026-11-18",
+        "distrito": "150127"
       }
     ],
     "distritos": {
@@ -18410,6 +18409,10 @@
         "cortes": 1,
         "conexiones": 3462
       },
+      "150126": {
+        "cortes": 1,
+        "conexiones": 3141
+      },
       "040501": {
         "cortes": 1,
         "conexiones": 2846
@@ -18522,6 +18525,10 @@
         "cortes": 1,
         "conexiones": 878
       },
+      "150127": {
+        "cortes": 1,
+        "conexiones": 865
+      },
       "110202": {
         "cortes": 1,
         "conexiones": 800
@@ -18608,12 +18615,29 @@
       }
     },
     "url": "https://www.sunass.gob.pe/",
-    "leido": "2026-11-18T16:25:54Z",
-    "atrasado": false
+    "leido": "2026-11-18T17:28:45Z"
   },
   "incendios": {
-    "total": 104,
+    "total": 106,
     "lista": [
+      {
+        "fecha": "2026-11-18",
+        "hora": "11:10",
+        "lugar": "Masin, Ancash",
+        "distrito": "021009",
+        "cobertura": "Cobertura Forestal",
+        "lat": -9.3335,
+        "lon": -77.06647
+      },
+      {
+        "fecha": "2026-11-18",
+        "hora": "10:40",
+        "lugar": "Masin, Ancash",
+        "distrito": "021009",
+        "cobertura": "Cobertura Agrícola",
+        "lat": -9.31553,
+        "lon": -77.06647
+      },
       {
         "fecha": "2026-11-18",
         "hora": "02:01",
@@ -19315,28 +19339,10 @@
         "cobertura": "Cobertura Forestal",
         "lat": -10.05207,
         "lon": -76.27208
-      },
-      {
-        "fecha": "2026-11-17",
-        "hora": "14:10",
-        "lugar": "Andaymarca, Huancavelica",
-        "distrito": "090720",
-        "cobertura": "Cobertura Agrícola",
-        "lat": -12.27479,
-        "lon": -74.67889
-      },
-      {
-        "fecha": "2026-11-17",
-        "hora": "14:10",
-        "lugar": "Churcampa, Huancavelica",
-        "distrito": "090501",
-        "cobertura": "Cobertura Forestal",
-        "lat": -12.74694,
-        "lon": -74.40098
       }
     ],
     "url": "https://geo.serfor.gob.pe/visor/",
-    "leido": "2026-11-18T17:26:20Z"
+    "leido": "2026-11-18T17:28:48Z"
   },
   "phisis": {
     "estaciones": [
@@ -21526,7 +21532,7 @@
       "clasificacion": 99.98
     },
     "url": "http://met.igp.gob.pe/variabclim/",
-    "leido": "2026-11-18T17:26:42Z"
+    "leido": "2026-11-18T17:28:49Z"
   },
   "dhn": {
     "generado": "2026-11-18T13:57:57Z",
@@ -22038,7 +22044,7 @@
         }
       ]
     },
-    "leido": "2026-11-18T17:26:42Z"
+    "leido": "2026-11-18T17:28:50Z"
   },
   "inaigem": {
     "estaciones": [
@@ -22076,7 +22082,7 @@
       }
     ],
     "url": "https://www.inaigem.gob.pe/",
-    "leido": "2026-11-18T17:26:43Z"
+    "leido": "2026-11-18T17:28:51Z"
   },
   "enfen_docs": {
     "docs": [
