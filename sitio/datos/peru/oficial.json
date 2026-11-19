@@ -1,8 +1,9 @@
 {
   "_": "Generado por pipeline/fuentes/peru_oficial.py. Datos oficiales tal como se publican.",
-  "actualizado": "2026-11-19T20:24:10Z",
+  "actualizado": "2026-11-19T20:25:43Z",
   "fallas": [
-    "coen"
+    "coen",
+    "incendios"
   ],
   "fenomeno": {
     "fecha": "13 de noviembre del 2026",
@@ -493,7 +494,7 @@
       }
     ],
     "url": "https://portal.indeci.gob.pe/emergencias/",
-    "leido": "2026-11-19T20:24:11Z"
+    "leido": "2026-11-19T20:25:44Z"
   },
   "escenario": {
     "vigente": true,
@@ -1673,7 +1674,7 @@
       }
     },
     "url": "https://sigrid.cenepred.gob.pe/sigridv3/escenario-aviso",
-    "leido": "2026-11-19T20:24:12Z"
+    "leido": "2026-11-19T20:25:48Z"
   },
   "quebradas": {
     "fecha": "2026-11-18",
@@ -3157,7 +3158,7 @@
     },
     "sin_cruce": 0,
     "url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico",
-    "leido": "2026-11-19T20:24:18Z"
+    "leido": "2026-11-19T20:25:54Z"
   },
   "hidro": {
     "avisos": [
@@ -3175,7 +3176,7 @@
       }
     ],
     "url": "https://www.senamhi.gob.pe/?p=aviso-hidrologico",
-    "leido": "2026-11-19T20:24:18Z"
+    "leido": "2026-11-19T20:25:55Z"
   },
   "ana_rios": {
     "estaciones": [
@@ -17777,7 +17778,7 @@
       }
     },
     "url": "https://visor.geoperu.gob.pe/",
-    "leido": "2026-11-19T20:24:34Z"
+    "leido": "2026-11-19T20:25:57Z"
   },
   "agua": {
     "total": 81,
@@ -18711,7 +18712,7 @@
       }
     },
     "url": "https://www.sunass.gob.pe/",
-    "leido": "2026-11-19T20:24:34Z"
+    "leido": "2026-11-19T20:25:59Z"
   },
   "incendios": {
     "total": 87,
@@ -19438,7 +19439,8 @@
       }
     ],
     "url": "https://geo.serfor.gob.pe/visor/",
-    "leido": "2026-11-19T20:24:35Z"
+    "leido": "2026-11-19T20:24:35Z",
+    "atrasado": false
   },
   "phisis": {
     "estaciones": [
@@ -21628,7 +21630,7 @@
       "clasificacion": 99.98
     },
     "url": "http://met.igp.gob.pe/variabclim/",
-    "leido": "2026-11-19T20:24:39Z"
+    "leido": "2026-11-19T20:26:04Z"
   },
   "dhn": {
     "generado": "2026-11-19T14:23:05Z",
@@ -22140,7 +22142,7 @@
         }
       ]
     },
-    "leido": "2026-11-19T20:24:40Z"
+    "leido": "2026-11-19T20:26:05Z"
   },
   "inaigem": {
     "estaciones": [
@@ -22178,7 +22180,7 @@
       }
     ],
     "url": "https://www.inaigem.gob.pe/",
-    "leido": "2026-11-19T20:24:40Z"
+    "leido": "2026-11-19T20:26:06Z"
   },
   "enfen_docs": {
     "docs": [
