@@ -2,7 +2,7 @@
   "_": "Generado por pipeline/fuentes/senamhi.py. Avisos oficiales vigentes o por empezar.",
   "fuente": "SENAMHI, avisos meteorológicos",
   "url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico",
-  "leido": "2026-11-19T04:24:03Z",
+  "leido": "2026-11-19T13:41:45Z",
   "avisos": [
     {
       "numero": 471,
@@ -48,7 +48,7 @@
     },
     {
       "numero": 474,
-      "situacion": "emitido",
+      "situacion": "vigente",
       "titulo": "INCREMENTO DE TEMPERATURA DIURNA EN LA SELVA (EXTENSIÓN DEL AVISO 469)",
       "emitido": "2026-11-17",
       "inicio": "2026-11-19",
@@ -97,15 +97,12 @@
       "fin": "2026-11-21",
       "nivel": "AMARILLO",
       "enlace": "https://www.senamhi.gob.pe/?p=aviso-meteorologico-vigente&a=2026&b=29375&c=00&d=SENA",
-      "texto": "El SENAMHI informa que, del lunes 16 noviembre al 18 de noviembre del 2026, se presentará el incremento de la velocidad del viento, de moderada a fuerte intensidad, en la costa centro y sur. Estas condiciones favorecerán el levantamiento de polvo y arena, principalmente en el departamento de Ica, lo que podría generar una reducción significativa de la visibilidad horizontal. Asimismo, durante la noche, madrugada y primeras horas de la mañana, se espera la presencia de niebla, neblina y lloviznas dispersas en sectores cercanos al litoral, especialmente en zonas de la costa central y sur. Además, se esperan ráfagas de viento con velocidades superiores a los 40 km/h. El lunes 16 de noviembre se prevén vientos próximos a los 32 km/h en la costa central, principalmente en la ciudad Lima; alrededor de los 20 km/h en la costa sur, y valores de hasta 35 km/h en el litoral de Ica. El martes 17 de",
+      "texto": "",
       "zonas": [
         "Costa centro",
         "Costa sur"
       ],
-      "regiones": [
-        "Lima",
-        "Ica"
-      ]
+      "regiones": []
     }
   ]
 }
