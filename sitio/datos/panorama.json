@@ -1,7 +1,7 @@
 {
   "_": "Generado por pipeline/productos/panorama.py. No editar a mano.",
-  "generado": "2026-11-18T22:26:03Z",
-  "fecha": "2026-11-18",
+  "generado": "2026-11-19T03:26:11Z",
+  "fecha": "2026-11-19",
   "lectura": [
     {
       "t": "Estado vigente según el ENFEN: Alerta de El Niño Costero (comunicado oficial N° 20-2026, 13 de noviembre de 2026). El Niño costero continuaría hasta inicios de invierno de 2027.",
@@ -16,9 +16,9 @@
       "url": "https://psl.noaa.gov/data/gridded/data.noaa.oisst.v2.highres.html"
     },
     {
-      "t": "El SENAMHI tiene 8 avisos meteorológicos vigentes o por empezar, 2 en nivel rojo (de todo tipo: lluvia, temperatura, viento).",
+      "t": "El SENAMHI tiene 5 avisos meteorológicos vigentes o por empezar, 1 en nivel rojo (de todo tipo: lluvia, temperatura, viento).",
       "fuente": "SENAMHI, avisos meteorológicos",
-      "fecha": "2026-11-18T22:24:08Z",
+      "fecha": "2026-11-19T03:19:20Z",
       "url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico"
     },
     {
@@ -30,7 +30,7 @@
     {
       "t": "Ríos: el modelo global GloFAS pronostica caudales por encima de su percentil 90 anual (1984-2023) en 13, entre ellos La Leche, Chira, Piura, Zaña; es orientativo. En la última lectura, ninguna estación de la ANA ni del SENAMHI está sobre su umbral de crecida.",
       "fuente": "GloFAS (Copernicus) vía Open-Meteo; lecturas de la ANA y el SENAMHI",
-      "fecha": "2026-11-18T22:26:03Z",
+      "fecha": "2026-11-19T03:26:02Z",
       "url": "https://www.globalfloods.eu/"
     },
     {
@@ -56,11 +56,11 @@
     "01": {
       "nombre": "Amazonas",
       "zona": "Selva norte",
-      "aviso": "ROJO",
+      "aviso": "NARANJA",
       "aviso_tipo": "calor",
       "aviso_desde": null,
-      "aviso_numero": 469,
-      "aviso_url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico-vigente&a=2026&b=29369&c=00&d=SENA",
+      "aviso_numero": 474,
+      "aviso_url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico-vigente&a=2026&b=29374&c=00&d=SENA",
       "aviso_lluvia": null,
       "aviso_lluvia_desde": null,
       "mar": null,
@@ -248,8 +248,8 @@
       "aviso": "ROJO",
       "aviso_tipo": "calor",
       "aviso_desde": null,
-      "aviso_numero": 469,
-      "aviso_url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico-vigente&a=2026&b=29369&c=00&d=SENA",
+      "aviso_numero": 471,
+      "aviso_url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico-vigente&a=2026&b=29371&c=00&d=SENA",
       "aviso_lluvia": "NARANJA",
       "aviso_lluvia_desde": null,
       "mar": null,
@@ -290,8 +290,8 @@
       "aviso": "ROJO",
       "aviso_tipo": "calor",
       "aviso_desde": null,
-      "aviso_numero": 469,
-      "aviso_url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico-vigente&a=2026&b=29369&c=00&d=SENA",
+      "aviso_numero": 471,
+      "aviso_url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico-vigente&a=2026&b=29371&c=00&d=SENA",
       "aviso_lluvia": "NARANJA",
       "aviso_lluvia_desde": null,
       "mar": null,
@@ -383,11 +383,11 @@
     "16": {
       "nombre": "Loreto",
       "zona": "Selva norte",
-      "aviso": "ROJO",
+      "aviso": "NARANJA",
       "aviso_tipo": "calor",
       "aviso_desde": null,
-      "aviso_numero": 469,
-      "aviso_url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico-vigente&a=2026&b=29369&c=00&d=SENA",
+      "aviso_numero": 474,
+      "aviso_url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico-vigente&a=2026&b=29374&c=00&d=SENA",
       "aviso_lluvia": null,
       "aviso_lluvia_desde": null,
       "mar": null,
@@ -406,11 +406,11 @@
     "17": {
       "nombre": "Madre de Dios",
       "zona": "Selva sur",
-      "aviso": "ROJO",
+      "aviso": "NARANJA",
       "aviso_tipo": "calor",
       "aviso_desde": null,
-      "aviso_numero": 469,
-      "aviso_url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico-vigente&a=2026&b=29369&c=00&d=SENA",
+      "aviso_numero": 474,
+      "aviso_url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico-vigente&a=2026&b=29374&c=00&d=SENA",
       "aviso_lluvia": null,
       "aviso_lluvia_desde": null,
       "mar": null,
@@ -451,8 +451,8 @@
       "aviso": "ROJO",
       "aviso_tipo": "calor",
       "aviso_desde": null,
-      "aviso_numero": 469,
-      "aviso_url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico-vigente&a=2026&b=29369&c=00&d=SENA",
+      "aviso_numero": 471,
+      "aviso_url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico-vigente&a=2026&b=29371&c=00&d=SENA",
       "aviso_lluvia": "NARANJA",
       "aviso_lluvia_desde": null,
       "mar": null,
@@ -514,11 +514,11 @@
     "22": {
       "nombre": "San Martín",
       "zona": "Selva norte",
-      "aviso": "ROJO",
+      "aviso": "NARANJA",
       "aviso_tipo": "calor",
       "aviso_desde": null,
-      "aviso_numero": 469,
-      "aviso_url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico-vigente&a=2026&b=29369&c=00&d=SENA",
+      "aviso_numero": 474,
+      "aviso_url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico-vigente&a=2026&b=29374&c=00&d=SENA",
       "aviso_lluvia": null,
       "aviso_lluvia_desde": null,
       "mar": null,
@@ -579,11 +579,11 @@
     "25": {
       "nombre": "Ucayali",
       "zona": "Selva sur",
-      "aviso": "ROJO",
+      "aviso": "NARANJA",
       "aviso_tipo": "calor",
       "aviso_desde": null,
-      "aviso_numero": 469,
-      "aviso_url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico-vigente&a=2026&b=29369&c=00&d=SENA",
+      "aviso_numero": 474,
+      "aviso_url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico-vigente&a=2026&b=29374&c=00&d=SENA",
       "aviso_lluvia": null,
       "aviso_lluvia_desde": null,
       "mar": null,
@@ -2135,8 +2135,8 @@
     }
   ],
   "totales": {
-    "avisos": 8,
-    "rojos": 2,
+    "avisos": 5,
+    "rojos": 1,
     "rios_altos": 13,
     "focos": 1523,
     "distritos_riesgo_alto": 766
