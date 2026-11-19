@@ -1,9 +1,8 @@
 {
   "_": "Generado por pipeline/fuentes/peru_oficial.py. Datos oficiales tal como se publican.",
-  "actualizado": "2026-11-19T03:19:39Z",
+  "actualizado": "2026-11-19T03:28:52Z",
   "fallas": [
     "coen",
-    "escenario",
     "incendios"
   ],
   "fenomeno": {
@@ -495,7 +494,7 @@
       }
     ],
     "url": "https://portal.indeci.gob.pe/emergencias/",
-    "leido": "2026-11-19T03:19:40Z"
+    "leido": "2026-11-19T03:28:54Z"
   },
   "escenario": {
     "vigente": true,
@@ -1675,8 +1674,7 @@
       }
     },
     "url": "https://sigrid.cenepred.gob.pe/sigridv3/escenario-aviso",
-    "leido": "2026-11-18T22:25:48Z",
-    "atrasado": true
+    "leido": "2026-11-19T03:28:57Z"
   },
   "quebradas": {
     "fecha": "2026-11-18",
@@ -3160,7 +3158,7 @@
     },
     "sin_cruce": 0,
     "url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico",
-    "leido": "2026-11-19T03:21:16Z"
+    "leido": "2026-11-19T03:29:04Z"
   },
   "hidro": {
     "avisos": [
@@ -3178,7 +3176,7 @@
       }
     ],
     "url": "https://www.senamhi.gob.pe/?p=aviso-hidrologico",
-    "leido": "2026-11-19T03:21:18Z"
+    "leido": "2026-11-19T03:29:08Z"
   },
   "ana_rios": {
     "estaciones": [
@@ -17764,7 +17762,7 @@
       }
     },
     "url": "https://visor.geoperu.gob.pe/",
-    "leido": "2026-11-19T03:21:34Z"
+    "leido": "2026-11-19T03:29:10Z"
   },
   "agua": {
     "total": 71,
@@ -18658,7 +18656,7 @@
       }
     },
     "url": "https://www.sunass.gob.pe/",
-    "leido": "2026-11-19T03:21:35Z"
+    "leido": "2026-11-19T03:29:11Z"
   },
   "incendios": {
     "total": 111,
@@ -21576,7 +21574,7 @@
       "clasificacion": 99.98
     },
     "url": "http://met.igp.gob.pe/variabclim/",
-    "leido": "2026-11-19T03:21:37Z"
+    "leido": "2026-11-19T03:29:14Z"
   },
   "dhn": {
     "generado": "2026-11-18T13:57:57Z",
@@ -22088,7 +22086,7 @@
         }
       ]
     },
-    "leido": "2026-11-19T03:21:38Z"
+    "leido": "2026-11-19T03:29:15Z"
   },
   "inaigem": {
     "estaciones": [
@@ -22126,7 +22124,7 @@
       }
     ],
     "url": "https://www.inaigem.gob.pe/",
-    "leido": "2026-11-19T03:21:39Z"
+    "leido": "2026-11-19T03:29:15Z"
   },
   "enfen_docs": {
     "docs": [
