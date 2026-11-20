@@ -1,6 +1,6 @@
 {
   "_": "Generado por pipeline/productos/panorama.py. No editar a mano.",
-  "generado": "2026-11-20T21:26:07Z",
+  "generado": "2026-11-20T22:25:35Z",
   "fecha": "2026-11-20",
   "lectura": [
     {
@@ -16,9 +16,9 @@
       "url": "https://psl.noaa.gov/data/gridded/data.noaa.oisst.v2.highres.html"
     },
     {
-      "t": "El SENAMHI tiene 8 avisos meteorológicos vigentes o por empezar, 3 en nivel rojo (de todo tipo: lluvia, temperatura, viento).",
+      "t": "El SENAMHI tiene 10 avisos meteorológicos vigentes o por empezar, 4 en nivel rojo (de todo tipo: lluvia, temperatura, viento).",
       "fuente": "SENAMHI, avisos meteorológicos",
-      "fecha": "2026-11-20T21:24:00Z",
+      "fecha": "2026-11-20T22:24:03Z",
       "url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico"
     },
     {
@@ -30,19 +30,19 @@
     {
       "t": "Ríos: el modelo global GloFAS pronostica caudales por encima de su percentil 90 anual (1984-2023) en 15, entre ellos Tumbes, La Leche, Chicama, Chira; es orientativo. En la última lectura, 1 estaciones de la ANA y el SENAMHI están sobre su umbral de crecida.",
       "fuente": "GloFAS (Copernicus) vía Open-Meteo; lecturas de la ANA y el SENAMHI",
-      "fecha": "2026-11-20T21:26:07Z",
+      "fecha": "2026-11-20T22:25:35Z",
       "url": "https://www.globalfloods.eu/"
     },
     {
       "t": "CENEPRED: 75 distritos en riesgo muy alto por lluvia, hasta el 20 de noviembre; en ellos viven 758 568 personas (suma ENSO Perú de los 2 escenarios vigentes, sin repetir distritos).",
       "fuente": "CENEPRED, escenarios de riesgo ante el aviso de lluvias",
-      "fecha": "2026-11-20T21:25:47Z",
+      "fecha": "2026-11-20T22:24:16Z",
       "url": "https://sigrid.cenepred.gob.pe/sigridv3/escenario-aviso"
     },
     {
-      "t": "El INDECI registró 127 emergencias en 7 días; la más frecuente: incendios forestales. No todas se deben a El Niño.",
+      "t": "El INDECI registró 129 emergencias en 7 días; la más frecuente: incendios forestales. No todas se deben a El Niño.",
       "fuente": "INDECI, COEN, registro de emergencias",
-      "fecha": "2026-11-20T21:25:42Z",
+      "fecha": "2026-11-20T22:24:15Z",
       "url": "https://coen.indeci.gob.pe/mer/"
     },
     {
@@ -2161,8 +2161,8 @@
     }
   ],
   "totales": {
-    "avisos": 8,
-    "rojos": 3,
+    "avisos": 10,
+    "rojos": 4,
     "rios_altos": 15,
     "focos": 1684,
     "distritos_riesgo_alto": 766

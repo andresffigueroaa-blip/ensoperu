@@ -2,7 +2,7 @@
   "_": "Generado por pipeline/fuentes/senamhi.py. Avisos oficiales vigentes o por empezar.",
   "fuente": "SENAMHI, avisos meteorológicos",
   "url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico",
-  "leido": "2026-11-20T21:24:00Z",
+  "leido": "2026-11-20T22:24:03Z",
   "avisos": [
     {
       "numero": 471,
@@ -63,6 +63,27 @@
         "Sierra sur"
       ],
       "regiones": []
+    },
+    {
+      "numero": 480,
+      "situacion": "emitido",
+      "titulo": "INCREMENTO DE TEMPERATURA DIURNA EN LA SELVA",
+      "emitido": "2026-11-20",
+      "inicio": "2026-11-22",
+      "fin": "2026-11-24",
+      "nivel": "ROJO",
+      "enlace": "https://www.senamhi.gob.pe/?p=aviso-meteorologico-vigente&a=2026&b=29380&c=00&d=SENA",
+      "texto": "El SENAMHI informa que, del domingo 22 al martes 24 de noviembre, continuará el incremento de la temperatura diurna, de moderada a extrema intensidad, en la selva. Asimismo, se esperan altos valores de temperatura mínima (nocturna) y escasa cobertura nubosa durante el día, lo que favorecerá el incremento de la radiación ultravioleta (UV). Además, se prevén ráfagas de viento con velocidades cercanas a los 45 km/h, principalmente durante las tardes. No se descarta la ocurrencia de chubascos. El domingo 22 de noviembre se prevén temperaturas máximas entre 32 °C y 38 °C en la selva norte, entre 32 °C y 37 °C en la selva centro, y valores entre 31°C y 36°C en la selva sur. El lunes 23 de noviembre se prevén temperaturas máximas entre 32 °C y 39 °C en la selva norte, entre 32 °C y 38 °C en la selva centro, y valores entre 31°C y 37°C en la selva sur. El martes 24 de noviembre se prevén tempera",
+      "zonas": [
+        "Selva norte",
+        "Selva sur"
+      ],
+      "regiones": [
+        "Huanuco",
+        "Junin",
+        "Pasco",
+        "Ucayali"
+      ]
     },
     {
       "numero": 472,
@@ -164,6 +185,26 @@
         "Arequipa",
         "Moquegua",
         "Tacna"
+      ]
+    },
+    {
+      "numero": 479,
+      "situacion": "emitido",
+      "titulo": "INCREMENTO DE VIENTO EN LA COSTA CENTRO Y SUR (EXTENSIÓN DEL AVISO 475)",
+      "emitido": "2026-11-20",
+      "inicio": "2026-11-22",
+      "fin": "2026-11-24",
+      "nivel": "AMARILLO",
+      "enlace": "https://www.senamhi.gob.pe/?p=aviso-meteorologico-vigente&a=2026&b=29379&c=00&d=SENA",
+      "texto": "El SENAMHI informa que, entre el domingo 22 al martes 24 de noviembre, continuará el incremento de la velocidad del viento, de ligera a moderada intensidad, en la costa centro y sur. Asimismo, durante la noche, madrugada y primeras horas de la mañana, se espera la presencia de niebla, neblina y lloviznas dispersas en sectores cercanos al litoral, especialmente en zonas de la costa central y sur. Además, se esperan ráfagas de viento con velocidades superiores a los 40 km/h. El domingo 22 de noviembre, se prevén vientos con velocidades próximas a los 32 km/h en la costa de Lima, alrededor de los 34 km/h en la costa de Ica y valores próximos a los 22 km/h para Arequipa. El lunes 23 de noviembre, se prevén vientos con velocidades próximas a los 34 km/h en la costa de Lima, alrededor de los 35 km/h en la costa de Ica y valores próximos a los 22 km/h para Arequipa. El martes 24 de noviembre, s",
+      "zonas": [
+        "Costa centro",
+        "Costa sur"
+      ],
+      "regiones": [
+        "Lima",
+        "Ica",
+        "Arequipa"
       ]
     }
   ]
