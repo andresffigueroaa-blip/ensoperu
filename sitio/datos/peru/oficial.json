@@ -1,10 +1,7 @@
 {
   "_": "Generado por pipeline/fuentes/peru_oficial.py. Datos oficiales tal como se publican.",
-  "actualizado": "2026-11-20T20:27:27Z",
-  "fallas": [
-    "coen",
-    "agua"
-  ],
+  "actualizado": "2026-11-20T21:11:15Z",
+  "fallas": [],
   "fenomeno": {
     "fecha": "13 de noviembre del 2026",
     "estado": "Alerta de El Niño Costero",
@@ -15,10 +12,10 @@
   },
   "coen": {
     "dias": 7,
-    "total": 126,
+    "total": 125,
     "por_peligro": {
       "Incendios forestales": 32,
-      "Lluvias intensas": 27,
+      "Lluvias intensas": 26,
       "Huaico (flujo de detritos)": 16,
       "Vientos fuertes": 13,
       "Incendios urbanos": 11,
@@ -39,7 +36,7 @@
     "por_region": {
       "15": 6,
       "25": 9,
-      "09": 9,
+      "09": 8,
       "19": 5,
       "08": 18,
       "02": 24,
@@ -93,19 +90,19 @@
       {
         "fecha": "2026-11-19 15:30",
         "peligro": "Incendios forestales",
-        "distrito": "250107",
-        "lugar": "Manantay, Coronel Portillo, Ucayali",
-        "hechos": "Se registró un incendio forestal que causó daños materiales (vivienda), sectores diversos (producción agrícola) en el caserío Nuevo Belen, distrito de Manantay, provincia de Coronel Portillo.",
-        "pdf": "https://coen.indeci.gob.pe/api/v2/mer/files/view?key=mer/2026/10/1795152454007.pdf",
+        "distrito": "090711",
+        "lugar": "Pazos, Tayacaja, Huancavelica",
+        "hechos": "Se registra un incendio forestal que ocasiona daños a sectores diversos (cobertura natural) en las localidades de Chura y Quishuancancha, distrito de Pazos, provincia de Tayacaja.",
+        "pdf": "https://coen.indeci.gob.pe/api/v2/mer/files/view?key=mer/2026/10/1795208909047.pdf",
         "sinpad": null
       },
       {
         "fecha": "2026-11-19 15:30",
         "peligro": "Incendios forestales",
-        "distrito": "090711",
-        "lugar": "Pazos, Tayacaja, Huancavelica",
-        "hechos": "Se registra un incendio forestal que ocasiona daños a sectores diversos (cobertura natural) en las localidades de Chura y Quishuancancha, distrito de Pazos, provincia de Tayacaja.",
-        "pdf": "https://coen.indeci.gob.pe/api/v2/mer/files/view?key=mer/2026/10/1795172826016.pdf",
+        "distrito": "250107",
+        "lugar": "Manantay, Coronel Portillo, Ucayali",
+        "hechos": "Se registró un incendio forestal que causó daños materiales (vivienda), sectores diversos (producción agrícola) en el caserío Nuevo Belen, distrito de Manantay, provincia de Coronel Portillo.",
+        "pdf": "https://coen.indeci.gob.pe/api/v2/mer/files/view?key=mer/2026/10/1795152454007.pdf",
         "sinpad": null
       },
       {
@@ -140,8 +137,8 @@
         "peligro": "Incendios forestales",
         "distrito": "090119",
         "lugar": "Huando, Huancavelica, Huancavelica",
-        "hechos": "Se registra un incendio forestal que ocasiona daños a sectores diversos (cobertura natural) en el anexo Escalera, distrito Huando, provincia Huancavelica.",
-        "pdf": "https://coen.indeci.gob.pe/api/v2/mer/files/view?key=mer/2026/10/1795174117620.pdf",
+        "hechos": "Se registró un incendio forestal que ocasionó daños a sectores diversos (cobertura natural) en el anexo Escalera, distrito de Huando, provincia Huancavelica .",
+        "pdf": "https://coen.indeci.gob.pe/api/v2/mer/files/view?key=mer/2026/10/1795207072070.pdf",
         "sinpad": null
       },
       {
@@ -407,30 +404,34 @@
       },
       {
         "fecha": "2026-11-17 16:00",
-        "peligro": "Huaico (flujo de detritos)",
-        "distrito": "020901",
-        "lugar": "Corongo, Corongo, Ancash",
-        "hechos": "A consecuencia de las lluvias intensas, se produjo un huaico que causó daños materiales (infraestructura de transporte), en el centro poblado Pacatqui, distrito de Yanac, provincia de Corongo.",
-        "pdf": "https://coen.indeci.gob.pe/api/v2/mer/files/view?key=mer/2026/10/1795058731886.pdf",
-        "sinpad": null
-      },
-      {
-        "fecha": "2026-11-17 16:00",
         "peligro": "Incendios forestales",
         "distrito": "250102",
         "lugar": "Campoverde, Coronel Portillo, Ucayali",
         "hechos": "Se registró un incendio forestal que ocasionó daños a sectores diversos (cobertura natural y cultivos) en el caserío 10 de Julio, distrito de Campo Verde , provincia de Coronel Portillo.",
         "pdf": "https://coen.indeci.gob.pe/api/v2/mer/files/view?key=mer/2026/10/1795038995152.pdf",
         "sinpad": null
+      },
+      {
+        "fecha": "2026-11-17 16:00",
+        "peligro": "Huaico (flujo de detritos)",
+        "distrito": "020901",
+        "lugar": "Corongo, Corongo, Ancash",
+        "hechos": "A consecuencia de las lluvias intensas, se produjo un huaico que causó daños materiales (infraestructura de transporte), en el centro poblado Pacatqui, distrito de Yanac, provincia de Corongo.",
+        "pdf": "https://coen.indeci.gob.pe/api/v2/mer/files/view?key=mer/2026/10/1795058731886.pdf",
+        "sinpad": null
       }
     ],
     "sin_cruce": 1,
     "url": "https://coen.indeci.gob.pe/mer/",
-    "leido": "2026-11-20T20:24:08Z",
-    "atrasado": false
+    "leido": "2026-11-20T21:11:16Z"
   },
   "indeci_rss": {
     "reportes": [
+      {
+        "titulo": "REPORTE COMPLEMENTARIO N.° 16210 – 20/11/2026 /COEN – INDECI / 15:05 HORAS (Reporte N.º 2) VIENTOS FUERTES EN EL DISTRITO DE SAPOSOA – SAN MARTÍN",
+        "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-15770-10-11-2026-coen-indeci-2119-horas-reporte-n-o-1-lluvias-intensas-en-el-distrito-de-saposoa-san-martin/",
+        "fecha": "2026-11-20T20:28"
+      },
       {
         "titulo": "INFORME DE EMERGENCIA N.º 2604 – 20/11/2026/ COEN – INDECI / 15:00 HORAS (Informe N.º 1) VIENTOS FUERTES EN EL DISTRITO DE CONDEBAMBA – CAJAMARCA",
         "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-o-15713-9-11-2026-coen-indeci-1825-horas-reporte-n-o-1-vientos-fuertes-en-el-distrito-de-condebamba-cajamarca/",
@@ -495,15 +496,10 @@
         "titulo": "INFORME DE EMERGENCIA N.° 2603 – 20/11/2026 / COEN – INDECI / 11:00 HORAS (Informe N.° 1) LLUVIAS INTENSAS EN EL DISTRITO DE SAN JUAN DE LA VIRGEN – TUMBES",
         "enlace": "https://portal.indeci.gob.pe/emergencias/informe-de-emergencia-n-2603-20-11-2026-coen-indeci-1100-horas-informe-n-1-lluvias-intensas-en-el-distrito-de-san-juan-de-la-virgen-tumbes/",
         "fecha": "2026-11-20T17:31"
-      },
-      {
-        "titulo": "BOLETÍN INFORMATIVO DE AVISO HIDROLÓGICO N°1693-2026-INDECI/COEN",
-        "enlace": "https://portal.indeci.gob.pe/emergencias/boletin-informativo-de-aviso-hidrologico-n1693-2026-indeci-coen/",
-        "fecha": "2026-11-20T16:48"
       }
     ],
     "url": "https://portal.indeci.gob.pe/emergencias/",
-    "leido": "2026-11-20T20:28:59Z"
+    "leido": "2026-11-20T21:11:18Z"
   },
   "escenario": {
     "vigente": true,
@@ -1683,7 +1679,7 @@
       }
     },
     "url": "https://sigrid.cenepred.gob.pe/sigridv3/escenario-aviso",
-    "leido": "2026-11-20T20:29:02Z"
+    "leido": "2026-11-20T21:11:22Z"
   },
   "quebradas": {
     "fecha": "2026-11-19",
@@ -3343,7 +3339,7 @@
     },
     "sin_cruce": 9,
     "url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico",
-    "leido": "2026-11-20T20:29:07Z"
+    "leido": "2026-11-20T21:11:27Z"
   },
   "hidro": {
     "avisos": [
@@ -3421,7 +3417,7 @@
       }
     ],
     "url": "https://www.senamhi.gob.pe/?p=aviso-hidrologico",
-    "leido": "2026-11-20T20:29:08Z"
+    "leido": "2026-11-20T21:11:27Z"
   },
   "ana_rios": {
     "estaciones": [
@@ -18007,11 +18003,11 @@
       }
     },
     "url": "https://visor.geoperu.gob.pe/",
-    "leido": "2026-11-20T20:29:09Z"
+    "leido": "2026-11-20T21:11:28Z"
   },
   "agua": {
-    "total": 82,
-    "conexiones": 431193,
+    "total": 83,
+    "conexiones": 391761,
     "cortes": [
       {
         "eps": "SEDAPAL",
@@ -18032,16 +18028,6 @@
         "inicio": "2026-11-19",
         "restablece": "2026-11-20",
         "distrito": "150131"
-      },
-      {
-        "eps": "EPS TACNA S.A.",
-        "lugar": "Tacna, Tacna",
-        "conexiones": 45000,
-        "tipo": "Programada",
-        "motivo": "Otros",
-        "inicio": "2026-11-26",
-        "restablece": "2026-11-26",
-        "distrito": "230101"
       },
       {
         "eps": "SEDAPAL",
@@ -18094,16 +18080,6 @@
         "distrito": "150130"
       },
       {
-        "eps": "SEDALIB S.A.",
-        "lugar": "Trujillo, La Libertad",
-        "conexiones": 11582,
-        "tipo": "Imprevista",
-        "motivo": "Otros",
-        "inicio": "2026-11-20",
-        "restablece": "2026-11-20",
-        "distrito": "130101"
-      },
-      {
         "eps": "SEDAPAL",
         "lugar": "Lurin, Lima",
         "conexiones": 10842,
@@ -18124,6 +18100,16 @@
         "distrito": "080105"
       },
       {
+        "eps": "EPS TACNA S.A.",
+        "lugar": "Tacna, Tacna",
+        "conexiones": 10000,
+        "tipo": "Programada",
+        "motivo": "Otros",
+        "inicio": "2026-11-26",
+        "restablece": "2026-11-26",
+        "distrito": "230101"
+      },
+      {
         "eps": "SEDAPAL",
         "lugar": "La Molina, Lima",
         "conexiones": 7756,
@@ -18132,6 +18118,16 @@
         "inicio": "2026-11-27",
         "restablece": "2026-11-28",
         "distrito": "150114"
+      },
+      {
+        "eps": "SEDALIB S.A.",
+        "lugar": "Trujillo, La Libertad",
+        "conexiones": 7474,
+        "tipo": "Programada",
+        "motivo": "Limpieza y desinfección de reservorio/cisterna",
+        "inicio": "2026-11-24",
+        "restablece": "2026-11-25",
+        "distrito": "130101"
       },
       {
         "eps": "SEDAPAL",
@@ -18544,16 +18540,6 @@
         "distrito": "120901"
       },
       {
-        "eps": "EMUSAP S.A.",
-        "lugar": "Chachapoyas, Amazonas",
-        "conexiones": 1000,
-        "tipo": "Imprevista",
-        "motivo": "Otros",
-        "inicio": "2026-11-20",
-        "restablece": "2026-11-21",
-        "distrito": "010101"
-      },
-      {
         "eps": "SEDAPAL",
         "lugar": "La Victoria, Lima",
         "conexiones": 974,
@@ -18612,6 +18598,16 @@
         "inicio": "2026-11-25",
         "restablece": "2026-11-26",
         "distrito": "110202"
+      },
+      {
+        "eps": "EPS CHAVIN S.A.",
+        "lugar": "Independencia, Ancash",
+        "conexiones": 793,
+        "tipo": "Programada",
+        "motivo": "Otros",
+        "inicio": "2026-11-19",
+        "restablece": "2026-11-20",
+        "distrito": "020105"
       }
     ],
     "distritos": {
@@ -18622,10 +18618,6 @@
       "150131": {
         "cortes": 1,
         "conexiones": 55034
-      },
-      "230101": {
-        "cortes": 1,
-        "conexiones": 45000
       },
       "070104": {
         "cortes": 1,
@@ -18647,10 +18639,6 @@
         "cortes": 1,
         "conexiones": 13392
       },
-      "130101": {
-        "cortes": 1,
-        "conexiones": 11582
-      },
       "150119": {
         "cortes": 1,
         "conexiones": 10842
@@ -18659,9 +18647,17 @@
         "cortes": 1,
         "conexiones": 10600
       },
+      "230101": {
+        "cortes": 1,
+        "conexiones": 10000
+      },
       "150114": {
         "cortes": 1,
         "conexiones": 7756
+      },
+      "130101": {
+        "cortes": 1,
+        "conexiones": 7474
       },
       "150135": {
         "cortes": 1,
@@ -18827,10 +18823,6 @@
         "cortes": 1,
         "conexiones": 1000
       },
-      "010101": {
-        "cortes": 1,
-        "conexiones": 1000
-      },
       "150115": {
         "cortes": 1,
         "conexiones": 974
@@ -18887,6 +18879,10 @@
         "cortes": 1,
         "conexiones": 562
       },
+      "021101": {
+        "cortes": 1,
+        "conexiones": 500
+      },
       "130109": {
         "cortes": 1,
         "conexiones": 431
@@ -18927,13 +18923,17 @@
         "cortes": 1,
         "conexiones": 215
       },
+      "010101": {
+        "cortes": 1,
+        "conexiones": 170
+      },
       "130102": {
         "cortes": 1,
         "conexiones": 152
       },
-      "170101": {
+      "180101": {
         "cortes": 1,
-        "conexiones": 130
+        "conexiones": 136
       },
       "110210": {
         "cortes": 1,
@@ -18945,8 +18945,7 @@
       }
     },
     "url": "https://www.sunass.gob.pe/",
-    "leido": "2026-11-20T19:28:02Z",
-    "atrasado": false
+    "leido": "2026-11-20T21:11:30Z"
   },
   "incendios": {
     "total": 151,
@@ -19673,7 +19672,7 @@
       }
     ],
     "url": "https://geo.serfor.gob.pe/visor/",
-    "leido": "2026-11-20T20:30:41Z"
+    "leido": "2026-11-20T21:11:31Z"
   },
   "phisis": {
     "estaciones": [
@@ -21863,7 +21862,7 @@
       "clasificacion": 99.98
     },
     "url": "http://met.igp.gob.pe/variabclim/",
-    "leido": "2026-11-20T20:30:43Z"
+    "leido": "2026-11-20T21:11:33Z"
   },
   "dhn": {
     "generado": "2026-11-20T14:18:00Z",
@@ -22375,7 +22374,7 @@
         }
       ]
     },
-    "leido": "2026-11-20T20:30:44Z"
+    "leido": "2026-11-20T21:11:34Z"
   },
   "inaigem": {
     "estaciones": [
@@ -22413,7 +22412,7 @@
       }
     ],
     "url": "https://www.inaigem.gob.pe/",
-    "leido": "2026-11-20T20:30:44Z"
+    "leido": "2026-11-20T21:11:34Z"
   },
   "enfen_docs": {
     "docs": [
