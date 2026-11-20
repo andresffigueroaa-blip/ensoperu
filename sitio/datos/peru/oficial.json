@@ -1,7 +1,8 @@
 {
   "_": "Generado por pipeline/fuentes/peru_oficial.py. Datos oficiales tal como se publican.",
-  "actualizado": "2026-11-20T20:24:07Z",
+  "actualizado": "2026-11-20T20:27:27Z",
   "fallas": [
+    "coen",
     "agua"
   ],
   "fenomeno": {
@@ -425,10 +426,16 @@
     ],
     "sin_cruce": 1,
     "url": "https://coen.indeci.gob.pe/mer/",
-    "leido": "2026-11-20T20:24:08Z"
+    "leido": "2026-11-20T20:24:08Z",
+    "atrasado": false
   },
   "indeci_rss": {
     "reportes": [
+      {
+        "titulo": "INFORME DE EMERGENCIA N.º 2604 – 20/11/2026/ COEN – INDECI / 15:00 HORAS (Informe N.º 1) VIENTOS FUERTES EN EL DISTRITO DE CONDEBAMBA – CAJAMARCA",
+        "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-o-15713-9-11-2026-coen-indeci-1825-horas-reporte-n-o-1-vientos-fuertes-en-el-distrito-de-condebamba-cajamarca/",
+        "fecha": "2026-11-20T20:23"
+      },
       {
         "titulo": "REPORTE COMPLEMENTARIO N.º 16209 – 20/11/2026 / COEN-INDECI / 14:45 HORAS (Reporte N.º 3) HUAICO EN EL DISTRITO DE PACOCHA – MOQUEGUA",
         "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-15087-27-10-2026-coen-indeci-2330-horas-huaico-en-el-distrito-de-pacocha-moquegua/",
@@ -493,15 +500,10 @@
         "titulo": "BOLETÍN INFORMATIVO DE AVISO HIDROLÓGICO N°1693-2026-INDECI/COEN",
         "enlace": "https://portal.indeci.gob.pe/emergencias/boletin-informativo-de-aviso-hidrologico-n1693-2026-indeci-coen/",
         "fecha": "2026-11-20T16:48"
-      },
-      {
-        "titulo": "BOLETÍN INFORMATIVO DE AVISO HIDROLÓGICO N°1692-2026-INDECI/COEN",
-        "enlace": "https://portal.indeci.gob.pe/emergencias/boletin-informativo-de-aviso-hidrologico-n1692-2026-indeci-coen/",
-        "fecha": "2026-11-20T16:47"
       }
     ],
     "url": "https://portal.indeci.gob.pe/emergencias/",
-    "leido": "2026-11-20T20:24:10Z"
+    "leido": "2026-11-20T20:28:59Z"
   },
   "escenario": {
     "vigente": true,
@@ -1681,7 +1683,7 @@
       }
     },
     "url": "https://sigrid.cenepred.gob.pe/sigridv3/escenario-aviso",
-    "leido": "2026-11-20T20:24:11Z"
+    "leido": "2026-11-20T20:29:02Z"
   },
   "quebradas": {
     "fecha": "2026-11-19",
@@ -3341,7 +3343,7 @@
     },
     "sin_cruce": 9,
     "url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico",
-    "leido": "2026-11-20T20:24:17Z"
+    "leido": "2026-11-20T20:29:07Z"
   },
   "hidro": {
     "avisos": [
@@ -3419,7 +3421,7 @@
       }
     ],
     "url": "https://www.senamhi.gob.pe/?p=aviso-hidrologico",
-    "leido": "2026-11-20T20:24:18Z"
+    "leido": "2026-11-20T20:29:08Z"
   },
   "ana_rios": {
     "estaciones": [
@@ -18005,7 +18007,7 @@
       }
     },
     "url": "https://visor.geoperu.gob.pe/",
-    "leido": "2026-11-20T20:24:26Z"
+    "leido": "2026-11-20T20:29:09Z"
   },
   "agua": {
     "total": 82,
@@ -19671,7 +19673,7 @@
       }
     ],
     "url": "https://geo.serfor.gob.pe/visor/",
-    "leido": "2026-11-20T20:25:57Z"
+    "leido": "2026-11-20T20:30:41Z"
   },
   "phisis": {
     "estaciones": [
@@ -21861,7 +21863,7 @@
       "clasificacion": 99.98
     },
     "url": "http://met.igp.gob.pe/variabclim/",
-    "leido": "2026-11-20T20:26:17Z"
+    "leido": "2026-11-20T20:30:43Z"
   },
   "dhn": {
     "generado": "2026-11-20T14:18:00Z",
@@ -22373,7 +22375,7 @@
         }
       ]
     },
-    "leido": "2026-11-20T20:26:18Z"
+    "leido": "2026-11-20T20:30:44Z"
   },
   "inaigem": {
     "estaciones": [
@@ -22411,7 +22413,7 @@
       }
     ],
     "url": "https://www.inaigem.gob.pe/",
-    "leido": "2026-11-20T20:26:18Z"
+    "leido": "2026-11-20T20:30:44Z"
   },
   "enfen_docs": {
     "docs": [
