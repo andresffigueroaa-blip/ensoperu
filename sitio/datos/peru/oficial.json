@@ -1,6 +1,6 @@
 {
   "_": "Generado por pipeline/fuentes/peru_oficial.py. Datos oficiales tal como se publican.",
-  "actualizado": "2026-11-20T21:24:11Z",
+  "actualizado": "2026-11-20T21:25:41Z",
   "fallas": [],
   "fenomeno": {
     "fecha": "13 de noviembre del 2026",
@@ -99,19 +99,19 @@
       {
         "fecha": "2026-11-19 15:30",
         "peligro": "Incendios forestales",
-        "distrito": "090711",
-        "lugar": "Pazos, Tayacaja, Huancavelica",
-        "hechos": "Se registra un incendio forestal que ocasiona daños a sectores diversos (cobertura natural) en las localidades de Chura y Quishuancancha, distrito de Pazos, provincia de Tayacaja.",
-        "pdf": "https://coen.indeci.gob.pe/api/v2/mer/files/view?key=mer/2026/10/1795208909047.pdf",
+        "distrito": "250107",
+        "lugar": "Manantay, Coronel Portillo, Ucayali",
+        "hechos": "Se registró un incendio forestal que causó daños materiales (vivienda), sectores diversos (producción agrícola) en el caserío Nuevo Belen, distrito de Manantay, provincia de Coronel Portillo.",
+        "pdf": "https://coen.indeci.gob.pe/api/v2/mer/files/view?key=mer/2026/10/1795152454007.pdf",
         "sinpad": null
       },
       {
         "fecha": "2026-11-19 15:30",
         "peligro": "Incendios forestales",
-        "distrito": "250107",
-        "lugar": "Manantay, Coronel Portillo, Ucayali",
-        "hechos": "Se registró un incendio forestal que causó daños materiales (vivienda), sectores diversos (producción agrícola) en el caserío Nuevo Belen, distrito de Manantay, provincia de Coronel Portillo.",
-        "pdf": "https://coen.indeci.gob.pe/api/v2/mer/files/view?key=mer/2026/10/1795152454007.pdf",
+        "distrito": "090711",
+        "lugar": "Pazos, Tayacaja, Huancavelica",
+        "hechos": "Se registra un incendio forestal que ocasiona daños a sectores diversos (cobertura natural) en las localidades de Chura y Quishuancancha, distrito de Pazos, provincia de Tayacaja.",
+        "pdf": "https://coen.indeci.gob.pe/api/v2/mer/files/view?key=mer/2026/10/1795208909047.pdf",
         "sinpad": null
       },
       {
@@ -216,19 +216,19 @@
       {
         "fecha": "2026-11-18 16:00",
         "peligro": "Huaico (flujo de detritos)",
-        "distrito": "021510",
-        "lugar": "Santa Rosa, Pallasca, Ancash",
-        "hechos": "A consecuencia de las lluvias intensas se produjo la activación de quebradas que generó huaico, causando daños materiales (infraestructura de transporte) en el sector de Quiroz, distrito de Santa Rosa, provincia de Pallasca.",
-        "pdf": "https://coen.indeci.gob.pe/api/v2/mer/files/view?key=mer/2026/10/1795129445187.pdf",
+        "distrito": "021901",
+        "lugar": "Sihuas, Sihuas, Ancash",
+        "hechos": "A consecuencia de las lluvias intensas, se produjo un huaico que causó daños materiales (infraestructura de transporte), en el sector Colpa, distrito y provincia de Sihuas.",
+        "pdf": "https://coen.indeci.gob.pe/api/v2/mer/files/view?key=mer/2026/10/1795134267453.pdf",
         "sinpad": null
       },
       {
         "fecha": "2026-11-18 16:00",
         "peligro": "Huaico (flujo de detritos)",
-        "distrito": "021901",
-        "lugar": "Sihuas, Sihuas, Ancash",
-        "hechos": "A consecuencia de las lluvias intensas, se produjo un huaico que causó daños materiales (infraestructura de transporte), en el sector Colpa, distrito y provincia de Sihuas.",
-        "pdf": "https://coen.indeci.gob.pe/api/v2/mer/files/view?key=mer/2026/10/1795134267453.pdf",
+        "distrito": "021510",
+        "lugar": "Santa Rosa, Pallasca, Ancash",
+        "hechos": "A consecuencia de las lluvias intensas se produjo la activación de quebradas que generó huaico, causando daños materiales (infraestructura de transporte) en el sector de Quiroz, distrito de Santa Rosa, provincia de Pallasca.",
+        "pdf": "https://coen.indeci.gob.pe/api/v2/mer/files/view?key=mer/2026/10/1795129445187.pdf",
         "sinpad": null
       },
       {
@@ -423,7 +423,7 @@
     ],
     "sin_cruce": 1,
     "url": "https://coen.indeci.gob.pe/mer/",
-    "leido": "2026-11-20T21:24:12Z"
+    "leido": "2026-11-20T21:25:42Z"
   },
   "indeci_rss": {
     "reportes": [
@@ -499,7 +499,7 @@
       }
     ],
     "url": "https://portal.indeci.gob.pe/emergencias/",
-    "leido": "2026-11-20T21:24:13Z"
+    "leido": "2026-11-20T21:25:44Z"
   },
   "escenario": {
     "vigente": true,
@@ -1679,7 +1679,7 @@
       }
     },
     "url": "https://sigrid.cenepred.gob.pe/sigridv3/escenario-aviso",
-    "leido": "2026-11-20T21:24:14Z"
+    "leido": "2026-11-20T21:25:47Z"
   },
   "quebradas": {
     "fecha": "2026-11-19",
@@ -3339,7 +3339,7 @@
     },
     "sin_cruce": 9,
     "url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico",
-    "leido": "2026-11-20T21:24:22Z"
+    "leido": "2026-11-20T21:25:55Z"
   },
   "hidro": {
     "avisos": [
@@ -3417,7 +3417,7 @@
       }
     ],
     "url": "https://www.senamhi.gob.pe/?p=aviso-hidrologico",
-    "leido": "2026-11-20T21:24:23Z"
+    "leido": "2026-11-20T21:25:56Z"
   },
   "ana_rios": {
     "estaciones": [
@@ -17987,7 +17987,7 @@
       }
     },
     "url": "https://visor.geoperu.gob.pe/",
-    "leido": "2026-11-20T21:24:31Z"
+    "leido": "2026-11-20T21:25:58Z"
   },
   "agua": {
     "total": 83,
@@ -18929,7 +18929,7 @@
       }
     },
     "url": "https://www.sunass.gob.pe/",
-    "leido": "2026-11-20T21:24:33Z"
+    "leido": "2026-11-20T21:25:59Z"
   },
   "incendios": {
     "total": 151,
@@ -19656,7 +19656,7 @@
       }
     ],
     "url": "https://geo.serfor.gob.pe/visor/",
-    "leido": "2026-11-20T21:24:33Z"
+    "leido": "2026-11-20T21:26:00Z"
   },
   "phisis": {
     "estaciones": [
@@ -21846,7 +21846,7 @@
       "clasificacion": 99.98
     },
     "url": "http://met.igp.gob.pe/variabclim/",
-    "leido": "2026-11-20T21:24:34Z"
+    "leido": "2026-11-20T21:26:03Z"
   },
   "dhn": {
     "generado": "2026-11-20T14:18:00Z",
@@ -22358,7 +22358,7 @@
         }
       ]
     },
-    "leido": "2026-11-20T21:24:35Z"
+    "leido": "2026-11-20T21:26:04Z"
   },
   "inaigem": {
     "estaciones": [
@@ -22396,7 +22396,7 @@
       }
     ],
     "url": "https://www.inaigem.gob.pe/",
-    "leido": "2026-11-20T21:24:35Z"
+    "leido": "2026-11-20T21:26:04Z"
   },
   "enfen_docs": {
     "docs": [
