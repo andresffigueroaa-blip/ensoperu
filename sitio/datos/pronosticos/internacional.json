@@ -1,6 +1,6 @@
 {
   "_": "Generado por pipeline/fuentes/internacional.py. Cada bloque con su centro, fecha y enlace.",
-  "actualizado": "2026-11-21T11:12:59Z",
+  "actualizado": "2026-11-21T18:03:54Z",
   "fallas": [],
   "cpc": {
     "emitido": "2026-11-12",
@@ -519,18 +519,12 @@
   },
   "mjo": {
     "ultimo": {
-      "fecha": "2026-11-16",
-      "pc1": 1.049,
-      "pc2": 1.397,
-      "amplitud": 1.75
+      "fecha": "2026-11-17",
+      "pc1": 1.098,
+      "pc2": 1.144,
+      "amplitud": 1.59
     },
     "serie": [
-      {
-        "fecha": "2026-10-03",
-        "pc1": 0.799,
-        "pc2": -0.777,
-        "amplitud": 1.12
-      },
       {
         "fecha": "2026-10-04",
         "pc1": 0.759,
@@ -773,27 +767,33 @@
       },
       {
         "fecha": "2026-11-13",
-        "pc1": 0.815,
-        "pc2": 1.501,
-        "amplitud": 1.71
+        "pc1": 0.756,
+        "pc2": 1.411,
+        "amplitud": 1.6
       },
       {
         "fecha": "2026-11-14",
-        "pc1": 0.878,
-        "pc2": 1.501,
-        "amplitud": 1.74
+        "pc1": 0.809,
+        "pc2": 1.397,
+        "amplitud": 1.61
       },
       {
         "fecha": "2026-11-15",
-        "pc1": 0.945,
-        "pc2": 1.467,
-        "amplitud": 1.75
+        "pc1": 0.862,
+        "pc2": 1.351,
+        "amplitud": 1.6
       },
       {
         "fecha": "2026-11-16",
-        "pc1": 1.049,
-        "pc2": 1.397,
-        "amplitud": 1.75
+        "pc1": 0.94,
+        "pc2": 1.272,
+        "amplitud": 1.58
+      },
+      {
+        "fecha": "2026-11-17",
+        "pc1": 1.098,
+        "pc2": 1.144,
+        "amplitud": 1.59
       }
     ],
     "activa": true,
@@ -904,9 +904,9 @@
       "titulo": "Pronóstico de la MJO, ECMWF corregido",
       "fuente": "NOAA CPC",
       "origen": "https://www.cpc.ncep.noaa.gov/products/precip/mjo/img/ECMF_BC.png",
-      "huella": "f71813d9dd39",
+      "huella": "1589e52cea24",
       "archivo": "mjo.png",
-      "fecha": "2026-11-20"
+      "fecha": "2026-11-21"
     },
     {
       "id": "gth",
@@ -922,9 +922,9 @@
       "titulo": "Lluvia pronosticada a 10 días, Sudamérica",
       "fuente": "CIIFEN (CHIRPS-GEFS)",
       "origen": "https://ciifen.org/wp-content/uploads/imagenes_clima/pronostico/pron_precipitacion/chirps_forecast_10days.png",
-      "huella": "1d49777bd30f",
+      "huella": "a830229e0ab1",
       "archivo": "chirps10.png",
-      "fecha": "2026-11-19"
+      "fecha": "2026-11-21"
     }
   ]
 }
