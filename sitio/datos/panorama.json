@@ -1,6 +1,6 @@
 {
   "_": "Generado por pipeline/productos/panorama.py. No editar a mano.",
-  "generado": "2026-11-21T21:58:46Z",
+  "generado": "2026-11-21T21:59:18Z",
   "fecha": "2026-11-21",
   "lectura": [
     {
@@ -30,13 +30,13 @@
     {
       "t": "Ríos: el modelo global GloFAS pronostica caudales por encima de su percentil 90 anual (1984-2023) en 11, entre ellos Chicama, Chira, Tumbes, La Leche; es orientativo. En la última lectura, ninguna estación de la ANA ni del SENAMHI está sobre su umbral de crecida.",
       "fuente": "GloFAS (Copernicus) vía Open-Meteo; lecturas de la ANA y el SENAMHI",
-      "fecha": "2026-11-21T21:58:45Z",
+      "fecha": "2026-11-21T21:59:18Z",
       "url": "https://www.globalfloods.eu/"
     },
     {
       "t": "CENEPRED: 186 distritos en riesgo muy alto por lluvia, hasta el 23 de noviembre; en ellos viven 1 385 060 personas (suma ENSO Perú de los 2 escenarios vigentes, sin repetir distritos).",
       "fuente": "CENEPRED, escenarios de riesgo ante el aviso de lluvias",
-      "fecha": "2026-11-21T21:56:49Z",
+      "fecha": "2026-11-21T21:59:04Z",
       "url": "https://sigrid.cenepred.gob.pe/sigridv3/escenario-aviso"
     },
     {
@@ -46,7 +46,7 @@
       "url": "https://coen.indeci.gob.pe/mer/"
     },
     {
-      "t": "Focos de calor detectados por satélite: 1565 en 7 días; el mayor número en Coronel Portillo (Ucayali), 313.",
+      "t": "Focos de calor detectados por satélite: 1589 en 7 días; el mayor número en Coronel Portillo (Ucayali), 313.",
       "fuente": "NASA FIRMS, VIIRS NOAA-20",
       "fecha": "2026-11-21",
       "url": "https://firms.modaps.eosdis.nasa.gov/"
@@ -128,8 +128,8 @@
       "aviso_lluvia_desde": null,
       "mar": 4.39,
       "n_mar": "muy alto",
-      "focos": 9,
-      "n_focos": "medio",
+      "focos": 19,
+      "n_focos": "alto",
       "dias_fuertes": 0,
       "n_lluvia": "bajo",
       "lluvia16": 67.0,
@@ -170,7 +170,7 @@
       "aviso_lluvia_desde": null,
       "mar": null,
       "n_mar": null,
-      "focos": 54,
+      "focos": 55,
       "n_focos": "muy alto",
       "dias_fuertes": 1,
       "n_lluvia": "medio",
@@ -391,7 +391,7 @@
       "aviso_lluvia_desde": null,
       "mar": null,
       "n_mar": null,
-      "focos": 236,
+      "focos": 247,
       "n_focos": "muy alto",
       "dias_fuertes": 3,
       "n_lluvia": "alto",
@@ -499,7 +499,7 @@
       "aviso_lluvia_desde": null,
       "mar": null,
       "n_mar": null,
-      "focos": 26,
+      "focos": 29,
       "n_focos": "alto",
       "dias_fuertes": 2,
       "n_lluvia": "medio",
@@ -1822,8 +1822,15 @@
       "id": "1606",
       "nombre": "Ucayali",
       "region": "Loreto",
-      "focos": 59,
-      "frp": 747.6
+      "focos": 60,
+      "frp": 766.3
+    },
+    {
+      "id": "1601",
+      "nombre": "Maynas",
+      "region": "Loreto",
+      "focos": 53,
+      "frp": 492.8
     },
     {
       "id": "1602",
@@ -1831,13 +1838,6 @@
       "region": "Loreto",
       "focos": 51,
       "frp": 337.5
-    },
-    {
-      "id": "1601",
-      "nombre": "Maynas",
-      "region": "Loreto",
-      "focos": 50,
-      "frp": 471.9
     },
     {
       "id": "1701",
@@ -2111,7 +2111,7 @@
     "avisos": 7,
     "rojos": 3,
     "rios_altos": 11,
-    "focos": 1565,
+    "focos": 1589,
     "distritos_riesgo_alto": 766
   }
 }
