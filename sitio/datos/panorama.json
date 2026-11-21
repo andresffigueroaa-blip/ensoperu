@@ -1,7 +1,7 @@
 {
   "_": "Generado por pipeline/productos/panorama.py. No editar a mano.",
-  "generado": "2026-11-20T22:27:49Z",
-  "fecha": "2026-11-20",
+  "generado": "2026-11-21T02:28:00Z",
+  "fecha": "2026-11-21",
   "lectura": [
     {
       "t": "Estado vigente según el ENFEN: Alerta de El Niño Costero (comunicado oficial N° 20-2026, 13 de noviembre de 2026). El Niño costero continuaría hasta inicios de invierno de 2027.",
@@ -16,28 +16,22 @@
       "url": "https://psl.noaa.gov/data/gridded/data.noaa.oisst.v2.highres.html"
     },
     {
-      "t": "El SENAMHI tiene 10 avisos meteorológicos vigentes o por empezar, 4 en nivel rojo (de todo tipo: lluvia, temperatura, viento).",
+      "t": "El SENAMHI tiene 7 avisos meteorológicos vigentes o por empezar, 3 en nivel rojo (de todo tipo: lluvia, temperatura, viento).",
       "fuente": "SENAMHI, avisos meteorológicos",
       "fecha": "2026-11-20T22:24:03Z",
       "url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico"
     },
     {
-      "t": "Lluvia pronosticada por modelos para los próximos 16 días: el mayor acumulado es Paucartambo (Cusco), con 290 mm. Es un modelo, no un aviso del SENAMHI.",
+      "t": "Lluvia pronosticada por modelos para los próximos 16 días: el mayor acumulado es Paucartambo (Cusco), con 275 mm. Es un modelo, no un aviso del SENAMHI.",
       "fuente": "Open-Meteo (combinación de modelos ECMWF, GFS, ICON y otros)",
-      "fecha": "2026-11-20T19:27:31Z",
+      "fecha": "2026-11-21T02:23:16Z",
       "url": "https://open-meteo.com/en/docs"
     },
     {
       "t": "Ríos: el modelo global GloFAS pronostica caudales por encima de su percentil 90 anual (1984-2023) en 15, entre ellos Tumbes, La Leche, Chicama, Chira; es orientativo. En la última lectura, 1 estaciones de la ANA y el SENAMHI están sobre su umbral de crecida.",
       "fuente": "GloFAS (Copernicus) vía Open-Meteo; lecturas de la ANA y el SENAMHI",
-      "fecha": "2026-11-20T22:27:48Z",
+      "fecha": "2026-11-21T02:28:00Z",
       "url": "https://www.globalfloods.eu/"
-    },
-    {
-      "t": "CENEPRED: 75 distritos en riesgo muy alto por lluvia, hasta el 20 de noviembre; en ellos viven 758 568 personas (suma ENSO Perú de los 2 escenarios vigentes, sin repetir distritos).",
-      "fuente": "CENEPRED, escenarios de riesgo ante el aviso de lluvias",
-      "fecha": "2026-11-20T22:27:26Z",
-      "url": "https://sigrid.cenepred.gob.pe/sigridv3/escenario-aviso"
     },
     {
       "t": "El INDECI registró 129 emergencias en 7 días; la más frecuente: incendios forestales. No todas se deben a El Niño.",
@@ -69,7 +63,7 @@
       "n_focos": "muy alto",
       "dias_fuertes": 1,
       "n_lluvia": "medio",
-      "lluvia16": 129.8,
+      "lluvia16": 127.9,
       "spi3": -2.4,
       "estacional": 14,
       "rios_altos": []
@@ -80,9 +74,9 @@
       "aviso": "ROJO",
       "aviso_tipo": "calor",
       "aviso_desde": null,
-      "aviso_numero": 471,
-      "aviso_url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico-vigente&a=2026&b=29371&c=00&d=SENA",
-      "aviso_lluvia": "NARANJA",
+      "aviso_numero": 476,
+      "aviso_url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico-vigente&a=2026&b=29376&c=00&d=SENA",
+      "aviso_lluvia": null,
       "aviso_lluvia_desde": null,
       "mar": 6.61,
       "n_mar": "muy alto",
@@ -90,7 +84,7 @@
       "n_focos": "alto",
       "dias_fuertes": 1,
       "n_lluvia": "medio",
-      "lluvia16": 76.6,
+      "lluvia16": 68.8,
       "spi3": -0.86,
       "estacional": 53,
       "rios_altos": []
@@ -98,12 +92,12 @@
     "03": {
       "nombre": "Apurímac",
       "zona": "Sierra sur",
-      "aviso": "NARANJA",
+      "aviso": "ROJO",
       "aviso_tipo": "lluvia",
       "aviso_desde": null,
-      "aviso_numero": 472,
-      "aviso_url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico-vigente&a=2026&b=29372&c=00&d=SENA",
-      "aviso_lluvia": "NARANJA",
+      "aviso_numero": 477,
+      "aviso_url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico-vigente&a=2026&b=29377&c=00&d=SENA",
+      "aviso_lluvia": "ROJO",
       "aviso_lluvia_desde": null,
       "mar": null,
       "n_mar": null,
@@ -111,7 +105,7 @@
       "n_focos": "alto",
       "dias_fuertes": 1,
       "n_lluvia": "medio",
-      "lluvia16": 149.9,
+      "lluvia16": 132.8,
       "spi3": 0.95,
       "estacional": -33,
       "rios_altos": []
@@ -122,9 +116,9 @@
       "aviso": "ROJO",
       "aviso_tipo": "calor",
       "aviso_desde": null,
-      "aviso_numero": 471,
-      "aviso_url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico-vigente&a=2026&b=29371&c=00&d=SENA",
-      "aviso_lluvia": "NARANJA",
+      "aviso_numero": 476,
+      "aviso_url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico-vigente&a=2026&b=29376&c=00&d=SENA",
+      "aviso_lluvia": null,
       "aviso_lluvia_desde": null,
       "mar": 4.2,
       "n_mar": "muy alto",
@@ -132,7 +126,7 @@
       "n_focos": "medio",
       "dias_fuertes": 0,
       "n_lluvia": "bajo",
-      "lluvia16": 38.1,
+      "lluvia16": 38.2,
       "spi3": null,
       "estacional": 2,
       "rios_altos": []
@@ -140,12 +134,12 @@
     "05": {
       "nombre": "Ayacucho",
       "zona": "Sierra sur",
-      "aviso": "NARANJA",
+      "aviso": "ROJO",
       "aviso_tipo": "lluvia",
       "aviso_desde": null,
-      "aviso_numero": 472,
-      "aviso_url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico-vigente&a=2026&b=29372&c=00&d=SENA",
-      "aviso_lluvia": "NARANJA",
+      "aviso_numero": 477,
+      "aviso_url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico-vigente&a=2026&b=29377&c=00&d=SENA",
+      "aviso_lluvia": "ROJO",
       "aviso_lluvia_desde": null,
       "mar": null,
       "n_mar": null,
@@ -153,7 +147,7 @@
       "n_focos": "alto",
       "dias_fuertes": 3,
       "n_lluvia": "alto",
-      "lluvia16": 139.8,
+      "lluvia16": 131.5,
       "spi3": 1.16,
       "estacional": -14,
       "rios_altos": []
@@ -162,11 +156,11 @@
       "nombre": "Cajamarca",
       "zona": "Sierra norte",
       "aviso": "ROJO",
-      "aviso_tipo": "calor",
+      "aviso_tipo": "lluvia",
       "aviso_desde": null,
-      "aviso_numero": 471,
-      "aviso_url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico-vigente&a=2026&b=29371&c=00&d=SENA",
-      "aviso_lluvia": "NARANJA",
+      "aviso_numero": 477,
+      "aviso_url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico-vigente&a=2026&b=29377&c=00&d=SENA",
+      "aviso_lluvia": "ROJO",
       "aviso_lluvia_desde": null,
       "mar": null,
       "n_mar": null,
@@ -174,7 +168,7 @@
       "n_focos": "muy alto",
       "dias_fuertes": 1,
       "n_lluvia": "medio",
-      "lluvia16": 49.9,
+      "lluvia16": 47.3,
       "spi3": -1.26,
       "estacional": 151,
       "rios_altos": []
@@ -185,9 +179,9 @@
       "aviso": "ROJO",
       "aviso_tipo": "calor",
       "aviso_desde": null,
-      "aviso_numero": 471,
-      "aviso_url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico-vigente&a=2026&b=29371&c=00&d=SENA",
-      "aviso_lluvia": "NARANJA",
+      "aviso_numero": 476,
+      "aviso_url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico-vigente&a=2026&b=29376&c=00&d=SENA",
+      "aviso_lluvia": null,
       "aviso_lluvia_desde": null,
       "mar": 6.11,
       "n_mar": "muy alto",
@@ -195,7 +189,7 @@
       "n_focos": "bajo",
       "dias_fuertes": 0,
       "n_lluvia": "bajo",
-      "lluvia16": 3.9,
+      "lluvia16": 4.5,
       "spi3": null,
       "estacional": 18,
       "rios_altos": []
@@ -203,12 +197,12 @@
     "08": {
       "nombre": "Cusco",
       "zona": "Sierra sur",
-      "aviso": "NARANJA",
+      "aviso": "ROJO",
       "aviso_tipo": "lluvia",
       "aviso_desde": null,
-      "aviso_numero": 472,
-      "aviso_url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico-vigente&a=2026&b=29372&c=00&d=SENA",
-      "aviso_lluvia": "NARANJA",
+      "aviso_numero": 477,
+      "aviso_url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico-vigente&a=2026&b=29377&c=00&d=SENA",
+      "aviso_lluvia": "ROJO",
       "aviso_lluvia_desde": null,
       "mar": null,
       "n_mar": null,
@@ -216,7 +210,7 @@
       "n_focos": "muy alto",
       "dias_fuertes": 5,
       "n_lluvia": "alto",
-      "lluvia16": 171.0,
+      "lluvia16": 162.8,
       "spi3": 0.96,
       "estacional": -30,
       "rios_altos": []
@@ -225,11 +219,11 @@
       "nombre": "Huancavelica",
       "zona": "Sierra centro",
       "aviso": "ROJO",
-      "aviso_tipo": "calor",
+      "aviso_tipo": "lluvia",
       "aviso_desde": null,
-      "aviso_numero": 471,
-      "aviso_url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico-vigente&a=2026&b=29371&c=00&d=SENA",
-      "aviso_lluvia": "NARANJA",
+      "aviso_numero": 477,
+      "aviso_url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico-vigente&a=2026&b=29377&c=00&d=SENA",
+      "aviso_lluvia": "ROJO",
       "aviso_lluvia_desde": null,
       "mar": null,
       "n_mar": null,
@@ -237,7 +231,7 @@
       "n_focos": "alto",
       "dias_fuertes": 0,
       "n_lluvia": "bajo",
-      "lluvia16": 76.8,
+      "lluvia16": 83.1,
       "spi3": null,
       "estacional": 35,
       "rios_altos": []
@@ -246,11 +240,11 @@
       "nombre": "Huánuco",
       "zona": "Sierra centro",
       "aviso": "ROJO",
-      "aviso_tipo": "calor",
+      "aviso_tipo": "lluvia",
       "aviso_desde": null,
-      "aviso_numero": 471,
-      "aviso_url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico-vigente&a=2026&b=29371&c=00&d=SENA",
-      "aviso_lluvia": "NARANJA",
+      "aviso_numero": 477,
+      "aviso_url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico-vigente&a=2026&b=29377&c=00&d=SENA",
+      "aviso_lluvia": "ROJO",
       "aviso_lluvia_desde": null,
       "mar": null,
       "n_mar": null,
@@ -258,7 +252,7 @@
       "n_focos": "muy alto",
       "dias_fuertes": 4,
       "n_lluvia": "alto",
-      "lluvia16": 135.2,
+      "lluvia16": 134.7,
       "spi3": -0.38,
       "estacional": 26,
       "rios_altos": []
@@ -269,9 +263,9 @@
       "aviso": "ROJO",
       "aviso_tipo": "calor",
       "aviso_desde": null,
-      "aviso_numero": 471,
-      "aviso_url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico-vigente&a=2026&b=29371&c=00&d=SENA",
-      "aviso_lluvia": "NARANJA",
+      "aviso_numero": 476,
+      "aviso_url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico-vigente&a=2026&b=29376&c=00&d=SENA",
+      "aviso_lluvia": null,
       "aviso_lluvia_desde": null,
       "mar": 5.8,
       "n_mar": "muy alto",
@@ -290,11 +284,11 @@
       "nombre": "Junín",
       "zona": "Sierra centro",
       "aviso": "ROJO",
-      "aviso_tipo": "calor",
+      "aviso_tipo": "lluvia",
       "aviso_desde": null,
-      "aviso_numero": 471,
-      "aviso_url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico-vigente&a=2026&b=29371&c=00&d=SENA",
-      "aviso_lluvia": "NARANJA",
+      "aviso_numero": 477,
+      "aviso_url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico-vigente&a=2026&b=29377&c=00&d=SENA",
+      "aviso_lluvia": "ROJO",
       "aviso_lluvia_desde": null,
       "mar": null,
       "n_mar": null,
@@ -302,7 +296,7 @@
       "n_focos": "muy alto",
       "dias_fuertes": 1,
       "n_lluvia": "medio",
-      "lluvia16": 117.9,
+      "lluvia16": 115.7,
       "spi3": null,
       "estacional": 30,
       "rios_altos": []
@@ -311,11 +305,11 @@
       "nombre": "La Libertad",
       "zona": "Costa norte",
       "aviso": "ROJO",
-      "aviso_tipo": "calor",
+      "aviso_tipo": "lluvia",
       "aviso_desde": null,
-      "aviso_numero": 471,
-      "aviso_url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico-vigente&a=2026&b=29371&c=00&d=SENA",
-      "aviso_lluvia": "NARANJA",
+      "aviso_numero": 477,
+      "aviso_url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico-vigente&a=2026&b=29377&c=00&d=SENA",
+      "aviso_lluvia": "ROJO",
       "aviso_lluvia_desde": null,
       "mar": 7.0,
       "n_mar": "muy alto",
@@ -323,7 +317,7 @@
       "n_focos": "alto",
       "dias_fuertes": 1,
       "n_lluvia": "medio",
-      "lluvia16": 71.0,
+      "lluvia16": 61.3,
       "spi3": null,
       "estacional": 52,
       "rios_altos": [
@@ -336,11 +330,11 @@
       "nombre": "Lambayeque",
       "zona": "Costa norte",
       "aviso": "ROJO",
-      "aviso_tipo": "calor",
+      "aviso_tipo": "lluvia",
       "aviso_desde": null,
-      "aviso_numero": 471,
-      "aviso_url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico-vigente&a=2026&b=29371&c=00&d=SENA",
-      "aviso_lluvia": "NARANJA",
+      "aviso_numero": 477,
+      "aviso_url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico-vigente&a=2026&b=29377&c=00&d=SENA",
+      "aviso_lluvia": "ROJO",
       "aviso_lluvia_desde": null,
       "mar": 7.07,
       "n_mar": "muy alto",
@@ -348,7 +342,7 @@
       "n_focos": "medio",
       "dias_fuertes": 2,
       "n_lluvia": "medio",
-      "lluvia16": 55.0,
+      "lluvia16": 41.9,
       "spi3": null,
       "estacional": 96,
       "rios_altos": [
@@ -363,9 +357,9 @@
       "aviso": "ROJO",
       "aviso_tipo": "calor",
       "aviso_desde": null,
-      "aviso_numero": 471,
-      "aviso_url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico-vigente&a=2026&b=29371&c=00&d=SENA",
-      "aviso_lluvia": "NARANJA",
+      "aviso_numero": 476,
+      "aviso_url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico-vigente&a=2026&b=29376&c=00&d=SENA",
+      "aviso_lluvia": null,
       "aviso_lluvia_desde": null,
       "mar": 6.26,
       "n_mar": "muy alto",
@@ -373,7 +367,7 @@
       "n_focos": "medio",
       "dias_fuertes": 1,
       "n_lluvia": "medio",
-      "lluvia16": 62.3,
+      "lluvia16": 63.3,
       "spi3": null,
       "estacional": 105,
       "rios_altos": [
@@ -398,9 +392,9 @@
       "n_mar": null,
       "focos": 241,
       "n_focos": "muy alto",
-      "dias_fuertes": 2,
+      "dias_fuertes": 1,
       "n_lluvia": "medio",
-      "lluvia16": 147.7,
+      "lluvia16": 144.5,
       "spi3": 0.09,
       "estacional": 38,
       "rios_altos": []
@@ -419,9 +413,9 @@
       "n_mar": null,
       "focos": 75,
       "n_focos": "muy alto",
-      "dias_fuertes": 5,
-      "n_lluvia": "alto",
-      "lluvia16": 200.8,
+      "dias_fuertes": 6,
+      "n_lluvia": "muy alto",
+      "lluvia16": 217.8,
       "spi3": 0.11,
       "estacional": -31,
       "rios_altos": []
@@ -432,9 +426,9 @@
       "aviso": "ROJO",
       "aviso_tipo": "calor",
       "aviso_desde": null,
-      "aviso_numero": 471,
-      "aviso_url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico-vigente&a=2026&b=29371&c=00&d=SENA",
-      "aviso_lluvia": "NARANJA",
+      "aviso_numero": 476,
+      "aviso_url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico-vigente&a=2026&b=29376&c=00&d=SENA",
+      "aviso_lluvia": null,
       "aviso_lluvia_desde": null,
       "mar": 3.44,
       "n_mar": "muy alto",
@@ -442,7 +436,7 @@
       "n_focos": "medio",
       "dias_fuertes": 0,
       "n_lluvia": "bajo",
-      "lluvia16": 36.3,
+      "lluvia16": 43.3,
       "spi3": null,
       "estacional": -28,
       "rios_altos": []
@@ -451,11 +445,11 @@
       "nombre": "Pasco",
       "zona": "Sierra centro",
       "aviso": "ROJO",
-      "aviso_tipo": "calor",
+      "aviso_tipo": "lluvia",
       "aviso_desde": null,
-      "aviso_numero": 471,
-      "aviso_url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico-vigente&a=2026&b=29371&c=00&d=SENA",
-      "aviso_lluvia": "NARANJA",
+      "aviso_numero": 477,
+      "aviso_url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico-vigente&a=2026&b=29377&c=00&d=SENA",
+      "aviso_lluvia": "ROJO",
       "aviso_lluvia_desde": null,
       "mar": null,
       "n_mar": null,
@@ -463,7 +457,7 @@
       "n_focos": "alto",
       "dias_fuertes": 4,
       "n_lluvia": "alto",
-      "lluvia16": 207.8,
+      "lluvia16": 189.8,
       "spi3": -0.28,
       "estacional": 30,
       "rios_altos": []
@@ -472,19 +466,19 @@
       "nombre": "Piura",
       "zona": "Costa norte",
       "aviso": "ROJO",
-      "aviso_tipo": "calor",
+      "aviso_tipo": "lluvia",
       "aviso_desde": null,
-      "aviso_numero": 471,
-      "aviso_url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico-vigente&a=2026&b=29371&c=00&d=SENA",
-      "aviso_lluvia": "NARANJA",
+      "aviso_numero": 477,
+      "aviso_url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico-vigente&a=2026&b=29377&c=00&d=SENA",
+      "aviso_lluvia": "ROJO",
       "aviso_lluvia_desde": null,
       "mar": 7.25,
       "n_mar": "muy alto",
       "focos": 11,
       "n_focos": "alto",
-      "dias_fuertes": 2,
+      "dias_fuertes": 1,
       "n_lluvia": "medio",
-      "lluvia16": 126.8,
+      "lluvia16": 99.3,
       "spi3": null,
       "estacional": 152,
       "rios_altos": [
@@ -495,12 +489,12 @@
     "21": {
       "nombre": "Puno",
       "zona": "Sierra sur",
-      "aviso": "NARANJA",
+      "aviso": "ROJO",
       "aviso_tipo": "lluvia",
       "aviso_desde": null,
-      "aviso_numero": 472,
-      "aviso_url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico-vigente&a=2026&b=29372&c=00&d=SENA",
-      "aviso_lluvia": "NARANJA",
+      "aviso_numero": 477,
+      "aviso_url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico-vigente&a=2026&b=29377&c=00&d=SENA",
+      "aviso_lluvia": "ROJO",
       "aviso_lluvia_desde": null,
       "mar": null,
       "n_mar": null,
@@ -508,7 +502,7 @@
       "n_focos": "alto",
       "dias_fuertes": 2,
       "n_lluvia": "medio",
-      "lluvia16": 121.1,
+      "lluvia16": 105.0,
       "spi3": null,
       "estacional": -59,
       "rios_altos": []
@@ -527,9 +521,9 @@
       "n_mar": null,
       "focos": 145,
       "n_focos": "muy alto",
-      "dias_fuertes": 5,
+      "dias_fuertes": 4,
       "n_lluvia": "alto",
-      "lluvia16": 179.6,
+      "lluvia16": 170.0,
       "spi3": -0.36,
       "estacional": 14,
       "rios_altos": []
@@ -540,9 +534,9 @@
       "aviso": "ROJO",
       "aviso_tipo": "calor",
       "aviso_desde": null,
-      "aviso_numero": 471,
-      "aviso_url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico-vigente&a=2026&b=29371&c=00&d=SENA",
-      "aviso_lluvia": "NARANJA",
+      "aviso_numero": 476,
+      "aviso_url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico-vigente&a=2026&b=29376&c=00&d=SENA",
+      "aviso_lluvia": null,
       "aviso_lluvia_desde": null,
       "mar": 3.17,
       "n_mar": "muy alto",
@@ -550,7 +544,7 @@
       "n_focos": "bajo",
       "dias_fuertes": 0,
       "n_lluvia": "bajo",
-      "lluvia16": 10.5,
+      "lluvia16": 10.6,
       "spi3": null,
       "estacional": -12,
       "rios_altos": []
@@ -559,19 +553,19 @@
       "nombre": "Tumbes",
       "zona": "Costa norte",
       "aviso": "ROJO",
-      "aviso_tipo": "calor",
+      "aviso_tipo": "lluvia",
       "aviso_desde": null,
-      "aviso_numero": 471,
-      "aviso_url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico-vigente&a=2026&b=29371&c=00&d=SENA",
-      "aviso_lluvia": "NARANJA",
+      "aviso_numero": 477,
+      "aviso_url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico-vigente&a=2026&b=29377&c=00&d=SENA",
+      "aviso_lluvia": "ROJO",
       "aviso_lluvia_desde": null,
       "mar": 7.27,
       "n_mar": "muy alto",
       "focos": 0,
       "n_focos": "bajo",
-      "dias_fuertes": 5,
-      "n_lluvia": "alto",
-      "lluvia16": 221.2,
+      "dias_fuertes": 2,
+      "n_lluvia": "medio",
+      "lluvia16": 162.4,
       "spi3": null,
       "estacional": 303,
       "rios_altos": [
@@ -592,9 +586,9 @@
       "n_mar": null,
       "focos": 544,
       "n_focos": "muy alto",
-      "dias_fuertes": 4,
+      "dias_fuertes": 5,
       "n_lluvia": "alto",
-      "lluvia16": 207.0,
+      "lluvia16": 212.5,
       "spi3": -1.43,
       "estacional": 16,
       "rios_altos": []
@@ -602,54 +596,54 @@
   },
   "lluvia_vs_normal": {
     "01": {
-      "total": 129.8,
+      "total": 127.9,
       "normal": 36,
-      "pct": 359
+      "pct": 354
     },
     "02": {
-      "total": 76.6,
+      "total": 68.8,
       "normal": 25,
-      "pct": 308
+      "pct": 276
     },
     "03": {
-      "total": 149.9,
+      "total": 132.8,
       "normal": 36,
-      "pct": 411
+      "pct": 364
     },
     "04": {
-      "total": 38.1,
+      "total": 38.2,
       "normal": 2,
       "pct": null
     },
     "05": {
-      "total": 139.8,
+      "total": 131.5,
       "normal": 24,
-      "pct": 571
+      "pct": 537
     },
     "06": {
-      "total": 49.9,
+      "total": 47.3,
       "normal": 23,
-      "pct": 218
+      "pct": 207
     },
     "07": {
-      "total": 3.9,
+      "total": 4.5,
       "normal": 1,
       "pct": null
     },
     "08": {
-      "total": 171.0,
+      "total": 162.8,
       "normal": 38,
-      "pct": 446
+      "pct": 425
     },
     "09": {
-      "total": 76.8,
+      "total": 83.1,
       "normal": 17,
-      "pct": 463
+      "pct": 501
     },
     "10": {
-      "total": 135.2,
+      "total": 134.7,
       "normal": 68,
-      "pct": 200
+      "pct": 199
     },
     "11": {
       "total": 2.3,
@@ -657,217 +651,217 @@
       "pct": null
     },
     "12": {
-      "total": 117.9,
+      "total": 115.7,
       "normal": 19,
-      "pct": 637
+      "pct": 625
     },
     "13": {
-      "total": 71.0,
+      "total": 61.3,
       "normal": 19,
-      "pct": 377
+      "pct": 326
     },
     "14": {
-      "total": 55.0,
+      "total": 41.9,
       "normal": 3,
       "pct": null
     },
     "15": {
-      "total": 62.3,
+      "total": 63.3,
       "normal": 1,
       "pct": null
     },
     "16": {
-      "total": 147.7,
+      "total": 144.5,
       "normal": 122,
-      "pct": 121
+      "pct": 118
     },
     "17": {
-      "total": 200.8,
+      "total": 217.8,
       "normal": 85,
-      "pct": 235
+      "pct": 255
     },
     "18": {
-      "total": 36.3,
+      "total": 43.3,
       "normal": 3,
       "pct": null
     },
     "19": {
-      "total": 207.8,
+      "total": 189.8,
       "normal": 22,
-      "pct": 957
+      "pct": 874
     },
     "20": {
-      "total": 126.8,
+      "total": 99.3,
       "normal": 9,
       "pct": null
     },
     "21": {
-      "total": 121.1,
+      "total": 105.0,
       "normal": 18,
-      "pct": 684
+      "pct": 593
     },
     "22": {
-      "total": 179.6,
+      "total": 170.0,
       "normal": 50,
-      "pct": 357
+      "pct": 338
     },
     "23": {
-      "total": 10.5,
+      "total": 10.6,
       "normal": 2,
       "pct": null
     },
     "24": {
-      "total": 221.2,
+      "total": 162.4,
       "normal": 4,
       "pct": null
     },
     "25": {
-      "total": 207.0,
+      "total": 212.5,
       "normal": 91,
-      "pct": 228
+      "pct": 234
     },
     "0301": {
-      "total": 161.9,
+      "total": 150.1,
       "normal": 37,
-      "pct": 436
+      "pct": 404
     },
     "0902": {
-      "total": 123.8,
+      "total": 126.2,
       "normal": 27,
-      "pct": 465
+      "pct": 474
     },
     "0802": {
-      "total": 143.3,
+      "total": 128.9,
       "normal": 36,
-      "pct": 402
+      "pct": 362
     },
     "0202": {
-      "total": 159.6,
+      "total": 148.8,
       "normal": 18,
-      "pct": 891
+      "pct": 830
     },
     "1602": {
-      "total": 178.3,
+      "total": 146.5,
       "normal": 86,
-      "pct": 208
+      "pct": 171
     },
     "1002": {
-      "total": 101.7,
+      "total": 104.2,
       "normal": 38,
-      "pct": 270
+      "pct": 276
     },
     "0302": {
-      "total": 140.1,
+      "total": 132.7,
       "normal": 36,
-      "pct": 384
+      "pct": 364
     },
     "0903": {
-      "total": 136.7,
+      "total": 119.1,
       "normal": 27,
-      "pct": 514
+      "pct": 448
     },
     "0803": {
-      "total": 121.1,
+      "total": 108.5,
       "normal": 39,
-      "pct": 310
+      "pct": 278
     },
     "0303": {
-      "total": 132.6,
+      "total": 118.2,
       "normal": 31,
-      "pct": 429
+      "pct": 382
     },
     "0203": {
-      "total": 127.2,
+      "total": 108.1,
       "normal": 69,
-      "pct": 183
+      "pct": 156
     },
     "0401": {
-      "total": 16.7,
+      "total": 17.1,
       "normal": 2,
       "pct": null
     },
     "1302": {
-      "total": 22.4,
+      "total": 17.7,
       "normal": 8,
       "pct": null
     },
     "0204": {
-      "total": 92.2,
+      "total": 74.9,
       "normal": 29,
-      "pct": 315
+      "pct": 256
     },
     "2502": {
-      "total": 179.8,
+      "total": 194.4,
       "normal": 76,
-      "pct": 238
+      "pct": 257
     },
     "2002": {
-      "total": 147.0,
+      "total": 148.5,
       "normal": 12,
       "pct": null
     },
     "0304": {
-      "total": 94.2,
+      "total": 89.7,
       "normal": 31,
-      "pct": 308
+      "pct": 293
     },
     "2102": {
-      "total": 113.7,
+      "total": 107.4,
       "normal": 18,
-      "pct": 642
+      "pct": 607
     },
     "0102": {
-      "total": 150.1,
+      "total": 160.9,
       "normal": 36,
-      "pct": 415
+      "pct": 445
     },
     "1502": {
-      "total": 15.2,
+      "total": 15.4,
       "normal": 10,
       "pct": null
     },
     "2202": {
-      "total": 145.1,
+      "total": 140.4,
       "normal": 68,
-      "pct": 214
+      "pct": 207
     },
     "1303": {
-      "total": 75.7,
+      "total": 67.0,
       "normal": 39,
-      "pct": 192
+      "pct": 170
     },
     "0205": {
-      "total": 94.2,
+      "total": 87.5,
       "normal": 32,
-      "pct": 291
+      "pct": 271
     },
     "0103": {
-      "total": 119.3,
+      "total": 84.7,
       "normal": 32,
-      "pct": 378
+      "pct": 269
     },
     "0602": {
-      "total": 46.8,
+      "total": 42.6,
       "normal": 30,
-      "pct": 158
+      "pct": 143
     },
     "0601": {
-      "total": 91.3,
+      "total": 86.7,
       "normal": 27,
-      "pct": 334
+      "pct": 318
     },
     "1503": {
-      "total": 88.7,
+      "total": 74.7,
       "normal": 16,
-      "pct": 544
+      "pct": 458
     },
     "0804": {
-      "total": 155.6,
+      "total": 159.3,
       "normal": 40,
-      "pct": 393
+      "pct": 403
     },
     "0701": {
-      "total": 3.9,
+      "total": 4.5,
       "normal": 1,
       "pct": null
     },
@@ -877,574 +871,574 @@
       "pct": null
     },
     "0805": {
-      "total": 144.1,
+      "total": 141.9,
       "normal": 25,
-      "pct": 579
+      "pct": 570
     },
     "0806": {
-      "total": 149.0,
+      "total": 138.8,
       "normal": 35,
-      "pct": 431
+      "pct": 402
     },
     "2302": {
-      "total": 12.0,
+      "total": 15.1,
       "normal": 3,
       "pct": null
     },
     "0502": {
-      "total": 133.1,
+      "total": 117.0,
       "normal": 24,
-      "pct": 551
+      "pct": 484
     },
     "1504": {
-      "total": 44.6,
+      "total": 50.8,
       "normal": 2,
       "pct": null
     },
     "1505": {
-      "total": 15.3,
+      "total": 16.2,
       "normal": 2,
       "pct": null
     },
     "2103": {
-      "total": 181.0,
+      "total": 180.7,
       "normal": 42,
-      "pct": 429
+      "pct": 428
     },
     "0403": {
-      "total": 6.8,
+      "total": 5.9,
       "normal": 3,
       "pct": null
     },
     "0206": {
-      "total": 69.5,
+      "total": 64.1,
       "normal": 25,
-      "pct": 279
+      "pct": 257
     },
     "0207": {
-      "total": 121.8,
+      "total": 102.0,
       "normal": 29,
-      "pct": 416
+      "pct": 348
     },
     "0208": {
-      "total": 11.0,
+      "total": 10.0,
       "normal": 10,
       "pct": null
     },
     "0404": {
-      "total": 34.2,
+      "total": 37.1,
       "normal": 8,
       "pct": null
     },
     "0904": {
-      "total": 107.2,
+      "total": 102.9,
       "normal": 6,
       "pct": null
     },
     "0405": {
-      "total": 66.4,
+      "total": 65.5,
       "normal": 8,
       "pct": null
     },
     "0603": {
-      "total": 64.2,
+      "total": 70.3,
       "normal": 35,
-      "pct": 184
+      "pct": 202
     },
     "0101": {
-      "total": 64.5,
+      "total": 70.4,
       "normal": 38,
-      "pct": 169
+      "pct": 185
     },
     "1203": {
-      "total": 202.3,
+      "total": 186.6,
       "normal": 21,
-      "pct": 975
+      "pct": 899
     },
     "1304": {
-      "total": 9.9,
+      "total": 8.3,
       "normal": 12,
       "pct": null
     },
     "1401": {
-      "total": 68.7,
+      "total": 62.5,
       "normal": 12,
       "pct": null
     },
     "1102": {
-      "total": 35.9,
+      "total": 35.8,
       "normal": 5,
       "pct": null
     },
     "0306": {
-      "total": 148.9,
+      "total": 159.8,
       "normal": 28,
-      "pct": 527
+      "pct": 565
     },
     "0604": {
-      "total": 78.8,
+      "total": 68.1,
       "normal": 26,
-      "pct": 308
+      "pct": 267
     },
     "2104": {
-      "total": 62.7,
+      "total": 60.4,
       "normal": 16,
-      "pct": 395
+      "pct": 380
     },
     "0807": {
-      "total": 126.6,
+      "total": 118.1,
       "normal": 29,
-      "pct": 440
+      "pct": 410
     },
     "1209": {
-      "total": 143.9,
+      "total": 117.5,
       "normal": 8,
       "pct": null
     },
     "0905": {
-      "total": 104.4,
+      "total": 106.9,
       "normal": 28,
-      "pct": 376
+      "pct": 385
     },
     "1202": {
-      "total": 144.7,
+      "total": 121.8,
       "normal": 19,
-      "pct": 782
+      "pct": 658
     },
     "0406": {
-      "total": 34.8,
+      "total": 37.8,
       "normal": 8,
       "pct": null
     },
     "2402": {
-      "total": 235.5,
+      "total": 190.2,
       "normal": 4,
       "pct": null
     },
     "0605": {
-      "total": 131.1,
+      "total": 115.9,
       "normal": 21,
-      "pct": 638
+      "pct": 564
     },
     "2501": {
-      "total": 195.9,
+      "total": 212.4,
       "normal": 81,
-      "pct": 243
+      "pct": 263
     },
     "0209": {
-      "total": 53.0,
+      "total": 47.7,
       "normal": 12,
       "pct": null
     },
     "0305": {
-      "total": 152.1,
+      "total": 130.6,
       "normal": 37,
-      "pct": 410
+      "pct": 352
     },
     "0801": {
-      "total": 141.8,
+      "total": 122.2,
       "normal": 38,
-      "pct": 370
+      "pct": 319
     },
     "0606": {
-      "total": 45.8,
+      "total": 44.5,
       "normal": 23,
-      "pct": 200
+      "pct": 194
     },
     "1902": {
-      "total": 108.5,
+      "total": 105.2,
       "normal": 20,
-      "pct": 550
+      "pct": 533
     },
     "1607": {
-      "total": 151.8,
+      "total": 146.1,
       "normal": 84,
-      "pct": 181
+      "pct": 174
     },
     "1003": {
-      "total": 209.9,
+      "total": 206.4,
       "normal": 53,
-      "pct": 395
+      "pct": 389
     },
     "2105": {
-      "total": 49.1,
+      "total": 47.4,
       "normal": 9,
       "pct": null
     },
     "2203": {
-      "total": 100.3,
+      "total": 87.5,
       "normal": 53,
-      "pct": 191
+      "pct": 167
     },
     "0808": {
-      "total": 122.2,
+      "total": 119.2,
       "normal": 15,
-      "pct": 798
+      "pct": 779
     },
     "1402": {
-      "total": 110.0,
+      "total": 92.5,
       "normal": 11,
       "pct": null
     },
     "1802": {
-      "total": 31.5,
+      "total": 39.5,
       "normal": 5,
       "pct": null
     },
     "1311": {
-      "total": 44.1,
+      "total": 47.3,
       "normal": 21,
-      "pct": 215
+      "pct": 230
     },
     "0307": {
-      "total": 147.2,
+      "total": 149.8,
       "normal": 37,
-      "pct": 397
+      "pct": 404
     },
     "1004": {
-      "total": 171.5,
+      "total": 179.2,
       "normal": 69,
-      "pct": 247
+      "pct": 258
     },
     "0607": {
-      "total": 90.5,
+      "total": 83.3,
       "normal": 26,
-      "pct": 354
+      "pct": 326
     },
     "2204": {
-      "total": 139.7,
+      "total": 133.3,
       "normal": 50,
-      "pct": 278
+      "pct": 265
     },
     "1005": {
-      "total": 140.0,
+      "total": 147.5,
       "normal": 68,
-      "pct": 205
+      "pct": 216
     },
     "0501": {
-      "total": 131.0,
+      "total": 116.8,
       "normal": 24,
-      "pct": 542
+      "pct": 483
     },
     "0503": {
-      "total": 115.9,
+      "total": 107.5,
       "normal": 20,
-      "pct": 581
+      "pct": 539
     },
     "2003": {
-      "total": 176.7,
+      "total": 141.8,
       "normal": 14,
       "pct": null
     },
     "2106": {
-      "total": 119.1,
+      "total": 115.1,
       "normal": 35,
-      "pct": 343
+      "pct": 332
     },
     "0901": {
-      "total": 103.8,
+      "total": 96.6,
       "normal": 17,
-      "pct": 626
+      "pct": 582
     },
     "1201": {
-      "total": 139.8,
+      "total": 135.5,
       "normal": 19,
-      "pct": 755
+      "pct": 732
     },
     "0504": {
-      "total": 188.6,
+      "total": 180.9,
       "normal": 28,
-      "pct": 679
+      "pct": 651
     },
     "1001": {
-      "total": 104.5,
+      "total": 111.3,
       "normal": 38,
-      "pct": 277
+      "pct": 295
     },
     "1506": {
-      "total": 52.0,
+      "total": 44.9,
       "normal": 2,
       "pct": null
     },
     "0201": {
-      "total": 68.7,
+      "total": 63.5,
       "normal": 25,
-      "pct": 276
+      "pct": 255
     },
     "0210": {
-      "total": 148.2,
+      "total": 125.2,
       "normal": 53,
-      "pct": 279
+      "pct": 236
     },
     "0211": {
-      "total": 20.4,
+      "total": 20.0,
       "normal": 9,
       "pct": null
     },
     "1507": {
-      "total": 95.6,
+      "total": 95.8,
       "normal": 2,
       "pct": null
     },
     "1508": {
-      "total": 162.8,
+      "total": 145.6,
       "normal": 3,
       "pct": null
     },
     "0212": {
-      "total": 100.6,
+      "total": 87.4,
       "normal": 10,
       "pct": null
     },
     "0906": {
-      "total": 105.4,
+      "total": 108.1,
       "normal": 14,
       "pct": null
     },
     "1101": {
-      "total": 8.8,
+      "total": 8.9,
       "normal": 2,
       "pct": null
     },
     "1803": {
-      "total": 17.5,
+      "total": 18.3,
       "normal": 1,
       "pct": null
     },
     "0407": {
-      "total": 9.8,
+      "total": 10.5,
       "normal": 0,
       "pct": null
     },
     "0608": {
-      "total": 77.7,
+      "total": 72.5,
       "normal": 25,
-      "pct": 310
+      "pct": 289
     },
     "1204": {
-      "total": 224.9,
+      "total": 215.8,
       "normal": 9,
       "pct": null
     },
     "2303": {
-      "total": 15.7,
+      "total": 15.6,
       "normal": 1,
       "pct": null
     },
     "1305": {
-      "total": 77.3,
+      "total": 66.7,
       "normal": 11,
       "pct": null
     },
     "1205": {
-      "total": 125.0,
+      "total": 106.9,
       "normal": 13,
       "pct": null
     },
     "0809": {
-      "total": 218.8,
+      "total": 221.5,
       "normal": 37,
-      "pct": 587
+      "pct": 594
     },
     "0505": {
-      "total": 76.6,
+      "total": 77.1,
       "normal": 30,
-      "pct": 257
+      "pct": 259
     },
     "0408": {
-      "total": 58.6,
+      "total": 61.6,
       "normal": 19,
-      "pct": 305
+      "pct": 321
     },
     "2205": {
-      "total": 200.1,
+      "total": 161.6,
       "normal": 64,
-      "pct": 313
+      "pct": 253
     },
     "1403": {
-      "total": 93.0,
+      "total": 63.8,
       "normal": 3,
       "pct": null
     },
     "2107": {
-      "total": 104.8,
+      "total": 101.5,
       "normal": 14,
       "pct": null
     },
     "1010": {
-      "total": 110.8,
+      "total": 98.2,
       "normal": 32,
-      "pct": 343
+      "pct": 304
     },
     "1006": {
-      "total": 171.9,
+      "total": 166.0,
       "normal": 97,
-      "pct": 177
+      "pct": 171
     },
     "1501": {
-      "total": 17.4,
+      "total": 18.3,
       "normal": 1,
       "pct": null
     },
     "1603": {
-      "total": 157.9,
+      "total": 159.7,
       "normal": 107,
-      "pct": 148
+      "pct": 150
     },
     "0506": {
-      "total": 72.0,
+      "total": 72.6,
       "normal": 14,
       "pct": null
     },
     "0105": {
-      "total": 62.8,
+      "total": 62.1,
       "normal": 32,
-      "pct": 198
-    },
-    "1702": {
-      "total": 221.5,
-      "normal": 53,
-      "pct": 419
-    },
-    "1007": {
-      "total": 141.4,
-      "normal": 72,
       "pct": 196
     },
+    "1702": {
+      "total": 240.8,
+      "normal": 53,
+      "pct": 456
+    },
+    "1007": {
+      "total": 133.8,
+      "normal": 72,
+      "pct": 185
+    },
     "2206": {
-      "total": 167.1,
+      "total": 174.1,
       "normal": 50,
-      "pct": 332
+      "pct": 346
     },
     "0213": {
-      "total": 126.8,
+      "total": 112.5,
       "normal": 29,
-      "pct": 433
+      "pct": 384
     },
     "1801": {
-      "total": 26.0,
+      "total": 34.6,
       "normal": 3,
       "pct": null
     },
     "1604": {
-      "total": 178.6,
+      "total": 169.5,
       "normal": 131,
-      "pct": 137
+      "pct": 130
     },
     "1601": {
-      "total": 174.4,
+      "total": 166.4,
       "normal": 124,
-      "pct": 141
+      "pct": 134
     },
     "2108": {
-      "total": 140.0,
+      "total": 128.1,
       "normal": 28,
-      "pct": 499
+      "pct": 457
     },
     "2109": {
-      "total": 119.9,
+      "total": 117.4,
       "normal": 27,
-      "pct": 443
+      "pct": 433
     },
     "2004": {
-      "total": 283.9,
+      "total": 195.3,
       "normal": 5,
       "pct": null
     },
     "2201": {
-      "total": 155.8,
+      "total": 105.4,
       "normal": 60,
-      "pct": 260
+      "pct": 176
     },
     "1103": {
-      "total": 0.4,
+      "total": 0.7,
       "normal": 5,
       "pct": null
     },
     "0214": {
-      "total": 126.9,
+      "total": 119.0,
       "normal": 10,
       "pct": null
     },
     "1306": {
-      "total": 84.7,
+      "total": 71.5,
       "normal": 11,
       "pct": null
     },
     "1903": {
-      "total": 265.9,
+      "total": 241.1,
       "normal": 40,
-      "pct": 661
+      "pct": 600
     },
     "1509": {
-      "total": 110.4,
+      "total": 101.0,
       "normal": 16,
-      "pct": 676
+      "pct": 619
     },
     "1307": {
-      "total": 3.6,
+      "total": 3.8,
       "normal": 8,
       "pct": null
     },
     "1008": {
-      "total": 246.7,
+      "total": 225.3,
       "normal": 38,
-      "pct": 651
+      "pct": 595
     },
     "2503": {
-      "total": 228.1,
+      "total": 238.3,
       "normal": 98,
-      "pct": 233
+      "pct": 244
     },
     "2005": {
-      "total": 52.8,
+      "total": 44.0,
       "normal": 1,
       "pct": null
     },
     "0215": {
-      "total": 58.8,
+      "total": 49.4,
       "normal": 12,
       "pct": null
     },
     "1104": {
-      "total": 16.7,
+      "total": 20.5,
       "normal": 7,
       "pct": null
     },
     "0507": {
-      "total": 67.5,
+      "total": 67.4,
       "normal": 12,
       "pct": null
     },
     "0810": {
-      "total": 132.7,
+      "total": 129.8,
       "normal": 36,
-      "pct": 372
+      "pct": 364
     },
     "1901": {
-      "total": 149.4,
+      "total": 122.2,
       "normal": 10,
       "pct": null
     },
     "1308": {
-      "total": 78.2,
+      "total": 67.3,
       "normal": 36,
-      "pct": 219
+      "pct": 188
     },
     "0508": {
-      "total": 44.1,
+      "total": 48.6,
       "normal": 20,
-      "pct": 220
+      "pct": 242
     },
     "0811": {
-      "total": 289.8,
+      "total": 274.9,
       "normal": 48,
-      "pct": 599
+      "pct": 568
     },
     "2207": {
-      "total": 114.2,
+      "total": 82.3,
       "normal": 59,
-      "pct": 193
+      "pct": 139
     },
     "1105": {
       "total": 0.0,
@@ -1452,254 +1446,254 @@
       "pct": null
     },
     "2001": {
-      "total": 179.8,
+      "total": 131.9,
       "normal": 2,
       "pct": null
     },
     "0216": {
-      "total": 93.4,
+      "total": 83.0,
       "normal": 32,
-      "pct": 290
+      "pct": 258
     },
     "1009": {
-      "total": 223.8,
+      "total": 249.8,
       "normal": 62,
-      "pct": 361
+      "pct": 403
     },
     "2101": {
-      "total": 94.9,
+      "total": 87.8,
       "normal": 13,
       "pct": null
     },
     "2504": {
-      "total": 194.5,
+      "total": 202.1,
       "normal": 94,
-      "pct": 207
+      "pct": 215
     },
     "0812": {
-      "total": 229.6,
+      "total": 215.0,
       "normal": 42,
-      "pct": 541
+      "pct": 506
     },
     "0217": {
-      "total": 152.6,
+      "total": 139.4,
       "normal": 18,
-      "pct": 852
+      "pct": 778
     },
     "1605": {
-      "total": 177.9,
+      "total": 160.9,
       "normal": 100,
-      "pct": 178
+      "pct": 161
     },
     "2208": {
-      "total": 101.9,
+      "total": 66.6,
       "normal": 39,
-      "pct": 262
+      "pct": 171
     },
     "0106": {
-      "total": 113.9,
+      "total": 120.3,
       "normal": 38,
-      "pct": 299
+      "pct": 316
     },
     "2110": {
-      "total": 117.9,
+      "total": 121.4,
       "normal": 47,
-      "pct": 251
+      "pct": 258
     },
     "0609": {
-      "total": 89.1,
+      "total": 82.6,
       "normal": 31,
-      "pct": 290
+      "pct": 269
     },
     "0610": {
-      "total": 52.4,
+      "total": 50.3,
       "normal": 30,
-      "pct": 176
+      "pct": 169
     },
     "2209": {
-      "total": 105.6,
+      "total": 95.7,
       "normal": 75,
-      "pct": 141
+      "pct": 128
     },
     "0611": {
-      "total": 130.1,
+      "total": 109.8,
       "normal": 27,
-      "pct": 476
+      "pct": 402
     },
     "0612": {
-      "total": 78.4,
+      "total": 59.3,
       "normal": 27,
-      "pct": 287
+      "pct": 217
     },
     "2111": {
-      "total": 79.5,
+      "total": 75.3,
       "normal": 16,
-      "pct": 486
+      "pct": 460
     },
     "1309": {
-      "total": 64.3,
+      "total": 51.6,
       "normal": 19,
-      "pct": 342
+      "pct": 274
     },
     "2112": {
-      "total": 159.4,
+      "total": 156.4,
       "normal": 66,
-      "pct": 243
+      "pct": 238
     },
     "0218": {
-      "total": 99.5,
+      "total": 89.8,
       "normal": 10,
       "pct": null
     },
     "0613": {
-      "total": 108.4,
+      "total": 108.9,
       "normal": 26,
-      "pct": 424
+      "pct": 426
     },
     "1310": {
-      "total": 126.5,
+      "total": 108.6,
       "normal": 19,
-      "pct": 672
+      "pct": 577
     },
     "1206": {
-      "total": 168.1,
+      "total": 158.2,
       "normal": 27,
-      "pct": 624
+      "pct": 587
     },
     "2008": {
-      "total": 33.8,
+      "total": 29.2,
       "normal": 1,
       "pct": null
     },
     "0219": {
-      "total": 85.9,
+      "total": 75.7,
       "normal": 32,
-      "pct": 267
+      "pct": 235
     },
     "0509": {
-      "total": 159.7,
+      "total": 130.7,
       "normal": 24,
-      "pct": 652
+      "pct": 534
     },
     "2006": {
-      "total": 139.3,
+      "total": 116.8,
       "normal": 4,
       "pct": null
     },
     "2301": {
-      "total": 4.8,
+      "total": 4.7,
       "normal": 1,
       "pct": null
     },
     "1703": {
-      "total": 211.6,
+      "total": 214.4,
       "normal": 87,
-      "pct": 243
+      "pct": 246
     },
     "2007": {
-      "total": 106.1,
+      "total": 99.4,
       "normal": 1,
       "pct": null
     },
     "1701": {
-      "total": 216.1,
+      "total": 208.2,
       "normal": 92,
-      "pct": 236
+      "pct": 227
     },
     "2304": {
-      "total": 2.3,
+      "total": 2.4,
       "normal": 2,
       "pct": null
     },
     "1207": {
-      "total": 94.6,
+      "total": 90.4,
       "normal": 13,
       "pct": null
     },
     "0907": {
-      "total": 100.2,
+      "total": 102.8,
       "normal": 18,
-      "pct": 549
+      "pct": 564
     },
     "2210": {
-      "total": 224.2,
+      "total": 228.0,
       "normal": 64,
-      "pct": 349
+      "pct": 355
     },
     "1301": {
-      "total": 19.9,
+      "total": 16.2,
       "normal": 11,
       "pct": null
     },
     "2401": {
-      "total": 275.2,
+      "total": 253.4,
       "normal": 4,
       "pct": null
     },
     "1606": {
-      "total": 132.1,
+      "total": 133.0,
       "normal": 76,
-      "pct": 173
+      "pct": 174
     },
     "0813": {
-      "total": 116.9,
+      "total": 99.7,
       "normal": 39,
-      "pct": 299
+      "pct": 255
     },
     "0107": {
-      "total": 51.4,
+      "total": 51.0,
       "normal": 29,
-      "pct": 177
+      "pct": 176
     },
     "0510": {
-      "total": 127.5,
+      "total": 105.8,
       "normal": 24,
-      "pct": 528
+      "pct": 438
     },
     "0511": {
-      "total": 129.6,
+      "total": 116.5,
       "normal": 28,
-      "pct": 458
+      "pct": 412
     },
     "1312": {
-      "total": 46.7,
+      "total": 41.7,
       "normal": 5,
       "pct": null
     },
     "1011": {
-      "total": 122.0,
+      "total": 117.7,
       "normal": 32,
-      "pct": 377
+      "pct": 364
     },
     "1208": {
-      "total": 131.4,
+      "total": 117.4,
       "normal": 4,
       "pct": null
     },
     "1510": {
-      "total": 84.8,
+      "total": 77.4,
       "normal": 8,
       "pct": null
     },
     "0220": {
-      "total": 123.8,
+      "total": 115.0,
       "normal": 29,
-      "pct": 423
+      "pct": 393
     },
     "2113": {
-      "total": 116.8,
+      "total": 107.3,
       "normal": 16,
-      "pct": 735
+      "pct": 675
     },
     "2403": {
-      "total": 268.6,
+      "total": 243.0,
       "normal": 11,
       "pct": null
     },
     "0104": {
-      "total": 161.2,
+      "total": 165.0,
       "normal": 44,
-      "pct": 367
+      "pct": 376
     }
   },
   "top_lluvia": [
@@ -1707,91 +1701,91 @@
       "id": "0811",
       "nombre": "Paucartambo",
       "region": "Cusco",
-      "total": 289.8,
+      "total": 274.9,
       "dias_fuertes": 6,
       "max_dia": 58.3,
-      "pct": 599
-    },
-    {
-      "id": "2004",
-      "nombre": "Morropon",
-      "region": "Piura",
-      "total": 283.9,
-      "dias_fuertes": 7,
-      "max_dia": 46.7,
-      "pct": null
+      "pct": 568
     },
     {
       "id": "2401",
       "nombre": "Tumbes",
       "region": "Tumbes",
-      "total": 275.2,
-      "dias_fuertes": 6,
-      "max_dia": 56.0,
+      "total": 253.4,
+      "dias_fuertes": 5,
+      "max_dia": 46.7,
       "pct": null
+    },
+    {
+      "id": "1009",
+      "nombre": "Puerto Inca",
+      "region": "Huanuco",
+      "total": 249.8,
+      "dias_fuertes": 6,
+      "max_dia": 30.9,
+      "pct": 403
     },
     {
       "id": "2403",
       "nombre": "Zarumilla",
       "region": "Tumbes",
-      "total": 268.6,
-      "dias_fuertes": 7,
-      "max_dia": 50.5,
+      "total": 243.0,
+      "dias_fuertes": 5,
+      "max_dia": 42.4,
       "pct": null
     },
     {
       "id": "1903",
       "nombre": "Oxapampa",
       "region": "Pasco",
-      "total": 265.9,
-      "dias_fuertes": 11,
+      "total": 241.1,
+      "dias_fuertes": 9,
       "max_dia": 29.0,
-      "pct": 661
+      "pct": 600
     },
     {
-      "id": "1008",
-      "nombre": "Pachitea",
-      "region": "Huanuco",
-      "total": 246.7,
-      "dias_fuertes": 8,
-      "max_dia": 29.8,
-      "pct": 651
-    },
-    {
-      "id": "2402",
-      "nombre": "Contralmirante Villar",
-      "region": "Tumbes",
-      "total": 235.5,
-      "dias_fuertes": 8,
-      "max_dia": 48.8,
-      "pct": null
-    },
-    {
-      "id": "0812",
-      "nombre": "Quispicanchi",
-      "region": "Cusco",
-      "total": 229.6,
+      "id": "1702",
+      "nombre": "Manu",
+      "region": "Madre de Dios",
+      "total": 240.8,
       "dias_fuertes": 6,
-      "max_dia": 33.5,
-      "pct": 541
+      "max_dia": 41.3,
+      "pct": 456
     },
     {
       "id": "2503",
       "nombre": "Padre Abad",
       "region": "Ucayali",
-      "total": 228.1,
-      "dias_fuertes": 6,
+      "total": 238.3,
+      "dias_fuertes": 5,
       "max_dia": 28.9,
-      "pct": 233
+      "pct": 244
     },
     {
-      "id": "1204",
-      "nombre": "Jauja",
-      "region": "Junin",
-      "total": 224.9,
-      "dias_fuertes": 10,
-      "max_dia": 27.9,
-      "pct": null
+      "id": "2210",
+      "nombre": "Tocache",
+      "region": "San Martin",
+      "total": 228.0,
+      "dias_fuertes": 7,
+      "max_dia": 27.5,
+      "pct": 355
+    },
+    {
+      "id": "1008",
+      "nombre": "Pachitea",
+      "region": "Huanuco",
+      "total": 225.3,
+      "dias_fuertes": 8,
+      "max_dia": 29.3,
+      "pct": 595
+    },
+    {
+      "id": "0809",
+      "nombre": "La Convencion",
+      "region": "Cusco",
+      "total": 221.5,
+      "dias_fuertes": 6,
+      "max_dia": 30.1,
+      "pct": 594
     }
   ],
   "top_focos": [
@@ -1872,7 +1866,7 @@
       "nombre": "Tumbes",
       "lugar": "El Tigre",
       "region": "24",
-      "hoy": 625.61,
+      "hoy": 1220.8,
       "pico": 1484.94,
       "fecha_pico": "2026-11-22",
       "p90": 591.9,
@@ -1884,7 +1878,7 @@
       "nombre": "La Leche",
       "lugar": "Puchaca",
       "region": "14",
-      "hoy": 49.23,
+      "hoy": 44.19,
       "pico": 72.79,
       "fecha_pico": "2026-12-03",
       "p90": 39.7,
@@ -1896,7 +1890,7 @@
       "nombre": "Chicama",
       "lugar": "Salinar",
       "region": "13",
-      "hoy": 156.4,
+      "hoy": 220.82,
       "pico": 265.69,
       "fecha_pico": "2026-12-02",
       "p90": 151.1,
@@ -1908,7 +1902,7 @@
       "nombre": "Chira",
       "lugar": "Ardilla",
       "region": "20",
-      "hoy": 1157.78,
+      "hoy": 1351.07,
       "pico": 1495.24,
       "fecha_pico": "2026-12-01",
       "p90": 932.2,
@@ -1920,7 +1914,7 @@
       "nombre": "Cañete",
       "lugar": "Socsi",
       "region": "15",
-      "hoy": 97.86,
+      "hoy": 99.0,
       "pico": 391.65,
       "fecha_pico": "2026-12-02",
       "p90": 279.5,
@@ -1932,7 +1926,7 @@
       "nombre": "Pisco",
       "lugar": "Letrayoc",
       "region": "11",
-      "hoy": 50.4,
+      "hoy": 44.29,
       "pico": 205.06,
       "fecha_pico": "2026-12-02",
       "p90": 146.6,
@@ -1944,7 +1938,7 @@
       "nombre": "Zaña",
       "lugar": "Batán",
       "region": "14",
-      "hoy": 34.08,
+      "hoy": 43.06,
       "pico": 59.81,
       "fecha_pico": "2026-11-25",
       "p90": 45.1,
@@ -1956,7 +1950,7 @@
       "nombre": "Pativilca",
       "lugar": "Yanapampa",
       "region": "15",
-      "hoy": 168.04,
+      "hoy": 158.59,
       "pico": 250.19,
       "fecha_pico": "2026-12-02",
       "p90": 197.2,
@@ -1968,7 +1962,7 @@
       "nombre": "Piura",
       "lugar": "Puente Sánchez Cerro",
       "region": "20",
-      "hoy": 205.54,
+      "hoy": 189.99,
       "pico": 278.25,
       "fecha_pico": "2026-12-01",
       "p90": 230.7,
@@ -1980,7 +1974,7 @@
       "nombre": "Jequetepeque",
       "lugar": "Yonán",
       "region": "13",
-      "hoy": 211.32,
+      "hoy": 308.74,
       "pico": 367.13,
       "fecha_pico": "2026-12-03",
       "p90": 320.4,
@@ -1992,7 +1986,7 @@
       "nombre": "Chancay-Lambayeque",
       "lugar": "Racarrumi",
       "region": "14",
-      "hoy": 83.33,
+      "hoy": 102.28,
       "pico": 109.41,
       "fecha_pico": "2026-12-02",
       "p90": 103.0,
@@ -2004,7 +1998,7 @@
       "nombre": "Rímac",
       "lugar": "Chosica",
       "region": "15",
-      "hoy": 72.62,
+      "hoy": 73.3,
       "pico": 93.41,
       "fecha_pico": "2026-12-04",
       "p90": 89.2,
@@ -2016,7 +2010,7 @@
       "nombre": "Chillón",
       "lugar": "Obrajillo",
       "region": "15",
-      "hoy": 46.86,
+      "hoy": 46.21,
       "pico": 64.92,
       "fecha_pico": "2026-12-03",
       "p90": 63.6,
@@ -2028,7 +2022,7 @@
       "nombre": "Virú",
       "lugar": "Huacapongo",
       "region": "13",
-      "hoy": 35.48,
+      "hoy": 36.07,
       "pico": 42.35,
       "fecha_pico": "2026-12-04",
       "p90": 41.8,
@@ -2040,7 +2034,7 @@
       "nombre": "Lurín",
       "lugar": "Antapucro",
       "region": "15",
-      "hoy": 34.24,
+      "hoy": 34.4,
       "pico": 40.4,
       "fecha_pico": "2026-12-04",
       "p90": 40.3,
@@ -2161,8 +2155,8 @@
     }
   ],
   "totales": {
-    "avisos": 10,
-    "rojos": 4,
+    "avisos": 7,
+    "rojos": 3,
     "rios_altos": 15,
     "focos": 1684,
     "distritos_riesgo_alto": 766
