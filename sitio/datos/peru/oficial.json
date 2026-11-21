@@ -1,6 +1,6 @@
 {
   "_": "Generado por pipeline/fuentes/peru_oficial.py. Datos oficiales tal como se publican.",
-  "actualizado": "2026-11-21T21:59:00Z",
+  "actualizado": "2026-11-21T22:24:09Z",
   "fallas": [
     "coen"
   ],
@@ -10,7 +10,7 @@
     "color": "#ff0031",
     "titular": "EL NIÑO COSTERO CONTINUARÍA HASTA INICIOS DE INVIERNO DEL 2027",
     "url": "https://www.senamhi.gob.pe/?p=fenomeno-el-nino",
-    "leido": "2026-11-21T21:56:47Z"
+    "leido": "2026-11-21T22:24:09Z"
   },
   "coen": {
     "dias": 7,
@@ -502,7 +502,7 @@
       }
     ],
     "url": "https://portal.indeci.gob.pe/emergencias/",
-    "leido": "2026-11-21T21:59:01Z"
+    "leido": "2026-11-21T22:24:10Z"
   },
   "escenario": {
     "vigente": true,
@@ -2582,7 +2582,7 @@
       }
     },
     "url": "https://sigrid.cenepred.gob.pe/sigridv3/escenario-aviso",
-    "leido": "2026-11-21T21:59:04Z"
+    "leido": "2026-11-21T22:24:11Z"
   },
   "quebradas": {
     "fecha": "2026-11-21",
@@ -3110,7 +3110,7 @@
     },
     "sin_cruce": 3,
     "url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico",
-    "leido": "2026-11-21T21:59:06Z"
+    "leido": "2026-11-21T22:24:14Z"
   },
   "hidro": {
     "avisos": [
@@ -3164,7 +3164,7 @@
       }
     ],
     "url": "https://www.senamhi.gob.pe/?p=aviso-hidrologico",
-    "leido": "2026-11-21T21:59:07Z"
+    "leido": "2026-11-21T22:24:15Z"
   },
   "ana_rios": {
     "estaciones": [
@@ -3273,7 +3273,7 @@
         "alerta": 1000.0,
         "emergencia": 1300.0,
         "tendencia": "Ascendente",
-        "hora": "16:00",
+        "hora": "17:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -4.8801,
@@ -3300,12 +3300,12 @@
         "rio": "Chira",
         "estacion": "El Ciruelo",
         "lugar": "Suyo, Piura",
-        "valor": 76.55,
+        "valor": 74.38,
         "unidad": "m³/s",
         "alerta": 800.0,
         "emergencia": 1000.0,
         "tendencia": "Descendente",
-        "hora": "16:00",
+        "hora": "17:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -4.299054,
@@ -3380,12 +3380,12 @@
         "rio": "Piura",
         "estacion": "Puente Eguiguren",
         "lugar": "Piura, Piura",
-        "valor": 65.13,
+        "valor": 63.78,
         "unidad": "m³/s",
         "alerta": 1290.0,
         "emergencia": 1900.0,
         "tendencia": "Ascendente",
-        "hora": "16:00",
+        "hora": "17:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -5.18792,
@@ -3476,12 +3476,12 @@
         "rio": "Jequetepeque",
         "estacion": "Yónan Gore",
         "lugar": "Yonan, Cajamarca",
-        "valor": 47.6,
+        "valor": 46.6,
         "unidad": "m³/s",
         "alerta": 200.0,
         "emergencia": 300.0,
         "tendencia": "Ascendente",
-        "hora": "16:00",
+        "hora": "17:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -7.25592,
@@ -3641,7 +3641,7 @@
         "alerta": null,
         "emergencia": null,
         "tendencia": "Descendente",
-        "hora": "16:00",
+        "hora": "17:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -12.01283,
@@ -3668,12 +3668,12 @@
         "rio": "Rímac",
         "estacion": "Chosica",
         "lugar": "Lurigancho, Lima",
-        "valor": 24.92,
+        "valor": 23.12,
         "unidad": "m³/s",
         "alerta": 90.0,
         "emergencia": 120.0,
         "tendencia": "Descendente",
-        "hora": "16:00",
+        "hora": "17:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -11.92986,
@@ -3716,12 +3716,12 @@
         "rio": "Mala",
         "estacion": "La Capilla",
         "lugar": "Calango, Lima",
-        "valor": 8.68,
+        "valor": 8.39,
         "unidad": "m³/s",
         "alerta": 94.0,
         "emergencia": 114.0,
         "tendencia": "Descendente",
-        "hora": "16:00",
+        "hora": "17:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -12.52183,
@@ -3801,7 +3801,7 @@
         "alerta": 140.0,
         "emergencia": 250.0,
         "tendencia": "Ascendente",
-        "hora": "16:00",
+        "hora": "17:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -13.9248,
@@ -3844,12 +3844,12 @@
         "rio": "Cotahuasi",
         "estacion": "Cuyau",
         "lugar": "Cotahuasi, Arequipa",
-        "valor": 0.39,
+        "valor": 0.38,
         "unidad": "m",
         "alerta": null,
         "emergencia": null,
         "tendencia": "Ascendente",
-        "hora": "16:00",
+        "hora": "17:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -15.218517,
@@ -4009,7 +4009,7 @@
         "alerta": 20.0,
         "emergencia": 40.0,
         "tendencia": "Ascendente",
-        "hora": "16:00",
+        "hora": "17:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -17.47659,
@@ -4292,12 +4292,12 @@
         "rio": "Cunas",
         "estacion": "Cunas",
         "lugar": "Chambara, Junin",
-        "valor": 1.28,
+        "valor": 1.21,
         "unidad": "m³/s",
         "alerta": null,
         "emergencia": null,
         "tendencia": "Descendente",
-        "hora": "15:00",
+        "hora": "16:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -12.027251,
@@ -4313,7 +4313,7 @@
         "alerta": null,
         "emergencia": null,
         "tendencia": "Ascendente",
-        "hora": "15:00",
+        "hora": "16:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -11.995485,
@@ -4324,12 +4324,12 @@
         "rio": "Santa Ana",
         "estacion": "Santa Ana",
         "lugar": "Marcapomacocha, Junin",
-        "valor": 0.17,
+        "valor": 0.16,
         "unidad": "m³/s",
         "alerta": null,
         "emergencia": null,
         "tendencia": "Descendente",
-        "hora": "15:00",
+        "hora": "16:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -11.357646,
@@ -4340,12 +4340,12 @@
         "rio": "Yauli",
         "estacion": "Yauli",
         "lugar": "Yauli, Junin",
-        "valor": 0.61,
+        "valor": 0.64,
         "unidad": "m³/s",
         "alerta": null,
         "emergencia": null,
         "tendencia": "Ascendente",
-        "hora": "15:00",
+        "hora": "16:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -11.631925,
@@ -4468,12 +4468,12 @@
         "rio": "Tigre",
         "estacion": "Intuto",
         "lugar": "Tigre, Loreto",
-        "valor": 6.22,
+        "valor": 6.21,
         "unidad": "m",
         "alerta": 20.0,
         "emergencia": 25.0,
         "tendencia": "Descendente",
-        "hora": "15:00",
+        "hora": "16:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -3.489877,
@@ -4633,7 +4633,7 @@
         "alerta": 1954.41,
         "emergencia": 3481.47,
         "tendencia": "Ascendente",
-        "hora": "16:00",
+        "hora": "17:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -6.41291,
@@ -4818,6 +4818,22 @@
       },
       {
         "rio": "Ucayali",
+        "estacion": "LPO PUCALLPA",
+        "lugar": "Calleria, Ucayali",
+        "valor": 143.27,
+        "unidad": "m.s.n.m",
+        "alerta": null,
+        "emergencia": null,
+        "tendencia": "Descendente",
+        "hora": "09:00",
+        "estado": "normal",
+        "estiaje": false,
+        "lat": -8.38214,
+        "lon": -74.52567,
+        "reporte": "668-2026"
+      },
+      {
+        "rio": "Ucayali",
         "estacion": "Requena",
         "lugar": "Requena, Loreto",
         "valor": 124.32,
@@ -4900,12 +4916,12 @@
         "rio": "Madre De Dios",
         "estacion": "Amaru Mayu",
         "lugar": "Las Piedras, Madre De Dios",
-        "valor": 2402.73,
+        "valor": 2412.0,
         "unidad": "m³/s",
         "alerta": 17000.0,
         "emergencia": 21000.0,
         "tendencia": "Descendente",
-        "hora": "13:45",
+        "hora": "14:15",
         "estado": "normal",
         "estiaje": false,
         "lat": -12.60033,
@@ -5097,7 +5113,7 @@
         "alerta": 9.5,
         "emergencia": 10.0,
         "tendencia": "Descendente",
-        "hora": "16:00",
+        "hora": "17:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -16.56327,
@@ -5172,7 +5188,7 @@
     "en_alerta": 2,
     "en_emergencia": 0,
     "url": "https://snirh.ana.gob.pe/onrh/",
-    "leido": "2026-11-21T21:56:58Z"
+    "leido": "2026-11-21T22:24:20Z"
   },
   "ana_embalses": {
     "embalses": [
@@ -5409,7 +5425,7 @@
       }
     ],
     "url": "https://snirh.ana.gob.pe/onrh/",
-    "leido": "2026-11-21T21:56:59Z"
+    "leido": "2026-11-21T22:24:21Z"
   },
   "ana_pc": {
     "total": 536,
@@ -5420,7 +5436,7 @@
     },
     "avance_medio": 48.3,
     "url": "https://snirh.ana.gob.pe/",
-    "leido": "2026-11-21T21:57:00Z"
+    "leido": "2026-11-21T22:24:22Z"
   },
   "emergencia": {
     "decretos": {
@@ -10386,7 +10402,7 @@
       "ONRH/DEE_DS_140_2026_PCM"
     ],
     "url": "https://www.gob.pe/busquedas?contenido[]=normas&term=estado+de+emergencia",
-    "leido": "2026-11-21T21:57:02Z"
+    "leido": "2026-11-21T22:24:23Z"
   },
   "preparacion": {
     "conteo": {
@@ -17542,7 +17558,7 @@
       }
     },
     "url": "https://visor.geoperu.gob.pe/",
-    "leido": "2026-11-21T21:59:08Z"
+    "leido": "2026-11-21T22:24:25Z"
   },
   "agua": {
     "total": 77,
@@ -18460,11 +18476,137 @@
       }
     },
     "url": "https://www.sunass.gob.pe/",
-    "leido": "2026-11-21T21:59:09Z"
+    "leido": "2026-11-21T22:24:25Z"
   },
   "incendios": {
-    "total": 195,
+    "total": 209,
     "lista": [
+      {
+        "fecha": "2026-11-21",
+        "hora": "15:10",
+        "lugar": "Cayma, Arequipa",
+        "distrito": "040103",
+        "cobertura": "Cobertura Forestal",
+        "lat": -16.26849,
+        "lon": -71.51488
+      },
+      {
+        "fecha": "2026-11-21",
+        "hora": "13:36",
+        "lugar": "Cayma, Arequipa",
+        "distrito": "040103",
+        "cobertura": "Cobertura Forestal",
+        "lat": -16.26854,
+        "lon": -71.51354
+      },
+      {
+        "fecha": "2026-11-21",
+        "hora": "13:36",
+        "lugar": "Cayma, Arequipa",
+        "distrito": "040103",
+        "cobertura": "Cobertura Forestal",
+        "lat": -16.26416,
+        "lon": -71.51029
+      },
+      {
+        "fecha": "2026-11-21",
+        "hora": "13:36",
+        "lugar": "Cayma, Arequipa",
+        "distrito": "040103",
+        "cobertura": "Cobertura Forestal",
+        "lat": -16.25979,
+        "lon": -71.50711
+      },
+      {
+        "fecha": "2026-11-21",
+        "hora": "13:36",
+        "lugar": "Cayma, Arequipa",
+        "distrito": "040103",
+        "cobertura": "Cobertura Forestal",
+        "lat": -16.25617,
+        "lon": -71.50832
+      },
+      {
+        "fecha": "2026-11-21",
+        "hora": "13:36",
+        "lugar": "Cayma, Arequipa",
+        "distrito": "040103",
+        "cobertura": "Cobertura Forestal",
+        "lat": -16.25257,
+        "lon": -71.50959
+      },
+      {
+        "fecha": "2026-11-21",
+        "hora": "13:36",
+        "lugar": "Cayma, Arequipa",
+        "distrito": "040103",
+        "cobertura": "Cobertura Forestal",
+        "lat": -16.24897,
+        "lon": -71.51088
+      },
+      {
+        "fecha": "2026-11-21",
+        "hora": "12:53",
+        "lugar": "Cayma, Arequipa",
+        "distrito": "040103",
+        "cobertura": "Cobertura Forestal",
+        "lat": -16.26801,
+        "lon": -71.50829
+      },
+      {
+        "fecha": "2026-11-21",
+        "hora": "12:53",
+        "lugar": "Cayma, Arequipa",
+        "distrito": "040103",
+        "cobertura": "Cobertura Forestal",
+        "lat": -16.26301,
+        "lon": -71.51063
+      },
+      {
+        "fecha": "2026-11-21",
+        "hora": "12:53",
+        "lugar": "Cayma, Arequipa",
+        "distrito": "040103",
+        "cobertura": "Cobertura Forestal",
+        "lat": -16.26262,
+        "lon": -71.50697
+      },
+      {
+        "fecha": "2026-11-21",
+        "hora": "12:53",
+        "lugar": "Cayma, Arequipa",
+        "distrito": "040103",
+        "cobertura": "Cobertura Forestal",
+        "lat": -16.25759,
+        "lon": -71.50906
+      },
+      {
+        "fecha": "2026-11-21",
+        "hora": "12:53",
+        "lugar": "Cayma, Arequipa",
+        "distrito": "040103",
+        "cobertura": "Cobertura Forestal",
+        "lat": -16.2572,
+        "lon": -71.50548
+      },
+      {
+        "fecha": "2026-11-21",
+        "hora": "12:53",
+        "lugar": "Cayma, Arequipa",
+        "distrito": "040103",
+        "cobertura": "Cobertura Forestal",
+        "lat": -16.25613,
+        "lon": -71.50883
+      },
+      {
+        "fecha": "2026-11-21",
+        "hora": "12:53",
+        "lugar": "Cayma, Arequipa",
+        "distrito": "040103",
+        "cobertura": "Cobertura Forestal",
+        "lat": -16.25571,
+        "lon": -71.50526
+      },
       {
         "fecha": "2026-11-21",
         "hora": "10:50",
@@ -19058,136 +19200,10 @@
         "cobertura": "Cobertura Forestal",
         "lat": -11.86884,
         "lon": -73.90064
-      },
-      {
-        "fecha": "2026-11-19",
-        "hora": "20:38",
-        "lugar": "Rio Tambo, Junin",
-        "distrito": "120608",
-        "cobertura": "Cobertura Agrícola",
-        "lat": -11.87654,
-        "lon": -73.89001
-      },
-      {
-        "fecha": "2026-11-19",
-        "hora": "19:50",
-        "lugar": "Pazos, Huancavelica",
-        "distrito": "090711",
-        "cobertura": "",
-        "lat": -12.272,
-        "lon": -75.0568
-      },
-      {
-        "fecha": "2026-11-19",
-        "hora": "15:36",
-        "lugar": "Puinahua, Loreto",
-        "distrito": "160506",
-        "cobertura": "Cobertura Forestal",
-        "lat": -5.58017,
-        "lon": -74.82609
-      },
-      {
-        "fecha": "2026-11-19",
-        "hora": "15:33",
-        "lugar": "Echarate, Cusco",
-        "distrito": "080902",
-        "cobertura": "Cobertura Forestal",
-        "lat": -12.80986,
-        "lon": -72.62143
-      },
-      {
-        "fecha": "2026-11-19",
-        "hora": "15:33",
-        "lugar": "Rio Tambo, Junin",
-        "distrito": "120608",
-        "cobertura": "Cobertura Agrícola",
-        "lat": -11.8708,
-        "lon": -73.89886
-      },
-      {
-        "fecha": "2026-11-19",
-        "hora": "15:31",
-        "lugar": "Cusco, Cusco",
-        "distrito": "080101",
-        "cobertura": "Cobertura Forestal",
-        "lat": -13.46761,
-        "lon": -71.96365
-      },
-      {
-        "fecha": "2026-11-19",
-        "hora": "15:31",
-        "lugar": "Cusco, Cusco",
-        "distrito": "080101",
-        "cobertura": "Cobertura Forestal",
-        "lat": -13.4661,
-        "lon": -71.95251
-      },
-      {
-        "fecha": "2026-11-19",
-        "hora": "15:31",
-        "lugar": "Cusco, Cusco",
-        "distrito": "080101",
-        "cobertura": "Cobertura Forestal",
-        "lat": -13.4431,
-        "lon": -71.93106
-      },
-      {
-        "fecha": "2026-11-19",
-        "hora": "14:17",
-        "lugar": "Churubamba, Huanuco",
-        "distrito": "100104",
-        "cobertura": "Cobertura Forestal",
-        "lat": -9.85121,
-        "lon": -76.12138
-      },
-      {
-        "fecha": "2026-11-19",
-        "hora": "14:17",
-        "lugar": "Rio Tambo, Junin",
-        "distrito": "120608",
-        "cobertura": "Cobertura Agrícola",
-        "lat": -11.87139,
-        "lon": -73.89523
-      },
-      {
-        "fecha": "2026-11-19",
-        "hora": "14:17",
-        "lugar": "Rio Tambo, Junin",
-        "distrito": "120608",
-        "cobertura": "Cobertura Agrícola",
-        "lat": -11.87503,
-        "lon": -73.89184
-      },
-      {
-        "fecha": "2026-11-19",
-        "hora": "14:17",
-        "lugar": "Yarinacocha, Ucayali",
-        "distrito": "250105",
-        "cobertura": "Cobertura Agrícola",
-        "lat": -8.31203,
-        "lon": -74.68582
-      },
-      {
-        "fecha": "2026-11-19",
-        "hora": "14:17",
-        "lugar": "Yarinacocha, Ucayali",
-        "distrito": "250105",
-        "cobertura": "Cobertura Agrícola",
-        "lat": -8.3101,
-        "lon": -74.68727
-      },
-      {
-        "fecha": "2026-11-19",
-        "hora": "14:14",
-        "lugar": "Cusco, Cusco",
-        "distrito": "080101",
-        "cobertura": "Cobertura Forestal",
-        "lat": -13.46966,
-        "lon": -71.95506
       }
     ],
     "url": "https://geo.serfor.gob.pe/visor/",
-    "leido": "2026-11-21T21:59:10Z"
+    "leido": "2026-11-21T22:24:26Z"
   },
   "phisis": {
     "estaciones": [
@@ -19214,7 +19230,7 @@
       {
         "estacion": "Puente Eguiguren",
         "cuenca": "Cuenca Piura",
-        "fecha": "2026-11-21T21:00:00Z",
+        "fecha": "2026-11-21T22:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "Piura, Piura",
@@ -19284,7 +19300,7 @@
       {
         "estacion": "Pte. Simón Rodríguez",
         "cuenca": "Cuenca Chira",
-        "fecha": "2026-11-21T21:00:00Z",
+        "fecha": "2026-11-21T22:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "Amotape, Piura",
@@ -19314,7 +19330,7 @@
       {
         "estacion": "Bocatoma Chipillico",
         "cuenca": "Cuenca Chira",
-        "fecha": "2026-11-21T21:00:00Z",
+        "fecha": "2026-11-21T22:00:00Z",
         "nivel": "normal",
         "variable": "nivel",
         "lugar": "Las Lomas, Piura",
@@ -19334,7 +19350,7 @@
       {
         "estacion": "El Ciruelo",
         "cuenca": "Cuenca Chira",
-        "fecha": "2026-11-21T21:00:00Z",
+        "fecha": "2026-11-21T22:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "Suyo, Piura",
@@ -19514,7 +19530,7 @@
       {
         "estacion": "Yónan Gore",
         "cuenca": "Cuenca Jequetepeque",
-        "fecha": "2026-11-21T21:00:00Z",
+        "fecha": "2026-11-21T22:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "Yonan, Cajamarca",
@@ -19524,7 +19540,7 @@
       {
         "estacion": "Pte. Chilete",
         "cuenca": "Cuenca Jequetepeque",
-        "fecha": "2026-11-21T21:00:00Z",
+        "fecha": "2026-11-21T22:00:00Z",
         "nivel": "normal",
         "variable": "nivel",
         "lugar": "Chilete, Cajamarca",
@@ -19594,7 +19610,7 @@
       {
         "estacion": "Puente Huachipa",
         "cuenca": "Cuenca Rímac",
-        "fecha": "2026-11-21T21:00:00Z",
+        "fecha": "2026-11-21T22:00:00Z",
         "nivel": "normal",
         "variable": "nivel",
         "lugar": "Lurigancho, Lima",
@@ -19614,7 +19630,7 @@
       {
         "estacion": "La Capilla",
         "cuenca": "Cuenca Mala",
-        "fecha": "2026-11-21T21:00:00Z",
+        "fecha": "2026-11-21T22:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "Calango, Lima",
@@ -19664,7 +19680,7 @@
       {
         "estacion": "Chosica",
         "cuenca": "Cuenca Rímac",
-        "fecha": "2026-11-21T21:00:00Z",
+        "fecha": "2026-11-21T22:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "Lurigancho, Lima",
@@ -19734,7 +19750,7 @@
       {
         "estacion": "Los Molinos",
         "cuenca": "Cuenca Ica",
-        "fecha": "2026-11-21T21:00:00Z",
+        "fecha": "2026-11-21T22:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "San Jose De Los Molinos, Ica",
@@ -19774,7 +19790,7 @@
       {
         "estacion": "Cuyau",
         "cuenca": "Cuenca Ocoña",
-        "fecha": "2026-11-21T21:00:00Z",
+        "fecha": "2026-11-21T22:00:00Z",
         "nivel": "normal",
         "variable": "nivel",
         "lugar": "Cotahuasi, Arequipa",
@@ -19924,7 +19940,7 @@
       {
         "estacion": "Ticapampa",
         "cuenca": "Cuenca Locumba",
-        "fecha": "2026-11-21T21:00:00Z",
+        "fecha": "2026-11-21T22:00:00Z",
         "nivel": "normal",
         "variable": "A",
         "lugar": "Ilabaya, Tacna",
@@ -20124,7 +20140,7 @@
       {
         "estacion": "Shanao",
         "cuenca": "Cuenca Mayo",
-        "fecha": "2026-11-21T21:00:00Z",
+        "fecha": "2026-11-21T22:00:00Z",
         "nivel": "normal",
         "variable": "A",
         "lugar": "Shanao, San Martin",
@@ -20234,7 +20250,7 @@
       {
         "estacion": "Lpo Pucallpa",
         "cuenca": "Intercuenca 49917",
-        "fecha": "2026-11-19T15:00:00Z",
+        "fecha": "2026-11-21T14:00:00Z",
         "nivel": "normal",
         "variable": "nivel",
         "lugar": "Calleria, Ucayali",
@@ -20504,7 +20520,7 @@
       {
         "estacion": "Pte. Azángaro",
         "cuenca": "Cuenca Azángaro",
-        "fecha": "2026-11-21T21:00:00Z",
+        "fecha": "2026-11-21T22:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "Azangaro, Puno",
@@ -20534,7 +20550,7 @@
       {
         "estacion": "Puente Desaguadero",
         "cuenca": "Lago Titicaca",
-        "fecha": "2026-11-21T21:00:00Z",
+        "fecha": "2026-11-21T22:00:00Z",
         "nivel": "normal",
         "variable": "nivel",
         "lugar": "Desaguadero, Puno",
@@ -20584,7 +20600,7 @@
     ],
     "sobre_umbral": 4,
     "url": "https://www.senamhi.gob.pe/mapas/mapa-monitoreohidro/",
-    "leido": "2026-11-21T21:57:04Z"
+    "leido": "2026-11-21T22:24:26Z"
   },
   "prono": {
     "url": "https://www.senamhi.gob.pe/?p=pronostico-climatico",
@@ -21182,7 +21198,7 @@
         ]
       ]
     },
-    "leido": "2026-11-21T21:57:05Z"
+    "leido": "2026-11-21T22:24:26Z"
   },
   "igp": {
     "e": [
@@ -21387,7 +21403,7 @@
       "clasificacion": 99.98
     },
     "url": "http://met.igp.gob.pe/variabclim/",
-    "leido": "2026-11-21T21:59:12Z"
+    "leido": "2026-11-21T22:24:27Z"
   },
   "dhn": {
     "generado": "2026-11-21T14:08:33Z",
@@ -21899,7 +21915,7 @@
         }
       ]
     },
-    "leido": "2026-11-21T21:59:13Z"
+    "leido": "2026-11-21T22:24:27Z"
   },
   "inaigem": {
     "estaciones": [
@@ -21937,7 +21953,7 @@
       }
     ],
     "url": "https://www.inaigem.gob.pe/",
-    "leido": "2026-11-21T21:59:13Z"
+    "leido": "2026-11-21T22:24:28Z"
   },
   "enfen_docs": {
     "docs": [
@@ -22003,6 +22019,6 @@
       }
     ],
     "url": "https://enfen.imarpe.gob.pe/",
-    "leido": "2026-11-21T21:57:07Z"
+    "leido": "2026-11-21T22:24:29Z"
   }
 }
