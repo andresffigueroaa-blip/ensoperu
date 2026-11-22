@@ -1,6 +1,6 @@
 {
   "_": "Generado por pipeline/fuentes/peru_oficial.py. Datos oficiales tal como se publican.",
-  "actualizado": "2026-11-22T02:24:02Z",
+  "actualizado": "2026-11-22T02:28:11Z",
   "fallas": [
     "coen",
     "quebradas",
@@ -433,6 +433,11 @@
   "indeci_rss": {
     "reportes": [
       {
+        "titulo": "BOLETÍN INFORMATIVO SÍSMICO NACIONALN° 822-2026-INDECI/COEN",
+        "enlace": "https://portal.indeci.gob.pe/emergencias/boletin-informativo-sismico-nacionaln-822-2026-indeci-coen/",
+        "fecha": "2026-11-22T02:28"
+      },
+      {
         "titulo": "REPORTE COMPLEMENTARIO N.º 16262 – 21/11/2026 / COEN – INDECI / 19:30 HORAS (Reporte N.º 2) INCENDIO FORESTAL EN EL DISTRITO DE SANTA ANA – CUSCO",
         "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-16205-20-11-2026-coen-indeci-1350-horas-reporte-n-o-1-incendio-forestal-en-el-distrito-de-santa-ana-cusco/",
         "fecha": "2026-11-22T00:43"
@@ -496,15 +501,10 @@
         "titulo": "REPORTE COMPLEMENTARIO N.º 16251 – 21/11/2026 / COEN – INDECI / 14:30 HORAS (Reporte N.º 1) DESLIZAMIENTO EN EL DISTRITO DE SAN MIGUEL DE EL FAIQUE – PIURA",
         "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-o-16251-21-11-2026-coen-indeci-1430-horas-reporte-n-o-1-deslizamiento-en-el-distrito-de-san-miguel-de-el-faique-piura/",
         "fecha": "2026-11-21T19:47"
-      },
-      {
-        "titulo": "BOLETÍN INFORMATIVO DE AVISO DE CORTO PLAZO ANTE POSIBLE ACTIVACIÓN DE QUEBRADAS N° 226-2026-INDECI/COEN",
-        "enlace": "https://portal.indeci.gob.pe/emergencias/boletin-informativo-de-aviso-de-corto-plazo-ante-posible-activacion-de-quebradas-n-226-2026-indeci-coen/",
-        "fecha": "2026-11-21T18:21"
       }
     ],
     "url": "https://portal.indeci.gob.pe/emergencias/",
-    "leido": "2026-11-22T02:24:04Z"
+    "leido": "2026-11-22T02:28:14Z"
   },
   "escenario": {
     "vigente": true,
@@ -2584,7 +2584,7 @@
       }
     },
     "url": "https://sigrid.cenepred.gob.pe/sigridv3/escenario-aviso",
-    "leido": "2026-11-22T02:24:05Z"
+    "leido": "2026-11-22T02:28:18Z"
   },
   "quebradas": {
     "fecha": "2026-11-21",
@@ -17546,7 +17546,7 @@
       }
     },
     "url": "https://visor.geoperu.gob.pe/",
-    "leido": "2026-11-22T02:27:19Z"
+    "leido": "2026-11-22T02:30:22Z"
   },
   "agua": {
     "total": 65,
@@ -18416,7 +18416,7 @@
       }
     },
     "url": "https://www.sunass.gob.pe/",
-    "leido": "2026-11-22T02:27:19Z"
+    "leido": "2026-11-22T02:30:23Z"
   },
   "incendios": {
     "total": 214,
@@ -19143,7 +19143,7 @@
       }
     ],
     "url": "https://geo.serfor.gob.pe/visor/",
-    "leido": "2026-11-22T02:27:21Z"
+    "leido": "2026-11-22T02:30:25Z"
   },
   "phisis": {
     "estaciones": [
@@ -21343,7 +21343,7 @@
       "clasificacion": 99.98
     },
     "url": "http://met.igp.gob.pe/variabclim/",
-    "leido": "2026-11-22T02:27:21Z"
+    "leido": "2026-11-22T02:30:27Z"
   },
   "dhn": {
     "generado": "2026-11-21T14:08:33Z",
@@ -21855,7 +21855,7 @@
         }
       ]
     },
-    "leido": "2026-11-22T02:27:21Z"
+    "leido": "2026-11-22T02:30:28Z"
   },
   "inaigem": {
     "estaciones": [
@@ -21893,7 +21893,7 @@
       }
     ],
     "url": "https://www.inaigem.gob.pe/",
-    "leido": "2026-11-22T02:27:22Z"
+    "leido": "2026-11-22T02:30:28Z"
   },
   "enfen_docs": {
     "docs": [
