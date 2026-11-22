@@ -1,6 +1,6 @@
 {
   "_": "Generado por pipeline/fuentes/peru_oficial.py. Datos oficiales tal como se publican.",
-  "actualizado": "2026-11-22T12:23:59Z",
+  "actualizado": "2026-11-22T12:25:09Z",
   "fallas": [
     "coen"
   ],
@@ -502,7 +502,7 @@
       }
     ],
     "url": "https://portal.indeci.gob.pe/emergencias/",
-    "leido": "2026-11-22T12:24:00Z"
+    "leido": "2026-11-22T12:25:14Z"
   },
   "escenario": {
     "vigente": true,
@@ -2582,7 +2582,7 @@
       }
     },
     "url": "https://sigrid.cenepred.gob.pe/sigridv3/escenario-aviso",
-    "leido": "2026-11-22T12:24:00Z"
+    "leido": "2026-11-22T12:25:17Z"
   },
   "quebradas": {
     "fecha": "2026-11-21",
@@ -3110,7 +3110,7 @@
     },
     "sin_cruce": 3,
     "url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico",
-    "leido": "2026-11-22T12:24:02Z"
+    "leido": "2026-11-22T12:25:18Z"
   },
   "hidro": {
     "avisos": [
@@ -3164,7 +3164,7 @@
       }
     ],
     "url": "https://www.senamhi.gob.pe/?p=aviso-hidrologico",
-    "leido": "2026-11-22T12:24:02Z"
+    "leido": "2026-11-22T12:25:19Z"
   },
   "ana_rios": {
     "estaciones": [
@@ -17078,7 +17078,7 @@
       }
     },
     "url": "https://visor.geoperu.gob.pe/",
-    "leido": "2026-11-22T12:24:12Z"
+    "leido": "2026-11-22T12:25:20Z"
   },
   "agua": {
     "total": 65,
@@ -17948,10 +17948,10 @@
       }
     },
     "url": "https://www.sunass.gob.pe/",
-    "leido": "2026-11-22T12:24:13Z"
+    "leido": "2026-11-22T12:25:21Z"
   },
   "incendios": {
-    "total": 231,
+    "total": 235,
     "lista": [
       {
         "fecha": "2026-11-22",
@@ -18132,6 +18132,42 @@
         "cobertura": "Cobertura Forestal",
         "lat": -6.13438,
         "lon": -79.14242
+      },
+      {
+        "fecha": "2026-11-21",
+        "hora": "13:38",
+        "lugar": "Yarinacocha, Ucayali",
+        "distrito": "250105",
+        "cobertura": "Cobertura Forestal",
+        "lat": -8.31129,
+        "lon": -74.69046
+      },
+      {
+        "fecha": "2026-11-21",
+        "hora": "13:38",
+        "lugar": "Yarinacocha, Ucayali",
+        "distrito": "250105",
+        "cobertura": "Cobertura Agrícola",
+        "lat": -8.30779,
+        "lon": -74.69104
+      },
+      {
+        "fecha": "2026-11-21",
+        "hora": "13:38",
+        "lugar": "Yarinacocha, Ucayali",
+        "distrito": "250105",
+        "cobertura": "Cobertura Agrícola",
+        "lat": -8.30716,
+        "lon": -74.68711
+      },
+      {
+        "fecha": "2026-11-21",
+        "hora": "13:38",
+        "lugar": "Yarinacocha, Ucayali",
+        "distrito": "250105",
+        "cobertura": "Cobertura Agrícola",
+        "lat": -8.31067,
+        "lon": -74.68653
       },
       {
         "fecha": "2026-11-21",
@@ -18636,46 +18672,10 @@
         "cobertura": "Cobertura Forestal",
         "lat": -9.41871,
         "lon": -76.66076
-      },
-      {
-        "fecha": "2026-11-20",
-        "hora": "01:20",
-        "lugar": "Santa Cruz, Loreto",
-        "distrito": "160210",
-        "cobertura": "Cobertura Forestal",
-        "lat": -5.60275,
-        "lon": -75.89242
-      },
-      {
-        "fecha": "2026-11-20",
-        "hora": "01:20",
-        "lugar": "Puinahua, Loreto",
-        "distrito": "160506",
-        "cobertura": "Cobertura Forestal",
-        "lat": -5.57329,
-        "lon": -74.82471
-      },
-      {
-        "fecha": "2026-11-20",
-        "hora": "01:20",
-        "lugar": "Puinahua, Loreto",
-        "distrito": "160506",
-        "cobertura": "Cobertura Forestal",
-        "lat": -5.57276,
-        "lon": -74.82815
-      },
-      {
-        "fecha": "2026-11-20",
-        "hora": "01:20",
-        "lugar": "Puinahua, Loreto",
-        "distrito": "160506",
-        "cobertura": "Cobertura Forestal",
-        "lat": -5.56999,
-        "lon": -74.8242
       }
     ],
     "url": "https://geo.serfor.gob.pe/visor/",
-    "leido": "2026-11-22T12:24:13Z"
+    "leido": "2026-11-22T12:25:23Z"
   },
   "phisis": {
     "estaciones": [
@@ -20875,7 +20875,7 @@
       "clasificacion": 99.98
     },
     "url": "http://met.igp.gob.pe/variabclim/",
-    "leido": "2026-11-22T12:24:13Z"
+    "leido": "2026-11-22T12:25:25Z"
   },
   "dhn": {
     "generado": "2026-11-21T14:08:33Z",
@@ -21387,7 +21387,7 @@
         }
       ]
     },
-    "leido": "2026-11-22T12:24:14Z"
+    "leido": "2026-11-22T12:25:26Z"
   },
   "inaigem": {
     "estaciones": [
@@ -21425,7 +21425,7 @@
       }
     ],
     "url": "https://www.inaigem.gob.pe/",
-    "leido": "2026-11-22T12:24:14Z"
+    "leido": "2026-11-22T12:25:26Z"
   },
   "enfen_docs": {
     "docs": [

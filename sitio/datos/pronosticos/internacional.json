@@ -1,6 +1,6 @@
 {
   "_": "Generado por pipeline/fuentes/internacional.py. Cada bloque con su centro, fecha y enlace.",
-  "actualizado": "2026-11-22T06:25:16Z",
+  "actualizado": "2026-11-22T12:25:26Z",
   "fallas": [],
   "cpc": {
     "emitido": "2026-11-12",
@@ -875,11 +875,10 @@
       "id": "seas5",
       "titulo": "Pluma del modelo ECMWF SEAS5, regiones Niño",
       "fuente": "ECMWF",
-      "origen": "https://charts.ecmwf.int/content/20261119071900-46317d05f0bed1c738de4e76751cad0921098e23.png",
-      "huella": "6330d278c102",
+      "origen": "https://charts.ecmwf.int/content/20261122091650-b3380d734771e47ec91a4acde5ff6b699a9827f1.png",
+      "huella": "f133f902fa06",
       "archivo": "seas5.png",
-      "fecha": "2026-11-19",
-      "atrasada": true
+      "fecha": "2026-11-22"
     },
     {
       "id": "iri",
@@ -904,9 +903,9 @@
       "titulo": "Pronóstico de la MJO, ECMWF corregido",
       "fuente": "NOAA CPC",
       "origen": "https://www.cpc.ncep.noaa.gov/products/precip/mjo/img/ECMF_BC.png",
-      "huella": "1589e52cea24",
+      "huella": "ccf8a6706879",
       "archivo": "mjo.png",
-      "fecha": "2026-11-21"
+      "fecha": "2026-11-22"
     },
     {
       "id": "gth",
