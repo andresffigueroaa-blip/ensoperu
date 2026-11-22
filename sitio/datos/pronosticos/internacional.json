@@ -1,6 +1,6 @@
 {
   "_": "Generado por pipeline/fuentes/internacional.py. Cada bloque con su centro, fecha y enlace.",
-  "actualizado": "2026-11-22T12:25:26Z",
+  "actualizado": "2026-11-22T21:52:27Z",
   "fallas": [],
   "cpc": {
     "emitido": "2026-11-12",
@@ -519,18 +519,12 @@
   },
   "mjo": {
     "ultimo": {
-      "fecha": "2026-11-17",
-      "pc1": 1.098,
-      "pc2": 1.144,
-      "amplitud": 1.59
+      "fecha": "2026-11-18",
+      "pc1": 0.721,
+      "pc2": 1.025,
+      "amplitud": 1.25
     },
     "serie": [
-      {
-        "fecha": "2026-10-04",
-        "pc1": 0.759,
-        "pc2": -0.777,
-        "amplitud": 1.09
-      },
       {
         "fecha": "2026-10-05",
         "pc1": 0.724,
@@ -773,27 +767,33 @@
       },
       {
         "fecha": "2026-11-14",
-        "pc1": 0.809,
-        "pc2": 1.397,
-        "amplitud": 1.61
+        "pc1": 0.602,
+        "pc2": 1.331,
+        "amplitud": 1.46
       },
       {
         "fecha": "2026-11-15",
-        "pc1": 0.862,
-        "pc2": 1.351,
-        "amplitud": 1.6
+        "pc1": 0.628,
+        "pc2": 1.289,
+        "amplitud": 1.43
       },
       {
         "fecha": "2026-11-16",
-        "pc1": 0.94,
-        "pc2": 1.272,
-        "amplitud": 1.58
+        "pc1": 0.667,
+        "pc2": 1.217,
+        "amplitud": 1.39
       },
       {
         "fecha": "2026-11-17",
-        "pc1": 1.098,
-        "pc2": 1.144,
-        "amplitud": 1.59
+        "pc1": 0.756,
+        "pc2": 1.103,
+        "amplitud": 1.34
+      },
+      {
+        "fecha": "2026-11-18",
+        "pc1": 0.721,
+        "pc2": 1.025,
+        "amplitud": 1.25
       }
     ],
     "activa": true,
@@ -921,9 +921,9 @@
       "titulo": "Lluvia pronosticada a 10 días, Sudamérica",
       "fuente": "CIIFEN (CHIRPS-GEFS)",
       "origen": "https://ciifen.org/wp-content/uploads/imagenes_clima/pronostico/pron_precipitacion/chirps_forecast_10days.png",
-      "huella": "a830229e0ab1",
+      "huella": "b8e42816f779",
       "archivo": "chirps10.png",
-      "fecha": "2026-11-21"
+      "fecha": "2026-11-22"
     }
   ]
 }
