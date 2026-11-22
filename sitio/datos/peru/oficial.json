@@ -1,6 +1,6 @@
 {
   "_": "Generado por pipeline/fuentes/peru_oficial.py. Datos oficiales tal como se publican.",
-  "actualizado": "2026-11-22T14:25:53Z",
+  "actualizado": "2026-11-22T15:23:04Z",
   "fallas": [
     "coen"
   ],
@@ -502,7 +502,7 @@
       }
     ],
     "url": "https://portal.indeci.gob.pe/emergencias/",
-    "leido": "2026-11-22T14:25:54Z"
+    "leido": "2026-11-22T15:23:05Z"
   },
   "escenario": {
     "vigente": true,
@@ -2582,7 +2582,7 @@
       }
     },
     "url": "https://sigrid.cenepred.gob.pe/sigridv3/escenario-aviso",
-    "leido": "2026-11-22T14:25:58Z"
+    "leido": "2026-11-22T15:23:07Z"
   },
   "quebradas": {
     "fecha": "2026-11-21",
@@ -3110,7 +3110,7 @@
     },
     "sin_cruce": 3,
     "url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico",
-    "leido": "2026-11-22T14:25:59Z"
+    "leido": "2026-11-22T15:23:09Z"
   },
   "hidro": {
     "avisos": [
@@ -3164,7 +3164,7 @@
       }
     ],
     "url": "https://www.senamhi.gob.pe/?p=aviso-hidrologico",
-    "leido": "2026-11-22T14:26:00Z"
+    "leido": "2026-11-22T15:23:09Z"
   },
   "ana_rios": {
     "estaciones": [
@@ -17190,11 +17190,11 @@
       }
     },
     "url": "https://visor.geoperu.gob.pe/",
-    "leido": "2026-11-22T14:26:01Z"
+    "leido": "2026-11-22T15:23:10Z"
   },
   "agua": {
-    "total": 72,
-    "conexiones": 433593,
+    "total": 73,
+    "conexiones": 439309,
     "cortes": [
       {
         "eps": "SEDAPAL",
@@ -17415,6 +17415,16 @@
         "inicio": "2026-11-27",
         "restablece": "2026-11-28",
         "distrito": "070101"
+      },
+      {
+        "eps": "SEDAPAL",
+        "lugar": "Barranco, Lima",
+        "conexiones": 5716,
+        "tipo": "Imprevista",
+        "motivo": "Rotura de tubería de agua potable",
+        "inicio": "2026-11-22",
+        "restablece": "2026-11-22",
+        "distrito": "150104"
       },
       {
         "eps": "SEDAPAL",
@@ -17785,16 +17795,6 @@
         "inicio": "2026-11-26",
         "restablece": "2026-11-26",
         "distrito": "040101"
-      },
-      {
-        "eps": "EPS SEMAPACH S.A",
-        "lugar": "Chincha Alta, Ica",
-        "conexiones": 652,
-        "tipo": "Programada",
-        "motivo": "Limpieza y desinfección de reservorio/cisterna",
-        "inicio": "2026-11-25",
-        "restablece": "2026-11-26",
-        "distrito": "110201"
       }
     ],
     "distritos": {
@@ -17885,6 +17885,10 @@
       "070101": {
         "cortes": 1,
         "conexiones": 6079
+      },
+      "150104": {
+        "cortes": 1,
+        "conexiones": 5716
       },
       "150119": {
         "cortes": 1,
@@ -18088,7 +18092,7 @@
       }
     },
     "url": "https://www.sunass.gob.pe/",
-    "leido": "2026-11-22T14:26:03Z"
+    "leido": "2026-11-22T15:23:11Z"
   },
   "incendios": {
     "total": 235,
@@ -18815,7 +18819,7 @@
       }
     ],
     "url": "https://geo.serfor.gob.pe/visor/",
-    "leido": "2026-11-22T14:26:06Z"
+    "leido": "2026-11-22T15:23:12Z"
   },
   "phisis": {
     "estaciones": [
@@ -21015,7 +21019,7 @@
       "clasificacion": 99.98
     },
     "url": "http://met.igp.gob.pe/variabclim/",
-    "leido": "2026-11-22T14:26:07Z"
+    "leido": "2026-11-22T15:23:13Z"
   },
   "dhn": {
     "generado": "2026-11-22T14:19:51Z",
@@ -21527,7 +21531,7 @@
         }
       ]
     },
-    "leido": "2026-11-22T14:26:09Z"
+    "leido": "2026-11-22T15:23:14Z"
   },
   "inaigem": {
     "estaciones": [
@@ -21565,7 +21569,7 @@
       }
     ],
     "url": "https://www.inaigem.gob.pe/",
-    "leido": "2026-11-22T14:26:09Z"
+    "leido": "2026-11-22T15:23:14Z"
   },
   "enfen_docs": {
     "docs": [
