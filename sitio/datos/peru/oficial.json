@@ -1,6 +1,6 @@
 {
   "_": "Generado por pipeline/fuentes/peru_oficial.py. Datos oficiales tal como se publican.",
-  "actualizado": "2026-11-22T03:24:03Z",
+  "actualizado": "2026-11-22T03:25:09Z",
   "fallas": [
     "coen",
     "quebradas"
@@ -432,6 +432,11 @@
   "indeci_rss": {
     "reportes": [
       {
+        "titulo": "REPORTE COMPLEMENTARIO N.º 16264 – 21/11/2026 / COEN – INDECI / 21:45 HORAS (Reporte N.º 7) SISMO DE MAGNITUD 6.7 CON EPICENTRO EN EL DISTRITO DE JUNÍN – JUNÍN",
+        "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-preliminar-n-o-1159-20-11-2026-coen-indeci-1940-horas-sismo-de-magnitud-6-7-con-epicentro-en-el-junin-junin/",
+        "fecha": "2026-11-22T03:23"
+      },
+      {
         "titulo": "REPORTE COMPLEMENTARIO N.° 16263 – 21/11/2026 / COEN – INDECI / 20:15 HORAS (Reporte N.º 1) OLEAJE ANÓMALO EN EL DISTRITO DE ZORRITOS – TUMBES",
         "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-16263-21-11-2026-coen-indeci-2015-horas-reporte-n-o-1-oleaje-anomalo-en-el-distrito-de-zorritos-tumbes/",
         "fecha": "2026-11-22T03:21"
@@ -472,11 +477,6 @@
         "fecha": "2026-11-21T23:50"
       },
       {
-        "titulo": "REPORTE COMPLEMENTARIO N.º 16257 – 21/11/2026 / COEN – INDECI / 18:00 HORAS (Reporte N.º 6) SISMO DE MAGNITUD 6.7 CON EPICENTRO EN EL DISTRITO DE JUNÍN – JUNÍN",
-        "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-preliminar-n-o-1159-20-11-2026-coen-indeci-1940-horas-sismo-de-magnitud-6-7-con-epicentro-en-el-junin-junin/",
-        "fecha": "2026-11-21T23:47"
-      },
-      {
         "titulo": "INFORME DE EMERGENCIA N.° 2609 – 21/11/2026 / COEN-INDECI / 16:35 HORAS (Informe N.° 1) EROSIÓN EN EL DISTRITO DE RAMÓN CASTILLA – LORETO",
         "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-preliminar-n-0932-28-9-2026-coen-indeci-1510-horas-erosion-en-el-distrito-de-ramon-castilla-loreto/",
         "fecha": "2026-11-21T21:51"
@@ -503,7 +503,7 @@
       }
     ],
     "url": "https://portal.indeci.gob.pe/emergencias/",
-    "leido": "2026-11-22T03:24:04Z"
+    "leido": "2026-11-22T03:25:10Z"
   },
   "escenario": {
     "vigente": true,
@@ -2583,7 +2583,7 @@
       }
     },
     "url": "https://sigrid.cenepred.gob.pe/sigridv3/escenario-aviso",
-    "leido": "2026-11-22T03:24:04Z"
+    "leido": "2026-11-22T03:25:16Z"
   },
   "quebradas": {
     "fecha": "2026-11-21",
@@ -3166,7 +3166,7 @@
       }
     ],
     "url": "https://www.senamhi.gob.pe/?p=aviso-hidrologico",
-    "leido": "2026-11-22T03:24:06Z"
+    "leido": "2026-11-22T03:25:18Z"
   },
   "ana_rios": {
     "estaciones": [
@@ -17544,7 +17544,7 @@
       }
     },
     "url": "https://visor.geoperu.gob.pe/",
-    "leido": "2026-11-22T03:24:15Z"
+    "leido": "2026-11-22T03:25:19Z"
   },
   "agua": {
     "total": 65,
@@ -18414,7 +18414,7 @@
       }
     },
     "url": "https://www.sunass.gob.pe/",
-    "leido": "2026-11-22T03:24:16Z"
+    "leido": "2026-11-22T03:25:20Z"
   },
   "incendios": {
     "total": 214,
@@ -19141,7 +19141,7 @@
       }
     ],
     "url": "https://geo.serfor.gob.pe/visor/",
-    "leido": "2026-11-22T03:24:16Z"
+    "leido": "2026-11-22T03:25:22Z"
   },
   "phisis": {
     "estaciones": [
@@ -21341,7 +21341,7 @@
       "clasificacion": 99.98
     },
     "url": "http://met.igp.gob.pe/variabclim/",
-    "leido": "2026-11-22T03:24:17Z"
+    "leido": "2026-11-22T03:25:24Z"
   },
   "dhn": {
     "generado": "2026-11-21T14:08:33Z",
@@ -21853,7 +21853,7 @@
         }
       ]
     },
-    "leido": "2026-11-22T03:24:17Z"
+    "leido": "2026-11-22T03:25:25Z"
   },
   "inaigem": {
     "estaciones": [
@@ -21891,7 +21891,7 @@
       }
     ],
     "url": "https://www.inaigem.gob.pe/",
-    "leido": "2026-11-22T03:24:18Z"
+    "leido": "2026-11-22T03:25:25Z"
   },
   "enfen_docs": {
     "docs": [
