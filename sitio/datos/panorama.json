@@ -1,6 +1,6 @@
 {
   "_": "Generado por pipeline/productos/panorama.py. No editar a mano.",
-  "generado": "2026-11-22T10:24:56Z",
+  "generado": "2026-11-22T10:25:25Z",
   "fecha": "2026-11-22",
   "lectura": [
     {
@@ -30,13 +30,13 @@
     {
       "t": "Ríos: el modelo global GloFAS pronostica caudales por encima de su percentil 90 anual (1984-2023) en 11, entre ellos Chicama, Chira, Tumbes, La Leche; es orientativo. En la última lectura, ninguna estación de la ANA ni del SENAMHI está sobre su umbral de crecida.",
       "fuente": "GloFAS (Copernicus) vía Open-Meteo; lecturas de la ANA y el SENAMHI",
-      "fecha": "2026-11-22T10:24:56Z",
+      "fecha": "2026-11-22T10:25:25Z",
       "url": "https://www.globalfloods.eu/"
     },
     {
       "t": "CENEPRED: 186 distritos en riesgo muy alto por lluvia, hasta el 23 de noviembre; en ellos viven 1 385 060 personas (suma ENSO Perú de los 2 escenarios vigentes, sin repetir distritos).",
       "fuente": "CENEPRED, escenarios de riesgo ante el aviso de lluvias",
-      "fecha": "2026-11-22T10:24:00Z",
+      "fecha": "2026-11-22T10:25:12Z",
       "url": "https://sigrid.cenepred.gob.pe/sigridv3/escenario-aviso"
     },
     {
@@ -46,9 +46,9 @@
       "url": "https://coen.indeci.gob.pe/mer/"
     },
     {
-      "t": "Focos de calor detectados por satélite: 1519 en 7 días; el mayor número en Coronel Portillo (Ucayali), 308.",
+      "t": "Focos de calor detectados por satélite: 1546 en 7 días; el mayor número en Coronel Portillo (Ucayali), 312.",
       "fuente": "NASA FIRMS, VIIRS NOAA-20",
-      "fecha": "2026-11-21",
+      "fecha": "2026-11-22",
       "url": "https://firms.modaps.eosdis.nasa.gov/"
     }
   ],
@@ -128,7 +128,7 @@
       "aviso_lluvia_desde": null,
       "mar": 4.39,
       "n_mar": "muy alto",
-      "focos": 19,
+      "focos": 31,
       "n_focos": "alto",
       "dias_fuertes": 0,
       "n_lluvia": "bajo",
@@ -170,8 +170,8 @@
       "aviso_lluvia_desde": null,
       "mar": null,
       "n_mar": null,
-      "focos": 49,
-      "n_focos": "alto",
+      "focos": 50,
+      "n_focos": "muy alto",
       "dias_fuertes": 3,
       "n_lluvia": "alto",
       "lluvia16": 121.9,
@@ -233,7 +233,7 @@
       "aviso_lluvia_desde": null,
       "mar": null,
       "n_mar": null,
-      "focos": 37,
+      "focos": 39,
       "n_focos": "alto",
       "dias_fuertes": 1,
       "n_lluvia": "medio",
@@ -275,7 +275,7 @@
       "aviso_lluvia_desde": null,
       "mar": 6.06,
       "n_mar": "muy alto",
-      "focos": 24,
+      "focos": 25,
       "n_focos": "alto",
       "dias_fuertes": 0,
       "n_lluvia": "bajo",
@@ -317,7 +317,7 @@
       "aviso_lluvia_desde": null,
       "mar": 7.21,
       "n_mar": "muy alto",
-      "focos": 31,
+      "focos": 35,
       "n_focos": "alto",
       "dias_fuertes": 2,
       "n_lluvia": "medio",
@@ -366,7 +366,7 @@
       "aviso_lluvia_desde": null,
       "mar": 6.55,
       "n_mar": "muy alto",
-      "focos": 3,
+      "focos": 5,
       "n_focos": "medio",
       "dias_fuertes": 3,
       "n_lluvia": "alto",
@@ -520,7 +520,7 @@
       "aviso_lluvia_desde": null,
       "mar": null,
       "n_mar": null,
-      "focos": 134,
+      "focos": 135,
       "n_focos": "muy alto",
       "dias_fuertes": 5,
       "n_lluvia": "alto",
@@ -585,7 +585,7 @@
       "aviso_lluvia_desde": null,
       "mar": null,
       "n_mar": null,
-      "focos": 489,
+      "focos": 493,
       "n_focos": "muy alto",
       "dias_fuertes": 2,
       "n_lluvia": "medio",
@@ -1794,8 +1794,8 @@
       "id": "2501",
       "nombre": "Coronel Portillo",
       "region": "Ucayali",
-      "focos": 308,
-      "frp": 4020.3
+      "focos": 312,
+      "frp": 4025.5
     },
     {
       "id": "2502",
@@ -2111,7 +2111,7 @@
     "avisos": 5,
     "rojos": 3,
     "rios_altos": 11,
-    "focos": 1519,
+    "focos": 1546,
     "distritos_riesgo_alto": 766
   }
 }
