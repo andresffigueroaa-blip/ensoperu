@@ -1,6 +1,6 @@
 {
   "_": "Generado por pipeline/productos/panorama.py. No editar a mano.",
-  "generado": "2026-11-22T00:24:46Z",
+  "generado": "2026-11-22T00:30:12Z",
   "fecha": "2026-11-22",
   "lectura": [
     {
@@ -22,21 +22,21 @@
       "url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico"
     },
     {
-      "t": "Lluvia pronosticada por modelos para los próximos 16 días: el mayor acumulado es Oxapampa (Pasco), con 290 mm. Es un modelo, no un aviso del SENAMHI.",
+      "t": "Lluvia pronosticada por modelos para los próximos 16 días: el mayor acumulado es Morropon (Piura), con 418 mm. Es un modelo, no un aviso del SENAMHI.",
       "fuente": "Open-Meteo (combinación de modelos ECMWF, GFS, ICON y otros)",
-      "fecha": "2026-11-21T18:03:29Z",
+      "fecha": "2026-11-22T00:29:22Z",
       "url": "https://open-meteo.com/en/docs"
     },
     {
       "t": "Ríos: el modelo global GloFAS pronostica caudales por encima de su percentil 90 anual (1984-2023) en 11, entre ellos Chicama, Chira, Tumbes, La Leche; es orientativo. En la última lectura, ninguna estación de la ANA ni del SENAMHI está sobre su umbral de crecida.",
       "fuente": "GloFAS (Copernicus) vía Open-Meteo; lecturas de la ANA y el SENAMHI",
-      "fecha": "2026-11-22T00:24:46Z",
+      "fecha": "2026-11-22T00:30:12Z",
       "url": "https://www.globalfloods.eu/"
     },
     {
       "t": "CENEPRED: 186 distritos en riesgo muy alto por lluvia, hasta el 23 de noviembre; en ellos viven 1 385 060 personas (suma ENSO Perú de los 2 escenarios vigentes, sin repetir distritos).",
       "fuente": "CENEPRED, escenarios de riesgo ante el aviso de lluvias",
-      "fecha": "2026-11-22T00:24:01Z",
+      "fecha": "2026-11-22T00:29:36Z",
       "url": "https://sigrid.cenepred.gob.pe/sigridv3/escenario-aviso"
     },
     {
@@ -69,7 +69,7 @@
       "n_focos": "muy alto",
       "dias_fuertes": 5,
       "n_lluvia": "alto",
-      "lluvia16": 162.3,
+      "lluvia16": 177.5,
       "spi3": -2.4,
       "estacional": 14,
       "rios_altos": []
@@ -88,9 +88,9 @@
       "n_mar": "muy alto",
       "focos": 15,
       "n_focos": "alto",
-      "dias_fuertes": 0,
-      "n_lluvia": "bajo",
-      "lluvia16": 76.8,
+      "dias_fuertes": 3,
+      "n_lluvia": "alto",
+      "lluvia16": 102.0,
       "spi3": -0.86,
       "estacional": 53,
       "rios_altos": []
@@ -111,7 +111,7 @@
       "n_focos": "alto",
       "dias_fuertes": 1,
       "n_lluvia": "medio",
-      "lluvia16": 144.1,
+      "lluvia16": 155.0,
       "spi3": 0.95,
       "estacional": -33,
       "rios_altos": []
@@ -132,7 +132,7 @@
       "n_focos": "alto",
       "dias_fuertes": 0,
       "n_lluvia": "bajo",
-      "lluvia16": 67.0,
+      "lluvia16": 52.6,
       "spi3": null,
       "estacional": 2,
       "rios_altos": []
@@ -151,9 +151,9 @@
       "n_mar": null,
       "focos": 33,
       "n_focos": "alto",
-      "dias_fuertes": 2,
-      "n_lluvia": "medio",
-      "lluvia16": 139.6,
+      "dias_fuertes": 3,
+      "n_lluvia": "alto",
+      "lluvia16": 134.8,
       "spi3": 1.16,
       "estacional": -14,
       "rios_altos": []
@@ -172,9 +172,9 @@
       "n_mar": null,
       "focos": 55,
       "n_focos": "muy alto",
-      "dias_fuertes": 1,
+      "dias_fuertes": 2,
       "n_lluvia": "medio",
-      "lluvia16": 71.8,
+      "lluvia16": 109.2,
       "spi3": -1.26,
       "estacional": 151,
       "rios_altos": []
@@ -195,7 +195,7 @@
       "n_focos": "bajo",
       "dias_fuertes": 0,
       "n_lluvia": "bajo",
-      "lluvia16": 3.6,
+      "lluvia16": 5.3,
       "spi3": null,
       "estacional": 18,
       "rios_altos": []
@@ -216,7 +216,7 @@
       "n_focos": "muy alto",
       "dias_fuertes": 4,
       "n_lluvia": "alto",
-      "lluvia16": 143.6,
+      "lluvia16": 161.3,
       "spi3": 0.96,
       "estacional": -30,
       "rios_altos": []
@@ -235,9 +235,9 @@
       "n_mar": null,
       "focos": 37,
       "n_focos": "alto",
-      "dias_fuertes": 0,
-      "n_lluvia": "bajo",
-      "lluvia16": 104.5,
+      "dias_fuertes": 1,
+      "n_lluvia": "medio",
+      "lluvia16": 130.4,
       "spi3": null,
       "estacional": 35,
       "rios_altos": []
@@ -258,7 +258,7 @@
       "n_focos": "muy alto",
       "dias_fuertes": 2,
       "n_lluvia": "medio",
-      "lluvia16": 159.5,
+      "lluvia16": 155.1,
       "spi3": -0.38,
       "estacional": 26,
       "rios_altos": []
@@ -279,7 +279,7 @@
       "n_focos": "alto",
       "dias_fuertes": 0,
       "n_lluvia": "bajo",
-      "lluvia16": 1.0,
+      "lluvia16": 11.6,
       "spi3": null,
       "estacional": 19,
       "rios_altos": []
@@ -298,9 +298,9 @@
       "n_mar": null,
       "focos": 104,
       "n_focos": "muy alto",
-      "dias_fuertes": 1,
+      "dias_fuertes": 2,
       "n_lluvia": "medio",
-      "lluvia16": 133.9,
+      "lluvia16": 109.0,
       "spi3": null,
       "estacional": 30,
       "rios_altos": []
@@ -319,9 +319,9 @@
       "n_mar": "muy alto",
       "focos": 35,
       "n_focos": "alto",
-      "dias_fuertes": 1,
+      "dias_fuertes": 2,
       "n_lluvia": "medio",
-      "lluvia16": 91.7,
+      "lluvia16": 110.1,
       "spi3": null,
       "estacional": 52,
       "rios_altos": [
@@ -343,9 +343,9 @@
       "n_mar": "muy alto",
       "focos": 4,
       "n_focos": "medio",
-      "dias_fuertes": 0,
-      "n_lluvia": "bajo",
-      "lluvia16": 50.0,
+      "dias_fuertes": 1,
+      "n_lluvia": "medio",
+      "lluvia16": 98.1,
       "spi3": null,
       "estacional": 96,
       "rios_altos": [
@@ -368,9 +368,9 @@
       "n_mar": "muy alto",
       "focos": 5,
       "n_focos": "medio",
-      "dias_fuertes": 0,
-      "n_lluvia": "bajo",
-      "lluvia16": 59.7,
+      "dias_fuertes": 3,
+      "n_lluvia": "alto",
+      "lluvia16": 101.1,
       "spi3": null,
       "estacional": 105,
       "rios_altos": [
@@ -393,9 +393,9 @@
       "n_mar": null,
       "focos": 247,
       "n_focos": "muy alto",
-      "dias_fuertes": 3,
-      "n_lluvia": "alto",
-      "lluvia16": 188.3,
+      "dias_fuertes": 2,
+      "n_lluvia": "medio",
+      "lluvia16": 170.4,
       "spi3": 0.09,
       "estacional": 38,
       "rios_altos": []
@@ -414,9 +414,9 @@
       "n_mar": null,
       "focos": 64,
       "n_focos": "muy alto",
-      "dias_fuertes": 4,
+      "dias_fuertes": 3,
       "n_lluvia": "alto",
-      "lluvia16": 186.9,
+      "lluvia16": 137.1,
       "spi3": 0.11,
       "estacional": -31,
       "rios_altos": []
@@ -435,9 +435,9 @@
       "n_mar": "muy alto",
       "focos": 5,
       "n_focos": "medio",
-      "dias_fuertes": 1,
-      "n_lluvia": "medio",
-      "lluvia16": 54.0,
+      "dias_fuertes": 0,
+      "n_lluvia": "bajo",
+      "lluvia16": 40.8,
       "spi3": null,
       "estacional": -28,
       "rios_altos": []
@@ -456,9 +456,9 @@
       "n_mar": null,
       "focos": 15,
       "n_focos": "alto",
-      "dias_fuertes": 7,
-      "n_lluvia": "muy alto",
-      "lluvia16": 229.9,
+      "dias_fuertes": 4,
+      "n_lluvia": "alto",
+      "lluvia16": 201.2,
       "spi3": -0.28,
       "estacional": 30,
       "rios_altos": []
@@ -477,9 +477,9 @@
       "n_mar": "muy alto",
       "focos": 10,
       "n_focos": "alto",
-      "dias_fuertes": 3,
-      "n_lluvia": "alto",
-      "lluvia16": 151.7,
+      "dias_fuertes": 8,
+      "n_lluvia": "muy alto",
+      "lluvia16": 206.3,
       "spi3": null,
       "estacional": 152,
       "rios_altos": [
@@ -503,7 +503,7 @@
       "n_focos": "alto",
       "dias_fuertes": 2,
       "n_lluvia": "medio",
-      "lluvia16": 154.2,
+      "lluvia16": 101.7,
       "spi3": null,
       "estacional": -59,
       "rios_altos": []
@@ -524,7 +524,7 @@
       "n_focos": "muy alto",
       "dias_fuertes": 6,
       "n_lluvia": "muy alto",
-      "lluvia16": 204.0,
+      "lluvia16": 198.7,
       "spi3": -0.36,
       "estacional": 14,
       "rios_altos": []
@@ -543,9 +543,9 @@
       "n_mar": "muy alto",
       "focos": 0,
       "n_focos": "bajo",
-      "dias_fuertes": 1,
-      "n_lluvia": "medio",
-      "lluvia16": 24.2,
+      "dias_fuertes": 0,
+      "n_lluvia": "bajo",
+      "lluvia16": 16.3,
       "spi3": null,
       "estacional": -12,
       "rios_altos": []
@@ -566,7 +566,7 @@
       "n_focos": "bajo",
       "dias_fuertes": 4,
       "n_lluvia": "alto",
-      "lluvia16": 203.2,
+      "lluvia16": 206.4,
       "spi3": null,
       "estacional": 303,
       "rios_altos": [
@@ -589,7 +589,7 @@
       "n_focos": "muy alto",
       "dias_fuertes": 2,
       "n_lluvia": "medio",
-      "lluvia16": 164.5,
+      "lluvia16": 146.2,
       "spi3": -1.43,
       "estacional": 16,
       "rios_altos": []
@@ -597,602 +597,602 @@
   },
   "lluvia_vs_normal": {
     "01": {
-      "total": 162.3,
+      "total": 177.5,
       "normal": 36,
-      "pct": 449
+      "pct": 491
     },
     "02": {
-      "total": 76.8,
+      "total": 102.0,
       "normal": 25,
-      "pct": 308
+      "pct": 410
     },
     "03": {
-      "total": 144.1,
+      "total": 155.0,
       "normal": 36,
-      "pct": 395
+      "pct": 425
     },
     "04": {
-      "total": 67.0,
+      "total": 52.6,
       "normal": 2,
       "pct": null
     },
     "05": {
-      "total": 139.6,
+      "total": 134.8,
       "normal": 24,
-      "pct": 570
+      "pct": 551
     },
     "06": {
-      "total": 71.8,
+      "total": 109.2,
       "normal": 23,
-      "pct": 314
+      "pct": 477
     },
     "07": {
-      "total": 3.6,
+      "total": 5.3,
       "normal": 1,
       "pct": null
     },
     "08": {
-      "total": 143.6,
+      "total": 161.3,
       "normal": 38,
-      "pct": 374
+      "pct": 421
     },
     "09": {
-      "total": 104.5,
+      "total": 130.4,
       "normal": 17,
-      "pct": 630
+      "pct": 786
     },
     "10": {
-      "total": 159.5,
+      "total": 155.1,
       "normal": 68,
-      "pct": 236
+      "pct": 230
     },
     "11": {
-      "total": 1.0,
+      "total": 11.6,
       "normal": 3,
       "pct": null
     },
     "12": {
-      "total": 133.9,
+      "total": 109.0,
       "normal": 19,
-      "pct": 724
+      "pct": 589
     },
     "13": {
-      "total": 91.7,
+      "total": 110.1,
       "normal": 19,
-      "pct": 487
+      "pct": 585
     },
     "14": {
-      "total": 50.0,
+      "total": 98.1,
       "normal": 3,
       "pct": null
     },
     "15": {
-      "total": 59.7,
+      "total": 101.1,
       "normal": 1,
       "pct": null
     },
     "16": {
-      "total": 188.3,
+      "total": 170.4,
       "normal": 122,
-      "pct": 154
+      "pct": 139
     },
     "17": {
-      "total": 186.9,
+      "total": 137.1,
       "normal": 85,
-      "pct": 219
+      "pct": 161
     },
     "18": {
-      "total": 54.0,
+      "total": 40.8,
       "normal": 3,
       "pct": null
     },
     "19": {
-      "total": 229.9,
+      "total": 201.2,
       "normal": 22,
-      "pct": 1059
+      "pct": 927
     },
     "20": {
-      "total": 151.7,
+      "total": 206.3,
       "normal": 9,
       "pct": null
     },
     "21": {
-      "total": 154.2,
+      "total": 101.7,
       "normal": 18,
-      "pct": 871
+      "pct": 574
     },
     "22": {
-      "total": 204.0,
+      "total": 198.7,
       "normal": 50,
-      "pct": 406
+      "pct": 395
     },
     "23": {
-      "total": 24.2,
+      "total": 16.3,
       "normal": 2,
       "pct": null
     },
     "24": {
-      "total": 203.2,
+      "total": 206.4,
       "normal": 4,
       "pct": null
     },
     "25": {
-      "total": 164.5,
+      "total": 146.2,
       "normal": 91,
-      "pct": 181
+      "pct": 161
     },
     "0301": {
-      "total": 152.3,
+      "total": 156.5,
       "normal": 37,
-      "pct": 410
+      "pct": 422
     },
     "0902": {
-      "total": 151.9,
+      "total": 141.7,
       "normal": 27,
-      "pct": 571
+      "pct": 532
     },
     "0802": {
-      "total": 126.2,
+      "total": 117.5,
       "normal": 36,
-      "pct": 354
+      "pct": 330
     },
     "0202": {
-      "total": 152.4,
+      "total": 230.4,
       "normal": 18,
-      "pct": 850
+      "pct": 1286
     },
     "1602": {
-      "total": 187.8,
+      "total": 215.0,
       "normal": 86,
-      "pct": 219
+      "pct": 250
     },
     "1002": {
-      "total": 124.7,
+      "total": 118.3,
       "normal": 38,
-      "pct": 331
+      "pct": 314
     },
     "0302": {
-      "total": 134.1,
+      "total": 174.9,
       "normal": 36,
-      "pct": 368
+      "pct": 479
     },
     "0903": {
-      "total": 161.2,
+      "total": 178.5,
       "normal": 27,
-      "pct": 606
+      "pct": 671
     },
     "0803": {
-      "total": 123.1,
+      "total": 118.3,
       "normal": 39,
-      "pct": 315
+      "pct": 303
     },
     "0303": {
-      "total": 145.1,
+      "total": 159.7,
       "normal": 31,
-      "pct": 469
+      "pct": 516
     },
     "0203": {
-      "total": 162.8,
+      "total": 156.3,
       "normal": 69,
-      "pct": 235
+      "pct": 225
     },
     "0401": {
-      "total": 20.2,
+      "total": 17.8,
       "normal": 2,
       "pct": null
     },
     "1302": {
-      "total": 16.3,
+      "total": 30.6,
       "normal": 8,
       "pct": null
     },
     "0204": {
-      "total": 110.2,
+      "total": 128.6,
       "normal": 29,
-      "pct": 376
+      "pct": 439
     },
     "2502": {
-      "total": 190.7,
+      "total": 184.8,
       "normal": 76,
-      "pct": 252
+      "pct": 244
     },
     "2002": {
-      "total": 186.7,
+      "total": 276.7,
       "normal": 12,
       "pct": null
     },
     "0304": {
-      "total": 135.8,
+      "total": 113.4,
       "normal": 31,
-      "pct": 444
+      "pct": 370
     },
     "2102": {
-      "total": 96.3,
+      "total": 80.0,
       "normal": 18,
-      "pct": 544
+      "pct": 452
     },
     "0102": {
-      "total": 187.6,
+      "total": 170.8,
       "normal": 36,
-      "pct": 519
+      "pct": 472
     },
     "1502": {
-      "total": 6.9,
+      "total": 25.3,
       "normal": 10,
       "pct": null
     },
     "2202": {
-      "total": 190.4,
+      "total": 142.6,
       "normal": 68,
-      "pct": 281
+      "pct": 210
     },
     "1303": {
-      "total": 89.1,
+      "total": 126.0,
       "normal": 39,
-      "pct": 226
+      "pct": 320
     },
     "0205": {
-      "total": 115.7,
+      "total": 166.9,
       "normal": 32,
-      "pct": 358
+      "pct": 516
     },
     "0103": {
-      "total": 110.6,
+      "total": 119.1,
       "normal": 32,
-      "pct": 351
+      "pct": 378
     },
     "0602": {
-      "total": 71.7,
+      "total": 117.1,
       "normal": 30,
-      "pct": 241
+      "pct": 394
     },
     "0601": {
-      "total": 127.0,
+      "total": 225.6,
       "normal": 27,
-      "pct": 465
+      "pct": 826
     },
     "1503": {
-      "total": 80.9,
+      "total": 115.9,
       "normal": 16,
-      "pct": 496
+      "pct": 710
     },
     "0804": {
-      "total": 171.4,
+      "total": 142.5,
       "normal": 40,
-      "pct": 433
+      "pct": 360
     },
     "0701": {
-      "total": 3.6,
+      "total": 5.3,
       "normal": 1,
       "pct": null
     },
     "0402": {
-      "total": 26.2,
+      "total": 23.1,
       "normal": 0,
       "pct": null
     },
     "0805": {
-      "total": 136.4,
+      "total": 142.3,
       "normal": 25,
-      "pct": 548
+      "pct": 571
     },
     "0806": {
-      "total": 133.7,
+      "total": 154.1,
       "normal": 35,
-      "pct": 387
+      "pct": 446
     },
     "2302": {
-      "total": 33.2,
+      "total": 21.8,
       "normal": 3,
       "pct": null
     },
     "0502": {
-      "total": 143.9,
+      "total": 197.8,
       "normal": 24,
-      "pct": 596
+      "pct": 819
     },
     "1504": {
-      "total": 51.0,
+      "total": 92.1,
       "normal": 2,
       "pct": null
     },
     "1505": {
-      "total": 10.2,
+      "total": 22.0,
       "normal": 2,
       "pct": null
     },
     "2103": {
-      "total": 181.9,
+      "total": 152.7,
       "normal": 42,
-      "pct": 431
+      "pct": 362
     },
     "0403": {
-      "total": 8.3,
+      "total": 11.5,
       "normal": 3,
       "pct": null
     },
     "0206": {
-      "total": 93.6,
+      "total": 116.0,
       "normal": 25,
-      "pct": 376
+      "pct": 466
     },
     "0207": {
-      "total": 152.3,
+      "total": 172.1,
       "normal": 29,
-      "pct": 520
+      "pct": 588
     },
     "0208": {
-      "total": 11.8,
+      "total": 12.6,
       "normal": 10,
       "pct": null
     },
     "0404": {
-      "total": 41.1,
+      "total": 34.7,
       "normal": 8,
       "pct": null
     },
     "0904": {
-      "total": 124.9,
+      "total": 185.2,
       "normal": 6,
       "pct": null
     },
     "0405": {
-      "total": 70.1,
+      "total": 76.4,
       "normal": 8,
       "pct": null
     },
     "0603": {
-      "total": 133.5,
+      "total": 173.2,
       "normal": 35,
-      "pct": 383
+      "pct": 497
     },
     "0101": {
-      "total": 111.3,
+      "total": 130.7,
       "normal": 38,
-      "pct": 292
+      "pct": 343
     },
     "1203": {
-      "total": 219.0,
+      "total": 165.2,
       "normal": 21,
-      "pct": 1056
+      "pct": 796
     },
     "1304": {
-      "total": 13.2,
+      "total": 24.6,
       "normal": 12,
       "pct": null
     },
     "1401": {
-      "total": 50.4,
+      "total": 114.1,
       "normal": 12,
       "pct": null
     },
     "1102": {
-      "total": 38.3,
+      "total": 67.7,
       "normal": 5,
       "pct": null
     },
     "0306": {
-      "total": 163.0,
+      "total": 176.7,
       "normal": 28,
-      "pct": 577
+      "pct": 625
     },
     "0604": {
-      "total": 175.6,
+      "total": 175.9,
       "normal": 26,
-      "pct": 687
+      "pct": 689
     },
     "2104": {
-      "total": 92.1,
+      "total": 50.9,
       "normal": 16,
-      "pct": 579
+      "pct": 320
     },
     "0807": {
-      "total": 132.6,
+      "total": 135.8,
       "normal": 29,
-      "pct": 460
+      "pct": 472
     },
     "1209": {
-      "total": 158.0,
+      "total": 194.7,
       "normal": 8,
       "pct": null
     },
     "0905": {
-      "total": 114.9,
+      "total": 104.6,
       "normal": 28,
-      "pct": 414
+      "pct": 376
     },
     "1202": {
-      "total": 160.7,
+      "total": 148.9,
       "normal": 19,
-      "pct": 868
+      "pct": 805
     },
     "0406": {
-      "total": 63.6,
+      "total": 49.3,
       "normal": 8,
       "pct": null
     },
     "2402": {
-      "total": 209.4,
+      "total": 178.9,
       "normal": 4,
       "pct": null
     },
     "0605": {
-      "total": 131.8,
+      "total": 199.9,
       "normal": 21,
-      "pct": 642
+      "pct": 974
     },
     "2501": {
-      "total": 160.5,
+      "total": 146.5,
       "normal": 81,
-      "pct": 199
+      "pct": 182
     },
     "0209": {
-      "total": 77.5,
+      "total": 113.9,
       "normal": 12,
       "pct": null
     },
     "0305": {
-      "total": 156.9,
+      "total": 152.3,
       "normal": 37,
-      "pct": 423
+      "pct": 410
     },
     "0801": {
-      "total": 130.0,
+      "total": 131.6,
       "normal": 38,
-      "pct": 339
+      "pct": 343
     },
     "0606": {
-      "total": 86.3,
+      "total": 98.5,
       "normal": 23,
-      "pct": 377
+      "pct": 431
     },
     "1902": {
-      "total": 133.2,
+      "total": 140.1,
       "normal": 20,
-      "pct": 675
+      "pct": 710
     },
     "1607": {
-      "total": 175.9,
+      "total": 169.0,
       "normal": 84,
-      "pct": 210
+      "pct": 201
     },
     "1003": {
-      "total": 261.9,
+      "total": 248.2,
       "normal": 53,
-      "pct": 493
+      "pct": 467
     },
     "2105": {
-      "total": 81.6,
+      "total": 42.7,
       "normal": 9,
       "pct": null
     },
     "2203": {
-      "total": 126.2,
+      "total": 129.8,
       "normal": 53,
-      "pct": 240
+      "pct": 247
     },
     "0808": {
-      "total": 135.3,
+      "total": 125.1,
       "normal": 15,
-      "pct": 884
+      "pct": 817
     },
     "1402": {
-      "total": 154.6,
+      "total": 228.7,
       "normal": 11,
       "pct": null
     },
     "1802": {
-      "total": 62.4,
+      "total": 29.4,
       "normal": 5,
       "pct": null
     },
     "1311": {
-      "total": 113.1,
+      "total": 234.9,
       "normal": 21,
-      "pct": 551
+      "pct": 1144
     },
     "0307": {
-      "total": 147.8,
+      "total": 144.0,
       "normal": 37,
-      "pct": 398
+      "pct": 388
     },
     "1004": {
-      "total": 185.4,
+      "total": 181.1,
       "normal": 69,
-      "pct": 267
+      "pct": 261
     },
     "0607": {
-      "total": 138.8,
+      "total": 163.4,
       "normal": 26,
-      "pct": 543
+      "pct": 640
     },
     "2204": {
-      "total": 155.9,
+      "total": 154.6,
       "normal": 50,
-      "pct": 310
+      "pct": 307
     },
     "1005": {
-      "total": 163.2,
+      "total": 157.7,
       "normal": 68,
-      "pct": 239
+      "pct": 231
     },
     "0501": {
-      "total": 129.2,
+      "total": 139.4,
       "normal": 24,
-      "pct": 535
+      "pct": 577
     },
     "0503": {
-      "total": 150.0,
+      "total": 164.1,
       "normal": 20,
-      "pct": 752
+      "pct": 823
     },
     "2003": {
-      "total": 229.4,
+      "total": 317.6,
       "normal": 14,
       "pct": null
     },
     "2106": {
-      "total": 116.3,
+      "total": 92.9,
       "normal": 35,
-      "pct": 335
+      "pct": 268
     },
     "0901": {
-      "total": 138.4,
+      "total": 173.8,
       "normal": 17,
-      "pct": 834
+      "pct": 1048
     },
     "1201": {
-      "total": 180.3,
+      "total": 200.7,
       "normal": 19,
-      "pct": 974
+      "pct": 1084
     },
     "0504": {
-      "total": 220.8,
+      "total": 173.6,
       "normal": 28,
-      "pct": 795
+      "pct": 625
     },
     "1001": {
-      "total": 120.3,
+      "total": 87.0,
       "normal": 38,
-      "pct": 319
+      "pct": 231
     },
     "1506": {
-      "total": 42.2,
+      "total": 77.6,
       "normal": 2,
       "pct": null
     },
     "0201": {
-      "total": 85.7,
+      "total": 103.2,
       "normal": 25,
-      "pct": 344
+      "pct": 414
     },
     "0210": {
-      "total": 169.4,
+      "total": 203.4,
       "normal": 53,
-      "pct": 319
+      "pct": 383
     },
     "0211": {
-      "total": 15.2,
+      "total": 24.4,
       "normal": 9,
       "pct": null
     },
     "1507": {
-      "total": 92.3,
+      "total": 146.5,
       "normal": 2,
       "pct": null
     },
     "1508": {
-      "total": 135.4,
+      "total": 190.1,
       "normal": 3,
       "pct": null
     },
     "0212": {
-      "total": 98.7,
+      "total": 159.8,
       "normal": 10,
       "pct": null
     },
     "0906": {
-      "total": 127.8,
+      "total": 178.1,
       "normal": 14,
       "pct": null
     },
@@ -1202,591 +1202,591 @@
       "pct": null
     },
     "1803": {
-      "total": 16.4,
+      "total": 17.9,
       "normal": 1,
       "pct": null
     },
     "0407": {
-      "total": 11.2,
+      "total": 8.4,
       "normal": 0,
       "pct": null
     },
     "0608": {
-      "total": 119.3,
+      "total": 179.7,
       "normal": 25,
-      "pct": 476
+      "pct": 717
     },
     "1204": {
-      "total": 288.6,
+      "total": 307.1,
       "normal": 9,
       "pct": null
     },
     "2303": {
-      "total": 12.7,
+      "total": 13.6,
       "normal": 1,
       "pct": null
     },
     "1305": {
-      "total": 102.1,
+      "total": 161.3,
       "normal": 11,
       "pct": null
     },
     "1205": {
-      "total": 149.3,
+      "total": 135.1,
       "normal": 13,
       "pct": null
     },
     "0809": {
-      "total": 202.3,
+      "total": 218.3,
       "normal": 37,
-      "pct": 543
+      "pct": 586
     },
     "0505": {
-      "total": 84.7,
+      "total": 73.5,
       "normal": 30,
-      "pct": 284
+      "pct": 247
     },
     "0408": {
-      "total": 68.3,
+      "total": 75.1,
       "normal": 19,
-      "pct": 356
+      "pct": 391
     },
     "2205": {
-      "total": 217.0,
+      "total": 217.5,
       "normal": 64,
       "pct": 340
     },
     "1403": {
-      "total": 97.8,
+      "total": 176.6,
       "normal": 3,
       "pct": null
     },
     "2107": {
-      "total": 101.6,
+      "total": 90.5,
       "normal": 14,
       "pct": null
     },
     "1010": {
-      "total": 167.1,
+      "total": 160.5,
       "normal": 32,
-      "pct": 517
+      "pct": 497
     },
     "1006": {
-      "total": 210.1,
+      "total": 144.2,
       "normal": 97,
-      "pct": 216
+      "pct": 148
     },
     "1501": {
-      "total": 12.6,
+      "total": 20.5,
       "normal": 1,
       "pct": null
     },
     "1603": {
-      "total": 197.4,
+      "total": 210.0,
       "normal": 107,
-      "pct": 185
+      "pct": 197
     },
     "0506": {
-      "total": 74.2,
+      "total": 114.8,
       "normal": 14,
       "pct": null
     },
     "0105": {
-      "total": 98.2,
+      "total": 117.7,
       "normal": 32,
-      "pct": 310
+      "pct": 372
     },
     "1702": {
-      "total": 245.3,
+      "total": 161.4,
       "normal": 53,
-      "pct": 464
+      "pct": 305
     },
     "1007": {
-      "total": 181.9,
+      "total": 155.3,
       "normal": 72,
-      "pct": 252
+      "pct": 215
     },
     "2206": {
-      "total": 211.0,
+      "total": 229.2,
       "normal": 50,
-      "pct": 420
+      "pct": 456
     },
     "0213": {
-      "total": 180.0,
+      "total": 193.5,
       "normal": 29,
-      "pct": 615
+      "pct": 661
     },
     "1801": {
-      "total": 41.4,
+      "total": 37.8,
       "normal": 3,
       "pct": null
     },
     "1604": {
-      "total": 195.2,
+      "total": 202.9,
       "normal": 131,
-      "pct": 150
+      "pct": 155
     },
     "1601": {
-      "total": 202.5,
+      "total": 198.7,
       "normal": 124,
-      "pct": 164
+      "pct": 160
     },
     "2108": {
-      "total": 120.1,
+      "total": 110.0,
       "normal": 28,
-      "pct": 428
+      "pct": 392
     },
     "2109": {
-      "total": 123.4,
+      "total": 87.3,
       "normal": 27,
-      "pct": 455
+      "pct": 322
     },
     "2004": {
-      "total": 253.3,
+      "total": 417.8,
       "normal": 5,
       "pct": null
     },
     "2201": {
-      "total": 137.6,
+      "total": 121.6,
       "normal": 60,
-      "pct": 230
+      "pct": 203
     },
     "1103": {
-      "total": 1.6,
+      "total": 4.6,
       "normal": 5,
       "pct": null
     },
     "0214": {
-      "total": 119.3,
+      "total": 179.7,
       "normal": 10,
       "pct": null
     },
     "1306": {
-      "total": 88.0,
+      "total": 161.3,
       "normal": 11,
       "pct": null
     },
     "1903": {
-      "total": 290.1,
+      "total": 199.3,
       "normal": 40,
-      "pct": 721
+      "pct": 496
     },
     "1509": {
-      "total": 108.0,
+      "total": 121.5,
       "normal": 16,
-      "pct": 662
+      "pct": 744
     },
     "1307": {
-      "total": 2.5,
+      "total": 12.4,
       "normal": 8,
       "pct": null
     },
     "1008": {
-      "total": 211.8,
+      "total": 180.2,
       "normal": 38,
-      "pct": 559
+      "pct": 476
     },
     "2503": {
-      "total": 251.6,
+      "total": 213.4,
       "normal": 98,
-      "pct": 257
+      "pct": 218
     },
     "2005": {
-      "total": 57.9,
+      "total": 84.3,
       "normal": 1,
       "pct": null
     },
     "0215": {
-      "total": 72.1,
+      "total": 111.2,
       "normal": 12,
       "pct": null
     },
     "1104": {
-      "total": 18.2,
+      "total": 30.3,
       "normal": 7,
       "pct": null
     },
     "0507": {
-      "total": 75.4,
+      "total": 96.9,
       "normal": 12,
       "pct": null
     },
     "0810": {
-      "total": 149.5,
+      "total": 134.4,
       "normal": 36,
-      "pct": 420
+      "pct": 377
     },
     "1901": {
-      "total": 176.2,
+      "total": 168.7,
       "normal": 10,
       "pct": null
     },
     "1308": {
-      "total": 86.0,
+      "total": 131.9,
       "normal": 36,
-      "pct": 241
+      "pct": 369
     },
     "0508": {
-      "total": 84.7,
+      "total": 67.0,
       "normal": 20,
-      "pct": 422
+      "pct": 334
     },
     "0811": {
-      "total": 274.2,
+      "total": 234.7,
       "normal": 48,
-      "pct": 567
+      "pct": 485
     },
     "2207": {
-      "total": 131.1,
+      "total": 112.5,
       "normal": 59,
-      "pct": 221
+      "pct": 190
     },
     "1105": {
-      "total": 0.0,
+      "total": 2.8,
       "normal": 5,
       "pct": null
     },
     "2001": {
-      "total": 204.9,
+      "total": 310.7,
       "normal": 2,
       "pct": null
     },
     "0216": {
-      "total": 119.0,
+      "total": 137.6,
       "normal": 32,
-      "pct": 369
+      "pct": 427
     },
     "1009": {
-      "total": 262.1,
+      "total": 192.5,
       "normal": 62,
-      "pct": 423
+      "pct": 311
     },
     "2101": {
-      "total": 96.0,
+      "total": 64.2,
       "normal": 13,
       "pct": null
     },
     "2504": {
-      "total": 177.3,
+      "total": 156.4,
       "normal": 94,
-      "pct": 188
+      "pct": 166
     },
     "0812": {
-      "total": 229.6,
+      "total": 223.2,
       "normal": 42,
-      "pct": 541
+      "pct": 526
     },
     "0217": {
-      "total": 140.4,
+      "total": 177.5,
       "normal": 18,
-      "pct": 783
+      "pct": 991
     },
     "1605": {
-      "total": 186.1,
+      "total": 165.6,
       "normal": 100,
-      "pct": 186
+      "pct": 166
     },
     "2208": {
-      "total": 89.6,
+      "total": 93.7,
       "normal": 39,
-      "pct": 230
+      "pct": 241
     },
     "0106": {
-      "total": 152.1,
+      "total": 170.7,
       "normal": 38,
-      "pct": 399
+      "pct": 448
     },
     "2110": {
-      "total": 89.1,
+      "total": 86.9,
       "normal": 47,
-      "pct": 190
+      "pct": 185
     },
     "0609": {
-      "total": 126.1,
+      "total": 181.1,
       "normal": 31,
-      "pct": 410
+      "pct": 590
     },
     "0610": {
-      "total": 88.8,
+      "total": 167.0,
       "normal": 30,
-      "pct": 299
+      "pct": 562
     },
     "2209": {
-      "total": 121.7,
+      "total": 120.6,
       "normal": 75,
-      "pct": 163
+      "pct": 161
     },
     "0611": {
-      "total": 141.7,
+      "total": 240.5,
       "normal": 27,
-      "pct": 519
+      "pct": 881
     },
     "0612": {
-      "total": 90.2,
+      "total": 166.8,
       "normal": 27,
-      "pct": 330
+      "pct": 611
     },
     "2111": {
-      "total": 111.7,
+      "total": 63.0,
       "normal": 16,
-      "pct": 682
+      "pct": 385
     },
     "1309": {
-      "total": 72.0,
+      "total": 113.9,
       "normal": 19,
-      "pct": 382
+      "pct": 605
     },
     "2112": {
-      "total": 174.8,
+      "total": 148.5,
       "normal": 66,
-      "pct": 266
+      "pct": 226
     },
     "0218": {
-      "total": 116.3,
+      "total": 134.8,
       "normal": 10,
       "pct": null
     },
     "0613": {
-      "total": 111.1,
+      "total": 199.0,
       "normal": 26,
-      "pct": 435
+      "pct": 779
     },
     "1310": {
-      "total": 160.6,
+      "total": 224.5,
       "normal": 19,
-      "pct": 853
+      "pct": 1192
     },
     "1206": {
-      "total": 185.0,
+      "total": 160.1,
       "normal": 27,
-      "pct": 687
+      "pct": 594
     },
     "2008": {
-      "total": 58.8,
+      "total": 110.1,
       "normal": 1,
       "pct": null
     },
     "0219": {
-      "total": 97.9,
+      "total": 137.1,
       "normal": 32,
-      "pct": 304
+      "pct": 426
     },
     "0509": {
-      "total": 143.9,
+      "total": 181.6,
       "normal": 24,
-      "pct": 588
+      "pct": 742
     },
     "2006": {
-      "total": 164.0,
+      "total": 240.2,
       "normal": 4,
       "pct": null
     },
     "2301": {
-      "total": 11.0,
+      "total": 9.2,
       "normal": 1,
       "pct": null
     },
     "1703": {
-      "total": 178.7,
+      "total": 122.3,
       "normal": 87,
-      "pct": 205
+      "pct": 140
     },
     "2007": {
-      "total": 160.7,
+      "total": 143.5,
       "normal": 1,
       "pct": null
     },
     "1701": {
-      "total": 194.5,
+      "total": 128.1,
       "normal": 92,
-      "pct": 213
+      "pct": 140
     },
     "2304": {
-      "total": 24.4,
+      "total": 21.8,
       "normal": 2,
       "pct": null
     },
     "1207": {
-      "total": 118.2,
+      "total": 113.4,
       "normal": 13,
       "pct": null
     },
     "0907": {
-      "total": 141.4,
+      "total": 132.2,
       "normal": 18,
-      "pct": 775
+      "pct": 725
     },
     "2210": {
-      "total": 288.2,
+      "total": 250.8,
       "normal": 64,
-      "pct": 449
+      "pct": 391
     },
     "1301": {
-      "total": 21.5,
+      "total": 42.6,
       "normal": 11,
       "pct": null
     },
     "2401": {
-      "total": 255.2,
+      "total": 264.9,
       "normal": 4,
       "pct": null
     },
     "1606": {
-      "total": 162.8,
+      "total": 145.3,
       "normal": 76,
-      "pct": 213
+      "pct": 191
     },
     "0813": {
-      "total": 105.0,
+      "total": 108.2,
       "normal": 39,
-      "pct": 269
+      "pct": 277
     },
     "0107": {
-      "total": 58.4,
+      "total": 86.6,
       "normal": 29,
-      "pct": 202
+      "pct": 299
     },
     "0510": {
-      "total": 150.1,
+      "total": 162.7,
       "normal": 24,
-      "pct": 621
+      "pct": 673
     },
     "0511": {
-      "total": 138.0,
+      "total": 145.6,
       "normal": 28,
-      "pct": 488
+      "pct": 515
     },
     "1312": {
-      "total": 29.9,
+      "total": 63.3,
       "normal": 5,
       "pct": null
     },
     "1011": {
-      "total": 175.5,
+      "total": 190.0,
       "normal": 32,
-      "pct": 543
+      "pct": 588
     },
     "1208": {
-      "total": 147.1,
+      "total": 166.8,
       "normal": 4,
       "pct": null
     },
     "1510": {
-      "total": 106.3,
+      "total": 159.6,
       "normal": 8,
       "pct": null
     },
     "0220": {
-      "total": 148.9,
+      "total": 181.2,
       "normal": 29,
-      "pct": 509
+      "pct": 619
     },
     "2113": {
-      "total": 148.1,
+      "total": 66.4,
       "normal": 16,
-      "pct": 932
+      "pct": 418
     },
     "2403": {
-      "total": 234.1,
+      "total": 276.6,
       "normal": 11,
       "pct": null
     },
     "0104": {
-      "total": 180.9,
+      "total": 187.7,
       "normal": 44,
-      "pct": 412
+      "pct": 428
     }
   },
   "top_lluvia": [
     {
-      "id": "1903",
-      "nombre": "Oxapampa",
-      "region": "Pasco",
-      "total": 290.1,
-      "dias_fuertes": 9,
-      "max_dia": 55.5,
-      "pct": 721
+      "id": "2004",
+      "nombre": "Morropon",
+      "region": "Piura",
+      "total": 417.8,
+      "dias_fuertes": 10,
+      "max_dia": 64.5,
+      "pct": null
+    },
+    {
+      "id": "2003",
+      "nombre": "Huancabamba",
+      "region": "Piura",
+      "total": 317.6,
+      "dias_fuertes": 8,
+      "max_dia": 45.7,
+      "pct": null
+    },
+    {
+      "id": "2001",
+      "nombre": "Piura",
+      "region": "Piura",
+      "total": 310.7,
+      "dias_fuertes": 8,
+      "max_dia": 36.6,
+      "pct": null
     },
     {
       "id": "1204",
       "nombre": "Jauja",
       "region": "Junin",
-      "total": 288.6,
-      "dias_fuertes": 12,
-      "max_dia": 36.9,
+      "total": 307.1,
+      "dias_fuertes": 11,
+      "max_dia": 32.5,
+      "pct": null
+    },
+    {
+      "id": "2002",
+      "nombre": "Ayabaca",
+      "region": "Piura",
+      "total": 276.7,
+      "dias_fuertes": 7,
+      "max_dia": 42.2,
+      "pct": null
+    },
+    {
+      "id": "2403",
+      "nombre": "Zarumilla",
+      "region": "Tumbes",
+      "total": 276.6,
+      "dias_fuertes": 7,
+      "max_dia": 44.5,
+      "pct": null
+    },
+    {
+      "id": "2401",
+      "nombre": "Tumbes",
+      "region": "Tumbes",
+      "total": 264.9,
+      "dias_fuertes": 8,
+      "max_dia": 43.5,
       "pct": null
     },
     {
       "id": "2210",
       "nombre": "Tocache",
       "region": "San Martin",
-      "total": 288.2,
-      "dias_fuertes": 7,
-      "max_dia": 38.5,
-      "pct": 449
-    },
-    {
-      "id": "0811",
-      "nombre": "Paucartambo",
-      "region": "Cusco",
-      "total": 274.2,
-      "dias_fuertes": 5,
-      "max_dia": 40.0,
-      "pct": 567
-    },
-    {
-      "id": "1009",
-      "nombre": "Puerto Inca",
-      "region": "Huanuco",
-      "total": 262.1,
-      "dias_fuertes": 9,
-      "max_dia": 31.5,
-      "pct": 423
+      "total": 250.8,
+      "dias_fuertes": 4,
+      "max_dia": 47.4,
+      "pct": 391
     },
     {
       "id": "1003",
       "nombre": "Dos de Mayo",
       "region": "Huanuco",
-      "total": 261.9,
-      "dias_fuertes": 12,
-      "max_dia": 28.8,
-      "pct": 493
+      "total": 248.2,
+      "dias_fuertes": 10,
+      "max_dia": 26.1,
+      "pct": 467
     },
     {
-      "id": "2401",
-      "nombre": "Tumbes",
-      "region": "Tumbes",
-      "total": 255.2,
-      "dias_fuertes": 7,
-      "max_dia": 35.6,
-      "pct": null
-    },
-    {
-      "id": "2004",
-      "nombre": "Morropon",
-      "region": "Piura",
-      "total": 253.3,
-      "dias_fuertes": 7,
-      "max_dia": 38.0,
-      "pct": null
-    },
-    {
-      "id": "2503",
-      "nombre": "Padre Abad",
-      "region": "Ucayali",
-      "total": 251.6,
-      "dias_fuertes": 6,
-      "max_dia": 38.0,
-      "pct": 257
-    },
-    {
-      "id": "1702",
-      "nombre": "Manu",
-      "region": "Madre de Dios",
-      "total": 245.3,
-      "dias_fuertes": 7,
-      "max_dia": 38.4,
-      "pct": 464
+      "id": "0611",
+      "nombre": "San Miguel",
+      "region": "Cajamarca",
+      "total": 240.5,
+      "dias_fuertes": 8,
+      "max_dia": 42.7,
+      "pct": 881
     }
   ],
   "top_focos": [
@@ -1867,7 +1867,7 @@
       "nombre": "Chicama",
       "lugar": "Salinar",
       "region": "13",
-      "hoy": 220.82,
+      "hoy": 142.88,
       "pico": 333.97,
       "fecha_pico": "2026-12-01",
       "p90": 151.1,
@@ -1879,7 +1879,7 @@
       "nombre": "Chira",
       "lugar": "Ardilla",
       "region": "20",
-      "hoy": 1351.07,
+      "hoy": 949.6,
       "pico": 2097.94,
       "fecha_pico": "2026-12-01",
       "p90": 932.2,
@@ -1891,9 +1891,9 @@
       "nombre": "Tumbes",
       "lugar": "El Tigre",
       "region": "24",
-      "hoy": 1220.8,
-      "pico": 1220.8,
-      "fecha_pico": "2026-11-21",
+      "hoy": 1128.8,
+      "pico": 1128.8,
+      "fecha_pico": "2026-11-22",
       "p90": 591.9,
       "p99": 1409.6,
       "nivel": "elevado"
@@ -1903,7 +1903,7 @@
       "nombre": "La Leche",
       "lugar": "Puchaca",
       "region": "14",
-      "hoy": 44.19,
+      "hoy": 58.43,
       "pico": 67.71,
       "fecha_pico": "2026-12-01",
       "p90": 39.7,
@@ -1915,7 +1915,7 @@
       "nombre": "Piura",
       "lugar": "Puente Sánchez Cerro",
       "region": "20",
-      "hoy": 189.99,
+      "hoy": 195.34,
       "pico": 330.89,
       "fecha_pico": "2026-12-02",
       "p90": 230.7,
@@ -1927,7 +1927,7 @@
       "nombre": "Pativilca",
       "lugar": "Yanapampa",
       "region": "15",
-      "hoy": 158.59,
+      "hoy": 153.17,
       "pico": 249.61,
       "fecha_pico": "2026-12-01",
       "p90": 197.2,
@@ -1939,7 +1939,7 @@
       "nombre": "Zaña",
       "lugar": "Batán",
       "region": "14",
-      "hoy": 43.06,
+      "hoy": 49.47,
       "pico": 55.36,
       "fecha_pico": "2026-11-25",
       "p90": 45.1,
@@ -1951,7 +1951,7 @@
       "nombre": "Chancay-Lambayeque",
       "lugar": "Racarrumi",
       "region": "14",
-      "hoy": 102.28,
+      "hoy": 96.05,
       "pico": 122.88,
       "fecha_pico": "2026-11-30",
       "p90": 103.0,
@@ -1963,7 +1963,7 @@
       "nombre": "Cañete",
       "lugar": "Socsi",
       "region": "15",
-      "hoy": 99.0,
+      "hoy": 90.83,
       "pico": 332.43,
       "fecha_pico": "2026-12-02",
       "p90": 279.5,
@@ -1975,7 +1975,7 @@
       "nombre": "Virú",
       "lugar": "Huacapongo",
       "region": "13",
-      "hoy": 36.07,
+      "hoy": 38.17,
       "pico": 43.67,
       "fecha_pico": "2026-12-02",
       "p90": 41.8,
@@ -1987,9 +1987,9 @@
       "nombre": "Rímac",
       "lugar": "Chosica",
       "region": "15",
-      "hoy": 73.3,
-      "pico": 90.41,
-      "fecha_pico": "2026-12-03",
+      "hoy": 75.21,
+      "pico": 91.04,
+      "fecha_pico": "2026-12-06",
       "p90": 89.2,
       "p99": 152.9,
       "nivel": "elevado"
