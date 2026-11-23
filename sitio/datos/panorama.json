@@ -1,6 +1,6 @@
 {
   "_": "Generado por pipeline/productos/panorama.py. No editar a mano.",
-  "generado": "2026-11-23T12:56:03Z",
+  "generado": "2026-11-23T14:16:43Z",
   "fecha": "2026-11-23",
   "lectura": [
     {
@@ -16,9 +16,9 @@
       "url": "https://psl.noaa.gov/data/gridded/data.noaa.oisst.v2.highres.html"
     },
     {
-      "t": "El SENAMHI tiene 5 avisos meteorológicos vigentes o por empezar, 3 en nivel rojo (de todo tipo: lluvia, temperatura, viento).",
+      "t": "El SENAMHI tiene 7 avisos meteorológicos vigentes o por empezar, 4 en nivel rojo (de todo tipo: lluvia, temperatura, viento).",
       "fuente": "SENAMHI, avisos meteorológicos",
-      "fecha": "2026-11-22T15:23:51Z",
+      "fecha": "2026-11-23T14:09:18Z",
       "url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico"
     },
     {
@@ -30,13 +30,13 @@
     {
       "t": "Ríos: el modelo global GloFAS pronostica caudales por encima de su percentil 90 anual (1984-2023) en 13, entre ellos La Leche, Piura, Chira, Chancay-Lambayeque; es orientativo. En la última lectura, ninguna estación de la ANA ni del SENAMHI está sobre su umbral de crecida.",
       "fuente": "GloFAS (Copernicus) vía Open-Meteo; lecturas de la ANA y el SENAMHI",
-      "fecha": "2026-11-23T12:56:03Z",
+      "fecha": "2026-11-23T14:16:42Z",
       "url": "https://www.globalfloods.eu/"
     },
     {
       "t": "CENEPRED: 186 distritos en riesgo muy alto por lluvia, hasta el 23 de noviembre; en ellos viven 1 385 060 personas (suma ENSO Perú de los 2 escenarios vigentes, sin repetir distritos).",
       "fuente": "CENEPRED, escenarios de riesgo ante el aviso de lluvias",
-      "fecha": "2026-11-23T12:55:29Z",
+      "fecha": "2026-11-23T14:12:09Z",
       "url": "https://sigrid.cenepred.gob.pe/sigridv3/escenario-aviso"
     },
     {
@@ -82,8 +82,8 @@
       "aviso_desde": null,
       "aviso_numero": 476,
       "aviso_url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico-vigente&a=2026&b=29376&c=00&d=SENA",
-      "aviso_lluvia": null,
-      "aviso_lluvia_desde": null,
+      "aviso_lluvia": "ROJO",
+      "aviso_lluvia_desde": "2026-11-24",
       "mar": 6.96,
       "n_mar": "muy alto",
       "focos": 15,
@@ -126,8 +126,8 @@
       "aviso_desde": null,
       "aviso_numero": 476,
       "aviso_url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico-vigente&a=2026&b=29376&c=00&d=SENA",
-      "aviso_lluvia": null,
-      "aviso_lluvia_desde": null,
+      "aviso_lluvia": "ROJO",
+      "aviso_lluvia_desde": "2026-11-24",
       "mar": 4.39,
       "n_mar": "muy alto",
       "focos": 35,
@@ -189,8 +189,8 @@
       "aviso_desde": null,
       "aviso_numero": 476,
       "aviso_url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico-vigente&a=2026&b=29376&c=00&d=SENA",
-      "aviso_lluvia": null,
-      "aviso_lluvia_desde": null,
+      "aviso_lluvia": "ROJO",
+      "aviso_lluvia_desde": "2026-11-24",
       "mar": 6.37,
       "n_mar": "muy alto",
       "focos": 0,
@@ -273,8 +273,8 @@
       "aviso_desde": null,
       "aviso_numero": 476,
       "aviso_url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico-vigente&a=2026&b=29376&c=00&d=SENA",
-      "aviso_lluvia": null,
-      "aviso_lluvia_desde": null,
+      "aviso_lluvia": "ROJO",
+      "aviso_lluvia_desde": "2026-11-24",
       "mar": 6.06,
       "n_mar": "muy alto",
       "focos": 23,
@@ -366,8 +366,8 @@
       "aviso_desde": null,
       "aviso_numero": 476,
       "aviso_url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico-vigente&a=2026&b=29376&c=00&d=SENA",
-      "aviso_lluvia": null,
-      "aviso_lluvia_desde": null,
+      "aviso_lluvia": "ROJO",
+      "aviso_lluvia_desde": "2026-11-24",
       "mar": 6.55,
       "n_mar": "muy alto",
       "focos": 9,
@@ -433,8 +433,8 @@
       "aviso_desde": null,
       "aviso_numero": 476,
       "aviso_url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico-vigente&a=2026&b=29376&c=00&d=SENA",
-      "aviso_lluvia": null,
-      "aviso_lluvia_desde": null,
+      "aviso_lluvia": "ROJO",
+      "aviso_lluvia_desde": "2026-11-24",
       "mar": 3.6,
       "n_mar": "muy alto",
       "focos": 4,
@@ -541,8 +541,8 @@
       "aviso_desde": null,
       "aviso_numero": 476,
       "aviso_url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico-vigente&a=2026&b=29376&c=00&d=SENA",
-      "aviso_lluvia": null,
-      "aviso_lluvia_desde": null,
+      "aviso_lluvia": "ROJO",
+      "aviso_lluvia_desde": "2026-11-24",
       "mar": 3.26,
       "n_mar": "muy alto",
       "focos": 0,
@@ -2136,8 +2136,8 @@
     }
   ],
   "totales": {
-    "avisos": 5,
-    "rojos": 3,
+    "avisos": 7,
+    "rojos": 4,
     "rios_altos": 13,
     "focos": 1623,
     "distritos_riesgo_alto": 766
