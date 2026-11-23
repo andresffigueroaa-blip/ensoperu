@@ -1,6 +1,6 @@
 {
   "_": "Generado por pipeline/fuentes/internacional.py. Cada bloque con su centro, fecha y enlace.",
-  "actualizado": "2026-11-23T12:55:38Z",
+  "actualizado": "2026-11-23T19:27:55Z",
   "fallas": [],
   "cpc": {
     "emitido": "2026-11-12",
@@ -519,18 +519,12 @@
   },
   "mjo": {
     "ultimo": {
-      "fecha": "2026-11-18",
-      "pc1": 0.721,
-      "pc2": 1.025,
-      "amplitud": 1.25
+      "fecha": "2026-11-19",
+      "pc1": 0.074,
+      "pc2": 0.891,
+      "amplitud": 0.89
     },
     "serie": [
-      {
-        "fecha": "2026-10-05",
-        "pc1": 0.724,
-        "pc2": -0.791,
-        "amplitud": 1.07
-      },
       {
         "fecha": "2026-10-06",
         "pc1": 0.718,
@@ -773,30 +767,36 @@
       },
       {
         "fecha": "2026-11-15",
-        "pc1": 0.628,
-        "pc2": 1.289,
-        "amplitud": 1.43
+        "pc1": 0.392,
+        "pc2": 1.211,
+        "amplitud": 1.27
       },
       {
         "fecha": "2026-11-16",
-        "pc1": 0.667,
-        "pc2": 1.217,
-        "amplitud": 1.39
+        "pc1": 0.4,
+        "pc2": 1.145,
+        "amplitud": 1.21
       },
       {
         "fecha": "2026-11-17",
-        "pc1": 0.756,
-        "pc2": 1.103,
-        "amplitud": 1.34
+        "pc1": 0.441,
+        "pc2": 1.041,
+        "amplitud": 1.13
       },
       {
         "fecha": "2026-11-18",
-        "pc1": 0.721,
-        "pc2": 1.025,
-        "amplitud": 1.25
+        "pc1": 0.359,
+        "pc2": 0.961,
+        "amplitud": 1.03
+      },
+      {
+        "fecha": "2026-11-19",
+        "pc1": 0.074,
+        "pc2": 0.891,
+        "amplitud": 0.89
       }
     ],
-    "activa": true,
+    "activa": false,
     "fuente": "NOAA PSL, índice ROMI",
     "url": "https://www.cpc.ncep.noaa.gov/products/precip/CWlink/MJO/mjo.shtml"
   },
@@ -921,9 +921,9 @@
       "titulo": "Lluvia pronosticada a 10 días, Sudamérica",
       "fuente": "CIIFEN (CHIRPS-GEFS)",
       "origen": "https://ciifen.org/wp-content/uploads/imagenes_clima/pronostico/pron_precipitacion/chirps_forecast_10days.png",
-      "huella": "b8e42816f779",
+      "huella": "2f60bf4c3e44",
       "archivo": "chirps10.png",
-      "fecha": "2026-11-22"
+      "fecha": "2026-11-23"
     }
   ]
 }
