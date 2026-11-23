@@ -1,6 +1,6 @@
 {
   "_": "Generado por pipeline/fuentes/peru_oficial.py. Datos oficiales tal como se publican.",
-  "actualizado": "2026-11-23T14:12:00Z",
+  "actualizado": "2026-11-23T14:19:00Z",
   "fallas": [
     "coen"
   ],
@@ -502,7 +502,7 @@
       }
     ],
     "url": "https://portal.indeci.gob.pe/emergencias/",
-    "leido": "2026-11-23T14:12:05Z"
+    "leido": "2026-11-23T14:19:02Z"
   },
   "escenario": {
     "vigente": true,
@@ -2582,7 +2582,7 @@
       }
     },
     "url": "https://sigrid.cenepred.gob.pe/sigridv3/escenario-aviso",
-    "leido": "2026-11-23T14:12:09Z"
+    "leido": "2026-11-23T14:19:06Z"
   },
   "quebradas": {
     "fecha": "2026-11-22",
@@ -2934,7 +2934,7 @@
     },
     "sin_cruce": 0,
     "url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico",
-    "leido": "2026-11-23T14:12:15Z"
+    "leido": "2026-11-23T14:19:08Z"
   },
   "hidro": {
     "avisos": [
@@ -2988,7 +2988,7 @@
       }
     ],
     "url": "https://www.senamhi.gob.pe/?p=aviso-hidrologico",
-    "leido": "2026-11-23T14:12:19Z"
+    "leido": "2026-11-23T14:19:09Z"
   },
   "ana_rios": {
     "estaciones": [
@@ -17361,7 +17361,7 @@
       }
     },
     "url": "https://visor.geoperu.gob.pe/",
-    "leido": "2026-11-23T14:12:44Z"
+    "leido": "2026-11-23T14:19:10Z"
   },
   "agua": {
     "total": 71,
@@ -18255,10 +18255,10 @@
       }
     },
     "url": "https://www.sunass.gob.pe/",
-    "leido": "2026-11-23T14:12:45Z"
+    "leido": "2026-11-23T14:19:11Z"
   },
   "incendios": {
-    "total": 139,
+    "total": 140,
     "lista": [
       {
         "fecha": "2026-11-23",
@@ -18856,6 +18856,15 @@
       },
       {
         "fecha": "2026-11-22",
+        "hora": "17:00",
+        "lugar": "Paucar, Pasco",
+        "distrito": "190204",
+        "cobertura": "Cobertura Agrícola",
+        "lat": -10.31711,
+        "lon": -76.36681
+      },
+      {
+        "fecha": "2026-11-22",
         "hora": "15:46",
         "lugar": "Cayma, Arequipa",
         "distrito": "040103",
@@ -18970,19 +18979,10 @@
         "cobertura": "Cobertura Forestal",
         "lat": -16.24645,
         "lon": -71.52505
-      },
-      {
-        "fecha": "2026-11-22",
-        "hora": "01:44",
-        "lugar": "Cayma, Arequipa",
-        "distrito": "040103",
-        "cobertura": "Cobertura Forestal",
-        "lat": -16.24146,
-        "lon": -71.52341
       }
     ],
     "url": "https://geo.serfor.gob.pe/visor/",
-    "leido": "2026-11-23T14:12:46Z"
+    "leido": "2026-11-23T14:19:12Z"
   },
   "phisis": {
     "estaciones": [
@@ -21162,7 +21162,7 @@
       "clasificacion": 99.98
     },
     "url": "http://met.igp.gob.pe/variabclim/",
-    "leido": "2026-11-23T14:12:51Z"
+    "leido": "2026-11-23T14:19:15Z"
   },
   "dhn": {
     "generado": "2026-11-22T14:19:51Z",
@@ -21674,7 +21674,7 @@
         }
       ]
     },
-    "leido": "2026-11-23T14:12:53Z"
+    "leido": "2026-11-23T14:19:16Z"
   },
   "inaigem": {
     "estaciones": [
@@ -21712,7 +21712,7 @@
       }
     ],
     "url": "https://www.inaigem.gob.pe/",
-    "leido": "2026-11-23T14:12:54Z"
+    "leido": "2026-11-23T14:19:17Z"
   },
   "enfen_docs": {
     "docs": [
