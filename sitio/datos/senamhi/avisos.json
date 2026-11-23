@@ -2,7 +2,7 @@
   "_": "Generado por pipeline/fuentes/senamhi.py. Avisos oficiales vigentes o por empezar.",
   "fuente": "SENAMHI, avisos meteorológicos",
   "url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico",
-  "leido": "2026-11-23T20:23:54Z",
+  "leido": "2026-11-23T21:23:51Z",
   "avisos": [
     {
       "numero": 477,
@@ -90,6 +90,26 @@
       ]
     },
     {
+      "numero": 484,
+      "situacion": "emitido",
+      "titulo": "INCREMENTO DE TEMPERATURA DIURNA EN LA COSTA Y SIERRA",
+      "emitido": "2026-11-23",
+      "inicio": "2026-11-25",
+      "fin": "2026-11-28",
+      "nivel": "ROJO",
+      "enlace": "https://www.senamhi.gob.pe/?p=aviso-meteorologico-vigente&a=2026&b=29402&c=00&d=SENA",
+      "texto": "El SENAMHI informa que, desde miércoles 25 al sábado 28 de noviembre, continuará el incremento de la temperatura diurna, de moderada a extrema intensidad en la costa y de moderada a fuerte intensidad en la sierra del país. Se prevé escasa nubosidad hacia el mediodía, lo que contribuirá al aumento de los niveles de radiación ultravioleta (UV). Asimismo, se esperan ráfagas de viento con velocidades cercanas a los 40 km/h, principalmente durante las horas de la tarde. No se descarta lluvias dispersas en la costa norte. El miércoles 25 de noviembre se prevén temperaturas máximas entre 26 °C y 37 °C en la costa norte, entre 25 °C y 32 °C en la costa centro y valores entre 24 °C y 32 °C en la costa sur. En la sierra norte, las temperaturas oscilarán entre 22 °C y 32 °C, entre 15 °C y 30 °C en la sierra centro, y registros entre 14 °C y 30 °C en la sierra sur. El jueves 26 de noviembre se prevé",
+      "zonas": [
+        "Costa centro",
+        "Costa norte",
+        "Costa sur",
+        "Sierra centro",
+        "Sierra norte",
+        "Sierra sur"
+      ],
+      "regiones": []
+    },
+    {
       "numero": 478,
       "situacion": "vigente",
       "titulo": "LLOVIZNA EN LA COSTA CENTRO Y SUR (EXTENSIÓN DEL AVISO 473)",
@@ -149,6 +169,24 @@
         "Arequipa",
         "Moquegua",
         "Tacna"
+      ]
+    },
+    {
+      "numero": 483,
+      "situacion": "emitido",
+      "titulo": "INCREMENTO DE VIENTO EN LA COSTA",
+      "emitido": "2026-11-23",
+      "inicio": "2026-11-25",
+      "fin": "2026-11-27",
+      "nivel": "AMARILLO",
+      "enlace": "https://www.senamhi.gob.pe/?p=aviso-meteorologico-vigente&a=2026&b=29401&c=00&d=SENA",
+      "texto": "El SENAMHI informa que, entre el miércoles 25 al viernes 27 de noviembre, se prevé el incremento de la velocidad del viento, de ligera a moderada intensidad, en la costa. Asimismo, durante la noche, madrugada y primeras horas de la mañana, se espera la presencia de niebla, neblina y lloviznas dispersas en sectores cercanos al litoral, especialmente en zonas de la costa central y sur. Además, se esperan ráfagas de viento con velocidades superiores a los 40 km/h. El miércoles 25 de noviembre, se prevén vientos con velocidades próximas a los 32 km/h en la costa de Lima, alrededor de los 34 km/h en la costa de Ica y valores próximos a los 22 km/h para la costa sur. El jueves 26 de noviembre, se prevén vientos con velocidades próximas a los 34 km/h en la costa de Lima, alrededor de los 35 km/h en la costa de Ica y valores próximos a los 22 km/h para la costa sur. El viernes 27 de noviembre, s",
+      "zonas": [
+        "Costa sur"
+      ],
+      "regiones": [
+        "Lima",
+        "Ica"
       ]
     }
   ]
