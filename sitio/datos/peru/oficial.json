@@ -1,6 +1,6 @@
 {
   "_": "Generado por pipeline/fuentes/peru_oficial.py. Datos oficiales tal como se publican.",
-  "actualizado": "2026-11-23T20:24:04Z",
+  "actualizado": "2026-11-23T20:25:39Z",
   "fallas": [
     "coen"
   ],
@@ -431,6 +431,11 @@
   "indeci_rss": {
     "reportes": [
       {
+        "titulo": "REPORTE COMPLEMENTARIO N.º 16327 – 23/11/2026 / COEN – INDECI / 11:30 HORAS (Reporte N.º 1) LLUVIAS INTENSAS EN EL DISTRITO DE SANTA ROSA – CAJAMARCA",
+        "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-o-16327-23-11-2026-coen-indeci-1130-horas-reporte-n-o-1-lluvias-intensas-en-el-distrito-de-santa-rosa-cajamarca/",
+        "fecha": "2026-11-23T20:07"
+      },
+      {
         "titulo": "REPORTE COMPLEMENTARIO N.° 16328 – 23/11/2026 / COEN-INDECI / 12:30 HORAS (Reporte N.° 1) VIENTOS FUERTES EN EL DISTRITO EL ORO – APURÍMAC",
         "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-16328-23-11-2026-coen-indeci-1230-horas-reporte-n-1-vientos-fuertes-en-el-distrito-el-oro-apurimac/",
         "fecha": "2026-11-23T20:06"
@@ -494,15 +499,10 @@
         "titulo": "REPORTE COMPLEMENTARIO N.° 16322 – 23/11/2026 / COEN-INDECI / 07:45 HORAS (Reporte N.° 1) VIENTOS FUERTES EN EL DISTRITO DE COLCABAMBA – APURÍMAC",
         "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-16321-23-11-2026-coen-indeci-0745-horas-reporte-n-1-vientos-fuertes-en-el-distrito-de-colcabamba-apurimac/",
         "fecha": "2026-11-23T13:45"
-      },
-      {
-        "titulo": "REPORTE COMPLEMENTARIO N.° 16321 – 23/11/2026 / COEN – INDECI / 08:00 HORAS (Reporte N.° 2) INUNDACIÓN POR DESBORDE DE RÍO EN EL DISTRITO DE TAMBO GRANDE – PIURA",
-        "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-preliminar-n-1164-22-11-2026-coen-indeci-2202-horas-lluvias-intensas-en-el-distrito-de-tambo-grande-piura/",
-        "fecha": "2026-11-23T13:26"
       }
     ],
     "url": "https://portal.indeci.gob.pe/emergencias/",
-    "leido": "2026-11-23T20:24:09Z"
+    "leido": "2026-11-23T20:25:41Z"
   },
   "escenario": {
     "vigente": true,
@@ -2582,7 +2582,7 @@
       }
     },
     "url": "https://sigrid.cenepred.gob.pe/sigridv3/escenario-aviso",
-    "leido": "2026-11-23T20:24:10Z"
+    "leido": "2026-11-23T20:25:43Z"
   },
   "quebradas": {
     "fecha": "2026-11-23",
@@ -3238,7 +3238,7 @@
     },
     "sin_cruce": 0,
     "url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico",
-    "leido": "2026-11-23T20:24:12Z"
+    "leido": "2026-11-23T20:25:46Z"
   },
   "hidro": {
     "avisos": [
@@ -3316,7 +3316,7 @@
       }
     ],
     "url": "https://www.senamhi.gob.pe/?p=aviso-hidrologico",
-    "leido": "2026-11-23T20:24:13Z"
+    "leido": "2026-11-23T20:25:47Z"
   },
   "ana_rios": {
     "estaciones": [
@@ -17908,7 +17908,7 @@
       }
     },
     "url": "https://visor.geoperu.gob.pe/",
-    "leido": "2026-11-23T20:24:27Z"
+    "leido": "2026-11-23T20:25:48Z"
   },
   "agua": {
     "total": 76,
@@ -18822,7 +18822,7 @@
       }
     },
     "url": "https://www.sunass.gob.pe/",
-    "leido": "2026-11-23T20:24:28Z"
+    "leido": "2026-11-23T20:25:50Z"
   },
   "incendios": {
     "total": 176,
@@ -19549,7 +19549,7 @@
       }
     ],
     "url": "https://geo.serfor.gob.pe/visor/",
-    "leido": "2026-11-23T20:24:29Z"
+    "leido": "2026-11-23T20:25:51Z"
   },
   "phisis": {
     "estaciones": [
@@ -21739,7 +21739,7 @@
       "clasificacion": 99.98
     },
     "url": "http://met.igp.gob.pe/variabclim/",
-    "leido": "2026-11-23T20:24:31Z"
+    "leido": "2026-11-23T20:25:53Z"
   },
   "dhn": {
     "generado": "2026-11-23T14:44:02Z",
@@ -22251,7 +22251,7 @@
         }
       ]
     },
-    "leido": "2026-11-23T20:24:31Z"
+    "leido": "2026-11-23T20:25:54Z"
   },
   "inaigem": {
     "estaciones": [
@@ -22289,7 +22289,7 @@
       }
     ],
     "url": "https://www.inaigem.gob.pe/",
-    "leido": "2026-11-23T20:24:32Z"
+    "leido": "2026-11-23T20:25:54Z"
   },
   "enfen_docs": {
     "docs": [
