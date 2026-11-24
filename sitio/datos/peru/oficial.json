@@ -1,6 +1,6 @@
 {
   "_": "Generado por pipeline/fuentes/peru_oficial.py. Datos oficiales tal como se publican.",
-  "actualizado": "2026-11-24T20:24:30Z",
+  "actualizado": "2026-11-24T20:26:28Z",
   "fallas": [
     "coen"
   ],
@@ -502,7 +502,7 @@
       }
     ],
     "url": "https://portal.indeci.gob.pe/emergencias/",
-    "leido": "2026-11-24T20:24:32Z"
+    "leido": "2026-11-24T20:26:31Z"
   },
   "escenario": {
     "vigente": true,
@@ -1988,7 +1988,7 @@
       }
     },
     "url": "https://sigrid.cenepred.gob.pe/sigridv3/escenario-aviso",
-    "leido": "2026-11-24T20:24:34Z"
+    "leido": "2026-11-24T20:26:34Z"
   },
   "quebradas": {
     "fecha": "2026-11-24",
@@ -2524,7 +2524,7 @@
     },
     "sin_cruce": 0,
     "url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico",
-    "leido": "2026-11-24T20:24:36Z"
+    "leido": "2026-11-24T20:26:36Z"
   },
   "hidro": {
     "avisos": [
@@ -2590,7 +2590,7 @@
       }
     ],
     "url": "https://www.senamhi.gob.pe/?p=aviso-hidrologico",
-    "leido": "2026-11-24T20:24:38Z"
+    "leido": "2026-11-24T20:26:37Z"
   },
   "ana_rios": {
     "estaciones": [
@@ -17139,7 +17139,7 @@
       }
     },
     "url": "https://visor.geoperu.gob.pe/",
-    "leido": "2026-11-24T20:24:55Z"
+    "leido": "2026-11-24T20:26:38Z"
   },
   "agua": {
     "total": 78,
@@ -18061,11 +18061,29 @@
       }
     },
     "url": "https://www.sunass.gob.pe/",
-    "leido": "2026-11-24T20:24:55Z"
+    "leido": "2026-11-24T20:26:39Z"
   },
   "incendios": {
-    "total": 311,
+    "total": 313,
     "lista": [
+      {
+        "fecha": "2026-11-24",
+        "hora": "12:43",
+        "lugar": "Paucartambo, Pasco",
+        "distrito": "190107",
+        "cobertura": "Cobertura Forestal",
+        "lat": -10.75743,
+        "lon": -75.77264
+      },
+      {
+        "fecha": "2026-11-24",
+        "hora": "08:25",
+        "lugar": "Paucartambo, Pasco",
+        "distrito": "190107",
+        "cobertura": "Cobertura Agrícola",
+        "lat": -10.76338,
+        "lon": -75.7737
+      },
       {
         "fecha": "2026-11-24",
         "hora": "01:46",
@@ -18767,28 +18785,10 @@
         "cobertura": "Cobertura Forestal",
         "lat": -13.72032,
         "lon": -71.63164
-      },
-      {
-        "fecha": "2026-11-23",
-        "hora": "13:55",
-        "lugar": "Huaro, Cusco",
-        "distrito": "081207",
-        "cobertura": "Cobertura Forestal",
-        "lat": -13.71562,
-        "lon": -71.65771
-      },
-      {
-        "fecha": "2026-11-23",
-        "hora": "13:55",
-        "lugar": "Huaro, Cusco",
-        "distrito": "081207",
-        "cobertura": "Cobertura Forestal",
-        "lat": -13.71474,
-        "lon": -71.65301
       }
     ],
     "url": "https://geo.serfor.gob.pe/visor/",
-    "leido": "2026-11-24T20:24:57Z"
+    "leido": "2026-11-24T20:26:41Z"
   },
   "phisis": {
     "estaciones": [
@@ -20978,7 +20978,7 @@
       "clasificacion": 99.98
     },
     "url": "http://met.igp.gob.pe/variabclim/",
-    "leido": "2026-11-24T20:25:14Z"
+    "leido": "2026-11-24T20:26:43Z"
   },
   "dhn": {
     "generado": "2026-11-24T14:33:47Z",
@@ -21490,7 +21490,7 @@
         }
       ]
     },
-    "leido": "2026-11-24T20:25:14Z"
+    "leido": "2026-11-24T20:26:44Z"
   },
   "inaigem": {
     "estaciones": [
@@ -21536,7 +21536,7 @@
       }
     ],
     "url": "https://www.inaigem.gob.pe/",
-    "leido": "2026-11-24T20:25:15Z"
+    "leido": "2026-11-24T20:26:44Z"
   },
   "enfen_docs": {
     "docs": [
