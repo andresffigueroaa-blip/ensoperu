@@ -1,8 +1,9 @@
 {
   "_": "Generado por pipeline/fuentes/peru_oficial.py. Datos oficiales tal como se publican.",
-  "actualizado": "2026-11-23T22:26:16Z",
+  "actualizado": "2026-11-24T00:56:22Z",
   "fallas": [
-    "coen"
+    "coen",
+    "agua"
   ],
   "fenomeno": {
     "fecha": "13 de noviembre del 2026",
@@ -431,6 +432,36 @@
   "indeci_rss": {
     "reportes": [
       {
+        "titulo": "BOLETÍN INFORMATIVO DE AVISO METEOROLÓGICO N°484-2026 DEL 23-11-2026",
+        "enlace": "https://portal.indeci.gob.pe/emergencias/boletin-informativo-de-aviso-meteorologico-n484-2026-del-23-11-2026/",
+        "fecha": "2026-11-24T00:35"
+      },
+      {
+        "titulo": "REPORTE COMPLEMENTARIO N.° 16339 – 23/11/2026 / COEN-INDECI / 16:30 HORAS (Reporte N.º 1) VIENTOS FUERTES EN EL DISTRITO DE CONDEBAMBA – CAJAMARCA",
+        "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-16339-23-11-2026-coen-indeci-1630-horas-reporte-n-o-1-vientos-fuertes-en-el-distrito-de-condebamba-cajamarca/",
+        "fecha": "2026-11-24T00:34"
+      },
+      {
+        "titulo": "REPORTE COMPLEMENTARIO N.º 16338 – 23/11/2026 / COEN – INDECI / 16:20 HORAS (Reporte N.° 4) INUNDACIÓN POR SATURACIÓN DEL SUELO PARA DRENAJE (PLUVIAL) EN EL DISTRITO DE VILLA MARÍA DEL TRIUNFO – LIMA",
+        "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-o-15466-4-11-2026-coen-indeci-1330-horas-reporte-n-1-inundacion-por-saturacion-del-suelo-para-drenaje-pluvial-en-el-distrito-de-villa-maria-del-triunfo-l/",
+        "fecha": "2026-11-24T00:18"
+      },
+      {
+        "titulo": "REPORTE COMPLEMENTARIO N.º 16337 – 23/11/2026 / COEN – INDECI / 15:40 HORAS (Reporte N.º 1) LLUVIAS INTENSAS EN EL DISTRITO DE MAGDALENA – CAJAMARCA",
+        "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-o-16337-23-11-2026-coen-indeci-1540-horas-reporte-n-o-1-lluvias-intensas-en-el-distrito-de-magdalena-cajamarca/",
+        "fecha": "2026-11-24T00:16"
+      },
+      {
+        "titulo": "INFORME DE EMERGENCIA N.º 2616 – 23/11/2026 / COEN – INDECI / 13:30 HORAS (Informe N.º 1) LLUVIAS INTENSAS EN EL DISTRITO DE SAN JUAN DE LICUPIS – CAJAMARCA",
+        "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-o-15539-5-11-2026-coen-indeci-1830-horas-reporte-n-o-1-lluvias-intensas-en-el-distrito-de-san-juan-de-licupis-cajamarca/",
+        "fecha": "2026-11-24T00:02"
+      },
+      {
+        "titulo": "REPORTE COMPLEMENTARIO N.º 16335 – 23/11/2026 / COEN – INDECI / 15:10 HORAS (Reporte N° 2) INCENDIO FORESTAL EN EL DISTRITO DE COCHABAMBA – HUANCAVELICA",
+        "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-16294-22-11-2026-coen-indeci-1746-horas-reporte-n-1-incendio-forestal-en-el-distrito-de-cochabamba-huancavelica/",
+        "fecha": "2026-11-23T23:46"
+      },
+      {
         "titulo": "BOLETÍN INFORMATIVO DE AVISO METEOROLÓGICO N°483-2026 DEL 23-11-2026",
         "enlace": "https://portal.indeci.gob.pe/emergencias/boletin-informativo-de-aviso-meteorologico-n483-2026-del-23-11-2026/",
         "fecha": "2026-11-23T21:37"
@@ -469,40 +500,10 @@
         "titulo": "REPORTE COMPLEMENTARIO N.º 16327 – 23/11/2026 / COEN – INDECI / 11:30 HORAS (Reporte N.º 1) LLUVIAS INTENSAS EN EL DISTRITO DE SANTA ROSA – CAJAMARCA",
         "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-o-16327-23-11-2026-coen-indeci-1130-horas-reporte-n-o-1-lluvias-intensas-en-el-distrito-de-santa-rosa-cajamarca/",
         "fecha": "2026-11-23T20:07"
-      },
-      {
-        "titulo": "REPORTE COMPLEMENTARIO N.° 16328 – 23/11/2026 / COEN-INDECI / 12:30 HORAS (Reporte N.° 1) VIENTOS FUERTES EN EL DISTRITO EL ORO – APURÍMAC",
-        "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-16328-23-11-2026-coen-indeci-1230-horas-reporte-n-1-vientos-fuertes-en-el-distrito-el-oro-apurimac/",
-        "fecha": "2026-11-23T20:06"
-      },
-      {
-        "titulo": "REPORTE COMPLEMENTARIO N.º 16329 – 23/11/2026 / COEN – INDECI /12:55 HORAS (Reporte N.º 3) HUAICO EN EL DEPARTAMENTO DE PIURA",
-        "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-o-15971-15-11-2026-coen-indeci-2205-horas-reporte-n-o-1-huaico-en-el-departamento-de-piura/",
-        "fecha": "2026-11-23T20:05"
-      },
-      {
-        "titulo": "REPORTE COMPLEMENTARIO N.º 16334 – 23/11/2026 / COEN – INDECI / 14:40 HORAS (Reporte N° 2) LLUVIAS INTENSAS EN EL DISTRITO DE AYAVIRI – PUNO",
-        "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-preliminar-n-1133-13-112026-coen-indeci-2010-horas-lluvias-intensas-en-el-distrito-de-ayaviri-puno/",
-        "fecha": "2026-11-23T20:04"
-      },
-      {
-        "titulo": "BOLETÍN INFORMATIVO DE AVISO HIDROLÓGICO N°1702-2026 Del 23-11-2026",
-        "enlace": "https://portal.indeci.gob.pe/emergencias/boletin-informativo-de-aviso-hidrologico-n1702-2026-del-23-11-2026/",
-        "fecha": "2026-11-23T19:17"
-      },
-      {
-        "titulo": "BOLETÍN INFORMATIVO DE AVISO DE CORTO PLAZO ANTE POSIBLE ACTIVACIÓN DE QUEBRADAS N228 23-11-2026 (002)",
-        "enlace": "https://portal.indeci.gob.pe/emergencias/boletin-informativo-de-aviso-de-corto-plazo-ante-posible-activacion-de-quebradas-n228-23-11-2026-002/",
-        "fecha": "2026-11-23T18:12"
-      },
-      {
-        "titulo": "BOLETÍN INFORMATIVO DE AVISO DE CORTO PLAZO ANTE LLUVIAS INTENSAS N°326-2026-INDECI-COEN",
-        "enlace": "https://portal.indeci.gob.pe/emergencias/boletin-informativo-de-aviso-de-corto-plazo-ante-lluvias-intensas-n326-2026-indeci-coen/",
-        "fecha": "2026-11-23T18:02"
       }
     ],
     "url": "https://portal.indeci.gob.pe/emergencias/",
-    "leido": "2026-11-23T22:26:17Z"
+    "leido": "2026-11-24T00:56:24Z"
   },
   "escenario": {
     "vigente": true,
@@ -2582,7 +2583,7 @@
       }
     },
     "url": "https://sigrid.cenepred.gob.pe/sigridv3/escenario-aviso",
-    "leido": "2026-11-23T22:26:21Z"
+    "leido": "2026-11-24T00:56:27Z"
   },
   "quebradas": {
     "fecha": "2026-11-23",
@@ -3238,7 +3239,7 @@
     },
     "sin_cruce": 0,
     "url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico",
-    "leido": "2026-11-23T22:26:23Z"
+    "leido": "2026-11-24T00:56:31Z"
   },
   "hidro": {
     "avisos": [
@@ -3316,7 +3317,7 @@
       }
     ],
     "url": "https://www.senamhi.gob.pe/?p=aviso-hidrologico",
-    "leido": "2026-11-23T22:26:24Z"
+    "leido": "2026-11-24T00:56:31Z"
   },
   "ana_rios": {
     "estaciones": [
@@ -17924,7 +17925,7 @@
       }
     },
     "url": "https://visor.geoperu.gob.pe/",
-    "leido": "2026-11-23T22:26:25Z"
+    "leido": "2026-11-24T00:56:33Z"
   },
   "agua": {
     "total": 79,
@@ -18850,11 +18851,84 @@
       }
     },
     "url": "https://www.sunass.gob.pe/",
-    "leido": "2026-11-23T22:26:26Z"
+    "leido": "2026-11-23T22:26:26Z",
+    "atrasado": false
   },
   "incendios": {
-    "total": 201,
+    "total": 226,
     "lista": [
+      {
+        "fecha": "2026-11-23",
+        "hora": "18:00",
+        "lugar": "La Banda De Shilcayo, San Martin",
+        "distrito": "220909",
+        "cobertura": "Cobertura Agrícola",
+        "lat": -6.49893,
+        "lon": -76.29704
+      },
+      {
+        "fecha": "2026-11-23",
+        "hora": "17:10",
+        "lugar": "Campoverde, Ucayali",
+        "distrito": "250102",
+        "cobertura": "Cobertura Agrícola",
+        "lat": -8.32738,
+        "lon": -74.78475
+      },
+      {
+        "fecha": "2026-11-23",
+        "hora": "13:57",
+        "lugar": "Campoverde, Ucayali",
+        "distrito": "250102",
+        "cobertura": "Cobertura Agrícola",
+        "lat": -8.32453,
+        "lon": -74.79639
+      },
+      {
+        "fecha": "2026-11-23",
+        "hora": "13:57",
+        "lugar": "Campoverde, Ucayali",
+        "distrito": "250102",
+        "cobertura": "Cobertura Forestal",
+        "lat": -8.32103,
+        "lon": -74.8008
+      },
+      {
+        "fecha": "2026-11-23",
+        "hora": "13:57",
+        "lugar": "Campoverde, Ucayali",
+        "distrito": "250102",
+        "cobertura": "Cobertura Agrícola",
+        "lat": -8.3204,
+        "lon": -74.79706
+      },
+      {
+        "fecha": "2026-11-23",
+        "hora": "13:57",
+        "lugar": "Campoverde, Ucayali",
+        "distrito": "250102",
+        "cobertura": "Cobertura Agrícola",
+        "lat": -8.31977,
+        "lon": -74.79333
+      },
+      {
+        "fecha": "2026-11-23",
+        "hora": "13:57",
+        "lugar": "Campoverde, Ucayali",
+        "distrito": "250102",
+        "cobertura": "Cobertura Forestal",
+        "lat": -8.31691,
+        "lon": -74.80148
+      },
+      {
+        "fecha": "2026-11-23",
+        "hora": "13:10",
+        "lugar": "Campoverde, Ucayali",
+        "distrito": "250102",
+        "cobertura": "Cobertura Agrícola",
+        "lat": -8.32738,
+        "lon": -74.80271
+      },
       {
         "fecha": "2026-11-23",
         "hora": "13:10",
@@ -19001,6 +19075,60 @@
       },
       {
         "fecha": "2026-11-23",
+        "hora": "12:58",
+        "lugar": "Juli, Puno",
+        "distrito": "210401",
+        "cobertura": "Cobertura Forestal",
+        "lat": -16.29412,
+        "lon": -69.59577
+      },
+      {
+        "fecha": "2026-11-23",
+        "hora": "12:58",
+        "lugar": "Juli, Puno",
+        "distrito": "210401",
+        "cobertura": "Cobertura Agrícola",
+        "lat": -16.29351,
+        "lon": -69.59138
+      },
+      {
+        "fecha": "2026-11-23",
+        "hora": "12:58",
+        "lugar": "Juli, Puno",
+        "distrito": "210401",
+        "cobertura": "Cobertura Agrícola",
+        "lat": -16.29233,
+        "lon": -69.5828
+      },
+      {
+        "fecha": "2026-11-23",
+        "hora": "12:58",
+        "lugar": "Juli, Puno",
+        "distrito": "210401",
+        "cobertura": "Cobertura Forestal",
+        "lat": -16.28979,
+        "lon": -69.59167
+      },
+      {
+        "fecha": "2026-11-23",
+        "hora": "12:58",
+        "lugar": "Juli, Puno",
+        "distrito": "210401",
+        "cobertura": "Cobertura Forestal",
+        "lat": -16.2892,
+        "lon": -69.58733
+      },
+      {
+        "fecha": "2026-11-23",
+        "hora": "12:20",
+        "lugar": "Ilave, Puno",
+        "distrito": "210501",
+        "cobertura": "Cobertura Forestal",
+        "lat": -16.28646,
+        "lon": -69.59249
+      },
+      {
+        "fecha": "2026-11-23",
         "hora": "11:10",
         "lugar": "Celendin, Cajamarca",
         "distrito": "060301",
@@ -19025,6 +19153,15 @@
         "cobertura": "Cobertura Forestal",
         "lat": -16.75358,
         "lon": -69.84401
+      },
+      {
+        "fecha": "2026-11-23",
+        "hora": "10:30",
+        "lugar": "Nuevo Occoro, Huancavelica",
+        "distrito": "090113",
+        "cobertura": "Cobertura Agrícola",
+        "lat": -12.58653,
+        "lon": -75.01694
       },
       {
         "fecha": "2026-11-23",
@@ -19439,145 +19576,10 @@
         "cobertura": "Cobertura Forestal",
         "lat": -16.73816,
         "lon": -69.83253
-      },
-      {
-        "fecha": "2026-11-23",
-        "hora": "00:25",
-        "lugar": "Cayma, Arequipa",
-        "distrito": "040103",
-        "cobertura": "Cobertura Forestal",
-        "lat": -16.25392,
-        "lon": -71.52158
-      },
-      {
-        "fecha": "2026-11-23",
-        "hora": "00:25",
-        "lugar": "Cayma, Arequipa",
-        "distrito": "040103",
-        "cobertura": "Cobertura Forestal",
-        "lat": -16.25493,
-        "lon": -71.5202
-      },
-      {
-        "fecha": "2026-11-23",
-        "hora": "00:25",
-        "lugar": "Cayma, Arequipa",
-        "distrito": "040103",
-        "cobertura": "Cobertura Forestal",
-        "lat": -16.25453,
-        "lon": -71.51842
-      },
-      {
-        "fecha": "2026-11-23",
-        "hora": "00:25",
-        "lugar": "Cayma, Arequipa",
-        "distrito": "040103",
-        "cobertura": "Cobertura Forestal",
-        "lat": -16.25101,
-        "lon": -71.51414
-      },
-      {
-        "fecha": "2026-11-23",
-        "hora": "00:25",
-        "lugar": "Cayma, Arequipa",
-        "distrito": "040103",
-        "cobertura": "Cobertura Forestal",
-        "lat": -16.25055,
-        "lon": -71.51241
-      },
-      {
-        "fecha": "2026-11-23",
-        "hora": "00:25",
-        "lugar": "Cayma, Arequipa",
-        "distrito": "040103",
-        "cobertura": "Cobertura Forestal",
-        "lat": -16.25041,
-        "lon": -71.51711
-      },
-      {
-        "fecha": "2026-11-23",
-        "hora": "00:25",
-        "lugar": "Cayma, Arequipa",
-        "distrito": "040103",
-        "cobertura": "Cobertura Forestal",
-        "lat": -16.24998,
-        "lon": -71.51537
-      },
-      {
-        "fecha": "2026-11-23",
-        "hora": "00:25",
-        "lugar": "Urcos, Cusco",
-        "distrito": "081201",
-        "cobertura": "Cobertura Forestal",
-        "lat": -13.73654,
-        "lon": -71.64534
-      },
-      {
-        "fecha": "2026-11-23",
-        "hora": "00:25",
-        "lugar": "Huaro, Cusco",
-        "distrito": "081207",
-        "cobertura": "Cobertura Forestal",
-        "lat": -13.73598,
-        "lon": -71.64818
-      },
-      {
-        "fecha": "2026-11-23",
-        "hora": "00:25",
-        "lugar": "Urcos, Cusco",
-        "distrito": "081201",
-        "cobertura": "Cobertura Forestal",
-        "lat": -13.73145,
-        "lon": -71.6443
-      },
-      {
-        "fecha": "2026-11-23",
-        "hora": "00:25",
-        "lugar": "Urcos, Cusco",
-        "distrito": "081201",
-        "cobertura": "Cobertura Forestal",
-        "lat": -13.73124,
-        "lon": -71.64468
-      },
-      {
-        "fecha": "2026-11-23",
-        "hora": "00:25",
-        "lugar": "Urcos, Cusco",
-        "distrito": "081201",
-        "cobertura": "Cobertura Forestal",
-        "lat": -13.73097,
-        "lon": -71.64676
-      },
-      {
-        "fecha": "2026-11-23",
-        "hora": "00:25",
-        "lugar": "Urcos, Cusco",
-        "distrito": "081201",
-        "cobertura": "Cobertura Forestal",
-        "lat": -13.72608,
-        "lon": -71.644
-      },
-      {
-        "fecha": "2026-11-23",
-        "hora": "00:25",
-        "lugar": "Huaro, Cusco",
-        "distrito": "081207",
-        "cobertura": "Cobertura Forestal",
-        "lat": -13.72583,
-        "lon": -71.64455
-      },
-      {
-        "fecha": "2026-11-23",
-        "hora": "00:25",
-        "lugar": "Huaro, Cusco",
-        "distrito": "081207",
-        "cobertura": "Cobertura Forestal",
-        "lat": -13.72557,
-        "lon": -71.64661
       }
     ],
     "url": "https://geo.serfor.gob.pe/visor/",
-    "leido": "2026-11-23T22:26:28Z"
+    "leido": "2026-11-24T00:58:05Z"
   },
   "phisis": {
     "estaciones": [
@@ -21769,7 +21771,7 @@
       "clasificacion": 99.98
     },
     "url": "http://met.igp.gob.pe/variabclim/",
-    "leido": "2026-11-23T22:26:29Z"
+    "leido": "2026-11-24T00:58:07Z"
   },
   "dhn": {
     "generado": "2026-11-23T14:44:02Z",
@@ -22281,7 +22283,7 @@
         }
       ]
     },
-    "leido": "2026-11-23T22:26:30Z"
+    "leido": "2026-11-24T00:58:08Z"
   },
   "inaigem": {
     "estaciones": [
@@ -22319,7 +22321,7 @@
       }
     ],
     "url": "https://www.inaigem.gob.pe/",
-    "leido": "2026-11-23T22:26:31Z"
+    "leido": "2026-11-24T00:58:08Z"
   },
   "enfen_docs": {
     "docs": [
