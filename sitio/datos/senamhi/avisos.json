@@ -2,29 +2,8 @@
   "_": "Generado por pipeline/fuentes/senamhi.py. Avisos oficiales vigentes o por empezar.",
   "fuente": "SENAMHI, avisos meteorológicos",
   "url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico",
-  "leido": "2026-11-23T22:24:08Z",
+  "leido": "2026-11-24T14:24:55Z",
   "avisos": [
-    {
-      "numero": 477,
-      "situacion": "vigente",
-      "titulo": "PRECIPITACIONES EN LA COSTA NORTE Y SIERRA",
-      "emitido": "2026-11-19",
-      "inicio": "2026-11-21",
-      "fin": "2026-11-23",
-      "nivel": "ROJO",
-      "enlace": "https://www.senamhi.gob.pe/?p=aviso-meteorologico-vigente&a=2026&b=29377&c=00&d=SENA",
-      "texto": "El SENAMHI informa que, desde el sábado 21 al lunes 23 de noviembre, continuarán las precipitaciones de moderada a extrema intensidad en la sierra, acompañadas de descargas eléctricas y ráfagas de viento con velocidades cercanas a los 45 km/h. Asimismo, se prevé la ocurrencia de granizo en zonas por encima de los 2800 m s. n. m. y nevadas sobre los 3900 m s. n. m. en la sierra centro y sur. En la costa norte, se esperan lluvias de moderada a extrema intensidad, principalmente en Tumbes y en sectores de la costa interior de Piura, y se espera de menor intensidad en el resto de la costa norte. No se descarta la ocurrencia de lluvia ligera dispersa en la costa central. El sábado 21 de noviembre, se prevén acumulados de lluvia entre 5 y 65 mm/día en la costa norte, entre 5 y 45 mm/día en la sierra norte, entre 5 y 20 mm/día en la sierra centro y valores cercanos a 15 mm/día en la sierra sur.",
-      "zonas": [
-        "Costa norte",
-        "Sierra centro",
-        "Sierra norte",
-        "Sierra sur"
-      ],
-      "regiones": [
-        "Tumbes",
-        "Piura"
-      ]
-    },
     {
       "numero": 476,
       "situacion": "vigente",
@@ -68,7 +47,7 @@
     },
     {
       "numero": 481,
-      "situacion": "emitido",
+      "situacion": "vigente",
       "titulo": "PRECIPITACIONES EN LA COSTA NORTE Y SIERRA (EXTENSIÓN DEL AVISO 477)",
       "emitido": "2026-11-22",
       "inicio": "2026-11-24",
@@ -110,27 +89,6 @@
       "regiones": []
     },
     {
-      "numero": 478,
-      "situacion": "vigente",
-      "titulo": "LLOVIZNA EN LA COSTA CENTRO Y SUR (EXTENSIÓN DEL AVISO 473)",
-      "emitido": "2026-11-19",
-      "inicio": "2026-11-21",
-      "fin": "2026-11-23",
-      "nivel": "AMARILLO",
-      "enlace": "https://www.senamhi.gob.pe/?p=aviso-meteorologico-vigente&a=2026&b=29378&c=00&d=SENA",
-      "texto": "El SENAMHI informa que, desde el sábado 21 hasta el lunes 23 de noviembre, se prevé la persistencia de lloviznas de ligera a moderada intensidad en la costa central y sur, acompañada de un incremento de la velocidad del viento. Asimismo, se espera la presencia de cobertura nubosa, niebla y neblina en sectores cercanos al litoral, principalmente durante la noche, la madrugada y las primeras horas de la mañana. El sábado 21 de noviembre, en la costa central, se prevén acumulados de llovizna entre 0.5 y 0.8 mm/día incluida la costa de Lima. En la costa sur, se esperan acumulados entre 0.5 y 2 mm/día en Arequipa, y valores entre 0.5 y 2.5 mm/día en Moquegua y Tacna. El domingo 22 de noviembre, en la costa central se prevén acumulados de llovizna entre 0.5 y 0.8 mm/día incluida la costa de Lima. En la costa sur, se esperan acumulados entre 0.5 y 2 mm/día en Arequipa, y valores entre 0.5 y 2.5",
-      "zonas": [
-        "Costa centro",
-        "Costa sur"
-      ],
-      "regiones": [
-        "Lima",
-        "Arequipa",
-        "Moquegua",
-        "Tacna"
-      ]
-    },
-    {
       "numero": 479,
       "situacion": "vigente",
       "titulo": "INCREMENTO DE VIENTO EN LA COSTA CENTRO Y SUR (EXTENSIÓN DEL AVISO 475)",
@@ -152,7 +110,7 @@
     },
     {
       "numero": 482,
-      "situacion": "emitido",
+      "situacion": "vigente",
       "titulo": "LLOVIZNA EN LA COSTA CENTRO Y SUR",
       "emitido": "2026-11-22",
       "inicio": "2026-11-24",
