@@ -1,6 +1,6 @@
 {
   "_": "Generado por pipeline/fuentes/peru_oficial.py. Datos oficiales tal como se publican.",
-  "actualizado": "2026-11-24T17:24:22Z",
+  "actualizado": "2026-11-24T17:27:25Z",
   "fallas": [
     "coen"
   ],
@@ -502,7 +502,7 @@
       }
     ],
     "url": "https://portal.indeci.gob.pe/emergencias/",
-    "leido": "2026-11-24T17:24:24Z"
+    "leido": "2026-11-24T17:27:26Z"
   },
   "escenario": {
     "vigente": true,
@@ -1988,7 +1988,7 @@
       }
     },
     "url": "https://sigrid.cenepred.gob.pe/sigridv3/escenario-aviso",
-    "leido": "2026-11-24T17:24:26Z"
+    "leido": "2026-11-24T17:27:30Z"
   },
   "quebradas": {
     "fecha": "2026-11-24",
@@ -2524,22 +2524,10 @@
     },
     "sin_cruce": 0,
     "url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico",
-    "leido": "2026-11-24T17:24:30Z"
+    "leido": "2026-11-24T17:27:33Z"
   },
   "hidro": {
     "avisos": [
-      {
-        "estacion": "Bellavista",
-        "titulo": "Descenso del nivel del río napo - estación bellavista",
-        "nivel": "ROJO",
-        "fecha": "23-NOV-26",
-        "cuenca": "Cuenca Napo",
-        "lugar": "Mazan, Loreto",
-        "lat": -3.482,
-        "lon": -73.073,
-        "recomendacion": "Se recomienda ser extremadamente precavido ante la ocurrencia de estas condiciones en el río y cumplir las instrucciones proporcionadas por las autoridades competentes.",
-        "numero": 1707
-      },
       {
         "estacion": "Borja",
         "titulo": "Descenso del nivel del río marañón - estación borja",
@@ -2587,10 +2575,22 @@
         "lon": -73.6961,
         "recomendacion": "Se recomienda ser extremadamente precavido ante la ocurrencia de estas condiciones en el río y cumplir las instrucciones proporcionadas por las autoridades competentes.",
         "numero": 1705
+      },
+      {
+        "estacion": "Bellavista",
+        "titulo": "Descenso del nivel del río napo - estación bellavista",
+        "nivel": "ROJO",
+        "fecha": "23-NOV-26",
+        "cuenca": "Cuenca Napo",
+        "lugar": "Mazan, Loreto",
+        "lat": -3.482,
+        "lon": -73.073,
+        "recomendacion": "Se recomienda ser extremadamente precavido ante la ocurrencia de estas condiciones en el río y cumplir las instrucciones proporcionadas por las autoridades competentes.",
+        "numero": 1707
       }
     ],
     "url": "https://www.senamhi.gob.pe/?p=aviso-hidrologico",
-    "leido": "2026-11-24T17:24:31Z"
+    "leido": "2026-11-24T17:27:34Z"
   },
   "ana_rios": {
     "estaciones": [
@@ -17139,7 +17139,7 @@
       }
     },
     "url": "https://visor.geoperu.gob.pe/",
-    "leido": "2026-11-24T17:24:46Z"
+    "leido": "2026-11-24T17:27:35Z"
   },
   "agua": {
     "total": 77,
@@ -18057,7 +18057,7 @@
       }
     },
     "url": "https://www.sunass.gob.pe/",
-    "leido": "2026-11-24T17:24:46Z"
+    "leido": "2026-11-24T17:27:36Z"
   },
   "incendios": {
     "total": 311,
@@ -18784,7 +18784,7 @@
       }
     ],
     "url": "https://geo.serfor.gob.pe/visor/",
-    "leido": "2026-11-24T17:24:48Z"
+    "leido": "2026-11-24T17:27:38Z"
   },
   "phisis": {
     "estaciones": [
@@ -20974,7 +20974,7 @@
       "clasificacion": 99.98
     },
     "url": "http://met.igp.gob.pe/variabclim/",
-    "leido": "2026-11-24T17:24:54Z"
+    "leido": "2026-11-24T17:27:40Z"
   },
   "dhn": {
     "generado": "2026-11-24T14:33:47Z",
@@ -21486,7 +21486,7 @@
         }
       ]
     },
-    "leido": "2026-11-24T17:24:55Z"
+    "leido": "2026-11-24T17:27:41Z"
   },
   "inaigem": {
     "estaciones": [
@@ -21524,7 +21524,7 @@
       }
     ],
     "url": "https://www.inaigem.gob.pe/",
-    "leido": "2026-11-24T17:24:55Z"
+    "leido": "2026-11-24T17:27:41Z"
   },
   "enfen_docs": {
     "docs": [
