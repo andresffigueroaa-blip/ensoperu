@@ -1,6 +1,6 @@
 {
   "_": "Generado por pipeline/fuentes/peru_oficial.py. Datos oficiales tal como se publican.",
-  "actualizado": "2026-11-25T14:10:17Z",
+  "actualizado": "2026-11-25T14:14:07Z",
   "fallas": [
     "coen"
   ],
@@ -502,7 +502,7 @@
       }
     ],
     "url": "https://portal.indeci.gob.pe/emergencias/",
-    "leido": "2026-11-25T14:10:19Z"
+    "leido": "2026-11-25T14:14:09Z"
   },
   "escenario": {
     "vigente": true,
@@ -1988,7 +1988,7 @@
       }
     },
     "url": "https://sigrid.cenepred.gob.pe/sigridv3/escenario-aviso",
-    "leido": "2026-11-25T14:10:20Z"
+    "leido": "2026-11-25T14:14:13Z"
   },
   "quebradas": {
     "fecha": "2026-11-24",
@@ -2524,7 +2524,7 @@
     },
     "sin_cruce": 0,
     "url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico",
-    "leido": "2026-11-25T14:10:22Z"
+    "leido": "2026-11-25T14:14:15Z"
   },
   "hidro": {
     "avisos": [
@@ -2590,7 +2590,7 @@
       }
     ],
     "url": "https://www.senamhi.gob.pe/?p=aviso-hidrologico",
-    "leido": "2026-11-25T14:10:22Z"
+    "leido": "2026-11-25T14:14:16Z"
   },
   "ana_rios": {
     "estaciones": [
@@ -16947,11 +16947,11 @@
       }
     },
     "url": "https://visor.geoperu.gob.pe/",
-    "leido": "2026-11-25T14:10:31Z"
+    "leido": "2026-11-25T14:14:17Z"
   },
   "agua": {
     "total": 72,
-    "conexiones": 360683,
+    "conexiones": 358947,
     "cortes": [
       {
         "eps": "EPS SEDAJULIACA S.A.",
@@ -17254,16 +17254,6 @@
         "distrito": "040103"
       },
       {
-        "eps": "EPS CHAVIN S.A.",
-        "lugar": "Independencia, Ancash",
-        "conexiones": 2837,
-        "tipo": "Programada",
-        "motivo": "Limpieza y desinfección de reservorio/cisterna",
-        "inicio": "2026-11-30",
-        "restablece": "2026-12-01",
-        "distrito": "020105"
-      },
-      {
         "eps": "SEDAPAL",
         "lugar": "Villa Maria Del Triunfo, Lima",
         "conexiones": 2827,
@@ -17444,6 +17434,16 @@
         "distrito": "070105"
       },
       {
+        "eps": "EPS CHAVIN S.A.",
+        "lugar": "Huaraz, Ancash",
+        "conexiones": 1052,
+        "tipo": "Programada",
+        "motivo": "Limpieza y desinfección de reservorio/cisterna",
+        "inicio": "2026-11-30",
+        "restablece": "2026-12-01",
+        "distrito": "020101"
+      },
+      {
         "eps": "SEDAPAL",
         "lugar": "Santa Rosa, Lima",
         "conexiones": 878,
@@ -17484,6 +17484,16 @@
         "distrito": "040101"
       },
       {
+        "eps": "EPS CHAVIN S.A.",
+        "lugar": "Independencia, Ancash",
+        "conexiones": 701,
+        "tipo": "Programada",
+        "motivo": "Limpieza y desinfección de reservorio/cisterna",
+        "inicio": "2026-11-30",
+        "restablece": "2026-12-01",
+        "distrito": "020105"
+      },
+      {
         "eps": "EPS SEMAPACH S.A",
         "lugar": "Chincha Alta, Ica",
         "conexiones": 652,
@@ -17492,16 +17502,6 @@
         "inicio": "2026-11-25",
         "restablece": "2026-11-26",
         "distrito": "110201"
-      },
-      {
-        "eps": "EPS CHAVIN S.A.",
-        "lugar": "Huaraz, Ancash",
-        "conexiones": 652,
-        "tipo": "Programada",
-        "motivo": "Otros",
-        "inicio": "2026-11-26",
-        "restablece": "2026-11-26",
-        "distrito": "020101"
       },
       {
         "eps": "EMAPA SAN MARTÍN S.A.",
@@ -17675,10 +17675,6 @@
         "cortes": 1,
         "conexiones": 3158
       },
-      "020105": {
-        "cortes": 1,
-        "conexiones": 2837
-      },
       "150143": {
         "cortes": 1,
         "conexiones": 2827
@@ -17751,6 +17747,10 @@
         "cortes": 1,
         "conexiones": 1189
       },
+      "020101": {
+        "cortes": 1,
+        "conexiones": 1052
+      },
       "150139": {
         "cortes": 1,
         "conexiones": 878
@@ -17767,11 +17767,11 @@
         "cortes": 1,
         "conexiones": 717
       },
-      "110201": {
+      "020105": {
         "cortes": 1,
-        "conexiones": 652
+        "conexiones": 701
       },
-      "020101": {
+      "110201": {
         "cortes": 1,
         "conexiones": 652
       },
@@ -17841,7 +17841,7 @@
       }
     },
     "url": "https://www.sunass.gob.pe/",
-    "leido": "2026-11-25T14:10:32Z"
+    "leido": "2026-11-25T14:14:19Z"
   },
   "incendios": {
     "total": 308,
@@ -18568,7 +18568,7 @@
       }
     ],
     "url": "https://geo.serfor.gob.pe/visor/",
-    "leido": "2026-11-25T14:10:34Z"
+    "leido": "2026-11-25T14:14:20Z"
   },
   "phisis": {
     "estaciones": [
@@ -20758,7 +20758,7 @@
       "clasificacion": 99.98
     },
     "url": "http://met.igp.gob.pe/variabclim/",
-    "leido": "2026-11-25T14:10:44Z"
+    "leido": "2026-11-25T14:14:22Z"
   },
   "dhn": {
     "generado": "2026-11-25T14:07:52Z",
@@ -21270,7 +21270,7 @@
         }
       ]
     },
-    "leido": "2026-11-25T14:10:45Z"
+    "leido": "2026-11-25T14:14:23Z"
   },
   "inaigem": {
     "estaciones": [
@@ -21308,7 +21308,7 @@
       }
     ],
     "url": "https://www.inaigem.gob.pe/",
-    "leido": "2026-11-25T14:10:45Z"
+    "leido": "2026-11-25T14:14:24Z"
   },
   "enfen_docs": {
     "docs": [
