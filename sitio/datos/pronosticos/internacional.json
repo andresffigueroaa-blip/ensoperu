@@ -1,6 +1,6 @@
 {
   "_": "Generado por pipeline/fuentes/internacional.py. Cada bloque con su centro, fecha y enlace.",
-  "actualizado": "2026-11-24T17:27:42Z",
+  "actualizado": "2026-11-25T04:22:15Z",
   "fallas": [],
   "cpc": {
     "emitido": "2026-11-12",
@@ -808,22 +808,46 @@
           {
             "tipo": "WET",
             "ciudades": [
+              "Ayacucho",
               "Cajamarca",
               "Chiclayo",
+              "Huancayo",
+              "Huaraz",
+              "Ica",
+              "Lima",
               "Piura",
+              "Pucallpa",
+              "Tarapoto",
+              "Trujillo",
               "Tumbes"
             ]
           }
         ],
-        "emitido": "2026-11-17",
-        "desde": "2026-11-25",
-        "hasta": "2026-12-01"
-      },
-      "W3": {
-        "zonas": [],
-        "emitido": "2026-11-17",
+        "emitido": "2026-11-24",
         "desde": "2026-12-02",
         "hasta": "2026-12-08"
+      },
+      "W3": {
+        "zonas": [
+          {
+            "tipo": "WET",
+            "ciudades": [
+              "Cajamarca",
+              "Chiclayo",
+              "Huancayo",
+              "Huaraz",
+              "Lima",
+              "Piura",
+              "Pucallpa",
+              "Tarapoto",
+              "Trujillo",
+              "Tumbes"
+            ]
+          }
+        ],
+        "emitido": "2026-11-24",
+        "desde": "2026-12-09",
+        "hasta": "2026-12-15"
       }
     }
   },
@@ -912,9 +936,9 @@
       "titulo": "Zonas de riesgo tropical, semanas 2 y 3",
       "fuente": "NOAA CPC",
       "origen": "https://www.cpc.ncep.noaa.gov/products/precip/CWlink/ghaz/gth_full.png",
-      "huella": "42d6312943e2",
+      "huella": "b303f1b96408",
       "archivo": "gth.png",
-      "fecha": "2026-11-17"
+      "fecha": "2026-11-24"
     },
     {
       "id": "chirps10",
