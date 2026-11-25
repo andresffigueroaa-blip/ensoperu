@@ -1,6 +1,6 @@
 {
   "_": "Generado por pipeline/fuentes/peru_oficial.py. Datos oficiales tal como se publican.",
-  "actualizado": "2026-11-25T15:26:15Z",
+  "actualizado": "2026-11-25T15:39:41Z",
   "fallas": [
     "coen"
   ],
@@ -502,7 +502,7 @@
       }
     ],
     "url": "https://portal.indeci.gob.pe/emergencias/",
-    "leido": "2026-11-25T15:26:17Z"
+    "leido": "2026-11-25T15:39:42Z"
   },
   "escenario": {
     "vigente": true,
@@ -1988,7 +1988,7 @@
       }
     },
     "url": "https://sigrid.cenepred.gob.pe/sigridv3/escenario-aviso",
-    "leido": "2026-11-25T15:26:20Z"
+    "leido": "2026-11-25T15:39:45Z"
   },
   "quebradas": {
     "fecha": "2026-11-24",
@@ -2524,7 +2524,7 @@
     },
     "sin_cruce": 0,
     "url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico",
-    "leido": "2026-11-25T15:26:22Z"
+    "leido": "2026-11-25T15:39:47Z"
   },
   "hidro": {
     "avisos": [
@@ -2590,7 +2590,7 @@
       }
     ],
     "url": "https://www.senamhi.gob.pe/?p=aviso-hidrologico",
-    "leido": "2026-11-25T15:26:23Z"
+    "leido": "2026-11-25T15:39:48Z"
   },
   "ana_rios": {
     "estaciones": [
@@ -17075,7 +17075,7 @@
       }
     },
     "url": "https://visor.geoperu.gob.pe/",
-    "leido": "2026-11-25T15:26:24Z"
+    "leido": "2026-11-25T15:39:49Z"
   },
   "agua": {
     "total": 73,
@@ -17973,10 +17973,10 @@
       }
     },
     "url": "https://www.sunass.gob.pe/",
-    "leido": "2026-11-25T15:26:26Z"
+    "leido": "2026-11-25T15:39:50Z"
   },
   "incendios": {
-    "total": 314,
+    "total": 315,
     "lista": [
       {
         "fecha": "2026-11-24",
@@ -17986,6 +17986,15 @@
         "cobertura": "Cobertura Forestal",
         "lat": -6.405,
         "lon": -76.40485
+      },
+      {
+        "fecha": "2026-11-24",
+        "hora": "19:45",
+        "lugar": "Morales, San Martin",
+        "distrito": "220910",
+        "cobertura": "Cobertura Agrícola",
+        "lat": -6.46189,
+        "lon": -76.37949
       },
       {
         "fecha": "2026-11-24",
@@ -18688,19 +18697,10 @@
         "cobertura": "Cobertura Agrícola",
         "lat": -8.32453,
         "lon": -74.79639
-      },
-      {
-        "fecha": "2026-11-23",
-        "hora": "13:57",
-        "lugar": "Campoverde, Ucayali",
-        "distrito": "250102",
-        "cobertura": "Cobertura Forestal",
-        "lat": -8.32103,
-        "lon": -74.8008
       }
     ],
     "url": "https://geo.serfor.gob.pe/visor/",
-    "leido": "2026-11-25T15:26:28Z"
+    "leido": "2026-11-25T15:39:52Z"
   },
   "phisis": {
     "estaciones": [
@@ -20890,7 +20890,7 @@
       "clasificacion": 99.98
     },
     "url": "http://met.igp.gob.pe/variabclim/",
-    "leido": "2026-11-25T15:26:31Z"
+    "leido": "2026-11-25T15:39:53Z"
   },
   "dhn": {
     "generado": "2026-11-25T14:07:52Z",
@@ -21402,7 +21402,7 @@
         }
       ]
     },
-    "leido": "2026-11-25T15:26:32Z"
+    "leido": "2026-11-25T15:39:54Z"
   },
   "inaigem": {
     "estaciones": [
@@ -21440,7 +21440,7 @@
       }
     ],
     "url": "https://www.inaigem.gob.pe/",
-    "leido": "2026-11-25T15:26:32Z"
+    "leido": "2026-11-25T15:39:55Z"
   },
   "enfen_docs": {
     "docs": [
