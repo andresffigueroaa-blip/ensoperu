@@ -1,6 +1,6 @@
 {
   "_": "Generado por pipeline/fuentes/internacional.py. Cada bloque con su centro, fecha y enlace.",
-  "actualizado": "2026-11-25T14:14:24Z",
+  "actualizado": "2026-11-25T20:26:14Z",
   "fallas": [],
   "cpc": {
     "emitido": "2026-11-12",
@@ -519,18 +519,12 @@
   },
   "mjo": {
     "ultimo": {
-      "fecha": "2026-11-20",
-      "pc1": -0.547,
-      "pc2": 0.588,
-      "amplitud": 0.8
+      "fecha": "2026-11-21",
+      "pc1": -1.072,
+      "pc2": 0.21,
+      "amplitud": 1.09
     },
     "serie": [
-      {
-        "fecha": "2026-10-07",
-        "pc1": 0.802,
-        "pc2": -0.577,
-        "amplitud": 0.99
-      },
       {
         "fecha": "2026-10-08",
         "pc1": 0.838,
@@ -773,30 +767,36 @@
       },
       {
         "fecha": "2026-11-17",
-        "pc1": 0.216,
-        "pc2": 0.96,
-        "amplitud": 0.98
+        "pc1": 0.04,
+        "pc2": 0.896,
+        "amplitud": 0.9
       },
       {
         "fecha": "2026-11-18",
-        "pc1": 0.113,
-        "pc2": 0.877,
-        "amplitud": 0.88
+        "pc1": -0.072,
+        "pc2": 0.813,
+        "amplitud": 0.82
       },
       {
         "fecha": "2026-11-19",
-        "pc1": -0.169,
-        "pc2": 0.788,
-        "amplitud": 0.81
+        "pc1": -0.342,
+        "pc2": 0.712,
+        "amplitud": 0.79
       },
       {
         "fecha": "2026-11-20",
-        "pc1": -0.547,
-        "pc2": 0.588,
-        "amplitud": 0.8
+        "pc1": -0.689,
+        "pc2": 0.5,
+        "amplitud": 0.85
+      },
+      {
+        "fecha": "2026-11-21",
+        "pc1": -1.072,
+        "pc2": 0.21,
+        "amplitud": 1.09
       }
     ],
-    "activa": false,
+    "activa": true,
     "fuente": "NOAA PSL, índice ROMI",
     "url": "https://www.cpc.ncep.noaa.gov/products/precip/CWlink/MJO/mjo.shtml"
   },

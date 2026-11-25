@@ -1,6 +1,6 @@
 {
   "_": "Generado por pipeline/fuentes/peru_oficial.py. Datos oficiales tal como se publican.",
-  "actualizado": "2026-11-25T20:24:13Z",
+  "actualizado": "2026-11-25T20:25:57Z",
   "fallas": [
     "coen"
   ],
@@ -431,6 +431,11 @@
   "indeci_rss": {
     "reportes": [
       {
+        "titulo": "REPORTE COMPLEMENTARIO N.º 16449 – 25/11/2026 / COEN – INDECI / 14:20 HORAS (Reporte N.º 17) SISMO DE MAGNITUD 6.7 CON EPICENTRO EN EL DISTRITO DE JUNÍN – JUNÍN",
+        "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-preliminar-n-o-1159-20-11-2026-coen-indeci-1940-horas-sismo-de-magnitud-6-7-con-epicentro-en-el-junin-junin/",
+        "fecha": "2026-11-25T20:24"
+      },
+      {
         "titulo": "REPORTE COMPLEMENTARIO N.° 16448 – 25/11/2026 / COEN – INDECI / 13:35 HORAS (Reporte N.° 1) INCENDIO FORESTAL EN EL DISTRITO DE SIVIA – AYACUCHO",
         "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-16448-25-11-2026-coen-indeci-1335-horas-reporte-n-1-incendio-forestal-en-el-distrito-de-sivia-ayacucho/",
         "fecha": "2026-11-25T20:21"
@@ -494,15 +499,10 @@
         "titulo": "REPORTE COMPLEMENTARIO N.º 16642 – 25/11/2026 / COEN – INDECI / 08:00 HORAS (Reporte N.° 2) INCENDIO FORESTAL EN EL DISTRITO DE HUARO – CUSCO",
         "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-o-16336-23-11-2026-coen-indeci-1510-horas-reporte-n-1-incendio-forestal-en-el-distrito-de-huaro-cusco/",
         "fecha": "2026-11-25T13:08"
-      },
-      {
-        "titulo": "REPORTE COMPLEMENTARIO N.º 16441 – 25/11/2026 / COEN – INDECI / 07:40 HORAS (Reporte N.º 1) INCENDIO FORESTAL EN EL DISTRITO DE COPORAQUE – CUSCO",
-        "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-o-16441-25-11-2026-coen-indeci-0740-horas-reporte-n-o-1-incendio-forestal-en-el-distrito-de-coporaque-cusco/",
-        "fecha": "2026-11-25T13:04"
       }
     ],
     "url": "https://portal.indeci.gob.pe/emergencias/",
-    "leido": "2026-11-25T20:24:15Z"
+    "leido": "2026-11-25T20:25:59Z"
   },
   "escenario": {
     "vigente": true,
@@ -1988,7 +1988,7 @@
       }
     },
     "url": "https://sigrid.cenepred.gob.pe/sigridv3/escenario-aviso",
-    "leido": "2026-11-25T20:24:16Z"
+    "leido": "2026-11-25T20:26:03Z"
   },
   "quebradas": {
     "fecha": "2026-11-25",
@@ -2272,7 +2272,7 @@
     },
     "sin_cruce": 0,
     "url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico",
-    "leido": "2026-11-25T20:24:17Z"
+    "leido": "2026-11-25T20:26:05Z"
   },
   "hidro": {
     "avisos": [
@@ -2350,7 +2350,7 @@
       }
     ],
     "url": "https://www.senamhi.gob.pe/?p=aviso-hidrologico",
-    "leido": "2026-11-25T20:24:18Z"
+    "leido": "2026-11-25T20:26:06Z"
   },
   "ana_rios": {
     "estaciones": [
@@ -16931,7 +16931,7 @@
       }
     },
     "url": "https://visor.geoperu.gob.pe/",
-    "leido": "2026-11-25T20:24:27Z"
+    "leido": "2026-11-25T20:26:07Z"
   },
   "agua": {
     "total": 79,
@@ -17853,7 +17853,7 @@
       }
     },
     "url": "https://www.sunass.gob.pe/",
-    "leido": "2026-11-25T20:24:27Z"
+    "leido": "2026-11-25T20:26:08Z"
   },
   "incendios": {
     "total": 185,
@@ -18580,7 +18580,7 @@
       }
     ],
     "url": "https://geo.serfor.gob.pe/visor/",
-    "leido": "2026-11-25T20:24:28Z"
+    "leido": "2026-11-25T20:26:10Z"
   },
   "phisis": {
     "estaciones": [
@@ -20770,7 +20770,7 @@
       "clasificacion": 99.98
     },
     "url": "http://met.igp.gob.pe/variabclim/",
-    "leido": "2026-11-25T20:24:31Z"
+    "leido": "2026-11-25T20:26:13Z"
   },
   "dhn": {
     "generado": "2026-11-25T14:07:52Z",
@@ -21282,7 +21282,7 @@
         }
       ]
     },
-    "leido": "2026-11-25T20:24:31Z"
+    "leido": "2026-11-25T20:26:14Z"
   },
   "inaigem": {
     "estaciones": [
@@ -21320,7 +21320,7 @@
       }
     ],
     "url": "https://www.inaigem.gob.pe/",
-    "leido": "2026-11-25T20:24:32Z"
+    "leido": "2026-11-25T20:26:14Z"
   },
   "enfen_docs": {
     "docs": [
