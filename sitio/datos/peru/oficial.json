@@ -1,6 +1,6 @@
 {
   "_": "Generado por pipeline/fuentes/peru_oficial.py. Datos oficiales tal como se publican.",
-  "actualizado": "2026-11-25T14:15:57Z",
+  "actualizado": "2026-11-25T14:24:23Z",
   "fallas": [
     "coen"
   ],
@@ -10,7 +10,7 @@
     "color": "#ff0031",
     "titular": "EL NIÑO COSTERO CONTINUARÍA HASTA INICIOS DE INVIERNO DEL 2027",
     "url": "https://www.senamhi.gob.pe/?p=fenomeno-el-nino",
-    "leido": "2026-11-25T14:14:14Z"
+    "leido": "2026-11-25T14:24:23Z"
   },
   "coen": {
     "dias": 7,
@@ -502,7 +502,7 @@
       }
     ],
     "url": "https://portal.indeci.gob.pe/emergencias/",
-    "leido": "2026-11-25T14:15:58Z"
+    "leido": "2026-11-25T14:24:24Z"
   },
   "escenario": {
     "vigente": true,
@@ -1988,7 +1988,7 @@
       }
     },
     "url": "https://sigrid.cenepred.gob.pe/sigridv3/escenario-aviso",
-    "leido": "2026-11-25T14:16:01Z"
+    "leido": "2026-11-25T14:24:26Z"
   },
   "quebradas": {
     "fecha": "2026-11-24",
@@ -2524,7 +2524,7 @@
     },
     "sin_cruce": 0,
     "url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico",
-    "leido": "2026-11-25T14:16:03Z"
+    "leido": "2026-11-25T14:24:27Z"
   },
   "hidro": {
     "avisos": [
@@ -2590,7 +2590,7 @@
       }
     ],
     "url": "https://www.senamhi.gob.pe/?p=aviso-hidrologico",
-    "leido": "2026-11-25T14:16:04Z"
+    "leido": "2026-11-25T14:24:28Z"
   },
   "ana_rios": {
     "estaciones": [
@@ -2694,12 +2694,12 @@
         "rio": "Chira",
         "estacion": "Pte. Simón Rodríguez",
         "lugar": "Amotape, Piura",
-        "valor": 398.93,
+        "valor": 403.29,
         "unidad": "m³/s",
         "alerta": 1000.0,
         "emergencia": 1300.0,
         "tendencia": "Descendente",
-        "hora": "08:00",
+        "hora": "09:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -4.8801,
@@ -2731,7 +2731,7 @@
         "alerta": 800.0,
         "emergencia": 1000.0,
         "tendencia": "Descendente",
-        "hora": "08:00",
+        "hora": "09:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -4.299054,
@@ -2816,6 +2816,22 @@
         "estiaje": false,
         "lat": -6.37353,
         "lon": -79.46673,
+        "reporte": "672-2026"
+      },
+      {
+        "rio": "La Leche",
+        "estacion": "Puchaca",
+        "lugar": "Incahuasi, Lambayeque",
+        "valor": 13.0,
+        "unidad": "m³/s",
+        "alerta": 80.0,
+        "emergencia": 100.0,
+        "tendencia": "Descendente",
+        "hora": "06:00",
+        "estado": "normal",
+        "estiaje": false,
+        "lat": -6.373167,
+        "lon": -79.466972,
         "reporte": "672-2026"
       },
       {
@@ -3227,7 +3243,7 @@
         "alerta": 140.0,
         "emergencia": 250.0,
         "tendencia": "Descendente",
-        "hora": "08:00",
+        "hora": "09:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -13.9248,
@@ -3270,12 +3286,12 @@
         "rio": "Cotahuasi",
         "estacion": "Cuyau",
         "lugar": "Cotahuasi, Arequipa",
-        "valor": 0.38,
+        "valor": 0.37,
         "unidad": "m",
         "alerta": null,
         "emergencia": null,
         "tendencia": "Ascendente",
-        "hora": "08:00",
+        "hora": "09:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -15.218517,
@@ -3414,12 +3430,12 @@
         "rio": "Locumba",
         "estacion": "TICAPAMPA",
         "lugar": "Ilabaya, Tacna",
-        "valor": 2.67,
+        "valor": 2.62,
         "unidad": "m³/s",
         "alerta": 20.0,
         "emergencia": 40.0,
         "tendencia": "Ascendente",
-        "hora": "08:00",
+        "hora": "09:00",
         "estado": "normal",
         "estiaje": false,
         "lat": -17.47659,
@@ -4299,11 +4315,27 @@
         "alerta": 17000.0,
         "emergencia": 21000.0,
         "tendencia": "Descendente",
-        "hora": "06:00",
+        "hora": "06:15",
         "estado": "normal",
         "estiaje": false,
         "lat": -12.60033,
         "lon": -69.12456,
+        "reporte": "672-2026"
+      },
+      {
+        "rio": "Inambari",
+        "estacion": "Puente Inambari",
+        "lugar": "Huepetuhe, Madre De Dios",
+        "valor": 722.42,
+        "unidad": "m³/s",
+        "alerta": 6839.0,
+        "emergencia": 10343.0,
+        "tendencia": "Ascendente",
+        "hora": "06:00",
+        "estado": "normal",
+        "estiaje": false,
+        "lat": -13.18638,
+        "lon": -70.38401,
         "reporte": "672-2026"
       },
       {
@@ -4566,7 +4598,7 @@
     "en_alerta": 1,
     "en_emergencia": 2,
     "url": "https://snirh.ana.gob.pe/onrh/",
-    "leido": "2026-11-25T14:14:26Z"
+    "leido": "2026-11-25T14:24:33Z"
   },
   "ana_embalses": {
     "embalses": [
@@ -4814,7 +4846,7 @@
       }
     ],
     "url": "https://snirh.ana.gob.pe/onrh/",
-    "leido": "2026-11-25T14:14:26Z"
+    "leido": "2026-11-25T14:24:34Z"
   },
   "ana_pc": {
     "total": 536,
@@ -4825,7 +4857,7 @@
     },
     "avance_medio": 51.0,
     "url": "https://snirh.ana.gob.pe/",
-    "leido": "2026-11-25T14:14:27Z"
+    "leido": "2026-11-25T14:24:36Z"
   },
   "emergencia": {
     "decretos": {
@@ -9791,7 +9823,7 @@
       "ONRH/DEE_DS_140_2026_PCM"
     ],
     "url": "https://www.gob.pe/busquedas?contenido[]=normas&term=estado+de+emergencia",
-    "leido": "2026-11-25T14:14:27Z"
+    "leido": "2026-11-25T14:24:37Z"
   },
   "preparacion": {
     "conteo": {
@@ -16947,7 +16979,7 @@
       }
     },
     "url": "https://visor.geoperu.gob.pe/",
-    "leido": "2026-11-25T14:16:05Z"
+    "leido": "2026-11-25T14:24:38Z"
   },
   "agua": {
     "total": 72,
@@ -17841,7 +17873,7 @@
       }
     },
     "url": "https://www.sunass.gob.pe/",
-    "leido": "2026-11-25T14:16:06Z"
+    "leido": "2026-11-25T14:25:13Z"
   },
   "incendios": {
     "total": 308,
@@ -18568,7 +18600,7 @@
       }
     ],
     "url": "https://geo.serfor.gob.pe/visor/",
-    "leido": "2026-11-25T14:16:08Z"
+    "leido": "2026-11-25T14:25:15Z"
   },
   "phisis": {
     "estaciones": [
@@ -18675,7 +18707,7 @@
       {
         "estacion": "Pte. Simón Rodríguez",
         "cuenca": "Cuenca Chira",
-        "fecha": "2026-11-25T13:00:00Z",
+        "fecha": "2026-11-25T14:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "Amotape, Piura",
@@ -18705,7 +18737,7 @@
       {
         "estacion": "Lagartera",
         "cuenca": "Cuenca Chira",
-        "fecha": "2026-11-25T13:00:00Z",
+        "fecha": "2026-11-25T14:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "Las Lomas, Piura",
@@ -18715,7 +18747,7 @@
       {
         "estacion": "El Ciruelo",
         "cuenca": "Cuenca Chira",
-        "fecha": "2026-11-25T13:00:00Z",
+        "fecha": "2026-11-25T14:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "Suyo, Piura",
@@ -18935,7 +18967,7 @@
       {
         "estacion": "Picoy",
         "cuenca": "Cuenca Huaura",
-        "fecha": "2026-11-25T13:00:00Z",
+        "fecha": "2026-11-25T14:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "Pachangara, Lima",
@@ -18965,7 +18997,7 @@
       {
         "estacion": "San Mateo",
         "cuenca": "Cuenca Rímac",
-        "fecha": "2026-11-25T13:00:00Z",
+        "fecha": "2026-11-25T14:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "San Mateo, Lima",
@@ -19115,7 +19147,7 @@
       {
         "estacion": "Los Molinos",
         "cuenca": "Cuenca Ica",
-        "fecha": "2026-11-25T13:00:00Z",
+        "fecha": "2026-11-25T14:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "San Jose De Los Molinos, Ica",
@@ -19155,7 +19187,7 @@
       {
         "estacion": "Cuyau",
         "cuenca": "Cuenca Ocoña",
-        "fecha": "2026-11-25T13:00:00Z",
+        "fecha": "2026-11-25T14:00:00Z",
         "nivel": "normal",
         "variable": "nivel",
         "lugar": "Cotahuasi, Arequipa",
@@ -19225,7 +19257,7 @@
       {
         "estacion": "Sibayo",
         "cuenca": "Cuenca Camaná",
-        "fecha": "2026-11-25T13:00:00Z",
+        "fecha": "2026-11-25T14:00:00Z",
         "nivel": "normal",
         "variable": "nivel",
         "lugar": "Callalli, Arequipa",
@@ -19305,7 +19337,7 @@
       {
         "estacion": "Ticapampa",
         "cuenca": "Cuenca Locumba",
-        "fecha": "2026-11-25T13:00:00Z",
+        "fecha": "2026-11-25T14:00:00Z",
         "nivel": "normal",
         "variable": "A",
         "lugar": "Ilabaya, Tacna",
@@ -19355,7 +19387,7 @@
       {
         "estacion": "Puente Viejo",
         "cuenca": "Cuenca Locumba",
-        "fecha": "2026-11-25T13:00:00Z",
+        "fecha": "2026-11-25T14:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "Locumba, Tacna",
@@ -19715,7 +19747,7 @@
       {
         "estacion": "Puente Inambari",
         "cuenca": "Cuenca Inambari",
-        "fecha": "2026-11-24T23:00:00Z",
+        "fecha": "2026-11-25T11:00:00Z",
         "nivel": "normal",
         "variable": "caudal",
         "lugar": "Huepetuhe, Madre De Dios",
@@ -19955,7 +19987,7 @@
     ],
     "sobre_umbral": 6,
     "url": "https://www.senamhi.gob.pe/mapas/mapa-monitoreohidro/",
-    "leido": "2026-11-25T14:14:32Z"
+    "leido": "2026-11-25T14:25:15Z"
   },
   "prono": {
     "url": "https://www.senamhi.gob.pe/?p=pronostico-climatico",
@@ -20553,7 +20585,7 @@
         ]
       ]
     },
-    "leido": "2026-11-25T14:14:32Z"
+    "leido": "2026-11-25T14:25:18Z"
   },
   "igp": {
     "e": [
@@ -20758,7 +20790,7 @@
       "clasificacion": 99.98
     },
     "url": "http://met.igp.gob.pe/variabclim/",
-    "leido": "2026-11-25T14:16:10Z"
+    "leido": "2026-11-25T14:25:19Z"
   },
   "dhn": {
     "generado": "2026-11-25T14:07:52Z",
@@ -21270,7 +21302,7 @@
         }
       ]
     },
-    "leido": "2026-11-25T14:16:11Z"
+    "leido": "2026-11-25T14:25:19Z"
   },
   "inaigem": {
     "estaciones": [
@@ -21308,7 +21340,7 @@
       }
     ],
     "url": "https://www.inaigem.gob.pe/",
-    "leido": "2026-11-25T14:16:12Z"
+    "leido": "2026-11-25T14:25:20Z"
   },
   "enfen_docs": {
     "docs": [
@@ -21374,6 +21406,6 @@
       }
     ],
     "url": "https://enfen.imarpe.gob.pe/",
-    "leido": "2026-11-25T14:14:35Z"
+    "leido": "2026-11-25T14:25:22Z"
   }
 }
