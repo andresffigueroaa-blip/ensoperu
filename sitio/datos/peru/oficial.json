@@ -1,6 +1,6 @@
 {
   "_": "Generado por pipeline/fuentes/peru_oficial.py. Datos oficiales tal como se publican.",
-  "actualizado": "2026-11-26T18:24:08Z",
+  "actualizado": "2026-11-26T18:26:35Z",
   "fallas": [
     "coen"
   ],
@@ -431,6 +431,11 @@
   "indeci_rss": {
     "reportes": [
       {
+        "titulo": "BOLETÍN INFORMATIVO DE AVISO DE CORTO PLAZO ANTE LLUVIAS INTENSAS N°329-2026 DEL 26-11-2026",
+        "enlace": "https://portal.indeci.gob.pe/emergencias/boletin-informativo-de-aviso-de-corto-plazo-ante-lluvias-intensas-n329-2026-del-26-11-2026/",
+        "fecha": "2026-11-26T18:26"
+      },
+      {
         "titulo": "REPORTE COMPLEMENTARIO N.° 16499 – 26/11/2026 / COEN – INDECI / 12:18 HORAS (Reporte N.º 1) COLAPSO DE ESTRUCTURA POR ACTIVIDAD HUMANA EN EL DISTRITO DE LIMA – LIMA",
         "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-16499-26-11-2026-coen-indeci-1218-horas-reporte-n-o-1-colapso-de-estructura-por-actividad-humana-en-el-distrito-de-lima-lima/",
         "fecha": "2026-11-26T17:25"
@@ -494,15 +499,10 @@
         "titulo": "REPORTE COMPLEMENTARIO N.º 16491 – 26/11/2026 / COEN – INDECI / 01:40 HORAS (Reporte N.° 1) LLUVIAS INTENSAS EN EL DISTRITO DE SANTA LUCIA – PUNO",
         "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-o-16491-26-11-2026-coen-indeci-0140-horas-reporte-n-1-lluvias-intensas-en-el-distrito-de-santa-lucia-puno/",
         "fecha": "2026-11-26T07:03"
-      },
-      {
-        "titulo": "REPORTE COMPLEMENTARIO N.° 16490 – 26/11/2026 / COEN-INDECI / 01:30 HORAS (Reporte N.º 1) VIENTOS FUERTES EN EL DISTRITO DE ZEPITA – PUNO",
-        "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-16490-26-11-2026-coen-indeci-0130-horas-reporte-n-o-1-vientos-fuertes-en-el-distrito-de-zepita-puno/",
-        "fecha": "2026-11-26T07:01"
       }
     ],
     "url": "https://portal.indeci.gob.pe/emergencias/",
-    "leido": "2026-11-26T18:24:09Z"
+    "leido": "2026-11-26T18:26:38Z"
   },
   "escenario": {
     "vigente": true,
@@ -1988,7 +1988,7 @@
       }
     },
     "url": "https://sigrid.cenepred.gob.pe/sigridv3/escenario-aviso",
-    "leido": "2026-11-26T18:24:10Z"
+    "leido": "2026-11-26T18:26:42Z"
   },
   "quebradas": {
     "fecha": "2026-11-26",
@@ -3364,7 +3364,7 @@
     },
     "sin_cruce": 14,
     "url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico",
-    "leido": "2026-11-26T18:24:13Z"
+    "leido": "2026-11-26T18:26:46Z"
   },
   "hidro": {
     "avisos": [
@@ -3442,7 +3442,7 @@
       }
     ],
     "url": "https://www.senamhi.gob.pe/?p=aviso-hidrologico",
-    "leido": "2026-11-26T18:24:14Z"
+    "leido": "2026-11-26T18:26:47Z"
   },
   "ana_rios": {
     "estaciones": [
@@ -18002,7 +18002,7 @@
       }
     },
     "url": "https://visor.geoperu.gob.pe/",
-    "leido": "2026-11-26T18:24:24Z"
+    "leido": "2026-11-26T18:26:48Z"
   },
   "agua": {
     "total": 74,
@@ -18904,7 +18904,7 @@
       }
     },
     "url": "https://www.sunass.gob.pe/",
-    "leido": "2026-11-26T18:24:25Z"
+    "leido": "2026-11-26T18:26:50Z"
   },
   "incendios": {
     "total": 154,
@@ -19631,7 +19631,7 @@
       }
     ],
     "url": "https://geo.serfor.gob.pe/visor/",
-    "leido": "2026-11-26T18:24:25Z"
+    "leido": "2026-11-26T18:26:52Z"
   },
   "phisis": {
     "estaciones": [
@@ -21811,7 +21811,7 @@
       "clasificacion": 99.98
     },
     "url": "http://met.igp.gob.pe/variabclim/",
-    "leido": "2026-11-26T18:24:28Z"
+    "leido": "2026-11-26T18:26:54Z"
   },
   "dhn": {
     "generado": "2026-11-26T14:20:49Z",
@@ -22323,7 +22323,7 @@
         }
       ]
     },
-    "leido": "2026-11-26T18:24:28Z"
+    "leido": "2026-11-26T18:26:55Z"
   },
   "inaigem": {
     "estaciones": [
@@ -22361,7 +22361,7 @@
       }
     ],
     "url": "https://www.inaigem.gob.pe/",
-    "leido": "2026-11-26T18:24:28Z"
+    "leido": "2026-11-26T18:26:55Z"
   },
   "enfen_docs": {
     "docs": [
