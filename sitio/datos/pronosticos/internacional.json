@@ -1,6 +1,6 @@
 {
   "_": "Generado por pipeline/fuentes/internacional.py. Cada bloque con su centro, fecha y enlace.",
-  "actualizado": "2026-11-26T13:46:45Z",
+  "actualizado": "2026-11-26T19:39:45Z",
   "fallas": [],
   "cpc": {
     "emitido": "2026-11-12",
@@ -519,18 +519,12 @@
   },
   "mjo": {
     "ultimo": {
-      "fecha": "2026-11-21",
-      "pc1": -1.072,
-      "pc2": 0.21,
-      "amplitud": 1.09
+      "fecha": "2026-11-22",
+      "pc1": -1.306,
+      "pc2": -0.137,
+      "amplitud": 1.31
     },
     "serie": [
-      {
-        "fecha": "2026-10-08",
-        "pc1": 0.838,
-        "pc2": -0.51,
-        "amplitud": 0.98
-      },
       {
         "fecha": "2026-10-09",
         "pc1": 0.912,
@@ -773,27 +767,33 @@
       },
       {
         "fecha": "2026-11-18",
-        "pc1": -0.072,
-        "pc2": 0.813,
-        "amplitud": 0.82
+        "pc1": -0.195,
+        "pc2": 0.719,
+        "amplitud": 0.75
       },
       {
         "fecha": "2026-11-19",
-        "pc1": -0.342,
-        "pc2": 0.712,
-        "amplitud": 0.79
+        "pc1": -0.446,
+        "pc2": 0.607,
+        "amplitud": 0.75
       },
       {
         "fecha": "2026-11-20",
-        "pc1": -0.689,
-        "pc2": 0.5,
+        "pc1": -0.753,
+        "pc2": 0.386,
         "amplitud": 0.85
       },
       {
         "fecha": "2026-11-21",
         "pc1": -1.072,
-        "pc2": 0.21,
-        "amplitud": 1.09
+        "pc2": 0.099,
+        "amplitud": 1.08
+      },
+      {
+        "fecha": "2026-11-22",
+        "pc1": -1.306,
+        "pc2": -0.137,
+        "amplitud": 1.31
       }
     ],
     "activa": true,
@@ -945,9 +945,9 @@
       "titulo": "Lluvia pronosticada a 10 días, Sudamérica",
       "fuente": "CIIFEN (CHIRPS-GEFS)",
       "origen": "https://ciifen.org/wp-content/uploads/imagenes_clima/pronostico/pron_precipitacion/chirps_forecast_10days.png",
-      "huella": "601fd127b27c",
+      "huella": "d208886be1ec",
       "archivo": "chirps10.png",
-      "fecha": "2026-11-25"
+      "fecha": "2026-11-26"
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
   "_": "Generado por pipeline/fuentes/peru_oficial.py. Datos oficiales tal como se publican.",
-  "actualizado": "2026-11-26T19:26:31Z",
+  "actualizado": "2026-11-26T19:39:25Z",
   "fallas": [
     "coen"
   ],
@@ -502,7 +502,7 @@
       }
     ],
     "url": "https://portal.indeci.gob.pe/emergencias/",
-    "leido": "2026-11-26T19:26:33Z"
+    "leido": "2026-11-26T19:39:27Z"
   },
   "escenario": {
     "vigente": true,
@@ -1988,7 +1988,7 @@
       }
     },
     "url": "https://sigrid.cenepred.gob.pe/sigridv3/escenario-aviso",
-    "leido": "2026-11-26T19:26:37Z"
+    "leido": "2026-11-26T19:39:31Z"
   },
   "quebradas": {
     "fecha": "2026-11-26",
@@ -3364,7 +3364,7 @@
     },
     "sin_cruce": 14,
     "url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico",
-    "leido": "2026-11-26T19:26:43Z"
+    "leido": "2026-11-26T19:39:37Z"
   },
   "hidro": {
     "avisos": [
@@ -3442,7 +3442,7 @@
       }
     ],
     "url": "https://www.senamhi.gob.pe/?p=aviso-hidrologico",
-    "leido": "2026-11-26T19:26:44Z"
+    "leido": "2026-11-26T19:39:38Z"
   },
   "ana_rios": {
     "estaciones": [
@@ -18018,7 +18018,7 @@
       }
     },
     "url": "https://visor.geoperu.gob.pe/",
-    "leido": "2026-11-26T19:26:45Z"
+    "leido": "2026-11-26T19:39:39Z"
   },
   "agua": {
     "total": 73,
@@ -18916,10 +18916,10 @@
       }
     },
     "url": "https://www.sunass.gob.pe/",
-    "leido": "2026-11-26T19:26:46Z"
+    "leido": "2026-11-26T19:39:41Z"
   },
   "incendios": {
-    "total": 153,
+    "total": 34,
     "lista": [
       {
         "fecha": "2026-11-26",
@@ -19076,15 +19076,6 @@
       },
       {
         "fecha": "2026-11-25",
-        "hora": "11:00",
-        "lugar": "La Banda De Shilcayo, San Martin",
-        "distrito": "220909",
-        "cobertura": "Cobertura Agrícola",
-        "lat": -6.51503,
-        "lon": -76.32951
-      },
-      {
-        "fecha": "2026-11-25",
         "hora": "01:29",
         "lugar": "Yacus, Huanuco",
         "distrito": "100112",
@@ -19112,84 +19103,12 @@
       },
       {
         "fecha": "2026-11-24",
-        "hora": "21:00",
-        "lugar": " San Antonio, San Martin",
-        "distrito": "220912",
-        "cobertura": "Cobertura Forestal",
-        "lat": -6.405,
-        "lon": -76.40485
-      },
-      {
-        "fecha": "2026-11-24",
-        "hora": "19:45",
-        "lugar": "Morales, San Martin",
-        "distrito": "220910",
-        "cobertura": "Cobertura Agrícola",
-        "lat": -6.46189,
-        "lon": -76.37949
-      },
-      {
-        "fecha": "2026-11-24",
-        "hora": "19:38",
-        "lugar": "Zapatero, San Martin",
-        "distrito": "220511",
-        "cobertura": "Cobertura Agrícola",
-        "lat": -6.52001,
-        "lon": -76.52997
-      },
-      {
-        "fecha": "2026-11-24",
-        "hora": "17:00",
-        "lugar": "La Banda De Shilcayo, San Martin",
-        "distrito": "220909",
-        "cobertura": "Cobertura Agrícola",
-        "lat": -6.50083,
-        "lon": -76.33389
-      },
-      {
-        "fecha": "2026-11-24",
         "hora": "14:23",
         "lugar": "Aramango, Amazonas",
         "distrito": "010202",
         "cobertura": "Cobertura Agrícola",
         "lat": -5.50109,
         "lon": -78.45068
-      },
-      {
-        "fecha": "2026-11-24",
-        "hora": "14:21",
-        "lugar": "Churubamba, Huanuco",
-        "distrito": "100104",
-        "cobertura": "Cobertura Forestal",
-        "lat": -9.77272,
-        "lon": -76.27355
-      },
-      {
-        "fecha": "2026-11-24",
-        "hora": "14:21",
-        "lugar": "Ayahuanco, Ayacucho",
-        "distrito": "050402",
-        "cobertura": "Cobertura Forestal",
-        "lat": -12.61597,
-        "lon": -74.29948
-      },
-      {
-        "fecha": "2026-11-24",
-        "hora": "14:21",
-        "lugar": "Ayahuanco, Ayacucho",
-        "distrito": "050402",
-        "cobertura": "Cobertura Forestal",
-        "lat": -12.61533,
-        "lon": -74.29643
-      },
-      {
-        "fecha": "2026-11-24",
-        "hora": "14:21",
-        "lugar": "Ayahuanco, Ayacucho",
-        "distrito": "050402",
-        "cobertura": "Cobertura Forestal",
-        "lat": -12.61469,
-        "lon": -74.29337
       },
       {
         "fecha": "2026-11-24",
@@ -19220,75 +19139,12 @@
       },
       {
         "fecha": "2026-11-24",
-        "hora": "14:20",
-        "lugar": "Yanacancha, Pasco",
-        "distrito": "190113",
-        "cobertura": "Cobertura Forestal",
-        "lat": -10.6471,
-        "lon": -76.15366
-      },
-      {
-        "fecha": "2026-11-24",
-        "hora": "14:10",
-        "lugar": "Santa Maria Del Valle, Huanuco",
-        "distrito": "100109",
-        "cobertura": "Cobertura Forestal",
-        "lat": -9.78265,
-        "lon": -76.27595
-      },
-      {
-        "fecha": "2026-11-24",
         "hora": "13:40",
         "lugar": "Contamana, Loreto",
         "distrito": "160601",
         "cobertura": "Cobertura Agrícola",
         "lat": -7.32533,
         "lon": -75.00353
-      },
-      {
-        "fecha": "2026-11-24",
-        "hora": "13:40",
-        "lugar": "Santa Maria Del Valle, Huanuco",
-        "distrito": "100109",
-        "cobertura": "Cobertura Forestal",
-        "lat": -9.78572,
-        "lon": -76.27257
-      },
-      {
-        "fecha": "2026-11-24",
-        "hora": "13:40",
-        "lugar": "Santa Maria Del Valle, Huanuco",
-        "distrito": "100109",
-        "cobertura": "Cobertura Forestal",
-        "lat": -9.7829,
-        "lon": -76.27654
-      },
-      {
-        "fecha": "2026-11-24",
-        "hora": "13:40",
-        "lugar": "Santa Maria Del Valle, Huanuco",
-        "distrito": "100109",
-        "cobertura": "Cobertura Forestal",
-        "lat": -9.779,
-        "lon": -76.27325
-      },
-      {
-        "fecha": "2026-11-24",
-        "hora": "13:40",
-        "lugar": "Santa Maria Del Valle, Huanuco",
-        "distrito": "100109",
-        "cobertura": "Cobertura Forestal",
-        "lat": -9.77847,
-        "lon": -76.26965
-      },
-      {
-        "fecha": "2026-11-24",
-        "hora": "13:40",
-        "lugar": "Santa Maria Del Valle, Huanuco",
-        "distrito": "100109",
-        "cobertura": "Cobertura Forestal",
-        "lat": -9.77619,
-        "lon": -76.2773
       },
       {
         "fecha": "2026-11-24",
@@ -19329,33 +19185,6 @@
       {
         "fecha": "2026-11-24",
         "hora": "13:38",
-        "lugar": "Ayahuanco, Ayacucho",
-        "distrito": "050402",
-        "cobertura": "Cobertura Forestal",
-        "lat": -12.6173,
-        "lon": -74.29303
-      },
-      {
-        "fecha": "2026-11-24",
-        "hora": "13:38",
-        "lugar": "Ayahuanco, Ayacucho",
-        "distrito": "050402",
-        "cobertura": "Cobertura Forestal",
-        "lat": -12.61453,
-        "lon": -74.29701
-      },
-      {
-        "fecha": "2026-11-24",
-        "hora": "13:38",
-        "lugar": "Ayahuanco, Ayacucho",
-        "distrito": "050402",
-        "cobertura": "Cobertura Forestal",
-        "lat": -12.61122,
-        "lon": -74.29752
-      },
-      {
-        "fecha": "2026-11-24",
-        "hora": "13:38",
         "lugar": "Sivia, Ayacucho",
         "distrito": "050407",
         "cobertura": "Cobertura Forestal",
@@ -19373,75 +19202,12 @@
       },
       {
         "fecha": "2026-11-24",
-        "hora": "12:43",
-        "lugar": "Paucartambo, Pasco",
-        "distrito": "190107",
-        "cobertura": "Cobertura Forestal",
-        "lat": -10.75743,
-        "lon": -75.77264
-      },
-      {
-        "fecha": "2026-11-24",
-        "hora": "12:43",
-        "lugar": "Santa Maria Del Valle, Huanuco",
-        "distrito": "100109",
-        "cobertura": "Cobertura Forestal",
-        "lat": -9.78304,
-        "lon": -76.27149
-      },
-      {
-        "fecha": "2026-11-24",
-        "hora": "12:41",
-        "lugar": "Santa Maria Del Valle, Huanuco",
-        "distrito": "100109",
-        "cobertura": "Cobertura Forestal",
-        "lat": -9.78575,
-        "lon": -76.27629
-      },
-      {
-        "fecha": "2026-11-24",
-        "hora": "12:41",
-        "lugar": "Santa Maria Del Valle, Huanuco",
-        "distrito": "100109",
-        "cobertura": "Cobertura Forestal",
-        "lat": -9.77793,
-        "lon": -76.27068
-      },
-      {
-        "fecha": "2026-11-24",
         "hora": "11:20",
         "lugar": "Huari, Ancash",
         "distrito": "021001",
         "cobertura": "Cobertura Agrícola",
         "lat": -9.38739,
         "lon": -77.19223
-      },
-      {
-        "fecha": "2026-11-24",
-        "hora": "08:25",
-        "lugar": "Paucartambo, Pasco",
-        "distrito": "190107",
-        "cobertura": "Cobertura Agrícola",
-        "lat": -10.76338,
-        "lon": -75.7737
-      },
-      {
-        "fecha": "2026-11-24",
-        "hora": "08:25",
-        "lugar": "Pazos, Huancavelica",
-        "distrito": "090711",
-        "cobertura": "Cobertura Forestal",
-        "lat": -12.18085,
-        "lon": -75.02259
-      },
-      {
-        "fecha": "2026-11-24",
-        "hora": "01:46",
-        "lugar": "Rondos, Huanuco",
-        "distrito": "101005",
-        "cobertura": "Cobertura Forestal",
-        "lat": -9.96399,
-        "lon": -76.69861
       },
       {
         "fecha": "2026-11-24",
@@ -19453,197 +19219,17 @@
         "lon": -76.49232
       },
       {
-        "fecha": "2026-11-24",
-        "hora": "01:03",
-        "lugar": "Urcos, Cusco",
-        "distrito": "081201",
+        "fecha": "2026-11-23",
+        "hora": "17:53",
+        "lugar": "San Pedro De Pillao, Pasco",
+        "distrito": "190205",
         "cobertura": "Cobertura Forestal",
-        "lat": -13.74208,
-        "lon": -71.63855
-      },
-      {
-        "fecha": "2026-11-24",
-        "hora": "01:03",
-        "lugar": "Urcos, Cusco",
-        "distrito": "081201",
-        "cobertura": "Cobertura Forestal",
-        "lat": -13.74095,
-        "lon": -71.64542
-      },
-      {
-        "fecha": "2026-11-24",
-        "hora": "01:03",
-        "lugar": "Huaro, Cusco",
-        "distrito": "081207",
-        "cobertura": "Cobertura Forestal",
-        "lat": -13.73184,
-        "lon": -71.659
-      },
-      {
-        "fecha": "2026-11-24",
-        "hora": "01:03",
-        "lugar": "Urcos, Cusco",
-        "distrito": "081201",
-        "cobertura": "Cobertura Forestal",
-        "lat": -13.72863,
-        "lon": -71.63648
-      },
-      {
-        "fecha": "2026-11-24",
-        "hora": "01:03",
-        "lugar": "Huaro, Cusco",
-        "distrito": "081207",
-        "cobertura": "Cobertura Forestal",
-        "lat": -13.72387,
-        "lon": -71.66563
-      },
-      {
-        "fecha": "2026-11-24",
-        "hora": "01:03",
-        "lugar": "Urcos, Cusco",
-        "distrito": "081201",
-        "cobertura": "Cobertura Forestal",
-        "lat": -13.7158,
-        "lon": -71.63058
-      },
-      {
-        "fecha": "2026-11-24",
-        "hora": "01:03",
-        "lugar": "Urcos, Cusco",
-        "distrito": "081201",
-        "cobertura": "Cobertura Forestal",
-        "lat": -13.71185,
-        "lon": -71.63363
-      },
-      {
-        "fecha": "2026-11-24",
-        "hora": "01:03",
-        "lugar": "Urcos, Cusco",
-        "distrito": "081201",
-        "cobertura": "Cobertura Forestal",
-        "lat": -13.71128,
-        "lon": -71.63713
-      },
-      {
-        "fecha": "2026-11-24",
-        "hora": "01:03",
-        "lugar": "Urcos, Cusco",
-        "distrito": "081201",
-        "cobertura": "Cobertura Forestal",
-        "lat": -13.71068,
-        "lon": -71.64083
-      },
-      {
-        "fecha": "2026-11-24",
-        "hora": "01:03",
-        "lugar": "Huaro, Cusco",
-        "distrito": "081207",
-        "cobertura": "Cobertura Forestal",
-        "lat": -13.70731,
-        "lon": -71.64033
-      },
-      {
-        "fecha": "2026-11-24",
-        "hora": "01:03",
-        "lugar": "Huaro, Cusco",
-        "distrito": "081207",
-        "cobertura": "Cobertura Forestal",
-        "lat": -13.70393,
-        "lon": -71.63987
-      },
-      {
-        "fecha": "2026-11-24",
-        "hora": "01:03",
-        "lugar": "Rondos, Huanuco",
-        "distrito": "101005",
-        "cobertura": "Cobertura Forestal",
-        "lat": -9.96445,
-        "lon": -76.69821
-      },
-      {
-        "fecha": "2026-11-24",
-        "hora": "01:03",
-        "lugar": "Rondos, Huanuco",
-        "distrito": "101005",
-        "cobertura": "Cobertura Forestal",
-        "lat": -9.96269,
-        "lon": -76.69704
-      },
-      {
-        "fecha": "2026-11-24",
-        "hora": "01:03",
-        "lugar": "Pachas, Huanuco",
-        "distrito": "100313",
-        "cobertura": "Cobertura Forestal",
-        "lat": -9.65694,
-        "lon": -76.78717
-      },
-      {
-        "fecha": "2026-11-24",
-        "hora": "00:08",
-        "lugar": "Urcos, Cusco",
-        "distrito": "081201",
-        "cobertura": "Cobertura Forestal",
-        "lat": -13.74254,
-        "lon": -71.63976
-      },
-      {
-        "fecha": "2026-11-24",
-        "hora": "00:08",
-        "lugar": "Urcos, Cusco",
-        "distrito": "081201",
-        "cobertura": "Cobertura Forestal",
-        "lat": -13.71534,
-        "lon": -71.63111
-      },
-      {
-        "fecha": "2026-11-24",
-        "hora": "00:08",
-        "lugar": "Urcos, Cusco",
-        "distrito": "081201",
-        "cobertura": "Cobertura Forestal",
-        "lat": -13.71439,
-        "lon": -71.63551
-      },
-      {
-        "fecha": "2026-11-24",
-        "hora": "00:08",
-        "lugar": "Urcos, Cusco",
-        "distrito": "081201",
-        "cobertura": "Cobertura Forestal",
-        "lat": -13.71381,
-        "lon": -71.63179
-      },
-      {
-        "fecha": "2026-11-24",
-        "hora": "00:08",
-        "lugar": "Urcos, Cusco",
-        "distrito": "081201",
-        "cobertura": "Cobertura Forestal",
-        "lat": -13.71282,
-        "lon": -71.63624
-      },
-      {
-        "fecha": "2026-11-24",
-        "hora": "00:08",
-        "lugar": "Huaro, Cusco",
-        "distrito": "081207",
-        "cobertura": "Cobertura Forestal",
-        "lat": -13.71287,
-        "lon": -71.64256
-      },
-      {
-        "fecha": "2026-11-24",
-        "hora": "00:08",
-        "lugar": "Huaro, Cusco",
-        "distrito": "081207",
-        "cobertura": "Cobertura Forestal",
-        "lat": -13.71112,
-        "lon": -71.64387
+        "lat": -10.44032,
+        "lon": -76.49388
       }
     ],
     "url": "https://geo.serfor.gob.pe/visor/",
-    "leido": "2026-11-26T19:26:48Z"
+    "leido": "2026-11-26T19:39:42Z"
   },
   "phisis": {
     "estaciones": [
@@ -21825,7 +21411,7 @@
       "clasificacion": 99.98
     },
     "url": "http://met.igp.gob.pe/variabclim/",
-    "leido": "2026-11-26T19:26:49Z"
+    "leido": "2026-11-26T19:39:44Z"
   },
   "dhn": {
     "generado": "2026-11-26T14:20:49Z",
@@ -22337,7 +21923,7 @@
         }
       ]
     },
-    "leido": "2026-11-26T19:26:50Z"
+    "leido": "2026-11-26T19:39:45Z"
   },
   "inaigem": {
     "estaciones": [
@@ -22375,7 +21961,7 @@
       }
     ],
     "url": "https://www.inaigem.gob.pe/",
-    "leido": "2026-11-26T19:26:50Z"
+    "leido": "2026-11-26T19:39:45Z"
   },
   "enfen_docs": {
     "docs": [
