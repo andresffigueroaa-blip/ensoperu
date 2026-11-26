@@ -1,6 +1,6 @@
 {
   "_": "Generado por pipeline/productos/panorama.py. No editar a mano.",
-  "generado": "2026-11-26T22:26:29Z",
+  "generado": "2026-11-26T22:27:01Z",
   "fecha": "2026-11-26",
   "lectura": [
     {
@@ -30,13 +30,13 @@
     {
       "t": "Ríos: el modelo global GloFAS pronostica caudales por encima de su percentil 90 anual (1984-2023) en 13, entre ellos La Leche, Piura, Chira, Zaña; es orientativo. En la última lectura, 1 estaciones de la ANA y el SENAMHI están sobre su umbral de crecida.",
       "fuente": "GloFAS (Copernicus) vía Open-Meteo; lecturas de la ANA y el SENAMHI",
-      "fecha": "2026-11-26T22:26:29Z",
+      "fecha": "2026-11-26T22:27:01Z",
       "url": "https://www.globalfloods.eu/"
     },
     {
       "t": "CENEPRED: 118 distritos en riesgo muy alto por lluvia, hasta el 26 de noviembre; en ellos viven 1 094 100 personas (suma ENSO Perú de los 2 escenarios vigentes, sin repetir distritos).",
       "fuente": "CENEPRED, escenarios de riesgo ante el aviso de lluvias",
-      "fecha": "2026-11-26T22:24:01Z",
+      "fecha": "2026-11-26T22:26:44Z",
       "url": "https://sigrid.cenepred.gob.pe/sigridv3/escenario-aviso"
     },
     {
@@ -46,7 +46,7 @@
       "url": "https://coen.indeci.gob.pe/mer/"
     },
     {
-      "t": "Focos de calor detectados por satélite: 1523 en 7 días; el mayor número en Coronel Portillo (Ucayali), 431.",
+      "t": "Focos de calor detectados por satélite: 1537 en 7 días; el mayor número en Coronel Portillo (Ucayali), 431.",
       "fuente": "NASA FIRMS, VIIRS NOAA-20",
       "fecha": "2026-11-26",
       "url": "https://firms.modaps.eosdis.nasa.gov/"
@@ -109,7 +109,7 @@
       "aviso_lluvia_desde": null,
       "mar": null,
       "n_mar": null,
-      "focos": 22,
+      "focos": 23,
       "n_focos": "alto",
       "dias_fuertes": 2,
       "n_lluvia": "medio",
@@ -130,7 +130,7 @@
       "aviso_lluvia_desde": null,
       "mar": 4.01,
       "n_mar": "muy alto",
-      "focos": 42,
+      "focos": 44,
       "n_focos": "alto",
       "dias_fuertes": 0,
       "n_lluvia": "bajo",
@@ -151,7 +151,7 @@
       "aviso_lluvia_desde": null,
       "mar": null,
       "n_mar": null,
-      "focos": 26,
+      "focos": 28,
       "n_focos": "alto",
       "dias_fuertes": 3,
       "n_lluvia": "alto",
@@ -214,7 +214,7 @@
       "aviso_lluvia_desde": null,
       "mar": null,
       "n_mar": null,
-      "focos": 94,
+      "focos": 99,
       "n_focos": "muy alto",
       "dias_fuertes": 2,
       "n_lluvia": "medio",
@@ -277,7 +277,7 @@
       "aviso_lluvia_desde": null,
       "mar": 5.22,
       "n_mar": "muy alto",
-      "focos": 19,
+      "focos": 21,
       "n_focos": "alto",
       "dias_fuertes": 0,
       "n_lluvia": "bajo",
@@ -298,7 +298,7 @@
       "aviso_lluvia_desde": null,
       "mar": null,
       "n_mar": null,
-      "focos": 87,
+      "focos": 88,
       "n_focos": "muy alto",
       "dias_fuertes": 4,
       "n_lluvia": "alto",
@@ -503,7 +503,7 @@
       "aviso_lluvia_desde": null,
       "mar": null,
       "n_mar": null,
-      "focos": 25,
+      "focos": 26,
       "n_focos": "alto",
       "dias_fuertes": 3,
       "n_lluvia": "alto",
@@ -1837,6 +1837,13 @@
       "frp": 316.6
     },
     {
+      "id": "0809",
+      "nombre": "La Convencion",
+      "region": "Cusco",
+      "focos": 37,
+      "frp": 149.8
+    },
+    {
       "id": "1602",
       "nombre": "Alto Amazonas",
       "region": "Loreto",
@@ -1849,13 +1856,6 @@
       "region": "Cusco",
       "focos": 34,
       "frp": 219.8
-    },
-    {
-      "id": "0809",
-      "nombre": "La Convencion",
-      "region": "Cusco",
-      "focos": 33,
-      "frp": 116.9
     },
     {
       "id": "2503",
@@ -2139,7 +2139,7 @@
     "avisos": 7,
     "rojos": 5,
     "rios_altos": 13,
-    "focos": 1523,
+    "focos": 1537,
     "distritos_riesgo_alto": 766
   }
 }

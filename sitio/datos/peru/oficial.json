@@ -1,9 +1,8 @@
 {
   "_": "Generado por pipeline/fuentes/peru_oficial.py. Datos oficiales tal como se publican.",
-  "actualizado": "2026-11-26T22:23:59Z",
+  "actualizado": "2026-11-26T22:26:40Z",
   "fallas": [
-    "coen",
-    "agua"
+    "coen"
   ],
   "fenomeno": {
     "fecha": "13 de noviembre del 2026",
@@ -503,7 +502,7 @@
       }
     ],
     "url": "https://portal.indeci.gob.pe/emergencias/",
-    "leido": "2026-11-26T22:24:00Z"
+    "leido": "2026-11-26T22:26:41Z"
   },
   "escenario": {
     "vigente": true,
@@ -1989,7 +1988,7 @@
       }
     },
     "url": "https://sigrid.cenepred.gob.pe/sigridv3/escenario-aviso",
-    "leido": "2026-11-26T22:24:01Z"
+    "leido": "2026-11-26T22:26:44Z"
   },
   "quebradas": {
     "fecha": "2026-11-26",
@@ -3365,7 +3364,7 @@
     },
     "sin_cruce": 14,
     "url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico",
-    "leido": "2026-11-26T22:24:05Z"
+    "leido": "2026-11-26T22:26:49Z"
   },
   "hidro": {
     "avisos": [
@@ -3443,7 +3442,7 @@
       }
     ],
     "url": "https://www.senamhi.gob.pe/?p=aviso-hidrologico",
-    "leido": "2026-11-26T22:24:05Z"
+    "leido": "2026-11-26T22:26:49Z"
   },
   "ana_rios": {
     "estaciones": [
@@ -18051,11 +18050,11 @@
       }
     },
     "url": "https://visor.geoperu.gob.pe/",
-    "leido": "2026-11-26T22:24:15Z"
+    "leido": "2026-11-26T22:26:51Z"
   },
   "agua": {
-    "total": 75,
-    "conexiones": 375462,
+    "total": 76,
+    "conexiones": 378515,
     "cortes": [
       {
         "eps": "EPS SEDALORETO S.A.",
@@ -18288,6 +18287,16 @@
         "distrito": "150111"
       },
       {
+        "eps": "SEDAPAL",
+        "lugar": "Chorrillos, Lima",
+        "conexiones": 3525,
+        "tipo": "Programada",
+        "motivo": "Limpieza y desinfección de reservorio/cisterna",
+        "inicio": "2026-12-04",
+        "restablece": "2026-12-06",
+        "distrito": "150108"
+      },
+      {
         "eps": "EPSSSC S.A.",
         "lugar": "Oxapampa, Pasco",
         "conexiones": 3250,
@@ -18468,16 +18477,6 @@
         "distrito": "150106"
       },
       {
-        "eps": "SEDAPAL",
-        "lugar": "Chorrillos, Lima",
-        "conexiones": 1472,
-        "tipo": "Programada",
-        "motivo": "Limpieza y desinfección de reservorio/cisterna",
-        "inicio": "2026-12-02",
-        "restablece": "2026-12-03",
-        "distrito": "150108"
-      },
-      {
         "eps": "SEDAPAR  S.A.",
         "lugar": "Paucarpata, Arequipa",
         "conexiones": 1384,
@@ -18568,6 +18567,16 @@
         "distrito": "010101"
       },
       {
+        "eps": "SEDACHIMBOTE S.A.",
+        "lugar": "Huarmey, Ancash",
+        "conexiones": 1000,
+        "tipo": "Imprevista",
+        "motivo": "Otros",
+        "inicio": "2026-11-27",
+        "restablece": "2026-11-27",
+        "distrito": "021101"
+      },
+      {
         "eps": "SEDAPAR  S.A.",
         "lugar": "Uchumayo, Arequipa",
         "conexiones": 946,
@@ -18646,16 +18655,6 @@
         "inicio": "2026-11-26",
         "restablece": "2026-11-26",
         "distrito": "220910"
-      },
-      {
-        "eps": "SEDAPAL",
-        "lugar": "Lince, Lima",
-        "conexiones": 588,
-        "tipo": "Programada",
-        "motivo": "Ejecución de empalme",
-        "inicio": "2026-12-04",
-        "restablece": "2026-12-05",
-        "distrito": "150116"
       }
     ],
     "distritos": {
@@ -18751,6 +18750,10 @@
         "cortes": 1,
         "conexiones": 3584
       },
+      "150108": {
+        "cortes": 1,
+        "conexiones": 3525
+      },
       "190301": {
         "cortes": 1,
         "conexiones": 3250
@@ -18823,10 +18826,6 @@
         "cortes": 1,
         "conexiones": 1550
       },
-      "150108": {
-        "cortes": 1,
-        "conexiones": 1472
-      },
       "040112": {
         "cortes": 1,
         "conexiones": 1384
@@ -18860,6 +18859,10 @@
         "conexiones": 1052
       },
       "010101": {
+        "cortes": 1,
+        "conexiones": 1000
+      },
+      "021101": {
         "cortes": 1,
         "conexiones": 1000
       },
@@ -18957,11 +18960,10 @@
       }
     },
     "url": "https://www.sunass.gob.pe/",
-    "leido": "2026-11-26T21:25:44Z",
-    "atrasado": false
+    "leido": "2026-11-26T22:26:53Z"
   },
   "incendios": {
-    "total": 34,
+    "total": 28,
     "lista": [
       {
         "fecha": "2026-11-26",
@@ -19154,66 +19156,12 @@
       },
       {
         "fecha": "2026-11-24",
-        "hora": "14:21",
-        "lugar": "Cholon, Huanuco",
-        "distrito": "100702",
-        "cobertura": "Cobertura Forestal",
-        "lat": -8.62325,
-        "lon": -76.79025
-      },
-      {
-        "fecha": "2026-11-24",
-        "hora": "14:21",
-        "lugar": "Cholon, Huanuco",
-        "distrito": "100702",
-        "cobertura": "Cobertura Forestal",
-        "lat": -8.62288,
-        "lon": -76.78867
-      },
-      {
-        "fecha": "2026-11-24",
-        "hora": "14:21",
-        "lugar": "Cholon, Huanuco",
-        "distrito": "100702",
-        "cobertura": "Cobertura Forestal",
-        "lat": -8.62159,
-        "lon": -76.78149
-      },
-      {
-        "fecha": "2026-11-24",
         "hora": "13:40",
         "lugar": "Contamana, Loreto",
         "distrito": "160601",
         "cobertura": "Cobertura Agrícola",
         "lat": -7.32533,
         "lon": -75.00353
-      },
-      {
-        "fecha": "2026-11-24",
-        "hora": "13:40",
-        "lugar": "Cholon, Huanuco",
-        "distrito": "100702",
-        "cobertura": "Cobertura Forestal",
-        "lat": -8.62814,
-        "lon": -76.78671
-      },
-      {
-        "fecha": "2026-11-24",
-        "hora": "13:40",
-        "lugar": "Cholon, Huanuco",
-        "distrito": "100702",
-        "cobertura": "Cobertura Forestal",
-        "lat": -8.62478,
-        "lon": -76.78721
-      },
-      {
-        "fecha": "2026-11-24",
-        "hora": "13:40",
-        "lugar": "Cholon, Huanuco",
-        "distrito": "100702",
-        "cobertura": "Cobertura Forestal",
-        "lat": -8.62426,
-        "lon": -76.78376
       },
       {
         "fecha": "2026-11-24",
@@ -19271,7 +19219,7 @@
       }
     ],
     "url": "https://geo.serfor.gob.pe/visor/",
-    "leido": "2026-11-26T22:25:46Z"
+    "leido": "2026-11-26T22:26:54Z"
   },
   "phisis": {
     "estaciones": [
@@ -21451,7 +21399,7 @@
       "clasificacion": 99.98
     },
     "url": "http://met.igp.gob.pe/variabclim/",
-    "leido": "2026-11-26T22:25:48Z"
+    "leido": "2026-11-26T22:26:56Z"
   },
   "dhn": {
     "generado": "2026-11-26T21:22:54Z",
@@ -21963,7 +21911,7 @@
         }
       ]
     },
-    "leido": "2026-11-26T22:25:49Z"
+    "leido": "2026-11-26T22:26:57Z"
   },
   "inaigem": {
     "estaciones": [
@@ -22001,7 +21949,7 @@
       }
     ],
     "url": "https://www.inaigem.gob.pe/",
-    "leido": "2026-11-26T22:25:49Z"
+    "leido": "2026-11-26T22:26:57Z"
   },
   "enfen_docs": {
     "docs": [
