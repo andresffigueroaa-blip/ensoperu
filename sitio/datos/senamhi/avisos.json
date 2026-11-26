@@ -2,7 +2,7 @@
   "_": "Generado por pipeline/fuentes/senamhi.py. Avisos oficiales vigentes o por empezar.",
   "fuente": "SENAMHI, avisos meteorológicos",
   "url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico",
-  "leido": "2026-11-26T21:23:49Z",
+  "leido": "2026-11-26T22:23:49Z",
   "avisos": [
     {
       "numero": 481,
@@ -88,6 +88,25 @@
       "regiones": [
         "Tumbes",
         "Piura"
+      ]
+    },
+    {
+      "numero": 487,
+      "situacion": "emitido",
+      "titulo": "LLOVIZNA EN LA COSTA SUR",
+      "emitido": "2026-11-26",
+      "inicio": "2026-11-28",
+      "fin": "2026-11-30",
+      "nivel": "ROJO",
+      "enlace": "https://www.senamhi.gob.pe/?p=aviso-meteorologico-vigente&a=2026&b=29405&c=00&d=SENA",
+      "texto": "El SENAMHI informa que, desde el sábado 28 hasta el lunes 30 de noviembre, se prevé la persistencia de lloviznas de moderada a fuerte intensidad en la costa sur, acompañada de un incremento de la velocidad del viento. Asimismo, se espera la presencia de cobertura nubosa, niebla y neblina en sectores próximos al litoral, principalmente durante la noche, la madrugada y las primeras horas de la mañana. El sábado 28 de noviembre, se prevén acumulados de llovizna entre 0.5 y 2.5 mm/día en Arequipa, Moquegua y Tacna. El domingo 29 de noviembre, se esperan acumulados de llovizna entre 0.5 y 2.5 mm/día en Arequipa, Moquegua y Tacna. El lunes 30 de noviembre, se prevén acumulados de llovizna entre 0.5 y 2 mm/día en Arequipa, y valores entre 0.5 y 2.5 mm/día en Moquegua y Tacna.",
+      "zonas": [
+        "Costa sur"
+      ],
+      "regiones": [
+        "Arequipa",
+        "Moquegua",
+        "Tacna"
       ]
     },
     {
