@@ -1,6 +1,6 @@
 {
   "_": "Generado por pipeline/productos/panorama.py. No editar a mano.",
-  "generado": "2026-11-26T23:25:25Z",
+  "generado": "2026-11-26T23:26:00Z",
   "fecha": "2026-11-26",
   "lectura": [
     {
@@ -30,13 +30,13 @@
     {
       "t": "Ríos: el modelo global GloFAS pronostica caudales por encima de su percentil 90 anual (1984-2023) en 13, entre ellos La Leche, Piura, Chira, Zaña; es orientativo. En la última lectura, 1 estaciones de la ANA y el SENAMHI están sobre su umbral de crecida.",
       "fuente": "GloFAS (Copernicus) vía Open-Meteo; lecturas de la ANA y el SENAMHI",
-      "fecha": "2026-11-26T23:25:25Z",
+      "fecha": "2026-11-26T23:26:00Z",
       "url": "https://www.globalfloods.eu/"
     },
     {
       "t": "CENEPRED: 118 distritos en riesgo muy alto por lluvia, hasta el 26 de noviembre; en ellos viven 1 094 100 personas (suma ENSO Perú de los 2 escenarios vigentes, sin repetir distritos).",
       "fuente": "CENEPRED, escenarios de riesgo ante el aviso de lluvias",
-      "fecha": "2026-11-26T23:24:06Z",
+      "fecha": "2026-11-26T23:25:44Z",
       "url": "https://sigrid.cenepred.gob.pe/sigridv3/escenario-aviso"
     },
     {
@@ -46,7 +46,7 @@
       "url": "https://coen.indeci.gob.pe/mer/"
     },
     {
-      "t": "Focos de calor detectados por satélite: 1537 en 7 días; el mayor número en Coronel Portillo (Ucayali), 431.",
+      "t": "Focos de calor detectados por satélite: 1538 en 7 días; el mayor número en Coronel Portillo (Ucayali), 431.",
       "fuente": "NASA FIRMS, VIIRS NOAA-20",
       "fecha": "2026-11-26",
       "url": "https://firms.modaps.eosdis.nasa.gov/"
@@ -277,7 +277,7 @@
       "aviso_lluvia_desde": null,
       "mar": 5.22,
       "n_mar": "muy alto",
-      "focos": 21,
+      "focos": 22,
       "n_focos": "alto",
       "dias_fuertes": 0,
       "n_lluvia": "bajo",
@@ -2139,7 +2139,7 @@
     "avisos": 7,
     "rojos": 5,
     "rios_altos": 13,
-    "focos": 1537,
+    "focos": 1538,
     "distritos_riesgo_alto": 766
   }
 }
