@@ -1,7 +1,9 @@
 {
   "_": "Generado por pipeline/fuentes/internacional.py. Cada bloque con su centro, fecha y enlace.",
-  "actualizado": "2026-11-27T12:32:17Z",
-  "fallas": [],
+  "actualizado": "2026-11-27T18:27:27Z",
+  "fallas": [
+    "ciifen"
+  ],
   "cpc": {
     "emitido": "2026-11-12",
     "estado": "El Niño Advisory",
@@ -519,18 +521,12 @@
   },
   "mjo": {
     "ultimo": {
-      "fecha": "2026-11-22",
-      "pc1": -1.306,
-      "pc2": -0.137,
+      "fecha": "2026-11-23",
+      "pc1": -1.277,
+      "pc2": -0.269,
       "amplitud": 1.31
     },
     "serie": [
-      {
-        "fecha": "2026-10-09",
-        "pc1": 0.912,
-        "pc2": -0.442,
-        "amplitud": 1.01
-      },
       {
         "fecha": "2026-10-10",
         "pc1": 1.064,
@@ -773,26 +769,32 @@
       },
       {
         "fecha": "2026-11-19",
-        "pc1": -0.446,
-        "pc2": 0.607,
-        "amplitud": 0.75
+        "pc1": -0.523,
+        "pc2": 0.571,
+        "amplitud": 0.77
       },
       {
         "fecha": "2026-11-20",
-        "pc1": -0.753,
-        "pc2": 0.386,
-        "amplitud": 0.85
+        "pc1": -0.804,
+        "pc2": 0.353,
+        "amplitud": 0.88
       },
       {
         "fecha": "2026-11-21",
-        "pc1": -1.072,
-        "pc2": 0.099,
-        "amplitud": 1.08
+        "pc1": -1.084,
+        "pc2": 0.078,
+        "amplitud": 1.09
       },
       {
         "fecha": "2026-11-22",
-        "pc1": -1.306,
-        "pc2": -0.137,
+        "pc1": -1.278,
+        "pc2": -0.138,
+        "amplitud": 1.29
+      },
+      {
+        "fecha": "2026-11-23",
+        "pc1": -1.277,
+        "pc2": -0.269,
         "amplitud": 1.31
       }
     ],
@@ -867,7 +869,8 @@
       "titulo": "Boletin_oceano_septiembre_2026",
       "fecha": "2026-10-02",
       "url": "https://ciifen.org/wp-content/uploads/2026/10/Boletin_oceano_septiembre_2026.pdf"
-    }
+    },
+    "atrasado": true
   },
   "wmo": {
     "titulo": "El Niño/La Niña Update (August 2026)",
