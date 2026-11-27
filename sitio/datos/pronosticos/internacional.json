@@ -1,7 +1,9 @@
 {
   "_": "Generado por pipeline/fuentes/internacional.py. Cada bloque con su centro, fecha y enlace.",
-  "actualizado": "2026-11-26T19:39:45Z",
-  "fallas": [],
+  "actualizado": "2026-11-27T01:26:58Z",
+  "fallas": [
+    "ciifen"
+  ],
   "cpc": {
     "emitido": "2026-11-12",
     "estado": "El Niño Advisory",
@@ -867,7 +869,8 @@
       "titulo": "Boletin_oceano_septiembre_2026",
       "fecha": "2026-10-02",
       "url": "https://ciifen.org/wp-content/uploads/2026/10/Boletin_oceano_septiembre_2026.pdf"
-    }
+    },
+    "atrasado": true
   },
   "wmo": {
     "titulo": "El Niño/La Niña Update (August 2026)",
@@ -947,7 +950,8 @@
       "origen": "https://ciifen.org/wp-content/uploads/imagenes_clima/pronostico/pron_precipitacion/chirps_forecast_10days.png",
       "huella": "d208886be1ec",
       "archivo": "chirps10.png",
-      "fecha": "2026-11-26"
+      "fecha": "2026-11-26",
+      "atrasada": true
     }
   ]
 }
