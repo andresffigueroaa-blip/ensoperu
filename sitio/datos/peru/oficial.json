@@ -1,9 +1,8 @@
 {
   "_": "Generado por pipeline/fuentes/peru_oficial.py. Datos oficiales tal como se publican.",
-  "actualizado": "2026-11-27T19:24:05Z",
+  "actualizado": "2026-11-27T19:28:31Z",
   "fallas": [
-    "coen",
-    "phisis"
+    "coen"
   ],
   "fenomeno": {
     "fecha": "13 de noviembre del 2026",
@@ -432,6 +431,11 @@
   "indeci_rss": {
     "reportes": [
       {
+        "titulo": "REPORTE COMPLEMENTARIO N.° 16549 – 27/11/2026 / COEN – INDECI / 12:05 HORAS (Reporte N.° 1) INUNDACIÓN EN EL DISTRITO DE SULLANA – PIURA",
+        "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-preliminar-n-1179-27-11-2026-coen-indeci-0001-horas-inundacion-en-el-distrito-de-sullana-piura/",
+        "fecha": "2026-11-27T19:23"
+      },
+      {
         "titulo": "REPORTE COMPLEMENTARIO N.° 16547 – 27/11/2026 / COEN-INDECI / 11:50 HORAS (Reporte N.º 1) VIENTOS FUERTES EN EL DISTRITO DE ASILLO – PUNO",
         "enlace": "https://portal.indeci.gob.pe/emergencias/reporte-complementario-n-16547-27-11-2026-coen-indeci-1150-horas-reporte-n-o-1-vientos-fuertes-en-el-distrito-de-asillo-puno/",
         "fecha": "2026-11-27T19:20"
@@ -495,15 +499,10 @@
         "titulo": "BOLETÍN INFORMATIVO DE AVISO HIDROLÓGICO N°1727-2026-INDECI/COEN",
         "enlace": "https://portal.indeci.gob.pe/emergencias/boletin-informativo-de-aviso-hidrologico-n1727-2026-indeci-coen/",
         "fecha": "2026-11-27T14:43"
-      },
-      {
-        "titulo": "BOLETÍN INFORMATIVO DE AVISO HIDROLÓGICO N°1726-2026-INDECI/COEN",
-        "enlace": "https://portal.indeci.gob.pe/emergencias/boletin-informativo-de-aviso-hidrologico-n1726-2026-indeci-coen/",
-        "fecha": "2026-11-27T13:49"
       }
     ],
     "url": "https://portal.indeci.gob.pe/emergencias/",
-    "leido": "2026-11-27T19:24:07Z"
+    "leido": "2026-11-27T19:28:33Z"
   },
   "escenario": {
     "vigente": true,
@@ -1874,7 +1873,7 @@
       }
     },
     "url": "https://sigrid.cenepred.gob.pe/sigridv3/escenario-aviso",
-    "leido": "2026-11-27T19:24:08Z"
+    "leido": "2026-11-27T19:28:35Z"
   },
   "quebradas": {
     "fecha": "2026-11-27",
@@ -3806,7 +3805,7 @@
     },
     "sin_cruce": 101,
     "url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico",
-    "leido": "2026-11-27T19:24:16Z"
+    "leido": "2026-11-27T19:28:47Z"
   },
   "hidro": {
     "avisos": [
@@ -3980,7 +3979,7 @@
       }
     ],
     "url": "https://www.senamhi.gob.pe/?p=aviso-hidrologico",
-    "leido": "2026-11-27T19:24:17Z"
+    "leido": "2026-11-27T19:28:48Z"
   },
   "ana_rios": {
     "estaciones": [
@@ -18620,7 +18619,7 @@
       }
     },
     "url": "https://visor.geoperu.gob.pe/",
-    "leido": "2026-11-27T19:24:33Z"
+    "leido": "2026-11-27T19:28:49Z"
   },
   "agua": {
     "total": 70,
@@ -19506,7 +19505,7 @@
       }
     },
     "url": "https://www.sunass.gob.pe/",
-    "leido": "2026-11-27T19:24:34Z"
+    "leido": "2026-11-27T19:28:50Z"
   },
   "incendios": {
     "total": 22,
@@ -19711,7 +19710,7 @@
       }
     ],
     "url": "https://geo.serfor.gob.pe/visor/",
-    "leido": "2026-11-27T19:24:34Z"
+    "leido": "2026-11-27T19:28:51Z"
   },
   "phisis": {
     "estaciones": [
@@ -21912,7 +21911,7 @@
       "clasificacion": 99.98
     },
     "url": "http://met.igp.gob.pe/variabclim/",
-    "leido": "2026-11-27T19:25:06Z"
+    "leido": "2026-11-27T19:28:54Z"
   },
   "dhn": {
     "generado": "2026-11-26T21:22:54Z",
@@ -22424,7 +22423,7 @@
         }
       ]
     },
-    "leido": "2026-11-27T19:25:06Z"
+    "leido": "2026-11-27T19:28:55Z"
   },
   "inaigem": {
     "estaciones": [
@@ -22462,7 +22461,7 @@
       }
     ],
     "url": "https://www.inaigem.gob.pe/",
-    "leido": "2026-11-27T19:25:07Z"
+    "leido": "2026-11-27T19:28:55Z"
   },
   "enfen_docs": {
     "docs": [
