@@ -1,6 +1,6 @@
 {
   "_": "Generado por pipeline/fuentes/peru_oficial.py. Datos oficiales tal como se publican.",
-  "actualizado": "2026-11-27T21:28:15Z",
+  "actualizado": "2026-11-27T22:00:40Z",
   "fallas": [
     "coen"
   ],
@@ -502,7 +502,7 @@
       }
     ],
     "url": "https://portal.indeci.gob.pe/emergencias/",
-    "leido": "2026-11-27T21:28:17Z"
+    "leido": "2026-11-27T22:00:41Z"
   },
   "escenario": {
     "vigente": true,
@@ -1873,7 +1873,7 @@
       }
     },
     "url": "https://sigrid.cenepred.gob.pe/sigridv3/escenario-aviso",
-    "leido": "2026-11-27T21:28:19Z"
+    "leido": "2026-11-27T22:00:43Z"
   },
   "quebradas": {
     "fecha": "2026-11-27",
@@ -3805,7 +3805,7 @@
     },
     "sin_cruce": 101,
     "url": "https://www.senamhi.gob.pe/?p=aviso-meteorologico",
-    "leido": "2026-11-27T21:28:31Z"
+    "leido": "2026-11-27T22:00:52Z"
   },
   "hidro": {
     "avisos": [
@@ -3979,7 +3979,7 @@
       }
     ],
     "url": "https://www.senamhi.gob.pe/?p=aviso-hidrologico",
-    "leido": "2026-11-27T21:28:31Z"
+    "leido": "2026-11-27T22:00:53Z"
   },
   "ana_rios": {
     "estaciones": [
@@ -18651,22 +18651,12 @@
       }
     },
     "url": "https://visor.geoperu.gob.pe/",
-    "leido": "2026-11-27T21:28:33Z"
+    "leido": "2026-11-27T22:00:54Z"
   },
   "agua": {
-    "total": 73,
-    "conexiones": 366055,
+    "total": 72,
+    "conexiones": 275685,
     "cortes": [
-      {
-        "eps": "EPS SEDALORETO S.A.",
-        "lugar": "Iquitos, Loreto",
-        "conexiones": 96749,
-        "tipo": "Programada",
-        "motivo": "Corte de servicio de electricidad",
-        "inicio": "2026-12-05",
-        "restablece": "2026-12-05",
-        "distrito": "160101"
-      },
       {
         "eps": "EPS EMAPAT S.A._",
         "lugar": "Tambopata, Madre De Dios",
@@ -18746,6 +18736,16 @@
         "inicio": "2026-11-27",
         "restablece": "2026-11-27",
         "distrito": "130101"
+      },
+      {
+        "eps": "EPS SEDALORETO S.A.",
+        "lugar": "Iquitos, Loreto",
+        "conexiones": 8799,
+        "tipo": "Programada",
+        "motivo": "Corte de servicio de electricidad",
+        "inicio": "2026-12-05",
+        "restablece": "2026-12-05",
+        "distrito": "160101"
       },
       {
         "eps": "SEDAPAL",
@@ -18858,16 +18858,6 @@
         "distrito": "200104"
       },
       {
-        "eps": "EMAPAB S.A._",
-        "lugar": "Bagua, Amazonas",
-        "conexiones": 5437,
-        "tipo": "Programada",
-        "motivo": "Otros",
-        "inicio": "2026-11-28",
-        "restablece": "2026-11-28",
-        "distrito": "010201"
-      },
-      {
         "eps": "SEDAPAR  S.A.",
         "lugar": "Cerro Colorado, Arequipa",
         "conexiones": 5004,
@@ -18876,6 +18866,16 @@
         "inicio": "2026-11-26",
         "restablece": "2026-11-27",
         "distrito": "040104"
+      },
+      {
+        "eps": "EMAPAB S.A._",
+        "lugar": "Bagua, Amazonas",
+        "conexiones": 4017,
+        "tipo": "Programada",
+        "motivo": "Otros",
+        "inicio": "2026-11-28",
+        "restablece": "2026-11-28",
+        "distrito": "010201"
       },
       {
         "eps": "SEDAPAL",
@@ -19168,16 +19168,6 @@
         "distrito": "020101"
       },
       {
-        "eps": "EMUSAP S.A.",
-        "lugar": "Chachapoyas, Amazonas",
-        "conexiones": 1000,
-        "tipo": "Imprevista",
-        "motivo": "Otros",
-        "inicio": "2026-11-26",
-        "restablece": "2026-11-27",
-        "distrito": "010101"
-      },
-      {
         "eps": "EMAPA SAN MARTÍN S.A.",
         "lugar": "Picota, San Martin",
         "conexiones": 1000,
@@ -19256,13 +19246,19 @@
         "inicio": "2026-12-04",
         "restablece": "2026-12-04",
         "distrito": "040307"
+      },
+      {
+        "eps": "EPS GRAU S.A.",
+        "lugar": "Mancora, Piura",
+        "conexiones": 314,
+        "tipo": "Programada",
+        "motivo": "Linea de aduccion",
+        "inicio": "2026-11-28",
+        "restablece": "2026-11-29",
+        "distrito": "200706"
       }
     ],
     "distritos": {
-      "160101": {
-        "cortes": 1,
-        "conexiones": 96749
-      },
       "170101": {
         "cortes": 1,
         "conexiones": 24566
@@ -19294,6 +19290,10 @@
       "130101": {
         "cortes": 1,
         "conexiones": 9175
+      },
+      "160101": {
+        "cortes": 1,
+        "conexiones": 8799
       },
       "150137": {
         "cortes": 1,
@@ -19339,13 +19339,13 @@
         "cortes": 1,
         "conexiones": 5616
       },
-      "010201": {
-        "cortes": 1,
-        "conexiones": 5437
-      },
       "040104": {
         "cortes": 1,
         "conexiones": 5004
+      },
+      "010201": {
+        "cortes": 1,
+        "conexiones": 4017
       },
       "150125": {
         "cortes": 1,
@@ -19463,10 +19463,6 @@
         "cortes": 1,
         "conexiones": 1052
       },
-      "010101": {
-        "cortes": 1,
-        "conexiones": 1000
-      },
       "220701": {
         "cortes": 1,
         "conexiones": 1000
@@ -19549,7 +19545,7 @@
       }
     },
     "url": "https://www.sunass.gob.pe/",
-    "leido": "2026-11-27T21:28:34Z"
+    "leido": "2026-11-27T22:00:55Z"
   },
   "incendios": {
     "total": 22,
@@ -19754,7 +19750,7 @@
       }
     ],
     "url": "https://geo.serfor.gob.pe/visor/",
-    "leido": "2026-11-27T21:28:35Z"
+    "leido": "2026-11-27T22:00:56Z"
   },
   "phisis": {
     "estaciones": [
@@ -21955,7 +21951,7 @@
       "clasificacion": 99.98
     },
     "url": "http://met.igp.gob.pe/variabclim/",
-    "leido": "2026-11-27T21:28:37Z"
+    "leido": "2026-11-27T22:00:58Z"
   },
   "dhn": {
     "generado": "2026-11-27T20:45:05Z",
@@ -22467,7 +22463,7 @@
         }
       ]
     },
-    "leido": "2026-11-27T21:28:38Z"
+    "leido": "2026-11-27T22:00:59Z"
   },
   "inaigem": {
     "estaciones": [
@@ -22505,7 +22501,7 @@
       }
     ],
     "url": "https://www.inaigem.gob.pe/",
-    "leido": "2026-11-27T21:28:38Z"
+    "leido": "2026-11-27T22:00:59Z"
   },
   "enfen_docs": {
     "docs": [
