@@ -1,9 +1,7 @@
 {
   "_": "Generado por pipeline/fuentes/internacional.py. Cada bloque con su centro, fecha y enlace.",
-  "actualizado": "2026-11-28T03:59:08Z",
-  "fallas": [
-    "ciifen"
-  ],
+  "actualizado": "2026-11-28T13:06:26Z",
+  "fallas": [],
   "cpc": {
     "emitido": "2026-11-12",
     "estado": "El Niño Advisory",
@@ -869,8 +867,7 @@
       "titulo": "Boletin_oceano_septiembre_2026",
       "fecha": "2026-10-02",
       "url": "https://ciifen.org/wp-content/uploads/2026/10/Boletin_oceano_septiembre_2026.pdf"
-    },
-    "atrasado": true
+    }
   },
   "wmo": {
     "titulo": "El Niño/La Niña Update (August 2026)",
@@ -930,9 +927,9 @@
       "titulo": "Pronóstico de la MJO, ECMWF corregido",
       "fuente": "NOAA CPC",
       "origen": "https://www.cpc.ncep.noaa.gov/products/precip/mjo/img/ECMF_BC.png",
-      "huella": "728c07999012",
+      "huella": "21350282f865",
       "archivo": "mjo.png",
-      "fecha": "2026-11-27"
+      "fecha": "2026-11-28"
     },
     {
       "id": "gth",
@@ -948,10 +945,9 @@
       "titulo": "Lluvia pronosticada a 10 días, Sudamérica",
       "fuente": "CIIFEN (CHIRPS-GEFS)",
       "origen": "https://ciifen.org/wp-content/uploads/imagenes_clima/pronostico/pron_precipitacion/chirps_forecast_10days.png",
-      "huella": "d208886be1ec",
+      "huella": "87949d8ceb57",
       "archivo": "chirps10.png",
-      "fecha": "2026-11-26",
-      "atrasada": true
+      "fecha": "2026-11-28"
     }
   ]
 }
